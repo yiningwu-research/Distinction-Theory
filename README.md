@@ -3,6 +3,8 @@
 **A General Theory of Finite Systems**  
 *From the First Distinction to Dissipation, Life, Intelligence, Artificial Agency, and Civilizational Collapse*  
 
+doi: 10.5281/zenodo.20130174
+
 **Author:** Yining Wu  
 **Contact:** yining.wu@alumni.upenn.edu  
 
