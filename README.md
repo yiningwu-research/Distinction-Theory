@@ -12,7 +12,7 @@ A falsifiable, tiered research programme for finite systems, boundary maintenanc
 
 This repository is the public research archive for **Distinction Theory (DT)** and **Active Finite Distinction Systems (FDS)**.
 
-The project is organized into:
+The project is organized into four public layers:
 
 1. **DT Archive** — the broad claim-space archive.
 2. **FDS Core** — the formal finite-system architecture.
@@ -29,10 +29,10 @@ Failed claims are to be revised, demoted, quarantined, or abandoned according to
 
 | Code | Document | Status | DOI / Link |
 |---|---|---|---|
-| DT-Archive | *Distinction Theory: A General Theory of Finite Systems* | Zenodo archive | [10.5281/zenodo.20130174](https://doi.org/10.5281/zenodo.20130174) |
-| FDS-0 | *Active Finite Distinction Systems: A Formal Core for Boundary Maintenance under Finite Capacity* | Zenodo preprint | [10.5281/zenodo.20158923](https://doi.org/10.5281/zenodo.20158923) |
-| FDS-P0 | *Physical Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo preprint | [10.5281/zenodo.20159995](https://doi.org/10.5281/zenodo.20159995) |
-| FDS-A1 | *Active Finite Distinction Systems as a Criterion for Artificial Agency* | Submitted to arXiv | arXiv ID pending |
+| **DT-Archive** | *Distinction Theory: A General Theory of Finite Systems* | Zenodo archive | [10.5281/zenodo.20130174](https://doi.org/10.5281/zenodo.20130174) |
+| **FDS-0** | *Active Finite Distinction Systems: A Formal Core for Boundary Maintenance under Finite Capacity* | Zenodo preprint | [10.5281/zenodo.20158923](https://doi.org/10.5281/zenodo.20158923) |
+| **FDS-P0** | *Physical Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo preprint | [10.5281/zenodo.20159995](https://doi.org/10.5281/zenodo.20159995) |
+| **FDS-A1** | *Active Finite Distinction Systems as a Criterion for Artificial Agency* | Submitted to arXiv | arXiv ID pending |
 
 ---
 
@@ -45,7 +45,167 @@ For new readers:
 3. Read **FDS-P0: Physical Bridge Claim Registry** for physical bridge claims, risk tiers, and falsification conditions.
 4. Use **DT-Archive** as the broad claim-space archive and historical map of the programme.
 
-The DT Archive is intentionally broad. The FDS Core is the best entry point for the formal framework.
+The **DT Archive** is intentionally broad. The **FDS Core** is the best entry point for the formal framework.
+
+---
+
+## Core Idea
+
+Distinction Theory begins from a primitive operation:
+
+> **Distinction** — the operation by which “this” is separated from “not-this.”
+
+Once a system distinguishes itself from what it is not, it inherits a boundary.  
+Once it has a boundary, it faces finite representational capacity.  
+Once capacity is finite, it must approximate.  
+Approximation creates error.  
+Error correction creates complexity.  
+Complexity creates maintenance pressure.  
+Finite systems must eventually prune, externalize, relax the task, collapse, or persist through invariant-supported structure.
+
+In short:
+
+> **From the first boundary to the last invariant:  
+> a theory of what finite systems must pay in order to persist.**
+
+---
+
+## The FDS Core Chain
+
+The FDS formal core studies the following finite-system chain:
+
+```text
+distinction
+→ boundary
+→ finite capacity
+→ capacity deficit
+→ approximation
+→ corrective complexity
+→ dissipative / resource pressure
+→ pruning / externalization / collapse
+→ invariant-supported persistence
+````
+
+This chain is not asserted with equal certainty across every domain. The formal core, physical bridge claims, AI applications, biological interpretations, cognitive interpretations, and civilizational extensions are separated by tier, dependency, and falsification condition.
+
+---
+
+## What This Programme Is
+
+Distinction Theory / FDS is:
+
+* a formal framework for finite systems under boundary-maintenance pressure;
+* a theory of finite distinguishability and capacity deficit;
+* a theory of approximation, corrective complexity, pruning, externalization, and collapse;
+* a theory of invariant-supported persistence;
+* a research programme connecting finite-system architecture to AI agency, physical bridge claims, life, cognition, organizations, and civilizations;
+* a claim-space archive with explicit falsification and demotion protocols.
+
+It is designed to separate:
+
+* formal core claims;
+* bridge-free finite-system consequences;
+* physical bridge assumptions;
+* operational AI criteria;
+* domain-specific mappings;
+* high-risk interpretive extensions.
+
+---
+
+## What This Programme Is Not
+
+Distinction Theory / FDS is **not** presented as a finished theory of everything.
+
+The distinction primitive does **not** automatically prove every downstream physical, biological, cognitive, AI, or civilizational claim.
+
+In particular:
+
+* **FDS Core** is not a completed physical theory.
+* **Physical bridge claims** may fail independently of the formal core.
+* **FDS-A1** does not claim that scaling is irrelevant or that any named architecture cannot become agentic.
+* **FDS-P0** does not claim to derive the Standard Model, fix coupling constants, solve quantum gravity, derive the full Einstein field equations, replace QFT/GR/SM, or prove dark energy.
+* Domain applications require explicit bridge assumptions and domain-specific mappings.
+
+A failed claim is not reinterpreted into survival. It is revised, demoted, quarantined, or abandoned.
+
+---
+
+## Current Public Series
+
+### DT-Archive
+
+**Distinction Theory: A General Theory of Finite Systems**
+Zenodo DOI: [10.5281/zenodo.20130174](https://doi.org/10.5281/zenodo.20130174)
+
+The broad claim-space archive of the programme. It contains the wider DT architecture, including physical, biological, cognitive, AI, organizational, and civilizational extensions.
+
+This document should be read as a claim-space archive, not as a flat list of equally established claims.
+
+---
+
+### FDS-0
+
+**Active Finite Distinction Systems: A Formal Core for Boundary Maintenance under Finite Capacity**
+Zenodo DOI: [10.5281/zenodo.20158923](https://doi.org/10.5281/zenodo.20158923)
+
+The formal core paper. It defines Active Finite Distinction Systems as finite-capacity systems that maintain operational boundaries through state-dependent updates under resource constraints.
+
+Main themes:
+
+* FDS tuple;
+* finite distinguishability;
+* capacity deficit;
+* rate-distortion gap;
+* approximation;
+* corrective complexity;
+* Landauer bridge under explicit assumptions;
+* prune / externalize / collapse trichotomy;
+* invariant-supported persistence;
+* failure and quarantine structure.
+
+---
+
+### FDS-P0
+
+**Physical Bridge Claim Registry for Active Finite Distinction Systems**
+Zenodo DOI: [10.5281/zenodo.20159995](https://doi.org/10.5281/zenodo.20159995)
+
+A dependency-ordered physical claim registry.
+
+This document registers physical bridge claims involving:
+
+* observers as finite distinction-registers;
+* operational time as irreversible distinction update;
+* finite causal access;
+* bounded-memory reversible computation;
+* horizon thermodynamics;
+* dark energy as a high-risk horizon-maintenance bridge;
+* topological persistence;
+* the two-kink signature;
+* CP/T-asymmetric identity transformation;
+* quarantined high-risk interpretive extensions.
+
+It is a registry, not a completed physical theory.
+
+---
+
+### FDS-A1
+
+**Active Finite Distinction Systems as a Criterion for Artificial Agency**
+Status: submitted to arXiv; arXiv ID pending.
+
+This paper applies the FDS formal core to artificial agency.
+
+It distinguishes passive mappers from artificial agents by requiring:
+
+* active boundary maintenance;
+* durable update participation;
+* causal loop closure;
+* capacity-deficit management;
+* pruning / externalization / task relaxation / compression improvement;
+* resource-governed persistence.
+
+It also provides an operational test protocol and a minimal gridworld MDP illustrating how a one-bit capacity deficit can impose a nonzero lower bound on action error.
 
 ---
 
@@ -63,239 +223,144 @@ Distinction-Theory/
 │   └── FDS_AI_Agency_v1.0.tex
 ├── notes/
 └── CITATION.cff
-
-## Core Idea
-
-Distinction Theory begins from a single primitive:
-
-> **Distinction** — the operation by which “this” is separated from “not-this.”
-
-Once a system distinguishes itself from what it is not, it inherits a boundary.  
-Once it has a boundary, it faces finite representational capacity.  
-Once capacity is finite, it must approximate.  
-Approximation creates error.  
-Error correction creates complexity.  
-Complexity dissipates free energy.  
-Finite dissipative systems must eventually prune, collapse, or persist only through invariant-supported structure.
-
-In short:
-
-> **From the first boundary to the last invariant:  
-> a theory of what finite systems must pay in order to persist.**
+```
 
 ---
 
-## The Core Chain
+## Falsifiability and Failure Propagation
 
-Distinction Theory studies the following chain:
+A central design principle of this programme is that claims should specify how they can fail.
 
-1. **Distinction creates identity.**
-2. **Identity requires boundary maintenance.**
-3. **Boundary maintenance creates a finite system/environment split.**
-4. **Finitude creates a capacity deficit.**
-5. **Capacity deficit forces approximation.**
-6. **Approximation errors drive corrective complexity.**
-7. **Corrective complexity costs energy.**
-8. **Finite budgets force pruning or collapse.**
-9. **Invariant-supported structures remain.**
+The framework uses:
 
-This chain is applied across physical systems, biological systems, cognitive agents, artificial systems, organizations, and civilizations — not by assigning equal certainty to every domain mapping, but by placing each claim in a tiered epistemic architecture.
+* epistemic tiers;
+* dependency maps;
+* formal hypotheses;
+* physical bridge assumptions;
+* domain-specific mappings;
+* falsification conditions;
+* demotion rules;
+* quarantine boundaries;
+* downstream failure propagation.
 
----
+The basic rule is:
 
-## What This Framework Is
+> Failure of a downstream bridge claim does not automatically falsify the formal FDS Core.
 
-Distinction Theory is:
+For example:
 
-- a general theory of finite systems;
-- a theory of boundary maintenance;
-- a theory of capacity deficit and approximation;
-- a theory of pruning, compression, dissipation, and collapse;
-- a theory of invariant-supported persistence;
-- a claim-space archive for physics, life, intelligence, artificial agency, and civilization;
-- a Lakatosian research programme with explicit death protocols.
+* If a physical bridge claim fails, that claim and its downstream modules are revised, demoted, quarantined, or abandoned.
+* If an AI application fails, the AI bridge must be revised without automatically invalidating the formal core.
+* If a high-risk interpretive extension fails, it remains local to that extension.
 
-It is designed to separate:
-
-- algebraic core claims;
-- bridge-free finite-system corollaries;
-- physical-bridge claims;
-- constitutional corollaries;
-- protective-belt mappings;
-- speculative domain extensions.
-
----
-
-## What This Framework Is Not
-
-Distinction Theory is **not** presented as a finished theory of everything.
-
-The Distinction Principle does **not** automatically prove every downstream physical, biological, cognitive, AI, or civilizational claim.
-
-Instead, claims are assigned specific:
-
-- layers;
-- tiers;
-- dependencies;
-- non-claims;
-- falsification conditions;
-- consequences of failure.
-
-A failed claim is not reinterpreted into survival. It is revised, demoted, quarantined, or archived.
-
----
-
-## Architecture
-
-The framework is organized into four major layers.
-
-### Layer 0 — Algebraic Spine
-
-The pure formal core derived from the Distinction Primitive alone.
-
-This layer includes:
-
-- K-0: Distinction Primitive;
-- K-1: Minimum Kernel;
-- K-2: Algebraic Irreversibility;
-- K-3: Algebraic Obstruction Closure.
-
-A verified mathematical counterexample to the L0 core constitutes fundamental death of the programme.
-
----
-
-### Layer 1a — Bridge-Free Finite-System Corollaries
-
-Finite-system theorems that do not require thermodynamic assumptions.
-
-This layer includes:
-
-- CC-1: Capacity Deficit Theorem;
-- CC-2: Approximation Necessity Theorem;
-- CC-3: Approximation Proliferation Theorem.
-
-Failure of an L1a claim collapses that specific corollary while leaving L0 intact.
-
----
-
-### Layer 1b — Physical-Bridge Constitutional Corollaries
-
-Claims that combine the finite-system architecture with the Physical Bridge:
-
-- Landauer;
-- finite free energy;
-- locality;
-- bounded distinguishability;
-- thermal coupling.
-
-This layer includes:
-
-- CC-4: Dissipation Pressure;
-- CC-5: Complexity-Persistence Duality;
-- CC-6: Persistent Layer Emergence;
-- CC-7: Biogenesis;
-- CC-8: Cognitive No-Go;
-- CC-9: Efficiency Gap;
-- CC-10: Maintenance-Attractor Collapse;
-- CC-11: Physical Homotopy Closure;
-- CC-12: Thermodynamic Arrow.
-
-Failure of an L1b claim collapses the relevant physical branch while preserving L0 and L1a unless independently falsified.
-
----
-
-### Layer 2 — Protective Belt
-
-Domain-specific mappings, phenomenological isomorphisms, engineering translations, and high-risk physical or civilizational applications.
-
-These include proposed mappings to:
-
-- the arrow of time;
-- dark energy;
-- quantum decoherence;
-- quantum computation barriers;
-- the finite speed of light;
-- Pauli exclusion;
-- physical symmetries;
-- life as active pruning;
-- sleep as neural pruning;
-- intelligence as causal loop closure;
-- consciousness as compression under capacity overflow;
-- embodied-agent architectures;
-- civilizational collapse;
-- thermodynamic prospect theory.
-
-Protective-belt claims are explicitly quarantined. Failure of an L2 claim does not contaminate the algebraic core or constitutional corollaries.
-
----
-
-## Falsifiability
-
-A central design principle of Distinction Theory is that claims must specify how they can fail.
-
-The framework includes:
-
-- tier classifications;
-- dependency rules;
-- canonical metadata blocks;
-- falsification conditions;
-- demotion protocols;
-- experimental test proposals;
-- a Hall of Fallen Hypotheses;
-- a pre-signed abandonment protocol for core failure.
-
-Major adjudication mechanisms include:
-
-- mathematical Kill Tests for L0;
-- the Two-Kink Experiment for Phase-B invariant persistence;
-- the Efficiency Gap Test Protocol for CC-9;
-- the dark energy w(z) test for PB-5.
-
-The goal is not to make the theory immune to criticism.  
+The goal is not to make the theory immune to criticism.
 The goal is to make its failure modes explicit.
 
 ---
 
-## Companion Papers
+## Relation Between DT and FDS
 
-Companion papers preserve extended derivations, protective-belt modules, and domain-specific arguments inherited from the earlier **Physics of Necessity** programme.
+**Distinction Theory (DT)** is the broad research programme and claim-space archive.
 
-They should be read as subordinate to the canonical tier, dependency, mapping-integrity, and falsification rules defined in the main volume.
+**Active Finite Distinction Systems (FDS)** is the formal finite-system architecture extracted from that broader programme.
 
-In short:
+A useful distinction is:
 
-> **Main Volume = canonical claim-space archive.**  
-> **Companion Papers = extended derivations and protective-belt modules.**
+```text
+DT = broad claim-space and research programme
+FDS = formal finite-system core and operational architecture
+```
+
+The FDS papers are intended to make the programme more modular, testable, and auditable.
 
 ---
 
-## Relation to *The Physics of Necessity*
+## Relation to The Physics of Necessity
 
 This work was formerly developed under the name **The Physics of Necessity**.
 
-**Distinction Theory** is the cleaned, tiered, and epistemically governed formulation of the same research programme.
+**Distinction Theory** is the cleaned, tiered, and epistemically governed formulation of the same broader research programme.
 
 The name change reflects a shift from a more expansive necessity framing toward a more precise theory of:
 
-- distinction;
-- finite systems;
-- capacity deficit;
-- dissipation;
-- pruning;
-- compression;
-- invariant persistence.
+* distinction;
+* finite systems;
+* boundary maintenance;
+* capacity deficit;
+* dissipation / resource pressure;
+* pruning;
+* externalization;
+* compression;
+* invariant-supported persistence.
 
 ---
 
-## Suggested Reading Path
+## Citation
 
-For new readers:
+For the broad archive, cite:
 
-1. Start with the **Prologue**.
-2. Read **Part I: The Essence of Distinction Theory**.
-3. Review **The Core Chain** and **The Ten-Step Derivation**.
-4. Read **The Three-Layer Architecture** and **The Claim Hierarchy** before judging downstream claims.
-5. Continue to **The Physical Bridge**.
-6. Read the **Constitutional Corollaries**.
-7. Treat all physical, biological, cognitive, AI, and civilizational extensions according to their assigned epistemic tier.
-8. Read **The Methodology of Falsification** and **Appendix N: Falsifiability Registry** before evaluating the protective belt.
+```bibtex
+@misc{wu2026distinctiontheory,
+  author       = {Wu, Yining},
+  title        = {Distinction Theory: A General Theory of Finite Systems},
+  year         = {2026},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.20130174}
+}
+```
+
+For the formal FDS Core, cite:
+
+```bibtex
+@misc{wu2026fdscore,
+  author       = {Wu, Yining},
+  title        = {Active Finite Distinction Systems: A Formal Core for Boundary Maintenance under Finite Capacity},
+  year         = {2026},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.20158923}
+}
+```
+
+For the Physical Bridge Claim Registry, cite:
+
+```bibtex
+@misc{wu2026fdsphysicalregistry,
+  author       = {Wu, Yining},
+  title        = {Physical Bridge Claim Registry for Active Finite Distinction Systems},
+  year         = {2026},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.20159995}
+}
+```
+
+For the AI Agency paper:
+
+```bibtex
+@misc{wu2026fdsaiagency,
+  author       = {Wu, Yining},
+  title        = {Active Finite Distinction Systems as a Criterion for Artificial Agency},
+  year         = {2026},
+  note         = {Submitted to arXiv}
+}
+```
+
+This entry will be updated when the arXiv identifier is assigned.
+
+---
+
+## License
+
+Unless otherwise stated, written materials in this repository are released for scholarly reading, citation, and discussion.
+
+Please cite the relevant DOI or arXiv version when using or discussing the work.
+
+---
+
+## Contact
+
+Yining Wu
+Independent Researcher
+[yining.wu@alumni.upenn.edu](mailto:yining.wu@alumni.upenn.edu)
+
+```
+```
