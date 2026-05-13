@@ -1,53 +1,68 @@
-# Distinction Theory
+# Distinction Theory / Active Finite Distinction Systems
 
-**A General Theory of Finite Systems**  
-*From the First Distinction to Dissipation, Life, Intelligence, Artificial Agency, and Civilizational Collapse*  
-
-doi: 10.5281/zenodo.20130174
+A falsifiable, tiered research programme for finite systems, boundary maintenance, capacity deficit, pruning, externalization, collapse, and invariant-supported persistence.
 
 **Author:** Yining Wu  
+**Affiliation:** Independent Researcher  
 **Contact:** yining.wu@alumni.upenn.edu  
 
 ---
 
 ## Status
 
-**Claim-Space Timestamp Edition — May 2026**
+This repository is the public research archive for **Distinction Theory (DT)** and **Active Finite Distinction Systems (FDS)**.
 
-This repository archives the canonical claim-space edition of **Distinction Theory**: a falsifiable, tiered research programme for studying what finite systems must pay in order to persist.
+The project is organized into:
 
-The framework is not presented as a single flat theory whose claims all have equal authority. Its claims are organized by:
+1. **DT Archive** — the broad claim-space archive.
+2. **FDS Core** — the formal finite-system architecture.
+3. **Physical Bridge Claim Registry** — dependency-ordered physical bridge claims.
+4. **AI Agency Paper** — an operational criterion for artificial agency.
 
-- epistemic tier;
-- logical dependency;
-- mapping integrity;
-- falsification pathway;
-- consequence of failure.
+The framework is not presented as a finished theory of everything. Claims are organized by epistemic tier, dependency, mapping integrity, falsification condition, and consequence of failure.
 
 Failed claims are to be revised, demoted, quarantined, or abandoned according to their stated death conditions.
 
 ---
 
-## Main Document
+## Key Documents
 
-The full theory is available as:
-
-**[`Distinction Theory.pdf`](./Distinction%20Theory.pdf)**
-
-This PDF contains the canonical current version of the framework, including:
-
-- the Distinction Principle;
-- the finite-system core chain;
-- the three-layer architecture;
-- the Physical Bridge;
-- the Constitutional Corollaries;
-- the Protective Belt;
-- the methodology of falsification;
-- the Hall of Fallen Hypotheses;
-- the Falsifiability Registry;
-- the version-governance protocol.
+| Code | Document | Status | DOI / Link |
+|---|---|---|---|
+| DT-Archive | *Distinction Theory: A General Theory of Finite Systems* | Zenodo archive | [10.5281/zenodo.20130174](https://doi.org/10.5281/zenodo.20130174) |
+| FDS-0 | *Active Finite Distinction Systems: A Formal Core for Boundary Maintenance under Finite Capacity* | Zenodo preprint | [10.5281/zenodo.20158923](https://doi.org/10.5281/zenodo.20158923) |
+| FDS-P0 | *Physical Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo preprint | [10.5281/zenodo.20159995](https://doi.org/10.5281/zenodo.20159995) |
+| FDS-A1 | *Active Finite Distinction Systems as a Criterion for Artificial Agency* | Submitted to arXiv | arXiv ID pending |
 
 ---
+
+## Suggested Reading Path
+
+For new readers:
+
+1. Start with **FDS-0: Active Finite Distinction Systems** for the formal object and core finite-system architecture.
+2. Read **FDS-A1: Artificial Agency** for the most operational AI-facing application.
+3. Read **FDS-P0: Physical Bridge Claim Registry** for physical bridge claims, risk tiers, and falsification conditions.
+4. Use **DT-Archive** as the broad claim-space archive and historical map of the programme.
+
+The DT Archive is intentionally broad. The FDS Core is the best entry point for the formal framework.
+
+---
+
+## Repository Contents
+
+```text
+Distinction-Theory/
+├── README.md
+├── papers/
+│   ├── Distinction_Theory_Archive_v1.0.pdf
+│   ├── FDS_Core_v1.0.pdf
+│   ├── FDS_Physical_Bridge_Claim_Registry_v1.0.pdf
+│   └── FDS_AI_Agency_v1.0.pdf
+├── source/
+│   └── FDS_AI_Agency_v1.0.tex
+├── notes/
+└── CITATION.cff
 
 ## Core Idea
 
@@ -284,12 +299,3 @@ For new readers:
 6. Read the **Constitutional Corollaries**.
 7. Treat all physical, biological, cognitive, AI, and civilizational extensions according to their assigned epistemic tier.
 8. Read **The Methodology of Falsification** and **Appendix N: Falsifiability Registry** before evaluating the protective belt.
-
----
-
-## Repository Contents
-
-```text
-.
-├── Distinction Theory.pdf   # Canonical claim-space timestamp edition
-└── README.md                # Repository overview

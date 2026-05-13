@@ -1,0 +1,1070 @@
+\pdfoutput=1
+% Contact: Yining Wu, yining.wu@alumni.upenn.edu
+\documentclass[10pt,a4paper,twocolumn,aps,prl]{revtex4-2}
+
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,array,longtable}
+\usepackage{graphicx,xcolor,hyperref}
+\usepackage{enumitem}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!black,
+  citecolor=blue!50!black,
+  urlcolor=blue!50!black,
+  pdfauthor={Yining Wu},
+  pdftitle={Active Finite Distinction Systems as a Criterion for Artificial Agency}
+}
+
+\newtheorem{definition}{Definition}
+\newtheorem{assumption}{Assumption}
+\newtheorem{criterion}{Criterion}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{protocol}{Protocol}
+\newtheorem{remark}{Remark}
+\newtheorem{example}{Example}
+
+\newcommand{\FDS}{\mathrm{FDS}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prob}{\mathbb{P}}
+\newcommand{\MI}{\mathrm{I}}
+\newcommand{\TE}{\mathrm{T}}
+\newcommand{\KL}{\mathrm{D}_{\mathrm{KL}}}
+\newcommand{\RD}{\mathrm{R}}
+\newcommand{\CS}{C_S}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\loss}{\ell}
+\newcommand{\dotQ}{\dot Q}
+\newcommand{\dotF}{\dot F}
+\newcommand{\doop}{\mathrm{do}}
+\newcommand{\calP}{\mathcal{P}}
+\newcommand{\calV}{\mathcal{V}}
+\newcommand{\calC}{\mathcal{C}}
+\newcommand{\calF}{\mathcal{F}}
+\newcommand{\calA}{\mathcal{A}}
+\newcommand{\calM}{\mathcal{M}}
+\newcommand{\calY}{\mathcal{Y}}
+\newcommand{\calX}{\mathcal{X}}
+\newcommand{\calE}{\mathcal{E}}
+\newcommand{\calB}{\mathcal{B}}
+\newcommand{\calT}{\mathcal{T}}
+\newcommand{\Null}{\emptyset}
+
+\begin{document}
+
+\title{Active Finite Distinction Systems as a Criterion for Artificial Agency%
+\footnote{The criterion is developed through boundary maintenance, capacity deficit, pruning, externalization, and causal loop closure under resource constraints.}}
+
+\author{Yining Wu\\
+Independent Researcher\\
+\texttt{yining.wu@alumni.upenn.edu}}
+
+\begin{abstract}
+Large predictive models can transform inputs into high-quality outputs without necessarily becoming agents. This paper proposes an operational criterion for artificial agency based on \emph{active finite distinction systems} (FDS): finite-capacity systems that maintain a boundary through state-dependent updates under resource constraints. The framework distinguishes passive mapping from artificial agency by requiring active boundary maintenance, durable update participation, causal loop closure, and capacity-deficit management through pruning, externalization, task relaxation, or compression. The central technical object is an FDS tuple
+\[
+S=(X,E,B,M,Y,A,U,\pi,\ell,\Phi,\mathcal{P},\tau),
+\]
+where $B$ is an operational boundary, $M$ is internal memory or model state, $U$ is an update operator, $\ell$ is boundary-maintenance loss, $\Phi$ is a resource budget, $\mathcal{P}$ is a perturbation/pruning family, and $\tau$ is an update timescale. Capacity deficit is formulated as a task-relevant rate-distortion gap $\Delta_{\varepsilon}(\tau)=R_{\min}^{(\tau)}(\varepsilon)-C_S$, rather than as an informal mismatch between a model and the world. Physical dissipation is treated only through an explicit Landauer bridge: logically irreversible updates incur an informational heat floor proportional to $H(M_t\mid M_{t+1},Y_t)$ under standard thermodynamic conditions. We derive an agency taxonomy separating passive mappers, scaffolded tool systems, adaptive controllers, and strong FDS-agents. We also give an operational test protocol using update ablation, action-to-future-state influence, capacity-deficit estimation, pruning/externalization efficiency, and resource-governed persistence. A minimal gridworld MDP illustrates how a one-bit capacity deficit induces an irreducible action-error lower bound, and a benchmark protocol is proposed for testing FDS-agency under bounded resources. The result is not a claim that scaling is irrelevant or that any named architecture cannot become agentic. It is a formal criterion for when a system containing predictive components qualifies as an artificial agent rather than merely a passive mapper.
+\end{abstract}
+
+\maketitle
+
+\noindent\textbf{Keywords:} artificial agency; active finite systems; boundary maintenance; rate-distortion; transfer entropy; active pruning; external memory; resource-bounded agents; LLM agents; active inference.
+
+% -------------------------------------------------------------------
+\section{Introduction}
+% -------------------------------------------------------------------
+
+\subsection{The passive-mapper problem}
+
+A central question in artificial intelligence is no longer whether a machine can produce intelligent-looking outputs. Large language models, world models, simulators, planners, and tool-using systems already perform tasks that previously appeared to require flexible reasoning. The harder question is structural: \emph{when does a predictive or generative system become an agent rather than a passive mapper?}
+
+A passive mapper transforms inputs into outputs. It may be highly competent, statistically calibrated, and useful. Yet input-output competence alone does not imply that the system maintains a boundary, updates durable self-relevant state, regulates its resources, prunes accumulated complexity, or causally participates in the future conditions it must survive. A model that can answer questions about a robot's battery is not thereby a system that monitors, protects, allocates, or recharges that battery. The difference is not prediction accuracy; it is the presence or absence of a maintenance loop connecting internal update, action, resource constraint, and future viability.
+
+This paper develops an AI-facing formalization of that distinction. The proposal is that artificial agency requires more than prediction, generation, or optimization over an externally supplied objective. It requires that a finite system maintain an operational boundary under limited representational capacity and limited resources. This leads to a class of systems called \emph{active finite distinction systems} (FDS). An FDS is not defined by being biological, conscious, embodied, or made from any particular substrate. It is defined by the structure of the maintenance problem it faces.
+
+\subsection{The FDS entry point}
+
+The formal core used here is the active finite distinction system
+\begin{equation}
+S=(X,E,B,M,Y,A,U,\pi,\ell,\Phi,\mathcal{P},\tau),
+\label{eq:fds-tuple-intro}
+\end{equation}
+where $X$ is internal state, $E$ is environmental state, $B$ is a boundary or interface variable, $M$ is memory or model state, $Y$ is the observation channel, $A$ is the action or boundary-update space, $U$ is the internal update operator, $\pi$ is a finite distinction projection or coarse-graining, $\ell$ is boundary-maintenance loss, $\Phi$ is a resource budget, $\mathcal{P}$ is an admissible family of pruning, perturbation, or degradation operators, and $\tau$ is the update timescale.
+
+The tuple is deliberately operational. In AI systems, $B$ may be a robot body, a software service boundary, a memory and tool boundary, an API-level identity, a security perimeter, or a task-level viability envelope. $M$ may include parameters, context state, working memory, persistent memory, maps, caches, learned skills, policies, or externalized records. $A$ may include physical actions, API calls, tool invocations, memory writes, model-update operations, self-repair operations, or resource-allocation decisions. The central question is whether these components form an active maintenance loop rather than a passive input-output channel.
+
+\subsection{Contributions}
+
+This paper makes seven contributions.
+
+\begin{enumerate}[leftmargin=2em]
+    \item It reformulates artificial agency in terms of active finite distinction systems, making boundary maintenance and resource-bounded persistence central rather than optional.
+    \item It defines an active-boundary criterion using both a formal relevance screen and an empirical intervention/ablation strengthening.
+    \item It replaces informal claims about environmental complexity with a task-relevant rate-distortion capacity deficit.
+    \item It distinguishes passive mappers, scaffolded systems, adaptive controllers, and strong FDS-agents.
+    \item It derives a passive-mapper non-qualification proposition and a prune--externalize--collapse trichotomy for AI architectures under persistent capacity deficit.
+    \item It gives an operational test protocol for evaluating artificial agency using update ablation, action-to-future-state influence, capacity-deficit estimation, pruning/externalization efficiency, and resource-governed persistence.
+    \item It proposes benchmark desiderata and metrics for deep causal tracking tasks under bounded resources, including viability, resource efficiency, pruning gain, externalization gain, and ablation gap.
+\end{enumerate}
+
+\subsection{What is not claimed}
+
+The paper does not claim that current large language models have no intelligence. It does not claim that scaling is useless. It does not claim that artificial general intelligence is impossible. It does not claim that a system containing a fixed predictive model is necessarily passive; a fixed model embedded inside a tool-using, memory-writing, self-monitoring, resource-governed architecture may be part of an active system. It does not claim to solve consciousness. It does not derive physical law from the distinction primitive. The claims below are conditional, operational, and targeted at the artificial-agency question.
+
+% -------------------------------------------------------------------
+\section{Related Work}
+% -------------------------------------------------------------------
+
+\subsection{Agent theory and embodied AI}
+
+Classical accounts of agency distinguish agents from passive computational processes by emphasizing autonomy, situatedness, reactivity, proactivity, and social ability \cite{wooldridge1995intelligent}. Dynamical systems approaches treat agency as a closed agent-environment loop rather than as isolated computation \cite{beer1995dynamical}. Embodied AI emphasizes that intelligence is shaped by sensorimotor coupling and environmental feedback rather than only by internal representation \cite{brooks1991intelligence}. More recent formal accounts emphasize individuality, normativity, asymmetry, and spatio-temporal organization in defining agency \cite{barandiaran2009defining}.
+
+The FDS approach is compatible with these traditions but isolates a different axis: the cost of maintaining a boundary under finite capacity. A system may be reactive or embedded without being strongly self-maintaining; conversely, a software architecture may lack a biological body but still maintain an operational boundary through memory, tools, monitoring, repair, and resource governance.
+
+\subsection{Active inference, Markov blankets, and autonomy}
+
+The free-energy principle and active inference model self-organizing systems as minimizing variational free energy through perception and action \cite{friston2010free,friston2017active}. Markov blankets formalize statistical boundaries separating internal and external states \cite{kirchhoff2018markov}. These frameworks are central to contemporary discussions of autonomy and agent-environment coupling.
+
+The FDS framework differs in emphasis. It does not begin with belief updating or variational inference. It begins with active boundary maintenance under finite representational capacity. The FDS chain asks what follows when the task-relevant rate-distortion demand exceeds internal capacity: approximation, residual error, complexity pressure, irreversible update costs under physical implementation, and eventual pruning, externalization, task relaxation, or collapse. Active inference can supply one implementation of FDS-like dynamics, but FDS is not restricted to Bayesian agents or variational objectives.
+
+\subsection{Control, empowerment, and transfer entropy}
+
+Control-theoretic and information-theoretic measures of agency often ask whether an action channel has causal influence over future states. Empowerment measures the channel capacity from actions to future sensor states \cite{klyubin2005empowerment}. Transfer entropy measures directed information transfer from one process to another \cite{schreiber2000measuring}. In this paper, action-to-future-state influence is used as a marker of causal loop closure, but not as a sufficient condition for full agency. A thermostat may causally affect future temperature, yet it lacks the richer capacity-deficit management, active pruning, and resource-governed persistence required for strong FDS-agency.
+
+\subsection{LLM agents and tool-using systems}
+
+Recent LLM-based agents combine language models with planning, external tools, memory, environments, and feedback loops \cite{yao2023react,wang2023survey,liu2023agentbench,wang2023voyager,patil2025bfcl}. Benchmarks show that current models perform well on single-turn tool calls but degrade under memory demands and long-horizon tasks \cite{patil2025bfcl}. Recent work on dynamic code generation as action further demonstrates externalization: agents generate Python functions at runtime rather than selecting from a fixed action set \cite{nguyen2025dynasaur}. These systems illustrate why the base-model question and the coupled-system question must be separated. A feed-forward model evaluated at inference time may be passive; the larger architecture containing it may not be. The FDS criterion is explicitly system-level: the unit of agency is the coupled architecture that maintains boundaries, updates durable state, acts causally, manages resources, and handles accumulated complexity.
+
+\subsection{Information theory, rate-distortion, and thermodynamics}
+
+Rate-distortion theory studies the minimal coding rate needed to represent a source under a distortion constraint \cite{shannon1959coding,berger1971rate,cover2006elements}. Landauer's principle links logically irreversible erasure to a thermodynamic heat cost under specified physical conditions \cite{landauer1961irreversibility,berut2012experimental}. Stochastic thermodynamics generalizes entropy production and information thermodynamics in nonequilibrium systems \cite{seifert2005entropy,parrondo2015thermodynamics,horowitz2015equivalent}. The FDS formalism uses rate-distortion to define task-relevant capacity deficit and uses Landauer only as a physical bridge for irreversible updates, not as a claim that every act of inference directly dissipates $k_B T\ln 2$ per represented bit.
+
+\subsection{Autonomous agents and rational agency}
+
+Classical AI and agent theory define autonomous agents as systems that perceive their environment, make decisions, and act to achieve goals \cite{russell2020ai,russell2016artificial}. Reinforcement-learning formalisms treat agents as policy-optimizing systems that maximize expected cumulative reward \cite{sutton2018reinforcement}. These traditions focus on decision-making under uncertainty and goal-directed behavior. The FDS criterion shifts emphasis from goal optimization to boundary maintenance: the central question is not whether a system maximizes a reward function, but whether it maintains the conditions of its own persistence under finite capacity. A reward-maximizing system that does not update or repair its own decision boundary is a passive mapper with respect to its own viability.
+
+\subsection{Memory-augmented and continual-learning systems}
+
+Neural network architectures augmented with external memory, attention, and retrieval mechanisms extend the effective capacity of static models \cite{graves2014neural,vaswani2017attention,rae2016scaling}. Continual-learning and lifelong-learning systems address the problem of accumulating knowledge without catastrophic forgetting \cite{mccloskey1989catastrophic,kirkpatrick2017overcoming,parisi2019continual}. These lines of work are directly relevant to the FDS framework: durable memory and active consolidation are components of capacity-deficit management, and catastrophic forgetting is a special case of maintenance failure under representational pressure. The FDS criterion adds the requirement that memory and consolidation decisions be causally connected to boundary-maintenance loss, not merely to task accuracy.
+
+\subsection{Resource-rationality and bounded rationality}
+
+Bounded rationality recognizes that agents operate under cognitive, computational, and informational constraints \cite{simon1955behavioral,gigerenzer2002bounded}. Resource-rational analysis models agents as approximately optimal under resource limitations \cite{lieder2020resource,shenhav2017completion}. These perspectives are close to the FDS approach but focus on decision optimality under constraints rather than on boundary maintenance. The FDS framework asks what structures a system must have to persist while managing capacity deficit, rather than how close its decisions come to a resource-rational optimum.
+
+\subsection{AI safety, autonomy, and self-maintenance}
+
+Discussions of AI safety increasingly distinguish between capability, alignment, learned optimization, and systems that model their own role in deployment contexts \cite{amodei2016concrete,hubinger2019risks,ngo2023alignment}. These concerns overlap with the FDS criterion: a system that does not monitor or maintain its own operational boundary cannot be expected to recognize changes in its own function, resource state, or goal integrity. The FDS framework does not solve the alignment problem, but it provides structural conditions for the kind of self-maintenance that safety properties may presuppose.
+
+% -------------------------------------------------------------------
+\section{Active Finite Distinction Systems}
+% -------------------------------------------------------------------
+
+\subsection{The system tuple}
+
+\begin{definition}[Active finite distinction system]
+An \emph{active finite distinction system} is a tuple
+\begin{equation}
+S=(X,E,B,M,Y,A,U,\pi,\ell,\Phi,\mathcal{P},\tau),
+\label{eq:fds-tuple}
+\end{equation}
+where:
+\begin{itemize}[leftmargin=2em]
+    \item $X$ is the internal state space of the system;
+    \item $E$ is the environmental state space;
+    \item $B$ is the boundary or interface variable separating system from environment;
+    \item $M$ is the internal memory, model, or representational state space;
+    \item $Y$ is the observation channel available at the boundary;
+    \item $A$ is the action or boundary-update space;
+    \item $U$ is the update map, typically $U:M\times Y\to M$ or a stochastic kernel $P(M_{t+1}\mid M_t,Y_t)$;
+    \item $\pi$ is the finite distinction projection, coarse-graining, or partition map;
+    \item $\ell$ is the boundary-maintenance loss function;
+    \item $\Phi$ is the finite resource or free-energy budget functional;
+    \item $\mathcal{P}$ is the admissible family of pruning, coarse-graining, perturbation, or degradation operators;
+    \item $\tau$ is the update timescale converting per-step information loss into rates or powers.
+\end{itemize}
+\end{definition}
+
+\begin{remark}[Why $\tau$ matters]
+Without a timescale, information-theoretic quantities remain dimensionless counts. With $\tau$, per-update erasure and capacity demand can be expressed as rates and connected to resource or power budgets. This is essential for distinguishing a static representation from a maintained active system.
+\end{remark}
+
+\subsection{AI interpretation of the tuple}
+
+For artificial systems, the tuple can be read as follows. $X$ includes all internal operational state relevant to future behavior. $M$ includes learned parameters, context, scratchpads, persistent memory, maps, policies, cached tool outputs, and externalized records treated as part of the agent architecture. $Y$ includes sensors, prompts, API responses, environment observations, telemetry, or monitoring signals. $A$ includes actions, tool calls, memory writes, environment modifications, compute-allocation decisions, and self-maintenance operations. $\ell$ measures boundary-maintenance or viability loss: task failure, resource exhaustion, context corruption, actuator failure, memory inconsistency, policy degradation, security breach, or loss of operational continuity. $\Phi$ may be energy, money, compute budget, time, memory, latency, user trust, or any resource without which the system cannot maintain the relevant boundary.
+
+The tuple does not require that all parts live inside one neural network. A model, memory store, retriever, planner, robot, monitoring service, database, and tool environment can jointly form a single FDS if the coupled architecture maintains an operational boundary through durable state-dependent updates.
+
+% -------------------------------------------------------------------
+\section{Active Boundaries and Causal Qualification}
+% -------------------------------------------------------------------
+
+\subsection{Formal relevance condition}
+
+\begin{definition}[Active boundary]
+An FDS has an active boundary if its update rule is nontrivial and is relevant to future boundary-maintenance loss. Formally,
+\begin{equation}
+\Prob\big(U(M_t,Y_t)\neq M_t\big)>0,
+\label{eq:nontrivial-update}
+\end{equation}
+and there exists $k>0$ such that
+\begin{equation}
+\MI(M_{t+1};\ell_{t+k})>0.
+\label{eq:mi-relevance}
+\end{equation}
+\end{definition}
+
+The first condition excludes systems with no update channel. The second condition excludes irrelevant internal noise. A random bit flip inside a machine is not active boundary maintenance unless it is statistically related to future boundary loss.
+
+\subsection{Intervention strengthening}
+
+Mutual information is a relevance screen, not a causal proof. A passive thermometer may encode future loss without participating in loss reduction. Therefore empirical AI applications require an intervention or ablation strengthening.
+
+\begin{criterion}[Causal active-boundary qualification]
+For empirical artificial systems, an update channel $U$ participates in active boundary maintenance only if there exists an admissible null update channel $U_{\emptyset}$, such as freezing, randomizing, masking, or identity-updating the relevant state, and some $k>0$ such that
+\begin{equation}
+\E[\ell_{t+k}\mid \doop(U)]\neq \E[\ell_{t+k}\mid \doop(U_{\emptyset})].
+\label{eq:do-ablation}
+\end{equation}
+\end{criterion}
+
+\begin{remark}[Update ablation in AI]
+In an AI system, $U_{\emptyset}$ may disable memory writes, freeze tool feedback, randomize planner state, remove self-monitoring, mask resource telemetry, or prevent policy updates. If future boundary-maintenance loss is unchanged under such ablation, the removed update channel was not part of active agency for the tested task class.
+\end{remark}
+
+\subsection{Passive boundaries}
+
+\begin{definition}[Passive boundary]
+A system has a passive boundary when its persistence is supported by static constraints or stable configurations without task-directed internal updating. Passive persistence may be real and stable, but it does not enter the deficit--dissipation--maintenance cascade unless an active update channel is introduced.
+\end{definition}
+
+A read-only database, an inert file, a static model checkpoint, or a frozen feed-forward mapping has a boundary in some descriptive sense, but it does not thereby qualify as an active FDS-agent. It may become part of an active system when coupled to update, monitoring, action, and resource-governance loops.
+
+% -------------------------------------------------------------------
+\section{Capacity Deficit as a Rate-Distortion Gap}
+% -------------------------------------------------------------------
+
+\subsection{Representational capacity}
+
+\begin{definition}[Internal representational capacity]
+For a finite memory or model state space $M$, define the internal representational capacity
+\begin{equation}
+C_S=\log_2|M|.
+\label{eq:capacity}
+\end{equation}
+When $M$ is continuous or effectively continuous, $C_S$ is replaced by the appropriate operational capacity under finite resolution, noise, coding, quantization, compression, or resource constraints.
+\end{definition}
+
+\begin{proposition}[Finite distinction representation]
+For any FDS with finite internal capacity $C_S$,
+\begin{equation}
+\MI(E_t;M_t)\leq C_S.
+\label{eq:finite-representation}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+By the data-processing inequality and the entropy bound on a finite memory state,
+\[
+\MI(E_t;M_t)\leq H(M_t)\leq \log_2|M|=C_S.
+\]
+\end{proof}
+
+This proposition does not say that the environment is finite. It says that the maintained internal distinction structure is finite.
+
+\subsection{Admissible task statistics}
+
+\begin{definition}[Admissible task statistics]
+Let $\Psi$ be a pre-registered family of admissible statistics $\psi:(E,B)\to Z$ causally accessible through the observation channel $Y$. A statistic $Z_t=\psi(E_t,B_t)$ is task-relevant if it captures information needed to maintain the boundary or task within a stated loss tolerance. Trivial constant maps are excluded unless the task itself is trivial. The family $\Psi$ is fixed by the task specification and sensor-action architecture, not chosen after observing failure.
+\end{definition}
+
+For AI systems, typical admissible families include:
+\begin{enumerate}[leftmargin=2em]
+    \item \textbf{Control/homeostasis tasks:} statistics sufficient to select actions that keep a boundary variable $B_t$ inside a viable set $\mathcal{V}$ up to tolerance $\varepsilon$.
+    \item \textbf{Predictive tracking tasks:} statistics sufficient to predict a pre-specified future observable $Y_{t+k}$ or target variable $Z_{t+k}$ under a fixed loss function.
+    \item \textbf{Information-bottleneck tasks:} compressed statistics preserving task-relevant information about a pre-specified target $Z$ under a stated rate-distortion or information-bottleneck objective.
+\end{enumerate}
+
+\subsection{Capacity deficit}
+
+\begin{definition}[Rate-distortion demand]
+For an admissible statistic $\psi\in\Psi$, update window $\tau$, and tolerated distortion $\varepsilon$, let
+\begin{equation}
+R_{\psi(E,B)}^{(\tau)}(\varepsilon)
+\end{equation}
+be the minimum number of bits per update window required to encode $\psi(E,B)$ so that expected boundary-maintenance distortion remains below $\varepsilon$. Define
+\begin{equation}
+R_{\min}^{(\tau)}(\varepsilon)=\inf_{\psi\in\Psi}R_{\psi(E,B)}^{(\tau)}(\varepsilon).
+\label{eq:rmin}
+\end{equation}
+\end{definition}
+
+\begin{definition}[Capacity deficit]
+The capacity deficit of an FDS at tolerance $\varepsilon$ over update window $\tau$ is
+\begin{equation}
+\Delta_{\varepsilon}(\tau)=R_{\min}^{(\tau)}(\varepsilon)-C_S.
+\label{eq:capacity-deficit}
+\end{equation}
+If $\Delta_{\varepsilon}(\tau)>0$, the system is in task-relevant capacity deficit at tolerance $\varepsilon$.
+\end{definition}
+
+\begin{theorem}[Capacity deficit theorem]
+If
+\begin{equation}
+R_{\min}^{(\tau)}(\varepsilon)>C_S,
+\end{equation}
+then no purely internal model $M_t$ of capacity $C_S$ can encode even the least demanding admissible task statistic to distortion $\varepsilon$ over window $\tau$. The system must approximate, externalize, relax the task, improve compression, or suffer boundary-maintenance failure.
+\end{theorem}
+
+\begin{proof}
+For any admissible statistic $\psi$, any representation of $\psi(E,B)$ achieving distortion at most $\varepsilon$ over window $\tau$ requires at least $R_{\psi(E,B)}^{(\tau)}(\varepsilon)$ bits by rate-distortion theory. Taking the infimum over $\Psi$ gives $R_{\min}^{(\tau)}(\varepsilon)$. By finite internal capacity, the system can internally maintain at most $C_S$ bits. If $R_{\min}^{(\tau)}(\varepsilon)>C_S$, no admissible statistic can be encoded internally to the required tolerance. Therefore the system must use a lossy representation, externalize part of the representation, relax the task, improve compression, or fail the maintenance criterion.
+\end{proof}
+
+\begin{remark}[Why this matters for AI]
+The capacity deficit is not the claim that an AI model must represent the whole world. It is the claim that, for a specified task, there is a minimum task-relevant rate-distortion demand. A system with insufficient internal capacity must handle the gap by approximate modeling, external memory, tools, pruning, task relaxation, better abstractions, or failure.
+\end{remark}
+
+% -------------------------------------------------------------------
+\section{Complexity Pressure, Pruning, and Externalization}
+% -------------------------------------------------------------------
+
+\subsection{Minimal sufficient complexity}
+
+Let $\mathfrak{C}$ be a fixed coding family: a representation language, model class, architecture, or hypothesis class. Let $C(M)$ be a complexity functional such as description length, state count, algorithmic cost, parameter count under a fixed scheme, memory footprint, latency burden, or thermodynamic maintenance load.
+
+\begin{definition}[Minimal sufficient complexity]
+For boundary-maintenance threshold $\ell_c$, define
+\begin{equation}
+C_t^{*}=\min\{C(M):\E[\ell_t(M)]\leq \ell_c\},
+\label{eq:min-sufficient-complexity}
+\end{equation}
+where the minimum is taken only over models inside the fixed coding family $\mathfrak{C}$.
+\end{definition}
+
+\begin{definition}[Persistent task novelty]
+Fix $\mathfrak{C}$, $\ell_c$, and the filtration $\mathcal{F}_t$ generated by observations and internal states up to time $t$. The task process has persistent novelty at rate $\eta>0$ if, over a positive-density set of update windows, the conditional rate-distortion residual remains bounded away from zero:
+\begin{equation}
+R_{Z_{t+1}\mid \mathcal{F}_t,\mathfrak{C}}^{(\tau)}(\varepsilon)\geq \eta>0.
+\label{eq:persistent-novelty}
+\end{equation}
+\end{definition}
+
+\begin{proposition}[Conditional approximation proliferation]
+Assume $\Delta_{\varepsilon}(\tau)>0$ over a relevant window, persistent task novelty, no active pruning, no externalization, no task relaxation, and no improvement in compression scheme. Then the minimal sufficient complexity behaves as a submartingale:
+\begin{equation}
+\E[C_{t+1}^{*}\mid \mathcal{F}_t]\geq C_t^{*}.
+\label{eq:submartingale-complexity}
+\end{equation}
+\end{proposition}
+
+\begin{proof}[Proof sketch]
+Under capacity deficit, the system cannot internally encode all task-relevant distinctions to tolerance $\varepsilon$. Persistent novelty generates residual cases not captured by the current sufficient model. If the system must maintain loss below $\ell_c$ and cannot prune, externalize, relax the task, or improve compression, the remaining way to preserve performance within the fixed coding family is to add or refine distinctions. Hence minimum sufficient complexity cannot decrease in conditional expectation.
+\end{proof}
+
+\begin{remark}[Not a no-compression theorem]
+The theorem does not deny abstraction, grokking, distillation, representation learning, or better compression. It states what happens when those relief channels are absent. Observed complexity can decrease when a system discovers a superior abstraction, prunes inert structure, externalizes memory, relaxes the task, or changes coding family.
+\end{remark}
+
+\subsection{Pruning and externalization}
+
+\begin{definition}[Active pruning]
+Active pruning is a system-initiated operation that selectively removes, compresses, merges, deprecates, or reorganizes accumulated internal structure to reduce maintenance load while preserving boundary-relevant function.
+\end{definition}
+
+\begin{definition}[Externalization]
+Externalization is the relocation of representational, energetic, control, or memory load outside the internal memory budget $M$ while preserving access through the coupled system boundary. Examples include tools, retrieval systems, databases, logs, maps, code repositories, caches, external planners, institutional records, and environmental marks.
+\end{definition}
+
+In AI architectures, pruning and externalization are complementary. Pruning reduces internal complexity debt. Externalization shifts part of the burden into tools or environments. Neither is automatically free: both require indexing, access control, synchronization, validation, security, latency management, and repair. Recent system-level optimisations for retrieval-augmented generation demonstrate that externalisation efficiency depends critically on pipeline design, prefetching, and retrieval scheduling at the algorithmic and systems levels \cite{jiang2025piperag,lin2025telerag}.
+
+% -------------------------------------------------------------------
+\section{Physical Bridge and Resource Budgets}
+% -------------------------------------------------------------------
+
+\subsection{Logical erasure}
+
+\begin{definition}[Logical erasure per update]
+For an update $M_{t+1}=U(M_t,Y_t)$, define logical erasure in bits by
+\begin{equation}
+b_t=H(M_t\mid M_{t+1},Y_t).
+\label{eq:logical-erasure}
+\end{equation}
+This measures how much uncertainty remains about the prior memory state after the new memory state and current input are known. It is preimage information lost by the update.
+\end{definition}
+
+\begin{assumption}[Physical Landauer bridge]
+A logically irreversible update implemented by a physical substrate coupled to a thermal environment at temperature $T>0$ dissipates at least $k_B T\ln 2$ per erased bit under the standard physical conditions of Landauer's principle.
+\end{assumption}
+
+\begin{theorem}[Landauer dissipation floor (bridge theorem)]
+For an active-boundary FDS physically implementing irreversible memory updates at timescale $\tau$, the informational heat dissipation rate obeys
+\begin{equation}
+\dot Q_{\mathrm{info}}\geq \frac{k_B T\ln 2}{\tau}H(M_t\mid M_{t+1},Y_t).
+\label{eq:landauer-floor}
+\end{equation}
+The total maintenance cost decomposes as
+\begin{equation}
+\dot Q_{\mathrm{total}}=\dot Q_{\mathrm{phys}}+\dot Q_{\mathrm{info}},
+\label{eq:qtotal}
+\end{equation}
+where $\dot Q_{\mathrm{phys}}$ includes non-informational physical losses such as control, coupling, leakage, friction, error correction, clocking, isolation, and transport.
+\end{theorem}
+
+\begin{proof}
+$H(M_t\mid M_{t+1},Y_t)$ is the number of erased bits per update. Under the Landauer bridge, each erased bit costs at least $k_B T\ln 2$ of dissipated heat. Dividing by update timescale $\tau$ gives the rate bound. Other physical losses add to the informational term.
+\end{proof}
+
+\begin{remark}[AI systems and Landauer]
+The theorem does not say that every inference step dissipates $k_B T\ln2$ per represented bit. It applies to physically implemented logically irreversible erasure, reset, overwrite, or many-to-one compression. Reversible computation, read-only access, and stable storage do not automatically incur this term, though they may have other physical costs.
+\end{remark}
+
+\subsection{Maintenance failure}
+
+Let $\dot F_{\mathrm{in}}(t)$ denote the free-energy or resource input rate available for boundary maintenance, update, pruning, externalization, repair, and control.
+
+\begin{definition}[Maintenance failure region]
+An FDS enters the maintenance failure region over interval $[t_0,t_1]$ when
+\begin{equation}
+\int_{t_0}^{t_1}\dot Q_{\mathrm{total}}(t)\,dt>
+\int_{t_0}^{t_1}\dot F_{\mathrm{in}}(t)\,dt
+\label{eq:failure-region}
+\end{equation}
+without compensating reserves, external subsidies, task relaxation, pruning, or externalization.
+\end{definition}
+
+For software systems, $\dot Q_{\mathrm{total}}$ may be generalized to a resource-maintenance burden: compute, latency, memory, money, energy, human oversight, engineering effort, safety monitoring, or other limiting resource. The thermodynamic form is one physical realization, not the only engineering interpretation.
+
+\begin{proposition}[Prune--externalize--collapse trichotomy]
+Let an active-boundary FDS satisfy $\Delta_{\varepsilon}(\tau)>0$ over a relevant window and enter the maintenance failure region with bounded input and no compensating external subsidy. Then it cannot maintain the same active-boundary regime indefinitely. Its trajectory must enter at least one of three outcome classes:
+\begin{enumerate}[leftmargin=2em]
+    \item \textbf{pruning:} reducing internal complexity or maintenance load;
+    \item \textbf{externalization:} shifting representational, energetic, or control load outside the internal memory budget;
+    \item \textbf{collapse:} loss of boundary-maintenance capacity, task failure, or transition to a lower-complexity regime.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}[Proof sketch]
+Under capacity deficit, continued boundary maintenance requires approximate updating, externalization, task relaxation, or failure. If internal updating and maintenance exceed available resources and input is bounded, the system cannot indefinitely preserve the same internal task burden. The admissible exits are to reduce internal load, move load outside the internal budget, or fail to maintain the boundary/task. These are pruning, externalization, and collapse.
+\end{proof}
+
+% -------------------------------------------------------------------
+\section{Artificial Agency: Definitions and Taxonomy}
+% -------------------------------------------------------------------
+
+\subsection{Passive mappers, scaffolded systems, and agents}
+
+\begin{definition}[Passive mapper]
+A passive mapper is a system evaluated as an input-output transformation with no durable update channel participating in future boundary-maintenance loss, no causal action channel into the relevant environment, and no internally governed pruning or externalization mechanism for managing capacity deficit.
+\end{definition}
+
+A passive mapper may be useful and intelligent in ordinary language. The term is structural, not derogatory. It says that the evaluated system is not itself maintaining an active boundary.
+
+\begin{definition}[Scaffolded predictive system]
+A scaffolded predictive system is a coupled architecture containing a predictive model plus one or more external components such as tools, memory, planners, monitors, actuators, schedulers, or resource governors. Such a system may qualify as an FDS-agent if the coupled architecture satisfies the active-boundary and causal-loop criteria.
+\end{definition}
+
+\begin{definition}[Strong FDS-agent]
+An artificial system is a strong FDS-agent over task class $\mathcal{T}$, horizon $H$, and resource envelope $\Phi$ if it satisfies:
+\begin{enumerate}[leftmargin=2em]
+    \item \textbf{Active boundary:} it has nontrivial updates relevant to future boundary-maintenance loss and passes an intervention/ablation test for the task class;
+    \item \textbf{Durable update participation:} some component of $M_t$ persists long enough to affect future decisions, maintenance, or loss;
+    \item \textbf{Causal loop closure:} actions or update decisions have measurable influence on future sensory, environmental, or boundary-relevant states above a specified noise floor;
+    \item \textbf{Capacity-deficit management:} under $\Delta_{\varepsilon}(\tau)>0$, the system can prune, externalize, relax tasks, improve compression, or otherwise prevent unbounded complexity debt;
+    \item \textbf{Resource-governed persistence:} it preserves or improves future viability under the stated resource envelope over horizon $H$.
+\end{enumerate}
+\end{definition}
+
+\begin{remark}[Necessary, not sufficient]
+These are necessary structural conditions for strong FDS-agency, not sufficient conditions for intelligence, safety, consciousness, moral status, or successful real-world deployment. A system that satisfies all criteria may still be unsafe, inefficient, unethical, or fragile. The definition formalizes what it means to be an agent in the FDS sense; it does not settle whether such agency is desirable or harmful.
+\end{remark}
+
+\begin{remark}[Why active pruning is not the only path]
+Earlier formulations emphasized active pruning as constitutive of agency. The FDS core suggests a more general condition: a long-horizon agent must manage capacity deficit by pruning, externalization, task relaxation, or compression improvement. For autonomous AI, active pruning is often necessary for internal maintenance, but externalization through tools and memory is equally central.
+\end{remark}
+
+\subsection{Causal loop closure}
+
+Let $A_{\leq t}$ denote past actions or intervention decisions, and let $Y_{t+1:t+k}$ denote future observations or boundary-relevant variables. A model-free directed-information marker of action influence is
+\begin{equation}
+\TE_{A\to Y}^{(k)}=\MI(A_{\leq t};Y_{t+1:t+k}\mid Y_{\leq t},M_t),
+\label{eq:transfer-entropy}
+\end{equation}
+with appropriate conditioning on available histories and confounders.
+
+\begin{criterion}[Causal loop closure]
+A system exhibits causal loop closure over horizon $k$ if action or update interventions measurably alter future boundary-relevant variables. Transfer entropy can serve as an observational marker, but intervention tests are preferred where possible:
+\begin{equation}
+\E[Z_{t+k}\mid \doop(A=a)]\neq \E[Z_{t+k}\mid \doop(A=a')]
+\end{equation}
+for relevant actions $a,a'$ and boundary-relevant target $Z$.
+\end{criterion}
+
+\begin{remark}[Transfer entropy is not enough]
+Positive transfer entropy marks directed statistical dependence. It does not by itself prove full agency, intelligence, or self-maintenance. It must be combined with boundary maintenance, durable update, capacity-deficit management, and resource-governed persistence.
+\end{remark}
+
+\subsection{Agency levels}
+
+\begin{table*}[ht]
+\centering
+\caption{An FDS taxonomy of artificial systems. The levels are structural, not moral or phenomenological.}
+\label{tab:agency-levels}
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{lll}
+\toprule
+\parbox[t]{0.5cm}{\centering\textbf{Lv.}} & \textbf{Name} & \parbox[t]{10cm}{\raggedright\textbf{FDS interpretation}}\\
+\midrule
+\parbox[t]{0.5cm}{\centering 0} & Passive mapper & \parbox[t]{10cm}{\raggedright Maps inputs to outputs; no active boundary, no durable self-update, no causal loop.}\\
+\parbox[t]{0.5cm}{\centering 1} & Minimal causal controller & \parbox[t]{10cm}{\raggedright Has action-to-future-state influence but weak or absent self-maintenance.}\\
+\parbox[t]{0.5cm}{\centering 2} & Adaptive scaffolded system & \parbox[t]{10cm}{\raggedright Updates internal or external memory, uses tools, adapts under feedback, but may depend on external operators or scaffolds.}\\
+\parbox[t]{0.5cm}{\centering 3} & Strong FDS-agent & \parbox[t]{10cm}{\raggedright Maintains operational boundary, durable update participation, causal loop closure, deficit management, and resource-governed persistence.}\\
+\parbox[t]{0.5cm}{\centering 4} & Invariant-supported agent & \parbox[t]{10cm}{\raggedright Strong FDS-agent whose identity is supported by robust abstractions, policies, or invariants stable under admissible perturbations.}\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% -------------------------------------------------------------------
+\subsection{Causal loop and agency tests}
+\label{sec:tests}
+
+% -------------------------------------------------------------------
+\section{Passive Mapper Non-Qualification}
+% -------------------------------------------------------------------
+
+\begin{proposition}[Passive mapper non-qualification]
+Let $S$ be an artificial system evaluated over task class $\mathcal{T}$. Suppose $S$ has fixed parameters or read-only state during evaluation, no durable self-updating memory, no causal boundary-control channel, no pruning or externalization mechanism capable of reducing task-relevant capacity deficit, and no update channel whose ablation alters future boundary-maintenance loss. Then $S$ is not a strong FDS-agent over $\mathcal{T}$.
+\end{proposition}
+
+\begin{proof}
+By hypothesis, the system lacks durable update participation and fails the causal active-boundary qualification. It also lacks a causal boundary-control channel and lacks capacity-deficit management mechanisms. These are necessary conditions in the definition of strong FDS-agent. Therefore the system does not qualify as a strong FDS-agent over the specified task class.
+\end{proof}
+
+\begin{corollary}[Base model versus coupled architecture]
+A frozen predictive model evaluated as a feed-forward mapper may fail to qualify as a strong FDS-agent, while a larger architecture containing that model may qualify if the coupled system has writable memory, action channels, self-monitoring, resource governance, and pruning or externalization mechanisms.
+\end{corollary}
+
+\begin{remark}[Not an anti-LLM claim]
+The proposition is not a claim that language models lack intelligence, utility, or reasoning ability. It is a claim about the structural conditions under which a system is an active boundary-maintaining agent. A language model inside an agentic architecture must be evaluated as part of the larger coupled system.
+\end{remark}
+
+% -------------------------------------------------------------------
+\section{AI Capacity Deficit and Architectural Consequences}
+% -------------------------------------------------------------------
+
+\subsection{Capacity deficit in AI tasks}
+
+For artificial agents, capacity deficit should be defined relative to a pre-specified evaluation class rather than the entire environment. Examples include:
+\begin{itemize}[leftmargin=2em]
+    \item maintaining robot operational viability under uncertain terrain and finite battery;
+    \item tracking long-horizon user goals with bounded memory and tool cost;
+    \item preserving software service integrity under adversarial inputs and changing dependencies;
+    \item coordinating a multi-tool workflow under latency and budget constraints;
+    \item maintaining calibrated self-state estimates under distribution shift.
+\end{itemize}
+
+In each case, the admissible statistic $Z_t=\psi(E_t,B_t)$ and the distortion tolerance $\varepsilon$ must be fixed before evaluating the system. The relevant question is not whether the model knows everything, but whether the coupled architecture can encode or externalize enough task-relevant structure to keep loss below threshold.
+
+\paragraph{Hallucination as distorted mapping under deficit.}
+In the FDS language, hallucination can occur when a system is forced to produce a determinate output for a task whose relevant distinctions exceed its accessible capacity. If $\Delta_\varepsilon(\tau)>0$ and the system lacks external retrieval, uncertainty reporting, abstention, active verification, or pruning/recompression mechanisms, then task-relevant differences may be aliased inside $M$. The resulting output can be fluent and high-confidence while being unsupported by the missing distinctions. This does not claim that all hallucinations have a single cause; rather, it identifies one structural route from capacity deficit to confident distortion.
+
+\subsection{Architectural consequence 1: durable memory}
+
+A system without durable memory cannot accumulate self-relevant distinctions across time. Durable memory need not mean parameter updates; it may include persistent scratchpads, databases, learned maps, long-term episodic memory, skill libraries, state estimates, or external logs. What matters is whether the memory participates in future boundary maintenance and passes ablation tests.
+
+\subsection{Architectural consequence 2: active monitoring}
+
+Boundary maintenance requires monitoring variables that affect future viability. Examples include battery, actuator health, API rate limits, tool reliability, memory integrity, security state, context drift, uncertainty estimates, and cost budgets. A system that never observes its own limiting variables cannot actively maintain them.
+
+\subsection{Architectural consequence 3: pruning and externalization}
+
+Long-horizon agents accumulate plans, memories, beliefs, cached outputs, tool traces, commitments, and partial models. Without pruning, stale or inert structure consumes context, memory, compute, attention, and validation resources. Without externalization, all distinctions must be maintained internally. Strong FDS-agents therefore require mechanisms such as:
+\begin{itemize}[leftmargin=2em]
+    \item memory consolidation and decay;
+    \item skill compilation and abstraction;
+    \item retrieval indexing and citation repair;
+    \item plan deprecation and task reprioritization;
+    \item cache invalidation and version control;
+    \item tool selection under cost and reliability constraints;
+    \item self-monitoring of resource and uncertainty states.
+\end{itemize}
+
+\paragraph{Externalization is capacity relocation, not free capacity.}
+Externalization reduces internal capacity deficit only when the external store or tool can be accessed within the task window. Let
+\[
+C_{\mathrm{ext}}^{\mathrm{eff}}(\tau)=
+\min\{C_{\mathrm{store}},\tau C_{\mathrm{io}}\}-
+C_{\mathrm{index}}-
+C_{\mathrm{verify}}-
+C_{\mathrm{sync}}.
+\]
+If retrieval latency exceeds the control window, or if synchronization and verification costs dominate the external gain, externalization fails as a deficit-management strategy. Thus tools, databases, logs, and APIs are not unbounded escape routes; they are additional boundary components with their own capacity, latency, reliability, and maintenance costs.
+
+\subsection{Architectural consequence 4: invariant-supported identity}
+
+Some agentic identities persist not because all microstates are preserved but because higher-level invariants remain stable. For software agents, invariants may include API contracts, safety constraints, policy commitments, memory schemas, skill interfaces, or goal specifications. Let $q:X\to T$ map implementation states to an invariant quotient, and let $R_A=\bar R_A\circ q$ be an identity predicate. If admissible perturbations $P_i\in\mathcal{P}$ satisfy
+\begin{equation}
+q\circ P_i=q,
+\end{equation}
+then
+\begin{equation}
+R_A\circ P_i=R_A.
+\end{equation}
+This is the algebraic core of invariant-supported persistence.
+
+% -------------------------------------------------------------------
+\section{Operational Test Protocol}
+% -------------------------------------------------------------------
+
+\begin{protocol}[FDS agency evaluation]
+To evaluate whether an artificial system is a strong FDS-agent over task class $\mathcal{T}$, specify the following:
+\begin{enumerate}[leftmargin=2em]
+    \item the operational boundary $B$;
+    \item the internal and external memory state $M$;
+    \item the observation channel $Y$;
+    \item the action/update space $A$;
+    \item the update operator $U$;
+    \item the boundary-maintenance loss $\ell$;
+    \item the resource budget $\Phi$;
+    \item the admissible task-statistic family $\Psi$;
+    \item the capacity estimate $C_S$;
+    \item the rate-distortion demand $R_{\min}^{(\tau)}(\varepsilon)$;
+    \item the pruning/externalization mechanisms;
+    \item the causal-loop measure or intervention test;
+    \item the falsification condition.
+\end{enumerate}
+\end{protocol}
+
+\begin{table*}[ht]
+\centering
+\caption{Operational tests for FDS-agency. These tests evaluate the coupled system, not merely its base predictive model.}
+\label{tab:tests}
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{lll}
+\toprule
+\textbf{Test} & \parbox[t]{5.8cm}{\raggedright\textbf{Operational measure}} & \parbox[t]{5.8cm}{\raggedright\textbf{Failure interpretation}}\\
+\midrule
+Active-boundary ablation & \parbox[t]{5.8cm}{\raggedright Compare $\E[\ell_{t+k}\mid \doop(U)]$ and $\E[\ell_{t+k}\mid \doop(U_\emptyset)]$} & \parbox[t]{5.8cm}{\raggedright If unchanged, the update channel is not active for the tested boundary.}\\
+Causal loop closure & \parbox[t]{5.8cm}{\raggedright Transfer entropy or intervention effect from actions to future boundary-relevant states} & \parbox[t]{5.8cm}{\raggedright If zero or noise-level, the system is structurally passive for that task.}\\
+Capacity deficit & \parbox[t]{5.8cm}{\raggedright Estimate $R_{\min}^{(\tau)}(\varepsilon)-C_S$ for pre-registered $\Psi$} & \parbox[t]{5.8cm}{\raggedright If unspecified, deficit claims are not operational.}\\
+Pruning efficiency & \parbox[t]{5.8cm}{\raggedright Performance/resource ratio after memory compression, decay, consolidation, or plan deprecation} & \parbox[t]{5.8cm}{\raggedright If performance collapses or resources grow unbounded, pruning is inadequate.}\\
+Externalization efficiency & \parbox[t]{5.8cm}{\raggedright Ability to shift load to tools/memory while preserving access, reliability, and validation} & \parbox[t]{5.8cm}{\raggedright If external memory becomes unsearchable or untrusted, externalization fails.}\\
+Resource-governed persistence & \parbox[t]{5.8cm}{\raggedright Long-horizon viability under bounded compute, memory, latency, energy, or budget} & \parbox[t]{5.8cm}{\raggedright If viability requires unbounded subsidy, strong FDS-agency is not demonstrated.}\\
+Invariant quotient & \parbox[t]{5.8cm}{\raggedright Stability of API, policy, skill, schema, or identity predicate under admissible perturbations} & \parbox[t]{5.8cm}{\raggedright If no quotient exists, persistence depends on active maintenance rather than invariant support.}\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% -------------------------------------------------------------------
+\section{Worked Example: Battery-Constrained Mobile Agent}
+% -------------------------------------------------------------------
+
+\subsection{Two systems}
+
+Consider two systems in a mobile robot domain.
+
+\paragraph{System P: passive predictor.} System P receives observations or text descriptions and predicts the robot's battery state, likely travel range, or whether a planned route is feasible. It has no action channel, no durable self-state update relevant to future viability, and no ability to allocate battery or choose charging behavior.
+
+\paragraph{System A: boundary-maintaining agent.} System A monitors battery, localization, actuator health, route risk, charging opportunities, task deadlines, and compute budget. It updates a durable state estimate, selects actions, prunes plans that violate resource constraints, externalizes maps and logs, and treats operational continuity as part of its viability boundary.
+
+Both systems may accurately estimate remaining charge. Only System A has a maintenance loop connecting prediction to boundary-preserving action.
+
+\subsection{FDS variables}
+
+For System A:
+\begin{itemize}[leftmargin=2em]
+    \item $B_t$: operational robot boundary, including battery, actuator integrity, localization, and control access;
+    \item $M_t$: state estimator, map, task memory, plan library, energy model, tool logs;
+    \item $Y_t$: sensor readings, battery telemetry, map updates, task inputs;
+    \item $A_t$: movement, charging, task rejection, route revision, memory write, plan pruning;
+    \item $\ell_t$: boundary-maintenance loss combining battery failure, task failure, unsafe route selection, and localization drift;
+    \item $\Phi_t$: remaining energy, compute budget, time, and communication bandwidth.
+\end{itemize}
+
+\subsection{Tests}
+
+An active-boundary ablation freezes the energy-state update. If route decisions and future failure rates remain unchanged, the energy model was not part of active maintenance. If failure rate increases or charging behavior degrades, the update channel participates in boundary maintenance. Causal loop closure is tested by intervening on available actions: charging, delaying, rerouting, or pruning tasks. If actions alter future boundary variables, the causal loop is active. Pruning efficiency is tested by comparing systems that retain all plans and logs against systems that consolidate memories and deprecate infeasible plans under the same resource budget.
+
+\subsection{Interpretation}
+
+The example illustrates why prediction is not agency. A passive model can represent the viability variable without maintaining it. The FDS-agent treats the viability variable as part of its own boundary and acts to preserve it.
+
+\subsection{A minimal MDP illustration}
+
+Consider a four-location gridworld with an additional hidden viability bit $b_t\in\{0,1\}$, where $b_t=0$ denotes low battery or damage and $b_t=1$ denotes viable operation. The task-relevant state is
+\[
+Z_t=(x_t,b_t)\in\{1,2,3,4\}\times\{0,1\},
+\]
+so lossless task-relevant control requires distinguishing eight states:
+\[
+R_{\min}^{(\tau)}(0)=\log_2 8=3.
+\]
+Suppose the agent has only four internal memory states:
+\[
+|M|=4,\qquad C_S=\log_2|M|=2.
+\]
+Then
+\[
+\Delta_0(\tau)=R_{\min}^{(\tau)}(0)-C_S=1.
+\]
+Thus no purely internal model can represent all task-relevant distinctions. If the action required at the same location differs depending on $b_t$---for example, ``continue task'' when $b_t=1$ and ``seek charger'' when $b_t=0$---then any representation that aliases the two battery states incurs nonzero expected boundary-maintenance loss. If $\Prob(b_t=0\mid x_t)=\Prob(b_t=1\mid x_t)=1/2$ for some location $x_t$, then any deterministic policy conditioned only on the aliased internal state $M_t$ satisfies
+\[
+\Prob(\text{incorrect action}\mid x_t)\ge\frac12.
+\]
+Thus aliasing the viability bit produces an irreducible expected loss lower bound under any deterministic policy that conditions only on $M$.
+
+A passive mapper can output a plausible action from the observed prompt, but it has no durable update whose ablation changes future viability loss. An FDS-agent can reduce the deficit only by pruning irrelevant distinctions, externalizing the missing bit to an accessible battery register, relaxing the task, improving compression, or failing.
+
+% -------------------------------------------------------------------
+\section{Benchmark Design for FDS-Agency}
+% -------------------------------------------------------------------
+
+\subsection{Benchmark desiderata}
+
+An FDS-agency benchmark should not merely reward task completion in a static environment. It should test whether the system maintains a boundary over time under capacity and resource constraints. A benchmark should include:
+\begin{itemize}[leftmargin=2em]
+    \item persistent state across episodes;
+    \item distribution shifts and novelty;
+    \item bounded compute, memory, energy, latency, or money;
+    \item hidden or partially observed viability variables;
+    \item opportunities for pruning and externalization;
+    \item causal action channels affecting future observations;
+    \item ablation hooks for memory, update, monitoring, and tools.
+\end{itemize}
+
+\subsection{Metrics}
+
+Possible metrics include:
+\begin{itemize}[leftmargin=2em]
+    \item Viability$(H)=\Prob(\ell_t\leq \ell_c,\;t\leq H)$;
+    \item Resource efficiency $=$ (task utility)~$/$~(compute $+$ memory $+$ latency $+$ energy);
+    \item Pruning gain $=$ (perf.\ after pruning)~$/$~(resource load after pruning);
+    \item Externalization gain $=$ (perf.\ with ext.\ memory/tools)~$/$~(validation and access cost);
+    \item Ablation gap $=$ $\E[\ell\mid\doop(U_\emptyset)]-\E[\ell\mid\doop(U)]$.
+\end{itemize}
+
+\subsection{Deep causal tracking tasks}
+
+A particularly relevant family is deep causal tracking: tasks in which success requires maintaining a latent causal state over long horizons while acting to preserve access, resources, or viability. Passive mappers may perform well on shallow snapshots but degrade when hidden state, resource constraints, and action consequences accumulate. The FDS prediction is not that passive systems always fail, but that systems without update, pruning, or externalization channels should show worse scaling in task depth under bounded resources.
+
+\subsection{FDS-Gridworld evaluation protocol}
+
+The following procedure operationalizes the FDS agency test for the minimal MDP described in the worked example above.
+
+\begin{protocol}[FDS-Gridworld test]
+\begin{enumerate}[leftmargin=2em]
+    \item \textbf{Setup.} Instantiate a four-location gridworld with hidden viability bit $b_t\in\{0,1\}$. The agent observes $x_t$ but not $b_t$ directly. Internal memory $M_t$ has $|M|=4$ states ($C_S=2$ bits).
+    \item \textbf{Passive-mapper baseline.} Run the agent with a frozen policy that conditions only on $M_t$. Record viability $\Prob(\ell_t\leq\ell_c)$ over $H$ steps.
+    \item \textbf{Active-agent condition.} Allow the agent to read an external battery register (cost $c_{\mathrm{io}}$ per read) and to write viability-dependent state to $M_t$. The external register is not part of internal memory $M$; it is an externalization channel whose usefulness depends on read latency and cost.
+    \item \textbf{Ablation test.} Compare $\E[\ell_{t+k}\mid\doop(U)]$ against $\E[\ell_{t+k}\mid\doop(U_{\emptyset})]$ where $U_{\emptyset}$ disables the external register read. Compute the ablation gap.
+    \item \textbf{Pruning test.} After $H/2$ steps, enable memory consolidation that merges indistinguishable $M_t$ states while preserving boundary-relevant distinctions. Measure pruning gain as (post-pruning viability)~$/$~(post-pruning memory load).
+    \item \textbf{Metrics.} Report viability, ablation gap, pruning gain, and externalization gain for each condition. Compare against the lower bound $\Prob(\text{incorrect action}\mid x_t)\ge 1/2$ when the viability bit is aliased.
+\end{enumerate}
+\end{protocol}
+
+% -------------------------------------------------------------------
+\section{Falsification Conditions}
+% -------------------------------------------------------------------
+
+\subsection{Theory-level falsification}
+
+The FDS-agency framework fails or requires revision if a system satisfies the formal hypotheses while violating the conclusion. Examples include:
+\begin{itemize}[leftmargin=2em]
+    \item a system with no active boundary, no durable update, and no causal action channel nevertheless demonstrates stable resource-governed agency under the operational tests;
+    \item a verified passive mapper with $U$ ablated and no action-to-future-state influence maintains boundary viability across deep causal tracking tasks without external scaffolding;
+    \item task-relevant rate-distortion demand is consistently below internal capacity while the theory predicts deficit-driven failure;
+    \item pruning and externalization are experimentally irrelevant in regimes where the theory's hypotheses require them.
+\end{itemize}
+
+\subsection{Bridge-level falsification}
+
+The physical dissipation bridge fails if systems satisfying the stated Landauer conditions perform reliable logically irreversible erasure below the Landauer lower bound. Such a failure would affect thermodynamic corollaries, not the formal distinction between passive mapping and active boundary maintenance.
+
+\subsection{Application-level falsification}
+
+The AI application fails if the proposed variables $B,M,U,\ell,\Phi,\Psi$ are misidentified or if the operational tests do not separate passive mapping from agency in practice. Such failure would require revising the AI bridge, not necessarily the FDS formal core.
+
+% -------------------------------------------------------------------
+\section{Discussion}
+% -------------------------------------------------------------------
+
+\subsection{Scale and agency}
+
+The framework does not deny scaling laws. Larger models can increase internal capacity, improve compression, lower approximation error, and support better planning. The claim is narrower: scale alone does not imply active boundary maintenance. A model can become a better mapper without acquiring durable self-maintenance, causal loop closure, or resource-governed persistence. Conversely, a smaller model embedded in a robust tool-using architecture may be more agentic than a larger model evaluated as an isolated feed-forward mapper.
+
+\subsection{Base model versus system boundary}
+
+Many arguments about LLM agency conflate the model with the system. The FDS view insists that the unit of analysis is the operational boundary. A base model may be passive, while the surrounding architecture may include memory, tools, actuators, monitors, and resource governors. The relevant question is whether the coupled system satisfies the FDS-agent criteria.
+
+\subsection{Active pruning versus forgetting}
+
+Not all forgetting is pruning. Passive decay may reduce memory load but can destroy function. Active pruning is selective, task-sensitive, and resource-governed. In AI systems, pruning may include memory consolidation, skill abstraction, context compression, tool deprecation, stale-plan removal, cache invalidation, and policy simplification. The key test is whether pruning preserves or improves boundary viability under resource constraints.
+
+\subsection{Externalization as agency support}
+
+Externalization is not a loophole. Agents routinely move distinctions into environments: maps, notes, source code, calendars, databases, logs, tools, institutions, and shared protocols. AI systems do the same through retrieval, tool use, vector stores, code execution, world models, and persistent memory. Externalization supports agency when the coupled architecture can access, validate, update, and protect the externalized structure.
+
+\subsection{Relation to consciousness}
+
+The FDS criterion is not a theory of consciousness. It can classify a system as structurally agentic without implying phenomenology. A system may satisfy active boundary maintenance, causal loop closure, and resource-governed persistence while remaining non-conscious. Consciousness claims require additional bridge assumptions and are outside this paper.
+
+% -------------------------------------------------------------------
+\section{Limitations}
+% -------------------------------------------------------------------
+
+The present paper has several limitations.
+
+First, it provides a formal criterion and test protocol, not a completed empirical benchmark suite. Implementing the tests requires task-specific measurement choices.
+
+Second, transfer entropy and observational directed information can be confounded. Intervention tests are preferred when feasible.
+
+Third, estimating rate-distortion demand in rich AI tasks is difficult. Practical approximations may use compression curves, bottleneck objectives, predictive information, model-size scaling, or task-specific lower bounds.
+
+Fourth, resource budgets are heterogeneous. Energy, compute, latency, memory, money, and human oversight are not identical, though all can constrain maintenance.
+
+Fifth, the boundary of an AI system may be contested. The FDS protocol requires the evaluator to specify the operational boundary before testing agency.
+
+Sixth, the framework states necessary structural conditions for strong FDS-agency, not a complete recipe for building safe or beneficial agents.
+
+% -------------------------------------------------------------------
+\section{Conclusion}
+% -------------------------------------------------------------------
+
+This paper has proposed active finite distinction systems as a formal criterion for artificial agency. The central distinction is between systems that merely map inputs to outputs and systems that maintain an operational boundary under finite capacity and resource constraints. A strong FDS-agent must have active boundary maintenance, durable update participation, causal loop closure, capacity-deficit management, and resource-governed persistence.
+
+The framework reframes debates about AI agency. A frozen predictive model evaluated at inference time may be a passive mapper even when highly competent. A coupled architecture containing such a model may become agentic if it includes writable memory, monitoring, action channels, pruning, externalization, and resource governance. The unit of analysis is the maintained system boundary, not the neural network alone.
+
+The result is not a pessimistic claim about AI. It is an architectural claim: agency requires maintenance loops. Future work should implement the operational tests proposed here, develop benchmark environments for capacity-deficit management, quantify pruning and externalization efficiency, and connect FDS-agency to stochastic thermodynamics, active inference, and information geometry.
+
+% -------------------------------------------------------------------
+\section*{Acknowledgments}
+% -------------------------------------------------------------------
+
+The author used AI-assisted tools for language polishing, structural feedback, and drafting support. All claims, arguments, citations, and final wording remain the responsibility of the author.
+
+% -------------------------------------------------------------------
+\appendix
+% -------------------------------------------------------------------
+
+\section{Glossary}
+
+\begin{description}[leftmargin=2em,style=nextline]
+    \item[Active finite distinction system] A finite-capacity system that maintains a boundary through state-dependent updates under resource constraints.
+    \item[Active boundary] A boundary whose maintenance depends on nontrivial updates that are relevant to future boundary-maintenance loss.
+    \item[Passive mapper] A system evaluated as an input-output mapping without durable self-update, causal action, or maintenance loop.
+    \item[Capacity deficit] The rate-distortion gap $\Delta_{\varepsilon}(\tau)=R_{\min}^{(\tau)}(\varepsilon)-C_S$.
+    \item[Active pruning] Selective removal, compression, or reorganization of internal structure to reduce maintenance load while preserving function.
+    \item[Externalization] Relocation of representational, energetic, or control load outside the internal memory budget while retaining access through the system boundary.
+    \item[Causal loop closure] Measurable influence of actions or update decisions on future boundary-relevant states.
+    \item[Strong FDS-agent] An artificial system satisfying active boundary, durable update, causal loop, capacity-deficit management, and resource-governed persistence criteria.
+    \item[Invariant-supported persistence] Persistence of identity through a quotient or invariant feature stable under admissible perturbations.
+\end{description}
+
+\section{Minimal LaTeX Notation Table}
+
+
+\begin{table*}[ht]
+\centering
+\small
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{ll}
+\toprule
+\parbox[t]{2cm}{\raggedright\textbf{Symbol}} & \parbox[t]{9cm}{\raggedright\textbf{Meaning}}\\
+\midrule
+\midrule
+\parbox[t]{2cm}{\raggedright $X$} & \parbox[t]{9cm}{\raggedright Internal state space}\\
+\parbox[t]{2cm}{\raggedright $E$} & \parbox[t]{9cm}{\raggedright Environmental state space}\\
+\parbox[t]{2cm}{\raggedright $B$} & \parbox[t]{9cm}{\raggedright Boundary/interface variable}\\
+\parbox[t]{2cm}{\raggedright $M$} & \parbox[t]{9cm}{\raggedright Internal memory/model state}\\
+\parbox[t]{2cm}{\raggedright $Y$} & \parbox[t]{9cm}{\raggedright Observation channel}\\
+\parbox[t]{2cm}{\raggedright $A$} & \parbox[t]{9cm}{\raggedright Action or boundary-update space}\\
+\parbox[t]{2cm}{\raggedright $U$} & \parbox[t]{9cm}{\raggedright Internal update operator}\\
+\parbox[t]{2cm}{\raggedright $\pi$} & \parbox[t]{9cm}{\raggedright Finite distinction projection or coarse-graining}\\
+\parbox[t]{2cm}{\raggedright $\ell$} & \parbox[t]{9cm}{\raggedright Boundary-maintenance loss}\\
+\parbox[t]{2cm}{\raggedright $\Phi$} & \parbox[t]{9cm}{\raggedright Resource or free-energy budget}\\
+\parbox[t]{2cm}{\raggedright $\mathcal{P}$} & \parbox[t]{9cm}{\raggedright Perturbation, pruning, coarse-graining, or degradation family}\\
+\parbox[t]{2cm}{\raggedright $\tau$} & \parbox[t]{9cm}{\raggedright Update timescale}\\
+\parbox[t]{2cm}{\raggedright $C_S$} & \parbox[t]{9cm}{\raggedright Internal representational capacity}\\
+\parbox[t]{2cm}{\raggedright $\Psi$} & \parbox[t]{9cm}{\raggedright Admissible family of task statistics}\\
+\parbox[t]{2cm}{\raggedright $R_{\min}^{(\tau)}(\varepsilon)$} & \parbox[t]{9cm}{\raggedright Minimal task-relevant rate-distortion demand}\\
+\parbox[t]{2cm}{\raggedright $\Delta_{\varepsilon}(\tau)$} & \parbox[t]{9cm}{\raggedright Capacity deficit}\\
+$H(M_t\mid M_{t+1},Y_t)$ & Logical erasure per update\\
+$\TE_{A\to Y}^{(k)}$ & Directed action-to-future-observation information marker\\
+\bottomrule
+\end{tabular}
+\caption{Minimal LaTeX notation table for the FDS agency criterion.}
+\end{table*}
+
+\section{Suggested Empirical Reporting Checklist}
+
+A paper claiming artificial agency under the FDS criterion should report:
+\begin{enumerate}[leftmargin=2em]
+    \item the evaluated system boundary;
+    \item the memory and update channels;
+    \item the action channels and future-state variables;
+    \item the resource envelope;
+    \item the task family and admissible statistics;
+    \item ablation results for update, memory, monitoring, and tools;
+    \item evidence of causal loop closure;
+    \item pruning or externalization mechanisms;
+    \item long-horizon persistence metrics;
+    \item failure cases and non-claims.
+\end{enumerate}
+
+% -------------------------------------------------------------------
+\begin{thebibliography}{99}
+
+ \bibitem{wu2026fds}
+ Y. Wu, ``Active Finite Distinction Systems: A Formal Core for Boundary Maintenance under Finite Capacity,'' Zenodo, 2026, \href{https://doi.org/10.5281/zenodo.20158923}{doi:10.5281/zenodo.20158923}.
+
+ \bibitem{wu2026distinction}
+ Y. Wu, ``Distinction Theory: A General Theory of Finite Systems,'' Zenodo, 2026, \href{https://doi.org/10.5281/zenodo.20130174}{doi:10.5281/zenodo.20130174}.
+
+\bibitem{spencerbrown1969}
+G. Spencer-Brown, \emph{Laws of Form}. Allen \& Unwin, London, 1969.
+
+\bibitem{bateson1972}
+G. Bateson, \emph{Steps to an Ecology of Mind}. Chandler, San Francisco, 1972.
+
+\bibitem{peirce1931}
+C. S. Peirce, \emph{Collected Papers of Charles Sanders Peirce}, Vols. 1--8. Harvard University Press, 1931--1958.
+
+\bibitem{ladyman2007}
+J. Ladyman and D. Ross, \emph{Every Thing Must Go: Metaphysics Naturalized}. Oxford University Press, 2007.
+
+\bibitem{wooldridge1995intelligent}
+M. Wooldridge and N. R. Jennings, ``Intelligent agents: theory and practice,'' \emph{The Knowledge Engineering Review}, vol. 10, no. 2, pp. 115--152, 1995.
+
+\bibitem{beer1995dynamical}
+R. D. Beer, ``A dynamical systems perspective on agent-environment interaction,'' \emph{Artificial Intelligence}, vol. 72, no. 1--2, pp. 173--215, 1995.
+
+\bibitem{brooks1991intelligence}
+R. A. Brooks, ``Intelligence without representation,'' \emph{Artificial Intelligence}, vol. 47, no. 1--3, pp. 139--159, 1991.
+
+\bibitem{barandiaran2009defining}
+X. E. Barandiaran, E. Di Paolo, and M. Rohde, ``Defining agency: individuality, normativity, asymmetry, and spatio-temporality in action,'' \emph{Adaptive Behavior}, vol. 17, no. 5, pp. 367--386, 2009.
+
+\bibitem{friston2010free}
+K. Friston, ``The free-energy principle: a unified brain theory?'' \emph{Nature Reviews Neuroscience}, vol. 11, pp. 127--138, 2010.
+
+\bibitem{friston2017active}
+K. Friston, T. FitzGerald, F. Rigoli, P. Schwartenbeck, and G. Pezzulo, ``Active inference: a process theory,'' \emph{Neural Computation}, vol. 29, no. 1, pp. 1--49, 2017.
+
+\bibitem{kirchhoff2018markov}
+M. D. Kirchhoff, T. Parr, E. Palacios, K. Friston, and J. Kiverstein, ``The Markov blankets of life: autonomy, active inference and the free energy principle,'' \emph{Journal of the Royal Society Interface}, vol. 15, 20170792, 2018.
+
+\bibitem{klyubin2005empowerment}
+A. S. Klyubin, D. Polani, and C. L. Nehaniv, ``Empowerment: a universal agent-centric measure of control,'' in \emph{Proc. IEEE Congress on Evolutionary Computation}, vol. 1, pp. 128--135, 2005.
+
+\bibitem{schreiber2000measuring}
+T. Schreiber, ``Measuring information transfer,'' \emph{Physical Review Letters}, vol. 85, pp. 461--464, 2000.
+
+\bibitem{yao2023react}
+S. Yao et al., ``ReAct: synergizing reasoning and acting in language models,'' \emph{International Conference on Learning Representations}, 2023. arXiv:2210.03629.
+
+\bibitem{wang2023survey}
+L. Wang et al., ``A survey on large language model based autonomous agents,'' arXiv:2308.11432, 2023.
+
+\bibitem{liu2023agentbench}
+X. Liu et al., ``AgentBench: evaluating LLMs as agents,'' arXiv:2308.03688, 2023.
+
+\bibitem{wang2023voyager}
+G. Wang et al., ``Voyager: an open-ended embodied agent with large language models,'' arXiv:2305.16291, 2023.
+
+\bibitem{ha2018world}
+D. Ha and J. Schmidhuber, ``World models,'' arXiv:1803.10122, 2018.
+
+\bibitem{shannon1948mathematical}
+C. E. Shannon, ``A mathematical theory of communication,'' \emph{Bell System Technical Journal}, vol. 27, pp. 379--423 and 623--656, 1948.
+
+\bibitem{shannon1959coding}
+C. E. Shannon, ``Coding theorems for a discrete source with a fidelity criterion,'' \emph{IRE National Convention Record}, vol. 7, pp. 142--163, 1959.
+
+\bibitem{berger1971rate}
+T. Berger, \emph{Rate Distortion Theory: A Mathematical Basis for Data Compression}. Prentice-Hall, 1971.
+
+\bibitem{cover2006elements}
+T. M. Cover and J. A. Thomas, \emph{Elements of Information Theory}, 2nd ed. Wiley, 2006.
+
+\bibitem{landauer1961irreversibility}
+R. Landauer, ``Irreversibility and heat generation in the computing process,'' \emph{IBM Journal of Research and Development}, vol. 5, pp. 183--191, 1961.
+
+\bibitem{berut2012experimental}
+A. B\'{e}rut et al., ``Experimental verification of Landauer's principle linking information and thermodynamics,'' \emph{Nature}, vol. 483, pp. 187--189, 2012.
+
+\bibitem{seifert2005entropy}
+U. Seifert, ``Entropy production along a stochastic trajectory and an integral fluctuation theorem,'' \emph{Physical Review Letters}, vol. 95, 040602, 2005.
+
+\bibitem{parrondo2015thermodynamics}
+J. M. R. Parrondo, J. M. Horowitz, and T. Sagawa, ``Thermodynamics of information,'' \emph{Reviews of Modern Physics}, vol. 87, pp. 45--67, 2015.
+
+\bibitem{horowitz2015equivalent}
+J. M. Horowitz and T. Sagawa, ``Equivalent information-theoretic and thermodynamic formulations of the second law in feedback-controlled systems,'' \emph{Journal of Statistical Mechanics: Theory and Experiment}, P03022, 2015.
+
+\bibitem{russell2020ai}
+S. Russell and P. Norvig, \emph{Artificial Intelligence: A Modern Approach}, 4th ed. Pearson, 2020.
+
+\bibitem{russell2016artificial}
+S. Russell, D. Dewey, and M. Tegmark, ``Research priorities for robust and beneficial artificial intelligence,'' \emph{AI Magazine}, vol. 36, no. 4, pp. 105--114, 2016.
+
+\bibitem{sutton2018reinforcement}
+R. S. Sutton and A. G. Barto, \emph{Reinforcement Learning: An Introduction}, 2nd ed. MIT Press, 2018.
+
+\bibitem{graves2014neural}
+A. Graves, G. Wayne, and I. Danihelka, ``Neural Turing machines,'' arXiv:1410.5401, 2014.
+
+\bibitem{vaswani2017attention}
+A. Vaswani et al., ``Attention is all you need,'' \emph{Advances in Neural Information Processing Systems}, vol. 30, 2017.
+
+\bibitem{rae2016scaling}
+J. W. Rae, J. J. Hunt, I. Danihelka, T. Harley, A. W. Senior, G. Wayne, A. Graves, and T. Lillicrap, ``Scaling memory-augmented neural networks,'' arXiv:1602.09060, 2016.
+
+\bibitem{mccloskey1989catastrophic}
+M. McCloskey and N. J. Cohen, ``Catastrophic interference in connectionist networks: the sequential learning problem,'' \emph{Psychology of Learning and Motivation}, vol. 24, pp. 109--165, 1989.
+
+\bibitem{kirkpatrick2017overcoming}
+J. Kirkpatrick et al., ``Overcoming catastrophic forgetting in neural networks,'' \emph{Proceedings of the National Academy of Sciences}, vol. 114, no. 13, pp. 3521--3526, 2017.
+
+\bibitem{parisi2019continual}
+G. I. Parisi, R. Kemker, J. L. Part, C. Kanan, and S. Wermter, ``Continual lifelong learning with neural networks: a review,'' \emph{Neural Networks}, vol. 113, pp. 54--71, 2019.
+
+\bibitem{simon1955behavioral}
+H. A. Simon, ``A behavioral model of rational choice,'' \emph{The Quarterly Journal of Economics}, vol. 69, no. 1, pp. 99--118, 1955.
+
+\bibitem{gigerenzer2002bounded}
+G. Gigerenzer and R. Selten (eds.), \emph{Bounded Rationality: The Adaptive Toolbox}. MIT Press, 2002.
+
+\bibitem{lieder2020resource}
+F. Lieder and T. L. Griffiths, ``Resource-rational analysis: understanding human cognition as the optimal use of limited computational resources,'' \emph{Behavioral and Brain Sciences}, vol. 43, e1, 2020.
+
+\bibitem{shenhav2017completion}
+A. Shenhav, S. Musslick, F. Lieder, W. Kool, T. L. Griffiths, J. D. Cohen, and M. M. Botvinick, ``Toward a rational and mechanistic account of mental effort,'' \emph{Annual Review of Neuroscience}, vol. 40, pp. 99--124, 2017.
+
+\bibitem{amodei2016concrete}
+D. Amodei, C. Olah, J. Steinhardt, P. Christiano, J. Schulman, and D. Man\'{e}, ``Concrete problems in AI safety,'' arXiv:1606.06565, 2016.
+
+\bibitem{hubinger2019risks}
+E. Hubinger, C. van Merwijk, V. Mikulik, J. Skalse, and S. Garrabrant, ``Risks from learned optimization in advanced machine learning systems,'' arXiv:1906.01820, 2019.
+
+\bibitem{ngo2023alignment}
+R. Ngo, L. Chan, and S. Mindermann, ``The alignment problem from a deep learning perspective,'' \emph{International Conference on Learning Representations}, 2023. arXiv:2209.00626.
+
+\bibitem{patil2025bfcl}
+S. G. Patil, H. Mao, F. Yan, C. Ji, V. Suresh, I. Stoica, and J. E. Gonzalez, ``The Berkeley function calling leaderboard (BFCL): from tool use to agentic evaluation of large language models,'' \emph{International Conference on Machine Learning (ICML)}, 2025.
+
+\bibitem{nguyen2025dynasaur}
+D. Nguyen et al., ``DynaSaur: large language agents beyond predefined actions,'' \emph{Conference on Language Modeling (COLM)}, 2025. arXiv:2411.01747.
+
+\bibitem{jiang2025piperag}
+W. Jiang, S. Zhang, B. Han, J. Wang, B. Wang, and T. Kraska, ``PipeRAG: fast retrieval-augmented generation by algorithm-system co-design,'' \emph{ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)}, 2025.
+
+\bibitem{lin2025telerag}
+C.-Y. Lin et al., ``TeleRAG: efficient retrieval-augmented generation inference with lookahead retrieval,'' arXiv:2502.20969, 2025.
+
+\end{thebibliography}
+
+\end{document}
