@@ -1,6 +1,14 @@
 # Distinction Theory / Active Finite Distinction Systems
 
+[![Official Website](https://img.shields.io/badge/Official_Website-distinctiontheory.org-blue)](https://www.distinctiontheory.org)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![GitHub](https://img.shields.io/badge/GitHub-yiningwu--research%2FDistinction--Theory-black)](https://github.com/yiningwu-research/Distinction-Theory)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20130174.svg)](https://doi.org/10.5281/zenodo.20130174)
+
 A falsifiable, tiered research programme for finite systems, boundary maintenance, capacity deficit, pruning, externalization, collapse, and invariant-supported persistence.
+
+> **Official website:** [distinctiontheory.org](https://www.distinctiontheory.org)  
+> Public portal for the start guide, papers, claim status, failure registry, prior-art boundary, and citation resources.
 
 **Author:** Yining Wu  
 **Affiliation:** Independent Researcher  
@@ -25,9 +33,47 @@ Failed claims are to be revised, demoted, quarantined, or abandoned according to
 
 ---
 
+## Official Public Portal
+
+The official public website for Distinction Theory / Active Finite Distinction Systems is:
+
+**https://www.distinctiontheory.org**
+
+The website provides the public navigation layer for:
+
+- a Start Guide for new readers;
+- current paper map and released papers;
+- claim-status tables;
+- failure and demotion conditions;
+- prior-art boundaries;
+- citation and contact information.
+
+This GitHub repository serves as the archival and version-tracking layer.
+
+Recommended entry points:
+
+- [Start Here](https://www.distinctiontheory.org/start)
+- [Papers](https://www.distinctiontheory.org/papers)
+- [Claims](https://www.distinctiontheory.org/claims)
+- [Failure Registry](https://www.distinctiontheory.org/failure-registry)
+- [Prior-Art Boundary](https://www.distinctiontheory.org/prior-art)
+
+The website and this repository are mutually linked.  
+The website is the public navigation layer; this repository is the archival source layer.
+
+---
+
 ## If You Are New
 
-Start here:
+For most new readers, use the official website first:
+
+1. **Start Guide:** [https://www.distinctiontheory.org/start](https://www.distinctiontheory.org/start)
+2. **Paper map:** [https://www.distinctiontheory.org/papers](https://www.distinctiontheory.org/papers)
+3. **Claim status:** [https://www.distinctiontheory.org/claims](https://www.distinctiontheory.org/claims)
+4. **Failure registry:** [https://www.distinctiontheory.org/failure-registry](https://www.distinctiontheory.org/failure-registry)
+5. **Prior-art boundary:** [https://www.distinctiontheory.org/prior-art](https://www.distinctiontheory.org/prior-art)
+
+For archival documents in this repository:
 
 1. `START_HERE.md` — reading paths.
 2. `FDS-0` — formal finite-system core.
@@ -52,9 +98,26 @@ Do not start with the full DT Archive unless you want the complete claim-space.
 
 ## Reading Paths
 
-See `START_HERE.md` for detailed reading paths by entry level and interest area.
+For most new readers, use the official website first:
 
-The shortest route: README → FDS-0 → FDS-A1 → CLAIM_STATUS.md.
+1. Start with the public guide: [https://www.distinctiontheory.org/start](https://www.distinctiontheory.org/start)
+2. Review the paper map: [https://www.distinctiontheory.org/papers](https://www.distinctiontheory.org/papers)
+3. Check claim status before evaluating downstream claims: [https://www.distinctiontheory.org/claims](https://www.distinctiontheory.org/claims)
+4. Review failure conditions: [https://www.distinctiontheory.org/failure-registry](https://www.distinctiontheory.org/failure-registry)
+5. Read prior-art boundaries: [https://www.distinctiontheory.org/prior-art](https://www.distinctiontheory.org/prior-art)
+
+For the full archival document:
+
+1. Start with the Prologue.
+2. Read Part I: The Essence of Distinction Theory.
+3. Review The Core Chain and The Ten-Step Derivation.
+4. Read The Three-Layer Architecture and The Claim Hierarchy before judging downstream claims.
+5. Continue to The Physical Bridge.
+6. Read The Constitutional Corollaries.
+7. Treat all physical, biological, cognitive, AI, and civilizational extensions according to their assigned epistemic tier.
+8. Read The Methodology of Falsification and Appendix N: Falsifiability Registry before evaluating the protective belt.
+
+See also `START_HERE.md` for detailed reading paths by entry level and interest area.
 
 ---
 
@@ -222,36 +285,25 @@ It also provides an operational test protocol and a minimal gridworld MDP illust
 
 ```text
 Distinction-Theory/
-├── README.md
-├── START_HERE.md
-├── PAPER_MAP.md
-├── CLAIM_STATUS.md
-├── FAILURE_REGISTRY.md
-├── EVALUATION_PROTOCOL.md
-├── PRIOR_ART_BOUNDARY.md
-├── CITATION.cff
-├── LICENSE
+├── README.md                   # Repository overview
+├── START_HERE.md               # Reading paths
+├── PAPER_MAP.md                # Publication roadmap
+├── CLAIM_STATUS.md             # Current claim status table
+├── FAILURE_REGISTRY.md         # Failure conditions and consequences
+├── EVALUATION_PROTOCOL.md      # How to critique DT/FDS
+├── PRIOR_ART_BOUNDARY.md       # Prior-art boundary conditions
+├── CITATION.cff                # Citation metadata
+├── OFFICIAL_LINKS.md           # Key project links
 ├── .gitignore
-├── papers/
-│   ├── README.md
-│   ├── Distinction_Theory_Archive_v1.0.pdf
-│   ├── FDS_Core_v1.0.pdf
-│   ├── FDS_Physical_Bridge_Claim_Registry_v1.0.pdf
-│   └── FDS_AI_Agency_v1.0.pdf
-├── source/
-│   ├── README.md
-│   └── FDS_AI_Agency_v1.0.tex
-├── registries/
-│   ├── README.md
-│   ├── claim_status.csv
-│   ├── failure_registry.csv
-│   └── dependency_map.md
-└── .github/
-    └── ISSUE_TEMPLATE/
-        ├── claim_challenge.md
-        ├── prior_art_note.md
-        └── typo_or_clarification.md
+├── papers/                     # Released PDFs
+├── source/                     # LaTeX sources
+├── registries/                 # Machine-readable registries
+└── .github/                    # Issue templates
 ```
+
+The official public navigation layer is maintained at:
+
+[https://www.distinctiontheory.org](https://www.distinctiontheory.org)
 
 ---
 
@@ -381,6 +433,10 @@ This entry will be updated when the arXiv identifier is assigned.
 Unless otherwise stated, written materials in this repository are released for scholarly reading, citation, and discussion.
 
 Please cite the relevant DOI or arXiv version when using or discussing the work.
+
+---
+
+See also: [OFFICIAL_LINKS.md](OFFICIAL_LINKS.md)
 
 ---
 
