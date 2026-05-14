@@ -32,12 +32,21 @@ Core message:
 
 > Claims are layered. Failure is local.
 
+## 4. Life and Cognitive Science Bridge Claim Registry
+
+Scope: FDS-LC0, life/cognitive bridge claims, active pruning, residue-induced collapse, death-like maintenance-attractor loss, surface-to-volume scaling, near-collapse warnings, cognitive bottlenecks, anesthesia recovery ordering, self/agency coherence.
+
+YouTube: https://www.youtube.com/watch?v=3BuvnUCsDD0
+
+This video introduces the public claim registry for life-science and cognitive-science bridge claims.
+
 ## Suggested viewing order
 
 1. Distinction Theory overview.
 2. Finite Distinction Systems introduction.
 3. Physical Bridge Claim Registry.
-4. Then read the papers and claim-status pages.
+4. Life and Cognitive Science Bridge Claim Registry.
+5. Then read the papers and claim-status pages.
 
 ## YouTube description links
 
