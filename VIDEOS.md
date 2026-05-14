@@ -16,7 +16,7 @@ Recommended before reading FDS-0.
 
 Scope: DT-Archive, full research programme, claim-space map, layered architecture, falsifiability.
 
-Status: Coming soon.
+YouTube: https://www.youtube.com/watch?v=ccaCFy_rY6Q
 
 Recommended before reading the full DT Archive.
 

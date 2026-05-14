@@ -70,7 +70,7 @@ Official video introductions are available on YouTube and the project website:
 - **Finite Distinction Systems: A First Introduction** — [Watch on YouTube](https://www.youtube.com/watch?v=AbhPKY91zOU)  
   Introduction to the formal finite-system core: boundary maintenance, finite capacity, capacity deficit, pruning, collapse, and invariant persistence.
 
-- **Distinction Theory: A General Theory of Finite Systems** — *Coming soon*  
+- **Distinction Theory: A General Theory of Finite Systems** — [Watch on YouTube](https://www.youtube.com/watch?v=ccaCFy_rY6Q)  
   Overview of the full research programme and claim-space archive.
 
 Videos page: [https://www.distinctiontheory.org/videos](https://www.distinctiontheory.org/videos)
