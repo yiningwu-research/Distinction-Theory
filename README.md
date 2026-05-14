@@ -8,6 +8,8 @@
 A falsifiable, tiered research programme for finite systems, boundary maintenance, capacity deficit, pruning, externalization, collapse, and invariant-supported persistence.
 
 > **Official website:** [distinctiontheory.org](https://www.distinctiontheory.org)  
+> **YouTube:** [@DistinctionTheory](https://www.youtube.com/@DistinctionTheory)  
+> **X:** [@FDSTheory](https://x.com/FDSTheory)  
 > Public portal for the start guide, papers, claim status, failure registry, prior-art boundary, and citation resources.
 
 **Author:** Yining Wu  

@@ -18,6 +18,11 @@ https://github.com/yiningwu-research/Distinction-Theory
 - Evaluation Protocol: https://www.distinctiontheory.org/evaluation
 - About / Citation: https://www.distinctiontheory.org/about
 
+## Social / Updates
+
+- YouTube: https://www.youtube.com/@DistinctionTheory
+- X: https://x.com/FDSTheory
+
 ## Project Identity
 
 Distinction Theory / Active Finite Distinction Systems  

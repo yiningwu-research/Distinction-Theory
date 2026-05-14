@@ -50,3 +50,6 @@ Each video description includes links to:
 - FDS-P0: https://www.distinctiontheory.org/papers/physical-registry
 - Claims: https://www.distinctiontheory.org/claims
 - Failure Registry: https://www.distinctiontheory.org/failure-registry
+- X: https://x.com/FDSTheory
+
+Short updates and release notes are posted on X: https://x.com/FDSTheory
