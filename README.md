@@ -25,6 +25,20 @@ Failed claims are to be revised, demoted, quarantined, or abandoned according to
 
 ---
 
+## If You Are New
+
+Start here:
+
+1. `START_HERE.md` — reading paths.
+2. `FDS-0` — formal finite-system core.
+3. `FDS-A1` — artificial agency criterion.
+4. `CLAIM_STATUS.md` — current status of major claims.
+5. `FAILURE_REGISTRY.md` — how claims can fail.
+
+Do not start with the full DT Archive unless you want the complete claim-space.
+
+---
+
 ## Key Documents
 
 | Code | Document | Status | DOI / Link |
@@ -36,16 +50,11 @@ Failed claims are to be revised, demoted, quarantined, or abandoned according to
 
 ---
 
-## Suggested Reading Path
+## Reading Paths
 
-For new readers:
+See `START_HERE.md` for detailed reading paths by entry level and interest area.
 
-1. Start with **FDS-0: Active Finite Distinction Systems** for the formal object and core finite-system architecture.
-2. Read **FDS-A1: Artificial Agency** for the most operational AI-facing application.
-3. Read **FDS-P0: Physical Bridge Claim Registry** for physical bridge claims, risk tiers, and falsification conditions.
-4. Use **DT-Archive** as the broad claim-space archive and historical map of the programme.
-
-The **DT Archive** is intentionally broad. The **FDS Core** is the best entry point for the formal framework.
+The shortest route: README → FDS-0 → FDS-A1 → CLAIM_STATUS.md.
 
 ---
 
@@ -214,15 +223,34 @@ It also provides an operational test protocol and a minimal gridworld MDP illust
 ```text
 Distinction-Theory/
 ├── README.md
+├── START_HERE.md
+├── PAPER_MAP.md
+├── CLAIM_STATUS.md
+├── FAILURE_REGISTRY.md
+├── EVALUATION_PROTOCOL.md
+├── PRIOR_ART_BOUNDARY.md
+├── CITATION.cff
+├── LICENSE
+├── .gitignore
 ├── papers/
+│   ├── README.md
 │   ├── Distinction_Theory_Archive_v1.0.pdf
 │   ├── FDS_Core_v1.0.pdf
 │   ├── FDS_Physical_Bridge_Claim_Registry_v1.0.pdf
 │   └── FDS_AI_Agency_v1.0.pdf
 ├── source/
+│   ├── README.md
 │   └── FDS_AI_Agency_v1.0.tex
-├── notes/
-└── CITATION.cff
+├── registries/
+│   ├── README.md
+│   ├── claim_status.csv
+│   ├── failure_registry.csv
+│   └── dependency_map.md
+└── .github/
+    └── ISSUE_TEMPLATE/
+        ├── claim_challenge.md
+        ├── prior_art_note.md
+        └── typo_or_clarification.md
 ```
 
 ---

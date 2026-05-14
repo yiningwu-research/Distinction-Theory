@@ -1,0 +1,12 @@
+ID,Claim,Status,Dependency,Falsification_Demotion_Condition,Failure_Consequence
+FDS-0,Active finite systems maintain boundaries under finite capacity,Core,formal definitions,mathematical counterexample to stated theorem/hypotheses,revise formal core
+CC-1,Capacity deficit under finite representation,Core / conditional,finite capacity + task demand,"finite system maintains lossless model of incompressible environment under bounded capacity",revise/demote capacity-deficit theorem
+PB-L,Landauer bridge for irreversible updates,Physical bridge,standard Landauer conditions,"reliable logically irreversible erasure below thermodynamic floor under stated assumptions",demote physical bridge / formal core remains
+A1,Passive mappers are not FDS-agents,Operational AI,boundary/update/resource criteria,update ablation does not affect future boundary-maintenance loss,revise AI agency criterion
+A1-D,"Strong FDS-agency requires resource-governed persistence",Operational AI,FDS tuple + persistence test,"system satisfies task output competence without durable update or boundary maintenance",classify as mapper/scaffold / not strong agent
+L1,Life as active pruning,Domain bridge,biological mapping of pruning operator,"passive chemistry with S=0 sustains long-term non-equilibrium identity without residue collapse",demote life bridge
+L1-D,Death as maintenance-attractor collapse,Domain bridge,dynamical systems mapping,"death trajectories systematically lack maintenance-attractor loss or critical transition signatures",revise death normal form
+O1,Observer as finite distinction-register,Operational / physical bridge,finite record capacity,"measurement records require no finite registration or boundary-stabilized state",demote observer bridge
+O2,Time as irreversible distinction update,Operational / physical bridge,truncation + irreversible update,"finite record-updates are fully invertible under bounded memory in physical implementation",revise time bridge
+P3,Topological obstruction to forgetting / two-kink signature,High-risk physical bridge,NHSE/topological platform,"no entropy-production kink and no operator-forgetting kink under validated noise conditions",kill/demote P3 module
+X1,Horizon-maintenance dark energy,High-risk physical bridge,cosmological bridge assumptions,observations force exact Λ behavior beyond stated tolerance,demote X1
