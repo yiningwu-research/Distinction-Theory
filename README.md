@@ -73,6 +73,9 @@ Official video introductions are available on YouTube and the project website:
 - **Distinction Theory: A General Theory of Finite Systems** — [Watch on YouTube](https://www.youtube.com/watch?v=ccaCFy_rY6Q)  
   Overview of the full research programme and claim-space archive.
 
+- **Physical Bridge Claim Registry** — [Watch on YouTube](https://www.youtube.com/watch?v=mbbQkbIonpE)  
+  Failure-aware overview of FDS-P0 as a dependency-ordered, failure-aware physical bridge map. This video explains that FDS-P0 is not a completed physical theory — claims are layered, failure is local.
+
 Videos page: [https://www.distinctiontheory.org/videos](https://www.distinctiontheory.org/videos)
 
 See also: [VIDEOS.md](VIDEOS.md)
@@ -259,6 +262,8 @@ Main themes:
 Zenodo DOI: [10.5281/zenodo.20159995](https://doi.org/10.5281/zenodo.20159995)
 
 A dependency-ordered physical claim registry.
+
+Video overview: [Physical Bridge Claim Registry | Distinction Theory / FDS](https://www.youtube.com/watch?v=mbbQkbIonpE)
 
 This document registers physical bridge claims involving:
 

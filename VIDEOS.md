@@ -4,15 +4,7 @@ This page lists official video introductions to Distinction Theory / Active Fini
 
 Official videos page: https://www.distinctiontheory.org/videos
 
-## 1. Finite Distinction Systems: A First Introduction
-
-Scope: FDS-0, formal finite-system core, boundary maintenance, finite capacity, capacity deficit, pruning, collapse, invariant-supported persistence.
-
-YouTube: https://www.youtube.com/watch?v=AbhPKY91zOU
-
-Recommended before reading FDS-0.
-
-## 2. Distinction Theory: A General Theory of Finite Systems
+## 1. Distinction Theory: A General Theory of Finite Systems
 
 Scope: DT-Archive, full research programme, claim-space map, layered architecture, falsifiability.
 
@@ -20,12 +12,32 @@ YouTube: https://www.youtube.com/watch?v=ccaCFy_rY6Q
 
 Recommended before reading the full DT Archive.
 
+## 2. Finite Distinction Systems: A First Introduction
+
+Scope: FDS-0, formal finite-system core, boundary maintenance, finite capacity, capacity deficit, pruning, collapse, invariant-supported persistence.
+
+YouTube: https://www.youtube.com/watch?v=AbhPKY91zOU
+
+Recommended before reading FDS-0.
+
+## 3. Physical Bridge Claim Registry | Distinction Theory / FDS
+
+Scope: FDS-P0, physical bridge claim registry, finite distinguishability, irreversible updates, observer/time claims, horizon thermodynamics, topological persistence, high-risk physical extensions.
+
+YouTube: https://www.youtube.com/watch?v=mbbQkbIonpE
+
+This video explains that FDS-P0 is not a completed physical theory. It is a dependency-ordered, failure-aware map of physical bridge claims.
+
+Core message:
+
+> Claims are layered. Failure is local.
+
 ## Suggested viewing order
 
 1. Distinction Theory overview.
 2. Finite Distinction Systems introduction.
-3. AI Agency criterion.
-4. Failure Registry / How DT can fail.
+3. Physical Bridge Claim Registry.
+4. Then read the papers and claim-status pages.
 
 ## YouTube description links
 
@@ -35,5 +47,6 @@ Each video description includes links to:
 - GitHub: https://github.com/yiningwu-research/Distinction-Theory
 - Start guide: https://www.distinctiontheory.org/start
 - Papers: https://www.distinctiontheory.org/papers
+- FDS-P0: https://www.distinctiontheory.org/papers/physical-registry
 - Claims: https://www.distinctiontheory.org/claims
 - Failure Registry: https://www.distinctiontheory.org/failure-registry
