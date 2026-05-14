@@ -386,6 +386,8 @@ Distinction-Theory/
 │   ├── FDS_T1_Finite_Distinguishability_Budgets.tex
 │   ├── FDS_LC0_Life_Cognitive_Claim_Registry.tex
 │   └── Physical_Claim_Registry.tex
+├── models/
+│   └── fds_t1_hard_model/      # Numerical model, code, data, figures for T1
 ├── registries/
 └── .github/
 ```
