@@ -119,7 +119,7 @@ Do not start with the full DT Archive unless you want the complete claim-space.
 | **FDS-0** | *Active Finite Distinction Systems: A Formal Core for Boundary Maintenance under Finite Capacity* | Zenodo preprint | [10.5281/zenodo.20158923](https://doi.org/10.5281/zenodo.20158923) |
 | **FDS-P0** | *Physical Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo preprint | [10.5281/zenodo.20159995](https://doi.org/10.5281/zenodo.20159995) |
 | **FDS-T1** | *Finite Distinguishability Budgets and Maintenance Bounds for Physical Observers* | Pre-arXiv working paper | DOI pending |
-| **FDS-A1** | *Active Finite Distinction Systems as a Criterion for Artificial Agency* | Submitted to arXiv | arXiv ID pending |
+| **FDS-A1** | *Active Finite Distinction Systems as a Criterion for Artificial Agency* | Zenodo | [10.5281/zenodo.20184709](https://doi.org/10.5281/zenodo.20184709) |
 | **FDS-LC0** | *Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo registry | [10.5281/zenodo.20183373](https://doi.org/10.5281/zenodo.20183373) |
 
 ---
@@ -339,7 +339,7 @@ It is a claim registry, not a completed theory of life, clinical death, medicine
 ### FDS-A1
 
 **Active Finite Distinction Systems as a Criterion for Artificial Agency**
-Status: submitted to arXiv; arXiv ID pending.
+Zenodo DOI: [10.5281/zenodo.20184709](https://doi.org/10.5281/zenodo.20184709)
 
 This paper applies the FDS formal core to artificial agency.
 
@@ -514,11 +514,10 @@ For the AI Agency paper:
   author       = {Wu, Yining},
   title        = {Active Finite Distinction Systems as a Criterion for Artificial Agency},
   year         = {2026},
-  note         = {Submitted to arXiv}
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.20184709}
 }
 ```
-
-This entry will be updated when the arXiv identifier is assigned.
 
 For the Life/Cognitive Bridge Registry:
 
