@@ -1,12 +1,26 @@
 cff-version: 1.2.0
-title: "Distinction Theory: A General Theory of Finite Systems"
-message: "If you use or cite Distinction Theory, please cite the Zenodo DOI and this repository."
+title: "Distinction Theory / Active Finite Distinction Systems"
+message: "If you use or cite this programme, please cite the relevant DOI."
 type: thesis
 authors:
   - family-names: Wu
     given-names: Yining
 doi: 10.5281/zenodo.20130174
-date-released: 2026-05-12
+date-released: 2026-05-14
 license: CC-BY-4.0
 repository-code: "https://github.com/yiningwu-research/Distinction-Theory"
 abstract: "Distinction Theory is a falsifiable, tiered research programme for studying what finite systems must pay in order to persist."
+
+preferred-citation:
+  - title: "Active Finite Distinction Systems: A Formal Core for Boundary Maintenance under Finite Capacity"
+    doi: 10.5281/zenodo.20158923
+    authors:
+      - family-names: Wu
+        given-names: Yining
+    date-released: 2026-05-12
+  - title: "Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems"
+    doi: 10.5281/zenodo.20183373
+    authors:
+      - family-names: Wu
+        given-names: Yining
+    date-released: 2026-05-14

@@ -1,0 +1,1235 @@
+\pdfoutput=1
+% Contact: Yining Wu, yining.wu@alumni.upenn.edu
+% FDS-T1 Structural Trident I
+\documentclass[10pt,a4paper,twocolumn,aps,prl]{revtex4-2}
+
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,array,longtable}
+\usepackage{graphicx,xcolor,hyperref}
+% enumitem not available in this TeX Live environment; using plain enumerate/description
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!black,
+  citecolor=blue!50!black,
+  urlcolor=blue!50!black,
+  pdfauthor={Yining Wu},
+  pdftitle={Finite Distinguishability Budgets and Maintenance Bounds for Physical Observers}
+}
+
+\newtheorem{definition}{Definition}
+\newtheorem{assumption}{Assumption}
+\newtheorem{criterion}{Criterion}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{protocol}{Protocol}
+\newtheorem{remark}{Remark}
+\newtheorem{example}{Example}
+
+\newcommand{\FDS}{\mathrm{FDS}}
+\newcommand{\DT}{\mathrm{DT}}
+\newcommand{\Obs}{\mathcal{O}}
+\newcommand{\Patch}{\mathcal{D}}
+\newcommand{\bd}{\partial}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prob}{\mathbb{P}}
+\newcommand{\MI}{\mathrm{I}}
+\newcommand{\KL}{\mathrm{D}_{\mathrm{KL}}}
+\newcommand{\RD}{\mathrm{R}}
+\newcommand{\CS}{C_S}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\loss}{\ell}
+\newcommand{\dotQ}{\dot Q}
+\newcommand{\dotF}{\dot F}
+\newcommand{\calP}{\mathcal{P}}
+\newcommand{\calV}{\mathcal{V}}
+\newcommand{\calC}{\mathcal{C}}
+\newcommand{\calF}{\mathcal{F}}
+\newcommand{\calA}{\mathcal{A}}
+\newcommand{\calM}{\mathcal{M}}
+\newcommand{\calY}{\mathcal{Y}}
+\newcommand{\calX}{\mathcal{X}}
+\newcommand{\calE}{\mathcal{E}}
+\newcommand{\calB}{\mathcal{B}}
+\newcommand{\calT}{\mathcal{T}}
+\newcommand{\calH}{\mathcal{H}}
+\newcommand{\calR}{\mathcal{R}}
+\newcommand{\ellP}{\ell_{\mathrm P}}
+\newcommand{\kB}{k_{\mathrm B}}
+\newcommand{\NA}{N_{\Obs}}
+\newcommand{\CA}{C_{\Obs}}
+\newcommand{\Ahor}{A_{\bd\Patch}}
+\newcommand{\Imax}{I_{\max}}
+
+\begin{document}
+
+\title{Finite Distinguishability Budgets and Maintenance Bounds for Physical Observers%
+\footnote{FDS-T1 / Structural Trident I. This paper treats Bekenstein and holographic information bounds as physical bridge inputs and develops their finite-system interpretation in Distinction Theory.}}
+
+\author{Yining Wu\\
+Independent Researcher\\
+\texttt{yining.wu@alumni.upenn.edu}}
+
+\begin{abstract}
+A finite physical observer cannot register, preserve, update, and operationally use an unlimited number of distinctions. This paper develops the first structural-physics paper in the active finite distinction systems (FDS) sequence: finite distinguishability budgets under Bekenstein and holographic information bounds. The central object is an observer-relative distinguishability budget
+\[
+\NA = \left|\mathrm{Im}(\pi_{\Obs})\right|,\qquad
+\CA=\log_2 \NA,
+\]
+where $\pi_{\Obs}$ is the finite distinction projection by which an observer, apparatus, subsystem, or maintained boundary resolves a physical region into operationally distinguishable alternatives. The paper connects this budget to established physical entropy bounds. For a weakly gravitating system of energy $E$ confined to radius $R$, the Bekenstein bound implies
+\[
+\CA \leq \frac{2\pi E R}{\hbar c\ln 2}.
+\]
+For a causal or horizon-bounded region with boundary area $A$, the holographic ceiling gives
+\[
+\CA \leq \frac{A}{4\ell_{\mathrm P}^2\ln 2}.
+\]
+Within FDS these are not treated as mere storage limits. They are interpreted as upper bounds on the number of distinctions that can be maintained, updated, and made available to a finite record-bearing system without violating known gravitational and thermodynamic constraints. The main FDS-specific result is a dynamic maintenance inequality connecting rate-distortion task demand, accessible distinction capacity, invariant compression, externalization, and the Landauer cost of irreversible update. The paper defines local distinguishability budgets, accessible entropy, boundary-relative capacity deficit, causal-patch nesting, and externalization across horizon-like boundaries. It derives several conditional theorems: finite record carriers imply finite distinguishability; holographic ceilings dominate volume counting at gravitational saturation; observer-relative entropy is constrained by the smaller of internal record capacity and boundary information capacity; and any task demand exceeding the accessible budget must be handled by coarse-graining or compression, externalization, pruning, task relaxation, or failure. The paper does not claim to derive the numerical coefficient $1/4$, Newton's constant, Einstein's equations, the Standard Model, or quantum gravity from the distinction primitive alone. Its purpose is narrower: to place finite distinguishability on a physically bounded footing and to make the FDS bridge to holography explicit, auditable, and falsifiable.
+\end{abstract}
+
+\maketitle
+
+\noindent\textbf{Keywords:} finite distinguishability; holographic bound; Bekenstein bound; observer-relative entropy; active finite distinction systems; boundary maintenance; information bounds; causal horizons; Landauer principle; finite observers.
+
+% -------------------------------------------------------------------
+\section{Introduction}
+% -------------------------------------------------------------------
+
+\subsection{The finite-observer problem}
+
+Physical theories often describe states as if all degrees of freedom in a region were simultaneously available to an ideal observer. Operational physics does not work that way. A real observer is a finite physical system. It has finite memory, finite energy, finite update rate, finite causal access, finite error tolerance, finite record stability, and a finite boundary through which information must pass. Even when the underlying mathematical state space is large, the number of distinctions that can be registered and used by a finite system is limited.
+
+This paper develops that limitation as a structural principle for active finite distinction systems (FDS). The guiding claim is simple: a physically instantiated observer, apparatus, subsystem, organism, computer, or civilization can use only a finite \emph{distinguishability budget}. The budget is not merely psychological or epistemic. It is constrained by energy, causal access, thermodynamic irreversibility, gravitational entropy bounds, and horizon area.
+
+The familiar Bekenstein and holographic bounds already express a version of this fact. The Bekenstein bound limits the entropy or information that can be contained in a finite region of given energy and size \cite{bekenstein1981,bekenstein2003}. The holographic principle asserts that the maximum entropy associated with a region scales with boundary area rather than volume \cite{thooft1993,susskind1995,bousso2002}. Black-hole thermodynamics gives the limiting entropy
+\begin{equation}
+S_{\mathrm{BH}}=\frac{\kB A}{4\ellP^2},
+\label{eq:bh-entropy}
+\end{equation}
+where $A$ is horizon area and $\ellP=\sqrt{\hbar G/c^3}$ is the Planck length \cite{bekenstein1973,hawking1975}.
+
+The FDS interpretation asks a different question from the usual quantum-gravity discussion. It does not begin by asking what microscopic degrees of freedom count black-hole entropy. It asks what follows for any finite system that must maintain operational identity by registering distinctions under finite resources. The answer is a local budget principle: the physically available distinction space of an observer or maintained boundary is bounded by the smaller of its internal record capacity and the information capacity of the causal or boundary region to which it has access.
+
+\subsection{The FDS entry point}
+
+The formal FDS object used in companion work is
+\begin{equation}
+S=(X,E,B,M,Y,A,U,\pi,\ell,\Phi,\mathcal{P},\tau),
+\label{eq:fds-tuple}
+\end{equation}
+where $X$ is internal state, $E$ is environmental state, $B$ is an operational boundary, $M$ is memory or record state, $Y$ is the observation channel, $A$ is the action or boundary-update space, $U$ is the update operator, $\pi$ is a finite distinction projection or coarse-graining, $\ell$ is boundary-maintenance loss, $\Phi$ is a resource budget, $\mathcal{P}$ is a family of perturbation, pruning, or degradation operators, and $\tau$ is the update timescale \cite{wu2026fds,wufdsagency2026}.
+
+For the present paper, the central component is $\pi$. A finite system does not access the full physical state space directly. It resolves a space of possibilities into operationally distinguishable equivalence classes. Its distinguishability budget is the cardinality or effective information capacity of that image:
+\begin{equation}
+\NA=|\mathrm{Im}(\pi_{\Obs})|,\qquad \CA=\log_2\NA.
+\label{eq:dist-budget-intro}
+\end{equation}
+Here $\Obs$ denotes the observing or record-bearing system. It may be a laboratory observer, a detector, a robot, a finite computer, a black-hole exterior observer, a biological organism, or any subsystem that registers, preserves, updates, and orders distinctions under finite capacity.
+
+\subsection{Contributions}
+
+This paper makes eight contributions.
+
+\begin{enumerate}
+    \item It defines an observer-relative finite distinguishability budget $\NA$ and its bit capacity $\CA=\log_2\NA$.
+    \item It states a conservative physical bridge from finite record carriers to Bekenstein and holographic information ceilings.
+    \item It distinguishes internal representational capacity, accessible boundary capacity, and task-relevant distinction demand.
+    \item It formulates a holographic budget theorem: under established entropy bounds, an observer's accessible distinction budget is upper-bounded by boundary area in horizon-saturating regimes.
+    \item It defines boundary-relative capacity deficit for physical observation tasks.
+    \item It derives a budget-exit classification: coarse-graining or compression, externalization, pruning, task relaxation, or failure when demand exceeds accessible budget.
+    \item It clarifies how local observers, causal diamonds, horizons, and composite systems can be treated without assuming a single global observer.
+    \item It gives falsification conditions, testable consequences, and a reporting checklist for future FDS-T1 bridge papers.
+\end{enumerate}
+
+\subsection{What is not claimed}
+
+The paper does not claim to derive the Standard Model, quantum gravity, the Einstein field equations, Newton's constant, the numerical value of the speed of light, the exact coefficient $1/4$ in the Bekenstein--Hawking formula, or the microscopic origin of black-hole entropy. It does not claim that all information bounds are proven from the distinction primitive alone. It uses established entropy bounds as physical bridge inputs and asks what they imply for finite distinction systems.
+
+The result is therefore not a final theory of holography. It is a disciplined bridge: if finite systems are physically instantiated and if known gravitational entropy bounds apply, then distinguishability itself is not unlimited. It is locally budgeted, horizon-sensitive, and boundary-relative.
+
+% -------------------------------------------------------------------
+\section{Related Work}
+% -------------------------------------------------------------------
+
+\subsection{Bekenstein bounds and holography}
+
+Bekenstein proposed a universal upper bound on the entropy-to-energy ratio for bounded systems \cite{bekenstein1981}. In one common form, a system of energy $E$ confined to a sphere of radius $R$ satisfies
+\begin{equation}
+S \leq \frac{2\pi \kB E R}{\hbar c}.
+\label{eq:bekenstein}
+\end{equation}
+Measured in bits, this becomes
+\begin{equation}
+I \leq \frac{2\pi E R}{\hbar c\ln 2}.
+\label{eq:bekenstein-bits}
+\end{equation}
+The holographic principle strengthens the geometric intuition: the maximum entropy associated with a spatial region is controlled by the area of an appropriate boundary, not by the enclosed volume \cite{thooft1993,susskind1995,bousso2002}. Bousso's covariant entropy bound generalizes the area law to light-sheets and avoids some limitations of simple spatial-volume statements \cite{bousso2002}.
+
+The present paper does not re-prove these bounds. It treats them as physical constraints that any finite distinguishability theory must respect. Its novelty is to place them inside the FDS architecture: entropy bounds become upper limits on the number of distinctions that a finite boundary-maintaining system can operationally resolve, preserve, or use.
+
+\subsection{Black-hole thermodynamics and horizon entropy}
+
+Black-hole thermodynamics established that horizons carry entropy and temperature \cite{bekenstein1973,hawking1975}. The entropy formula \eqref{eq:bh-entropy} is the paradigmatic area law. Jacobson's thermodynamic derivation of the Einstein equation from local horizon thermodynamics suggests a deep connection between area, entropy, energy flux, and spacetime geometry \cite{jacobson1995}. Verlinde and related emergent-gravity approaches further explore the possibility that gravity is connected to information, entropy, and coarse-graining \cite{verlinde2011}.
+
+FDS-T1 remains upstream of a full gravity derivation. It does not infer Einstein equations. It supplies a finite-system reading of horizon entropy: a horizon is not only a geometric surface but also a boundary of finite distinguishability access for a class of observers.
+
+\subsection{Landauer erasure and information thermodynamics}
+
+Landauer's principle links logically irreversible information erasure to a thermodynamic heat cost \cite{landauer1961}. Bennett clarified how reversible computation can avoid erasure costs locally while still requiring attention to garbage, memory reuse, and thermodynamic accounting \cite{bennett1982}. Experiments have verified Landauer-type erasure costs in controlled systems \cite{berut2012,jun2014,hong2016}. Stochastic thermodynamics and feedback thermodynamics generalize these links in nonequilibrium systems \cite{seifert2012,parrondo2015,sagawa2010}.
+
+FDS uses Landauer conservatively. It does not assert that every representation or inference step dissipates $\kB T\ln2$ per bit. It applies the bridge to physically implemented logically irreversible operations: erasure, reset, many-to-one overwrite, and irreversible compression. In this paper, Landauer enters as an update-throughput constraint on finite distinguishability, not as a replacement for the Bekenstein or holographic bounds.
+
+\subsection{Observer-dependence and finite records}
+
+Operational and relational views of physics emphasize that measurements are records available to physical systems rather than disembodied facts \cite{wheeler1990,rovelli1996}. Quantum Darwinism studies how information about a system becomes redundantly recorded in an environment \cite{zurek2003}. Decoherence explains why stable records emerge in open quantum systems \cite{zurek2003,schlosshauer2007}. These traditions motivate the idea that observerhood is a physical record-bearing role.
+
+The FDS observer is not defined by consciousness or biological subjectivity. It is a finite distinction-register: a physical system capable of registering, preserving, updating, and ordering distinctions under finite capacity. That definition makes information bounds directly relevant to observation.
+
+\subsection{Rate-distortion and bounded representation}
+
+Rate-distortion theory asks how many bits are required to represent a source under a specified distortion level \cite{shannon1948,shannon1959,berger1971,cover2006}. FDS uses this language to define capacity deficit: a task can demand more distinctions than a system can maintain. In physical settings, the available capacity is not only computational but also bounded by energy, causal access, and horizon area.
+
+\subsection{Relation to standard information thermodynamics}
+
+Each ingredient in FDS-T1---Bekenstein bounds, holographic ceilings, Landauer erasure, rate-distortion theory---is individually well established. The novelty is not any one ingredient taken separately. It is the finite-observer maintenance accounting obtained when task-relevant rate-distortion demand is compared against a bottlenecked accessible capacity (internal memory, boundary ceiling, channel, update rate, and thermodynamic budget) and then converted into compulsory exits or irreversible update cost. Bekenstein and holographic bounds set the storage or access ceiling; Landauer sets the per-irreversible-operation heat floor; rate-distortion sets the task demand. FDS-T1's contribution is the deficit-driven classification that connects them: when demand exceeds the bottlenecked accessible capacity, the system must coarse-grain, externalize, prune, relax the task, or fail; and the surplus distinctions that are irreversibly erased carry a Landauer-accounted thermodynamic cost.
+
+% -------------------------------------------------------------------
+\section{FDS Preliminaries}
+% -------------------------------------------------------------------
+
+\subsection{Distinctions and finite projections}
+
+\begin{definition}[Distinction]
+A distinction is an operation or relation that separates at least two alternatives within a possibility space. At the elementary formal level, a distinction may be represented by a nontrivial partition
+\begin{equation}
+D=\{A_i\}_{i=1}^{n},\qquad A_i\cap A_j=\varnothing\ (i\neq j),\qquad \bigcup_i A_i=X,
+\end{equation}
+with $n\geq 2$.
+\end{definition}
+
+A physical distinction is not merely a formal partition. It must be instantiated by a record, boundary, coupling, memory state, detector state, or other physical carrier. A finite system implements distinctions through a finite projection.
+
+\begin{definition}[Finite distinction projection]
+Let $\Omega$ be a physical possibility space for a region or task. A finite observer $\Obs$ implements a finite distinction projection
+\begin{equation}
+\pi_{\Obs}:\Omega\rightarrow \mathcal{Z}_{\Obs},
+\end{equation}
+where $\mathcal{Z}_{\Obs}$ is the finite set of distinction classes accessible to $\Obs$.
+\end{definition}
+
+\begin{definition}[Distinguishability budget]
+The instantaneous distinguishability budget of $\Obs$ is
+\begin{equation}
+\NA=|\mathcal{Z}_{\Obs}|=|\mathrm{Im}(\pi_{\Obs})|.
+\end{equation}
+The bit capacity is
+\begin{equation}
+\CA=\log_2\NA.
+\end{equation}
+When $\mathcal{Z}_{\Obs}$ is continuous or effectively continuous, $\CA$ denotes the operational number of reliably distinguishable states under the observer's noise, energy, resolution, and error-tolerance constraints.
+\end{definition}
+
+\subsection{Record-bearing observers}
+
+\begin{definition}[Finite distinction-register]
+A finite distinction-register is a physical system that can register, preserve, update, and order distinctions using finite resources. It must have a record carrier, a boundary or interface, a stability condition, and a finite update capacity.
+\end{definition}
+
+This definition intentionally excludes two extremes. A disembodied mathematical observer is not a finite distinction-register because it has no physical record carrier. A purely passive boundary that never records or updates distinctions is also not an observer in this sense. A detector, memory device, organism, autonomous system, or laboratory apparatus can be a finite distinction-register when its boundary and records satisfy the relevant stability and update conditions.
+
+\subsection{Three capacities}
+
+The word ``capacity'' hides several distinct quantities. We distinguish three.
+
+\begin{definition}[Internal record capacity]
+The internal record capacity of $\Obs$, denoted $C_{\mathrm{int}}(\Obs)$, is the maximum number of bits that can be reliably stored, preserved, and accessed by the observer's own memory or record substrate over the relevant timescale.
+\end{definition}
+
+\begin{definition}[Accessible boundary capacity]
+The accessible boundary capacity of a region $\Patch$ relative to $\Obs$, denoted $C_{\mathrm{bd}}(\Obs,\Patch)$, is the maximum number of bits that can be physically distinguished by $\Obs$ through the boundary or causal interface of $\Patch$ under the applicable entropy bound.
+\end{definition}
+
+\begin{definition}[Task-relevant distinction demand]
+For a task family $\Psi$ and distortion tolerance $\varepsilon$ over timescale $\tau$, the task-relevant distinction demand is
+\begin{equation}
+R_{\min}^{(\tau)}(\varepsilon;\Psi),
+\end{equation}
+the minimal number of bits required to represent the task-relevant structure of $\Psi$ to distortion at most $\varepsilon$ over timescale $\tau$.
+\end{definition}
+
+The effective accessible capacity is the bottleneck
+\begin{equation}
+C_{\mathrm{acc}}(\Obs,\Patch)=\min\left\{
+\begin{aligned}
+&C_{\mathrm{int}}(\Obs),\\
+&C_{\mathrm{bd}}(\Obs,\Patch),\\
+&C_{\mathrm{chan}}(\Obs,\Patch),\;C_{\mathrm{time}}(\Obs,\tau)
+\end{aligned}
+\right\},
+\label{eq:accessible-capacity}
+\end{equation}
+where $C_{\mathrm{chan}}$ captures channel/noise limits and $C_{\mathrm{time}}$ captures finite update-rate limits.
+
+\begin{definition}[Boundary-relative capacity deficit]
+The FDS-T1 capacity deficit of $\Obs$ with respect to task family $\Psi$ in region $\Patch$ is
+\begin{equation}
+\Delta_{\varepsilon}^{\Patch}(\Obs,\tau)=R_{\min}^{(\tau)}(\varepsilon;\Psi)-C_{\mathrm{acc}}(\Obs,\Patch).
+\label{eq:physical-deficit}
+\end{equation}
+A positive value means that the task demands more distinctions than are physically accessible to the observer under the chosen boundary and timescale.
+\end{definition}
+
+% -------------------------------------------------------------------
+\section{Physical Bridge Assumptions}
+% -------------------------------------------------------------------
+
+\subsection{Finite distinguishability}
+
+\begin{assumption}[Finite distinguishability]
+A physically instantiated system that maintains identity has a finite distinguishability budget over any finite operational interval. Its accessible records, memory states, update channels, and boundary-maintenance operations are bounded by finite physical resources.
+\end{assumption}
+
+This assumption is deliberately weak. It does not require that all physical systems saturate a black-hole bound. It requires only that physical systems do not possess infinite usable distinguishability. It is compatible with finite entropy bounds, finite channel capacities, finite memory, finite energy, finite precision, and finite causal access.
+
+\subsection{Bekenstein bridge}
+
+\begin{assumption}[Bekenstein bridge]
+For a weakly gravitating physical system of total energy $E$ confined to radius $R$, the entropy and information accessible within that region obey the Bekenstein bound
+\begin{equation}
+S\leq \frac{2\pi \kB E R}{\hbar c},\qquad
+I\leq \frac{2\pi E R}{\hbar c\ln 2}.
+\end{equation}
+\end{assumption}
+
+FDS does not derive this bound in the present paper. It uses it as an established physical bridge constraint.
+
+\subsection{Holographic bridge}
+
+\begin{assumption}[Holographic ceiling]
+For a horizon-bounded or gravitationally saturated region whose appropriate boundary area is $A$, the maximum accessible entropy satisfies
+\begin{equation}
+S\leq \frac{\kB A}{4\ellP^2},
+\end{equation}
+and therefore the maximum number of accessible bits satisfies
+\begin{equation}
+I\leq \frac{A}{4\ellP^2\ln 2}.
+\end{equation}
+\end{assumption}
+
+The qualifier ``appropriate boundary'' matters. In covariant settings the relevant area may be defined by a light-sheet or causal horizon rather than an arbitrary spatial surface \cite{bousso2002}.
+
+\subsection{Landauer update bridge}
+
+\begin{assumption}[Landauer update bridge]
+When a physical system performs a logically irreversible operation---erasure, many-to-one overwrite, reset, irreversible compression, or pruning of previously distinguishable alternatives---the operation incurs a thermodynamic entropy cost under standard Landauer conditions.
+\end{assumption}
+
+This bridge is used only for update and erasure accounting. Stable storage and reversible evolution are not automatically charged with $\kB T\ln2$ per bit.
+
+\subsection{Finite causal access}
+
+\begin{assumption}[Finite causal access]
+A finite physical observer cannot instantaneously access, register, update, and causally use arbitrary distant distinctions without unbounded update capacity. Distinguishability is therefore restricted by causal structure and finite update rate.
+\end{assumption}
+
+This assumption is weaker than a derivation of relativity. It says only that finite observers require finite causal access. The numerical value of $c$ is not derived here.
+
+% -------------------------------------------------------------------
+\section{Finite Distinguishability Budgets}
+% -------------------------------------------------------------------
+
+\subsection{The finite-budget proposition}
+
+\begin{proposition}[Finite record carriers imply finite distinguishability]
+Let $\Obs$ be a physical record-bearing system with finite internal record capacity, finite error tolerance, and finite update resources over interval $[t_0,t_1]$. Then $\Obs$ has a finite operational distinguishability budget over that interval.
+\end{proposition}
+
+\begin{proof}
+A distinction available to $\Obs$ must be encoded in a record or state difference that can be reliably discriminated under the observer's noise and error tolerance. If the record substrate has finite capacity, only finitely many such distinguishable record states can be reliably preserved and accessed over the interval. If update resources are also finite, the number of new distinctions that can be acquired, overwritten, corrected, or stabilized is finite. Therefore the operational image of $\pi_{\Obs}$ is finite, and $\NA<\infty$.
+\end{proof}
+
+\begin{remark}
+This proposition is not a statement that the underlying mathematical Hilbert space is finite-dimensional. It is a statement about operationally accessible distinctions for a finite physical record carrier.
+\end{remark}
+
+\subsection{Distinguishability throughput}
+
+A finite observer may have both an instantaneous storage budget and a lifetime throughput budget. Let $\dot I_{\mathrm{irr}}(t)$ be the rate at which logically irreversible distinction updates occur. Under the Landauer bridge,
+\begin{equation}
+\dot Q_{\mathrm{info}}(t)\geq \kB T(t)\ln2\;\dot I_{\mathrm{irr}}(t).
+\label{eq:landauer-rate}
+\end{equation}
+If the observer has finite free-energy input or dissipation allowance over $[t_0,t_1]$, then
+\begin{equation}
+\int_{t_0}^{t_1}\dot I_{\mathrm{irr}}(t)\,dt
+\leq
+\int_{t_0}^{t_1}\frac{\dot Q_{\mathrm{info}}(t)}{\kB T(t)\ln2}\,dt,
+\end{equation}
+with the inequality interpreted carefully when temperature varies or non-thermal reservoirs are involved. This is not a holographic bound. It is an update-throughput bound. It says that a finite observer cannot indefinitely acquire and erase distinctions for free.
+
+\subsection{Internal versus accessible budgets}
+
+Internal memory can be far below the physical entropy ceiling of the region. Conversely, a large physical region can contain many degrees of freedom that are inaccessible to a small observer. FDS therefore uses the bottleneck form \eqref{eq:accessible-capacity}. For observation and control tasks, what matters is not the total number of microstates in a region but the number of task-relevant distinctions that can be reliably acquired, represented, and used by the observer.
+
+\begin{theorem}[Accessible budget bottleneck]
+For any finite observer $\Obs$ performing a task in region $\Patch$, the operational capacity available to that task is upper-bounded by the minimum of internal record capacity, boundary information capacity, channel capacity, and update-time capacity:
+\begin{equation}
+C_{\mathrm{task}}(\Obs,\Patch,\tau)\leq C_{\mathrm{acc}}(\Obs,\Patch).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+A task-relevant distinction must pass all four filters: it must be physically available through the region boundary or causal interface; it must pass through a finite channel; it must be stored or represented internally; and it must be updated or accessed within the relevant timescale. If any one of these capacities is smaller than the others, it is the bottleneck. Therefore usable task capacity cannot exceed their minimum.
+\end{proof}
+
+% -------------------------------------------------------------------
+\section{Holographic Information Bounds as Distinguishability Ceilings}
+% -------------------------------------------------------------------
+
+\subsection{Weak-gravity regime: Bekenstein ceiling}
+
+In weakly gravitating bounded systems, the Bekenstein bound gives
+\begin{equation}
+C_{\mathrm{bd}}(\Obs,\Patch)\leq \frac{2\pi E R}{\hbar c\ln2},
+\label{eq:cbd-bekenstein}
+\end{equation}
+where $E$ and $R$ characterize the bounded region relative to the operational setup.
+
+\begin{theorem}[Bekenstein distinguishability ceiling]
+Assume the Bekenstein bridge applies to a bounded physical region $\Patch$ of energy $E$ and radius $R$. Then no finite observer can operationally distinguish more than
+\begin{equation}
+\NA \leq \exp\left(\frac{2\pi E R}{\hbar c}\right)
+\end{equation}
+region-states as mutually accessible alternatives through that region without violating the entropy bound.
+\end{theorem}
+
+\begin{proof}
+The Bekenstein bridge bounds the entropy by $S/\kB\leq 2\pi ER/\hbar c$. The number of equiprobable distinguishable alternatives compatible with entropy $S$ is $N=\exp(S/\kB)$. Therefore $N\leq \exp(2\pi ER/\hbar c)$. In bits this is equivalent to \eqref{eq:cbd-bekenstein}.
+\end{proof}
+
+\begin{remark}
+This theorem is conditional on the physical bridge. It does not derive the Bekenstein bound from the distinction primitive alone.
+\end{remark}
+
+\subsection{Horizon-saturating regime: area ceiling}
+
+When gravitational collapse or horizon saturation becomes relevant, the area law dominates the naive volume count.
+
+\begin{theorem}[Holographic distinguishability ceiling]
+Assume the holographic ceiling applies to a causal or horizon-bounded region $\Patch$ with boundary area $A$. Then the accessible distinction capacity satisfies
+\begin{equation}
+\CA\leq \frac{A}{4\ellP^2\ln2}.
+\label{eq:holographic-cbits}
+\end{equation}
+Equivalently,
+\begin{equation}
+\NA\leq \exp\left(\frac{A}{4\ellP^2}\right).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The holographic bridge gives $S\leq \kB A/(4\ellP^2)$. The number of distinguishable alternatives is at most $\exp(S/\kB)$, hence $\NA\leq\exp(A/4\ellP^2)$. Taking $\log_2$ yields \eqref{eq:holographic-cbits}.
+\end{proof}
+
+\subsection{Why area, not volume}
+
+The FDS interpretation of area scaling is operational. A finite observer interacts with a region through a boundary or causal interface. Increasing interior volume without increasing boundary capacity cannot indefinitely increase the number of distinctions that can be accessed, stabilized, and communicated across that boundary. At gravitational saturation, attempts to store or distinguish more interior alternatives change the boundary conditions themselves, producing horizon behavior rather than unlimited volume scaling.
+
+This is not a claim that ordinary low-energy systems always saturate area bounds. Most do not. The claim is that the ultimate ceiling on accessible distinguishability is boundary-like in the regimes where gravity and causal horizons enforce the strongest known entropy constraints.
+
+\subsection{Comparison of ceilings}
+
+Combining the internal, Bekenstein, and holographic limits gives a conservative budget formula:
+\begin{equation}
+C_{\mathrm{acc}}(\Obs,\Patch)
+\leq
+\min\left\{
+C_{\mathrm{int}},
+\frac{2\pi ER}{\hbar c\ln2},
+\frac{A}{4\ellP^2\ln2},
+C_{\mathrm{chan}},
+C_{\mathrm{time}}
+\right\}.
+\label{eq:master-budget}
+\end{equation}
+Different terms dominate in different regimes. For a laboratory detector, $C_{\mathrm{int}}$, $C_{\mathrm{chan}}$, or $C_{\mathrm{time}}$ may dominate. For black holes or cosmological horizons, the area term dominates. For thermally constrained computational systems, the update-throughput term may dominate.
+
+% -------------------------------------------------------------------
+\section{Local Observers and Causal Patches}
+% -------------------------------------------------------------------
+
+\subsection{Observer-relative patches}
+
+A finite observer does not resolve the universe globally. It resolves a causal patch.
+
+\begin{definition}[Observer patch]
+The observer patch $\Patch_{\Obs}(t)$ is the region whose states can in principle influence the records of $\Obs$ by time $t$ under the applicable causal and channel constraints.
+\end{definition}
+
+The boundary $\bd\Patch_{\Obs}$ may be a literal detector surface, a light cone, a causal diamond boundary, a black-hole horizon, an apparent horizon, an acoustic horizon in analogue systems, or a task-defined operational boundary.
+
+\begin{definition}[Distinguishability horizon]
+A distinguishability horizon for $\Obs$ is a boundary beyond which differences in physical state cannot be operationally registered, preserved, and used by $\Obs$ within the relevant resource and timescale constraints.
+\end{definition}
+
+A distinguishability horizon need not be an event horizon. It may arise from noise, finite sampling, finite memory, finite control, finite latency, or thermodynamic cost. Event horizons and causal horizons are limiting physical cases.
+
+\subsection{Patch nesting}
+
+\begin{proposition}[Nested patches induce nested budgets]
+Let $\Patch_1\subseteq\Patch_2$ be two observer-accessible regions with compatible boundary definitions and information ceilings. Then the accessible boundary capacity of $\Patch_1$ cannot exceed the accessible capacity of $\Patch_2$ unless channel, internal, or timescale bottlenecks differ between the two tasks.
+\end{proposition}
+
+\begin{proof}
+Under compatible boundary definitions, the physical state alternatives accessible in $\Patch_1$ form a subset or coarse-graining of those accessible in $\Patch_2$. Therefore the physical boundary ceiling cannot be larger for the smaller patch. However, operational capacity is a minimum over multiple bottlenecks. A smaller patch may be easier to observe, have a higher signal-to-noise ratio, or require less update time. The proposition therefore applies to the boundary ceiling itself, not necessarily to every practical measurement task.
+\end{proof}
+
+\subsection{Composite observers}
+
+Composite observers can pool records, distribute memory, and externalize distinctions into shared media. But pooling does not remove physical bounds. It changes the boundary.
+
+\begin{definition}[Composite finite observer]
+A composite finite observer is a network of finite distinction-registers coupled by communication channels, shared records, or coordination protocols, treated as a higher-level observer only when the network can preserve and update joint distinctions with sufficient reliability.
+\end{definition}
+
+\begin{proposition}[Externalization changes the budget boundary]
+When an observer externalizes records into an environment, database, instrument, institution, or horizon boundary, the relevant budget becomes the budget of the coupled observer--record system, not the internal memory alone.
+\end{proposition}
+
+\begin{proof}
+Externalized records are useful only if the observer can access, validate, update, and protect them through a boundary. The operational distinction is therefore carried by the coupled system. The capacity is no longer merely $C_{\mathrm{int}}(\Obs)$ but is bounded by the record medium, access channel, stability condition, and the boundary information ceiling of the enlarged system.
+\end{proof}
+
+% -------------------------------------------------------------------
+\section{Capacity Deficit under Holographic Bounds}
+% -------------------------------------------------------------------
+
+\subsection{Physical distinction demand}
+
+For a task family $\Psi$, the demand $R_{\min}^{(\tau)}(\varepsilon;\Psi)$ may include distinctions among microstates, macrostates, trajectories, causal histories, control-relevant variables, or boundary-relevant signals. The FDS-T1 deficit is positive when
+\begin{equation}
+R_{\min}^{(\tau)}(\varepsilon;\Psi)>C_{\mathrm{acc}}(\Obs,\Patch).
+\end{equation}
+A positive deficit is not ignorance in the ordinary sense. It is an operational impossibility under the chosen boundary, resources, and timescale.
+
+\subsection{Budget-exit theorem}
+
+\begin{theorem}[Budget-exit classification]
+Let $\Obs$ face a task family $\Psi$ in region $\Patch$ with positive boundary-relative capacity deficit over interval $[t_0,t_1]$. If resource input, boundary capacity, channel capacity, and update rate remain bounded, then $\Obs$ cannot maintain full-fidelity task distinction indefinitely. It must enter at least one of the following outcome classes:
+\begin{enumerate}
+    \item coarse-graining or compression of distinctions;
+    \item externalization to a larger coupled boundary;
+    \item pruning or discarding of distinctions;
+    \item task relaxation or change of distortion tolerance;
+    \item failure or collapse of the observation, control, or boundary-maintenance task.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Full-fidelity task performance requires at least $R_{\min}^{(\tau)}(\varepsilon;\Psi)$ bits of relevant distinction capacity. By assumption this exceeds $C_{\mathrm{acc}}$. If all resources and capacities remain bounded, the missing distinctions cannot be generated internally without violating the capacity ceiling. The only admissible exits are to reduce the demand through coarse-graining or compression, externalize part of the burden to a larger coupled system, prune or discard distinctions, relax the task, or fail to perform it.
+\end{proof}
+
+\subsection{Holographic deficit}
+
+In a horizon-bounded regime, the deficit becomes
+\begin{equation}
+\Delta_{\varepsilon}^{\mathrm{hol}}(\Obs,\tau)=R_{\min}^{(\tau)}(\varepsilon;\Psi)
+-\min\!\left\{
+\begin{aligned}
+&C_{\mathrm{int}},\\
+&\frac{A}{4\ellP^2\ln2},\\
+&C_{\mathrm{chan}},\;C_{\mathrm{time}}
+\end{aligned}
+\right\}.
+\end{equation}
+When $\Delta_{\varepsilon}^{\mathrm{hol}}>0$, no increase in volume description alone solves the problem. The limiting factor is boundary-accessible distinction capacity.
+
+\subsection{Observer-relative entropy}
+
+\begin{definition}[Observer-relative accessible entropy]
+The accessible entropy assigned by observer $\Obs$ to region $\Patch$ is
+\begin{equation}
+S_{\mathrm{acc}}(\Obs,\Patch)=\kB\ln N_{\mathrm{acc}}(\Obs,\Patch),
+\end{equation}
+where $N_{\mathrm{acc}}$ is the number of region alternatives operationally distinguishable by $\Obs$ under its boundary, channel, record, and update constraints.
+\end{definition}
+
+\begin{corollary}[Entropy bottleneck]
+The accessible entropy satisfies
+\begin{equation}
+S_{\mathrm{acc}}(\Obs,\Patch)\leq \kB\ln2\; C_{\mathrm{acc}}(\Obs,\Patch).
+\end{equation}
+In a holographic regime,
+\begin{equation}
+S_{\mathrm{acc}}(\Obs,\Patch)\leq \frac{\kB A}{4\ellP^2}.
+\end{equation}
+\end{corollary}
+
+This formulation permits observer-relative entropy without making entropy subjective. The bound is physical; the accessible coarse-graining depends on the finite observer.
+
+% -------------------------------------------------------------------
+\section{An FDS Maintenance Bound}
+% -------------------------------------------------------------------
+
+The inequalities developed above connect distinguishability to entropy bounds, but they remain interpretative: they translate existing bounds into FDS language. To go further, we need an inequality that is not a restatement of Bekenstein or holographic bounds but is specific to FDS dynamics---a relation that ties task demand, accessible capacity, memory update, and thermodynamic cost into a single maintenance constraint.
+
+\subsection{Accessible distinction capacity}
+
+Define the instantaneous accessible distinction capacity of a finite observer-system as the bottleneck over four terms:
+
+\begin{equation}
+C_{\mathrm{acc}}(t,\tau)
+=
+\min
+\left\{
+\begin{aligned}
+&C_{\mathrm{mem}}(t)+C_{\mathrm{ext}}^{\mathrm{eff}}(t,\tau),\\
+&C_{\mathrm{chan}}(t,\tau),\;
+C_{\mathrm{hor}}(t),\;
+C_{\mathrm{therm}}(t)
+\end{aligned}
+\right\},
+\label{eq:cacc-bottleneck}
+\end{equation}
+
+where
+
+\begin{itemize}
+    \item $C_{\mathrm{mem}}(t)$ is the observer's internal memory or record capacity;
+    \item $C_{\mathrm{ext}}^{\mathrm{eff}}(t,\tau)$ is the effective externalization capacity after subtracting index, verification, sync, and latency costs \cite{wufdsagency2026};
+    \item $C_{\mathrm{chan}}(t,\tau)$ is the channel or observation-window capacity;
+    \item $C_{\mathrm{hor}}(t)=A(t)/(4\ellP^2\ln2)$ is the horizon or causal-boundary ceiling;
+    \item $C_{\mathrm{therm}}(t,\tau)=\displaystyle\int_t^{t+\tau}\frac{\dot F_{\mathrm{avail}}(s)}{k_B T(s)\ln 2}\,ds$ is the thermodynamic budget for update and erasure, where $\dot F_{\mathrm{avail}}(t)$ is the free-energy supply rate and $T(t)$ is the effective operating temperature at time $t$. For constant $T$, this reduces to $(k_B T\ln2)^{-1}\int\dot F_{\mathrm{avail}}\,ds$.
+\end{itemize}
+
+This bottleneck formulation is essential. A large memory is useless if the causal channel cannot deliver distinctions; a wide channel is useless if the horizon bounds accessible entropy; adequate memory and channel are insufficient if thermodynamic reset costs exceed the available free-energy input.
+
+\subsection{Task-relevant distinction demand}
+
+Let $R_{\min}^{(\tau)}(\varepsilon,t)$ be the minimal rate-distortion demand required by the observer-system to maintain a boundary-relevant task family $\Psi$ at distortion at most $\varepsilon$ over update window $\tau$. The FDS capacity deficit at time $t$ is
+
+\begin{equation}
+\Delta_{\mathrm{FDS}}(t,\tau,\varepsilon)
+=
+R_{\min}^{(\tau)}(\varepsilon,t)
+-
+C_{\mathrm{acc}}(t,\tau).
+\label{eq:fds-deficit}
+\end{equation}
+
+When $\Delta_{\mathrm{FDS}}\leq 0$, the system can maintain the required distinctions under its current observer-boundary conditions. When $\Delta_{\mathrm{FDS}}>0$, the system must enter one of five exit channels: compression or coarse-graining; externalization; pruning; task relaxation; or failure or collapse. This aligns with the FDS five-exit classification \cite{wufdsagency2026}.
+
+\subsection{Distinction maintenance inequality}
+
+Under the Landauer bridge, logically irreversible updates---erasure, reset, many-to-one overwrite, irreversible compression, or pruning---carry a thermodynamic cost of at least $k_BT\ln2$ per erased bit \cite{landauer1961,bennett1982,berut2012}. Combining this with the capacity deficit gives a dynamic maintenance bound:
+
+\begin{equation}
+\boxed{
+\begin{aligned}
+\dot Q_{\mathrm{maint}}(t)
+&\geq
+k_B T(t)\ln 2\,\tau^{-1}
+\bigl[ \Delta_{\mathrm{FDS}}(t,\tau,\varepsilon) \\
+&\qquad - C_{\mathrm{inv}}(t,\tau)
+- C_{\mathrm{ext}}^{\mathrm{gain}}(t,\tau)
+\bigr]_+ \\
+&\qquad + \dot Q_{\mathrm{phys}}(t)
+\end{aligned}
+},
+\label{eq:maintenance-bound}
+\end{equation}
+
+where $[x]_+=\max(x,0)$, $C_{\mathrm{inv}}(t,\tau)$ is an invariant-supported compression credit, $C_{\mathrm{ext}}^{\mathrm{gain}}(t,\tau)$ is the net externalization gain, and $\dot Q_{\mathrm{phys}}(t)$ is non-informational physical dissipation (coupling, transport, clocking, friction, error correction, measurement back-action).
+
+\noindent\textbf{Interpretation.} When task-relevant distinctions exceed accessible capacity, the surplus must be discharged through irreversible operations---compression, pruning, reset, or external bookkeeping. The erased distinction surplus sets a Landauer lower bound on the heat dissipated. This is not a restatement of the Bekenstein bound. The Bekenstein bound asks: how much information can a region store? The FDS maintenance bound asks: how much must a finite system pay in thermodynamic cost to maintain task-relevant distinctions under finite causal access, finite memory, and finite channel capacity?
+
+\subsection{Maintenance viability condition}
+
+A stronger form incorporates the free-energy supply. Let $\dot F_{\mathrm{in}}(t)$ be the rate at which free energy is available to the observer-system. Long-term viability requires
+
+\begin{equation}
+\boxed{
+\int_{t_0}^{t_1}
+\dot F_{\mathrm{in}}(t)\,dt
+\geq
+\int_{t_0}^{t_1}
+\dot Q_{\mathrm{maint}}(t)\,dt
+}.
+\label{eq:viability}
+\end{equation}
+
+When this condition fails persistently, the system must relax the distortion tolerance $\varepsilon$, reduce the task demand $R_{\min}$, increase the accessible capacity $C_{\mathrm{acc}}$ through externalization, prune internal structure, or collapse.
+
+\subsection{Falsification}
+
+The distinction maintenance bound is falsified by a finite observer-system that maintains a pre-registered distortion bound $\varepsilon$ over task class $\Psi$ under sustained $\Delta_{\mathrm{FDS}}>0$, without compression or coarse-graining, externalization, pruning, task relaxation, or boundary failure, while dissipating less than $\int\dot Q_{\mathrm{maint}}\,dt$ after all physical losses and measurement errors are accounted for.
+
+% -------------------------------------------------------------------
+\section{A Minimal Computable Model of Causal-Access Collapse}
+\label{sec:model}
+% -------------------------------------------------------------------
+
+The maintenance bound is abstract. To make it computable, we construct a minimal model of an observer crossing a causal-access bottleneck.
+
+\subsection{Model setup}
+
+Let there be an external process $Z_t\in\mathcal{Z}$. A finite observer observes $Z_t$ through a restricted channel $Y_t$ and maintains an internal memory state $M_t$ that carries task-relevant distinctions. The accessible capacity is
+
+\begin{equation}
+C_{\mathrm{acc}}(t)
+=
+\min\left\{
+C_M,\; C_Y(t),\; C_H(t),\; C_{\mathrm{ext}}^{\mathrm{eff}}(t)
+\right\},
+\label{eq:toy-cacc}
+\end{equation}
+
+where $C_M$ is fixed memory capacity, $C_Y(t)$ is the channel capacity at time $t$, and $C_H(t)$ is the causal-boundary capacity.
+
+Model the causal boundary crossing as a sigmoid transition:
+
+\begin{equation}
+C_H(t)
+=
+C_0\,\eta(t),\qquad
+\eta(t)
+=
+\frac{1}{1+\exp((t-t_h)/\sigma)},
+\label{eq:sigmoid-horizon}
+\end{equation}
+
+where $t_h$ is the crossing time and $\sigma$ is the transition width. This does not claim to model a real black hole; it is a tunable causal-access bottleneck that captures the qualitative behavior of a horizon-like collapse.
+
+\subsection{Observer-relative entropy divergence}
+
+Define the observer's residual uncertainty about the external state:
+
+\begin{equation}
+S_{\mathcal{O}}(t)
+=
+H(Z_t|M_t,Y_{\leq t}^{\mathrm{acc}}).
+\label{eq:observer-entropy}
+\end{equation}
+
+As $C_{\mathrm{acc}}(t)$ decreases, $M_t$ can carry fewer task-relevant distinctions, so $S_{\mathcal{O}}(t)$ increases. Two observers $\mathcal{O}_1,\mathcal{O}_2$ with different $C_{\mathrm{acc}}^{(1)}(t),C_{\mathrm{acc}}^{(2)}(t)$ will assign different entropies:
+
+\begin{equation}
+\Delta S_{\mathcal{O}_1,\mathcal{O}_2}(t)
+=
+S_{\mathcal{O}_1}(t)-S_{\mathcal{O}_2}(t).
+\label{eq:entropy-divergence}
+\end{equation}
+
+This divergence is directly computable from the model parameters.
+
+\subsection{Coarse-graining error floor}
+
+The most direct link to testable prediction is through rate-distortion theory. Let $D_{\min}(R)$ be the minimal achievable distortion for process $Z_t$ at rate $R$. The finite observer's error floor is
+
+\begin{equation}
+\varepsilon_{\min}(t)
+=
+D_{\min}(C_{\mathrm{acc}}(t)).
+\label{eq:error-floor}
+\end{equation}
+
+The task is maintainable if and only if $D_{\min}(C_{\mathrm{acc}}(t))\leq\varepsilon$. Define the collapse time as
+
+\begin{equation}
+t_c
+=
+\inf\left\{
+t:\;
+D_{\min}(C_{\mathrm{acc}}(t))>\varepsilon
+\right\}.
+\label{eq:collapse-time}
+\end{equation}
+
+\subsection{Gaussian source example}
+
+If $Z_t$ is a Gaussian source with variance $\sigma_Z^2$ and the distortion is mean-squared error, the rate-distortion function is
+
+\begin{equation}
+R(D)
+=
+\frac{1}{2}\log_2\frac{\sigma_Z^2}{D},
+\qquad
+D_{\min}(R)
+=
+\sigma_Z^2\,2^{-2R}.
+\label{eq:gaussian-rd}
+\end{equation}
+
+The error floor becomes
+
+\begin{equation}
+\boxed{
+\varepsilon_{\min}(t)
+=
+\sigma_Z^2\,2^{-2C_{\mathrm{acc}}(t)}
+}.
+\label{eq:gaussian-floor}
+\end{equation}
+
+When the causal-access bottleneck drives $C_{\mathrm{acc}}(t)\to0$, the error floor rises to $\sigma_Z^2$---the observer degrades to guessing the prior variance.
+
+\subsection{Binary source example}
+
+If $Z_t\in\{0,1\}$ with $P(Z=1)=p$ and Hamming distortion, the rate-distortion function in the range $0\leq D\leq\min(p,1-p)$ is
+
+\begin{equation}
+R(D)=H_b(p)-H_b(D),
+\label{eq:binary-rd}
+\end{equation}
+
+where $H_b$ is the binary entropy function. The error floor is
+
+\begin{equation}
+D_{\min}(t)
+=
+H_b^{-1}\bigl(H_b(p)-C_{\mathrm{acc}}(t)\bigr).
+\label{eq:binary-floor}
+\end{equation}
+
+As $C_{\mathrm{acc}}\to0$, $D_{\min}\to\min(p,1-p)$: the observer can only guess the most probable state.
+
+\subsection{Memory update and erased distinctions}
+
+To connect to the Landauer bound, define the memory dynamics as
+
+\begin{equation}
+M_{t+\tau}
+=
+\Pi_{C_{\mathrm{acc}}(t+\tau)}
+\bigl[
+U(M_t,Y_t)
+\bigr],
+\label{eq:memory-dynamics}
+\end{equation}
+
+where $\Pi_C$ is a projection or compression operator that projects onto the $C$-bit accessible space. The number of erased distinctions per update step is
+
+\begin{equation}
+E_t
+=
+H\bigl(U(M_t,Y_t)\bigr)
+-
+H(M_{t+\tau}),
+\label{eq:erased-bits}
+\end{equation}
+
+or more precisely, the logical erasure \cite{wufdsagency2026}:
+
+\begin{equation}
+E_t
+=
+H(M_t|M_{t+\tau},Y_t).
+\label{eq:erased-conditional}
+\end{equation}
+
+The Landauer bridge then gives $\dot Q_{\mathrm{irr}}(t)\geq k_BT\ln2\cdot E_t/\tau$, linking the toy model directly to the maintenance bound \eqref{eq:maintenance-bound}.
+
+\subsection{Three predictions from the toy model}
+
+\textbf{Prediction 1 (capacity collapse curve).} As $C_H(t)$ decreases, $C_{\mathrm{acc}}(t)=\min\{C_M,C_Y,C_H(t),C_{\mathrm{ext}}^{\mathrm{eff}}\}$ switches between bottleneck regimes. Each switch produces a kink in $C_{\mathrm{acc}}(t)$ and therefore a slope change in the error floor $\varepsilon_{\min}(t)=D(C_{\mathrm{acc}}(t))$.
+
+\textbf{Prediction 2 (observer entropy divergence).} Two observers with different $C_{\mathrm{acc}}^{(1)}(t),C_{\mathrm{acc}}^{(2)}(t)$ develop an entropy gap $\Delta S_{\mathcal{O}_1,\mathcal{O}_2}(t)$ that grows with the causal-access difference.
+
+\textbf{Prediction 3 (erasure heat spike).} If the system attempts to maintain the same distortion $\varepsilon$ as $C_{\mathrm{acc}}(t)$ declines, it must compress or reset more aggressively: $E_t$ rises, producing a transient heat spike $\dot Q_{\mathrm{irr}}\propto k_BT\ln2\cdot E_t/\tau$.
+
+% -------------------------------------------------------------------
+\section{Simulation and Experimental Protocols}
+% -------------------------------------------------------------------
+
+We describe three tiers of protocol for testing the FDS maintenance bound, ordered by increasing physical realism and difficulty.
+
+\subsection{Protocol A: Constrained-memory channel simulation}
+
+\textbf{Goal.} Verify $\varepsilon_{\min}(t)=D(C_{\mathrm{acc}}(t))$ and $\dot Q_{\mathrm{irr}}\geq k_BT\ln2\sum_t H(M_t|M_{t+\tau},Y_t)$ in a controlled simulation.
+
+\textbf{System.} Construct a source $Z_t$ (e.g., Gaussian AR(1) process, binary Markov chain, hidden Markov model, or chaotic logistic map). The observer has:
+
+\begin{itemize}
+    \item fixed memory $C_M$ (bits);
+    \item channel capacity $C_Y(t)$;
+    \item causal-boundary capacity $C_H(t)=C_0\,\eta(t)$ with $\eta(t)$ given by \eqref{eq:sigmoid-horizon};
+    \item {\raggedright accessible capacity $C_{\mathrm{acc}}(t)=\min\{C_M,C_Y(t),C_H(t)\}$, evaluated per update window;\par}
+\end{itemize}
+
+\textbf{Procedure.}
+\begin{enumerate}
+    \item Pre-register a task distortion tolerance $\varepsilon$.
+    \item The observer tracks $Z_t$ using an optimal or bounded encoder.
+    \item Gradually reduce $C_H(t)$ or $C_Y(t)$.
+    \item Record reconstruction error, retained mutual information $I(Z_t;M_t)$, erased bits $H(M_t|M_{t+\tau},Y_t)$, reset or compression frequency, and estimated heat lower bound.
+\end{enumerate}
+
+\textbf{Expected result.} When $R_{\min}^{(\tau)}(\varepsilon)>C_{\mathrm{acc}}(t)$, at least one of the following must occur: error rises, erasure or compression rises, or externalization or pruning is triggered. If none occur while task performance is maintained, the FDS maintenance bound is violated.
+
+\subsection{Protocol B: Finite-temperature quantum memory and channel}
+
+\textbf{System.} A finite quantum memory $M$ coupled to a bath at temperature $T$, receiving states from a quantum or classical source.
+
+\textbf{Controllable parameters.} Memory Hilbert dimension $d_M$, channel transmissivity $\eta(t)$, reset frequency, bath temperature, task discrimination threshold, measurement or coarse-graining map.
+
+\textbf{Measurable quantities.} Discrimination success probability, accessible mutual information, entropy production, heat dissipation, reset work, quantum memory fidelity, task-relevant distortion.
+
+\textbf{Core test.} Tune $\eta(t):1\to0$, define $C_{\mathrm{chan}}(t)=\log_2 d_{\mathrm{eff}}(t)$ or the Holevo quantity $\chi(t)$, and test whether $\varepsilon_{\min}(t)\geq D(C_{\mathrm{acc}}(t))$ holds. Maintaining low distortion should require increasing reset or compression heat.
+
+\subsection{Protocol C: Analogue-horizon mode registration}
+
+\textbf{Rationale.} Analogue horizon systems (BEC, optical, acoustic, circuit) can realize tunable causal bottlenecks without requiring astrophysical black holes \cite{bousso2002}.
+
+\textbf{Observable.} Define
+
+\begin{equation}
+C_{\mathrm{reg}}(g)
+=
+\parbox[t]{6cm}{\raggedright number of recoverable mode distinctions at control parameter $g$},
+\end{equation}
+
+and the reconstructability decay rate
+
+\begin{equation}
+\kappa_{\mathrm{reg}}(g)
+=
+-\frac{d}{dt}\log\mathcal{R}_g(t),
+\end{equation}
+
+where $\mathcal{R}_g(t)$ is the recoverability of initial mode labels or boundary-mode information. Measure the steady-state entropy production $\dot\Sigma_{\mathrm{ss}}(g)$ near the horizon-like transition.
+
+\textbf{Expected signature.} Near an effective horizon transition or capacity bottleneck, $dC_{\mathrm{reg}}/dg$ or $d\dot\Sigma_{\mathrm{ss}}/dg$ should show a kink or anomaly. This protocol is exploratory; the strongest near-term DT-specific physical signature remains the topological two-kink proposed for FDS-P3 \cite{wuphysicalregistry2026}.
+
+% -------------------------------------------------------------------
+\section{Consequences}
+% -------------------------------------------------------------------
+
+\subsection{No infinite local observer}
+
+A finite observer cannot be replaced by an ideal observer with infinite memory and infinite causal access without changing the physical problem. Such an idealization may be mathematically useful, but it erases the central constraints that make observation physical. In FDS, observer idealization is allowed only as a limiting model whose domain of validity must be stated.
+
+\subsection{Holography as boundary accounting}
+
+From the FDS perspective, holography is a boundary accounting law for distinguishability. Interior processes may be numerous, but finite observers access and stabilize information through boundaries. When gravity becomes relevant, the boundary itself carries the ultimate information ceiling. The area law is therefore the natural limiting form of finite distinguishability accounting.
+
+\subsection{Coarse-graining is forced, not optional}
+
+When $R_{\min}^{(\tau)}(\varepsilon;\Psi)$ exceeds $C_{\mathrm{acc}}$, coarse-graining is not a methodological choice. It is forced by physical capacity. Different observers may choose different coarse-grainings because they have different budgets, tasks, horizons, and error tolerances.
+
+\subsection{Externalization is bounded}
+
+Maps, instruments, laboratories, computer memory, archives, and environmental records can expand an observer's effective budget. But they do not remove the budget. They create a larger boundary whose records require stability, access, error correction, and thermodynamic maintenance. In gravitational regimes, even the enlarged boundary remains subject to area ceilings.
+
+\subsection{Relation to black-hole complementarity}
+
+FDS-T1 gives a neutral way to discuss why different observers may assign different accessible descriptions near horizons. The exterior observer's accessible distinction budget is tied to the horizon boundary, while an infalling observer's local patch differs. This paper does not solve the black-hole information problem. It supplies a finite-observer vocabulary for describing the difference between global unitary preservation, boundary encoding, and finite observer recoverability.
+
+\subsection{Bridge failure contract}
+
+The results of this paper are conditional on the validity domain of the physical bridge assumptions used: Bekenstein-type entropy bounds, holographic or covariant entropy ceilings, finite causal access, and Landauer-style update accounting. If future quantum-gravity physics discovers a regime in which Bekenstein or holographic bounds fail---for example through presently unknown topological sectors, non-area-like information storage, or a fundamentally different accounting of accessible physical information---then the corresponding FDS-T1 bridge claims must be revised or withdrawn within that regime. Such a failure would not by itself falsify the algebraic FDS core, which only asserts finite projection, boundary-relative capacity, update constraints, and deficit-induced exits at the formal level. It would falsify the specific physical embedding of those formal objects into the currently accepted gravitational information bounds.
+
+\begin{table*}[t!]
+\centering
+\small
+\caption{Layered failure contract for FDS-T1 claims.}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{lll}
+\toprule
+Layer & Claim status & Failure consequence \\
+\midrule
+FDS-0 Core 
+& \parbox[t]{4.5cm}{\raggedright Formal definitional system\vphantom{y}}
+& \parbox[t]{4.5cm}{\raggedright Falsified only by internal incoherence or contradictory definitions} \\
+\midrule
+T1 Physical Bridge 
+& \parbox[t]{4.5cm}{\raggedright Conditional embedding of FDS objects into Bekenstein, holographic, and Landauer bounds}
+& \parbox[t]{4.5cm}{\raggedright Fails if imported constraints are violated or superseded in applicable regimes} \\
+\midrule
+Holographic embedding 
+& \parbox[t]{4.5cm}{\raggedright Horizon-bounded accessible distinction scales with boundary area}
+& \parbox[t]{4.5cm}{\raggedright Revised if future quantum gravity gives non-area information accounting} \\
+\midrule
+Maintenance bound 
+& \parbox[t]{4.5cm}{\raggedright Irreversible surplus distinctions carry Landauer update cost}
+& \parbox[t]{4.5cm}{\raggedright Revised if Landauer accounting fails under stated conditions} \\
+\bottomrule
+\end{tabular}
+\label{tab:failure-contract}
+\end{table*}
+
+% -------------------------------------------------------------------
+\section{Falsification Conditions and Tests}
+% -------------------------------------------------------------------
+
+\subsection{Bridge-level falsification}
+
+The FDS-T1 bridge would be undermined by any of the following:
+
+\begin{enumerate}
+    \item a finite-energy, finite-radius physical system reliably encoding more information than the Bekenstein bound permits under conditions where the bound is supposed to apply;
+    \item a horizon-bounded system with entropy exceeding the holographic ceiling under an appropriate covariant formulation;
+    \item a finite observer capable of registering, preserving, updating, and operationally using unbounded distinctions with bounded energy, bounded memory, bounded causal access, and bounded error correction;
+    \item a physically implemented logically irreversible erasure process violating the generalized Landauer lower bound under its stated thermodynamic conditions.
+\end{enumerate}
+
+Failure of one bridge does not automatically destroy the FDS formal core. It localizes the failure to the physical interpretation or to the external physical theorem being used.
+
+\subsection{Operational tests}
+
+Direct Planck-scale tests of holographic bounds are not currently available. But FDS-T1 motivates lower-energy proxy tests.
+
+\begin{protocol}[Finite-budget observation test]
+To test a finite distinguishability budget in a controlled system:
+\begin{enumerate}
+    \item specify the observer or apparatus boundary $B$;
+    \item estimate internal record capacity $C_{\mathrm{int}}$;
+    \item estimate channel capacity $C_{\mathrm{chan}}$ and update capacity $C_{\mathrm{time}}$;
+    \item define a task family $\Psi$ and distortion tolerance $\varepsilon$;
+    \item estimate $R_{\min}^{(\tau)}(\varepsilon;\Psi)$ using compression curves, rate-distortion lower bounds, Fisher information, or task-specific coding lower bounds;
+    \item test whether performance degrades, coarse-grains or compresses, externalizes, prunes, or fails as $R_{\min}$ crosses $C_{\mathrm{acc}}$.
+\end{enumerate}
+\end{protocol}
+
+\begin{protocol}[Analogue-horizon budget test]
+In an analogue horizon system, compare the number of recoverable, operationally distinguishable modes across a horizon-like boundary to the effective boundary area, noise temperature, and channel-access constraints. FDS-T1 predicts that recoverable distinction capacity should be boundary-limited and should degrade as access across the effective horizon becomes thermodynamically or causally unavailable.
+\end{protocol}
+
+\subsection{Expected signatures}
+
+FDS-T1 predicts the following qualitative signatures:
+
+\begin{enumerate}
+    \item \textbf{Boundary-limited recoverability:} recoverable distinctions scale with access boundary capacity rather than naive interior volume when the boundary is the bottleneck.
+    \item \textbf{Budget crossing:} as task distinction demand crosses accessible capacity, systems should show sharp increases in compression, pruning, error, latency, or externalization.
+    \item \textbf{Observer-dependent coarse-graining:} different observers with different budgets should stabilize different partitions of the same underlying physical process.
+    \item \textbf{Thermodynamic update cost:} high-rate irreversible updating should show increased dissipation consistent with Landauer-style accounting when its assumptions hold.
+\end{enumerate}
+
+% -------------------------------------------------------------------
+\section{Limitations}
+% -------------------------------------------------------------------
+
+First, this paper does not derive the Bekenstein or holographic bounds from the distinction primitive alone. It imports them as physical bridge constraints.
+
+Second, the exact coefficient $1/4$ in $S=\kB A/(4\ellP^2)$ is not derived. The paper uses the established Bekenstein--Hawking formula as the strongest known limiting case.
+
+Third, finite distinguishability is not the same as finite Hilbert-space dimension. A system may have a very large or infinite mathematical state description while a finite observer has limited operational access.
+
+Fourth, the accessible budget formula \eqref{eq:master-budget} is conservative and schematic. Real systems may require detailed modeling of noise, error correction, coupling, clocking, decoherence, control cost, and measurement back-action.
+
+Fifth, not every boundary is a horizon. The paper distinguishes general distinguishability horizons from event horizons, apparent horizons, causal diamonds, and engineered analogue horizons.
+
+Sixth, the framework is compatible with unitary microscopic dynamics. It concerns accessible records and finite observation, not necessarily fundamental non-unitarity.
+
+% -------------------------------------------------------------------
+\section{Conclusion}
+% -------------------------------------------------------------------
+
+This paper has developed FDS-T1: finite distinguishability budgets under holographic information bounds. The core claim is that a finite physical observer cannot access unlimited distinctions. Its operational distinction space is bounded by internal record capacity, channel capacity, update capacity, thermodynamic cost, causal access, and ultimately by Bekenstein or holographic information ceilings when gravitational bounds become relevant.
+
+The central static formula is the budget bottleneck
+\begin{equation}
+C_{\mathrm{acc}}(\Obs,\Patch)
+\leq
+\min\left\{
+C_{\mathrm{int}},
+\frac{2\pi ER}{\hbar c\ln2},
+\frac{A}{4\ellP^2\ln2},
+C_{\mathrm{chan}},
+C_{\mathrm{time}}
+\right\}.
+\end{equation}
+When task demand exceeds this accessible budget, a finite system must coarse-grain or compress, externalize, prune, relax the task, or fail. This is the physical counterpart of the FDS capacity-deficit principle.
+
+The paper's central dynamic contribution is the distinction maintenance bound (\ref{eq:maintenance-bound}) and its associated viability condition (\ref{eq:viability}). These are not restatements of the Bekenstein or holographic bounds. They are FDS-specific inequalities: they relate task-relevant distinction demand, accessible capacity bottlenecks, invariant compression, externalization, and the thermodynamic cost of irreversible erasure into a single maintenance condition. A finite system that cannot meet this condition must relax its task, expand its accessible capacity, prune internal structure, or collapse.
+
+The paper's third contribution is a computable toy model of causal-access collapse (Section~8), in which a sigmoid horizon-like bottleneck drives the accessible capacity through a sequence of regime switches, each producing a kink in the coarse-graining error floor. The model gives three testable predictions: a capacity collapse curve with bottleneck-switching kinks, observer-relative entropy divergence, and an erasure heat spike when the system attempts to maintain distortion under shrinking capacity.
+
+The paper's fourth contribution is a three-tier protocol suite (Section~9): constrained-memory channel simulation, finite-temperature quantum memory, and analogue-horizon mode registration. These are designed to test the maintenance bound at increasing levels of physical realism.
+
+The paper's contribution is not a new derivation of quantum gravity. It is a disciplined bridge between established information bounds and the FDS claim that finite systems maintain identity by paying for distinctions. Bekenstein and holographic bounds become ceilings on distinguishability, not merely entropy formulas. Horizons become boundaries of finite distinction access, not merely geometric surfaces. Observers become finite record carriers, not idealized points of omniscience. The distinction maintenance bound adds an operational, testable, FDS-specific dynamic constraint that goes beyond translation of existing bounds.
+
+Future work should connect this T1 bridge to T2 effective geometry, T3 effective stochasticity, bounded-memory reversible computation, the topological two-kink signature (FDS-P3) as the strongest near-term DT-specific physical signature, and experimental proxy tests in finite-temperature quantum systems, analogue horizons, and resource-bounded computational agents.
+
+% -------------------------------------------------------------------
+\section*{Acknowledgments}
+% -------------------------------------------------------------------
+
+The author used AI-assisted tools for language polishing, structural feedback, and drafting support. All claims, arguments, citations, and final wording remain the responsibility of the author.
+
+\appendix
+
+\section{Notation and Claim Status Tables}
+
+\begin{table*}[t!]
+\centering
+\small
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{ll}
+\toprule
+\parbox[t]{2.6cm}{\raggedright\textbf{Symbol}} & \parbox[t]{10.5cm}{\raggedright\textbf{Meaning}}\\
+\midrule
+$\Obs$ & finite observer or distinction-register\\
+$\Patch$ & observer-accessible region or causal patch\\
+$\bd\Patch$ & operational, causal, or horizon boundary of the patch\\
+$\pi_{\Obs}$ & finite distinction projection implemented by $\Obs$\\
+$\NA$ & number of operationally distinguishable alternatives\\
+$\CA$ & bit capacity $\log_2\NA$\\
+$C_{\mathrm{int}}$ & internal record capacity\\
+$C_{\mathrm{bd}}$ & accessible boundary information capacity\\
+$C_{\mathrm{chan}}$ & channel-limited capacity\\
+$C_{\mathrm{time}}$ & update-rate or finite-time capacity\\
+$C_{\mathrm{acc}}$ & effective accessible capacity, the bottleneck minimum\\
+$R_{\min}^{(\tau)}(\varepsilon;\Psi)$ & minimal task-relevant rate-distortion demand\\
+$\Delta_{\varepsilon}^{\Patch}$ & boundary-relative capacity deficit\\
+$E$ & energy of bounded region\\
+$R$ & radius or size scale of bounded region\\
+$A$ & area of relevant boundary or horizon\\
+$\ellP$ & Planck length $\sqrt{\hbar G/c^3}$\\
+$S_{\mathrm{acc}}$ & observer-relative accessible entropy\\
+\bottomrule
+\end{tabular}
+\caption{Minimal notation table for FDS-T1.}
+\end{table*}
+
+\begin{table*}[t!]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{llll}
+\toprule
+\parbox[t]{2.5cm}{\raggedright\textbf{Claim}} &
+\parbox[t]{2.2cm}{\raggedright\textbf{Status}} &
+\parbox[t]{4.4cm}{\raggedright\textbf{Dependency}} &
+\parbox[t]{4.8cm}{\raggedright\textbf{Failure condition}}\\
+\midrule
+\parbox[t]{2.5cm}{\raggedright Finite observer budget} &
+\parbox[t]{2.4cm}{\raggedright Formal/physical bridge} &
+\parbox[t]{4.4cm}{\raggedright finite record carrier; finite operational error tolerance} &
+\parbox[t]{4.8cm}{\raggedright finite physical observer with unbounded reliable distinctions under bounded resources}\\[0.6em]
+\parbox[t]{2.5cm}{\raggedright Bekenstein distinguishability ceiling} &
+\parbox[t]{2.2cm}{\raggedright Physical bridge} &
+\parbox[t]{4.4cm}{\raggedright Bekenstein bound} &
+\parbox[t]{4.8cm}{\raggedright bounded system exceeding Bekenstein info limit under applicable assumptions}\\[0.6em]
+\parbox[t]{2.5cm}{\raggedright Holographic distinguishability ceiling} &
+\parbox[t]{2.2cm}{\raggedright Physical bridge} &
+\parbox[t]{4.4cm}{\raggedright holographic/covariant entropy bound} &
+\parbox[t]{4.8cm}{\raggedright horizon-bounded region exceeding appropriate area entropy ceiling}\\[0.6em]
+\parbox[t]{2.5cm}{\raggedright Boundary-relative capacity deficit} &
+\parbox[t]{2.2cm}{\raggedright Formal conditional} &
+\parbox[t]{4.4cm}{\raggedright rate-distortion demand; accessible capacity estimate} &
+\parbox[t]{4.8cm}{\raggedright task succeeds at full fidelity despite demand exceeding all accessible capacity}\\[0.6em]
+\parbox[t]{2.5cm}{\raggedright Budget-exit classification} &
+\parbox[t]{2.2cm}{\raggedright Conditional theorem} &
+\parbox[t]{4.4cm}{\raggedright positive deficit; bounded resources} &
+\parbox[t]{4.8cm}{\raggedright no coarse-graining, no externalization, no pruning, no task relaxation, no failure under persistent deficit}\\[0.6em]
+\parbox[t]{2.5cm}{\raggedright Observer-relative accessible entropy} &
+\parbox[t]{2.2cm}{\raggedright Interpretive bridge} &
+\parbox[t]{4.4cm}{\raggedright finite projection; physical record access} &
+\parbox[t]{4.8cm}{\raggedright entropy assignment requiring no finite record carrier, boundary, or coarse-graining}\\
+\bottomrule
+\end{tabular}
+\caption{Claim status and failure conditions for the FDS-T1 bridge.}
+\end{table*}
+
+\section*{Code availability}
+
+The simulation code for the minimal computable model (Section~\ref{sec:model}) will be released with the public preprint version at \url{https://github.com/yiningwu-research/Distinction-Theory}.
+
+\clearpage
+% -------------------------------------------------------------------
+\begin{thebibliography}{99}
+
+\bibitem{wu2026fds}
+Y. Wu, ``Active Finite Distinction Systems: A Formal Core for Boundary Maintenance under Finite Capacity,'' Zenodo, 2026.
+
+\bibitem{wu2026distinction}
+Y. Wu, ``Distinction Theory: A General Theory of Finite Systems,'' Zenodo, 2026.
+
+\bibitem{wufdsagency2026}
+Y. Wu, ``Active Finite Distinction Systems as a Criterion for Artificial Agency,'' preprint, 2026.
+
+\bibitem{wuphysicalregistry2026}
+Y. Wu, ``Physical Bridge Claim Registry for Active Finite Distinction Systems: Time, Observers, Horizons, Topological Persistence, and High-Risk Physical Extensions,'' Public Registry v1.0, 2026.
+
+\bibitem{bekenstein1973}
+J. D. Bekenstein, ``Black holes and entropy,'' \emph{Physical Review D} \textbf{7}, 2333--2346 (1973).
+
+\bibitem{hawking1975}
+S. W. Hawking, ``Particle creation by black holes,'' \emph{Communications in Mathematical Physics} \textbf{43}, 199--220 (1975).
+
+\bibitem{bekenstein1981}
+J. D. Bekenstein, ``Universal upper bound on the entropy-to-energy ratio for bounded systems,'' \emph{Physical Review D} \textbf{23}, 287--298 (1981).
+
+\bibitem{bekenstein2003}
+J. D. Bekenstein, ``Information in the holographic universe,'' \emph{Scientific American} \textbf{289}, 58--65 (2003).
+
+\bibitem{thooft1993}
+G. 't Hooft, ``Dimensional reduction in quantum gravity,'' arXiv:gr-qc/9310026 (1993).
+
+\bibitem{susskind1995}
+L. Susskind, ``The world as a hologram,'' \emph{Journal of Mathematical Physics} \textbf{36}, 6377--6396 (1995).
+
+\bibitem{bousso2002}
+R. Bousso, ``The holographic principle,'' \emph{Reviews of Modern Physics} \textbf{74}, 825--874 (2002).
+
+\bibitem{jacobson1995}
+T. Jacobson, ``Thermodynamics of spacetime: The Einstein equation of state,'' \emph{Physical Review Letters} \textbf{75}, 1260--1263 (1995).
+
+\bibitem{verlinde2011}
+E. Verlinde, ``On the origin of gravity and the laws of Newton,'' \emph{Journal of High Energy Physics} \textbf{2011}, 29 (2011).
+
+\bibitem{landauer1961}
+R. Landauer, ``Irreversibility and heat generation in the computing process,'' \emph{IBM Journal of Research and Development} \textbf{5}, 183--191 (1961).
+
+\bibitem{bennett1982}
+C. H. Bennett, ``The thermodynamics of computation---a review,'' \emph{International Journal of Theoretical Physics} \textbf{21}, 905--940 (1982).
+
+\bibitem{berut2012}
+A. B\'{e}rut \emph{et al.}, ``Experimental verification of Landauer's principle linking information and thermodynamics,'' \emph{Nature} \textbf{483}, 187--189 (2012).
+
+\bibitem{jun2014}
+Y. Jun, M. Gavrilov, and J. Bechhoefer, ``High-precision test of Landauer's principle in a feedback trap,'' \emph{Physical Review Letters} \textbf{113}, 190601 (2014).
+
+\bibitem{hong2016}
+J. Hong, B. Lambson, S. Dhuey, and J. Bokor, ``Experimental test of Landauer's principle in single-bit operations on nanomagnetic memory bits,'' \emph{Science Advances} \textbf{2}, e1501492 (2016).
+
+\bibitem{seifert2012}
+U. Seifert, ``Stochastic thermodynamics, fluctuation theorems and molecular machines,'' \emph{Reports on Progress in Physics} \textbf{75}, 126001 (2012).
+
+\bibitem{parrondo2015}
+J. M. R. Parrondo, J. M. Horowitz, and T. Sagawa, ``Thermodynamics of information,'' \emph{Reviews of Modern Physics} \textbf{87}, 45--67 (2015).
+
+\bibitem{sagawa2010}
+T. Sagawa and M. Ueda, ``Generalized Jarzynski equality under nonequilibrium feedback control,'' \emph{Physical Review Letters} \textbf{104}, 090602 (2010).
+
+\bibitem{wheeler1990}
+J. A. Wheeler, ``Information, physics, quantum: The search for links,'' in \emph{Complexity, Entropy, and the Physics of Information}, edited by W. H. Zurek, Addison-Wesley (1990).
+
+\bibitem{rovelli1996}
+C. Rovelli, ``Relational quantum mechanics,'' \emph{International Journal of Theoretical Physics} \textbf{35}, 1637--1678 (1996).
+
+\bibitem{zurek2003}
+W. H. Zurek, ``Decoherence, einselection, and the quantum origins of the classical,'' \emph{Reviews of Modern Physics} \textbf{75}, 715--775 (2003).
+
+\bibitem{schlosshauer2007}
+M. Schlosshauer, \emph{Decoherence and the Quantum-to-Classical Transition}. Springer, Berlin (2007).
+
+\bibitem{shannon1948}
+C. E. Shannon, ``A mathematical theory of communication,'' \emph{Bell System Technical Journal} \textbf{27}, 379--423 and 623--656 (1948).
+
+\bibitem{shannon1959}
+C. E. Shannon, ``Coding theorems for a discrete source with a fidelity criterion,'' \emph{IRE National Convention Record} \textbf{7}, 142--163 (1959).
+
+\bibitem{berger1971}
+T. Berger, \emph{Rate Distortion Theory: A Mathematical Basis for Data Compression}. Prentice-Hall, Englewood Cliffs (1971).
+
+\bibitem{cover2006}
+T. M. Cover and J. A. Thomas, \emph{Elements of Information Theory}, 2nd ed. Wiley, Hoboken (2006).
+
+\end{thebibliography}
+
+\end{document}

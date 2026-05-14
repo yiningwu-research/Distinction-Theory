@@ -22,12 +22,14 @@ A falsifiable, tiered research programme for finite systems, boundary maintenanc
 
 This repository is the public research archive for **Distinction Theory (DT)** and **Active Finite Distinction Systems (FDS)**.
 
-The project is organized into four public layers:
+The project is organized into six public layers:
 
 1. **DT Archive** — the broad claim-space archive.
 2. **FDS Core** — the formal finite-system architecture.
-3. **Physical Bridge Claim Registry** — dependency-ordered physical bridge claims.
-4. **AI Agency Paper** — an operational criterion for artificial agency.
+3. **Physical Bridge Registry** — dependency-ordered physical bridge claims.
+4. **FDS-T1 Physical Observer Paper** — finite distinguishability budgets and maintenance bounds for physical observers.
+5. **FDS-A1 AI Agency Paper** — an operational criterion for artificial agency.
+6. **FDS-LC0 Life/Cognitive Registry** — active pruning, death-like collapse, cognitive bottlenecks, and anesthesia recovery ordering.
 
 The framework is not presented as a finished theory of everything. Claims are organized by epistemic tier, dependency, mapping integrity, falsification condition, and consequence of failure.
 
@@ -109,34 +111,33 @@ Do not start with the full DT Archive unless you want the complete claim-space.
 ## Key Documents
 
 | Code | Document | Status | DOI / Link |
-|---|---|---|---|
+|---|---|---|---|---|
 | **DT-Archive** | *Distinction Theory: A General Theory of Finite Systems* | Zenodo archive | [10.5281/zenodo.20130174](https://doi.org/10.5281/zenodo.20130174) |
 | **FDS-0** | *Active Finite Distinction Systems: A Formal Core for Boundary Maintenance under Finite Capacity* | Zenodo preprint | [10.5281/zenodo.20158923](https://doi.org/10.5281/zenodo.20158923) |
 | **FDS-P0** | *Physical Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo preprint | [10.5281/zenodo.20159995](https://doi.org/10.5281/zenodo.20159995) |
+| **FDS-T1** | *Finite Distinguishability Budgets and Maintenance Bounds for Physical Observers* | Pre-arXiv working paper | DOI pending |
 | **FDS-A1** | *Active Finite Distinction Systems as a Criterion for Artificial Agency* | Submitted to arXiv | arXiv ID pending |
+| **FDS-LC0** | *Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo registry | [10.5281/zenodo.20183373](https://doi.org/10.5281/zenodo.20183373) |
 
 ---
 
-## Reading Paths
+## Suggested Reading Path
 
-For most new readers, use the official website first:
+For new readers:
 
-1. Start with the public guide: [https://www.distinctiontheory.org/start](https://www.distinctiontheory.org/start)
-2. Review the paper map: [https://www.distinctiontheory.org/papers](https://www.distinctiontheory.org/papers)
-3. Check claim status before evaluating downstream claims: [https://www.distinctiontheory.org/claims](https://www.distinctiontheory.org/claims)
-4. Review failure conditions: [https://www.distinctiontheory.org/failure-registry](https://www.distinctiontheory.org/failure-registry)
-5. Read prior-art boundaries: [https://www.distinctiontheory.org/prior-art](https://www.distinctiontheory.org/prior-art)
+1. Start with **FDS-0** for the formal finite-system architecture.
+2. Read **FDS-A1** if your entry point is artificial agency, autonomous systems, or AI.
+3. Read **FDS-T1** if your entry point is finite observers, information bounds, thermodynamics, or physical foundations.
+4. Read **FDS-LC0** if your entry point is artificial life, active pruning, death-like collapse, consciousness recovery, or cognitive bottlenecks.
+5. Read **FDS-P0** for the broader physical bridge claim registry.
+6. Use **DT-Archive** as the broad claim-space archive and historical map of the programme.
 
-For the full archival document:
+For the official website:
 
-1. Start with the Prologue.
-2. Read Part I: The Essence of Distinction Theory.
-3. Review The Core Chain and The Ten-Step Derivation.
-4. Read The Three-Layer Architecture and The Claim Hierarchy before judging downstream claims.
-5. Continue to The Physical Bridge.
-6. Read The Constitutional Corollaries.
-7. Treat all physical, biological, cognitive, AI, and civilizational extensions according to their assigned epistemic tier.
-8. Read The Methodology of Falsification and Appendix N: Falsifiability Registry before evaluating the protective belt.
+- [Start Guide](https://www.distinctiontheory.org/start)
+- [Paper Map](https://www.distinctiontheory.org/papers)
+- [Claim Status](https://www.distinctiontheory.org/claims)
+- [Failure Registry](https://www.distinctiontheory.org/failure-registry)
 
 See also `START_HERE.md` for detailed reading paths by entry level and interest area.
 
@@ -284,6 +285,54 @@ It is a registry, not a completed physical theory.
 
 ---
 
+### FDS-T1
+
+**Finite Distinguishability Budgets and Maintenance Bounds for Physical Observers**
+
+Status: Pre-arXiv working paper; hard-model and numerical-code release in progress.
+
+This paper develops the physical-observer bridge of FDS. It connects finite distinguishability budgets to Bekenstein and holographic information bounds, defines accessible distinction capacity, introduces a dynamic distinction-maintenance inequality, and develops a minimal computable model of causal-access collapse.
+
+Main themes:
+
+- finite physical observers as distinction-registers;
+- observer-relative distinguishability budgets;
+- Bekenstein and holographic distinguishability ceilings;
+- accessible capacity bottlenecks;
+- distinction maintenance bound;
+- capacity-deficit exit classification;
+- causal-access collapse model;
+- bottleneck-switching error kinks;
+- maintenance heat lower bounds;
+- bridge failure contract.
+
+---
+
+### FDS-LC0
+
+**Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems**
+
+Zenodo DOI: [10.5281/zenodo.20183373](https://doi.org/10.5281/zenodo.20183373)
+
+A public claim registry for life-science and cognitive-science bridge claims.
+
+This document registers claims involving:
+
+- active pruning as a candidate requirement for persistent finite boundary systems;
+- residue-induced collapse;
+- death-like maintenance-attractor loss;
+- rescue-window closure;
+- surface-to-volume scaling in protocell-like systems;
+- near-collapse warning signatures;
+- finite-capacity cognitive bottlenecks;
+- anesthesia recovery ordering;
+- self/agency coherence;
+- cognitive pruning and forgetting.
+
+It is a claim registry, not a completed theory of life, clinical death, medicine, neuroscience, or consciousness.
+
+---
+
 ### FDS-A1
 
 **Active Finite Distinction Systems as a Criterion for Artificial Agency**
@@ -308,20 +357,37 @@ It also provides an operational test protocol and a minimal gridworld MDP illust
 
 ```text
 Distinction-Theory/
-├── README.md                   # Repository overview
-├── START_HERE.md               # Reading paths
-├── PAPER_MAP.md                # Publication roadmap
-├── CLAIM_STATUS.md             # Current claim status table
-├── FAILURE_REGISTRY.md         # Failure conditions and consequences
-├── EVALUATION_PROTOCOL.md      # How to critique DT/FDS
-├── PRIOR_ART_BOUNDARY.md       # Prior-art boundary conditions
-├── CITATION.cff                # Citation metadata
-├── OFFICIAL_LINKS.md           # Key project links
+├── README.md
+├── START_HERE.md
+├── PAPER_MAP.md
+├── CLAIM_STATUS.md
+├── FAILURE_REGISTRY.md
+├── EVALUATION_PROTOCOL.md
+├── PRIOR_ART_BOUNDARY.md
+├── CITATION.cff
+├── OFFICIAL_LINKS.md
+├── VIDEOS.md
 ├── .gitignore
-├── papers/                     # Released PDFs
-├── source/                     # LaTeX sources
-├── registries/                 # Machine-readable registries
-└── .github/                    # Issue templates
+├── papers/
+│   ├── archive/
+│   │   └── Distinction_Theory_Archive_v1.0.pdf
+│   ├── core/
+│   │   └── FDS_Core_v1.0.pdf
+│   ├── physics/
+│   │   ├── FDS_Physical_Bridge_Claim_Registry_v1.0.pdf
+│   │   └── FDS_T1_Finite_Distinguishability_Budgets.pdf
+│   ├── ai/
+│   │   └── FDS_AI_Agency_v1.0.pdf
+│   └── life_cognition/
+│       └── FDS_LC0_Life_Cognitive_Claim_Registry.pdf
+├── source/
+│   ├── FDS_Core_v1.0.tex
+│   ├── FDS_AI_Agency_v1.0.tex
+│   ├── FDS_T1_Finite_Distinguishability_Budgets.tex
+│   ├── FDS_LC0_Life_Cognitive_Claim_Registry.tex
+│   └── Physical_Claim_Registry.tex
+├── registries/
+└── .github/
 ```
 
 The official public navigation layer is maintained at:
@@ -448,6 +514,18 @@ For the AI Agency paper:
 ```
 
 This entry will be updated when the arXiv identifier is assigned.
+
+For the Life/Cognitive Bridge Registry:
+
+```bibtex
+@misc{wu2026fdslc0,
+  author       = {Wu, Yining},
+  title        = {Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems: Active Pruning, Boundary Maintenance, Death-like Collapse, Capacity Bottlenecks, and Consciousness Recovery},
+  year         = {2026},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.20183373}
+}
+```
 
 ---
 

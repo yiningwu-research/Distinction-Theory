@@ -1,0 +1,879 @@
+\pdfoutput=1
+% Contact: Yining Wu, yining.wu@alumni.upenn.edu
+\documentclass[10pt,a4paper,twocolumn,aps,prl]{revtex4-2}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,hyperref}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{calc}
+
+\newtheoremstyle{claimstyle}
+  {\topsep}{\topsep}{\itshape}{0pt}{\bfseries}{.}{0.5em}{}
+\theoremstyle{claimstyle}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem*{assumption}{Assumption}
+
+\definecolor{lightgray}{gray}{0.9}
+\definecolor{claimgray}{gray}{0.96}
+
+\newcommand{\DT}{Distinction Theory}
+\newcommand{\FDS}{FDS}
+\newcommand{\LC}{FDS-LC0}
+\newcommand{\claimfield}[1]{\noindent\textbf{#1.}}
+\newcommand{\Sactive}{S_{\mathrm{act}}}
+\newcommand{\rhodebt}{\rho_{\mathrm{res}}}
+\newcommand{\Bint}{B_{\mathrm{int}}}
+\newcommand{\Jflow}{J}
+\newcommand{\Vlife}{V_{\mathrm{maint}}}
+\newcommand{\Cacc}{C_{\mathrm{acc}}}
+\newcommand{\Cwm}{C_{\mathrm{wm}}}
+\newcommand{\Catt}{C_{\mathrm{attn}}}
+\newcommand{\Kself}{K_{\mathrm{self}}}
+\newcommand{\Rrep}{R_{\mathrm{rep}}}
+\newcommand{\Epred}{E_{\mathrm{pred}}}
+\newcommand{\dd}{\mathrm{d}}
+
+\begin{document}
+
+\title{Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems:\\ Active Pruning, Boundary Maintenance, Death-like Collapse, Capacity Bottlenecks, and Consciousness Recovery}
+
+\author{Yining Wu\\
+Independent Researcher\\
+\texttt{yining.wu@alumni.upenn.edu}}
+
+\date{Public Registry v1.0 | \today}
+
+\begin{abstract}
+This paper registers the principal life-science and cognitive-science bridge claims of \DT{}, a finite-system framework in which persistent identity requires boundary maintenance under finite capacity, resource constraints, residual complexity, and update cost. Unlike the \FDS{} Core, which states the formal finite-system architecture, and unlike future standalone simulation or experimental papers, the present document is a claim registry. It does not claim to solve the origin of life, define clinical death, prove a theory of consciousness, diagnose disease, or propose therapy. Instead, it registers auditable bridge claims concerning active pruning, residue-induced collapse, death-like maintenance-attractor loss, surface-to-volume scaling in protocell-like systems, near-collapse warning signatures, finite-capacity cognitive integration, and anesthesia recovery ordering. Each claim is assigned a tier, dependencies, prior-art relation, novelty statement, falsification or demotion condition, empirical status, and required next work. The core biological claim is that, in finite boundary-maintaining systems under sustained flux and residual-load production, active pruning is not an optional refinement but a candidate first-principles requirement for long-term life-like persistence. The core cognitive claim is that reportability and self/agency coherence should recover according to finite-capacity bottleneck constraints. The purpose is priority, auditability, and future model development, not immediate consensus.
+\end{abstract}
+
+\maketitle
+
+\section*{Epistemic Status}
+
+This document is a bridge claim registry, not a completed theory of life, death, consciousness, medicine, or cognition. It records life-science and cognitive-science bridge claims derived from, adjacent to, or motivated by the \FDS{} formal core. Formal results remain in the \FDS{} Core. Biological and cognitive claims require additional domain assumptions and may fail independently.
+
+The registry has four purposes: (i) priority and timestamping, (ii) dependency and risk classification, (iii) preparation for future standalone simulation and experimental papers, and (iv) explicit separation between core finite-system claims and domain-specific biological or cognitive mappings.
+
+A claim listed here is not thereby asserted as established biology, neuroscience, cognitive science, or medicine. Each claim is assigned a tier, dependencies, prior-art relation, novelty statement, falsification condition, empirical status, and required next work.
+
+\section*{Versioning}
+
+This is Public Registry v1.0. Claims may be promoted, demoted, split, merged, or retired in later versions. A version change does not imply that the entire \FDS{} programme has changed; it records the current status of life-science and cognitive-science bridge claims only.
+
+\section{Introduction: Why a Life and Cognitive Registry Is Needed}
+
+\subsection{From finite-system architecture to biological and cognitive bridge claims}
+
+The core architecture of \DT{} begins from the finite-system cost chain:
+\begin{center}
+\small
+Distinction $\rightarrow$ boundary $\rightarrow$ capacity deficit $\rightarrow$ approximation \\
+$\rightarrow$ corrective complexity $\rightarrow$ dissipative pressure \\
+$\rightarrow$ pruning / externalization / collapse / invariant-supported persistence.
+\end{center}
+The present paper does not re-derive that core chain. It asks a different question: if finite systems are biological, life-like, cognitive, or consciousness-supporting, what domain-level structures should one expect to appear? The answer is not a finished theory of biology or consciousness. It is a registry of bridge claims connecting the finite-system architecture to life-like persistence, death-like collapse, active residue control, neural/cognitive bottlenecks, and recovery ordering after loss of conscious reportability.
+
+The registry format is deliberate. Some claims below are close to existing biological or cognitive traditions: homeostasis, autopoiesis, protocell theory, autophagy and cellular quality control, active inference, global workspace accounts, integrated information approaches, neural complexity measures, and anesthesia recovery studies. Other claims are more speculative and should be treated as bridge hypotheses. The value of a registry is that it separates these cases. It prevents a domain bridge from being confused with a theorem, and it prevents the failure of one biological or cognitive module from being misread as the failure of the finite-system architecture as a whole.
+
+\subsection{Registry, not final theory}
+
+This paper is not a final theory of life, death, or consciousness. It does not claim that all living systems use the same molecular pruning mechanism, that all biological death is reducible to a single scalar threshold, that clinical death is solved by a finite-system definition, or that consciousness is identical to compression. Its goal is narrower and more auditable: to state biological and cognitive bridge claims, list their dependencies, identify prior-art neighbors, and specify what would falsify or demote each claim.
+
+A mature scientific theory normally has equations, fit parameters, experiments, and community-vetted limits. A research programme begins earlier: it identifies candidate dependencies and where they can fail. The present registry is written in that earlier sense. It is intended to make the life/cognitive claim-space searchable, citable, and falsifiable.
+
+\subsection{Relation to the physical and artificial-agency papers}
+
+The \FDS{} Core introduces the formal finite-system architecture. The physical registry organizes physical bridge modules by dependency, tier, and falsification condition. The artificial-agency paper applies the architecture to active boundary maintenance, causal loop closure, durable updates, resource-governed persistence, pruning, and externalization in AI systems. The present registry takes up life-science and cognitive-science modules excluded from those papers and organizes them by dependency, tier, and falsification condition.
+
+\subsection{What is not claimed}
+
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{ll}
+\toprule
+\parbox[t]{4.3cm}{\raggedright\textbf{Not claimed}} & \parbox[t]{10.2cm}{\raggedright\textbf{Reason}} \\
+\midrule
+\parbox[t]{4.3cm}{\raggedright \FDS{} solves the origin of life} & \parbox[t]{10.2cm}{\raggedright The registry only states finite-boundary maintenance claims and candidate experimental predictions. It does not reconstruct historical biogenesis.} \\
+\parbox[t]{4.3cm}{\raggedright \FDS{} defines all biological life} & \parbox[t]{10.2cm}{\raggedright The registry defines operational life-like persistence in finite boundary systems, not a universal taxonomic definition.} \\
+\parbox[t]{4.3cm}{\raggedright \FDS{} defines clinical death} & \parbox[t]{10.2cm}{\raggedright Death-like collapse here means loss of a maintenance attractor in a model system. It is not a medical, legal, or clinical criterion.} \\
+\parbox[t]{4.3cm}{\raggedright \FDS{} treats cancer, Alzheimer's disease, or immune disorders} & \parbox[t]{10.2cm}{\raggedright Biomedical extensions are explicitly excluded from the current registered claim set except as future non-clinical bridge directions.} \\
+\parbox[t]{4.3cm}{\raggedright \FDS{} proves consciousness} & \parbox[t]{10.2cm}{\raggedright Cognitive claims concern reportability, capacity bottlenecks, recovery ordering, and self/agency coherence; phenomenology requires additional assumptions.} \\
+\parbox[t]{4.3cm}{\raggedright Compression alone is consciousness} & \parbox[t]{10.2cm}{\raggedright Compression is treated as one capacity-management component, not a sufficient condition for consciousness.} \\
+\parbox[t]{4.3cm}{\raggedright \FDS{} replaces neuroscience or synthetic biology} & \parbox[t]{10.2cm}{\raggedright The registry is a bridge map and prediction ledger, not a replacement for domain-specific mechanisms.} \\
+\bottomrule
+\end{tabular}
+\caption{Non-claims for the life and cognitive bridge registry.}
+\end{table*}
+
+Tier labels do not measure importance. They measure epistemic status. A Tier C claim may be more exciting than a Tier B claim, but it is less secure. A Tier D claim may be useful for interpretation while remaining nonessential to the finite-system architecture.
+
+\subsection{Failure propagation rule}
+
+The registry follows a downstream failure rule:
+\begin{quote}
+If a life-science or cognitive-science bridge claim fails, only that claim and its downstream modules are revised, demoted, quarantined, or abandoned. Failure of a life/cognitive bridge does not by itself falsify the distinction primitive or the bridge-free finite-system architecture.
+\end{quote}
+
+This rule is crucial. Without it, the registry would become a brittle grand theory in which any failed biological or cognitive speculation destroys the entire programme. The purpose of the registry is the opposite: to make each claim independently auditable.
+
+\subsection{Registry template}
+
+Each major claim is stated using the following template:
+\begin{enumerate}
+    \item \textbf{Claim ID and name.}
+    \item \textbf{Tier.}
+    \item \textbf{Statement.}
+    \item \textbf{Dependencies.}
+    \item \textbf{Prior-art relation.}
+    \item \textbf{Novel DT contribution.}
+    \item \textbf{Falsification or demotion condition.}
+    \item \textbf{Empirical status.}
+    \item \textbf{Required next work.}
+\end{enumerate}
+The template is intentionally repetitive. It makes visible the difference between a claim that is being asserted, a claim that is being interpreted, and a claim that is being proposed for future testing.
+
+\subsection{Claim-ID convention}
+
+The registry uses an explicit prefix system to avoid ambiguity. Each claim ID has the form \texttt{XX-N}, where \texttt{XX} is a two-letter prefix identifying the claim family.
+
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{ll}
+\toprule
+Prefix & Claim family \\
+\midrule
+LB & Life bridge assumptions and variables \\
+AP & Active-pruning claims \\
+RC & Residue-induced collapse claims \\
+DL & Death-like maintenance-attractor loss claims \\
+SV & Surface-to-volume scaling claims \\
+EW & Early-warning and near-collapse signatures \\
+CB & Cognitive bottleneck claims \\
+AR & Anesthesia recovery ordering claims \\
+SA & Self/agency coherence claims \\
+CP & Cognitive pruning and forgetting claims \\
+BR & Biomedical extension placeholders, not registered as active claims in v1.0 \\
+\bottomrule
+\end{tabular}
+\caption{Claim-ID prefixes for \LC.}
+\end{table*}
+
+\subsection{Risk stratification at a glance}
+
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{lll}
+\toprule
+\parbox[t]{4.5cm}{\raggedright\textbf{Module}} & \parbox[t]{2.3cm}{\raggedright\textbf{Strength}} & \parbox[t]{8cm}{\raggedright\textbf{Reason}} \\
+\midrule
+\parbox[t]{4.5cm}{\raggedright Active pruning threshold (AP-1)} & \parbox[t]{2.3cm}{\raggedright Strong but untested} & \parbox[t]{8cm}{\raggedright Direct finite-system argument; can be tested in simulations and protocell-like systems.} \\
+\parbox[t]{4.5cm}{\raggedright Residue-induced collapse (RC-1)} & \parbox[t]{2.3cm}{\raggedright Strong} & \parbox[t]{8cm}{\raggedright Direct consequence of sustained residual load under finite boundary, transport, and repair constraints.} \\
+\parbox[t]{4.5cm}{\raggedright Death-like attractor loss (DL-1)} & \parbox[t]{2.3cm}{\raggedright Medium-strong} & \parbox[t]{8cm}{\raggedright Operationally clean in models; not a clinical death claim.} \\
+\parbox[t]{4.5cm}{\raggedright Surface-to-volume scaling (SV-1)} & \parbox[t]{2.3cm}{\raggedright Medium-strong} & \parbox[t]{8cm}{\raggedright Experiment-facing scaling claim for vesicle/protocell-like geometries.} \\
+\parbox[t]{4.5cm}{\raggedright Near-death warning signals (EW-1)} & \parbox[t]{2.3cm}{\raggedright Medium} & \parbox[t]{8cm}{\raggedright Related to critical slowing and resilience loss; requires model-specific measurement.} \\
+\parbox[t]{4.5cm}{\raggedright Capacity-bottleneck cognition (CB-1)} & \parbox[t]{2.3cm}{\raggedright Medium} & \parbox[t]{8cm}{\raggedright Consistent with several cognitive traditions; FDS novelty is finite-boundary framing and failure conditions.} \\
+\parbox[t]{4.5cm}{\raggedright Anesthesia recovery ordering (AR-1)} & \parbox[t]{2.3cm}{\raggedright High-value but high-risk} & \parbox[t]{8cm}{\raggedright Specific pre-registered ordering; requires multimodal clinical/neuroscience data.} \\
+\parbox[t]{4.5cm}{\raggedright Self/agency coherence (SA-1)} & \parbox[t]{2.3cm}{\raggedright Medium} & \parbox[t]{8cm}{\raggedright Conceptually natural but needs precise behavioral and neural observables.} \\
+\parbox[t]{4.5cm}{\raggedright Biomedical extensions} & \parbox[t]{2.3cm}{\raggedright Deferred} & \parbox[t]{8cm}{\raggedright Immune, cancer, neurodegeneration, and swarm claims are not part of the current active claim set.} \\
+\bottomrule
+\end{tabular}
+\caption{Risk stratification for the v1.0 life/cognitive claim registry.}
+\end{table*}
+
+\section{Minimal Life and Cognitive Bridge Assumptions}
+
+\subsection{Finite boundary maintenance}
+
+\begin{assumption}[Finite boundary maintenance]
+A life-like or cognitive system that persists as a distinguishable system over time must maintain an operational boundary separating internal state, external state, and update interfaces. This boundary may be physical, chemical, cellular, organismic, neural, cognitive, or functional.
+\end{assumption}
+
+This assumption does not require that all boundaries be membranes. It requires only that a system whose identity persists must maintain some operational distinction between what counts as internal state, what counts as environmental state, and which exchanges are permitted.
+
+\subsection{Sustained flux and residual load}
+
+\begin{assumption}[Sustained flux and residual load]
+A finite boundary-maintaining system under sustained matter, energy, information, or control flux will generically produce residual load: inert products, misfolded structures, obsolete states, failed intermediates, error records, stale plans, or nonfunctional complexity that must be neutralized, exported, recycled, compressed, or tolerated.
+\end{assumption}
+
+Residual load is not restricted to chemical waste. In a protocell-like model, it may be inert molecular residue. In a cell, it may include damaged proteins, misfolded aggregates, dysfunctional organelles, or unusable metabolites. In a cognitive system, it may include irrelevant memories, stale prediction errors, obsolete task fragments, and attention-consuming noise.
+
+\subsection{Finite passive dilution}
+
+\begin{assumption}[Finite passive dilution]
+Passive environmental dilution, leakage, spontaneous decay, and unstructured diffusion are finite. They may reduce residual load, but they are not assumed to scale automatically with task demand, boundary size, or residual production rate.
+\end{assumption}
+
+This assumption is what makes active pruning nontrivial. If passive removal were unbounded, active pruning would not be required.
+
+\subsection{Finite cognitive and neural capacity}
+
+\begin{assumption}[Finite cognitive capacity]
+A cognitive system has finite attention, finite working memory, finite update rate, finite metabolic budget, finite report channel, finite integration bandwidth, and finite tolerance for unresolved prediction error.
+\end{assumption}
+
+The cognitive claims below do not require that consciousness be identical to any one of these capacities. They require only that reportability and self/agency coherence cannot be maintained independently of finite-capacity integration and boundary modeling.
+
+\section{Core Life Variables and Operational Definitions}
+
+Let
+\begin{align}
+    \Sactive(t) &= \text{active pruning rate},\\
+    \rhodebt(t) &= \text{residue or complexity-debt load},\\
+    \Bint(t) &= \text{boundary integrity},\\
+    \Jflow(t) &= \text{transport or metabolic throughput},\\
+    F(t) &= \text{available free-energy budget},\\
+    \Vlife(t) &= \text{viability-like maintenance score}.
+\end{align}
+A minimal viability-like score may be written as
+\begin{equation}
+\Vlife(t)=\Bint(t)\,\Jflow(t)\,\frac{1}{1+\rhodebt(t)}.
+\end{equation}
+This is not asserted as a universal biological viability formula. It is a simple registry-level operational metric for artificial-life and simulation protocols.
+
+A minimal residual-load equation is
+\begin{equation}
+    \dot{\rhodebt}=p(\Jflow)-d_{\mathrm{passive}}\rhodebt-\Sactive,
+\end{equation}
+where $p(\Jflow)$ is the rate of residual production, $d_{\mathrm{passive}}$ is passive decay or leakage, and $\Sactive$ is active pruning, clearance, recycling, or selective neutralization.
+
+A death-like model state is defined operationally by
+\begin{equation}
+    \Vlife(t)<V_{\min}\quad \text{for duration}\quad \Delta t_c,
+\end{equation}
+or, more strongly, by loss of access to the maintenance attractor under restoration of ordinary resource input.
+
+\section{Active-Pruning Claims}
+
+\subsection{Claim AP-1: Active pruning as a requirement for persistent finite boundary systems}
+
+\claimfield{Tier} B/B+ for finite artificial systems; C/B for broad biological generalization.
+
+\claimfield{Statement} A finite boundary-maintaining system under sustained flux and nonzero residual-load production cannot maintain long-term life-like persistence unless it possesses some mechanism for active pruning, clearance, recycling, neutralization, or selective reorganization of residual load above a critical threshold.
+
+In minimal form:
+\begin{equation}
+\dot{\rhodebt}=p(\Jflow)-d_{\mathrm{passive}}\rhodebt-\Sactive.
+\end{equation}
+If $p(\Jflow)>0$, passive removal is bounded, and accumulated residual load damages transport or boundary integrity,
+\begin{equation}
+    \frac{\partial \Jflow}{\partial \rhodebt}<0,\qquad
+    \frac{\partial \Bint}{\partial \rhodebt}<0,
+\end{equation}
+then long-term maintenance requires an active-pruning capacity above a threshold:
+\begin{equation}
+    \Sactive > S_c.
+\end{equation}
+
+\claimfield{Dependencies} Finite boundary maintenance; sustained flux; nonzero residual production; finite passive dilution; residual damage to transport, catalytic availability, or boundary integrity.
+
+\claimfield{Prior-art relation} This claim is adjacent to homeostasis, autopoiesis, protocell research, cellular quality control, autophagy, proteostasis, waste clearance, and repair biology. It does not claim priority over the idea that organisms remove waste or repair damage.
+
+\claimfield{Novel DT contribution} The novelty is not the claim that waste removal matters. It is the claim that active pruning can be treated as a finite-system control parameter separating transient residue-accumulating activity from sustained boundary maintenance.
+
+\claimfield{Falsification condition} AP-1 is weakened or falsified in a specified domain if a finite boundary-maintaining system under sustained residual production, finite passive dilution, finite resources, and residual damage to transport or boundary integrity maintains stable $\Bint$, $\Jflow$, and $\Vlife$ indefinitely with $\Sactive=0$ and without hidden externalization, task relaxation, or unbounded dilution.
+
+\claimfield{Empirical status} Pre-registered bridge claim. Simulation and wet-lab tests remain to be performed.
+
+\claimfield{Required next work} Build 0D, 2D, and 3D protocell-like simulations with tunable $\Sactive$, $\rhodebt$, $\Bint$, $\Jflow$, and $F$. Then design wet-lab protocols in vesicle, droplet, or synthetic-cell systems with controllable residue production and active clearance.
+
+\subsection{Claim AP-2: Active pruning must be endogenous, selective, and resource-coupled}
+
+\claimfield{Tier} B for model systems; C for broad biological generalization.
+
+\claimfield{Statement} A process counts as active pruning in the \FDS{} sense only if it is at least partly endogenous to the system, selective with respect to residual or nonfunctional structure, and coupled to finite resource expenditure.
+
+A minimal model is
+\begin{equation}
+\begin{aligned}
+\Sactive(t)=S_{\max}
+&\frac{F(t)}{F(t)+K_F}
+\frac{\rhodebt(t)}{\rhodebt(t)+K_\rho} \\
+&\times
+\frac{X(t)}{X(t)+K_X}
+\,\chi_B(t),
+\end{aligned}
+\end{equation}
+where $X(t)$ denotes functional machinery and $\chi_B(t)$ denotes boundary-coupling or accessibility.
+
+\claimfield{Dependencies} AP-1; finite free-energy budget; selective interaction between functional machinery and residual load.
+
+\claimfield{Prior-art relation} Adjacent to enzymatic degradation, lysosomal/autophagic systems, chaperone-mediated quality control, and regulated recycling. In artificial systems, adjacent to controlled reaction networks and adaptive filtering.
+
+\claimfield{Novel DT contribution} The claim distinguishes active pruning from passive decay. A universal sink or unstructured leakage channel does not by itself count as active pruning.
+
+\claimfield{Falsification condition} If passive, nonselective decay alone robustly reproduces all predicted threshold, rescue-window, and attractor-loss behavior under the same finite boundary and resource constraints, AP-2 is demoted.
+
+\claimfield{Empirical status} Pre-registered bridge claim.
+
+\claimfield{Required next work} Compare three model classes: no pruning, passive degradation, and endogenous active pruning. Test whether only active pruning generates stable maintenance across perturbations.
+
+\section{Residue-Induced Collapse Claims}
+
+\subsection{Claim RC-1: Residue accumulation induces boundary and throughput collapse}
+
+\claimfield{Tier} B for artificial systems; C/B for biological generalization.
+
+\claimfield{Statement} In finite boundary-maintaining systems under sustained flux, residual load that is not cleared, recycled, or neutralized will accumulate until it degrades transport throughput, catalytic availability, boundary integrity, or internal update capacity.
+
+\claimfield{Prediction} In no-pruning systems,
+\begin{equation}
+\rhodebt(t)\uparrow,\qquad \Bint(t)\downarrow,\qquad \Jflow(t)\downarrow,\qquad \Vlife(t)\downarrow.
+\end{equation}
+
+\claimfield{Dependencies} Sustained flux; nonzero residual production; finite passive dilution; residual interference with boundary or throughput.
+
+\claimfield{Prior-art relation} Adjacent to toxic accumulation, metabolic waste, protein aggregation, reaction poisoning, clogging, loss of permeability, and systems-level homeostatic failure.
+
+\claimfield{Novel DT contribution} Residue is treated as complexity debt: a finite-system load that consumes capacity and increases maintenance cost. The collapse is not merely chemical poisoning but a boundary-maintenance failure mode.
+
+\claimfield{Falsification condition} RC-1 is weakened if residual load accumulates without affecting boundary integrity, throughput, catalytic availability, update capacity, or viability-like persistence under a pre-registered model or experiment.
+
+\claimfield{Empirical status} Pre-registered bridge claim.
+
+\claimfield{Required next work} Simulate residue accumulation in spatial reaction-diffusion and protocell-like models. Measure residual concentration, boundary permeability, throughput, and time to collapse.
+
+\subsection{Claim RC-2: Capacity debt and residual load are dynamically coupled}
+
+\claimfield{Tier} C/B.
+
+\claimfield{Statement} Residual load is not only a material quantity. It also increases the system's effective capacity deficit by consuming boundary bandwidth, catalytic availability, memory stability, or update resources.
+
+\claimfield{Candidate relation}
+\begin{equation}
+\Delta_{\mathrm{life}}(t)=R_{\min}^{(\tau)}(\varepsilon;t)-\Cacc(t)-\alpha_\rho \rhodebt(t),
+\end{equation}
+where $\alpha_\rho$ maps residual load into effective lost capacity.
+
+\claimfield{Dependencies} Capacity-deficit formalism; measurable relation between residual load and accessible maintenance capacity.
+
+\claimfield{Novel DT contribution} Residue is treated as a dual material-informational burden: it is both a physical load and a reduction in usable distinction capacity.
+
+\claimfield{Falsification condition} If residual load affects neither physical throughput nor effective state-discrimination/update capacity in a controlled finite-boundary system, RC-2 is demoted.
+
+\claimfield{Required next work} Estimate $\alpha_\rho$ in simulation and experimental systems by measuring how residue changes distinguishable internal states, transport channels, and recovery times.
+
+\section{Death-Like Collapse Claims}
+
+\subsection{Claim DL-1: Death-like collapse as loss of the boundary-maintenance attractor}
+
+\claimfield{Tier} B for artificial life-like models; C for broad biological interpretation.
+
+\claimfield{Statement} In finite artificial life-like systems, death-like collapse can be operationally defined as the loss of the boundary-maintenance attractor. It is not a clinical, legal, or moral definition of death.
+
+\claimfield{Operational definition} A death-like state occurs when
+\begin{equation}
+\Vlife(t)<V_{\min}\quad \text{for duration}\quad \Delta t_c,
+\end{equation}
+and normal restoration of pruning or resource input cannot return the system to the previous maintenance attractor.
+
+\claimfield{Dependencies} AP-1; RC-1; existence of a maintenance attractor; finite rescue capacity.
+
+\claimfield{Prior-art relation} Adjacent to dynamical-systems accounts of viability, critical transitions, attractor loss, cellular death pathways, and irreversibility in biological collapse. It is not a clinical death criterion.
+
+\claimfield{Novel DT contribution} Death-like collapse is framed as a finite-system transition: the system loses access to the regime in which boundary, throughput, and residual load can be jointly maintained.
+
+\claimfield{Falsification condition} If a model exhibits persistent low $\Vlife$ and severe boundary/throughput degradation but can always be restored by ordinary reactivation of $\Sactive$ with no basin-loss boundary, then the attractor-loss version of DL-1 is weakened.
+
+\claimfield{Empirical status} Pre-registered bridge claim.
+
+\claimfield{Required next work} Demonstrate maintenance attractors and their loss in ODE, 2D, and 3D models. Identify bifurcation structure and rescue boundaries.
+
+\subsection{Claim DL-2: Rescue-window closure as the operational boundary of death-like collapse}
+
+\claimfield{Tier} B for model systems.
+
+\claimfield{Statement} A finite boundary-maintaining system entering collapse should display a rescue window: restoring active pruning before a critical time or state returns the system to maintenance; restoring it after that boundary fails to recover the maintenance attractor.
+
+\claimfield{Prediction} Under pruning shutoff,
+\begin{equation}
+\Sactive\rightarrow 0 \quad \Rightarrow \quad \rhodebt\uparrow,\; \Bint\downarrow,\; \Jflow\downarrow.
+\end{equation}
+For some critical state $x^*$ or time $t^*$,
+\begin{equation}
+ t<t^*: \Sactive\rightarrow S_{\max} \Rightarrow \text{rescue},
+\end{equation}
+whereas
+\begin{equation}
+ t>t^*: \Sactive\rightarrow S_{\max} \not\Rightarrow \text{rescue}.
+\end{equation}
+
+\claimfield{Dependencies} Existence of a maintenance basin; finite repair/pruning capacity; irreversible boundary damage or loss of functional machinery after threshold crossing.
+
+\claimfield{Prior-art relation} Adjacent to critical slowing, tipping points, irreversible cellular injury, and attractor dynamics.
+
+\claimfield{Novel DT contribution} The death-like boundary is not defined by a single chemical marker but by loss of recovery access to the maintenance attractor.
+
+\claimfield{Falsification condition} If no rescue-window closure occurs across a wide range of models satisfying AP-1 and RC-1 assumptions, DL-2 is demoted.
+
+\claimfield{Required next work} Perform shutoff-rescue simulations and protocell-like perturbation experiments.
+
+\section{Surface-to-Volume Scaling Claims}
+
+\subsection{Claim SV-1: Three-dimensional boundary-maintenance threshold scales with surface-to-volume constraints}
+
+\claimfield{Tier} B/C.
+
+\claimfield{Statement} In three-dimensional protocell-like systems, active-pruning threshold should depend on surface-to-volume ratio. If fuel influx, waste export, or boundary repair scale primarily with surface area while residual production scales with volume, larger systems require stronger active pruning or transport throughput to maintain viability.
+
+For a spherical vesicle of radius $R$,
+\begin{equation}
+\frac{A}{V}=\frac{3}{R}.
+\end{equation}
+If residual production scales as $V$ and boundary-mediated removal scales as $A$, then
+\begin{equation}
+R\uparrow \quad \Rightarrow \quad A/V\downarrow \quad \Rightarrow \quad S_c(R)\uparrow.
+\end{equation}
+
+\claimfield{Dependencies} Boundary-mediated exchange; volume-mediated residual production; finite diffusion and finite internal clearance.
+
+\claimfield{Prior-art relation} Adjacent to cell-size constraints, protocell and vesicle biophysics, diffusion-limited metabolism, and surface-area limitations in biology.
+
+\claimfield{Novel DT contribution} The size constraint is interpreted as a boundary-maintenance threshold for residual complexity debt, not only as a metabolic scaling rule.
+
+\claimfield{Falsification condition} If vesicle/protocell-like systems show no systematic dependence of $S_c$ or collapse time on $A/V$ after controlling for diffusion, channel density, and internal reaction rate, SV-1 is demoted.
+
+\claimfield{Empirical status} Pre-registered simulation and experimental bridge claim.
+
+\claimfield{Required next work} Run 3D spatial models and derive $S_c(R)$ scaling curves. Test in microfluidic or synthetic-cell platforms.
+
+\section{Near-Collapse Early-Warning Claims}
+
+\subsection{Claim EW-1: Near-death warning signatures under maintenance-attractor loss}
+
+\claimfield{Tier} C/B.
+
+\claimfield{Statement} Before death-like maintenance-attractor loss, finite boundary systems should exhibit resilience-loss signatures analogous to critical slowing and capacity-overload behavior.
+
+\claimfield{Predicted signatures}
+\begin{align}
+\text{recovery time} &\uparrow,\\
+\text{variance of } \Vlife &\uparrow,\\
+\text{autocorrelation of } \Vlife &\uparrow,\\
+\text{pruning efficiency} &\downarrow,\\
+\dot{\rhodebt} &\uparrow.
+\end{align}
+
+\claimfield{Dependencies} Maintenance attractor; perturbable dynamics; measurable recovery after small disturbances.
+
+\claimfield{Prior-art relation} Adjacent to early-warning signals for critical transitions, resilience theory, homeostatic failure, and dynamical-systems biology.
+
+\claimfield{Novel DT contribution} The warning signals are tied specifically to finite boundary-maintenance failure under residual-load pressure and active-pruning insufficiency.
+
+\claimfield{Falsification condition} If collapse occurs with no measurable degradation in recovery time, variance, autocorrelation, pruning efficiency, or residual accumulation across controlled systems where these variables are observable, EW-1 is weakened.
+
+\claimfield{Required next work} Define perturbation protocols for simulated and experimental protocell-like systems.
+
+\section{Core Cognitive Variables}
+
+Let
+\begin{align}
+    C_{\mathrm{cog}}(t) &= \text{available cognitive capacity},\\
+    \Catt(t) &= \text{attention bandwidth},\\
+    \Cwm(t) &= \text{working-memory capacity},\\
+    I_{\mathrm{int}}(t) &= \text{integration level},\\
+    \Kself(t) &= \text{self/agency coherence},\\
+    \Rrep(t) &= \text{reportability},\\
+    \Epred(t) &= \text{prediction-error load}.
+\end{align}
+A minimal cognitive-access bottleneck may be represented as
+\begin{equation}
+\begin{aligned}
+C_{\mathrm{cog}}(t)=\min\{&\Catt(t),\Cwm(t),C_{\mathrm{integration}}(t),\\
+&C_{\mathrm{report}}(t),C_{\mathrm{metabolic}}(t)\}.
+\end{aligned}
+\end{equation}
+This is a schematic registry-level expression. It is not a neural measurement formula.
+
+\section{Capacity-Bottleneck Consciousness Claims}
+
+\subsection{Claim CB-1: Conscious reportability requires finite-capacity integration}
+
+\claimfield{Tier} C/B.
+
+\claimfield{Statement} Conscious reportability requires that task-relevant distinctions be integrated, compressed, stabilized, and routed through finite-capacity bottlenecks. \FDS{} does not claim that compression alone is consciousness. It claims that reportability and stable self/world access cannot be independent of finite-capacity integration.
+
+A minimal condition is
+\begin{equation}
+\Rrep(t)>0 \quad \Rightarrow \quad C_{\mathrm{cog}}(t) \ge R_{\min}^{(\tau)}(\varepsilon;\Psi_{\mathrm{report}}),
+\end{equation}
+where $\Psi_{\mathrm{report}}$ is the relevant report task family.
+
+\claimfield{Dependencies} Finite cognitive capacity; distinction registration; memory stabilization; report channel; self/world boundary model for self-referential reports.
+
+\claimfield{Prior-art relation} Adjacent to global workspace theory, higher-order and reportability accounts, integrated information approaches, predictive processing, active inference, and capacity-limited cognition.
+
+\claimfield{Novel DT contribution} The novelty is the finite-system framing: conscious reportability is treated as a boundary-maintenance and capacity-bottleneck problem rather than as a disembodied information state.
+
+\claimfield{Falsification condition} CB-1 is weakened if robust conscious reportability is demonstrated without any finite-capacity bottleneck, integration, memory stabilization, report routing, or distinction-maintenance substrate.
+
+\claimfield{Empirical status} Conceptual bridge claim; requires operationalization.
+
+\claimfield{Required next work} Link $C_{\mathrm{cog}}$, integration metrics, reportability, and self/agency coherence to measurable EEG, fMRI, behavioral, perturbational, or computational variables.
+
+\subsection{Claim CB-2: Local processing can recover without conscious reportability}
+
+\claimfield{Tier} B/C.
+
+\claimfield{Statement} Local sensory registration, reflexive processing, or feature-specific responses can occur without full reportability when global capacity, integration, or self/agency coherence remains unavailable.
+
+\claimfield{Dependencies} Distinction between local registration and global reportability; finite bottleneck; partial recovery or partial disruption.
+
+\claimfield{Prior-art relation} Adjacent to blindsight, masked priming, subliminal processing, local evoked responses under anesthesia, and dissociations between sensory processing and report.
+
+\claimfield{Novel DT contribution} The dissociation is interpreted as a capacity-budget separation: local distinctions may be registered while the system lacks sufficient integrated budget to stabilize them as reportable distinctions.
+
+\claimfield{Falsification condition} If local sensory processing and reportability are inseparable across perturbations where measurement is adequate, CB-2 is weakened.
+
+\claimfield{Required next work} Use anesthesia, masking, sleep, or perturbation protocols to separate local registration from reportability and self/agency coherence.
+
+\section{Anesthesia Recovery Ordering Claims}
+
+\subsection{Claim AR-1: Anesthesia recovery follows a finite-capacity reconstruction order}
+
+\claimfield{Tier} B/C, high-value and high-risk.
+
+\claimfield{Statement} Recovery from anesthesia should not be random. If conscious reportability requires finite-capacity integration and self/world boundary reconstruction, then recovery should tend to follow the ordering
+\begin{equation}
+\begin{aligned}
+&\text{local sensory registration}\\
+&<\text{attention/integration bottleneck}\\
+&<\text{self/agency coherence}\\
+&<\text{executive cognition}.
+\end{aligned}
+\end{equation}
+
+\claimfield{Dependencies} CB-1; measurable distinction between local sensory registration, attention/integration, self/agency coherence, and executive cognition.
+
+\claimfield{Prior-art relation} Adjacent to anesthesia neuroscience, perturbational complexity, global neuronal workspace, frontoparietal connectivity, consciousness recovery studies, and behavioral command-following protocols.
+
+\claimfield{Novel DT contribution} The ordering is predicted from finite-system reconstruction: local distinction registration should be cheaper than integrated reportability; self/agency coherence requires a more stable boundary model; executive cognition requires the most structured, temporally extended update loop.
+
+\claimfield{Falsification condition} AR-1 is weakened if, across drug classes, subjects, and measurement modalities, executive cognition robustly recovers before local sensory registration, before attention/integration markers, and before self/agency coherence, with no methodological explanation.
+
+\claimfield{Empirical status} Pre-registered cognitive bridge claim.
+
+\claimfield{Required next work} Design an anesthesia induction/recovery protocol measuring evoked sensory responses, attention/global integration, self-location or agency report, command-following, working memory, and executive task performance.
+
+\subsection{Claim AR-2: Recovery ordering should vary with drug mechanism but preserve capacity hierarchy}
+
+\claimfield{Tier} C.
+
+\claimfield{Statement} Different anesthetic mechanisms may alter timings, biomarkers, or regional recovery patterns, but the broad hierarchy from local registration to integrated reportability and then to executive cognition should remain more stable than individual markers.
+
+\claimfield{Dependencies} AR-1; drug-dependent perturbation of neural systems; cross-modality measurement.
+
+\claimfield{Prior-art relation} Adjacent to known diversity among anesthetic agents and variable recovery profiles.
+
+\claimfield{Novel DT contribution} \FDS{} predicts preservation of capacity hierarchy even when biomarker details vary.
+
+\claimfield{Falsification condition} A stable reverse hierarchy across multiple agents and cohorts would demote AR-2.
+
+\claimfield{Required next work} Compare propofol, sevoflurane, ketamine-like dissociative states, and sleep-like states with matched recovery tasks.
+
+\section{Self/Agency Coherence Claims}
+
+\subsection{Claim SA-1: Self/agency coherence as a compressed boundary model}
+
+\claimfield{Tier} C/B.
+
+\claimfield{Statement} Self/agency coherence is a compressed boundary model linking body state, action capacity, autobiographical memory, prediction error, and control access. It is not a single isolated module.
+
+A schematic relation is
+\begin{equation}
+\Kself=f(B_{\mathrm{body}},M_{\mathrm{auto}},A_{\mathrm{control}},\Epred,I_{\mathrm{int}}).
+\end{equation}
+
+\claimfield{Dependencies} Finite self/environment boundary; memory continuity; action loop; prediction-error regulation.
+
+\claimfield{Prior-art relation} Adjacent to body schema, self-model theory, active inference, agency studies, interoception, and predictive processing.
+
+\claimfield{Novel DT contribution} Self/agency is treated as an operational boundary-maintenance model needed for stable action and report, not as an isolated representational object.
+
+\claimfield{Falsification condition} SA-1 is weakened if stable self/agency reports are shown to require no body-boundary model, no action capacity model, no memory continuity, and no prediction-error regulation.
+
+\claimfield{Required next work} Operationalize self/agency coherence in anesthesia, sleep, dissociation, virtual reality, and sensorimotor perturbation protocols.
+
+\section{Cognitive Pruning and Forgetting Claims}
+
+\subsection{Claim CP-1: Cognitive persistence requires active forgetting or pruning}
+
+\claimfield{Tier} B/C.
+
+\claimfield{Statement} A finite cognitive system cannot preserve all encountered distinctions indefinitely without memory pollution, attention overload, task drift, or resource collapse. Cognitive persistence requires active forgetting, consolidation, abstraction, or pruning.
+
+\claimfield{Dependencies} Finite memory; finite attention; ongoing novelty; task relevance; update cost.
+
+\claimfield{Prior-art relation} Adjacent to forgetting research, synaptic pruning, sleep-dependent consolidation, memory reconsolidation, predictive coding, and machine-learning regularization.
+
+\claimfield{Novel DT contribution} Forgetting is framed not as failure alone but as active boundary maintenance: removing or compressing distinctions can preserve cognitive viability.
+
+\claimfield{Falsification condition} A finite cognitive system that stores and uses unbounded experiential distinctions indefinitely without degradation, consolidation, abstraction, forgetting, externalization, or resource growth would falsify the strong form.
+
+\claimfield{Required next work} Test how pruning, consolidation, and externalization affect long-horizon task coherence in biological, cognitive, and artificial agents.
+
+\section{Biomedical and Collective-System Extensions Deferred to Future Versions}
+
+The following domains are not part of the active v1.0 registered claim set: immune boundary verification, cancer as rogue sub-boundary decoupling, neurodegeneration as residue-clearance or mis-pruning failure, swarms as distributed \FDS{} systems, and organizational/civilizational complexity debt. Future versions may register bridge hypotheses in these directions. Their absence from the present version is deliberate. This registry focuses on active pruning, artificial life-like collapse, death-like attractor loss, and anesthesia recovery ordering.
+
+No statement in this section is a diagnostic, therapeutic, or clinical claim.
+
+\section{Simulation and Experimental Roadmap}
+
+\subsection{Life simulation roadmap}
+
+A minimal simulation programme should proceed in four levels.
+
+\claimfield{Level 0: ODE model} Use variables $\rhodebt$, $\Bint$, $\Jflow$, $F$, and $\Sactive$ to test whether $S_c$, collapse, attractor loss, and rescue windows occur.
+
+\claimfield{Level 1: 2D spatial model} Use reaction-diffusion or cellular-automaton dynamics to visualize residue accumulation, local clogging, boundary degradation, and pruning-mediated rescue.
+
+\claimfield{Level 2: 3D protocell-like model} Use spherical or vesicle-like geometry to derive $S_c(R)$ and surface-to-volume scaling.
+
+\claimfield{Level 3: wet-lab protocol} Use vesicle, droplet, or protocell-like platforms with tunable residue production, tunable clearance, measurable boundary integrity, and throughput readout.
+
+\subsection{Cognitive experimental roadmap}
+
+A minimal cognitive programme should proceed in three levels.
+
+\claimfield{Level 0: computational agent simulations} Model finite attention, working memory, prediction-error load, self-model stability, and report capacity.
+
+\claimfield{Level 1: non-clinical behavioral and EEG studies} Test reportability and self/agency coherence under masking, divided attention, sleep inertia, virtual reality perturbations, or working-memory overload.
+
+\claimfield{Level 2: anesthesia recovery protocol} Measure recovery ordering across sensory registration, attention/integration, self/agency coherence, command-following, and executive cognition.
+
+\section{Master Claim Table}
+
+\begin{table*}[t]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{lllll}
+\toprule
+\textbf{ID} & \textbf{Claim} & \textbf{Tier} & \textbf{Support condition} & \textbf{Falsification / demotion condition} \\
+\midrule
+AP-1 & \parbox[t]{2.8cm}{\raggedright Active-pruning threshold} & B/B+ & \parbox[t]{4.8cm}{\raggedright $S>S_c$ separates persistence from collapse} & \parbox[t]{5.5cm}{\raggedright Persistence with $S=0$ under stated finite-residue conditions} \\
+AP-2 & \parbox[t]{2.8cm}{\raggedright Endogenous selective pruning} & B/C & \parbox[t]{4.8cm}{\raggedright Active pruning outperforms passive decay under resource constraints} & \parbox[t]{5.5cm}{\raggedright Passive decay reproduces all threshold/rescue behavior} \\
+RC-1 & \parbox[t]{2.8cm}{\raggedright Residue-induced collapse} & B/C & \parbox[t]{4.8cm}{\raggedright $\rho\uparrow\to B,J,V\downarrow$} & \parbox[t]{5.5cm}{\raggedright Residue accumulation has no boundary or throughput effect} \\
+RC-2 & \parbox[t]{2.8cm}{\raggedright Residue-capacity coupling} & C/B & \parbox[t]{4.8cm}{\raggedright Residue reduces effective accessible capacity} & \parbox[t]{5.5cm}{\raggedright Residue affects neither physical nor information capacity} \\
+DL-1 & \parbox[t]{2.8cm}{\raggedright Death-like attractor loss} & B/C & \parbox[t]{4.8cm}{\raggedright Maintenance attractor disappears after threshold} & \parbox[t]{5.5cm}{\raggedright Low-viability states always recover under ordinary restoration} \\
+DL-2 & \parbox[t]{2.8cm}{\raggedright Rescue-window closure} & B & \parbox[t]{4.8cm}{\raggedright Recovery before $t^*$, failure after $t^*$} & \parbox[t]{5.5cm}{\raggedright No rescue boundary across appropriate models} \\
+SV-1 & \parbox[t]{2.8cm}{\raggedright Surface-to-volume scaling} & B/C & \parbox[t]{4.8cm}{\raggedright $R\uparrow\Rightarrow S_c(R)\uparrow$} & \parbox[t]{5.5cm}{\raggedright No size dependence after controls} \\
+EW-1 & \parbox[t]{2.8cm}{\raggedright Near-collapse warnings} & C/B & \parbox[t]{4.8cm}{\raggedright Recovery time, variance, autocorrelation rise} & \parbox[t]{5.5cm}{\raggedright Collapse without measurable warning in observable variables} \\
+CB-1 & \parbox[t]{2.8cm}{\raggedright Capacity-bottleneck reportability} & C/B & \parbox[t]{4.8cm}{\raggedright Reportability depends on finite integration and routing} & \parbox[t]{5.5cm}{\raggedright Reportability without any finite-capacity substrate} \\
+CB-2 & \parbox[t]{2.8cm}{\raggedright Local processing without report} & B/C & \parbox[t]{4.8cm}{\raggedright Local registration dissociates from reportability} & \parbox[t]{5.5cm}{\raggedright Local processing and reportability always inseparable} \\
+AR-1 & \parbox[t]{2.8cm}{\raggedright Anesthesia recovery ordering} & B/C & \parbox[t]{4.8cm}{\raggedright Sensory $<$ integration $<$ agency $<$ executive recovery} & \parbox[t]{5.5cm}{\raggedright Stable reverse ordering across agents/cohorts/modalities} \\
+AR-2 & \parbox[t]{2.8cm}{\raggedright Drug-varying but hierarchy-preserving recovery} & C & \parbox[t]{4.8cm}{\raggedright Timings vary but hierarchy persists} & \parbox[t]{5.5cm}{\raggedright Multi-agent robust hierarchy inversion} \\
+SA-1 & \parbox[t]{2.8cm}{\raggedright Self/agency as boundary model} & C/B & \parbox[t]{4.8cm}{\raggedright Self/agency depends on body/action/memory/prediction model} & \parbox[t]{5.5cm}{\raggedright Self/agency requires none of these components} \\
+CP-1 & \parbox[t]{2.8cm}{\raggedright Cognitive pruning necessity} & B/C & \parbox[t]{4.8cm}{\raggedright Unpruned finite memory degrades long-horizon cognition} & \parbox[t]{5.5cm}{\raggedright Unlimited usable memory without pruning or resource growth} \\
+\bottomrule
+\end{tabular}
+\caption{Master claim table for \LC.}
+\end{table*}
+
+\section{Layered Failure Contract}
+
+\begin{table*}[t]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{lll}
+\toprule
+\textbf{Layer} & \textbf{Claim type} & \textbf{Failure consequence} \\
+\midrule
+\FDS{} Core & \parbox[t]{4.5cm}{\raggedright Formal finite-system definitions and theorems} & \parbox[t]{7.5cm}{\raggedright Fails only by internal incoherence or formal counterexample.} \\
+Life bridge & \parbox[t]{4.5cm}{\raggedright Active pruning, residue, boundary persistence, death-like collapse} & \parbox[t]{7.5cm}{\raggedright Failure revises or retires the relevant life bridge only.} \\
+Cognitive bridge & \parbox[t]{4.5cm}{\raggedright Capacity bottleneck, reportability, recovery ordering, self/agency coherence} & \parbox[t]{7.5cm}{\raggedright Failure revises or retires the relevant cognitive bridge only.} \\
+Simulation layer & \parbox[t]{4.5cm}{\raggedright ODE, 2D, 3D, agent models} & \parbox[t]{7.5cm}{\raggedright Model failure requires model revision; it does not by itself kill the bridge claim unless the model exhausts the stated domain.} \\
+Biomedical extensions & \parbox[t]{4.5cm}{\raggedright Immune, cancer, neurodegeneration, clinical links} & \parbox[t]{7.5cm}{\raggedright Deferred; future failure is non-propagating and does not affect AP/RC/DL core claims.} \\
+\bottomrule
+\end{tabular}
+\caption{Layered failure contract for \LC.}
+\end{table*}
+
+\section{Reporting Checklist for Future LC Papers}
+
+A paper applying \LC{} should report:
+\begin{enumerate}
+    \item the finite system boundary being modeled;
+    \item the residual-load variable and how it is measured;
+    \item the active-pruning variable and how it is distinguished from passive decay;
+    \item the throughput or transport variable;
+    \item the boundary-integrity variable;
+    \item the viability-like maintenance score;
+    \item the perturbation, shutoff, or overload protocol;
+    \item whether an $S_c$ threshold is observed;
+    \item whether a rescue window exists;
+    \item whether attractor loss is reversible or irreversible under ordinary restoration;
+    \item explicit falsification, demotion, and non-claim statements.
+\end{enumerate}
+
+A cognitive paper applying \LC{} should additionally report:
+\begin{enumerate}
+    \item how local sensory registration is measured;
+    \item how attention or integration bottleneck is measured;
+    \item how reportability is operationalized;
+    \item how self/agency coherence is measured;
+    \item how executive cognition is measured;
+    \item the predicted recovery ordering;
+    \item the criteria for support, demotion, and falsification.
+\end{enumerate}
+
+\section{Limitations}
+
+First, this registry does not prove that active pruning is the historical origin of life. It states a finite-system bridge claim about persistent boundary maintenance under sustained flux and residual-load production.
+
+Second, life-like persistence in a simulation is not identical to biological life. The proposed models are mechanistic probes, not replacement definitions for biology.
+
+Third, death-like collapse is not clinical death. It is an operational model concept: loss of access to a boundary-maintenance attractor.
+
+Fourth, active pruning may be implemented in many physical, chemical, biological, cognitive, or artificial ways. The registry does not require a single molecular mechanism.
+
+Fifth, cognitive capacity, reportability, self/agency coherence, and consciousness are not identical. The cognitive claims are bridge claims about measurable recovery and bottleneck constraints, not final phenomenological claims.
+
+Sixth, anesthesia recovery is drug-, dose-, subject-, and measurement-dependent. The registry predicts a hierarchy of finite-capacity reconstruction, not identical timing across all protocols. Seventh, biomedical claims involving cancer, Alzheimer's disease, immune systems, and clinical medicine are explicitly excluded from this v1.0 release and may appear in a future extension. Registry breadth is prioritized over depth at this stage.
+
+\section{Conclusion}
+
+This paper has registered the life-science and cognitive-science bridge claims of \FDS{} at the level of v1.0. The central biological claim is that active pruning is not an optional biological refinement but a candidate first-principles requirement for finite boundary-maintaining systems under sustained flux and residual-load accumulation. The central death-like claim is that collapse can be operationally defined as loss of access to the boundary-maintenance attractor. The central cognitive claim is that conscious reportability and self/agency coherence should be constrained by finite-capacity integration, and that anesthesia recovery should follow a structured reconstruction order rather than a random return.
+
+The registry deliberately does not claim to solve life, death, consciousness, medicine, or neuroscience. It records a claim-space: variables, dependencies, risk levels, predictions, and failure conditions. Future work should turn the registered claims into standalone papers: active-pruning ODE and 2D/3D simulations; protocell-like wet-lab protocols; anesthesia recovery protocols; and computational models of finite-capacity cognitive pruning.
+
+\appendix
+
+\section{Glossary}
+
+\textbf{Active pruning:} Selective, resource-coupled removal, recycling, compression, neutralization, or reorganization of residual or nonfunctional structure in order to preserve boundary viability.
+
+\textbf{Residual load:} Material, informational, structural, or cognitive complexity debt produced by sustained flux and imperfect update.
+
+\textbf{Boundary maintenance:} The ongoing process by which a finite system preserves the operational distinction between itself and its environment.
+
+\textbf{Life-like persistence:} Persistent maintenance of boundary integrity, throughput, residual-load control, and update capacity in an artificial or biological finite system.
+
+\textbf{Death-like collapse:} In this registry, the irreversible loss of access to the boundary-maintenance attractor in a model system. It is not a clinical definition.
+
+\textbf{Maintenance attractor:} A dynamical regime in which boundary integrity, throughput, residual load, and resource input remain jointly viable.
+
+\textbf{Rescue window:} The interval during collapse in which restoration of active pruning or resources can still return the system to the maintenance attractor.
+
+\textbf{Capacity bottleneck:} A limiting representational, attentional, memory, integration, report, or metabolic constraint that restricts which distinctions can be stabilized and used.
+
+\textbf{Reportability:} The operational ability to stabilize and route distinctions into action, language, or other report channels.
+
+\textbf{Self/agency coherence:} A compressed boundary model linking body state, memory continuity, prediction error, and action capacity.
+
+\section{Future Biomedical and Collective-System Extension Placeholders}
+
+Future versions may register the following claims, but they are not active claims in v1.0:
+\begin{enumerate}
+    \item {\raggedright Immune systems as biological distinction-verification and pruning layers operating under bounded capacity, residual load accumulation, and self/non-self discrimination constraints across cellular, molecular, and network organizational scales.\par}
+    \item {\raggedright Cancer as rogue sub-boundary decoupling from organism-level maintenance.\par}
+    \item {\raggedright Neurodegeneration as residue-clearance failure or mis-pruning failure.\par}
+    \item {\raggedright Swarms as distributed \FDS{} systems with externalized memory and collective pruning.\par}
+    \item {\raggedright Organizations and civilizations as externalized boundary-maintenance systems with collective complexity debt and distributed pruning.\par}
+\end{enumerate}
+These placeholders do not constitute clinical, diagnostic, therapeutic, or policy claims.
+
+\begin{thebibliography}{99}
+
+\bibitem{WuFDSCore}
+Y. Wu, ``Active Finite Distinction Systems: A Formal Core for Boundary Maintenance under Finite Capacity,'' preprint / registry archive (2026).
+
+\bibitem{WuDT}
+Y. Wu, ``Distinction Theory: A General Theory of Finite Systems,'' Zenodo archive (2026).
+
+\bibitem{WuPhysicalRegistry}
+Y. Wu, ``Physical Bridge Claim Registry for Active Finite Distinction Systems: Time, Observers, Horizons, Topological Persistence, and High-Risk Physical Extensions,'' Public Registry v1.0 (2026).
+
+\bibitem{WuAgency}
+Y. Wu, ``Active Finite Distinction Systems as a Criterion for Artificial Agency,'' preprint (2026).
+
+\bibitem{MaturanaVarela}
+H. R. Maturana and F. J. Varela, \textit{Autopoiesis and Cognition: The Realization of the Living}. D. Reidel (1980).
+
+\bibitem{Varela1991}
+F. J. Varela, H. R. Maturana, and R. Uribe, ``Autopoiesis: The organization of living systems, its characterization and a model,'' \textit{BioSystems} \textbf{5}, 187--196 (1974).
+
+\bibitem{RasmussenProtocells}
+S. Rasmussen, M. A. Bedau, L. Chen, D. Deamer, D. C. Krakauer, N. H. Packard, and P. F. Stadler, eds., \textit{Protocells: Bridging Nonliving and Living Matter}. MIT Press (2009).
+
+\bibitem{Szostak2001}
+J. W. Szostak, D. P. Bartel, and P. L. Luisi, ``Synthesizing life,'' \textit{Nature} \textbf{409}, 387--390 (2001).
+
+\bibitem{DeDuve}
+C. de Duve, \textit{Blueprint for a Cell: The Nature and Origin of Life}. Neil Patterson Publishers (1991).
+
+\bibitem{KlionskyAutophagy}
+D. J. Klionsky, ``Autophagy: from phenomenology to molecular understanding in less than a decade,'' \textit{Nature Reviews Molecular Cell Biology} \textbf{8}, 931--937 (2007).
+
+\bibitem{LevineAutophagy}
+B. Levine and G. Kroemer, ``Autophagy in the pathogenesis of disease,'' \textit{Cell} \textbf{132}, 27--42 (2008).
+
+\bibitem{EllisProteostasis}
+R. J. Ellis and A. P. Minton, ``Protein aggregation in crowded environments,'' \textit{Biological Chemistry} \textbf{387}, 485--497 (2006).
+
+\bibitem{Scheffer2009}
+M. Scheffer et al., ``Early-warning signals for critical transitions,'' \textit{Nature} \textbf{461}, 53--59 (2009).
+
+\bibitem{SchefferBook}
+M. Scheffer, \textit{Critical Transitions in Nature and Society}. Princeton University Press (2009).
+
+\bibitem{Tononi2004}
+G. Tononi, ``An information integration theory of consciousness,'' \textit{BMC Neuroscience} \textbf{5}, 42 (2004).
+
+\bibitem{Dehaene2011}
+S. Dehaene and J.-P. Changeux, ``Experimental and theoretical approaches to conscious processing,'' \textit{Neuron} \textbf{70}, 200--227 (2011).
+
+\bibitem{Baars}
+B. J. Baars, \textit{A Cognitive Theory of Consciousness}. Cambridge University Press (1988).
+
+\bibitem{Friston2010}
+K. Friston, ``The free-energy principle: a unified brain theory?'' \textit{Nature Reviews Neuroscience} \textbf{11}, 127--138 (2010).
+
+\bibitem{Seth2016}
+A. K. Seth, ``The real problem,'' \textit{Aeon} (2016); see also A. K. Seth and T. Bayne, ``Theories of consciousness,'' \textit{Nature Reviews Neuroscience} \textbf{23}, 439--452 (2022).
+
+\bibitem{Casali2013}
+A. G. Casali et al., ``A theoretically based index of consciousness independent of sensory processing and behavior,'' \textit{Science Translational Medicine} \textbf{5}, 198ra105 (2013).
+
+\bibitem{Mashour2020}
+G. A. Mashour, P. Roelfsema, J.-P. Changeux, and S. Dehaene, ``Conscious processing and the global neuronal workspace hypothesis,'' \textit{Neuron} \textbf{105}, 776--798 (2020).
+
+\bibitem{Hudetz2012}
+A. G. Hudetz, ``General anesthesia and human brain connectivity,'' \textit{Brain Connectivity} \textbf{2}, 291--302 (2012).
+
+\bibitem{Mashour2019}
+G. A. Mashour and M. T. Alkire, ``Evolution of consciousness: phylogeny, ontogeny, and emergence from general anesthesia,'' \textit{Proceedings of the National Academy of Sciences} \textbf{110}, 10357--10364 (2013).
+
+\bibitem{Northoff2011}
+G. Northoff, ``Self and brain: what is self-related processing?'' \textit{Trends in Cognitive Sciences} \textbf{15}, 186--187 (2011).
+
+\bibitem{Schacter1999}
+D. L. Schacter, ``The seven sins of memory: insights from psychology and cognitive neuroscience,'' \textit{American Psychologist} \textbf{54}, 182--203 (1999).
+
+\bibitem{TononiEdelman}
+G. Tononi and G. M. Edelman, ``Consciousness and complexity,'' \textit{Science} \textbf{282}, 1846--1851 (1998).
+
+\bibitem{Shannon1948}
+C. E. Shannon, ``A mathematical theory of communication,'' \textit{Bell System Technical Journal} \textbf{27}, 379--423 and 623--656 (1948).
+
+\bibitem{Berger}
+T. Berger, \textit{Rate Distortion Theory: A Mathematical Basis for Data Compression}. Prentice-Hall (1971).
+
+\bibitem{CoverThomas}
+T. M. Cover and J. A. Thomas, \textit{Elements of Information Theory}, 2nd ed. Wiley (2006).
+
+\end{thebibliography}
+
+\end{document}
