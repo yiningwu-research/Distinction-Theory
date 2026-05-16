@@ -1,0 +1,333 @@
+- id: FDS-CORE-001
+  title: Distinction Primitive
+  statement: "A distinction is an operation or relation that separates at least two alternatives within a possibility space."
+  status: Formal definition
+  layer: Core
+  first_document: FDS-0
+  first_version: v1.0
+  first_date: "2026-05-12"
+  doi: 10.5281/zenodo.20158923
+  failure_condition: "Not falsified in usual sense; usefulness can fail."
+  downstream: [FDS-CORE-002, FDS-CORE-003]
+
+- id: FDS-CORE-002
+  title: Boundary Inheritance
+  statement: "Once a system distinguishes itself from what it is not, it inherits a boundary."
+  status: Formal definition
+  layer: Core
+  dependencies: [FDS-CORE-001]
+  first_document: FDS-0
+  first_version: v1.0
+  first_date: "2026-05-12"
+  doi: 10.5281/zenodo.20158923
+  failure_condition: "Bounded system with zero maintenance cost under sustained load."
+  downstream: [FDS-CORE-003]
+
+- id: FDS-CORE-003
+  title: Finite Capacity
+  statement: "A finite system with a boundary has finite representational and operational capacity."
+  status: Formal/operational claim
+  layer: Core
+  dependencies: [FDS-CORE-002]
+  first_document: FDS-0
+  first_version: v1.0
+  first_date: "2026-05-12"
+  doi: 10.5281/zenodo.20158923
+  failure_condition: "Physically instantiated bounded system with infinite operational capacity."
+  downstream: [FDS-CORE-004]
+
+- id: FDS-CORE-004
+  title: Capacity Deficit
+  statement: "When task-relevant distinction demand exceeds accessible capacity, the system operates under a capacity deficit."
+  status: Formal definition
+  layer: Core
+  dependencies: [FDS-CORE-003]
+  first_document: FDS-0
+  first_version: v1.0
+  first_date: "2026-05-12"
+  doi: 10.5281/zenodo.20158923
+  downstream: [FDS-CORE-005]
+
+- id: FDS-CORE-005
+  title: Budget Exits
+  statement: "A finite system under persistent positive capacity deficit must prune, externalize, relax the task, compress, or collapse."
+  status: Conditional theorem
+  layer: Core
+  dependencies: [FDS-CORE-004]
+  not_claimed: "Does not prescribe which exit occurs."
+  first_document: FDS-0
+  first_version: v1.0
+  first_date: "2026-05-12"
+  doi: 10.5281/zenodo.20158923
+  downstream: [FDS-CORE-006, FDS-T1-005]
+
+- id: FDS-CORE-006
+  title: Invariant-Supported Persistence
+  statement: "Systems that persist under finite capacity do so by maintaining invariants that reduce effective distinction load."
+  status: Conditional theorem
+  layer: Core
+  dependencies: [FDS-CORE-005]
+  first_document: FDS-0
+  first_version: v1.0
+  first_date: "2026-05-12"
+  doi: 10.5281/zenodo.20158923
+  failure_condition: "Persistent system under sustained deficit with no invariant-supported load reduction."
+
+- id: FDS-T1-001
+  title: Finite Observer Projection
+  statement: "A finite physical observer O can operationally use only a finite image Im(pi_O) of a physical possibility space."
+  status: Operational/physical bridge claim
+  layer: Physical Bridge
+  first_document: FDS-T1
+  first_version: v0.1
+  first_date: "2026-05-14"
+  failure_condition: "Observer with unbounded distinctions under finite resources."
+  downstream: [FDS-T1-002, FDS-T1-003, FDS-T1-004]
+
+- id: FDS-T1-002
+  title: Distinguishability Budget
+  statement: "Operational distinguishability is bounded by minimum of internal record capacity and accessible boundary/channel capacity."
+  status: Conditional theorem
+  layer: Physical Bridge
+  dependencies: [FDS-T1-001]
+  first_document: FDS-T1
+  first_version: v0.1
+  first_date: "2026-05-14"
+  downstream: [FDS-T1-003]
+
+- id: FDS-T1-003
+  title: Stock vs Throughput
+  statement: "Accessible capacity separates into stock capacity and update throughput; effective task capacity is their minimum."
+  status: Formal definition/Conditional theorem
+  layer: Physical Bridge
+  dependencies: [FDS-T1-002]
+  first_document: FDS-T1
+  first_version: v1.1
+  first_date: "2026-05-16"
+  downstream: [FDS-T1-004, FDS-T1-005]
+
+- id: FDS-T1-004
+  title: Boundary-Relative Capacity Deficit
+  statement: "Delta_FDS = R_min - C_acc where R_min is task demand and C_acc is accessible capacity."
+  status: Definition
+  layer: Physical Bridge
+  dependencies: [FDS-T1-003]
+  first_document: FDS-T1
+  first_version: v0.1
+  first_date: "2026-05-14"
+  downstream: [FDS-T1-005]
+
+- id: FDS-T1-005
+  title: Budget-Exit Theorem
+  statement: "If Delta_FDS > 0 persists, observer must enter at least one exit class."
+  status: Conditional theorem
+  layer: Physical Bridge
+  dependencies: [FDS-T1-004, FDS-CORE-005]
+  first_document: FDS-T1
+  first_version: v0.1
+  first_date: "2026-05-14"
+  downstream: [FDS-T1-006, FDS-T1-007]
+
+- id: FDS-T1-006
+  title: Maintenance Inequality
+  statement: "Positive deficit implies Landauer-style lower bound on thermodynamic maintenance cost for irreversible erasure."
+  status: Conditional physical bridge
+  layer: Physical Bridge
+  dependencies: [FDS-T1-005]
+  first_document: FDS-T1
+  first_version: v0.1
+  first_date: "2026-05-14"
+
+- id: FDS-T1-007
+  title: Budget-Crossing Signature
+  statement: "As chi = R_min - C_acc crosses zero, observers should show measurable transitions."
+  status: Testable prediction
+  layer: Physical Bridge
+  dependencies: [FDS-T1-005]
+  first_document: FDS-T1
+  first_version: v1.1
+  first_date: "2026-05-16"
+
+- id: FDS-T1-008
+  title: Bottleneck-Switching Kink
+  statement: "Rate-distortion error floor shows slope discontinuities at bottleneck switches."
+  status: Conditional theorem
+  layer: Physical Bridge
+  dependencies: [FDS-T1-003]
+  first_document: FDS-T1
+  first_version: v0.1
+  first_date: "2026-05-14"
+
+- id: FDS-L1-001
+  title: Residue-Pruning-Boundary Loop
+  statement: "Sustained flux generates residue; residue impairs function; pruning controls residue."
+  status: Conditional claim
+  layer: Domain Bridge
+  first_document: FDS-L1
+  first_version: submitted
+  first_date: "2026"
+  downstream: [FDS-L1-002]
+
+- id: FDS-L1-002
+  title: Active Pruning Threshold
+  statement: "There exists a critical pruning rate S_c below which residue cannot be bounded."
+  status: Conditional theorem
+  layer: Domain Bridge
+  dependencies: [FDS-L1-001]
+  first_document: FDS-L1
+  first_version: submitted
+  downstream: [FDS-L1-003]
+
+- id: FDS-L1-003
+  title: Maintenance-Attractor Loss
+  statement: "Below threshold pruning, the system crosses a saddle-node fold and loses stability."
+  status: Model-supported claim
+  layer: Domain Bridge
+  dependencies: [FDS-L1-002]
+  first_document: FDS-L1
+  first_version: submitted
+
+- id: FDS-L1-004
+  title: Rescue-Window Closure
+  statement: "Restoring pruning rescues system only within a finite delay window."
+  status: Model-supported claim
+  layer: Domain Bridge
+  dependencies: [FDS-L1-002]
+  first_document: FDS-L1
+  first_version: submitted
+
+- id: FDS-L1-005
+  title: Spatial Clogging
+  statement: "Residue accumulation causes local clogging and boundary deformation."
+  status: Model-supported claim
+  layer: Domain Bridge
+  dependencies: [FDS-L1-001]
+  first_document: FDS-L1
+  first_version: submitted
+
+- id: FDS-L1-006
+  title: Radius-Dependent Pruning Demand
+  statement: "Required pruning increases with system radius in spatial protocell models."
+  status: Model-supported claim
+  layer: Domain Bridge
+  dependencies: [FDS-L1-005]
+  first_document: FDS-L1
+  first_version: submitted
+
+- id: FDS-C1-001
+  title: Reportability as Finite-Capacity Maintenance
+  statement: "Conscious reportability can be modeled as a maintained finite-capacity regime."
+  status: Theoretical framework claim
+  layer: Domain Bridge
+  dependencies: [FDS-CORE-003, FDS-CORE-004]
+  first_document: FDS-C1
+  first_version: v1.0
+  first_date: "2026-05-15"
+  doi: 10.5281/zenodo.20229509
+  downstream: [FDS-C1-002]
+
+- id: FDS-C1-002
+  title: Representational Residue
+  statement: "Unresolved rate-distortion surplus accumulates as representational residue."
+  status: Conditional claim
+  layer: Domain Bridge
+  dependencies: [FDS-C1-001]
+  first_document: FDS-C1
+  first_version: v1.0
+  first_date: "2026-05-15"
+  doi: 10.5281/zenodo.20229509
+  downstream: [FDS-C1-003]
+
+- id: FDS-C1-003
+  title: Active Cognitive Pruning Threshold
+  statement: "There exists a critical cognitive pruning rate for maintaining reportable access."
+  status: Conditional claim
+  layer: Domain Bridge
+  dependencies: [FDS-C1-002, FDS-L1-002]
+  first_document: FDS-C1
+  first_version: v1.0
+  first_date: "2026-05-15"
+  doi: 10.5281/zenodo.20229509
+
+- id: FDS-C1-004
+  title: Access-Network Collapse
+  statement: "Near reportability collapse, leading covariance eigenvalues rise as early warning."
+  status: Model-supported prediction
+  layer: Domain Bridge
+  dependencies: [FDS-C1-001]
+  first_document: FDS-C1
+  first_version: v1.0
+  first_date: "2026-05-15"
+  doi: 10.5281/zenodo.20229509
+
+- id: FDS-LC0-001
+  title: Registry Structure
+  statement: "FDS-LC0 registers life/cognitive bridge claims with dependencies, risks, and failure conditions."
+  status: Registry governance
+  layer: Registry
+  first_document: FDS-LC0
+  first_version: v1.0
+  first_date: "2026-05-14"
+  doi: 10.5281/zenodo.20183373
+  downstream: [FDS-LC0-002]
+
+- id: FDS-LC0-002
+  title: Downstream Failure Rule
+  statement: "Failure of life/cognitive bridge does not propagate to upstream physical bridges or core."
+  status: Registry governance
+  layer: Registry
+  first_document: FDS-LC0
+  first_version: v1.0
+  first_date: "2026-05-14"
+  doi: 10.5281/zenodo.20183373
+
+- id: FDS-X1-001
+  title: Horizon as Boundary
+  statement: "Cosmological horizons act as finite distinguishability boundaries for observers."
+  status: High-risk bridge
+  layer: High-Risk
+  dependencies: [FDS-T1-001, FDS-T1-002]
+  first_document: FDS-X1
+  downstream: [FDS-X1-002]
+
+- id: FDS-X1-002
+  title: Horizon-Maintenance Scale
+  statement: "Horizon-maintenance cost has scale rho ~ H^2 M_Pl^2, consistent with dark energy."
+  status: High-risk bridge
+  layer: High-Risk
+  dependencies: [FDS-X1-001]
+  downstream: [FDS-X1-003]
+
+- id: FDS-X1-003
+  title: Non-Phantom Dark Energy
+  statement: "Equation of state tends toward w=-1 from above (non-phantom) with possible mild evolution."
+  status: High-risk bridge
+  layer: High-Risk
+  dependencies: [FDS-X1-002]
+  downstream: [FDS-X1-004]
+
+- id: FDS-X1-004
+  title: Falsification Contract
+  statement: "X1 claims have explicit falsification conditions stated in advance."
+  status: Governance
+  layer: High-Risk
+  dependencies: [FDS-X1-001, FDS-X1-002, FDS-X1-003]
+
+- id: FDS-A1-001
+  title: AI Agency Criterion
+  statement: "An artificial agent is an active finite distinction system maintaining boundary through durable updates."
+  status: Conceptual criterion
+  layer: Frozen
+  dependencies: [FDS-CORE-002, FDS-CORE-003, FDS-CORE-004, FDS-CORE-005]
+  first_document: FDS-A1
+  first_version: v1.0
+  first_date: "2026-05-12"
+  doi: 10.5281/zenodo.20184709
+
+- id: FDS-A1-002
+  title: AI Line Frozen
+  statement: "Public programme retains FDS-A1 as conceptual timestamp; no proprietary AI development in repo."
+  status: Governance
+  layer: Frozen
+  first_document: CONFLICTS_OF_INTEREST
+  first_date: "2026-05-16"
