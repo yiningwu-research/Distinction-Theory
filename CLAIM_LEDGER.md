@@ -505,6 +505,64 @@ A claim appearing here is not automatically asserted as established. Each claim 
 
 ---
 
+## E1 — Boundary-Risk / Prospect Theory Claims
+
+### FDS-E1-001 — Loss Aversion as Boundary-Risk Asymmetry
+
+**Statement.** Near a resource threshold, the boundary-risk potential is convex and decreasing, so equal-magnitude losses and gains produce asymmetric risk impact. This generates local loss aversion $\lambda>1$ without invoking an exogenous utility curvature.
+
+**Status.** Operational bridge claim (formal model, synthetic simulation).
+
+**Dependencies.** Finite resource buffers; boundary-risk potential.
+
+**First timestamp.** FDS-E1 v1.0, 2026-05-16.
+
+**Failure condition.** Loss aversion $\lambda$ is invariant across resource-buffer depletion states after controlling for measurement noise.
+
+---
+
+### FDS-E1-002 — Reference Dependence as Finite Updating
+
+**Statement.** A finite agent maintains a compressed prediction baseline $r_t$ updated at rate $\alpha_t$ that declines with effective resource buffer $F_t^{\mathrm{eff}}$ and available capacity $C_t$.
+
+**Status.** Computational bridge claim (formal model, synthetic simulation).
+
+**Dependencies.** FDS-E1-001; finite memory and update capacity.
+
+**First timestamp.** FDS-E1 v1.0, 2026-05-16.
+
+**Failure condition.** Reference-point adaptation rate invariant across stress, cognitive load, and resource-depletion states.
+
+---
+
+### FDS-E1-003 — Probability Weighting as Finite Precision Allocation
+
+**Statement.** Probability weighting curvature $\gamma_{tE}$ arises from finite precision allocation over probability space, modulated by total decision capacity $C_t$ and event-class boundary relevance $B_E$.
+
+**Status.** Testable bridge hypothesis (formal model, synthetic simulation).
+
+**Dependencies.** FDS-E1-001; finite distinguishability budget.
+
+**First timestamp.** FDS-E1 v1.0, 2026-05-16.
+
+**Failure condition.** Probability-weighting curvature invariant across cognitive load, event class, and perceived consequence severity.
+
+---
+
+### FDS-E1-004 — Nudge Bandwidth and Buffer-First Principle
+
+**Statement.** Choice architecture interventions consume decision bandwidth. When required nudge bandwidth exceeds available capacity, the intervention may fail or backfire. Policy should restore resource buffers before imposing complex choice architecture.
+
+**Status.** Policy bridge claim (formal model, synthetic simulation).
+
+**Dependencies.** FDS-E1-001—003.
+
+**First timestamp.** FDS-E1 v1.0, 2026-05-16.
+
+**Failure condition.** Nudge effectiveness independent of scarcity, fatigue, administrative burden, and cognitive load.
+
+---
+
 ## A1 — AI Agency Frozen Line Claims
 
 ### FDS-A1-001 — Artificial Agency as Active Finite Distinction System
