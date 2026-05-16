@@ -14,9 +14,9 @@ The timestamp index is not a claim of correctness. It is a record of public prio
 | FDS-0 | Formal core | 2026-05-12 | v1.0 | [10.5281/zenodo.20158923](https://doi.org/10.5281/zenodo.20158923) | pending | pending | [link](https://www.distinctiontheory.org/papers/fds-core) | Released |
 | FDS-P0 | Physical bridge registry | 2026-05-12 | v1.0 | [10.5281/zenodo.20159995](https://doi.org/10.5281/zenodo.20159995) | pending | pending | [link](https://www.distinctiontheory.org/papers/physical-registry) | Released |
 | FDS-T1 | Finite observer budget | 2026-05-14 | v0.1 / v1.1 | pending | pending | pending | [link](https://www.distinctiontheory.org/papers/fds-t1) | In revision |
-| FDS-L1 | Active pruning / protocell-like systems | 2026 | submitted | pending | pending | pending | pending | Submitted |
+| FDS-L1 | Active pruning / protocell-like systems | 2026-05-14 | v1.0 | pending | pending | pending | [link](https://www.distinctiontheory.org/papers/fds-l1) | Released |
 | FDS-LC0 | Life/cognitive registry | 2026-05-14 | v1.0 | [10.5281/zenodo.20183373](https://doi.org/10.5281/zenodo.20183373) | pending | pending | [link](https://www.distinctiontheory.org/papers/fds-lc0) | Released |
-| FDS-C1 | Reportable access under finite capacity | 2026-05-15 | v1.0 | [10.5281/zenodo.20229509](https://zenodo.org/records/20229509) | pending | pending | pending | Released |
+| FDS-C1 | Reportable access under finite capacity | 2026-05-15 | v1.0 | [10.5281/zenodo.20229509](https://zenodo.org/records/20229509) | pending | pending | [link](https://www.distinctiontheory.org/papers/fds-c1) | Released |
 | FDS-A1 | Artificial agency | 2026-05-12 | v1.0 | [10.5281/zenodo.20184709](https://doi.org/10.5281/zenodo.20184709) | pending | pending | [link](https://www.distinctiontheory.org/papers/ai-agency) | Frozen public AI line |
 | FDS-X1 | Horizon-maintenance dark energy | pending | pre-Euclid | pending | pending | pending | pending | Planned |
 
