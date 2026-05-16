@@ -71,8 +71,9 @@ The current DT/FDS public architecture:
 5. **FDS-L1 Active Pruning / Protocell Paper** — residue-pruning-boundary dynamics in protocell-like systems.
 6. **FDS-LC0 Life and Cognitive Science Bridge Registry** — active pruning, death-like collapse, cognitive bottlenecks, reportability, anesthesia recovery ordering.
 7. **FDS-C1 Reportable Access Paper** — conscious reportability as finite-capacity maintenance problem.
-8. **FDS-X Series High-Risk Bridge Notes** — pre-registered high-risk physical bridge notes (including planned X1 dark-energy note).
-9. **FDS-A1 Artificial Agency Paper** — retained as conceptual timestamp. Public programme does not develop proprietary AI/robotics architectures or private benchmarks.
+8. **FDS-E1 Prospect Theory / Boundary-Risk Paper** — finite-capacity bridge model for loss aversion, reference dependence, probability weighting, and nudge bandwidth.
+9. **FDS-X Series High-Risk Bridge Notes** — pre-registered high-risk physical bridge notes (including released X1 dark-energy note).
+10. **FDS-A1 Artificial Agency Paper** — retained as conceptual timestamp. Public programme does not develop proprietary AI/robotics architectures or private benchmarks.
 
 ---
 
@@ -83,9 +84,10 @@ The public academic spine currently prioritizes:
 1. FDS-T1 — finite observers and distinguishability budgets.
 2. FDS-L1 — active pruning and artificial-life persistence.
 3. FDS-C1 — reportable access under finite capacity.
-4. FDS-P2 — bounded-memory reversible computation and housekeeping dissipation (future).
-5. FDS-P3 — two-kink topological forgetting / dissipation signature (future).
-6. FDS-X1 — pre-Euclid horizon-maintenance dark-energy bridge note (planned).
+4. FDS-E1 — finite-capacity prospect theory and boundary-risk preferences.
+5. FDS-P2 — bounded-memory reversible computation and housekeeping dissipation (future).
+6. FDS-P3 — two-kink topological forgetting / dissipation signature (future).
+7. FDS-X1 — pre-Euclid horizon-maintenance dark-energy bridge note (released).
 
 FDS-A1 is retained as a conceptual timestamp for artificial agency. Because the author may pursue commercial work in AI and robotics, this public repository does not develop proprietary AI architectures, AGI robotics systems, private benchmarks, or product-level implementation details. See [CONFLICTS_OF_INTEREST.md](CONFLICTS_OF_INTEREST.md).
 
@@ -110,8 +112,9 @@ Recommended reading path:
 3. **FDS-P0 Physical Bridge Registry** — physical bridge claims, dependency structure, high-risk physical extensions.
 4. **FDS-L1 Active Pruning** — artificial-life, protocell-like systems, residue-pruning-boundary dynamics, persistence-collapse transitions.
 5. **FDS-LC0 / FDS-C1** — life/cognitive bridge claims and reportable access under finite capacity.
-6. **DT-Archive** — broad claim-space archive and historical map.
-7. **FDS-A1** — retained as conceptual timestamp for artificial agency. The public programme does not currently develop proprietary AI/robotics architectures or private benchmarks.
+6. **FDS-E1 Prospect Theory / Boundary-Risk** — state-dependent loss aversion, reference dependence, probability weighting, and nudge bandwidth under finite capacity.
+7. **DT-Archive** — broad claim-space archive and historical map.
+8. **FDS-A1** — retained as conceptual timestamp for artificial agency. The public programme does not currently develop proprietary AI/robotics architectures or private benchmarks.
 
 ---
 
@@ -122,12 +125,13 @@ Recommended reading path:
 | **DT-Archive** | *Distinction Theory: A General Theory of Finite Systems* | Zenodo archive | [10.5281/zenodo.20130174](https://doi.org/10.5281/zenodo.20130174) |
 | **FDS-0** | *Active Finite Distinction Systems: A Formal Core for Boundary Maintenance under Finite Capacity* | Zenodo preprint | [10.5281/zenodo.20158923](https://doi.org/10.5281/zenodo.20158923) |
 | **FDS-P0** | *Physical Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo preprint | [10.5281/zenodo.20159995](https://doi.org/10.5281/zenodo.20159995) |
-| **FDS-T1** | *Finite Distinguishability Budgets and Maintenance Bounds for Physical Observers* | In revision | DOI pending |
+| **FDS-T1** | *Finite Distinguishability Budgets and Maintenance Bounds for Physical Observers* | Released | [10.5281/zenodo.20234249](https://doi.org/10.5281/zenodo.20234249) |
 | **FDS-L1** | *Life and Death as Boundary Maintenance* | Released | DOI pending |
 | **FDS-LC0** | *Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo registry | [10.5281/zenodo.20183373](https://doi.org/10.5281/zenodo.20183373) |
 | **FDS-C1** | *Consciousness and Forgetting as Compression and Active Pruning* | Released | [10.5281/zenodo.20229509](https://zenodo.org/records/20229509) |
 | **FDS-A1** | *Active Finite Distinction Systems as a Criterion for Artificial Agency* | Zenodo / frozen public AI line | [10.5281/zenodo.20184709](https://doi.org/10.5281/zenodo.20184709) |
-| **FDS-X1** | *Horizon-Maintenance Dark Energy: A Pre-Euclid Bridge Note* | Planned | — |
+| **FDS-X1** | *Horizon-Maintenance Dark Energy: A Pre-Euclid Bridge Note from Finite Distinguishability* | Released | [10.5281/zenodo.20234391](https://doi.org/10.5281/zenodo.20234391) |
+| **FDS-E1** | *Finite-Capacity Prospect Theory: State-Dependent Risk Preferences under Resource, Attention, and Boundary-Risk Constraints* | Released | [10.5281/zenodo.20237306](https://doi.org/10.5281/zenodo.20237306) |
 
 ---
 
@@ -195,6 +199,7 @@ Distinction-Theory/
 ├── papers/
 │   ├── archive/
 │   ├── core/
+│   ├── economics/
 │   ├── physics/
 │   ├── ai/
 │   │   └── PUBLIC_SCOPE_NOTE.md
