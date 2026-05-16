@@ -67,7 +67,7 @@ def transition_indices(labels):
 def default_gaussian_scenario(n=1001):
     t = np.linspace(0.0, 100.0, n)
     capacities = {
-        "memory+external": np.full_like(t, 5.0),
+        "record-access": np.full_like(t, 5.0),
         "channel": decreasing_sigmoid(t, high=4.6, low=3.7, center=30.0, width=5.0),
         "causal-boundary": decreasing_sigmoid(t, high=5.2, low=2.8, center=55.0, width=4.0),
         "thermodynamic": decreasing_sigmoid(t, high=4.9, low=1.9, center=75.0, width=5.0),
@@ -79,7 +79,7 @@ def default_gaussian_scenario(n=1001):
 def delayed_observer_scenario(n=1001):
     t = np.linspace(0.0, 100.0, n)
     capacities = {
-        "memory+external": np.full_like(t, 5.0),
+        "record-access": np.full_like(t, 5.0),
         "channel": decreasing_sigmoid(t, high=4.6, low=3.7, center=30.0, width=5.0),
         "causal-boundary": decreasing_sigmoid(t, high=5.2, low=2.8, center=67.0, width=5.0),
         "thermodynamic": decreasing_sigmoid(t, high=4.9, low=1.9, center=75.0, width=5.0),
@@ -91,7 +91,7 @@ def delayed_observer_scenario(n=1001):
 def default_binary_scenario(n=1001):
     t = np.linspace(0.0, 100.0, n)
     capacities = {
-        "memory+external": np.full_like(t, 1.00),
+        "record-access": np.full_like(t, 1.00),
         "channel": decreasing_sigmoid(t, high=0.92, low=0.62, center=30.0, width=5.0),
         "causal-boundary": decreasing_sigmoid(t, high=1.10, low=0.35, center=58.0, width=5.0),
         "thermodynamic": decreasing_sigmoid(t, high=0.98, low=0.42, center=78.0, width=5.0),

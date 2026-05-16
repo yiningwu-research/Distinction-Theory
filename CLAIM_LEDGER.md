@@ -449,13 +449,13 @@ A claim appearing here is not automatically asserted as established. Each claim 
 
 **Statement.** Cosmological horizons act as finite distinguishability boundaries for finite observers, constraining accessible distinction capacity.
 
-**Status.** High-risk physical bridge claim (pre-registration planned).
+**Status.** High-risk physical bridge claim (pre-Euclid, registered).
 
 **Dependencies.** FDS-T1-001; FDS-T1-002; general relativity (as background).
 
 **Not claimed.** This does not derive GR, quantum gravity, or a complete cosmological model.
 
-**First timestamp.** Planned pre-Euclid note.
+**First timestamp.** FDS-X1 v1.0, 2026-05-16.
 
 **Failure condition.** Robust demonstration that cosmological horizons impose no finite distinguishability constraint.
 
@@ -465,13 +465,13 @@ A claim appearing here is not automatically asserted as established. Each claim 
 
 **Statement.** If cosmological horizons are finite distinguishability boundaries, horizon-maintenance cost has characteristic energy scale rho_HM ~ H^2 M_Pl^2, consistent with the observed dark-energy scale.
 
-**Status.** High-risk physical bridge claim (pre-registration planned).
+**Status.** High-risk physical bridge claim (pre-Euclid, registered).
 
 **Dependencies.** FDS-X1-001.
 
 **Not claimed.** This does not claim to derive the exact numerical value of the cosmological constant.
 
-**First timestamp.** Planned pre-Euclid note.
+**First timestamp.** FDS-X1 v1.0, 2026-05-16.
 
 **Failure condition.** High-precision confirmation that dark energy has no relation to horizon-scale maintenance physics.
 
@@ -481,13 +481,13 @@ A claim appearing here is not automatically asserted as established. Each claim 
 
 **Statement.** If horizon-maintenance cost drives late-time acceleration, the effective equation of state tends toward w = -1 from above (non-phantom), with possible mild evolution.
 
-**Status.** High-risk physical bridge prediction (pre-registration planned).
+**Status.** High-risk physical bridge prediction (pre-Euclid, registered).
 
 **Dependencies.** FDS-X1-002.
 
 **Not claimed.** This does not predict the exact w(z) or its time derivative.
 
-**First timestamp.** Planned pre-Euclid note.
+**First timestamp.** FDS-X1 v1.0, 2026-05-16.
 
 **Failure condition.** Robust high-precision detection of w < -1 (phantom) at any redshift rules out the strict non-phantom version. Measurement of w = -1 exactly with no evolution demotes the dynamical version.
 
@@ -501,7 +501,7 @@ A claim appearing here is not automatically asserted as established. Each claim 
 
 **Dependencies.** FDS-X1-001—003.
 
-**First timestamp.** Planned pre-Euclid note.
+**First timestamp.** FDS-X1 v1.0, 2026-05-16.
 
 ---
 
