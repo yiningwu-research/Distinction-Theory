@@ -123,9 +123,9 @@ Recommended reading path:
 | **FDS-0** | *Active Finite Distinction Systems: A Formal Core for Boundary Maintenance under Finite Capacity* | Zenodo preprint | [10.5281/zenodo.20158923](https://doi.org/10.5281/zenodo.20158923) |
 | **FDS-P0** | *Physical Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo preprint | [10.5281/zenodo.20159995](https://doi.org/10.5281/zenodo.20159995) |
 | **FDS-T1** | *Finite Distinguishability Budgets and Maintenance Bounds for Physical Observers* | In revision | DOI pending |
-| **FDS-L1** | *Active Pruning Controls Boundary Persistence in Protocell-like Systems* | Submitted | DOI pending |
+| **FDS-L1** | *Life and Death as Boundary Maintenance* | Released | DOI pending |
 | **FDS-LC0** | *Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo registry | [10.5281/zenodo.20183373](https://doi.org/10.5281/zenodo.20183373) |
-| **FDS-C1** | *Active Cognitive Pruning Controls Reportable Access under Finite Capacity* | Released | [10.5281/zenodo.20229509](https://zenodo.org/records/20229509) |
+| **FDS-C1** | *Consciousness and Forgetting as Compression and Active Pruning* | Released | [10.5281/zenodo.20229509](https://zenodo.org/records/20229509) |
 | **FDS-A1** | *Active Finite Distinction Systems as a Criterion for Artificial Agency* | Zenodo / frozen public AI line | [10.5281/zenodo.20184709](https://doi.org/10.5281/zenodo.20184709) |
 | **FDS-X1** | *Horizon-Maintenance Dark Energy: A Pre-Euclid Bridge Note* | Planned | — |
 
