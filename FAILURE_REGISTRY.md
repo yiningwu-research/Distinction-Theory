@@ -14,4 +14,8 @@ This file lists public-facing failure conditions for major DT/FDS modules.
 | Observer as Register | physical / operational bridge | physical measurement requires no finite record stabilization | demote observer bridge |
 | Time as Irreversible Update | physical / operational bridge | finite record updates are invertible under bounded memory without loss | revise time bridge |
 | Two-Kink Signature | high-risk physical bridge | both predicted kinks absent under validated experimental conditions | kill/demote module |
+| T3: Capacity Overflow | physical bridge | predictive error and transition entropy show no response, kink, or susceptibility peak as demand crosses accessible capacity under controlled conditions | demote bridge |
+| E1: Prospect Theory / Boundary-Risk | domain bridge | loss aversion \(\lambda\) invariant across resource stress, physiological depletion, downside protection, and financial precarity after adequate power and controls | demote domain bridge |
+| P1: Physical Distinction Carriers | physical bridge | abstract many-to-one map alone, without physical reset, overwrite, compression, garbage collection, or substrate implementation, shown to dissipate heat | demote physical bridge |
+| P2: Bounded-Memory Reversible Computation | physical bridge | bounded-memory reversible system sustains unbounded updates indefinitely without memory growth, externalization, cleanup, compression, or failure | demote physical bridge |
 | Dark Energy Bridge | high-risk physical bridge | observations force exact Λ behavior under stated test | demote X1 |
