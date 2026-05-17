@@ -28,6 +28,7 @@ The timestamp index is not a claim of correctness. It is a record of public prio
 | FDS-N1 | Boundary-maintaining self-organizing systems | 2026-05-17 | v1.0 | [10.5281/zenodo.20253151](https://doi.org/10.5281/zenodo.20253151) | fds-n1-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-n1) | Released |
 | FDS-P5 | Capacity deficit / entropy-production ledger | 2026-05-17 | v1.0 | [10.5281/zenodo.20254259](https://doi.org/10.5281/zenodo.20254259) | fds-p5-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-p5) | Released |
 | FDS-O3 | Boundary maintenance / operational Second-Law channel | 2026-05-17 | v1.0 | [10.5281/zenodo.20255129](https://doi.org/10.5281/zenodo.20255129) | fds-o3-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-o3) | Released |
+| FDS-M0 | Agency-semantics spine | 2026-05-17 | v1.0 | [10.5281/zenodo.20257939](https://doi.org/10.5281/zenodo.20257939) | fds-m0-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-m0) | Released |
 
 ---
 

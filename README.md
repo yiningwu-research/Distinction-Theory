@@ -99,13 +99,15 @@ The public academic spine currently prioritizes:
 2. FDS-O1 — observer as a finite distinction register.
 3. FDS-O2 — time as irreversible distinction update.
 4. FDS-T3 — capacity overflow and effective stochasticity.
-5. FDS-P1 — physical distinction carriers and erasure maps.
-6. FDS-P2 — bounded-memory reversible computation and housekeeping dissipation.
-7. FDS-L1 — active pruning and artificial-life persistence.
-8. FDS-C1 — reportable access under finite capacity.
-9. FDS-E1 — finite-capacity prospect theory and boundary-risk preferences.
-10. FDS-P3 — two-kink topological forgetting / dissipation signature (future).
-11. FDS-X1 — pre-Euclid horizon-maintenance dark-energy bridge note (released).
+5. FDS-N1 — boundary-maintaining self-organizing systems under finite capacity.
+6. FDS-M0 — agency-semantics spine: attention, value, goal, meaning, agency under finite capacity.
+7. FDS-P1 — physical distinction carriers and erasure maps.
+8. FDS-P2 — bounded-memory reversible computation and housekeeping dissipation.
+9. FDS-L1 — active pruning and artificial-life persistence.
+10. FDS-C1 — reportable access under finite capacity.
+11. FDS-E1 — finite-capacity prospect theory and boundary-risk preferences.
+12. FDS-P3 — two-kink topological forgetting / dissipation signature (future).
+13. FDS-X1 — pre-Euclid horizon-maintenance dark-energy bridge note (released).
 
 FDS-A1 is retained as a conceptual timestamp for artificial agency. Because the author may pursue commercial work in AI and robotics, this public repository does not develop proprietary AI architectures, AGI robotics systems, private benchmarks, or product-level implementation details. See [CONFLICTS_OF_INTEREST.md](CONFLICTS_OF_INTEREST.md).
 
@@ -161,6 +163,7 @@ Recommended reading path:
 | **FDS-N1** | *Boundary-Maintaining Self-Organizing Systems under Finite Capacity: Maintenance Load, Phase-C Collapse, and Invariant Selection* | Released | [10.5281/zenodo.20253151](https://doi.org/10.5281/zenodo.20253151) |
 | **FDS-P5** | *Capacity Deficit and Entropy Production in Active Finite Systems: A Generalized Dissipation Ledger for Boundary Maintenance* | Released | [10.5281/zenodo.20254259](https://doi.org/10.5281/zenodo.20254259) |
 | **FDS-O3** | *Boundary Maintenance and the Second Law under Finite Memory: Irreversible Record Reuse, Entropy Ledgers, and Operational Time Arrows* | Released | [10.5281/zenodo.20255129](https://doi.org/10.5281/zenodo.20255129) |
+| **FDS-M0** | *The Agency-Semantics Spine of Distinction Theory: Attention, Value, Goal, Meaning, and Action under Finite Capacity* | Released | [10.5281/zenodo.20257939](https://doi.org/10.5281/zenodo.20257939) |
 
 ---
 

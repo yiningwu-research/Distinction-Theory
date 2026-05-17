@@ -6,6 +6,26 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-05-17 — FDS-M0 Release
+
+**Description:** Release of FDS-M0 v1.0, the agency-semantics spine of Distinction Theory.
+
+### Added
+- FDS-M0 v1.0 — agency-semantics spine paper.
+- M0 claim section in CLAIM_LEDGER.md (8 claims).
+- M0 entry in TIMESTAMPS.md.
+- `models/fds_m0/` with simulation code and figures.
+- `papers/agency_semantics/` with release PDF.
+- Git tag: `fds-m0-v1.0`.
+
+### Revised
+- PAPER_MAP.md — Stage V given Status column; M0 marked Released.
+- CLAIM_STATUS.md — added M0 row.
+- README.md — updated Academic Spine and Key Documents.
+- CITATION.cff — added M0 DOI to preferred-citation list.
+
+---
+
 ## 2026-05-17 — FDS-O3 Release
 
 **Description:** Release of FDS-O3 v1.0, the Operational Trident III and finite-memory operational Second-Law channel.

@@ -60,12 +60,12 @@ Priority notes, not completed physical theories.
 
 ## Stage V — Cognition and Agency-Semantics
 
-| Code | Title | Role |
-|---|---|---|
-| FDS-M0 | The Agency-Semantics Spine of Distinction Theory | meaning/value/agency overview |
-| FDS-M1 | Attention as Distinction Admission | attention |
-| FDS-M2 | Value and Goals as Boundary-Relevance Structures | value and goal |
-| FDS-M3 | Meaning as Actionable Compressed Distinction | meaning |
+| Code | Title | Role | Status |
+|---|---|---|---|
+| FDS-M0 | The Agency-Semantics Spine of Distinction Theory | Agency-semantics spine | Released |
+| FDS-M1 | Attention as Distinction Admission in Finite Systems | Attention / admission bridge | Planned |
+| FDS-M2 | Value and Goal as Boundary-Relevance Ranking | Value-goal bridge | Planned |
+| FDS-M3 | Meaning as Actionable Semantic Quotient | Meaning bridge | Planned |
 
 ## Stage VI — Organizations, Civilization, and Institutions
 

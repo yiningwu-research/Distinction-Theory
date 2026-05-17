@@ -1463,4 +1463,118 @@ FDS-P2 studies the bounded-memory regime of reversible computation. Reversible e
 
 ---
 
+## M0 — Agency-Semantics Spine Claims
+
+### FDS-M0-001 — Attention as Capacity-Limited Distinction Admission
+
+**Statement.** Attention is capacity-limited distinction admission into an update channel of an active finite system.
+
+**Status.** Formal bridge claim.
+
+**Dependencies.** FDS-CORE-003 (finite capacity); FDS-O1-001 (finite record formation).
+
+**First timestamp.** FDS-M0 v1.0, 2026-05-17.
+
+**Failure condition.** Attention-like selection occurs without any capacity-limited admission, update gating, or priority constraint under the specified mapping.
+
+---
+
+### FDS-M0-002 — Value as Causal Boundary-Gradient Relevance
+
+**Statement.** Value is causal boundary-gradient relevance under finite capacity, distinct from mere predictive correlation.
+
+**Status.** Bridge definition.
+
+**Dependencies.** FDS-CORE-002 (active boundary); FDS-M0-001.
+
+**First timestamp.** FDS-M0 v1.0, 2026-05-17.
+
+**Failure condition.** Valuation systematically fails to correlate with future boundary loss, task success, or resource relevance under a valid mapping.
+
+---
+
+### FDS-M0-003 — Goals as Stabilized Value Rankings
+
+**Statement.** Goals are stabilized value rankings coupled to policies across update windows.
+
+**Status.** Operational bridge claim.
+
+**Dependencies.** FDS-M0-002; FDS-O2-001 (register time).
+
+**First timestamp.** FDS-M0 v1.0, 2026-05-17.
+
+**Failure condition.** Goal-like behavior persists without memory, ranking, policy stabilization, or action direction over time.
+
+---
+
+### FDS-M0-004 — Meaning as Actionable Semantic Quotient
+
+**Statement.** Meaning is actionable compressed distinction preserved by a task-sufficient semantic quotient.
+
+**Status.** Bridge definition.
+
+**Dependencies.** FDS-M0-003; FDS-T3-004 (Phase-B invariants).
+
+**First timestamp.** FDS-M0 v1.0, 2026-05-17.
+
+**Failure condition.** Compressed representations guide no action, prediction, verification, coordination, or boundary maintenance.
+
+---
+
+### FDS-M0-005 — Strong FDS Agency Requires Causal Effect on Boundary Loss
+
+**Statement.** Strong FDS agency requires updates or actions that causally affect future boundary-maintenance loss.
+
+**Status.** Definitional / empirical claim.
+
+**Dependencies.** FDS-CORE-002 (active boundary); FDS-M0-004.
+
+**First timestamp.** FDS-M0 v1.0, 2026-05-17.
+
+**Failure condition.** A system with no causal update effect on future boundary loss qualifies as a strong agent under the same criteria.
+
+---
+
+### FDS-M0-006 — Self-Verifying Agency Requires Internal Verification
+
+**Statement.** Self-verifying agency requires internal or coupled verification of whether actions reduce boundary-maintenance loss.
+
+**Status.** Operational bridge claim.
+
+**Dependencies.** FDS-M0-005; verification deficit model.
+
+**First timestamp.** FDS-M0 v1.0, 2026-05-17.
+
+**Failure condition.** A system is classified as self-verifying despite relying entirely on an external host for verification.
+
+---
+
+### FDS-M0-007 — Misalignment as Action-Effect Divergence
+
+**Statement.** Misalignment is divergence between host and delegate finite-difference action effects on boundary loss.
+
+**Status.** Empirical bridge claim.
+
+**Dependencies.** FDS-M0-005; FDS-M0-006.
+
+**First timestamp.** FDS-M0 v1.0, 2026-05-17.
+
+**Failure condition.** Divergent objectives do not produce divergent finite-difference action effects under audit.
+
+---
+
+### FDS-M0-008 — Culture as Shared Externalized Distinction Infrastructure
+
+**Statement.** Culture and institutions are shared externalized distinction infrastructures with verification costs.
+
+**Status.** Downstream bridge claim.
+
+**Dependencies.** FDS-M0-004; FDS-N1-006 (externalization burden).
+
+**First timestamp.** FDS-M0 v1.0, 2026-05-17.
+
+**Failure condition.** Externalized symbols function semantically without interpreter, update rule, verification, or action-relevance channel.
+
+---
+
 *End of ledger. New claims added as documents are released or revised.*
