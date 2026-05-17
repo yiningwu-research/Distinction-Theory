@@ -587,6 +587,122 @@ FDS-T3 abstracts the common mechanism of O1 and O2: capacity overflow. When task
 
 ---
 
+## P1 — Physical Distinction Carriers and Erasure Maps
+
+FDS-P1 defines the physical accounting interface between formal distinctions and thermodynamic implementation. It distinguishes mathematical projection from dissipative physical implementation and introduces accounting boundaries, side records, DNR, residual irreversibility, refresh cost, and boundary-relative erasure accounting.
+
+### FDS-P1-001 — Carrier Criterion
+
+**Statement.** Task-available physical distinctions require carriers, readout reliability, and retention windows.
+
+**Status.** Operational definition.
+
+**Dependencies.** FDS-0.
+
+**First timestamp.** FDS-P1 v1.0, 2026-05-16.
+
+**Failure condition.** A finite physical system uses a distinction for a task without any carrier state, readable trace, retention interval, or external record.
+
+---
+
+### FDS-P1-002 — Readout Reliability and Generalized Distinguishability
+
+**Statement.** Readout reliability is controlled by physical distinguishability, with DNR as the Gaussian binary special case. The carrier criterion generalizes to any pre-registered distinguishability metric (TV, Chernoff, Helstrom, etc.).
+
+**Status.** Testable bridge.
+
+**Dependencies.** Shannon detection theory.
+
+**First timestamp.** FDS-P1 v1.0, 2026-05-16.
+
+**Failure condition.** Readout error remains invariant as state separation, noise variance, drift, bandwidth, or carrier overlap are varied under controlled measurement.
+
+---
+
+### FDS-P1-003 — Accounting Boundary Determines Erasure
+
+**Statement.** The accounting boundary determines whether missing preimage information is erasure, side memory, externalization, or hidden-reservoir correlation.
+
+**Status.** Accounting principle.
+
+**Dependencies.** FDS-0; Landauer/Bennett.
+
+**First timestamp.** FDS-P1 v1.0, 2026-05-16.
+
+**Failure condition.** Full-boundary audits show no boundary-dependent difference between absent, stored, erased, externalized, or reservoir-carried preimage information.
+
+---
+
+### FDS-P1-004 — Residual Irreversibility
+
+**Statement.** Boundary-relative residual irreversibility is $\mathcal L_{\calA}=H(X\mid Y,G_{\calA})$.
+
+**Status.** Formal definition.
+
+**Dependencies.** FDS-P1-003.
+
+**First timestamp.** FDS-P1 v1.0, 2026-05-16.
+
+**Failure condition.** A many-to-one update preserves all preimage information in the visible output alone under nontrivial priors.
+
+---
+
+### FDS-P1-005 — Mathematical Projection Is Not Heat
+
+**Statement.** Mathematical projection is not heat; dissipative projection is a physical implementation claim. An abstract many-to-one map without physical reset, overwrite, compression, or garbage collection does not dissipate heat by itself.
+
+**Status.** Boundary statement.
+
+**Dependencies.** FDS-O2; FDS-T3.
+
+**First timestamp.** FDS-P1 v1.0, 2026-05-16.
+
+**Failure condition.** An abstract many-to-one map alone, without physical reset, overwrite, compression, garbage collection, or substrate implementation, is shown to dissipate heat.
+
+---
+
+### FDS-P1-006 — Refresh Cost vs Erasure Cost
+
+**Statement.** Refresh cost and erasure cost are distinct ledger terms: refresh preserves existing distinctions; erasure discards and reuses record space.
+
+**Status.** Testable accounting claim.
+
+**Dependencies.** FDS-P1-001.
+
+**First timestamp.** FDS-P1 v1.0, 2026-05-16.
+
+**Failure condition.** Holding, refresh, clocking, isolation, and reset costs prove inseparable in every controlled implementation.
+
+---
+
+### FDS-P1-007 — Reversible Logging Delays Erasure
+
+**Statement.** Reversible logging delays erasure by increasing memory-fill, synchronization, refresh, externalization, or later cleanup burden.
+
+**Status.** Conditional physical bridge.
+
+**Dependencies.** Bennett; Landauer.
+
+**First timestamp.** FDS-P1 v1.0, 2026-05-16.
+
+**Failure condition.** Bounded-memory reversible systems sustain unbounded updates indefinitely without memory growth, externalization, cleanup, compression, or failure.
+
+---
+
+### FDS-P1-008 — Time-Resolution Requires Turnover
+
+**Statement.** Sharper register-time resolution requires higher physical turnover and, under irreversible reuse, higher erasure-rate floor.
+
+**Status.** Operational bridge.
+
+**Dependencies.** FDS-O2.
+
+**First timestamp.** FDS-P1 v1.0, 2026-05-16.
+
+**Failure condition.** Systems maintain arbitrarily fine register-time resolution without increased update throughput, refresh, clocking, or erasure burden.
+
+---
+
 ## L1 — Active Pruning / Protocell Claims
 
 ### FDS-L1-001 — Residue-Pruning-Boundary Loop

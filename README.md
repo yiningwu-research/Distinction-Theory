@@ -71,12 +71,13 @@ The current DT/FDS public architecture:
 5. **FDS-O1 Observer as a Finite Distinction Register** — operational measurement model: finite record formation under dynamically coupled sensor, channel, memory, buffer, update, and thermodynamic bottlenecks.
 6. **FDS-O2 Time as Irreversible Distinction Update** — register time as causally ordered irreversible finite-record update, with synchronization bottlenecks, non-injective update, dissipative projection, and register-time collapse.
 7. **FDS-T3 Capacity Overflow and Effective Stochasticity** — common mechanism: capacity overflow induces effective stochasticity, critical deficit, Phase-B invariants, informational hysteresis, and observer-relative coarse dynamics.
-8. **FDS-L1 Active Pruning / Protocell Paper** — residue-pruning-boundary dynamics in protocell-like systems.
-6. **FDS-LC0 Life and Cognitive Science Bridge Registry** — active pruning, death-like collapse, cognitive bottlenecks, reportability, anesthesia recovery ordering.
-7. **FDS-C1 Reportable Access Paper** — conscious reportability as finite-capacity maintenance problem.
-8. **FDS-E1 Prospect Theory / Boundary-Risk Paper** — finite-capacity bridge model for loss aversion, reference dependence, probability weighting, and nudge bandwidth.
-9. **FDS-X Series High-Risk Bridge Notes** — pre-registered high-risk physical bridge notes (including released X1 dark-energy note).
-10. **FDS-A1 Artificial Agency Paper** — retained as conceptual timestamp. Public programme does not develop proprietary AI/robotics architectures or private benchmarks.
+8. **FDS-P1 Physical Distinction Carriers and Erasure Maps** — Physical Bridge Ladder I: formal distinctions become task-available physical distinctions only when carried, readable, stable, and accounted for under an explicit accounting boundary.
+9. **FDS-L1 Active Pruning / Protocell Paper** — residue-pruning-boundary dynamics in protocell-like systems.
+10. **FDS-LC0 Life and Cognitive Science Bridge Registry** — active pruning, death-like collapse, cognitive bottlenecks, reportability, anesthesia recovery ordering.
+11. **FDS-C1 Reportable Access Paper** — conscious reportability as finite-capacity maintenance problem.
+12. **FDS-E1 Prospect Theory / Boundary-Risk Paper** — finite-capacity bridge model for loss aversion, reference dependence, probability weighting, and nudge bandwidth.
+13. **FDS-X Series High-Risk Bridge Notes** — pre-registered high-risk physical bridge notes (including released X1 dark-energy note).
+14. **FDS-A1 Artificial Agency Paper** — retained as conceptual timestamp. Public programme does not develop proprietary AI/robotics architectures or private benchmarks.
 
 ### Operational Trident
 
@@ -96,7 +97,8 @@ The public academic spine currently prioritizes:
 2. FDS-O1 — observer as a finite distinction register.
 3. FDS-O2 — time as irreversible distinction update.
 4. FDS-T3 — capacity overflow and effective stochasticity.
-5. FDS-L1 — active pruning and artificial-life persistence.
+5. FDS-P1 — physical distinction carriers and erasure maps.
+6. FDS-L1 — active pruning and artificial-life persistence.
 4. FDS-C1 — reportable access under finite capacity.
 5. FDS-E1 — finite-capacity prospect theory and boundary-risk preferences.
 6. FDS-P2 — bounded-memory reversible computation and housekeeping dissipation (future).
@@ -144,6 +146,7 @@ Recommended reading path:
 | **FDS-O1** | *Observer as a Finite Distinction Register: Measurement Capacity, Dynamic Bottlenecks, and Budget-Crossing Signatures* | Released | [10.5281/zenodo.20248792](https://doi.org/10.5281/zenodo.20248792) |
 | **FDS-O2** | *Time as Irreversible Distinction Update: Finite Records, Causal Ordering, and Register-Time Collapse* | Released | [10.5281/zenodo.20249369](https://doi.org/10.5281/zenodo.20249369) |
 | **FDS-T3** | *Capacity Overflow and Effective Stochasticity: Non-Injective Projection, Critical Deficit, Phase-B Invariants, and the Information-Theoretic Origin of Coarse Dynamics* | Released | [10.5281/zenodo.20250367](https://doi.org/10.5281/zenodo.20250367) |
+| **FDS-P1** | *Physical Distinction Carriers and Erasure Maps: Accounting Boundaries, Distinction-to-Noise Ratio, and Thermodynamic Implementation* | Released | [10.5281/zenodo.20251854](https://doi.org/10.5281/zenodo.20251854) |
 | **FDS-L1** | *Life and Death as Boundary Maintenance* | Released | DOI pending |
 | **FDS-LC0** | *Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo registry | [10.5281/zenodo.20183373](https://doi.org/10.5281/zenodo.20183373) |
 | **FDS-C1** | *Consciousness and Forgetting as Compression and Active Pruning* | Released | [10.5281/zenodo.20229509](https://zenodo.org/records/20229509) |
