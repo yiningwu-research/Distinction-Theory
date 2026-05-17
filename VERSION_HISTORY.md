@@ -6,6 +6,26 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-05-17 — FDS-M1 Release
+
+**Description:** Release of FDS-M1 v1.0, the attention paper in the agency-semantics spine.
+
+### Added
+- FDS-M1 v1.0 — attention as distinction admission.
+- M1 claim section in CLAIM_LEDGER.md (9 claims).
+- M1 entry in TIMESTAMPS.md.
+- `models/fds_m1/` with simulation code and figures.
+- `papers/agency_semantics/` updated with M1 release PDF.
+- Git tag: `fds-m1-v1.0`.
+
+### Revised
+- PAPER_MAP.md — M1 status changed from Planned to Released.
+- CLAIM_STATUS.md — added M1 row.
+- README.md — updated Key Documents.
+- CITATION.cff — added M1 DOI to preferred-citation list.
+
+---
+
 ## 2026-05-17 — FDS-M0 Release
 
 **Description:** Release of FDS-M0 v1.0, the agency-semantics spine of Distinction Theory.

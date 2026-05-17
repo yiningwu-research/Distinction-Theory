@@ -164,6 +164,7 @@ Recommended reading path:
 | **FDS-P5** | *Capacity Deficit and Entropy Production in Active Finite Systems: A Generalized Dissipation Ledger for Boundary Maintenance* | Released | [10.5281/zenodo.20254259](https://doi.org/10.5281/zenodo.20254259) |
 | **FDS-O3** | *Boundary Maintenance and the Second Law under Finite Memory: Irreversible Record Reuse, Entropy Ledgers, and Operational Time Arrows* | Released | [10.5281/zenodo.20255129](https://doi.org/10.5281/zenodo.20255129) |
 | **FDS-M0** | *The Agency-Semantics Spine of Distinction Theory: Attention, Value, Goal, Meaning, and Action under Finite Capacity* | Released | [10.5281/zenodo.20257939](https://doi.org/10.5281/zenodo.20257939) |
+| **FDS-M1** | *Attention as Distinction Admission in Finite Systems: Capacity-Limited Gating, Boundary Relevance, and Tunnel Vision* | Released | [10.5281/zenodo.20258570](https://doi.org/10.5281/zenodo.20258570) |
 
 ---
 
