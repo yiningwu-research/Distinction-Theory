@@ -26,6 +26,9 @@ It is a finite-system framework that organizes boundary maintenance, capacity de
 | Transfer entropy / empowerment | invention of causal influence metrics | FDS uses causal-loop closure as one component of agency, not as sufficient condition |
 | Complex systems collapse | priority over tipping points | FDS gives a boundary-maintenance and capacity-deficit interpretation of collapse |
 | AI agent frameworks | replacement of all agent theories | FDS isolates active boundary maintenance and resource-governed persistence as agency criteria |
+| Prospect Theory (Kahneman, Tversky) | replacement of Prospect Theory or expected utility theory | FDS-E1 treats loss aversion, reference dependence, and probability weighting as state-dependent finite-capacity parameters rather than fixed irrationality constants |
+| Reversible computation (Bennett) | refutation of reversible computation or of the Landauer bound | FDS-P2 studies the bounded-memory regime in which reversible embeddings accumulate garbage records that eventually incur housekeeping costs |
+| Stochastic thermodynamics (Seifert, Parrondo) | replacement of stochastic thermodynamics or information thermodynamics | FDS uses stochastic-thermodynamic cost terms as one layer in a broader finite-record accounting framework that includes carriers, accounting boundaries, side records, and refresh costs |
 
 ## Contribution Claim
 
