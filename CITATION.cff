@@ -84,6 +84,12 @@ preferred-citation:
       - family-names: Wu
         given-names: Yining
     date-released: 2026-05-17
+  - title: "Capacity Deficit and Entropy Production in Active Finite Systems: A Generalized Dissipation Ledger for Boundary Maintenance"
+    doi: 10.5281/zenodo.20254259
+    authors:
+      - family-names: Wu
+        given-names: Yining
+    date-released: 2026-05-17
   - title: "Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems"
     doi: 10.5281/zenodo.20183373
     authors:

@@ -131,7 +131,8 @@ Recommended reading path:
 6. **FDS-LC0 / FDS-C1** — life/cognitive bridge claims and reportable access under finite capacity.
 7. **FDS-E1 Prospect Theory / Boundary-Risk** — state-dependent loss aversion, reference dependence, probability weighting, and nudge bandwidth under finite capacity.
 9. **FDS-N1 Self-Organization Bridge** — complex-systems normal form: boundary-maintaining self-organization under finite capacity, Phase-C collapse, and invariant selection.
-10. **DT-Archive** — broad claim-space archive and historical map.
+10. **FDS-P5 Deficit-Driven Entropy Ledger** — physical bridge: capacity deficit → correction flow → entropy-production ledger; the third Physical Bridge Ladder paper after P1 and P2.
+11. **DT-Archive** — broad claim-space archive and historical map.
 11. **FDS-A1** — retained as conceptual timestamp for artificial agency. The public programme does not currently develop proprietary AI/robotics architectures or private benchmarks.
 
 ---
@@ -156,6 +157,7 @@ Recommended reading path:
 | **FDS-X1** | *Horizon-Maintenance Dark Energy: A Pre-Euclid Bridge Note from Finite Distinguishability* | Released | [10.5281/zenodo.20234391](https://doi.org/10.5281/zenodo.20234391) |
 | **FDS-E1** | *Finite-Capacity Prospect Theory: State-Dependent Risk Preferences under Resource, Attention, and Boundary-Risk Constraints* | Released | [10.5281/zenodo.20237306](https://doi.org/10.5281/zenodo.20237306) |
 | **FDS-N1** | *Boundary-Maintaining Self-Organizing Systems under Finite Capacity: Maintenance Load, Phase-C Collapse, and Invariant Selection* | Released | [10.5281/zenodo.20253151](https://doi.org/10.5281/zenodo.20253151) |
+| **FDS-P5** | *Capacity Deficit and Entropy Production in Active Finite Systems: A Generalized Dissipation Ledger for Boundary Maintenance* | Released | [10.5281/zenodo.20254259](https://doi.org/10.5281/zenodo.20254259) |
 
 ---
 

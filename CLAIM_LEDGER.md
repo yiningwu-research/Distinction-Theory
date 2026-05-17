@@ -1231,4 +1231,118 @@ FDS-P2 studies the bounded-memory regime of reversible computation. Reversible e
 
 ---
 
+## P5 — Deficit-Driven Entropy-Production Ledger Claims
+
+### FDS-P5-001 — Capacity Deficit Is Not Thermodynamic Entropy
+
+**Statement.** Capacity deficit $\Delta_\epsilon(t)$ is a task-relative information shortfall (rate-distortion demand minus effective capacity), not thermodynamic entropy by itself.
+
+**Status.** Boundary statement (separates formal demand from physical cost).
+
+**Dependencies.** FDS-CORE-005 (capacity deficit).
+
+**First timestamp.** FDS-P5 v1.0, 2026-05-17.
+
+**Failure condition.** Not an empirical prediction; it separates formal rate-distortion demand from physical entropy production.
+
+---
+
+### FDS-P5-002 — Sustained Deficit Requires Correction or Exit
+
+**Statement.** Sustained positive deficit plus continued boundary maintenance requires correction, externalization, task relaxation, or failure.
+
+**Status.** FDS-core derived claim.
+
+**Dependencies.** FDS-P5-001; FDS-CORE-005 (budget exits).
+
+**First timestamp.** FDS-P5 v1.0, 2026-05-17.
+
+**Failure condition.** A finite active system maintains all pre-registered task distinctions at fixed tolerance despite $R_{\min}^{(\tau)}(\epsilon)>C_{\mathrm{eff}}$ and no correction, loss, task relaxation, or external support.
+
+---
+
+### FDS-P5-003 — Physical Correction Cycles Induce Audit Channels
+
+**Statement.** Physical correction cycles induce audit channels through update, refresh, repair, synchronization, externalization, and transport.
+
+**Status.** Physical bridge claim.
+
+**Dependencies.** FDS-P5-002; FDS-P1-001 (carrier criterion).
+
+**First timestamp.** FDS-P5 v1.0, 2026-05-17.
+
+**Failure condition.** Controlled physical systems perform sustained correction, refresh, repair, sensing, and synchronization at zero coupled-system entropy production or resource cost.
+
+---
+
+### FDS-P5-004 — Landauer Floor Under Bridge Assumptions
+
+**Statement.** Logical erasure contributes a Landauer-style entropy-production floor under stated bridge assumptions.
+
+**Status.** Physical bridge claim.
+
+**Dependencies.** FDS-P1-003 (Landauer bridge); FDS-P5-003.
+
+**First timestamp.** FDS-P5 v1.0, 2026-05-17.
+
+**Failure condition.** Reliable logically irreversible physical erasure under stated thermodynamic assumptions violates the Landauer lower bound.
+
+---
+
+### FDS-P5-005 — Housekeeping Entropy Persists Beyond Erasure
+
+**Statement.** Housekeeping entropy production can persist even when logical erasure is zero.
+
+**Status.** Accounting claim.
+
+**Dependencies.** FDS-P5-003; FDS-P2-001 (reversible embedding).
+
+**First timestamp.** FDS-P5 v1.0, 2026-05-17.
+
+**Failure condition.** Boundary maintenance, refresh, clocking, sensing, and repair are cost-free whenever preimage erasure is zero.
+
+---
+
+### FDS-P5-006 — Externalization Shifts the Ledger
+
+**Statement.** Externalization shifts the entropy ledger across accounting boundaries rather than abolishing it.
+
+**Status.** Accounting bridge claim.
+
+**Dependencies.** FDS-P5-003; FDS-P1-002 (accounting boundary).
+
+**First timestamp.** FDS-P5 v1.0, 2026-05-17.
+
+**Failure condition.** External records impose no write, verification, retrieval, latency, synchronization, maintenance, or environmental cost.
+
+---
+
+### FDS-P5-007 — Pruning and Invariant Compression Reduce Future Pressure
+
+**Statement.** Pruning and invariant compression can reduce future entropy-production pressure when task function is preserved.
+
+**Status.** Conditional bridge claim.
+
+**Dependencies.** FDS-P5-005; FDS-T3-004 (Phase-B invariants).
+
+**First timestamp.** FDS-P5 v1.0, 2026-05-17.
+
+**Failure condition.** No task-preserving simplification ever reduces refresh, repair, verification, synchronization, or maintenance cost.
+
+---
+
+### FDS-P5-008 — Deficit Crossing Predicts Measurable Signatures
+
+**Statement.** Deficit crossing predicts measurable signatures in heat, resource use, latency, resets, error floor, externalization, or failure risk.
+
+**Status.** Testable normal-form claim.
+
+**Dependencies.** FDS-P5-002—005; protocol definitions.
+
+**First timestamp.** FDS-P5 v1.0, 2026-05-17.
+
+**Failure condition.** Positive deficit can be sustained with no measurable change in any physical, computational, or task-performance channel.
+
+---
+
 *End of ledger. New claims added as documents are released or revised.*

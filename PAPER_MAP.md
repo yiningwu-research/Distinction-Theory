@@ -28,11 +28,13 @@ These papers define the project and its most operational entry point.
 
 These papers convert the framework into testable protocols.
 
-| Code | Title | Role |
-|---|---|---|
-| FDS-B1 | Minimal Protocol for Testing Boundary-Maintaining Artificial Agents | AI benchmark |
-| FDS-P3 | Topological Obstruction to Forgetting | two-kink physical signature |
-| FDS-P5 | Capacity Deficit and Entropy Production in Active Finite Systems | non-equilibrium bridge |
+| Code | Title | Role | Status |
+|---|---|---|---|
+| FDS-B1 | Minimal Protocol for Testing Boundary-Maintaining Artificial Agents | AI benchmark | Planned |
+| FDS-P5 | Capacity Deficit and Entropy Production in Active Finite Systems | Physical bridge / operational entropy-ledger test spine | Released | 10.5281/zenodo.20254259 |
+| FDS-P3 | Topological Obstruction to Forgetting | two-kink physical signature | Planned |
+
+FDS-P5 is the third Physical Bridge Ladder paper after P1 (Physical Bridge Ladder I) and P2 (Physical Bridge Ladder II). It also appears in Stage II because it provides deficit-crossing, ledger-decomposition, pruning-ROI, externalization-audit, and hysteresis protocols.
 
 ## Stage III — Life, Death, and Self-Organization
 

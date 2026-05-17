@@ -6,6 +6,25 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-05-17 — FDS-P5 Release
+
+**Description:** Release of FDS-P5 v1.0, the deficit-driven entropy-production ledger bridge for active finite systems.
+
+### Added
+- FDS-P5 v1.0 — capacity deficit and entropy production paper.
+- P5 claim section in CLAIM_LEDGER.md (8 claims).
+- P5 entry in TIMESTAMPS.md.
+- `models/fds_p5/` with simulation code and figures.
+- Git tag: `fds-p5-v1.0`.
+
+### Revised
+- PAPER_MAP.md — P5 marked Released in Stage II, noted as Physical Bridge Ladder III.
+- CLAIM_STATUS.md — added P5 row.
+- README.md — updated paper index.
+- CITATION.cff — added P5 DOI to preferred-citation list.
+
+---
+
 ## 2026-05-17 — FDS-N1 Release
 
 **Description:** Release of FDS-N1 v1.0, the complex-systems bridge for boundary-maintaining self-organization.
