@@ -6,6 +6,44 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-05-16 — FDS-E1 / FDS-X1 / FDS-O1 / FDS-O2 / FDS-T3 / FDS-P1 / FDS-P2 Release Batch
+
+**Description:** Batch release of seven new papers covering prospect theory, dark-energy bridge, observer register, register time, capacity overflow, physical distinction carriers, and bounded-memory reversible computation.
+
+### Added
+- FDS-E1 v1.0 — finite-capacity prospect theory paper.
+- FDS-X1 v1.0 — horizon-maintenance dark-energy pre-Euclid bridge note.
+- FDS-O1 v1.0 — observer as a finite distinction register paper.
+- FDS-O2 v1.0 — time as irreversible distinction update paper.
+- FDS-T3 v1.0 — capacity overflow and effective stochasticity paper.
+- FDS-P1 v1.0 — physical distinction carriers and erasure maps paper.
+- FDS-P2 v1.0 — bounded-memory reversible computation paper.
+- Corresponding claim sections in CLAIM_LEDGER.md.
+- Corresponding entries in TIMESTAMPS.md.
+- Corresponding website pages: papers, roadmap, timestamps, ledger, prior-art, failure-registry.
+- DOI records for all seven papers on Zenodo.
+- Git tags: `fds-e1-v1.0`, `fds-x1-v1.0`, `fds-o1-v1.0`, `fds-o2-v1.0`, `fds-t3-v1.0`, `fds-p1-v1.0`, `fds-p2-v1.0`.
+
+### Revised
+- README.md — updated Key Documents, Public Architecture, Academic Spine with new papers.
+- PAPER_MAP.md — restructured stages, added new papers, corrected titles.
+- CITATION.cff — added all released DOIs to preferred-citation list.
+- CLAIM_STATUS.md — added E1, T3, P1, P2 claim rows.
+- Website: Start Here, Failure Registry, Prior Art pages updated.
+- FAILURE_REGISTRY.md — added T3, E1, P1, P2 entries.
+- PRIOR_ART_BOUNDARY.md — added Prospect Theory, reversible computation, stochastic thermodynamics entries.
+
+### Not changed
+- FDS-0 formal core (v1.0).
+- FDS-P0 Physical Bridge Registry (v1.0).
+- FDS-LC0 Life/Cognitive Registry (v1.0).
+- FDS-C1 content (v1.0).
+- FDS-L1 content (submitted).
+- FDS-A1 content remains unchanged as frozen timestamp.
+- DT-Archive content (v1.0).
+
+---
+
 ## 2026-05-16 — Priority Infrastructure v1.0
 
 **Description:** First public release of the DT/FDS priority infrastructure: claim ledger, timestamp index, release protocol, and AI scope governance.

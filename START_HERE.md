@@ -12,7 +12,7 @@ Read this path if you want the shortest route:
 
 1. README.md — project scope and public layers.
 2. FDS-0 abstract — formal finite-system core.
-3. FDS-A1 abstract — artificial agency criterion.
+3. FDS-T1 abstract — finite observer budgets.
 4. CLAIM_STATUS.md — which claims are core, bridge, or high-risk.
 
 Core idea:
@@ -25,8 +25,8 @@ Read:
 
 1. README.md
 2. FDS-0: Introduction + Formal Kernel
-3. FDS-A1: Introduction + Operational Test Protocol
-4. FDS-P0: Epistemic Status + Risk Stratification
+3. FDS-T1: Introduction + distinguishability budget
+4. FDS-O1: Introduction + measurement capacity
 5. PRIOR_ART_BOUNDARY.md
 
 ## 3. Technical Entry
@@ -34,9 +34,10 @@ Read:
 For formal evaluation:
 
 1. FDS-0 — definitions, capacity deficit, Landauer bridge, trichotomy.
-2. FAILURE_REGISTRY.md — formal and physical failure conditions.
-3. EVALUATION_PROTOCOL.md — how to critique DT/FDS.
-4. FDS-A1 — AI agency operationalization.
+2. FDS-T1 — observer budgets, rate-distortion, budget-exit theorem.
+3. FDS-P1 — physical carriers, accounting boundaries, residual irreversibility.
+4. FAILURE_REGISTRY.md — formal and physical failure conditions.
+5. EVALUATION_PROTOCOL.md — how to critique DT/FDS.
 
 ## 4. AI Agency Path
 
