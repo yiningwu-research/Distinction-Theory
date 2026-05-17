@@ -85,7 +85,7 @@ The Operational Trident translates finite distinguishability budgets into observ
 
 - **FDS-O1 — Observer as a Finite Distinction Register.** Measurement capacity, dynamic bottlenecks, record formation, buffering, housekeeping heat, and budget-crossing signatures. DOI: 10.5281/zenodo.20248792.
 - **FDS-O2 — Time as Irreversible Distinction Update.** Register time as causally ordered irreversible finite-record update, with synchronization bottlenecks, non-injective update, dissipative projection, and register-time collapse. DOI: 10.5281/zenodo.20249369.
-- **FDS-O3 — Boundary Maintenance and the Second Law under Finite Memory.** Planned.
+- **FDS-O3 — Boundary Maintenance and the Second Law under Finite Memory.** Released. doi:10.5281/zenodo.20255129
 
 ---
 
@@ -158,6 +158,7 @@ Recommended reading path:
 | **FDS-E1** | *Finite-Capacity Prospect Theory: State-Dependent Risk Preferences under Resource, Attention, and Boundary-Risk Constraints* | Released | [10.5281/zenodo.20237306](https://doi.org/10.5281/zenodo.20237306) |
 | **FDS-N1** | *Boundary-Maintaining Self-Organizing Systems under Finite Capacity: Maintenance Load, Phase-C Collapse, and Invariant Selection* | Released | [10.5281/zenodo.20253151](https://doi.org/10.5281/zenodo.20253151) |
 | **FDS-P5** | *Capacity Deficit and Entropy Production in Active Finite Systems: A Generalized Dissipation Ledger for Boundary Maintenance* | Released | [10.5281/zenodo.20254259](https://doi.org/10.5281/zenodo.20254259) |
+| **FDS-O3** | *Boundary Maintenance and the Second Law under Finite Memory: Irreversible Record Reuse, Entropy Ledgers, and Operational Time Arrows* | Released | [10.5281/zenodo.20255129](https://doi.org/10.5281/zenodo.20255129) |
 
 ---
 

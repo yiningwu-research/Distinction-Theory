@@ -6,6 +6,26 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-05-17 — FDS-O3 Release
+
+**Description:** Release of FDS-O3 v1.0, the Operational Trident III and finite-memory operational Second-Law channel.
+
+### Added
+- FDS-O3 v1.0 — boundary maintenance and the Second Law under finite memory.
+- O3 claim section in CLAIM_LEDGER.md (8 claims).
+- O3 entry in TIMESTAMPS.md.
+- `models/fds_o3/` with simulation code and figures.
+- `papers/operational_trident/` with release PDF.
+- Git tag: `fds-o3-v1.0`.
+
+### Revised
+- PAPER_MAP.md — O3 marked Released in Stage I after O2; Operational Trident note added.
+- CLAIM_STATUS.md — added O3 row.
+- README.md — updated Operational Trident and Key Documents.
+- CITATION.cff — added O3 DOI to preferred-citation list.
+
+---
+
 ## 2026-05-17 — FDS-P5 Release
 
 **Description:** Release of FDS-P5 v1.0, the deficit-driven entropy-production ledger bridge for active finite systems.

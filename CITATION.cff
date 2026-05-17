@@ -90,6 +90,12 @@ preferred-citation:
       - family-names: Wu
         given-names: Yining
     date-released: 2026-05-17
+  - title: "Boundary Maintenance and the Second Law under Finite Memory: Irreversible Record Reuse, Entropy Ledgers, and Operational Time Arrows"
+    doi: 10.5281/zenodo.20255129
+    authors:
+      - family-names: Wu
+        given-names: Yining
+    date-released: 2026-05-17
   - title: "Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems"
     doi: 10.5281/zenodo.20183373
     authors:

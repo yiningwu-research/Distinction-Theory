@@ -17,12 +17,15 @@ These papers define the project and its most operational entry point.
 | FDS-T1 | Finite Distinguishability Budgets and Maintenance Bounds | physical-observer bridge | Released |
 | FDS-O1 | Observer as a Finite Distinction Register | measurement as finite record formation | Released |
 | FDS-O2 | Time as Irreversible Distinction Update | register time | Released |
+| FDS-O3 | Boundary Maintenance and the Second Law under Finite Memory | Operational Trident III / finite-memory operational Second-Law channel | Released | 10.5281/zenodo.20255129 |
 | FDS-T3 | Capacity Overflow and Effective Stochasticity | common mechanism bridge | Released |
 | FDS-P1 | Physical Distinction Carriers and Erasure Maps | Physical Bridge Ladder I | Released |
 | FDS-P2 | Bounded-Memory Reversible Computation and Housekeeping Dissipation | Physical Bridge Ladder II | Released |
 | FDS-C1 | Active Cognitive Pruning Controls Reportable Access under Finite Capacity | cognitive bridge | Released |
 | FDS-E1 | Finite-Capacity Prospect Theory | behavioral economics bridge | Released |
 | FDS-A1 | Active Finite Distinction Systems as a Criterion for Artificial Agency | operational AI timestamp | Released / frozen |
+
+O1/O2/O3 form the Operational Trident: finite record formation, register-time update, and finite-memory operational Second-Law channel.
 
 ## Stage II — Operational Test Spine
 
