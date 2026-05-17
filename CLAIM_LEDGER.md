@@ -267,6 +267,108 @@ A claim appearing here is not automatically asserted as established. Each claim 
 
 ---
 
+## O1 — Observer as a Finite Distinction Register
+
+FDS-O1 converts the finite-observer budget of FDS-T1 into an operational measurement model. It treats an observer as a finite distinction-register and measurement as stable record formation under sensor, channel, memory, buffer, update, and thermodynamic constraints.
+
+### FDS-O1-001 — Observer as Finite Distinction-Register
+
+**Statement.** An observer is a finite distinction-register rather than an ideal point of access to facts. It has finite record carriers, finite readout, finite stability, finite update, buffers, and finite task windows.
+
+**Status.** Operational bridge.
+
+**Dependencies.** FDS-T1-001.
+
+**First timestamp.** FDS-O1 v1.0, 2026-05-16.
+
+**Failure condition.** A complete physical account of registered observations requiring no finite carrier, boundary, stability condition, readout, or update capacity.
+
+---
+
+### FDS-O1-002 — Measurement as Stable Record Formation
+
+**Statement.** A measurement is stable record formation over a finite retention and verification window, not merely an interaction.
+
+**Status.** Operational definition.
+
+**Dependencies.** FDS-O1-001.
+
+**First timestamp.** FDS-O1 v1.0, 2026-05-16.
+
+**Failure condition.** Operational measurement outcomes used without any stable record, reproducible trace, or accessible registration.
+
+---
+
+### FDS-O1-003 — Dynamically Bottlenecked Measurement Capacity
+
+**Statement.** Measurement capacity is dynamically bottlenecked by sensor, channel, memory, record-stability, buffer, externalization, compression, and update constraints.
+
+**Status.** Conditional theorem.
+
+**Dependencies.** FDS-O1-002.
+
+**First timestamp.** FDS-O1 v1.0, 2026-05-16.
+
+**Failure condition.** Full-fidelity measurement bypasses all such constraints under bounded physical resources.
+
+---
+
+### FDS-O1-004 — Budget-Crossing Exits
+
+**Statement.** When task-relevant demand crosses accessible capacity, observable exits should appear: coarse-graining, state merging, increased latency, buffering, externalization, reset, housekeeping heat, task relaxation, or failure.
+
+**Status.** Testable prediction.
+
+**Dependencies.** FDS-O1-003.
+
+**First timestamp.** FDS-O1 v1.0, 2026-05-16.
+
+**Failure condition.** No change in error, latency, coarse-graining, state merging, buffering, externalization, reset, heat, or failure under controlled crossing.
+
+---
+
+### FDS-O1-005 — Buffers Separate Transient from Sustained Crossing
+
+**Statement.** Finite buffers allow transient demand spikes without sustained capacity violation. When buffer occupancy saturates, sustained crossing emerges.
+
+**Status.** Engineering bridge.
+
+**Dependencies.** FDS-O1-003.
+
+**First timestamp.** FDS-O1 v1.0, 2026-05-16.
+
+**Failure condition.** Finite buffers neither delay transient overload nor sharpen sustained overflow.
+
+---
+
+### FDS-O1-006 — Irreversible Record Reuse Carries Housekeeping Cost
+
+**Statement.** Irreversible record reuse carries housekeeping cost under generalized Landauer accounting: fixed-memory overwrite produces higher immediate heat; expanding memory postpones erasure but accrues storage and garbage-collection costs.
+
+**Status.** Physical bridge.
+
+**Dependencies.** Landauer principle; FDS-O1-003.
+
+**First timestamp.** FDS-O1 v1.0, 2026-05-16.
+
+**Failure condition.** Repeated irreversible record reuse below generalized Landauer accounting after all reservoirs, correlations, and work sources are included.
+
+---
+
+### FDS-O1-007 — Active Inference Depends on Finite Record Formation
+
+**Statement.** Active inference and robotic control presuppose finite record formation. If the observation register is saturated, delayed, compressed, or merged, inference operates on a lossy projection of the true observation.
+
+**Status.** Interface claim.
+
+**Dependencies.** Active inference; FDS-O1-001.
+
+**First timestamp.** FDS-O1 v1.0, 2026-05-16.
+
+**Failure condition.** Severe record compression, delay, merging, or unavailability has no measurable effect on inference or control under matched tasks.
+
+---
+
 ## L1 — Active Pruning / Protocell Claims
 
 ### FDS-L1-001 — Residue-Pruning-Boundary Loop
