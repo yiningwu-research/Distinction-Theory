@@ -12,6 +12,7 @@ It is a finite-system framework that organizes boundary maintenance, capacity de
 
 | Prior tradition | DT/FDS does not claim | DT/FDS claims instead |
 |---|---|---|
+| Self-organization / complex systems / cybernetics | Haken, Prigogine, Kauffman, Gershenson, Heylighen; priority over self-organization theory, complexity theory, cybernetics, dissipative structures, synergetics, complex adaptive systems, or chemical organization theory | FDS-N1 gives a finite-boundary, capacity-deficit, maintenance-load, exit-channel, and invariant-selection interpretation of self-organization under finite capacity |
 | Distinction / indication | priority over distinction as a philosophical primitive | distinction is used as the minimal entry point into finite boundary maintenance |
 | Information as difference | priority over information-theoretic difference | finite distinctions become costly only when physically maintained by finite systems |
 | Autopoiesis | replacement of autopoiesis | FDS adds capacity deficit, rate-distortion demand, pruning/externalization, and failure propagation |
