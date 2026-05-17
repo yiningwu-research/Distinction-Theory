@@ -369,6 +369,108 @@ FDS-O1 converts the finite-observer budget of FDS-T1 into an operational measure
 
 ---
 
+## O2 — Time as Irreversible Distinction Update
+
+FDS-O2 converts finite record formation into an operational model of register time. It treats usable temporal order for bounded observers as causally ordered irreversible distinction update under finite memory, finite clock precision, finite buffering, finite synchronization bandwidth, finite latency, and finite thermodynamic budgets.
+
+### FDS-O2-001 — Register Time as Ordered Finite-Record Update
+
+**Statement.** For a finite observer, usable temporal order is register time: causally ordered irreversible distinction update carried by finite records, clock labels, and dependency markers.
+
+**Status.** Operational definition.
+
+**Dependencies.** FDS-O1-001.
+
+**First timestamp.** FDS-O2 v1.0, 2026-05-16.
+
+**Failure condition.** Finite observers use temporal order without any record ordering, update history, clock record, causal marker, dependency edge, or memory of change.
+
+---
+
+### FDS-O2-002 — Causal Dependency Precedes Temporal Labels
+
+**Statement.** Causal dependency is prior to temporal labeling. Record $z_j$ is operationally after $z_i$ when the update that forms $z_j$ depends on $z_i$ through an accessible finite update chain.
+
+**Status.** Structural proposition.
+
+**Dependencies.** FDS-O2-001.
+
+**First timestamp.** FDS-O2 v1.0, 2026-05-16.
+
+**Failure condition.** Stable temporal order is obtained solely from labels even when update dependencies and causal traces are removed or scrambled.
+
+---
+
+### FDS-O2-003 — Non-Injective Update Induces an Operational Arrow
+
+**Statement.** When finite memory forces overwrite, compression, projection, or garbage collection, the update map is many-to-one. The non-injectivity loss $\Loss_U=H(X|Z)$ defines an arrow: erased distinctions cannot be reconstructed from the current finite record.
+
+**Status.** Conditional theorem.
+
+**Dependencies.** FDS-O2-001; Landauer/Bennett.
+
+**First timestamp.** FDS-O2 v1.0, 2026-05-16.
+
+**Failure condition.** A finite register repeatedly overwrites or compresses records yet reconstructs erased distinctions from the current finite record without external memory, hidden reservoirs, or additional records.
+
+---
+
+### FDS-O2-004 — Synchronization Is a Finite-Channel Record-Exchange Problem
+
+**Statement.** Establishing cross-observer simultaneity requires finite signal exchange, finite channels, finite clock records, and finite latency bounds.
+
+**Status.** Relativity-compatible bridge.
+
+**Dependencies.** FDS-O2-001.
+
+**First timestamp.** FDS-O2 v1.0, 2026-05-16.
+
+**Failure condition.** Bounded observers establish global simultaneity without signal exchange, finite bandwidth, latency, synchronization records, or propagation assumptions.
+
+---
+
+### FDS-O2-005 — Buffers and Latency Can Distort Recorded Order
+
+**Statement.** Load-dependent latency and finite buffers can produce delayed records, order inversions, timestamp gaps, and apparent cause-effect reversal in the finite register's acquired order without violating physical causality.
+
+**Status.** Testable prediction.
+
+**Dependencies.** FDS-O2-001; FDS-O1-003.
+
+**First timestamp.** FDS-O2 v1.0, 2026-05-16.
+
+**Failure condition.** Load-dependent latency and finite buffers never produce delayed records, order inversions, timestamp gaps, or apparent cause-effect reversal under controlled acquisition stress.
+
+---
+
+### FDS-O2-006 — Finite Clock Precision Coarsens Time
+
+**Statement.** A bounded finite clock has finite tick width, drift, jitter, wraparound, and synchronization error, limiting the fineness of temporal ordering.
+
+**Status.** Operational bridge.
+
+**Dependencies.** FDS-O2-001.
+
+**First timestamp.** FDS-O2 v1.0, 2026-05-16.
+
+**Failure condition.** Arbitrarily dense events are totally ordered by a bounded finite clock without tick collisions, synchronization error, or external ordering information.
+
+---
+
+### FDS-O2-007 — Dissipative Projection Carries Housekeeping Cost
+
+**Statement.** When physically implemented through irreversible reset, overwrite, compression, or garbage collection, a many-to-one record update carries a Landauer-style lower bound on heat dissipation.
+
+**Status.** Physical bridge.
+
+**Dependencies.** Landauer/Bennett; FDS-O2-003.
+
+**First timestamp.** FDS-O2 v1.0, 2026-05-16.
+
+**Failure condition.** Repeated logically irreversible temporal record reuse violates generalized Landauer accounting after all reservoirs, correlations, feedback records, and work sources are included.
+
+---
+
 ## L1 — Active Pruning / Protocell Claims
 
 ### FDS-L1-001 — Residue-Pruning-Boundary Loop

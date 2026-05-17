@@ -69,7 +69,8 @@ The current DT/FDS public architecture:
 3. **FDS-P0 Physical Bridge Registry** — dependency-ordered physical bridge claims.
 4. **FDS-T1 Finite Observer / Distinguishability Budget Paper** — physical-observer bridge: observer-relative budgets, accessible capacity, rate-distortion demand, maintenance bounds, budget-exit classification.
 5. **FDS-O1 Observer as a Finite Distinction Register** — operational measurement model: finite record formation under dynamically coupled sensor, channel, memory, buffer, update, and thermodynamic bottlenecks.
-6. **FDS-L1 Active Pruning / Protocell Paper** — residue-pruning-boundary dynamics in protocell-like systems.
+6. **FDS-O2 Time as Irreversible Distinction Update** — register time as causally ordered irreversible finite-record update, with synchronization bottlenecks, non-injective update, dissipative projection, and register-time collapse.
+7. **FDS-L1 Active Pruning / Protocell Paper** — residue-pruning-boundary dynamics in protocell-like systems.
 6. **FDS-LC0 Life and Cognitive Science Bridge Registry** — active pruning, death-like collapse, cognitive bottlenecks, reportability, anesthesia recovery ordering.
 7. **FDS-C1 Reportable Access Paper** — conscious reportability as finite-capacity maintenance problem.
 8. **FDS-E1 Prospect Theory / Boundary-Risk Paper** — finite-capacity bridge model for loss aversion, reference dependence, probability weighting, and nudge bandwidth.
@@ -80,8 +81,8 @@ The current DT/FDS public architecture:
 
 The Operational Trident translates finite distinguishability budgets into observer-level physical processes.
 
-- **FDS-O1 — Observer as a Finite Distinction Register.** Measurement capacity, dynamic bottlenecks, record formation, buffering, housekeeping heat, and budget-crossing signatures.
-- **FDS-O2 — Time as Irreversible Distinction Update.** Planned.
+- **FDS-O1 — Observer as a Finite Distinction Register.** Measurement capacity, dynamic bottlenecks, record formation, buffering, housekeeping heat, and budget-crossing signatures. DOI: 10.5281/zenodo.20248792.
+- **FDS-O2 — Time as Irreversible Distinction Update.** Register time as causally ordered irreversible finite-record update, with synchronization bottlenecks, non-injective update, dissipative projection, and register-time collapse. DOI: 10.5281/zenodo.20249369.
 - **FDS-O3 — Boundary Maintenance and the Second Law under Finite Memory.** Planned.
 
 ---
@@ -92,7 +93,8 @@ The public academic spine currently prioritizes:
 
 1. FDS-T1 — finite observers and distinguishability budgets.
 2. FDS-O1 — observer as a finite distinction register.
-3. FDS-L1 — active pruning and artificial-life persistence.
+3. FDS-O2 — time as irreversible distinction update.
+4. FDS-L1 — active pruning and artificial-life persistence.
 4. FDS-C1 — reportable access under finite capacity.
 5. FDS-E1 — finite-capacity prospect theory and boundary-risk preferences.
 6. FDS-P2 — bounded-memory reversible computation and housekeeping dissipation (future).
@@ -138,6 +140,7 @@ Recommended reading path:
 | **FDS-P0** | *Physical Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo preprint | [10.5281/zenodo.20159995](https://doi.org/10.5281/zenodo.20159995) |
 | **FDS-T1** | *Finite Distinguishability Budgets and Maintenance Bounds for Physical Observers* | Released | [10.5281/zenodo.20234249](https://doi.org/10.5281/zenodo.20234249) |
 | **FDS-O1** | *Observer as a Finite Distinction Register: Measurement Capacity, Dynamic Bottlenecks, and Budget-Crossing Signatures* | Released | [10.5281/zenodo.20248792](https://doi.org/10.5281/zenodo.20248792) |
+| **FDS-O2** | *Time as Irreversible Distinction Update: Finite Records, Causal Ordering, and Register-Time Collapse* | Released | [10.5281/zenodo.20249369](https://doi.org/10.5281/zenodo.20249369) |
 | **FDS-L1** | *Life and Death as Boundary Maintenance* | Released | DOI pending |
 | **FDS-LC0** | *Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo registry | [10.5281/zenodo.20183373](https://doi.org/10.5281/zenodo.20183373) |
 | **FDS-C1** | *Consciousness and Forgetting as Compression and Active Pruning* | Released | [10.5281/zenodo.20229509](https://zenodo.org/records/20229509) |
