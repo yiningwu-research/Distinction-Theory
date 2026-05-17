@@ -98,12 +98,12 @@ The public academic spine currently prioritizes:
 3. FDS-O2 — time as irreversible distinction update.
 4. FDS-T3 — capacity overflow and effective stochasticity.
 5. FDS-P1 — physical distinction carriers and erasure maps.
-6. FDS-L1 — active pruning and artificial-life persistence.
-4. FDS-C1 — reportable access under finite capacity.
-5. FDS-E1 — finite-capacity prospect theory and boundary-risk preferences.
-6. FDS-P2 — bounded-memory reversible computation and housekeeping dissipation (future).
-7. FDS-P3 — two-kink topological forgetting / dissipation signature (future).
-8. FDS-X1 — pre-Euclid horizon-maintenance dark-energy bridge note (released).
+6. FDS-P2 — bounded-memory reversible computation and housekeeping dissipation.
+7. FDS-L1 — active pruning and artificial-life persistence.
+8. FDS-C1 — reportable access under finite capacity.
+9. FDS-E1 — finite-capacity prospect theory and boundary-risk preferences.
+10. FDS-P3 — two-kink topological forgetting / dissipation signature (future).
+11. FDS-X1 — pre-Euclid horizon-maintenance dark-energy bridge note (released).
 
 FDS-A1 is retained as a conceptual timestamp for artificial agency. Because the author may pursue commercial work in AI and robotics, this public repository does not develop proprietary AI architectures, AGI robotics systems, private benchmarks, or product-level implementation details. See [CONFLICTS_OF_INTEREST.md](CONFLICTS_OF_INTEREST.md).
 
@@ -147,6 +147,7 @@ Recommended reading path:
 | **FDS-O2** | *Time as Irreversible Distinction Update: Finite Records, Causal Ordering, and Register-Time Collapse* | Released | [10.5281/zenodo.20249369](https://doi.org/10.5281/zenodo.20249369) |
 | **FDS-T3** | *Capacity Overflow and Effective Stochasticity: Non-Injective Projection, Critical Deficit, Phase-B Invariants, and the Information-Theoretic Origin of Coarse Dynamics* | Released | [10.5281/zenodo.20250367](https://doi.org/10.5281/zenodo.20250367) |
 | **FDS-P1** | *Physical Distinction Carriers and Erasure Maps: Accounting Boundaries, Distinction-to-Noise Ratio, and Thermodynamic Implementation* | Released | [10.5281/zenodo.20251854](https://doi.org/10.5281/zenodo.20251854) |
+| **FDS-P2** | *Bounded-Memory Reversible Computation and Housekeeping Dissipation: Garbage Entropy, Cleanup Scheduling, and the Cost of Delayed Erasure* | Released | [10.5281/zenodo.20252480](https://zenodo.org/records/20252480) |
 | **FDS-L1** | *Life and Death as Boundary Maintenance* | Released | DOI pending |
 | **FDS-LC0** | *Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo registry | [10.5281/zenodo.20183373](https://doi.org/10.5281/zenodo.20183373) |
 | **FDS-C1** | *Consciousness and Forgetting as Compression and Active Pruning* | Released | [10.5281/zenodo.20229509](https://zenodo.org/records/20229509) |

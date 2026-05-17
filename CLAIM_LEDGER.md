@@ -703,6 +703,94 @@ FDS-P1 defines the physical accounting interface between formal distinctions and
 
 ---
 
+## P2 — Bounded-Memory Reversible Computation / Housekeeping Dissipation
+
+FDS-P2 studies the bounded-memory regime of reversible computation. Reversible embeddings avoid immediate Landauer erasure by retaining preimage information in side records, but sustained reversible updates under finite memory accumulate garbage records that incur entropy-rate pressure, cleanup scheduling costs, and housekeeping dissipation.
+
+### FDS-P2-001 — Reversible Embedding Delays but Does Not Eliminate Accounting
+
+**Statement.** A reversible embedding avoids immediate Landauer erasure by retaining enough preimage information inside the accounting boundary to make the update invertible, but the retained side information remains a physical burden: it fills memory, requires refresh and synchronization, and must eventually be uncomputed, cleaned, externalized, compressed, or abandoned.
+
+**Status.** Conditional physical bridge.
+
+**Dependencies.** FDS-P1-003; Bennett 1973.
+
+**First timestamp.** FDS-P2 v1.0, 2026-05-16.
+
+**Failure condition.** A bounded-memory system executing sustained reversible updates with positive garbage entropy rate continues indefinitely without uncomputation, cleanup, compression, externalization, task relaxation, memory expansion, or failure.
+
+---
+
+### FDS-P2-002 — Garbage Entropy Rate
+
+**Statement.** The retained garbage load of a reversible process is quantified by the conditional entropy rate $r_G = \liminf_{t\to\infty} \frac1t H(G_{1:t}\mid R_t)$, which gives a lower bound on lossless storage demand.
+
+**Status.** Formal definition.
+
+**Dependencies.** FDS-P2-001.
+
+**First timestamp.** FDS-P2 v1.0, 2026-05-16.
+
+**Failure condition.** The entropy rate of retained garbage is zero under sustained reversible updates with distinct preimage data.
+
+---
+
+### FDS-P2-003 — Uncomputation and Cleanup Are Distinct Operations
+
+**Statement.** Uncomputation reverses a computation using the retained inverse path and requires protectable output copies and synchronization. Cleanup discards garbage irreversibly and carries boundary-relative Landauer accounting cost.
+
+**Status.** Operational definition.
+
+**Dependencies.** FDS-P2-001.
+
+**First timestamp.** FDS-P2 v1.0, 2026-05-16.
+
+**Failure condition.** Irreversible cleanup erases garbage without residual irreversibility, or uncomputation succeeds without a retained causal inverse path, protected output copy, or synchronization.
+
+---
+
+### FDS-P2-004 — Cleanup Scheduling Tradeoff
+
+**Statement.** Cleanup scheduling creates a tradeoff between memory pressure, refresh cost, cleanup heat, task loss, and failure risk.
+
+**Status.** Testable prediction.
+
+**Dependencies.** FDS-P2-001; FDS-P1-001.
+
+**First timestamp.** FDS-P2 v1.0, 2026-05-16.
+
+**Failure condition.** Cleanup interval, externalization latency, and compression level have no effect on memory pressure, heat, task loss, or failure probability in every controlled implementation.
+
+---
+
+### FDS-P2-005 — Active Forgetting Can Be Optimal
+
+**Statement.** Lossy compression can reduce memory-fill pressure and refresh cost at the expense of residual irreversibility and task distortion. Active forgetting can be optimal when the cost of maintaining detailed records exceeds the combined cost of compression and distortion.
+
+**Status.** Testable accounting claim.
+
+**Dependencies.** FDS-P2-001; FDS-P1-006.
+
+**First timestamp.** FDS-P2 v1.0, 2026-05-16.
+
+**Failure condition.** Lossy compression preserves all task-relevant preimage information at zero distortion and zero side cost in every nontrivial task.
+
+---
+
+### FDS-P2-006 — Externalization Shifts Accounting Boundary
+
+**Statement.** Externalization moves garbage records outside the local accounting boundary, reducing local memory pressure but adding write, verification, synchronization, retrieval, and delay penalties.
+
+**Status.** Operational bridge.
+
+**Dependencies.** FDS-P2-001; FDS-P1-003.
+
+**First timestamp.** FDS-P2 v1.0, 2026-05-16.
+
+**Failure condition.** Externalized records incur no latency, retrieval cost, synchronization burden, or data-loss risk relative to local records under every protocol.
+
+---
+
 ## L1 — Active Pruning / Protocell Claims
 
 ### FDS-L1-001 — Residue-Pruning-Boundary Loop
