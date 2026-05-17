@@ -25,6 +25,8 @@ This repository is the public research archive for **Distinction Theory (DT)** a
 
 The programme studies how finite systems maintain operational identity under limited capacity, limited resources, residual load, update cost, perturbation, pruning, externalization, collapse, and invariant-supported persistence.
 
+The **physical-operational spine** is now complete: Core → T1 → O1 → O2 → O3 → T3 → P1 → P2 → P5 → N1. All released with DOIs and open-source code.
+
 This repository contains:
 - released papers and registries in `papers/`;
 - source files in `source/`;
