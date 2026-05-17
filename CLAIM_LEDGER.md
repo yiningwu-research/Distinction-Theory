@@ -471,6 +471,122 @@ FDS-O2 converts finite record formation into an operational model of register ti
 
 ---
 
+## T3 — Capacity Overflow / Effective Stochasticity Claims
+
+FDS-T3 abstracts the common mechanism of O1 and O2: capacity overflow. When task-relevant distinction demand exceeds accessible capacity, missing distinctions re-enter the accessible description as effective stochasticity, coarse-graining, hysteresis, false invariants, externalization demand, or failure.
+
+### FDS-T3-001 — Capacity Overflow
+
+**Statement.** Capacity overflow occurs when task-relevant distinction demand exceeds accessible capacity, forcing the system to coarse-grain, project, or externalize.
+
+**Status.** Operational bridge.
+
+**Dependencies.** FDS-T1-002; FDS-O1-003.
+
+**First timestamp.** FDS-T3 v1.0, 2026-05-16.
+
+**Failure condition.** Finite systems maintain full tracking fidelity when demand exceeds accessible capacity, with no measurable degradation, coarse-graining, or externalization.
+
+---
+
+### FDS-T3-002 — Projection-Induced Effective Stochasticity
+
+**Statement.** Even when dynamics on a larger state space is deterministic, non-injective projection onto the accessible record space can induce stochastic accessible kernels because multiple inaccessible states map to the same visible state while having different successors.
+
+**Status.** Conditional theorem.
+
+**Dependencies.** FDS-T3-001; FDS-O1-001.
+
+**First timestamp.** FDS-T3 v1.0, 2026-05-16.
+
+**Failure condition.** Non-injective projections of deterministic dynamics never induce non-degenerate accessible transition kernels when hidden successors differ.
+
+---
+
+### FDS-T3-003 — Critical Deficit and Predictive Susceptibility
+
+**Statement.** Overflow deficit $\Delta_{\mathrm{T3}} = \Rmin - \Cacc$ controls a transition. Predictive susceptibility $\chi = \partial E_P / \partial \Delta_{\mathrm{T3}}$ should show a peak, kink, or rapid increase near $\Delta_{\mathrm{T3}} \approx 0$ when discarded distinctions are dynamically relevant.
+
+**Status.** Testable prediction.
+
+**Dependencies.** FDS-T3-001; rate-distortion theory.
+
+**First timestamp.** FDS-T3 v1.0, 2026-05-16.
+
+**Failure condition.** Predictive error and transition entropy show no response, kink, or susceptibility peak as demand crosses capacity under controlled conditions.
+
+---
+
+### FDS-T3-004 — Phase-B Invariants and Markov Closure
+
+**Statement.** After overflow, some coarse variables remain predictive with low update cost, slow information decay, and approximate Markov closure. These Phase-B invariants are selected by maintenance cost, not by tracking fidelity alone.
+
+**Status.** Conditional theorem.
+
+**Dependencies.** FDS-T3-002; FDS-CORE-005.
+
+**First timestamp.** FDS-T3 v1.0, 2026-05-16.
+
+**Failure condition.** No coarse variable remains stable, predictive, or cheap after overflow, or all coarse variables are equally predictive regardless of update and maintenance cost.
+
+---
+
+### FDS-T3-005 — Informational Hysteresis
+
+**Statement.** Overflow can produce irrecoverable loss: returning demand below capacity does not automatically restore the original accessible state. External records or re-initialization may be required.
+
+**Status.** Testable prediction.
+
+**Dependencies.** FDS-T3-001; FDS-T1-005.
+
+**First timestamp.** FDS-T3 v1.0, 2026-05-16.
+
+**Failure condition.** System states and prediction fidelity return to pre-overflow baseline immediately after demand drops below capacity, without hysteresis or externalization traces.
+
+---
+
+### FDS-T3-006 — Observer-Relative Stochasticity
+
+**Statement.** Stochasticity is observer-relative: two observers with different accessible capacities may have different effective stochasticity for the same underlying dynamics.
+
+**Status.** Operational bridge.
+
+**Dependencies.** FDS-T3-002.
+
+**First timestamp.** FDS-T3 v1.0, 2026-05-16.
+
+**Failure condition.** All observers with different accessible capacities report identical effective transition uncertainty for the same process.
+
+---
+
+### FDS-T3-007 — Wrong Invariant Completion Under Context Overflow
+
+**Statement.** In finite-context systems, overflow can produce not merely random error but systematic wrong invariant completion: the system maintains a locally coherent but incorrect coarse variable when the true preimage is not uniquely recoverable.
+
+**Status.** Engineering bridge.
+
+**Dependencies.** FDS-T3-004; FDS-O2-001.
+
+**First timestamp.** FDS-T3 v1.0, 2026-05-16.
+
+**Failure condition.** Context overflow never produces false dependency or semantic drift; all overflow-induced outputs remain as accurate as full-context outputs.
+
+---
+
+### FDS-T3-008 — Capacity Externalization and Phase-A Recovery
+
+**Statement.** Externalization (external records, retrieval-augmented generation, distributed memory) increases effective accessible capacity and can push a system from Phase-B back toward Phase-A.
+
+**Status.** Operational bridge.
+
+**Dependencies.** FDS-T3-001; FDS-CORE-005.
+
+**First timestamp.** FDS-T3 v1.0, 2026-05-16.
+
+**Failure condition.** Externalized records never reduce overflow-induced error, stochasticity, or hysteresis under matched tasks.
+
+---
+
 ## L1 — Active Pruning / Protocell Claims
 
 ### FDS-L1-001 — Residue-Pruning-Boundary Loop
