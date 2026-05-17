@@ -6,6 +6,25 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-05-17 — FDS-N1 Release
+
+**Description:** Release of FDS-N1 v1.0, the complex-systems bridge for boundary-maintaining self-organization.
+
+### Added
+- FDS-N1 v1.0 — boundary-maintaining self-organizing systems paper.
+- N1 claim section in CLAIM_LEDGER.md (8 claims).
+- N1 entry in TIMESTAMPS.md.
+- `models/fds_n1/` with simulation code and figures.
+- Git tag: `fds-n1-v1.0`.
+
+### Revised
+- PAPER_MAP.md — added Released status for N1.
+- CLAIM_STATUS.md — added N1 row.
+- README.md — updated paper index.
+- CITATION.cff — added N1 DOI to preferred-citation list.
+
+---
+
 ## 2026-05-16 — FDS-E1 / FDS-X1 / FDS-O1 / FDS-O2 / FDS-T3 / FDS-P1 / FDS-P2 Release Batch
 
 **Description:** Batch release of seven new papers covering prospect theory, dark-energy bridge, observer register, register time, capacity overflow, physical distinction carriers, and bounded-memory reversible computation.

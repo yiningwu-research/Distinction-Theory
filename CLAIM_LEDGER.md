@@ -1117,4 +1117,118 @@ FDS-P2 studies the bounded-memory regime of reversible computation. Reversible e
 
 ---
 
+## N1 — Self-Organization Bridge Claims
+
+### FDS-N1-001 — Active Self-Organization Requires Boundary-Maintenance-Relevant Update
+
+**Statement.** A system qualifies as active self-organizing over a task window when it has a boundary variable whose future loss is measured, performs nontrivial internal updates, and those updates are relevant to future boundary-maintenance loss.
+
+**Status.** Operational definition.
+
+**Dependencies.** FDS-CORE-002 (active boundary); FDS-CORE-003 (finite capacity).
+
+**First timestamp.** FDS-N1 v1.0, 2026-05-17.
+
+**Failure condition.** A system is correctly classified as active self-organizing even when freezing or randomizing its internal update has no effect on future boundary-maintenance loss.
+
+---
+
+### FDS-N1-002 — Effective Organizational Capacity Is Task-Relative
+
+**Statement.** Effective organizational capacity $C_{\rm org}$ is the usable capacity for boundary-maintenance tasks after internal bottlenecks, coordination, verification, latency, resource, and externalization costs are included.
+
+**Status.** Operational bridge claim.
+
+**Dependencies.** FDS-CORE-003 (finite capacity); FDS-CORE-005 (capacity deficit).
+
+**First timestamp.** FDS-N1 v1.0, 2026-05-17.
+
+**Failure condition.** Boundary tasks are maintained at full fidelity even when all internal, channel, update, resource, verification, and latency capacities fall below task demand.
+
+---
+
+### FDS-N1-003 — Deficit Creates Maintenance-Load Pressure
+
+**Statement.** Capacity deficit $\Delta_{N1} > 0$ creates maintenance-load pressure that drives structural growth, pruning, or reorganization, not necessarily raw complexity growth alone.
+
+**Status.** Normal-form claim.
+
+**Dependencies.** FDS-N1-002; FDS-CORE-005.
+
+**First timestamp.** FDS-N1 v1.0, 2026-05-17.
+
+**Failure condition.** Increasing task demand never increases maintained load, repair structure, stored distinctions, control effort, or external scaffolding in any relevant implementation.
+
+---
+
+### FDS-N1-004 — Bounded Self-Organization Exit Theorem
+
+**Statement.** Unbounded Phase-A growth is impossible under finite resource input when maintained load eventually exceeds the resource envelope, unless an exit channel (pruning, compression, externalization, automation, invariant stabilization, task relaxation, resource expansion, or collapse) is used.
+
+**Status.** Conditional theorem.
+
+**Dependencies.** FDS-N1-001—003; FDS-CORE-005 (budget exits).
+
+**First timestamp.** FDS-N1 v1.0, 2026-05-17.
+
+**Failure condition.** Active finite systems grow maintained load without bound forever while resources remain finite and no exit channel is used.
+
+---
+
+### FDS-N1-005 — Pruning Has a Viability Window
+
+**Statement.** Pruning is resource-gated and has a viability window: under-pruning leaves overload unresolved; over-pruning destroys task competence.
+
+**Status.** Model class claim.
+
+**Dependencies.** FDS-N1-004; resource-gated pruning equation.
+
+**First timestamp.** FDS-N1 v1.0, 2026-05-17.
+
+**Failure condition.** Pruning strength has no systematic effect on overload, task competence, or persistence across all controlled implementations.
+
+---
+
+### FDS-N1-006 — Externalization Shifts Rather Than Removes Burden
+
+**Statement.** Externalization shifts the accounting boundary rather than removing the maintenance burden, and excessive externalization can clog the environment through write, verification, retrieval, latency, and repair costs.
+
+**Status.** Accounting bridge claim.
+
+**Dependencies.** FDS-N1-002; FDS-P1-001 (accounting boundary).
+
+**First timestamp.** FDS-N1 v1.0, 2026-05-17.
+
+**Failure condition.** External records impose no storage, verification, retrieval, latency, environmental-noise, or repair burden in every controlled implementation.
+
+---
+
+### FDS-N1-007 — Phase-C Catastrophic Feedback
+
+**Statement.** Phase C is a failure regime in which boundary loss reduces effective resource intake, accelerating further boundary loss through positive feedback.
+
+**Status.** Failure-regime model claim.
+
+**Dependencies.** FDS-N1-004; resource and loss dynamics equations.
+
+**First timestamp.** FDS-N1 v1.0, 2026-05-17.
+
+**Failure condition.** Resource depletion and boundary loss never couple positively in any active-boundary system approaching collapse.
+
+---
+
+### FDS-N1-008 — Phase-B Invariant Bias
+
+**Statement.** Phase-B residues are biased toward low-maintenance, task-relevant invariants with high survival score $S(\phi)$.
+
+**Status.** Conditional bridge claim.
+
+**Dependencies.** FDS-N1-004; FDS-T3-004 (Phase-B invariants).
+
+**First timestamp.** FDS-N1 v1.0, 2026-05-17.
+
+**Failure condition.** Residues after repeated overload show no bias toward reduced maintenance cost, compressibility, task relevance, or perturbation invariance.
+
+---
+
 *End of ledger. New claims added as documents are released or revised.*

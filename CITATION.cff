@@ -78,6 +78,12 @@ preferred-citation:
       - family-names: Wu
         given-names: Yining
     date-released: 2026-05-12
+  - title: "Boundary-Maintaining Self-Organizing Systems under Finite Capacity: Maintenance Load, Phase-C Collapse, and Invariant Selection"
+    doi: 10.5281/zenodo.20253151
+    authors:
+      - family-names: Wu
+        given-names: Yining
+    date-released: 2026-05-17
   - title: "Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems"
     doi: 10.5281/zenodo.20183373
     authors:

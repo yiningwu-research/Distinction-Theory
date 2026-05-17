@@ -36,10 +36,10 @@ These papers convert the framework into testable protocols.
 
 ## Stage III — Life, Death, and Self-Organization
 
-| Code | Title | Role |
-|---|---|---|
-| FDS-L1 | Life and Death as Boundary Maintenance | biological bridge |
-| FDS-N1 | Boundary-Maintaining Self-Organizing Systems under Finite Capacity | complex systems entry |
+| Code | Title | Role | Status |
+|---|---|---|---|
+| FDS-L1 | Life and Death as Boundary Maintenance | biological bridge | Released |
+| FDS-N1 | Boundary-Maintaining Self-Organizing Systems under Finite Capacity | complex systems entry | Released |
 
 ## Stage IV — High-Risk Physical Bridge Notes
 
