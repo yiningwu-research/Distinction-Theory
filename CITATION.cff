@@ -108,6 +108,12 @@ preferred-citation:
       - family-names: Wu
         given-names: Yining
     date-released: 2026-05-17
+  - title: "Value and Goal as Boundary-Relevance Ranking: Causal Boundary Gradients, Goal Stability, and Value Drift under Finite Capacity"
+    doi: 10.5281/zenodo.20262998
+    authors:
+      - family-names: Wu
+        given-names: Yining
+    date-released: 2026-05-18
   - title: "Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems"
     doi: 10.5281/zenodo.20183373
     authors:

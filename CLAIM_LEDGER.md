@@ -130,4 +130,132 @@
 
 ---
 
+## M2 — Value and Goal as Boundary-Relevance Ranking Claims
+
+### FDS-M2-001 — FDS-Value as Causal Boundary-Gradient Relevance
+
+**Statement.** FDS-value is causal boundary-gradient relevance under a specified boundary, loss, intervention grammar, horizon, and cost model.
+
+**Status.** Formal bridge claim.
+
+**Dependencies.** FDS-CORE-003 (finite capacity); FDS-M0-002 (causal value).
+
+**First timestamp.** FDS-M2 v1.0, 2026-05-18.
+
+**Failure condition.** Valuation cannot be operationalized as causal effect on any specified future boundary-maintenance loss under valid mappings.
+
+---
+
+### FDS-M2-002 — Predictive Relevance and Causal FDS-Value Are Separable
+
+**Statement.** Predictive relevance and causal FDS-value are separable.
+
+**Status.** Operational bridge claim.
+
+**Dependencies.** FDS-M2-001; intervention grammar.
+
+**First timestamp.** FDS-M2 v1.0, 2026-05-18.
+
+**Failure condition.** Correlational predictors always coincide with intervention-relevant boundary effects under audited systems.
+
+---
+
+### FDS-M2-003 — Value Ranking as Finite-Difference Ordering
+
+**Statement.** Value ranking can be expressed as an ordering over finite-difference action, admission, maintenance, or policy effects.
+
+**Status.** Formal / model bridge claim.
+
+**Dependencies.** FDS-M2-001; FDS-CORE-005 (update map).
+
+**First timestamp.** FDS-M2 v1.0, 2026-05-18.
+
+**Failure condition.** No useful ordering exists between evaluands and their causal boundary effects under stated mappings.
+
+---
+
+### FDS-M2-004 — Risk-Weighted Value Can Dominate Average-Loss Value
+
+**Statement.** Near collapse thresholds, risk-weighted FDS-value can dominate average-loss value.
+
+**Status.** Operational bridge claim.
+
+**Dependencies.** FDS-M2-001; bounded risk-sensitivity model.
+
+**First timestamp.** FDS-M2 v1.0, 2026-05-18.
+
+**Failure condition.** Collapse-risk reduction never changes ranking near boundary failure thresholds under valid mappings.
+
+---
+
+### FDS-M2-005 — Goals as Stabilized FDS-Value Rankings
+
+**Statement.** Goals are stabilized FDS-value rankings coupled to policy orientation across update windows.
+
+**Status.** Operational bridge claim.
+
+**Dependencies.** FDS-M2-001; FDS-M0-003 (goal definition); FDS-O2-001 (register time).
+
+**First timestamp.** FDS-M2 v1.0, 2026-05-18.
+
+**Failure condition.** Goal-like behavior persists without ranking stability, memory, policy orientation, or update-window persistence.
+
+---
+
+### FDS-M2-006 — Value Drift under Evaluation Deficit
+
+**Statement.** Value drift occurs when rankings change faster than the system can verify, update, or maintain the reasons for the change.
+
+**Status.** Failure-mode bridge claim.
+
+**Dependencies.** FDS-M2-005; evaluation capacity model.
+
+**First timestamp.** FDS-M2 v1.0, 2026-05-18.
+
+**Failure condition.** Ranking instability produces no detectable change in behavior, loss, or policy under claimed goal systems.
+
+---
+
+### FDS-M2-007 — Proxy Reward Can Diverge from Causal Boundary Value
+
+**Statement.** Proxy reward can diverge from causal boundary value, creating reward hacking or misalignment.
+
+**Status.** AI / agency bridge claim.
+
+**Dependencies.** FDS-M2-001; proxy alignment score.
+
+**First timestamp.** FDS-M2 v1.0, 2026-05-18.
+
+**Failure condition.** Proxy optimization remains aligned despite divergent finite-difference effects on host boundary loss.
+
+---
+
+### FDS-M2-008 — Collective Goals as Shared Stabilized Rankings
+
+**Statement.** Collective goals are shared stabilized rankings under finite verification and coordination capacity.
+
+**Status.** Social bridge claim.
+
+**Dependencies.** FDS-M2-005; ranking synchronization demand.
+
+**First timestamp.** FDS-M2 v1.0, 2026-05-18.
+
+**Failure condition.** Group goals show no relation to shared rankings, institutional memory, verification capacity, or policy orientation.
+
+---
+
+### FDS-M2-009 — Goal Recovery and Hysteresis
+
+**Statement.** Goal recovery can lag after resource or threat recovery because rankings, commitments, or threat priors persist.
+
+**Status.** Recovery bridge claim.
+
+**Dependencies.** FDS-M2-005; goal hysteresis model.
+
+**First timestamp.** FDS-M2 v1.0, 2026-05-18.
+
+**Failure condition.** Goals relax immediately and without lag after boundary load changes in systems where goal hysteresis is claimed.
+
+---
+
 *End of ledger. New claims added as documents are released or revised.*

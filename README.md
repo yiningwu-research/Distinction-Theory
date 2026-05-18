@@ -165,6 +165,7 @@ Recommended reading path:
 | **FDS-O3** | *Boundary Maintenance and the Second Law under Finite Memory: Irreversible Record Reuse, Entropy Ledgers, and Operational Time Arrows* | Released | [10.5281/zenodo.20255129](https://doi.org/10.5281/zenodo.20255129) |
 | **FDS-M0** | *The Agency-Semantics Spine of Distinction Theory: Attention, Value, Goal, Meaning, and Action under Finite Capacity* | Released | [10.5281/zenodo.20257939](https://doi.org/10.5281/zenodo.20257939) |
 | **FDS-M1** | *Attention as Distinction Admission in Finite Systems: Capacity-Limited Gating, Boundary Relevance, and Tunnel Vision* | Released | [10.5281/zenodo.20258570](https://doi.org/10.5281/zenodo.20258570) |
+| **FDS-M2** | *Value and Goal as Boundary-Relevance Ranking: Causal Boundary Gradients, Goal Stability, and Value Drift under Finite Capacity* | Released | [10.5281/zenodo.20262998](https://doi.org/10.5281/zenodo.20262998) |
 
 ---
 

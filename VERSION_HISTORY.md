@@ -6,6 +6,26 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-05-18 — FDS-M2 Release
+
+**Description:** Release of FDS-M2 v1.0, the value-goal paper in the agency-semantics spine.
+
+### Added
+- FDS-M2 v1.0 — value and goal as boundary-relevance ranking.
+- M2 claim section in CLAIM_LEDGER.md (9 claims).
+- M2 entry in TIMESTAMPS.md.
+- `models/fds_m2/` with simulation code and figures.
+- `papers/agency_semantics/` updated with M2 release PDF.
+- Git tag: `fds-m2-v1.0`.
+
+### Revised
+- PAPER_MAP.md — M2 status changed from Planned to Released.
+- CLAIM_STATUS.md — added M2 row.
+- README.md — updated Key Documents.
+- CITATION.cff — added M2 DOI to preferred-citation list.
+
+---
+
 ## 2026-05-17 — FDS-M1 Release
 
 **Description:** Release of FDS-M1 v1.0, the attention paper in the agency-semantics spine.

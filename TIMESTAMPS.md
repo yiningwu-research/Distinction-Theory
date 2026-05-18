@@ -4,7 +4,7 @@ This file records public timestamps for major DT/FDS documents, claim families, 
 
 The timestamp index is not a claim of correctness. It is a record of public priority and version history.
 
-**Last updated:** 2026-05-16
+**Last updated:** 2026-05-18
 
 ---
 
@@ -30,6 +30,7 @@ The timestamp index is not a claim of correctness. It is a record of public prio
 | FDS-O3 | Boundary maintenance / operational Second-Law channel | 2026-05-17 | v1.0 | [10.5281/zenodo.20255129](https://doi.org/10.5281/zenodo.20255129) | fds-o3-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-o3) | Released |
 | FDS-M0 | Agency-semantics spine | 2026-05-17 | v1.0 | [10.5281/zenodo.20257939](https://doi.org/10.5281/zenodo.20257939) | fds-m0-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-m0) | Released |
 | FDS-M1 | Attention as distinction admission | 2026-05-17 | v1.0 | [10.5281/zenodo.20258570](https://doi.org/10.5281/zenodo.20258570) | fds-m1-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-m1) | Released |
+| FDS-M2 | Value and goal as boundary-relevance ranking | 2026-05-18 | v1.0 | [10.5281/zenodo.20262998](https://doi.org/10.5281/zenodo.20262998) | fds-m2-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-m2) | Released |
 
 ---
 
