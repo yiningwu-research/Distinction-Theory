@@ -25,7 +25,7 @@ This repository is the public research archive for **Distinction Theory (DT)** a
 
 The programme studies how finite systems maintain operational identity under limited capacity, limited resources, residual load, update cost, perturbation, pruning, externalization, collapse, and invariant-supported persistence.
 
-The **physical-operational spine** is now complete: Core → T1 → O1 → O2 → O3 → T3 → P1 → P2 → P5 → N1. All released with DOIs and open-source code.
+The **agency-semantics spine** is now complete: Core → M0 → M1 → M2 → M3. All released with DOIs and open-source code.
 
 This repository contains:
 - released papers and registries in `papers/`;
@@ -64,22 +64,38 @@ A claim appearing in the ledger is not automatically asserted as established. Cl
 
 ## Public Architecture
 
-The current DT/FDS public architecture:
+The current DT/FDS public architecture, organized by layer:
 
-1. **DT-Archive** — broad claim-space archive.
-2. **FDS-0 Formal Core** — formal finite-system architecture: capacity deficit, boundary maintenance, pruning, externalization, collapse, invariant-supported persistence.
-3. **FDS-P0 Physical Bridge Registry** — dependency-ordered physical bridge claims.
-4. **FDS-T1 Finite Observer / Distinguishability Budget Paper** — physical-observer bridge: observer-relative budgets, accessible capacity, rate-distortion demand, maintenance bounds, budget-exit classification.
-5. **FDS-O1 Observer as a Finite Distinction Register** — operational measurement model: finite record formation under dynamically coupled sensor, channel, memory, buffer, update, and thermodynamic bottlenecks.
-6. **FDS-O2 Time as Irreversible Distinction Update** — register time as causally ordered irreversible finite-record update, with synchronization bottlenecks, non-injective update, dissipative projection, and register-time collapse.
-7. **FDS-T3 Capacity Overflow and Effective Stochasticity** — common mechanism: capacity overflow induces effective stochasticity, critical deficit, Phase-B invariants, informational hysteresis, and observer-relative coarse dynamics.
-8. **FDS-P1 Physical Distinction Carriers and Erasure Maps** — Physical Bridge Ladder I: formal distinctions become task-available physical distinctions only when carried, readable, stable, and accounted for under an explicit accounting boundary.
-9. **FDS-L1 Active Pruning / Protocell Paper** — residue-pruning-boundary dynamics in protocell-like systems.
-10. **FDS-LC0 Life and Cognitive Science Bridge Registry** — active pruning, death-like collapse, cognitive bottlenecks, reportability, anesthesia recovery ordering.
-11. **FDS-C1 Reportable Access Paper** — conscious reportability as finite-capacity maintenance problem.
-12. **FDS-E1 Prospect Theory / Boundary-Risk Paper** — finite-capacity bridge model for loss aversion, reference dependence, probability weighting, and nudge bandwidth.
-13. **FDS-X Series High-Risk Bridge Notes** — pre-registered high-risk physical bridge notes (including released X1 dark-energy note).
-14. **FDS-A1 Artificial Agency Paper** — retained as conceptual timestamp. Public programme does not develop proprietary AI/robotics architectures or private benchmarks.
+### Core
+
+- **DT-Archive** — broad claim-space archive. DOI: 10.5281/zenodo.20130174.
+- **FDS-0** — formal finite-system core: capacity deficit, boundary maintenance, pruning, externalization, collapse, invariant-supported persistence. DOI: 10.5281/zenodo.20158923.
+- **FDS-T1** — finite distinguishability budgets and maintenance bounds. DOI: 10.5281/zenodo.20234249.
+- **FDS-O1** — observer as a finite distinction register. DOI: 10.5281/zenodo.20248792.
+- **FDS-O2** — time as irreversible distinction update. DOI: 10.5281/zenodo.20249369.
+- **FDS-O3** — boundary maintenance and the Second Law under finite memory. DOI: 10.5281/zenodo.20255129.
+- **FDS-T3** — capacity overflow and effective stochasticity. DOI: 10.5281/zenodo.20250367.
+- **FDS-M0** — agency-semantics spine. DOI: 10.5281/zenodo.20257939.
+- **FDS-M1** — attention as distinction admission. DOI: 10.5281/zenodo.20258570.
+- **FDS-M2** — value and goal as boundary-relevance ranking. DOI: 10.5281/zenodo.20262998.
+- **FDS-M3** — meaning as actionable semantic quotient. DOI: 10.5281/zenodo.20263294.
+
+### Physical Bridge Ladder
+
+- **FDS-P0** — physical bridge claim registry. DOI: 10.5281/zenodo.20159995.
+- **FDS-P1** — physical distinction carriers and erasure maps. DOI: 10.5281/zenodo.20251854.
+- **FDS-P2** — bounded-memory reversible computation and housekeeping dissipation. DOI: 10.5281/zenodo.20252480.
+- **FDS-P5** — capacity deficit and entropy production ledger. DOI: 10.5281/zenodo.20254259.
+
+### Domain Bridges
+
+- **FDS-N1** — boundary-maintaining self-organizing systems. DOI: 10.5281/zenodo.20253151.
+- **FDS-E1** — finite-capacity prospect theory. DOI: 10.5281/zenodo.20237306.
+- **FDS-L1** — active pruning and protocell-like systems. DOI pending.
+- **FDS-LC0** — life and cognitive science bridge claim registry. DOI: 10.5281/zenodo.20183373.
+- **FDS-C1** — reportable access under finite capacity. DOI: 10.5281/zenodo.20229509.
+- **FDS-A1** — artificial agency criterion (frozen public AI line). DOI: 10.5281/zenodo.20184709.
+- **FDS-X1** — horizon-maintenance dark energy (pre-Euclid bridge note). DOI: 10.5281/zenodo.20234391.
 
 ### Operational Trident
 
@@ -87,7 +103,14 @@ The Operational Trident translates finite distinguishability budgets into observ
 
 - **FDS-O1 — Observer as a Finite Distinction Register.** Measurement capacity, dynamic bottlenecks, record formation, buffering, housekeeping heat, and budget-crossing signatures. DOI: 10.5281/zenodo.20248792.
 - **FDS-O2 — Time as Irreversible Distinction Update.** Register time as causally ordered irreversible finite-record update, with synchronization bottlenecks, non-injective update, dissipative projection, and register-time collapse. DOI: 10.5281/zenodo.20249369.
-- **FDS-O3 — Boundary Maintenance and the Second Law under Finite Memory.** Released. doi:10.5281/zenodo.20255129
+- **FDS-O3 — Boundary Maintenance and the Second Law under Finite Memory.** Finite-memory operational Second-Law channel, record-turnover entropy, irreversibility from bounded memory. DOI: 10.5281/zenodo.20255129.
+
+### Agency-Semantics Spine
+
+- **FDS-M0 — Agency-Semantics Spine.** Attention, value, goal, meaning, agency, under finite capacity. DOI: 10.5281/zenodo.20257939.
+- **FDS-M1 — Attention as Distinction Admission.** Capacity-limited admission gating, salience-value dissociation, tunnel vision, hysteresis. DOI: 10.5281/zenodo.20258570.
+- **FDS-M2 — Value and Goal as Boundary-Relevance Ranking.** Causal boundary gradients, goal stability, proxy-boundary divergence, collective synchronization. DOI: 10.5281/zenodo.20262998.
+- **FDS-M3 — Meaning as Actionable Semantic Quotient.** Policy-preserving compression, semantic deficit, false compression, meaning recovery. DOI: 10.5281/zenodo.20263294.
 
 ---
 
@@ -95,19 +118,24 @@ The Operational Trident translates finite distinguishability budgets into observ
 
 The public academic spine currently prioritizes:
 
-1. FDS-T1 — finite observers and distinguishability budgets.
-2. FDS-O1 — observer as a finite distinction register.
-3. FDS-O2 — time as irreversible distinction update.
-4. FDS-T3 — capacity overflow and effective stochasticity.
-5. FDS-N1 — boundary-maintaining self-organizing systems under finite capacity.
-6. FDS-M0 — agency-semantics spine: attention, value, goal, meaning, agency under finite capacity.
-7. FDS-P1 — physical distinction carriers and erasure maps.
-8. FDS-P2 — bounded-memory reversible computation and housekeeping dissipation.
-9. FDS-L1 — active pruning and artificial-life persistence.
-10. FDS-C1 — reportable access under finite capacity.
-11. FDS-E1 — finite-capacity prospect theory and boundary-risk preferences.
-12. FDS-P3 — two-kink topological forgetting / dissipation signature (future).
-13. FDS-X1 — pre-Euclid horizon-maintenance dark-energy bridge note (released).
+1. **FDS-0** — formal finite-system core.
+2. **FDS-T1** — finite observers and distinguishability budgets.
+3. **FDS-O1** — observer as a finite distinction register.
+4. **FDS-O2** — time as irreversible distinction update.
+5. **FDS-T3** — capacity overflow and effective stochasticity.
+6. **FDS-O3** — boundary maintenance and the Second Law under finite memory.
+7. **FDS-N1** — boundary-maintaining self-organizing systems under finite capacity.
+8. **FDS-P1** — physical distinction carriers and erasure maps.
+9. **FDS-P2** — bounded-memory reversible computation and housekeeping dissipation.
+10. **FDS-P5** — capacity deficit and entropy-production ledger.
+11. **FDS-M0** — agency-semantics spine.
+12. **FDS-M1** — attention as distinction admission.
+13. **FDS-M2** — value and goal as boundary-relevance ranking.
+14. **FDS-M3** — meaning as actionable semantic quotient.
+15. **FDS-L1** — active pruning and artificial-life persistence.
+16. **FDS-C1** — reportable access under finite capacity.
+17. **FDS-E1** — finite-capacity prospect theory and boundary-risk preferences.
+18. **FDS-X1** — pre-Euclid horizon-maintenance dark-energy bridge note (released).
 
 FDS-A1 is retained as a conceptual timestamp for artificial agency. Because the author may pursue commercial work in AI and robotics, this public repository does not develop proprietary AI architectures, AGI robotics systems, private benchmarks, or product-level implementation details. See [CONFLICTS_OF_INTEREST.md](CONFLICTS_OF_INTEREST.md).
 
@@ -130,14 +158,25 @@ Recommended reading path:
 1. **FDS-0 Formal Core** — start here for the formal finite-system architecture.
 2. **FDS-T1 Finite Observers and Distinguishability Budgets** — finite observers, accessible capacity, information bounds, maintenance-cost accounting.
 3. **FDS-O1 Observer as a Finite Distinction Register** — measurement as finite record formation under dynamic bottlenecks, buffering, and budget-crossing signatures.
-4. **FDS-P0 Physical Bridge Registry** — physical bridge claims, dependency structure, high-risk physical extensions.
-5. **FDS-L1 Active Pruning** — artificial-life, protocell-like systems, residue-pruning-boundary dynamics, persistence-collapse transitions.
-6. **FDS-LC0 / FDS-C1** — life/cognitive bridge claims and reportable access under finite capacity.
-7. **FDS-E1 Prospect Theory / Boundary-Risk** — state-dependent loss aversion, reference dependence, probability weighting, and nudge bandwidth under finite capacity.
-9. **FDS-N1 Self-Organization Bridge** — complex-systems normal form: boundary-maintaining self-organization under finite capacity, Phase-C collapse, and invariant selection.
-10. **FDS-P5 Deficit-Driven Entropy Ledger** — physical bridge: capacity deficit → correction flow → entropy-production ledger; the third Physical Bridge Ladder paper after P1 and P2.
-11. **DT-Archive** — broad claim-space archive and historical map.
-11. **FDS-A1** — retained as conceptual timestamp for artificial agency. The public programme does not currently develop proprietary AI/robotics architectures or private benchmarks.
+4. **FDS-O2 Time as Irreversible Distinction Update** — register time as causally ordered irreversible finite-record update.
+5. **FDS-O3 Boundary Maintenance and the Second Law** — finite-memory operational Second-Law channel.
+6. **FDS-T3 Capacity Overflow and Effective Stochasticity** — common mechanism: capacity overflow induces effective stochasticity.
+7. **FDS-N1 Self-Organization Bridge** — complex-systems normal form: boundary-maintaining self-organization, Phase-C collapse, invariant selection.
+8. **FDS-M0 Agency-Semantics Spine** — attention, value, goal, meaning, agency under finite capacity.
+9. **FDS-M1 Attention as Distinction Admission** — capacity-limited admission gating.
+10. **FDS-M2 Value and Goal as Boundary-Relevance Ranking** — causal boundary gradients, goal stability, proxy divergence.
+11. **FDS-M3 Meaning as Actionable Semantic Quotient** — policy-preserving compression, semantic deficit, false meaning.
+12. **FDS-P0 Physical Bridge Registry** — physical bridge claims, dependency structure.
+13. **FDS-P1 Physical Distinction Carriers** — Physical Bridge Ladder I.
+14. **FDS-P2 Bounded-Memory Reversible Computation** — Physical Bridge Ladder II.
+15. **FDS-P5 Deficit-Driven Entropy Ledger** — Physical Bridge Ladder III.
+16. **FDS-L1 Active Pruning** — artificial-life, protocell-like systems, persistence-collapse transitions.
+17. **FDS-C1 Reportable Access under Finite Capacity** — cognitive reportability paper.
+18. **FDS-LC0 Life/Cognitive Bridge Registry** — life and cognitive science bridge claims.
+19. **FDS-E1 Finite-Capacity Prospect Theory** — state-dependent loss aversion, reference dependence, probability weighting.
+20. **FDS-X1 Horizon-Maintenance Dark Energy** — pre-Euclid bridge note.
+21. **DT-Archive** — broad claim-space archive and historical map.
+22. **FDS-A1** — retained as conceptual timestamp for artificial agency.
 
 ---
 
