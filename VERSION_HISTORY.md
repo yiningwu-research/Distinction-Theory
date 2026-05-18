@@ -6,6 +6,26 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-05-18 — FDS-M3 Release
+
+**Description:** Release of FDS-M3 v1.0, the meaning paper in the agency-semantics spine.
+
+### Added
+- FDS-M3 v1.0 — meaning as actionable semantic quotient.
+- M3 claim section in CLAIM_LEDGER.md (8 claims).
+- M3 entry in TIMESTAMPS.md.
+- `models/fds_m3/` with simulation code and figures.
+- `papers/agency_semantics/` updated with M3 release PDF.
+- Git tag: `fds-m3-v1.0`.
+
+### Revised
+- PAPER_MAP.md — M3 status changed from Planned to Released.
+- CLAIM_STATUS.md — added M3 row.
+- README.md — updated Key Documents.
+- CITATION.cff — added M3 DOI to preferred-citation list.
+
+---
+
 ## 2026-05-18 — FDS-M2 Release
 
 **Description:** Release of FDS-M2 v1.0, the value-goal paper in the agency-semantics spine.

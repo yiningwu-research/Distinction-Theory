@@ -65,7 +65,7 @@ Priority notes, not completed physical theories.
 | FDS-M0 | The Agency-Semantics Spine of Distinction Theory | Agency-semantics spine | Released |
 | FDS-M1 | Attention as Distinction Admission in Finite Systems | Attention / admission bridge | Released |
 | FDS-M2 | Value and Goal as Boundary-Relevance Ranking | Value-goal bridge | Released |
-| FDS-M3 | Meaning as Actionable Semantic Quotient | Meaning bridge | Planned |
+| FDS-M3 | Meaning as Actionable Semantic Quotient | Meaning bridge | Released |
 
 ## Stage VI — Organizations, Civilization, and Institutions
 

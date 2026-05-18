@@ -258,4 +258,118 @@
 
 ---
 
+## M3 — Meaning as Actionable Semantic Quotient Claims
+
+### FDS-M3-001 — FDS-Meaning as Actionable Semantic Quotient
+
+**Statement.** FDS-meaning is actionable semantic quotient under a specified system, boundary, task family, context family, policy or verification target, horizon, loss, tolerance, and capacity budget.
+
+**Status.** Formal bridge claim.
+
+**Dependencies.** FDS-CORE-003 (finite capacity); FDS-M0-004 (meaning definition); FDS-M2-001 (FDS-value).
+
+**First timestamp.** FDS-M3 v1.0, 2026-05-18.
+
+**Failure condition.** Compressed representations function semantically without preserving any action, prediction, verification, coordination, or boundary-relevant structure.
+
+---
+
+### FDS-M3-002 — Semantic Quotient Must Preserve Policy-Relevant Distinctions
+
+**Statement.** A semantic quotient must preserve policy-relevant distinctions within tolerance.
+
+**Status.** Formal / model bridge claim.
+
+**Dependencies.** FDS-M3-001; policy-preservation audit.
+
+**First timestamp.** FDS-M3 v1.0, 2026-05-18.
+
+**Failure condition.** Quotient classes systematically merge distinctions requiring different actions or updates under the audited task.
+
+---
+
+### FDS-M3-003 — Semantic Compression Is Useful When It Reduces Load without Excess Loss
+
+**Statement.** Semantic compression is useful when it lowers capacity load without increasing boundary loss beyond tolerance.
+
+**Status.** Operational bridge claim.
+
+**Dependencies.** FDS-M3-001; maintained semantic load model.
+
+**First timestamp.** FDS-M3 v1.0, 2026-05-18.
+
+**Failure condition.** Compression always degrades performance or never reduces maintained semantic load under valid mappings.
+
+---
+
+### FDS-M3-004 — Semantic Deficit Produces Degradation
+
+**Statement.** Semantic deficit produces merging, loss, drift, unsupported completion, false compression, or meaning collapse.
+
+**Status.** Failure-mode bridge claim.
+
+**Dependencies.** FDS-M3-001; semantic capacity model.
+
+**First timestamp.** FDS-M3 v1.0, 2026-05-18.
+
+**Failure condition.** Semantic overload produces no degradation, merging, proxy substitution, or action-relevance loss.
+
+---
+
+### FDS-M3-005 — Embedding Similarity Is Not Sufficient for FDS-Meaning
+
+**Statement.** Embedding similarity is not sufficient for FDS-meaning unless it preserves downstream policy or verification structure.
+
+**Status.** AI / cognition bridge claim.
+
+**Dependencies.** FDS-M3-001; embedding-policy dissociation test.
+
+**First timestamp.** FDS-M3 v1.0, 2026-05-18.
+
+**Failure condition.** Embedding-near items always remain policy-equivalent under audited tasks.
+
+---
+
+### FDS-M3-006 — Shared Meaning Requires Quotient Synchronization
+
+**Statement.** Shared meaning requires synchronized semantic quotients and verification channels across agents.
+
+**Status.** Social bridge claim.
+
+**Dependencies.** FDS-M3-001; semantic synchronization load factor.
+
+**First timestamp.** FDS-M3 v1.0, 2026-05-18.
+
+**Failure condition.** Collective meaning persists without shared quotient, external record, translation, verification, or coordination channel.
+
+---
+
+### FDS-M3-007 — Meaning Recovery Requires Quotient Reconstruction
+
+**Statement.** Meaning recovery requires reconstructing lost action-relevant distinctions, not merely increasing information volume.
+
+**Status.** Recovery bridge claim.
+
+**Dependencies.** FDS-M3-004; meaning recovery model.
+
+**First timestamp.** FDS-M3 v1.0, 2026-05-18.
+
+**Failure condition.** Restoring raw information always restores task meaning without quotient reconstruction.
+
+---
+
+### FDS-M3-008 — High-Level Meanings as Invariant Semantic Quotients
+
+**Statement.** High-level meanings are candidate invariant semantic quotients stable across contexts and perturbations.
+
+**Status.** Invariant bridge claim.
+
+**Dependencies.** FDS-M3-001; M2 high-level goals invariant model.
+
+**First timestamp.** FDS-M3 v1.0, 2026-05-18.
+
+**Failure condition.** High-level meanings fail to preserve policy, value, or coordination relevance across any stated context family.
+
+---
+
 *End of ledger. New claims added as documents are released or revised.*

@@ -166,6 +166,7 @@ Recommended reading path:
 | **FDS-M0** | *The Agency-Semantics Spine of Distinction Theory: Attention, Value, Goal, Meaning, and Action under Finite Capacity* | Released | [10.5281/zenodo.20257939](https://doi.org/10.5281/zenodo.20257939) |
 | **FDS-M1** | *Attention as Distinction Admission in Finite Systems: Capacity-Limited Gating, Boundary Relevance, and Tunnel Vision* | Released | [10.5281/zenodo.20258570](https://doi.org/10.5281/zenodo.20258570) |
 | **FDS-M2** | *Value and Goal as Boundary-Relevance Ranking: Causal Boundary Gradients, Goal Stability, and Value Drift under Finite Capacity* | Released | [10.5281/zenodo.20262998](https://doi.org/10.5281/zenodo.20262998) |
+| **FDS-M3** | *Meaning as Actionable Semantic Quotient: Policy-Preserving Compression, Semantic Deficit, and False Meaning under Finite Capacity* | Released | [10.5281/zenodo.20263294](https://doi.org/10.5281/zenodo.20263294) |
 
 ---
 

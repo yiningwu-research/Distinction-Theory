@@ -114,6 +114,12 @@ preferred-citation:
       - family-names: Wu
         given-names: Yining
     date-released: 2026-05-18
+  - title: "Meaning as Actionable Semantic Quotient: Policy-Preserving Compression, Semantic Deficit, and False Meaning under Finite Capacity"
+    doi: 10.5281/zenodo.20263294
+    authors:
+      - family-names: Wu
+        given-names: Yining
+    date-released: 2026-05-18
   - title: "Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems"
     doi: 10.5281/zenodo.20183373
     authors:
