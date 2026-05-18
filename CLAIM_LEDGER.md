@@ -1,6 +1,276 @@
 
 
+
+## FDS Core Claims
+
+### FDS-CORE-001 — Distinction Primitive
+**Statement.** A distinction is an operation or relation that separates at least two alternatives within a possibility space.
+**Status.** Formal definition.
+**Dependencies.** None specified.
+**First timestamp.** FDS-0 v1.0, 2026-05-12
+**Failure condition.** Not falsified in usual sense; usefulness can fail.
 ---
+
+### FDS-CORE-002 — Boundary Inheritance
+**Statement.** Once a system distinguishes itself from what it is not, it inherits a boundary.
+**Status.** Formal definition.
+**Dependencies.** FDS-CORE-001
+**First timestamp.** FDS-0 v1.0, 2026-05-12
+**Failure condition.** Bounded system with zero maintenance cost under sustained load.
+---
+
+### FDS-CORE-003 — Finite Capacity
+**Statement.** A finite system with a boundary has finite representational and operational capacity.
+**Status.** Formal / operational claim.
+**Dependencies.** FDS-CORE-002
+**First timestamp.** FDS-0 v1.0, 2026-05-12
+**Failure condition.** Physically instantiated bounded system with infinite operational capacity.
+---
+
+### FDS-CORE-004 — Capacity Deficit
+**Statement.** When task-relevant distinction demand exceeds accessible capacity, the system operates under a capacity deficit.
+**Status.** Formal definition.
+**Dependencies.** FDS-CORE-003
+**First timestamp.** FDS-0 v1.0, 2026-05-12
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+### FDS-CORE-005 — Budget Exits
+**Statement.** A finite system under persistent positive capacity deficit must prune, externalize, relax the task, compress, or collapse.
+**Status.** Conditional theorem.
+**Dependencies.** FDS-CORE-004
+**First timestamp.** FDS-0 v1.0, 2026-05-12
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+### FDS-CORE-006 — Invariant-Supported Persistence
+**Statement.** Systems that persist under finite capacity do so by maintaining invariants that reduce effective distinction load.
+**Status.** Conditional theorem.
+**Dependencies.** FDS-CORE-005
+**First timestamp.** FDS-0 v1.0, 2026-05-12
+**Failure condition.** Persistent system under sustained deficit with no invariant-supported load reduction.
+---
+
+## Finite Observer and Distinguishability Budget Claims
+
+### FDS-T1-001 — Finite Observer Projection
+**Statement.** A finite physical observer O can operationally use only a finite image Im(pi_O) of a physical possibility space.
+**Status.** Operational / physical bridge claim.
+**Dependencies.** None specified.
+**First timestamp.** FDS-T1 v0.1, 2026-05-14
+**Failure condition.** Observer with unbounded distinctions under finite resources.
+---
+
+### FDS-T1-002 — Distinguishability Budget
+**Statement.** Operational distinguishability is bounded by minimum of internal record capacity and accessible boundary/channel capacity.
+**Status.** Conditional theorem.
+**Dependencies.** FDS-T1-001
+**First timestamp.** FDS-T1 v0.1, 2026-05-14
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+### FDS-T1-003 — Stock vs Throughput
+**Statement.** Accessible capacity separates into stock capacity and update throughput; effective task capacity is their minimum.
+**Status.** Formal definition/Conditional theorem.
+**Dependencies.** FDS-T1-002
+**First timestamp.** FDS-T1 v1.1, 2026-05-16
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+### FDS-T1-004 — Boundary-Relative Capacity Deficit
+**Statement.** Delta_FDS = R_min - C_acc where R_min is task demand and C_acc is accessible capacity.
+**Status.** Definition.
+**Dependencies.** FDS-T1-003
+**First timestamp.** FDS-T1 v0.1, 2026-05-14
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+### FDS-T1-005 — Budget-Exit Theorem
+**Statement.** If Delta_FDS > 0 persists, observer must enter at least one exit class.
+**Status.** Conditional theorem.
+**Dependencies.** FDS-T1-004; FDS-CORE-005
+**First timestamp.** FDS-T1 v0.1, 2026-05-14
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+### FDS-T1-006 — Maintenance Inequality
+**Statement.** Positive deficit implies Landauer-style lower bound on thermodynamic maintenance cost for irreversible erasure.
+**Status.** Conditional physical bridge.
+**Dependencies.** FDS-T1-005
+**First timestamp.** FDS-T1 v0.1, 2026-05-14
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+### FDS-T1-007 — Budget-Crossing Signature
+**Statement.** As chi = R_min - C_acc crosses zero, observers should show measurable transitions.
+**Status.** Testable prediction.
+**Dependencies.** FDS-T1-005
+**First timestamp.** FDS-T1 v1.1, 2026-05-16
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+### FDS-T1-008 — Bottleneck-Switching Kink
+**Statement.** Rate-distortion error floor shows slope discontinuities at bottleneck switches.
+**Status.** Conditional theorem.
+**Dependencies.** FDS-T1-003
+**First timestamp.** FDS-T1 v0.1, 2026-05-14
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+## Active Pruning and Protocell Claims
+
+### FDS-L1-001 — Residue-Pruning-Boundary Loop
+**Statement.** Sustained flux generates residue; residue impairs function; pruning controls residue.
+**Status.** Conditional claim.
+**Dependencies.** None specified.
+**First timestamp.** FDS-L1 submitted, 2026
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+### FDS-L1-002 — Active Pruning Threshold
+**Statement.** There exists a critical pruning rate S_c below which residue cannot be bounded.
+**Status.** Conditional theorem.
+**Dependencies.** FDS-L1-001
+**First timestamp.** FDS-L1 submitted, TBD
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+### FDS-L1-003 — Maintenance-Attractor Loss
+**Statement.** Below threshold pruning, the system crosses a saddle-node fold and loses stability.
+**Status.** Model-supported claim.
+**Dependencies.** FDS-L1-002
+**First timestamp.** FDS-L1 submitted, TBD
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+### FDS-L1-004 — Rescue-Window Closure
+**Statement.** Restoring pruning rescues system only within a finite delay window.
+**Status.** Model-supported claim.
+**Dependencies.** FDS-L1-002
+**First timestamp.** FDS-L1 submitted, TBD
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+### FDS-L1-005 — Spatial Clogging
+**Statement.** Residue accumulation causes local clogging and boundary deformation.
+**Status.** Model-supported claim.
+**Dependencies.** FDS-L1-001
+**First timestamp.** FDS-L1 submitted, TBD
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+### FDS-L1-006 — Radius-Dependent Pruning Demand
+**Statement.** Required pruning increases with system radius in spatial protocell models.
+**Status.** Model-supported claim.
+**Dependencies.** FDS-L1-005
+**First timestamp.** FDS-L1 submitted, TBD
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+## Reportable Access and Cognitive Pruning Claims
+
+### FDS-C1-001 — Reportability as Finite-Capacity Maintenance
+**Statement.** Conscious reportability can be modeled as a maintained finite-capacity regime.
+**Status.** Theoretical framework claim.
+**Dependencies.** FDS-CORE-003; FDS-CORE-004
+**First timestamp.** FDS-C1 v1.0, 2026-05-15
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+### FDS-C1-002 — Representational Residue
+**Statement.** Unresolved rate-distortion surplus accumulates as representational residue.
+**Status.** Conditional claim.
+**Dependencies.** FDS-C1-001
+**First timestamp.** FDS-C1 v1.0, 2026-05-15
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+### FDS-C1-003 — Active Cognitive Pruning Threshold
+**Statement.** There exists a critical cognitive pruning rate for maintaining reportable access.
+**Status.** Conditional claim.
+**Dependencies.** FDS-C1-002; FDS-L1-002
+**First timestamp.** FDS-C1 v1.0, 2026-05-15
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+### FDS-C1-004 — Access-Network Collapse
+**Statement.** Near reportability collapse, leading covariance eigenvalues rise as early warning.
+**Status.** Model-supported prediction.
+**Dependencies.** FDS-C1-001
+**First timestamp.** FDS-C1 v1.0, 2026-05-15
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+## Life and Cognitive Science Bridge Registry Claims
+
+### FDS-LC0-001 — Registry Structure
+**Statement.** FDS-LC0 registers life/cognitive bridge claims with dependencies, risks, and failure conditions.
+**Status.** Registry governance.
+**Dependencies.** None specified.
+**First timestamp.** FDS-LC0 v1.0, 2026-05-14
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+### FDS-LC0-002 — Downstream Failure Rule
+**Statement.** Failure of life/cognitive bridge does not propagate to upstream physical bridges or core.
+**Status.** Registry governance.
+**Dependencies.** None specified.
+**First timestamp.** FDS-LC0 v1.0, 2026-05-14
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+## High-Risk Physical Bridge (X-Series) Claims
+
+### FDS-X1-001 — Horizon as Boundary
+**Statement.** Cosmological horizons act as finite distinguishability boundaries for observers.
+**Status.** High-risk bridge claim.
+**Dependencies.** FDS-T1-001; FDS-T1-002
+**First timestamp.** FDS-X1 v1.0, TBD
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+### FDS-X1-002 — Horizon-Maintenance Scale
+**Statement.** Horizon-maintenance cost has scale rho ~ H^2 M_Pl^2, consistent with dark energy.
+**Status.** High-risk bridge claim.
+**Dependencies.** FDS-X1-001
+**First timestamp.** TBD v1.0, TBD
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+### FDS-X1-003 — Non-Phantom Dark Energy
+**Statement.** Equation of state tends toward w=-1 from above (non-phantom) with possible mild evolution.
+**Status.** High-risk bridge claim.
+**Dependencies.** FDS-X1-002
+**First timestamp.** TBD v1.0, TBD
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+### FDS-X1-004 — Falsification Contract
+**Statement.** X1 claims have explicit falsification conditions stated in advance.
+**Status.** Governance.
+**Dependencies.** FDS-X1-001; FDS-X1-002; FDS-X1-003
+**First timestamp.** TBD v1.0, TBD
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+## Artificial Agency (Frozen) Claims
+
+### FDS-A1-001 — AI Agency Criterion
+**Statement.** An artificial agent is an active finite distinction system maintaining boundary through durable updates.
+**Status.** Conceptual criterion.
+**Dependencies.** FDS-CORE-002; FDS-CORE-003; FDS-CORE-004; FDS-CORE-005
+**First timestamp.** FDS-A1 v1.0, 2026-05-12
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
+### FDS-A1-002 — AI Line Frozen
+**Statement.** Public programme retains FDS-A1 as conceptual timestamp; no proprietary AI development in repo.
+**Status.** Governance.
+**Dependencies.** None specified.
+**First timestamp.** CONFLICTS_OF_INTEREST v1.0, 2026-05-16
+**Failure condition.** Not directly falsifiable; usefulness can fail.
+---
+
 
 ## M1 — Attention as Distinction Admission Claims
 
