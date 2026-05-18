@@ -1,333 +1,1082 @@
 - id: FDS-CORE-001
   title: Distinction Primitive
-  statement: "A distinction is an operation or relation that separates at least two alternatives within a possibility space."
+  statement: A distinction is an operation or relation that separates at least two
+    alternatives within a possibility space.
   status: Formal definition
   layer: Core
   first_document: FDS-0
   first_version: v1.0
-  first_date: "2026-05-12"
+  first_date: '2026-05-12'
   doi: 10.5281/zenodo.20158923
-  failure_condition: "Not falsified in usual sense; usefulness can fail."
-  downstream: [FDS-CORE-002, FDS-CORE-003]
-
+  failure_condition: Not falsified in usual sense; usefulness can fail.
+  downstream:
+  - FDS-CORE-002
+  - FDS-CORE-003
 - id: FDS-CORE-002
   title: Boundary Inheritance
-  statement: "Once a system distinguishes itself from what it is not, it inherits a boundary."
+  statement: Once a system distinguishes itself from what it is not, it inherits a
+    boundary.
   status: Formal definition
   layer: Core
-  dependencies: [FDS-CORE-001]
+  dependencies:
+  - FDS-CORE-001
   first_document: FDS-0
   first_version: v1.0
-  first_date: "2026-05-12"
+  first_date: '2026-05-12'
   doi: 10.5281/zenodo.20158923
-  failure_condition: "Bounded system with zero maintenance cost under sustained load."
-  downstream: [FDS-CORE-003]
-
+  failure_condition: Bounded system with zero maintenance cost under sustained load.
+  downstream:
+  - FDS-CORE-003
 - id: FDS-CORE-003
   title: Finite Capacity
-  statement: "A finite system with a boundary has finite representational and operational capacity."
+  statement: A finite system with a boundary has finite representational and operational
+    capacity.
   status: Formal/operational claim
   layer: Core
-  dependencies: [FDS-CORE-002]
+  dependencies:
+  - FDS-CORE-002
   first_document: FDS-0
   first_version: v1.0
-  first_date: "2026-05-12"
+  first_date: '2026-05-12'
   doi: 10.5281/zenodo.20158923
-  failure_condition: "Physically instantiated bounded system with infinite operational capacity."
-  downstream: [FDS-CORE-004]
-
+  failure_condition: Physically instantiated bounded system with infinite operational
+    capacity.
+  downstream:
+  - FDS-CORE-004
 - id: FDS-CORE-004
   title: Capacity Deficit
-  statement: "When task-relevant distinction demand exceeds accessible capacity, the system operates under a capacity deficit."
+  statement: When task-relevant distinction demand exceeds accessible capacity, the
+    system operates under a capacity deficit.
   status: Formal definition
   layer: Core
-  dependencies: [FDS-CORE-003]
+  dependencies:
+  - FDS-CORE-003
   first_document: FDS-0
   first_version: v1.0
-  first_date: "2026-05-12"
+  first_date: '2026-05-12'
   doi: 10.5281/zenodo.20158923
-  downstream: [FDS-CORE-005]
-
+  downstream:
+  - FDS-CORE-005
 - id: FDS-CORE-005
   title: Budget Exits
-  statement: "A finite system under persistent positive capacity deficit must prune, externalize, relax the task, compress, or collapse."
+  statement: A finite system under persistent positive capacity deficit must prune,
+    externalize, relax the task, compress, or collapse.
   status: Conditional theorem
   layer: Core
-  dependencies: [FDS-CORE-004]
-  not_claimed: "Does not prescribe which exit occurs."
+  dependencies:
+  - FDS-CORE-004
+  not_claimed: Does not prescribe which exit occurs.
   first_document: FDS-0
   first_version: v1.0
-  first_date: "2026-05-12"
+  first_date: '2026-05-12'
   doi: 10.5281/zenodo.20158923
-  downstream: [FDS-CORE-006, FDS-T1-005]
-
+  downstream:
+  - FDS-CORE-006
+  - FDS-T1-005
 - id: FDS-CORE-006
   title: Invariant-Supported Persistence
-  statement: "Systems that persist under finite capacity do so by maintaining invariants that reduce effective distinction load."
+  statement: Systems that persist under finite capacity do so by maintaining invariants
+    that reduce effective distinction load.
   status: Conditional theorem
   layer: Core
-  dependencies: [FDS-CORE-005]
+  dependencies:
+  - FDS-CORE-005
   first_document: FDS-0
   first_version: v1.0
-  first_date: "2026-05-12"
+  first_date: '2026-05-12'
   doi: 10.5281/zenodo.20158923
-  failure_condition: "Persistent system under sustained deficit with no invariant-supported load reduction."
-
+  failure_condition: Persistent system under sustained deficit with no invariant-supported
+    load reduction.
 - id: FDS-T1-001
   title: Finite Observer Projection
-  statement: "A finite physical observer O can operationally use only a finite image Im(pi_O) of a physical possibility space."
+  statement: A finite physical observer O can operationally use only a finite image
+    Im(pi_O) of a physical possibility space.
   status: Operational/physical bridge claim
   layer: Physical Bridge
   first_document: FDS-T1
   first_version: v0.1
-  first_date: "2026-05-14"
-  failure_condition: "Observer with unbounded distinctions under finite resources."
-  downstream: [FDS-T1-002, FDS-T1-003, FDS-T1-004]
-
+  first_date: '2026-05-14'
+  failure_condition: Observer with unbounded distinctions under finite resources.
+  downstream:
+  - FDS-T1-002
+  - FDS-T1-003
+  - FDS-T1-004
 - id: FDS-T1-002
   title: Distinguishability Budget
-  statement: "Operational distinguishability is bounded by minimum of internal record capacity and accessible boundary/channel capacity."
+  statement: Operational distinguishability is bounded by minimum of internal record
+    capacity and accessible boundary/channel capacity.
   status: Conditional theorem
   layer: Physical Bridge
-  dependencies: [FDS-T1-001]
+  dependencies:
+  - FDS-T1-001
   first_document: FDS-T1
   first_version: v0.1
-  first_date: "2026-05-14"
-  downstream: [FDS-T1-003]
-
+  first_date: '2026-05-14'
+  downstream:
+  - FDS-T1-003
 - id: FDS-T1-003
   title: Stock vs Throughput
-  statement: "Accessible capacity separates into stock capacity and update throughput; effective task capacity is their minimum."
+  statement: Accessible capacity separates into stock capacity and update throughput;
+    effective task capacity is their minimum.
   status: Formal definition/Conditional theorem
   layer: Physical Bridge
-  dependencies: [FDS-T1-002]
+  dependencies:
+  - FDS-T1-002
   first_document: FDS-T1
   first_version: v1.1
-  first_date: "2026-05-16"
-  downstream: [FDS-T1-004, FDS-T1-005]
-
+  first_date: '2026-05-16'
+  downstream:
+  - FDS-T1-004
+  - FDS-T1-005
 - id: FDS-T1-004
   title: Boundary-Relative Capacity Deficit
-  statement: "Delta_FDS = R_min - C_acc where R_min is task demand and C_acc is accessible capacity."
+  statement: Delta_FDS = R_min - C_acc where R_min is task demand and C_acc is accessible
+    capacity.
   status: Definition
   layer: Physical Bridge
-  dependencies: [FDS-T1-003]
+  dependencies:
+  - FDS-T1-003
   first_document: FDS-T1
   first_version: v0.1
-  first_date: "2026-05-14"
-  downstream: [FDS-T1-005]
-
+  first_date: '2026-05-14'
+  downstream:
+  - FDS-T1-005
 - id: FDS-T1-005
   title: Budget-Exit Theorem
-  statement: "If Delta_FDS > 0 persists, observer must enter at least one exit class."
+  statement: If Delta_FDS > 0 persists, observer must enter at least one exit class.
   status: Conditional theorem
   layer: Physical Bridge
-  dependencies: [FDS-T1-004, FDS-CORE-005]
+  dependencies:
+  - FDS-T1-004
+  - FDS-CORE-005
   first_document: FDS-T1
   first_version: v0.1
-  first_date: "2026-05-14"
-  downstream: [FDS-T1-006, FDS-T1-007]
-
+  first_date: '2026-05-14'
+  downstream:
+  - FDS-T1-006
+  - FDS-T1-007
 - id: FDS-T1-006
   title: Maintenance Inequality
-  statement: "Positive deficit implies Landauer-style lower bound on thermodynamic maintenance cost for irreversible erasure."
+  statement: Positive deficit implies Landauer-style lower bound on thermodynamic
+    maintenance cost for irreversible erasure.
   status: Conditional physical bridge
   layer: Physical Bridge
-  dependencies: [FDS-T1-005]
+  dependencies:
+  - FDS-T1-005
   first_document: FDS-T1
   first_version: v0.1
-  first_date: "2026-05-14"
-
+  first_date: '2026-05-14'
 - id: FDS-T1-007
   title: Budget-Crossing Signature
-  statement: "As chi = R_min - C_acc crosses zero, observers should show measurable transitions."
+  statement: As chi = R_min - C_acc crosses zero, observers should show measurable
+    transitions.
   status: Testable prediction
   layer: Physical Bridge
-  dependencies: [FDS-T1-005]
+  dependencies:
+  - FDS-T1-005
   first_document: FDS-T1
   first_version: v1.1
-  first_date: "2026-05-16"
-
+  first_date: '2026-05-16'
 - id: FDS-T1-008
   title: Bottleneck-Switching Kink
-  statement: "Rate-distortion error floor shows slope discontinuities at bottleneck switches."
+  statement: Rate-distortion error floor shows slope discontinuities at bottleneck
+    switches.
   status: Conditional theorem
   layer: Physical Bridge
-  dependencies: [FDS-T1-003]
+  dependencies:
+  - FDS-T1-003
   first_document: FDS-T1
   first_version: v0.1
-  first_date: "2026-05-14"
-
+  first_date: '2026-05-14'
 - id: FDS-L1-001
   title: Residue-Pruning-Boundary Loop
-  statement: "Sustained flux generates residue; residue impairs function; pruning controls residue."
+  statement: Sustained flux generates residue; residue impairs function; pruning controls
+    residue.
   status: Conditional claim
   layer: Domain Bridge
   first_document: FDS-L1
   first_version: submitted
-  first_date: "2026"
-  downstream: [FDS-L1-002]
-
+  first_date: '2026'
+  downstream:
+  - FDS-L1-002
 - id: FDS-L1-002
   title: Active Pruning Threshold
-  statement: "There exists a critical pruning rate S_c below which residue cannot be bounded."
+  statement: There exists a critical pruning rate S_c below which residue cannot be
+    bounded.
   status: Conditional theorem
   layer: Domain Bridge
-  dependencies: [FDS-L1-001]
+  dependencies:
+  - FDS-L1-001
   first_document: FDS-L1
   first_version: submitted
-  downstream: [FDS-L1-003]
-
+  downstream:
+  - FDS-L1-003
 - id: FDS-L1-003
   title: Maintenance-Attractor Loss
-  statement: "Below threshold pruning, the system crosses a saddle-node fold and loses stability."
+  statement: Below threshold pruning, the system crosses a saddle-node fold and loses
+    stability.
   status: Model-supported claim
   layer: Domain Bridge
-  dependencies: [FDS-L1-002]
+  dependencies:
+  - FDS-L1-002
   first_document: FDS-L1
   first_version: submitted
-
 - id: FDS-L1-004
   title: Rescue-Window Closure
-  statement: "Restoring pruning rescues system only within a finite delay window."
+  statement: Restoring pruning rescues system only within a finite delay window.
   status: Model-supported claim
   layer: Domain Bridge
-  dependencies: [FDS-L1-002]
+  dependencies:
+  - FDS-L1-002
   first_document: FDS-L1
   first_version: submitted
-
 - id: FDS-L1-005
   title: Spatial Clogging
-  statement: "Residue accumulation causes local clogging and boundary deformation."
+  statement: Residue accumulation causes local clogging and boundary deformation.
   status: Model-supported claim
   layer: Domain Bridge
-  dependencies: [FDS-L1-001]
+  dependencies:
+  - FDS-L1-001
   first_document: FDS-L1
   first_version: submitted
-
 - id: FDS-L1-006
   title: Radius-Dependent Pruning Demand
-  statement: "Required pruning increases with system radius in spatial protocell models."
+  statement: Required pruning increases with system radius in spatial protocell models.
   status: Model-supported claim
   layer: Domain Bridge
-  dependencies: [FDS-L1-005]
+  dependencies:
+  - FDS-L1-005
   first_document: FDS-L1
   first_version: submitted
-
 - id: FDS-C1-001
   title: Reportability as Finite-Capacity Maintenance
-  statement: "Conscious reportability can be modeled as a maintained finite-capacity regime."
+  statement: Conscious reportability can be modeled as a maintained finite-capacity
+    regime.
   status: Theoretical framework claim
   layer: Domain Bridge
-  dependencies: [FDS-CORE-003, FDS-CORE-004]
+  dependencies:
+  - FDS-CORE-003
+  - FDS-CORE-004
   first_document: FDS-C1
   first_version: v1.0
-  first_date: "2026-05-15"
+  first_date: '2026-05-15'
   doi: 10.5281/zenodo.20229509
-  downstream: [FDS-C1-002]
-
+  downstream:
+  - FDS-C1-002
 - id: FDS-C1-002
   title: Representational Residue
-  statement: "Unresolved rate-distortion surplus accumulates as representational residue."
+  statement: Unresolved rate-distortion surplus accumulates as representational residue.
   status: Conditional claim
   layer: Domain Bridge
-  dependencies: [FDS-C1-001]
+  dependencies:
+  - FDS-C1-001
   first_document: FDS-C1
   first_version: v1.0
-  first_date: "2026-05-15"
+  first_date: '2026-05-15'
   doi: 10.5281/zenodo.20229509
-  downstream: [FDS-C1-003]
-
+  downstream:
+  - FDS-C1-003
 - id: FDS-C1-003
   title: Active Cognitive Pruning Threshold
-  statement: "There exists a critical cognitive pruning rate for maintaining reportable access."
+  statement: There exists a critical cognitive pruning rate for maintaining reportable
+    access.
   status: Conditional claim
   layer: Domain Bridge
-  dependencies: [FDS-C1-002, FDS-L1-002]
+  dependencies:
+  - FDS-C1-002
+  - FDS-L1-002
   first_document: FDS-C1
   first_version: v1.0
-  first_date: "2026-05-15"
+  first_date: '2026-05-15'
   doi: 10.5281/zenodo.20229509
-
 - id: FDS-C1-004
   title: Access-Network Collapse
-  statement: "Near reportability collapse, leading covariance eigenvalues rise as early warning."
+  statement: Near reportability collapse, leading covariance eigenvalues rise as early
+    warning.
   status: Model-supported prediction
   layer: Domain Bridge
-  dependencies: [FDS-C1-001]
+  dependencies:
+  - FDS-C1-001
   first_document: FDS-C1
   first_version: v1.0
-  first_date: "2026-05-15"
+  first_date: '2026-05-15'
   doi: 10.5281/zenodo.20229509
-
 - id: FDS-LC0-001
   title: Registry Structure
-  statement: "FDS-LC0 registers life/cognitive bridge claims with dependencies, risks, and failure conditions."
+  statement: FDS-LC0 registers life/cognitive bridge claims with dependencies, risks,
+    and failure conditions.
   status: Registry governance
   layer: Registry
   first_document: FDS-LC0
   first_version: v1.0
-  first_date: "2026-05-14"
+  first_date: '2026-05-14'
   doi: 10.5281/zenodo.20183373
-  downstream: [FDS-LC0-002]
-
+  downstream:
+  - FDS-LC0-002
 - id: FDS-LC0-002
   title: Downstream Failure Rule
-  statement: "Failure of life/cognitive bridge does not propagate to upstream physical bridges or core."
+  statement: Failure of life/cognitive bridge does not propagate to upstream physical
+    bridges or core.
   status: Registry governance
   layer: Registry
   first_document: FDS-LC0
   first_version: v1.0
-  first_date: "2026-05-14"
+  first_date: '2026-05-14'
   doi: 10.5281/zenodo.20183373
-
 - id: FDS-X1-001
   title: Horizon as Boundary
-  statement: "Cosmological horizons act as finite distinguishability boundaries for observers."
+  statement: Cosmological horizons act as finite distinguishability boundaries for
+    observers.
   status: High-risk bridge
   layer: High-Risk
-  dependencies: [FDS-T1-001, FDS-T1-002]
+  dependencies:
+  - FDS-T1-001
+  - FDS-T1-002
   first_document: FDS-X1
-  downstream: [FDS-X1-002]
-
+  downstream:
+  - FDS-X1-002
 - id: FDS-X1-002
   title: Horizon-Maintenance Scale
-  statement: "Horizon-maintenance cost has scale rho ~ H^2 M_Pl^2, consistent with dark energy."
+  statement: Horizon-maintenance cost has scale rho ~ H^2 M_Pl^2, consistent with
+    dark energy.
   status: High-risk bridge
   layer: High-Risk
-  dependencies: [FDS-X1-001]
-  downstream: [FDS-X1-003]
-
+  dependencies:
+  - FDS-X1-001
+  downstream:
+  - FDS-X1-003
 - id: FDS-X1-003
   title: Non-Phantom Dark Energy
-  statement: "Equation of state tends toward w=-1 from above (non-phantom) with possible mild evolution."
+  statement: Equation of state tends toward w=-1 from above (non-phantom) with possible
+    mild evolution.
   status: High-risk bridge
   layer: High-Risk
-  dependencies: [FDS-X1-002]
-  downstream: [FDS-X1-004]
-
+  dependencies:
+  - FDS-X1-002
+  downstream:
+  - FDS-X1-004
 - id: FDS-X1-004
   title: Falsification Contract
-  statement: "X1 claims have explicit falsification conditions stated in advance."
+  statement: X1 claims have explicit falsification conditions stated in advance.
   status: Governance
   layer: High-Risk
-  dependencies: [FDS-X1-001, FDS-X1-002, FDS-X1-003]
-
+  dependencies:
+  - FDS-X1-001
+  - FDS-X1-002
+  - FDS-X1-003
 - id: FDS-A1-001
   title: AI Agency Criterion
-  statement: "An artificial agent is an active finite distinction system maintaining boundary through durable updates."
+  statement: An artificial agent is an active finite distinction system maintaining
+    boundary through durable updates.
   status: Conceptual criterion
   layer: Frozen
-  dependencies: [FDS-CORE-002, FDS-CORE-003, FDS-CORE-004, FDS-CORE-005]
+  dependencies:
+  - FDS-CORE-002
+  - FDS-CORE-003
+  - FDS-CORE-004
+  - FDS-CORE-005
   first_document: FDS-A1
   first_version: v1.0
-  first_date: "2026-05-12"
+  first_date: '2026-05-12'
   doi: 10.5281/zenodo.20184709
-
 - id: FDS-A1-002
   title: AI Line Frozen
-  statement: "Public programme retains FDS-A1 as conceptual timestamp; no proprietary AI development in repo."
+  statement: Public programme retains FDS-A1 as conceptual timestamp; no proprietary
+    AI development in repo.
   status: Governance
   layer: Frozen
   first_document: CONFLICTS_OF_INTEREST
-  first_date: "2026-05-16"
+  first_date: '2026-05-16'
+- id: FDS-M1-001
+  title: Attention as Capacity-Limited Distinction Admission
+  statement: Attention is capacity-limited distinction admission into an update channel.
+  status: Formal bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-CORE-003
+  - FDS-M0-001
+  first_document: FDS-M1
+  first_version: v1.0
+  first_date: '2026-05-17'
+  doi: 10.5281/zenodo.20258570
+  failure_condition: Attention-like selection occurs without finite capacity, admission,
+    update gating, or priority constraint under the specified mapping.
+- id: FDS-M1-002
+  title: Salience and Attention Are Separable
+  statement: Salience and attention are separable. Salient distinctions can be rejected
+    if cost or verification burden is too high.
+  status: Operational bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M1-001
+  - verification cost model
+  first_document: FDS-M1
+  first_version: v1.0
+  first_date: '2026-05-17'
+  doi: 10.5281/zenodo.20258570
+  failure_condition: Empirical systems always admit highest-salience items regardless
+    of cost, capacity, task, or verification constraints.
+- id: FDS-M1-003
+  title: Boundary-Efficient Attention Prefers High Causal Value
+  statement: Boundary-efficient or loss-minimizing attention systems preferentially
+    admit high causal boundary-value distinctions under controlled capacity conditions.
+  status: Operational bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M1-001
+  - FDS-M0-002
+  first_document: FDS-M1
+  first_version: v1.0
+  first_date: '2026-05-17'
+  doi: 10.5281/zenodo.20258570
+  failure_condition: Admission patterns are no better predicted by causal boundary
+    value than by raw salience or noise under a valid mapping.
+- id: FDS-M1-004
+  title: Attention Allocation as Constrained Optimization
+  statement: Attention allocation can be written as constrained optimization over
+    value, curiosity, cost, and capacity.
+  status: Formal / model bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M1-001
+  - FDS-M1-003
+  first_document: FDS-M1
+  first_version: v1.0
+  first_date: '2026-05-17'
+  doi: 10.5281/zenodo.20258570
+  failure_condition: No useful mapping exists between admission patterns and constrained
+    allocation variables.
+- id: FDS-M1-005
+  title: Deficit Steepens Admission Thresholds and Produces Tunnel Vision
+  statement: Semantic or attention deficit steepens admission thresholds and can produce
+    tunnel vision.
+  status: Operational bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M1-001
+  - FDS-T3-001
+  first_document: FDS-M1
+  first_version: v1.0
+  first_date: '2026-05-17'
+  doi: 10.5281/zenodo.20258570
+  failure_condition: High load or deficit produces no narrowing, thresholding, or
+    priority collapse in systems claimed to have finite attention.
+- id: FDS-M1-006
+  title: Artificial Attention Requires Coupled Architecture
+  statement: Artificial attention belongs to a coupled architecture only when routed
+    distinctions affect durable update, action, maintenance, or verification.
+  status: AI / cognition bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M1-001
+  - FDS-M0-005
+  first_document: FDS-M1
+  first_version: v1.0
+  first_date: '2026-05-17'
+  doi: 10.5281/zenodo.20258570
+  failure_condition: Bare attention weights alone satisfy strong FDS attention without
+    durable update or downstream relevance.
+- id: FDS-M1-007
+  title: Collective Attention as Shared Admission
+  statement: Collective attention is shared admission under finite communication,
+    verification, and externalized memory capacity.
+  status: Social bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M1-001
+  - FDS-N1-006
+  first_document: FDS-M1
+  first_version: v1.0
+  first_date: '2026-05-17'
+  doi: 10.5281/zenodo.20258570
+  failure_condition: Group-scale attention shows no relation to verification capacity,
+    agenda-setting, or externalized memory.
+- id: FDS-M1-008
+  title: Attention Failure Modes as Admission Errors
+  statement: Attention failure includes overload, distraction, salience capture, suppression,
+    tunnel vision, false admission, and critical distinction exclusion.
+  status: Failure-mode bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M1-001-005
+  first_document: FDS-M1
+  first_version: v1.0
+  first_date: '2026-05-17'
+  doi: 10.5281/zenodo.20258570
+  failure_condition: These failure modes cannot be operationalized as admission errors
+    under finite capacity.
+- id: FDS-M1-009
+  title: Attention Recovery Hysteresis
+  statement: Attention recovery after deficit-induced narrowing can lag behind external
+    load reduction because of hysteresis in gate thresholds, verification routines,
+    or maintained threat priors.
+  status: Operational bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M1-005
+  - hysteresis model
+  first_document: FDS-M1
+  first_version: v1.0
+  first_date: '2026-05-17'
+  doi: 10.5281/zenodo.20258570
+  failure_condition: Attention gates relax immediately and without lag after load
+    reduction in systems where hysteresis is claimed.
+- id: FDS-M2-001
+  title: FDS-Value as Causal Boundary-Gradient Relevance
+  statement: FDS-value is causal boundary-gradient relevance under a specified boundary,
+    loss, intervention grammar, horizon, and cost model.
+  status: Formal bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-CORE-003
+  - FDS-M0-002
+  first_document: FDS-M2
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20262998
+  failure_condition: Valuation cannot be operationalized as causal effect on any specified
+    future boundary-maintenance loss under valid mappings.
+- id: FDS-M2-002
+  title: Predictive Relevance and Causal FDS-Value Are Separable
+  statement: Predictive relevance and causal FDS-value are separable.
+  status: Operational bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M2-001
+  - intervention grammar
+  first_document: FDS-M2
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20262998
+  failure_condition: Correlational predictors always coincide with intervention-relevant
+    boundary effects under audited systems.
+- id: FDS-M2-003
+  title: Value Ranking as Finite-Difference Ordering
+  statement: Value ranking can be expressed as an ordering over finite-difference
+    action, admission, maintenance, or policy effects.
+  status: Formal / model bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M2-001
+  - FDS-CORE-005
+  first_document: FDS-M2
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20262998
+  failure_condition: No useful ordering exists between evaluands and their causal
+    boundary effects under stated mappings.
+- id: FDS-M2-004
+  title: Risk-Weighted Value Can Dominate Average-Loss Value
+  statement: Near collapse thresholds, risk-weighted FDS-value can dominate average-loss
+    value.
+  status: Operational bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M2-001
+  - bounded risk-sensitivity model
+  first_document: FDS-M2
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20262998
+  failure_condition: Collapse-risk reduction never changes ranking near boundary failure
+    thresholds under valid mappings.
+- id: FDS-M2-005
+  title: Goals as Stabilized FDS-Value Rankings
+  statement: Goals are stabilized FDS-value rankings coupled to policy orientation
+    across update windows.
+  status: Operational bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M2-001
+  - FDS-M0-003
+  - FDS-O2-001
+  first_document: FDS-M2
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20262998
+  failure_condition: Goal-like behavior persists without ranking stability, memory,
+    policy orientation, or update-window persistence.
+- id: FDS-M2-006
+  title: Value Drift under Evaluation Deficit
+  statement: Value drift occurs when rankings change faster than the system can verify,
+    update, or maintain the reasons for the change.
+  status: Failure-mode bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M2-005
+  - evaluation capacity model
+  first_document: FDS-M2
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20262998
+  failure_condition: Ranking instability produces no detectable change in behavior,
+    loss, or policy under claimed goal systems.
+- id: FDS-M2-007
+  title: Proxy Reward Can Diverge from Causal Boundary Value
+  statement: Proxy reward can diverge from causal boundary value, creating reward
+    hacking or misalignment.
+  status: AI / agency bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M2-001
+  - proxy alignment score
+  first_document: FDS-M2
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20262998
+  failure_condition: Proxy optimization remains aligned despite divergent finite-difference
+    effects on host boundary loss.
+- id: FDS-M2-008
+  title: Collective Goals as Shared Stabilized Rankings
+  statement: Collective goals are shared stabilized rankings under finite verification
+    and coordination capacity.
+  status: Social bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M2-005
+  - ranking synchronization demand
+  first_document: FDS-M2
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20262998
+  failure_condition: Group goals show no relation to shared rankings, institutional
+    memory, verification capacity, or policy orientation.
+- id: FDS-M2-009
+  title: Goal Recovery and Hysteresis
+  statement: Goal recovery can lag after resource or threat recovery because rankings,
+    commitments, or threat priors persist.
+  status: Recovery bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M2-005
+  - goal hysteresis model
+  first_document: FDS-M2
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20262998
+  failure_condition: Goals relax immediately and without lag after boundary load changes
+    in systems where goal hysteresis is claimed.
+- id: FDS-M3-001
+  title: FDS-Meaning as Actionable Semantic Quotient
+  statement: FDS-meaning is actionable semantic quotient under a specified system,
+    boundary, task family, context family, policy or verification target, horizon,
+    loss, tolerance, and capacity budget.
+  status: Formal bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-CORE-003
+  - FDS-M0-004
+  - FDS-M2-001
+  first_document: FDS-M3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20263294
+  failure_condition: Compressed representations function semantically without preserving
+    any action, prediction, verification, coordination, or boundary-relevant structure.
+- id: FDS-M3-002
+  title: Semantic Quotient Must Preserve Policy-Relevant Distinctions
+  statement: A semantic quotient must preserve policy-relevant distinctions within
+    tolerance.
+  status: Formal / model bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M3-001
+  - policy-preservation audit
+  first_document: FDS-M3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20263294
+  failure_condition: Quotient classes systematically merge distinctions requiring
+    different actions or updates under the audited task.
+- id: FDS-M3-003
+  title: Semantic Compression Is Useful When It Reduces Load without Excess Loss
+  statement: Semantic compression is useful when it lowers capacity load without increasing
+    boundary loss beyond tolerance.
+  status: Operational bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M3-001
+  - maintained semantic load model
+  first_document: FDS-M3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20263294
+  failure_condition: Compression always degrades performance or never reduces maintained
+    semantic load under valid mappings.
+- id: FDS-M3-004
+  title: Semantic Deficit Produces Degradation
+  statement: Semantic deficit produces merging, loss, drift, unsupported completion,
+    false compression, or meaning collapse.
+  status: Failure-mode bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M3-001
+  - semantic capacity model
+  first_document: FDS-M3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20263294
+  failure_condition: Semantic overload produces no degradation, merging, proxy substitution,
+    or action-relevance loss.
+- id: FDS-M3-005
+  title: Embedding Similarity Is Not Sufficient for FDS-Meaning
+  statement: Embedding similarity is not sufficient for FDS-meaning unless it preserves
+    downstream policy or verification structure.
+  status: AI / cognition bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M3-001
+  - embedding-policy dissociation test
+  first_document: FDS-M3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20263294
+  failure_condition: Embedding-near items always remain policy-equivalent under audited
+    tasks.
+- id: FDS-M3-006
+  title: Shared Meaning Requires Quotient Synchronization
+  statement: Shared meaning requires synchronized semantic quotients and verification
+    channels across agents.
+  status: Social bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M3-001
+  - semantic synchronization load factor
+  first_document: FDS-M3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20263294
+  failure_condition: Collective meaning persists without shared quotient, external
+    record, translation, verification, or coordination channel.
+- id: FDS-M3-007
+  title: Meaning Recovery Requires Quotient Reconstruction
+  statement: Meaning recovery requires reconstructing lost action-relevant distinctions,
+    not merely increasing information volume.
+  status: Recovery bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M3-004
+  - meaning recovery model
+  first_document: FDS-M3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20263294
+  failure_condition: Restoring raw information always restores task meaning without
+    quotient reconstruction.
+- id: FDS-M3-008
+  title: High-Level Meanings as Invariant Semantic Quotients
+  statement: High-level meanings are candidate invariant semantic quotients stable
+    across contexts and perturbations.
+  status: Invariant bridge claim
+  layer: Bridge
+  dependencies:
+  - FDS-M3-001
+  - M2 high-level goals invariant model
+  first_document: FDS-M3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20263294
+  failure_condition: High-level meanings fail to preserve policy, value, or coordination
+    relevance across any stated context family.
+- id: FDS-P4-001
+  title: Non-Injective Truncation Creates Preimage Uncertainty
+  statement: Non-injective truncation creates preimage uncertainty relative to the
+    effective record.
+  status: Formal information claim
+  layer: Physical bridge
+  dependencies:
+  - FDS-CORE-005
+  first_document: FDS-P4
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20265065
+  failure_condition: A many-to-one map contains enough information, without side records
+    or conventions, to distinguish all of its preimages.
+- id: FDS-P4-002
+  title: Bayes-Optimal Exact Recovery Bound
+  statement: Bayes-optimal guaranteed exact preimage recovery is bounded by the largest
+    conditional preimage mass.
+  status: Decision-theoretic bound
+  layer: Physical bridge
+  dependencies:
+  - FDS-P4-001
+  - Bayes decision theory
+  first_document: FDS-P4
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20265065
+  failure_condition: A decoder using only Z exceeds the Bayes-optimal classifier bound
+    for X|Z.
+- id: FDS-P4-003
+  title: Informational Hysteresis
+  statement: Capacity recovery does not recover distinctions erased during a bottleneck.
+  status: Informational hysteresis theorem
+  layer: Physical bridge
+  dependencies:
+  - FDS-P4-001
+  - side-record criterion
+  first_document: FDS-P4
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20265065
+  failure_condition: A finite system recovers exact task-relevant preimage distinctions
+    after capacity restoration with no side record, no enlarged boundary, no external
+    trace, and no hidden convention.
+- id: FDS-P4-004
+  title: Non-Lumpability Creates Hidden-State Memory
+  statement: Non-lumpable coarse-graining creates hidden-state memory and effective
+    stochasticity.
+  status: Markov projection bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS-P4-001
+  - lumpability condition
+  first_document: FDS-P4
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20265065
+  failure_condition: A non-lumpable projection closes exactly on Z_t alone without
+    hidden state, history, or extra variables.
+- id: FDS-P4-005
+  title: Mori-Zwanzig Memory Burden
+  statement: Projection-induced memory burden has a Mori-Zwanzig analogue.
+  status: Relation to standard theory
+  layer: Physical bridge
+  dependencies:
+  - FDS-P4-004
+  - Mori-Zwanzig formalism
+  first_document: FDS-P4
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20265065
+  failure_condition: Eliminated variables never reappear as memory, noise, or closure
+    error in projected dynamics, even when lumpability fails.
+- id: FDS-P4-006
+  title: Externalization Restores Inverse Information Only by Moving It
+  statement: Externalization restores inverse information only by moving it to a side
+    ledger.
+  status: Accounting-boundary bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS-P4-001
+  - external cost model
+  first_document: FDS-P4
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20265065
+  failure_condition: External logs restore exact recovery at no writing, retention,
+    indexing, synchronization, retrieval, verification, or boundary-expansion cost.
+- id: FDS-P4-007
+  title: Finite-Memory Exit Theorem
+  statement: Sustained truncation requires residual irrecoverability, side records,
+    externalization, task relaxation, or failure.
+  status: Finite-memory exit theorem
+  layer: Physical bridge
+  dependencies:
+  - FDS-P4-001
+  - FDS-P4-003
+  first_document: FDS-P4
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20265065
+  failure_condition: A finite system repeatedly applies non-injective truncation to
+    task-relevant distinctions while preserving exact recovery with no residual uncertainty
+    and no extra ledger.
+- id: FDS-P7-001
+  title: Invariant Side-Ledgers Suppress Residual Uncertainty
+  statement: Invariant side-ledgers can suppress P4 residual inverse uncertainty.
+  status: Formal FDS bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS-P4-001
+  - invariant quotient map
+  first_document: FDS-P7
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20265386
+  failure_condition: A task variable factors through an accessible invariant, but
+    H(V|Z,Q_inv) remains high under the stated assumptions.
+- id: FDS-P7-002
+  title: Noisy Invariant Recovery Bound
+  statement: Noisy invariant readout gives a bounded recovery penalty.
+  status: Information bound
+  layer: Physical bridge
+  dependencies:
+  - FDS-P7-001
+  - Fano-style bound
+  first_document: FDS-P7
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20265386
+  failure_condition: A noisy invariant readout with error probability δ exceeds the
+    Fano-style bound without hidden information or changed task labels.
+- id: FDS-P7-003
+  title: Local Perturbations Cannot Change Protected Invariant
+  statement: Local perturbations cannot change a protected invariant without a protection-breaking
+    event.
+  status: Topological bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS-P7-001
+  - local perturbation family
+  - protection margin
+  first_document: FDS-P7
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20265386
+  failure_condition: A local perturbation changes the invariant while the protection
+    gap, locality assumptions, and accounting boundary remain intact.
+- id: FDS-P7-004
+  title: NHSE as Model Class
+  statement: NHSE supplies a model class for invariant-supported persistence.
+  status: Physical bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS-P7-003
+  - point-gap winding
+  - GBZ structure
+  first_document: FDS-P7
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20265386
+  failure_condition: NHSE is present, but it carries no stable recoverable distinction,
+    no boundary-sensitive protection, and no robustness to local perturbation in the
+    registered model class.
+- id: FDS-P7-005
+  title: Protection Relocates Entropy/Resource Accounting
+  statement: Protection relocates entropy/resource accounting rather than deleting
+    it.
+  status: O3-compatible accounting claim
+  layer: Physical bridge
+  dependencies:
+  - FDS-P7-001
+  - O3 ledger principle
+  first_document: FDS-P7
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20265386
+  failure_condition: A protected invariant supplies indefinite maintenance with no
+    drive, boundary, refresh, dissipation, verification, control, or external ledger.
+- id: FDS-P7-006
+  title: Dual-Channel Signature
+  statement: Protected phases can generate a dual forgetting/ledger signature.
+  status: Experimental bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS-P7-004
+  - FDS-P7-005
+  - operational forgetting rate
+  first_document: FDS-P7
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20265386
+  failure_condition: Confirmed protection-breaking transition with no feature in operational
+    forgetting and no corresponding resource/entropy signature under a well-powered
+    registered protocol.
+- id: FDS-P6-001
+  title: Boundary Maintenance Requires Finite Update Throughput
+  statement: Boundary maintenance requires finite update throughput.
+  status: Formal FDS claim
+  layer: Physical bridge
+  dependencies:
+  - FDS-CORE-003
+  - FDS-CORE-005
+  first_document: FDS-P6
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20269733
+  failure_condition: A time-varying boundary is maintained without updating, verifying,
+    storing, externalizing, protecting, or acting on any task-relevant distinction.
+- id: FDS-P6-002
+  title: Speed and Precision Jointly Increase Maintenance Burden
+  statement: Speed and precision jointly increase maintenance burden.
+  status: Operational bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS-P6-001
+  - rate-distortion demand
+  first_document: FDS-P6
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20269733
+  failure_condition: Faster and more precise maintenance is sustained indefinitely
+    at fixed representation and fixed resource input, with no extra dissipation, error,
+    latency, externalization, invariant compression, or failure.
+- id: FDS-P6-003
+  title: Sustainable Internal Rate Is Bottlenecked
+  statement: The sustainable internal rate is bottlenecked by sensing, updating, verification,
+    correction, action, and resources.
+  status: Bottleneck definition
+  layer: Physical bridge
+  dependencies:
+  - FDS-P6-001
+  - FDS-P6-002
+  first_document: FDS-P6
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20269733
+  failure_condition: A system exceeds its slowest internal channel indefinitely without
+    queueing, latency, loss, externalization, or resource expansion.
+- id: FDS-P6-004
+  title: Correction and Verification Belong in the Resource Ledger
+  statement: Correction and verification belong in the resource ledger.
+  status: O3-compatible physical bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS-P6-001
+  - FDS-P6-003
+  - O3 ledger principle
+  first_document: FDS-P6
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20269733
+  failure_condition: Physical correction, refresh, verification, synchronization,
+    overwrite, and recovery are cost-free under the stated implementation assumptions.
+- id: FDS-P6-005
+  title: Effective Causal Update Bandwidth Limits Real-Time Maintenance
+  statement: Effective causal update bandwidth limits real-time maintenance.
+  status: Physical/engineering bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS-P6-001
+  - finite causal reach
+  first_document: FDS-P6
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20269733
+  failure_condition: A finite observer integrates arbitrarily distant boundary-relevant
+    information within a finite update window with no latency, no prediction burden,
+    and no effective signal-speed limit.
+- id: FDS-P6-006
+  title: Externalization and Invariant Compression Are Relief Channels, Not Free Exits
+  statement: Externalization and invariant compression are relief channels, not free
+    exits.
+  status: P4/P7-compatible bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS-P6-001
+  - P4 side-record criterion
+  - P7 invariant quotient
+  first_document: FDS-P6
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20269733
+  failure_condition: External ledgers or invariant quotients reduce internal demand
+    with no write, synchronization, verification, protection, latency, or boundary-accounting
+    cost.
+- id: FDS-P6-007
+  title: Throughput Deficit Exit Theorem
+  statement: 'If rate-distortion demand exceeds sustainable internal throughput, the
+    system must enter at least one exit channel: higher resource/dissipation cost,
+    increased error, latency growth, task relaxation, externalization, invariant compression,
+    resource expansion, or boundary-maintenance failure.'
+  status: Formal exit theorem
+  layer: Physical bridge
+  dependencies:
+  - FDS-P6-001-006
+  first_document: FDS-P6
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20269733
+  failure_condition: Demand exceeds sustainable throughput with no exit channel and
+    no boundary failure, given a valid implementation mapping.
