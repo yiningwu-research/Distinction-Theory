@@ -372,4 +372,190 @@
 
 ---
 
+## P4 — Coarse-Grained Anti-Recurrence and Informational Hysteresis Claims
+
+### FDS-P4-001 — Non-Injective Truncation Creates Preimage Uncertainty
+
+**Statement.** Non-injective truncation creates preimage uncertainty relative to the effective record.
+
+**Status.** Formal information claim.
+
+**Dependencies.** FDS-CORE-005 (finite projection).
+
+**First timestamp.** FDS-P4 v1.0, 2026-05-18.
+
+**Failure condition.** A many-to-one map contains enough information, without side records or conventions, to distinguish all of its preimages.
+
+---
+
+### FDS-P4-002 — Bayes-Optimal Exact Recovery Bound
+
+**Statement.** Bayes-optimal guaranteed exact preimage recovery is bounded by the largest conditional preimage mass.
+
+**Status.** Decision-theoretic bound.
+
+**Dependencies.** FDS-P4-001; Bayes decision theory.
+
+**First timestamp.** FDS-P4 v1.0, 2026-05-18.
+
+**Failure condition.** A decoder using only Z exceeds the Bayes-optimal classifier bound for X|Z.
+
+---
+
+### FDS-P4-003 — Informational Hysteresis
+
+**Statement.** Capacity recovery does not recover distinctions erased during a bottleneck.
+
+**Status.** Informational hysteresis theorem.
+
+**Dependencies.** FDS-P4-001; side-record criterion.
+
+**First timestamp.** FDS-P4 v1.0, 2026-05-18.
+
+**Failure condition.** A finite system recovers exact task-relevant preimage distinctions after capacity restoration with no side record, no enlarged boundary, no external trace, and no hidden convention.
+
+---
+
+### FDS-P4-004 — Non-Lumpability Creates Hidden-State Memory
+
+**Statement.** Non-lumpable coarse-graining creates hidden-state memory and effective stochasticity.
+
+**Status.** Markov projection bridge.
+
+**Dependencies.** FDS-P4-001; lumpability condition.
+
+**First timestamp.** FDS-P4 v1.0, 2026-05-18.
+
+**Failure condition.** A non-lumpable projection closes exactly on Z_t alone without hidden state, history, or extra variables.
+
+---
+
+### FDS-P4-005 — Mori-Zwanzig Memory Burden
+
+**Statement.** Projection-induced memory burden has a Mori-Zwanzig analogue.
+
+**Status.** Relation to standard theory.
+
+**Dependencies.** FDS-P4-004; Mori-Zwanzig formalism.
+
+**First timestamp.** FDS-P4 v1.0, 2026-05-18.
+
+**Failure condition.** Eliminated variables never reappear as memory, noise, or closure error in projected dynamics, even when lumpability fails.
+
+---
+
+### FDS-P4-006 — Externalization Restores Inverse Information Only by Moving It
+
+**Statement.** Externalization restores inverse information only by moving it to a side ledger.
+
+**Status.** Accounting-boundary bridge.
+
+**Dependencies.** FDS-P4-001; external cost model.
+
+**First timestamp.** FDS-P4 v1.0, 2026-05-18.
+
+**Failure condition.** External logs restore exact recovery at no writing, retention, indexing, synchronization, retrieval, verification, or boundary-expansion cost.
+
+---
+
+### FDS-P4-007 — Finite-Memory Exit Theorem
+
+**Statement.** Sustained truncation requires residual irrecoverability, side records, externalization, task relaxation, or failure.
+
+**Status.** Finite-memory exit theorem.
+
+**Dependencies.** FDS-P4-001; FDS-P4-003.
+
+**First timestamp.** FDS-P4 v1.0, 2026-05-18.
+
+**Failure condition.** A finite system repeatedly applies non-injective truncation to task-relevant distinctions while preserving exact recovery with no residual uncertainty and no extra ledger.
+
+---
+
+## P7 — Topological Obstruction to Forgetting Claims
+
+### FDS-P7-001 — Invariant Side-Ledgers Suppress Residual Uncertainty
+
+**Statement.** Invariant side-ledgers can suppress P4 residual inverse uncertainty.
+
+**Status.** Formal FDS bridge.
+
+**Dependencies.** FDS-P4-001; invariant quotient map.
+
+**First timestamp.** FDS-P7 v1.0, 2026-05-18.
+
+**Failure condition.** A task variable factors through an accessible invariant, but H(V|Z,Q_inv) remains high under the stated assumptions.
+
+---
+
+### FDS-P7-002 — Noisy Invariant Recovery Bound
+
+**Statement.** Noisy invariant readout gives a bounded recovery penalty.
+
+**Status.** Information bound.
+
+**Dependencies.** FDS-P7-001; Fano-style bound.
+
+**First timestamp.** FDS-P7 v1.0, 2026-05-18.
+
+**Failure condition.** A noisy invariant readout with error probability δ exceeds the Fano-style bound without hidden information or changed task labels.
+
+---
+
+### FDS-P7-003 — Local Perturbations Cannot Change Protected Invariant
+
+**Statement.** Local perturbations cannot change a protected invariant without a protection-breaking event.
+
+**Status.** Topological bridge.
+
+**Dependencies.** FDS-P7-001; local perturbation family; protection margin.
+
+**First timestamp.** FDS-P7 v1.0, 2026-05-18.
+
+**Failure condition.** A local perturbation changes the invariant while the protection gap, locality assumptions, and accounting boundary remain intact.
+
+---
+
+### FDS-P7-004 — NHSE as Model Class
+
+**Statement.** NHSE supplies a model class for invariant-supported persistence.
+
+**Status.** Physical bridge.
+
+**Dependencies.** FDS-P7-003; point-gap winding; GBZ structure.
+
+**First timestamp.** FDS-P7 v1.0, 2026-05-18.
+
+**Failure condition.** NHSE is present, but it carries no stable recoverable distinction, no boundary-sensitive protection, and no robustness to local perturbation in the registered model class.
+
+---
+
+### FDS-P7-005 — Protection Relocates Entropy/Resource Accounting
+
+**Statement.** Protection relocates entropy/resource accounting rather than deleting it.
+
+**Status.** O3-compatible accounting claim.
+
+**Dependencies.** FDS-P7-001; O3 ledger principle.
+
+**First timestamp.** FDS-P7 v1.0, 2026-05-18.
+
+**Failure condition.** A protected invariant supplies indefinite maintenance with no drive, boundary, refresh, dissipation, verification, control, or external ledger.
+
+---
+
+### FDS-P7-006 — Dual-Channel Signature
+
+**Statement.** Protected phases can generate a dual forgetting/ledger signature.
+
+**Status.** Experimental bridge.
+
+**Dependencies.** FDS-P7-004; FDS-P7-005; operational forgetting rate.
+
+**First timestamp.** FDS-P7 v1.0, 2026-05-18.
+
+**Failure condition.** Confirmed protection-breaking transition with no feature in operational forgetting and no corresponding resource/entropy signature under a well-powered registered protocol.
+
+---
+
 *End of ledger. New claims added as documents are released or revised.*

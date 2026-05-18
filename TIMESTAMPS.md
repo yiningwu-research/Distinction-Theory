@@ -32,6 +32,8 @@ The timestamp index is not a claim of correctness. It is a record of public prio
 | FDS-M1 | Attention as distinction admission | 2026-05-17 | v1.0 | [10.5281/zenodo.20258570](https://doi.org/10.5281/zenodo.20258570) | fds-m1-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-m1) | Released |
 | FDS-M2 | Value and goal as boundary-relevance ranking | 2026-05-18 | v1.0 | [10.5281/zenodo.20262998](https://doi.org/10.5281/zenodo.20262998) | fds-m2-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-m2) | Released |
 | FDS-M3 | Meaning as actionable semantic quotient | 2026-05-18 | v1.0 | [10.5281/zenodo.20263294](https://doi.org/10.5281/zenodo.20263294) | fds-m3-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-m3) | Released |
+| FDS-P4 | Coarse-grained anti-recurrence / informational hysteresis | 2026-05-18 | v1.0 | [10.5281/zenodo.20265065](https://doi.org/10.5281/zenodo.20265065) | fds-p4-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-p4) | Released |
+| FDS-P7 | Topological obstruction to forgetting / invariant side-ledgers | 2026-05-18 | v1.0 | [10.5281/zenodo.20265386](https://doi.org/10.5281/zenodo.20265386) | fds-p7-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-p7) | Released |
 
 ---
 

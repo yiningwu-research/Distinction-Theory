@@ -6,6 +6,27 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-05-18 — FDS-P4 + FDS-P7 Release
+
+**Description:** Release of FDS-P4 v1.0 (coarse-grained anti-recurrence) and FDS-P7 v1.0 (topological obstruction to forgetting), completing the Physical Bridge Ladder through P7.
+
+### Added
+- FDS-P4 v1.0 — coarse-grained anti-recurrence and informational hysteresis.
+- FDS-P7 v1.0 — topological obstruction to forgetting, invariant side-ledgers, NHSE bridge.
+- P4 and P7 claim sections in CLAIM_LEDGER.md.
+- P4 and P7 entries in TIMESTAMPS.md.
+- `models/fds_p4/` and `models/fds_p7/` with simulation code and figures.
+- `papers/physics/` updated with P4 and P7 release PDFs.
+- Git tags: `fds-p4-v1.0`, `fds-p7-v1.0`.
+
+### Revised
+- PAPER_MAP.md — added P4 entry; renamed P3→P7, status changed from Planned to Released.
+- CLAIM_STATUS.md — added P4 row; updated P3→P7 row.
+- README.md — updated Key Documents.
+- CITATION.cff — added P4 and P7 DOIs to preferred-citation list.
+
+---
+
 ## 2026-05-18 — FDS-M3 Release
 
 **Description:** Release of FDS-M3 v1.0, the meaning paper in the agency-semantics spine.

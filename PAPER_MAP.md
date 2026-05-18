@@ -21,6 +21,7 @@ These papers define the project and its most operational entry point.
 | FDS-T3 | Capacity Overflow and Effective Stochasticity | common mechanism bridge | Released |
 | FDS-P1 | Physical Distinction Carriers and Erasure Maps | Physical Bridge Ladder I | Released |
 | FDS-P2 | Bounded-Memory Reversible Computation and Housekeeping Dissipation | Physical Bridge Ladder II | Released |
+| FDS-P4 | Coarse-Grained Anti-Recurrence and Informational Hysteresis | Physical Bridge Ladder IV / deep physical bridge | Released |
 | FDS-C1 | Active Cognitive Pruning Controls Reportable Access under Finite Capacity | cognitive bridge | Released |
 | FDS-E1 | Finite-Capacity Prospect Theory | behavioral economics bridge | Released |
 | FDS-A1 | Active Finite Distinction Systems as a Criterion for Artificial Agency | operational AI timestamp | Released / frozen |
@@ -35,7 +36,7 @@ These papers convert the framework into testable protocols.
 |---|---|---|---|
 | FDS-B1 | Minimal Protocol for Testing Boundary-Maintaining Artificial Agents | AI benchmark | Planned |
 | FDS-P5 | Capacity Deficit and Entropy Production in Active Finite Systems | Physical bridge / operational entropy-ledger test spine | Released | 10.5281/zenodo.20254259 |
-| FDS-P3 | Topological Obstruction to Forgetting | two-kink physical signature | Planned |
+| FDS-P7 | Topological Obstruction to Forgetting: Quotient Invariants and Non-Hermitian Skin Effects | topological protection bridge / Physical Bridge Ladder V | Released |
 
 FDS-P5 is the third Physical Bridge Ladder paper after P1 (Physical Bridge Ladder I) and P2 (Physical Bridge Ladder II). It also appears in Stage II because it provides deficit-crossing, ledger-decomposition, pruning-ROI, externalization-audit, and hysteresis protocols.
 

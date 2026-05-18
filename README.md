@@ -206,6 +206,8 @@ Recommended reading path:
 | **FDS-M1** | *Attention as Distinction Admission in Finite Systems: Capacity-Limited Gating, Boundary Relevance, and Tunnel Vision* | Released | [10.5281/zenodo.20258570](https://doi.org/10.5281/zenodo.20258570) |
 | **FDS-M2** | *Value and Goal as Boundary-Relevance Ranking: Causal Boundary Gradients, Goal Stability, and Value Drift under Finite Capacity* | Released | [10.5281/zenodo.20262998](https://doi.org/10.5281/zenodo.20262998) |
 | **FDS-M3** | *Meaning as Actionable Semantic Quotient: Policy-Preserving Compression, Semantic Deficit, and False Meaning under Finite Capacity* | Released | [10.5281/zenodo.20263294](https://doi.org/10.5281/zenodo.20263294) |
+| **FDS-P4** | *Coarse-Grained Anti-Recurrence and Informational Hysteresis in Finite Memory Systems: Lost Preimages, Side Records, and Capacity-Recovery Asymmetry* | Released | [10.5281/zenodo.20265065](https://doi.org/10.5281/zenodo.20265065) |
+| **FDS-P7** | *Topological Obstruction to Forgetting in Finite Distinction Systems: Quotient Invariants, Non-Hermitian Skin Effects, and Topological Side-Ledgers* | Released | [10.5281/zenodo.20265386](https://doi.org/10.5281/zenodo.20265386) |
 
 ---
 

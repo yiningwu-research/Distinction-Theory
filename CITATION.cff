@@ -120,6 +120,18 @@ preferred-citation:
       - family-names: Wu
         given-names: Yining
     date-released: 2026-05-18
+  - title: "Coarse-Grained Anti-Recurrence and Informational Hysteresis in Finite Memory Systems: Lost Preimages, Side Records, and Capacity-Recovery Asymmetry"
+    doi: 10.5281/zenodo.20265065
+    authors:
+      - family-names: Wu
+        given-names: Yining
+    date-released: 2026-05-18
+  - title: "Topological Obstruction to Forgetting in Finite Distinction Systems: Quotient Invariants, Non-Hermitian Skin Effects, and Topological Side-Ledgers"
+    doi: 10.5281/zenodo.20265386
+    authors:
+      - family-names: Wu
+        given-names: Yining
+    date-released: 2026-05-18
   - title: "Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems"
     doi: 10.5281/zenodo.20183373
     authors:
