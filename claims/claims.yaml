@@ -1168,3 +1168,916 @@
   failure_condition: A finite accessible bath stores more distinguishable side records
     than its operational capacity without collision, compression, indexing, erasure,
     or hidden expansion.
+- id: FDS-0
+  title: Active finite systems maintain boundaries under finite capac...
+  statement: Active finite systems maintain boundaries under finite capacity.
+  status: Core
+  layer: Core
+  dependencies:
+  - Formal definitions
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Mathematical counterexample under stated hypotheses.
+- id: FDS-B
+  title: Active boundary maintenance distinguishes active finite syst...
+  statement: Active boundary maintenance distinguishes active finite systems from
+    passive mappings.
+  status: Core
+  layer: Core
+  dependencies:
+  - Boundary variable + update participation
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Boundary update ablation has no effect on future maintenance
+    loss.
+- id: CC-1
+  title: Capacity deficit arises under finite representation and inco...
+  statement: Capacity deficit arises under finite representation and incompressible
+    task demand.
+  status: Core
+  layer: Core
+  dependencies:
+  - Finite capacity + task demand
+  first_document: CC
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Finite system maintains lossless model of incompressible environment
+    under bounded capacity.
+- id: CC-2
+  title: Capacity deficit forces approximation under bounded represen...
+  statement: Capacity deficit forces approximation under bounded representation.
+  status: Core
+  layer: Core
+  dependencies:
+  - Finite capacity + nontrivial task demand
+  first_document: CC
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Bounded systems maintain exact task-relevant representation without
+    compression, omission, or distortion.
+- id: CC-3
+  title: Approximation generates residual error requiring correction ...
+  statement: Approximation generates residual error requiring correction or tolerance.
+  status: Core
+  layer: Core
+  dependencies:
+  - Approximation + task loss
+  first_document: CC
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Approximation produces no residual burden under nontrivial task
+    constraints.
+- id: CC-5
+  title: Persistent capacity deficit drives pruning, externalization,...
+  statement: Persistent capacity deficit drives pruning, externalization, task relaxation,
+    or collapse.
+  status: Core
+  layer: Core
+  dependencies:
+  - Capacity deficit + finite resources
+  first_document: CC
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Persistent deficit produces none of the predicted response modes.
+- id: CC-6
+  title: Long-term persistence is favored by invariant-supported stru...
+  statement: Long-term persistence is favored by invariant-supported structure.
+  status: Core
+  layer: Core
+  dependencies:
+  - Perturbation family + identity predicate
+  first_document: CC
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Structures persist without invariant support under sustained
+    perturbation.
+- id: PB-FD
+  title: Physically instantiated identity maintenance requires finite...
+  statement: Physically instantiated identity maintenance requires finite distinguishability
+    budgets.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - Finite physical resources / bounded records
+  first_document: PB
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: A physical system maintains unlimited usable distinguishability
+    within finite resources.
+- id: PB-L
+  title: Logically irreversible updates incur a thermodynamic cost un...
+  statement: Logically irreversible updates incur a thermodynamic cost under Landauer
+    bridge assumptions.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - Standard Landauer conditions
+  first_document: PB
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Reliable irreversible erasure below the thermodynamic floor under
+    stated conditions.
+- id: O1
+  title: An observer can be characterized as a finite distinction reg...
+  statement: An observer can be characterized as a finite distinction register.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - Finite record capacity
+  first_document: O1
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Measurement records require no finite registration or boundary-stabilized
+    state.
+- id: O2
+  title: Time can be characterized as irreversible distinction update...
+  statement: Time can be characterized as irreversible distinction update.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - Truncation + irreversible update
+  first_document: O2
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Finite record-updates are fully invertible under bounded memory
+    in physical implementation.
+- id: O3
+  title: Finite-memory operational Second-Law channel for boundary-ma...
+  statement: Finite-memory operational Second-Law channel for boundary-maintaining
+    active finite systems.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - Finite memory + irreversible record reuse + accounting boundary
+  first_document: O3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Sustained residual record turnover at fixed tolerance with no
+    ledger cost and no exit channel under physical bridge assumptions.
+- id: FDS-O3-001
+  title: Finite memory creates record-reuse pressure under sustained ...
+  statement: Finite memory creates record-reuse pressure under sustained update unless
+    history is externalized, compressed, uncomputed, abandoned, or resources expand.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - Finite memory capacity
+  - O2 register time
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Bounded-memory system maintains unbounded usable history internally
+    without reuse, external memory, compression, or failure.
+- id: FDS-O3-002
+  title: Non-injective record reuse creates residual irreversibility ...
+  statement: Non-injective record reuse creates residual irreversibility relative
+    to an accounting boundary.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - O3-001
+  - O1 finite record formation
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Many-to-one update preserves full preimage information without
+    side records or enlarged boundary.
+- id: FDS-O3-003
+  title: Physical irreversible record reuse enters an entropy/resourc...
+  statement: Physical irreversible record reuse enters an entropy/resource ledger
+    under bridge assumptions.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - O3-002
+  - P1 Landauer bridge
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Reliable physical erasure or overwrite violates Landauer-style
+    accounting under stated assumptions.
+- id: FDS-O3-004
+  title: Stable finite records require housekeeping beyond logical er...
+  statement: Stable finite records require housekeeping beyond logical erasure.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - O3-003
+  - P2 garbage entropy rate
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Refresh, retention, clocking, synchronization, carrier repair,
+    and verification cost-free in every implementation.
+- id: FDS-O3-005
+  title: Externalization shifts the operational Second-Law channel ac...
+  statement: Externalization shifts the operational Second-Law channel across accounting
+    boundaries.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - O3-003
+  - P1 accounting boundary
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: External records impose no write, verification, retrieval, latency,
+    maintenance, or environmental cost.
+- id: FDS-O3-006
+  title: Pruning and invariant compression can reduce future entropy ...
+  statement: Pruning and invariant compression can reduce future entropy pressure
+    when task identity is preserved.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - O3-004
+  - T3 Phase-B invariants
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: No task-preserving quotient, pruning, or compression ever reduces
+    future record-maintenance cost.
+- id: FDS-O3-007
+  title: Sustained residual record turnover, fixed boundary tolerance...
+  statement: Sustained residual record turnover, fixed boundary tolerance, and zero
+    coupled entropy/resource cost cannot persist indefinitely.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - O3-001--006
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Finite active-boundary system maintains sustained residual turnover
+    at fixed tolerance with no ledger cost and no exit channel.
+- id: FDS-O3-008
+  title: Topological or invariant persistence redirects entropy accou...
+  statement: Topological or invariant persistence redirects entropy accounting rather
+    than violating the Second Law.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - O3-003
+  - Core invariant-supported persistence
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Protected invariant supplies perpetual work or global entropy-law
+    violation rather than bounded persistence or entropy relocation.
+- id: A1
+  title: Passive mappers do not qualify as strong FDS-agents.
+  statement: Passive mappers do not qualify as strong FDS-agents.
+  status: Operational
+  layer: Operational
+  dependencies:
+  - Boundary, update, resource, and persistence criteria
+  first_document: A1
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Update ablation does not affect future boundary-maintenance loss.
+- id: FDS-A1-D
+  title: Strong FDS-agency requires resource-governed persistence.
+  statement: Strong FDS-agency requires resource-governed persistence.
+  status: Operational
+  layer: Operational
+  dependencies:
+  - FDS tuple + persistence test
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: System satisfies task output competence without durable update
+    or boundary maintenance.
+- id: FDS-A1-C
+  title: FDS-agency requires action-to-future-state causal influence.
+  statement: FDS-agency requires action-to-future-state causal influence.
+  status: Operational
+  layer: Operational
+  dependencies:
+  - Intervention / transfer influence test
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Actions have no measurable influence on future boundary-relevant
+    states.
+- id: FDS-A1-E
+  title: Capacity-deficit estimation is required to distinguish scali...
+  statement: Capacity-deficit estimation is required to distinguish scaling from agency.
+  status: Operational
+  layer: Operational
+  dependencies:
+  - Task demand + system capacity estimate
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Systems qualify as agents without measurable boundary-relevant
+    capacity pressure.
+- id: B1
+  title: Boundary-maintaining artificial agents can be benchmarked by...
+  statement: Boundary-maintaining artificial agents can be benchmarked by ablation,
+    deficit, pruning, externalization, and persistence metrics.
+  status: Operational
+  layer: Operational
+  dependencies:
+  - Benchmark protocol
+  first_document: B1
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Metrics fail to distinguish passive mappers from active boundary-maintaining
+    systems.
+- id: L1
+  title: Life can be characterized as active pruning under boundary m...
+  statement: Life can be characterized as active pruning under boundary maintenance.
+  status: Domain Bridge
+  layer: Domain Bridge
+  dependencies:
+  - Biological mapping of pruning operator
+  first_document: L1
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Passive chemistry with zero maintenance sustains long-term non-equilibrium
+    identity without residue collapse.
+- id: FDS-L1-D
+  title: Death can be characterized as maintenance-attractor collapse...
+  statement: Death can be characterized as maintenance-attractor collapse.
+  status: Domain Bridge
+  layer: Domain Bridge
+  dependencies:
+  - Dynamical systems mapping
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Death trajectories systematically lack maintenance-attractor
+    loss or critical transition signatures.
+- id: C1
+  title: Consciousness can be modeled as a compression interface unde...
+  statement: Consciousness can be modeled as a compression interface under finite
+    capacity.
+  status: Domain Bridge
+  layer: Domain Bridge
+  dependencies:
+  - Cognitive compression + agency preservation
+  first_document: C1
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Capacity overflow does not require compression while agency and
+    report structure remain intact.
+- id: N1
+  title: Self-organization as boundary maintenance under finite capac...
+  statement: Self-organization as boundary maintenance under finite capacity.
+  status: Domain Bridge
+  layer: Domain Bridge
+  dependencies:
+  - FDS core definitions
+  - finite capacity
+  - budget exits
+  first_document: N1
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Freezing internal update has no effect on future boundary loss.
+- id: FDS-N1-001
+  title: Active self-organization requires boundary-maintenance-relev...
+  statement: Active self-organization requires boundary-maintenance-relevant internal
+    update.
+  status: Domain Bridge
+  layer: Domain Bridge
+  dependencies:
+  - Active boundary criterion
+  - finite capacity
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: System classified active even when update ablation has no effect
+    on future boundary loss.
+- id: FDS-N1-002
+  title: Effective organizational capacity is task-relative and reduc...
+  statement: Effective organizational capacity is task-relative and reduced by coordination,
+    verification, latency, resource, and externalization costs.
+  status: Domain Bridge
+  layer: Domain Bridge
+  dependencies:
+  - Finite capacity
+  - bottleneck logic
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Boundary tasks maintained at full fidelity when all capacity
+    factors fall below demand.
+- id: FDS-N1-003
+  title: Capacity deficit creates maintenance-load pressure, not nece...
+  statement: Capacity deficit creates maintenance-load pressure, not necessarily raw
+    complexity growth alone.
+  status: Domain Bridge
+  layer: Domain Bridge
+  dependencies:
+  - Capacity deficit
+  - maintenance load equation
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Increasing task demand never increases maintained load in any
+    implementation.
+- id: FDS-N1-004
+  title: Unbounded Phase-A growth is impossible under finite resource...
+  statement: Unbounded Phase-A growth is impossible under finite resource input without
+    exit channels.
+  status: Domain Bridge
+  layer: Domain Bridge
+  dependencies:
+  - Finite resource envelope
+  - exit channel taxonomy
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Active finite systems grow maintained load forever under finite
+    resources with no exit.
+- id: FDS-N1-005
+  title: Pruning has a viability window and is resource-gated.
+  statement: Pruning has a viability window and is resource-gated.
+  status: Domain Bridge
+  layer: Domain Bridge
+  dependencies:
+  - Resource-gated pruning equation
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Pruning strength has no systematic effect on overload or persistence
+    across controlled cases.
+- id: FDS-N1-006
+  title: Externalization shifts rather than removes boundary-maintena...
+  statement: Externalization shifts rather than removes boundary-maintenance burden,
+    and can clog the environment.
+  status: Domain Bridge
+  layer: Domain Bridge
+  dependencies:
+  - Accounting boundary
+  - externalization ROI equation
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: External records impose no storage, verification, retrieval,
+    or repair burden in any implementation.
+- id: FDS-N1-007
+  title: Phase-C catastrophic feedback couples boundary loss with res...
+  statement: Phase-C catastrophic feedback couples boundary loss with resource depletion.
+  status: Domain Bridge
+  layer: Domain Bridge
+  dependencies:
+  - Resource and loss dynamics
+  - positive loop gain
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Resource depletion and boundary loss never couple positively
+    in collapse-prone systems.
+- id: FDS-N1-008
+  title: Phase-B residues are biased toward low-maintenance, task-rel...
+  statement: Phase-B residues are biased toward low-maintenance, task-relevant invariants.
+  status: Domain Bridge
+  layer: Domain Bridge
+  dependencies:
+  - T3 Phase-B invariants
+  - survival score function
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Residues after overload show no bias toward reduced maintenance
+    cost or task relevance.
+- id: S1
+  title: Organizations and civilizations can be modeled as active fin...
+  statement: Organizations and civilizations can be modeled as active finite distinction
+    systems.
+  status: Domain Bridge
+  layer: Domain Bridge
+  dependencies:
+  - Institutional boundary + memory + resource budget
+  first_document: S1
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Persistent institutions avoid collapse under unlimited complexity
+    growth without pruning, externalization, or reform.
+- id: P3
+  title: 'Environmental forgetting: finite baths have limited accessib...'
+  statement: 'Environmental forgetting: finite baths have limited accessible recovery
+    capacity.'
+  status: Physical bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS core finite capacity
+  - P4 preimage loss
+  first_document: P3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Finite accessible environment preserves unbounded side records
+    indefinitely with no cost or degradation.
+- id: X1
+  title: 'High-risk bridge hypothesis: horizon-maintenance dark energy...'
+  statement: 'High-risk bridge hypothesis: horizon-maintenance dark energy under finite
+    distinguishability budgets.'
+  status: High-Risk
+  layer: High-Risk
+  dependencies:
+  - Cosmological bridge assumptions
+  first_document: X1
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Observations force exact Lambda behavior beyond stated tolerance.
+- id: P5
+  title: Deficit-driven entropy-production ledger for active finite s...
+  statement: Deficit-driven entropy-production ledger for active finite systems.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - FDS core definitions
+  - Landauer bridge
+  - accounting boundary
+  first_document: P5
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Sustained positive deficit shows zero measurable physical cost
+    under controlled conditions.
+- id: FDS-P5-001
+  title: Capacity deficit is task-relative information shortfall, not...
+  statement: Capacity deficit is task-relative information shortfall, not thermodynamic
+    entropy.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - Rate-distortion demand
+  - effective capacity
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Not empirical (boundary statement separating formal from physical).
+- id: FDS-P5-002
+  title: Sustained deficit plus boundary maintenance requires correct...
+  statement: Sustained deficit plus boundary maintenance requires correction, externalization,
+    or failure.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - Budget exits
+  - deficit definition
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Finite system maintains task at fixed tolerance despite deficit
+    and no correction or exit.
+- id: FDS-P5-003
+  title: Physical correction cycles induce audit channels through upd...
+  statement: Physical correction cycles induce audit channels through update, refresh,
+    repair, synchronization, externalization, and transport.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - Carrier criterion
+  - accounting boundary
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Sustained correction, refresh, repair, and sync at zero entropy
+    or resource cost.
+- id: FDS-P5-004
+  title: Logical erasure contributes a Landauer-style entropy-product...
+  statement: Logical erasure contributes a Landauer-style entropy-production floor
+    under bridge assumptions.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - Landauer bridge
+  - correction channels
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Logically irreversible erature violates Landauer lower bound
+    under stated assumptions.
+- id: FDS-P5-005
+  title: Housekeeping entropy persists even when logical erasure is z...
+  statement: Housekeeping entropy persists even when logical erasure is zero.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - Reversible embedding
+  - carrier maintenance
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Boundary maintenance, refresh, clocking, sensing, and repair
+    cost-free when erasure is zero.
+- id: FDS-P5-006
+  title: Externalization shifts rather than removes the entropy ledge...
+  statement: Externalization shifts rather than removes the entropy ledger.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - Accounting boundary
+  - externalization audit
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: External records impose no write, verification, retrieval, sync,
+    or maintenance cost.
+- id: FDS-P5-007
+  title: Pruning and invariant compression can reduce future entropy-...
+  statement: Pruning and invariant compression can reduce future entropy-production
+    pressure.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - T3 Phase-B invariants
+  - pruning ROI model
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: No task-preserving simplification ever reduces refresh, repair,
+    or verification cost.
+- id: FDS-P5-008
+  title: Deficit crossing predicts measurable signatures in heat, res...
+  statement: Deficit crossing predicts measurable signatures in heat, resource use,
+    latency, resets, or error floor.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - Deficit-crossing protocol
+  - ledger decomposition
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Positive deficit sustained with no measurable change in any physical
+    or task channel.
+- id: M0
+  title: 'Agency-semantics spine: attention, value, goal, meaning, age...'
+  statement: 'Agency-semantics spine: attention, value, goal, meaning, agency as finite-capacity
+    boundary-maintenance roles.'
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - FDS core
+  - O1 record formation
+  - O2 register time
+  - T3 capacity overflow
+  - N1 self-organization
+  first_document: M0
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Attention, value, goal, meaning, agency cannot be operationalized
+    as finite-capacity boundary-maintenance roles under any valid mapping.
+- id: FDS-M0-001
+  title: Attention is capacity-limited distinction admission into an ...
+  statement: Attention is capacity-limited distinction admission into an update channel.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - Finite capacity
+  - O1 record formation
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Attention-like selection occurs without capacity-limited admission
+    or update gating.
+- id: FDS-M0-002
+  title: Value is causal boundary-gradient relevance under finite cap...
+  statement: Value is causal boundary-gradient relevance under finite capacity.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - Active boundary
+  - M0-001
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Valuation fails to correlate with future boundary loss or resource
+    relevance.
+- id: FDS-M0-003
+  title: Goals are stabilized value rankings coupled to policies acro...
+  statement: Goals are stabilized value rankings coupled to policies across update
+    windows.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - M0-002
+  - O2 register time
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Goal-like behavior persists without memory, ranking, or policy
+    stabilization.
+- id: FDS-M0-004
+  title: Meaning is actionable compressed distinction preserved by a ...
+  statement: Meaning is actionable compressed distinction preserved by a task-sufficient
+    semantic quotient.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - M0-003
+  - T3 Phase-B invariants
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Compressed representations guide no action, prediction, or boundary
+    maintenance.
+- id: FDS-M0-005
+  title: Strong FDS agency requires updates or actions that causally ...
+  statement: Strong FDS agency requires updates or actions that causally affect future
+    boundary loss.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - Active boundary
+  - M0-004
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: System with no causal update effect qualifies as strong agent
+    under same criteria.
+- id: FDS-M0-006
+  title: Self-verifying agency requires internal or coupled verificat...
+  statement: Self-verifying agency requires internal or coupled verification of action
+    effects.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - M0-005
+  - verification deficit model
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: System classified self-verifying despite relying on external
+    host for verification.
+- id: FDS-M0-007
+  title: Misalignment is divergence between host and delegate action ...
+  statement: Misalignment is divergence between host and delegate action effects on
+    boundary loss.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - M0-005
+  - M0-006
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Divergent objectives do not produce divergent finite-difference
+    action effects.
+- id: FDS-M0-008
+  title: Culture and institutions are shared externalized distinction...
+  statement: Culture and institutions are shared externalized distinction infrastructures
+    with verification costs.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - M0-004
+  - N1 externalization burden
+  first_document: FDS
+  first_version: v1.0
+  first_date: '2026-05-12'
+  doi: ''
+  failure_condition: Externalized symbols function semantically without interpreter
+    or verification channel.
+- id: M1
+  title: Attention as capacity-limited distinction admission into an ...
+  statement: Attention as capacity-limited distinction admission into an update channel.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - FDS core finite capacity
+  - M0 attention definition
+  first_document: M1
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Attention-like selection shows no finite capacity, admission,
+    or update gating.
+- id: M2
+  title: Value and goal as boundary-relevance ranking under finite ca...
+  statement: Value and goal as boundary-relevance ranking under finite capacity.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - FDS core finite capacity
+  - M0 value/goal definition
+  first_document: M2
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Value-like ranking shows no relation to causal boundary effects,
+    costs, or horizons.
+- id: M3
+  title: Meaning as actionable semantic quotient under finite capacit...
+  statement: Meaning as actionable semantic quotient under finite capacity.
+  status: Bridge
+  layer: Bridge
+  dependencies:
+  - FDS core finite capacity
+  - M0 meaning definition
+  - M2 value-goal ranking
+  first_document: M3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Compressed representations function semantically without preserving
+    any action, prediction, verification, coordination, or boundary-relevant structure.
+- id: P4
+  title: 'Coarse-grained anti-recurrence: capacity recovery is not dis...'
+  statement: 'Coarse-grained anti-recurrence: capacity recovery is not distinction
+    recovery.'
+  status: Physical bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS core finite capacity
+  - FDS finite projection
+  first_document: P4
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Exact preimage recovery from truncated record alone without side
+    records or hidden inverse information.
+- id: P7
+  title: 'Topological obstruction: some task distinctions are protecte...'
+  statement: 'Topological obstruction: some task distinctions are protected against
+    local forgetting by invariant structure.'
+  status: Physical bridge
+  layer: Physical bridge
+  dependencies:
+  - P4-001
+  - invariant quotient map
+  - NHSE model class
+  first_document: P7
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Invariant fails to suppress residual uncertainty, or local perturbation
+    erases protected sector without protection-breaking event.
+- id: P6
+  title: 'Speed-precision-dissipation bounds: boundary maintenance req...'
+  statement: 'Speed-precision-dissipation bounds: boundary maintenance requires finite
+    update throughput.'
+  status: Physical bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS core finite capacity
+  - P4 anti-recurrence
+  - P7 invariant quotient
+  first_document: P6
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: ''
+  failure_condition: Finite system maintains arbitrarily fast and precise boundary
+    tasks at fixed capacity and fixed resource with no extra cost.

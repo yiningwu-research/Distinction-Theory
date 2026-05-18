@@ -1014,4 +1014,619 @@
 
 ---
 
+
+### CC-1 — Capacity deficit arises under finite representation and inco...
+
+**Statement.** Capacity deficit arises under finite representation and incompressible task demand.
+
+**Status.** Core.
+
+**Dependencies.** Finite capacity + task demand
+
+**First timestamp.** CC v1.0, 2026-05-18.
+
+**Failure condition.** Finite system maintains lossless model of incompressible environment under bounded capacity.
+
+---
+
+
+### CC-2 — Capacity deficit forces approximation under bounded represen...
+
+**Statement.** Capacity deficit forces approximation under bounded representation.
+
+**Status.** Core.
+
+**Dependencies.** Finite capacity + nontrivial task demand
+
+**First timestamp.** CC v1.0, 2026-05-18.
+
+**Failure condition.** Bounded systems maintain exact task-relevant representation without compression, omission, or distortion.
+
+---
+
+
+### CC-3 — Approximation generates residual error requiring correction ...
+
+**Statement.** Approximation generates residual error requiring correction or tolerance.
+
+**Status.** Core.
+
+**Dependencies.** Approximation + task loss
+
+**First timestamp.** CC v1.0, 2026-05-18.
+
+**Failure condition.** Approximation produces no residual burden under nontrivial task constraints.
+
+---
+
+
+### CC-5 — Persistent capacity deficit drives pruning, externalization,...
+
+**Statement.** Persistent capacity deficit drives pruning, externalization, task relaxation, or collapse.
+
+**Status.** Core.
+
+**Dependencies.** Capacity deficit + finite resources
+
+**First timestamp.** CC v1.0, 2026-05-18.
+
+**Failure condition.** Persistent deficit produces none of the predicted response modes.
+
+---
+
+
+### CC-6 — Long-term persistence is favored by invariant-supported stru...
+
+**Statement.** Long-term persistence is favored by invariant-supported structure.
+
+**Status.** Core.
+
+**Dependencies.** Perturbation family + identity predicate
+
+**First timestamp.** CC v1.0, 2026-05-18.
+
+**Failure condition.** Structures persist without invariant support under sustained perturbation.
+
+---
+
+
+### FDS-A1-C — FDS-agency requires action-to-future-state causal influence.
+
+**Statement.** FDS-agency requires action-to-future-state causal influence.
+
+**Status.** Operational.
+
+**Dependencies.** Intervention / transfer influence test
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Actions have no measurable influence on future boundary-relevant states.
+
+---
+
+
+### FDS-A1-D — Strong FDS-agency requires resource-governed persistence.
+
+**Statement.** Strong FDS-agency requires resource-governed persistence.
+
+**Status.** Operational.
+
+**Dependencies.** FDS tuple + persistence test
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** System satisfies task output competence without durable update or boundary maintenance.
+
+---
+
+
+### FDS-A1-E — Capacity-deficit estimation is required to distinguish scali...
+
+**Statement.** Capacity-deficit estimation is required to distinguish scaling from agency.
+
+**Status.** Operational.
+
+**Dependencies.** Task demand + system capacity estimate
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Systems qualify as agents without measurable boundary-relevant capacity pressure.
+
+---
+
+
+### FDS-L1-D — Death can be characterized as maintenance-attractor collapse...
+
+**Statement.** Death can be characterized as maintenance-attractor collapse.
+
+**Status.** Domain Bridge.
+
+**Dependencies.** Dynamical systems mapping
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Death trajectories systematically lack maintenance-attractor loss or critical transition signatures.
+
+---
+
+
+### FDS-M0-001 — Attention is capacity-limited distinction admission into an ...
+
+**Statement.** Attention is capacity-limited distinction admission into an update channel.
+
+**Status.** Bridge.
+
+**Dependencies.** Finite capacity; O1 record formation
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Attention-like selection occurs without capacity-limited admission or update gating.
+
+---
+
+
+### FDS-M0-002 — Value is causal boundary-gradient relevance under finite cap...
+
+**Statement.** Value is causal boundary-gradient relevance under finite capacity.
+
+**Status.** Bridge.
+
+**Dependencies.** Active boundary; M0-001
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Valuation fails to correlate with future boundary loss or resource relevance.
+
+---
+
+
+### FDS-M0-003 — Goals are stabilized value rankings coupled to policies acro...
+
+**Statement.** Goals are stabilized value rankings coupled to policies across update windows.
+
+**Status.** Bridge.
+
+**Dependencies.** M0-002; O2 register time
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Goal-like behavior persists without memory, ranking, or policy stabilization.
+
+---
+
+
+### FDS-M0-004 — Meaning is actionable compressed distinction preserved by a ...
+
+**Statement.** Meaning is actionable compressed distinction preserved by a task-sufficient semantic quotient.
+
+**Status.** Bridge.
+
+**Dependencies.** M0-003; T3 Phase-B invariants
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Compressed representations guide no action, prediction, or boundary maintenance.
+
+---
+
+
+### FDS-M0-005 — Strong FDS agency requires updates or actions that causally ...
+
+**Statement.** Strong FDS agency requires updates or actions that causally affect future boundary loss.
+
+**Status.** Bridge.
+
+**Dependencies.** Active boundary; M0-004
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** System with no causal update effect qualifies as strong agent under same criteria.
+
+---
+
+
+### FDS-M0-006 — Self-verifying agency requires internal or coupled verificat...
+
+**Statement.** Self-verifying agency requires internal or coupled verification of action effects.
+
+**Status.** Bridge.
+
+**Dependencies.** M0-005; verification deficit model
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** System classified self-verifying despite relying on external host for verification.
+
+---
+
+
+### FDS-M0-007 — Misalignment is divergence between host and delegate action ...
+
+**Statement.** Misalignment is divergence between host and delegate action effects on boundary loss.
+
+**Status.** Bridge.
+
+**Dependencies.** M0-005; M0-006
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Divergent objectives do not produce divergent finite-difference action effects.
+
+---
+
+
+### FDS-M0-008 — Culture and institutions are shared externalized distinction...
+
+**Statement.** Culture and institutions are shared externalized distinction infrastructures with verification costs.
+
+**Status.** Bridge.
+
+**Dependencies.** M0-004; N1 externalization burden
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Externalized symbols function semantically without interpreter or verification channel.
+
+---
+
+
+### FDS-N1-001 — Active self-organization requires boundary-maintenance-relev...
+
+**Statement.** Active self-organization requires boundary-maintenance-relevant internal update.
+
+**Status.** Domain Bridge.
+
+**Dependencies.** Active boundary criterion; finite capacity
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** System classified active even when update ablation has no effect on future boundary loss.
+
+---
+
+
+### FDS-N1-002 — Effective organizational capacity is task-relative and reduc...
+
+**Statement.** Effective organizational capacity is task-relative and reduced by coordination, verification, latency, resource, and externalization costs.
+
+**Status.** Domain Bridge.
+
+**Dependencies.** Finite capacity; bottleneck logic
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Boundary tasks maintained at full fidelity when all capacity factors fall below demand.
+
+---
+
+
+### FDS-N1-003 — Capacity deficit creates maintenance-load pressure, not nece...
+
+**Statement.** Capacity deficit creates maintenance-load pressure, not necessarily raw complexity growth alone.
+
+**Status.** Domain Bridge.
+
+**Dependencies.** Capacity deficit; maintenance load equation
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Increasing task demand never increases maintained load in any implementation.
+
+---
+
+
+### FDS-N1-004 — Unbounded Phase-A growth is impossible under finite resource...
+
+**Statement.** Unbounded Phase-A growth is impossible under finite resource input without exit channels.
+
+**Status.** Domain Bridge.
+
+**Dependencies.** Finite resource envelope; exit channel taxonomy
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Active finite systems grow maintained load forever under finite resources with no exit.
+
+---
+
+
+### FDS-N1-005 — Pruning has a viability window and is resource-gated.
+
+**Statement.** Pruning has a viability window and is resource-gated.
+
+**Status.** Domain Bridge.
+
+**Dependencies.** Resource-gated pruning equation
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Pruning strength has no systematic effect on overload or persistence across controlled cases.
+
+---
+
+
+### FDS-N1-006 — Externalization shifts rather than removes boundary-maintena...
+
+**Statement.** Externalization shifts rather than removes boundary-maintenance burden, and can clog the environment.
+
+**Status.** Domain Bridge.
+
+**Dependencies.** Accounting boundary; externalization ROI equation
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** External records impose no storage, verification, retrieval, or repair burden in any implementation.
+
+---
+
+
+### FDS-N1-007 — Phase-C catastrophic feedback couples boundary loss with res...
+
+**Statement.** Phase-C catastrophic feedback couples boundary loss with resource depletion.
+
+**Status.** Domain Bridge.
+
+**Dependencies.** Resource and loss dynamics; positive loop gain
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Resource depletion and boundary loss never couple positively in collapse-prone systems.
+
+---
+
+
+### FDS-N1-008 — Phase-B residues are biased toward low-maintenance, task-rel...
+
+**Statement.** Phase-B residues are biased toward low-maintenance, task-relevant invariants.
+
+**Status.** Domain Bridge.
+
+**Dependencies.** T3 Phase-B invariants; survival score function
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Residues after overload show no bias toward reduced maintenance cost or task relevance.
+
+---
+
+
+### FDS-O3-001 — Finite memory creates record-reuse pressure under sustained ...
+
+**Statement.** Finite memory creates record-reuse pressure under sustained update unless history is externalized, compressed, uncomputed, abandoned, or resources expand.
+
+**Status.** Bridge.
+
+**Dependencies.** Finite memory capacity; O2 register time
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Bounded-memory system maintains unbounded usable history internally without reuse, external memory, compression, or failure.
+
+---
+
+
+### FDS-O3-002 — Non-injective record reuse creates residual irreversibility ...
+
+**Statement.** Non-injective record reuse creates residual irreversibility relative to an accounting boundary.
+
+**Status.** Bridge.
+
+**Dependencies.** O3-001; O1 finite record formation
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Many-to-one update preserves full preimage information without side records or enlarged boundary.
+
+---
+
+
+### FDS-O3-003 — Physical irreversible record reuse enters an entropy/resourc...
+
+**Statement.** Physical irreversible record reuse enters an entropy/resource ledger under bridge assumptions.
+
+**Status.** Bridge.
+
+**Dependencies.** O3-002; P1 Landauer bridge
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Reliable physical erasure or overwrite violates Landauer-style accounting under stated assumptions.
+
+---
+
+
+### FDS-O3-004 — Stable finite records require housekeeping beyond logical er...
+
+**Statement.** Stable finite records require housekeeping beyond logical erasure.
+
+**Status.** Bridge.
+
+**Dependencies.** O3-003; P2 garbage entropy rate
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Refresh, retention, clocking, synchronization, carrier repair, and verification cost-free in every implementation.
+
+---
+
+
+### FDS-O3-005 — Externalization shifts the operational Second-Law channel ac...
+
+**Statement.** Externalization shifts the operational Second-Law channel across accounting boundaries.
+
+**Status.** Bridge.
+
+**Dependencies.** O3-003; P1 accounting boundary
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** External records impose no write, verification, retrieval, latency, maintenance, or environmental cost.
+
+---
+
+
+### FDS-O3-006 — Pruning and invariant compression can reduce future entropy ...
+
+**Statement.** Pruning and invariant compression can reduce future entropy pressure when task identity is preserved.
+
+**Status.** Bridge.
+
+**Dependencies.** O3-004; T3 Phase-B invariants
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** No task-preserving quotient, pruning, or compression ever reduces future record-maintenance cost.
+
+---
+
+
+### FDS-O3-007 — Sustained residual record turnover, fixed boundary tolerance...
+
+**Statement.** Sustained residual record turnover, fixed boundary tolerance, and zero coupled entropy/resource cost cannot persist indefinitely.
+
+**Status.** Bridge.
+
+**Dependencies.** O3-001--006
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Finite active-boundary system maintains sustained residual turnover at fixed tolerance with no ledger cost and no exit channel.
+
+---
+
+
+### FDS-O3-008 — Topological or invariant persistence redirects entropy accou...
+
+**Statement.** Topological or invariant persistence redirects entropy accounting rather than violating the Second Law.
+
+**Status.** Bridge.
+
+**Dependencies.** O3-003; Core invariant-supported persistence
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Protected invariant supplies perpetual work or global entropy-law violation rather than bounded persistence or entropy relocation.
+
+---
+
+
+### FDS-P5-001 — Capacity deficit is task-relative information shortfall, not...
+
+**Statement.** Capacity deficit is task-relative information shortfall, not thermodynamic entropy.
+
+**Status.** Bridge.
+
+**Dependencies.** Rate-distortion demand; effective capacity
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Not empirical (boundary statement separating formal from physical).
+
+---
+
+
+### FDS-P5-002 — Sustained deficit plus boundary maintenance requires correct...
+
+**Statement.** Sustained deficit plus boundary maintenance requires correction, externalization, or failure.
+
+**Status.** Bridge.
+
+**Dependencies.** Budget exits; deficit definition
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Finite system maintains task at fixed tolerance despite deficit and no correction or exit.
+
+---
+
+
+### FDS-P5-003 — Physical correction cycles induce audit channels through upd...
+
+**Statement.** Physical correction cycles induce audit channels through update, refresh, repair, synchronization, externalization, and transport.
+
+**Status.** Bridge.
+
+**Dependencies.** Carrier criterion; accounting boundary
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Sustained correction, refresh, repair, and sync at zero entropy or resource cost.
+
+---
+
+
+### FDS-P5-004 — Logical erasure contributes a Landauer-style entropy-product...
+
+**Statement.** Logical erasure contributes a Landauer-style entropy-production floor under bridge assumptions.
+
+**Status.** Bridge.
+
+**Dependencies.** Landauer bridge; correction channels
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Logically irreversible erature violates Landauer lower bound under stated assumptions.
+
+---
+
+
+### FDS-P5-005 — Housekeeping entropy persists even when logical erasure is z...
+
+**Statement.** Housekeeping entropy persists even when logical erasure is zero.
+
+**Status.** Bridge.
+
+**Dependencies.** Reversible embedding; carrier maintenance
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Boundary maintenance, refresh, clocking, sensing, and repair cost-free when erasure is zero.
+
+---
+
+
+### FDS-P5-006 — Externalization shifts rather than removes the entropy ledge...
+
+**Statement.** Externalization shifts rather than removes the entropy ledger.
+
+**Status.** Bridge.
+
+**Dependencies.** Accounting boundary; externalization audit
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** External records impose no write, verification, retrieval, sync, or maintenance cost.
+
+---
+
+
+### FDS-P5-007 — Pruning and invariant compression can reduce future entropy-...
+
+**Statement.** Pruning and invariant compression can reduce future entropy-production pressure.
+
+**Status.** Bridge.
+
+**Dependencies.** T3 Phase-B invariants; pruning ROI model
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** No task-preserving simplification ever reduces refresh, repair, or verification cost.
+
+---
+
+
+### FDS-P5-008 — Deficit crossing predicts measurable signatures in heat, res...
+
+**Statement.** Deficit crossing predicts measurable signatures in heat, resource use, latency, resets, or error floor.
+
+**Status.** Bridge.
+
+**Dependencies.** Deficit-crossing protocol; ledger decomposition
+
+**First timestamp.** FDS v1.0, 2026-05-12.
+
+**Failure condition.** Positive deficit sustained with no measurable change in any physical or task channel.
+
+---
+
 *End of ledger. New claims added as documents are released or revised.*
