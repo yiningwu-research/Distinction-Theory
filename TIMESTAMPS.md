@@ -36,6 +36,7 @@ The timestamp index is not a claim of correctness. It is a record of public prio
 | FDS-P7 | Topological obstruction to forgetting / invariant side-ledgers | 2026-05-18 | v1.0 | [10.5281/zenodo.20265386](https://doi.org/10.5281/zenodo.20265386) | fds-p7-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-p7) | Released |
 | FDS-P6 | Speed-precision-dissipation bounds / throughput bridge | 2026-05-18 | v1.0 | [10.5281/zenodo.20269733](https://doi.org/10.5281/zenodo.20269733) | fds-p6-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-p6) | Released |
 | FDS-P3 | Finite-bath memory / environmental forgetting / side records | 2026-05-18 | v1.0 | [10.5281/zenodo.20272541](https://doi.org/10.5281/zenodo.20272541) | fds-p3-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-p3) | Released |
+| FDS-X2 | Three fermion generations / CKM lower bound / CP/T identity transformation | 2026-05-18 | v1.0 | [10.5281/zenodo.20273302](https://doi.org/10.5281/zenodo.20273302) | fds-x2-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-x2) | Released |
 
 ---
 

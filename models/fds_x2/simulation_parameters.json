@@ -1,0 +1,11 @@
+{
+  "N_min": 1,
+  "N_max": 8,
+  "toy_cost_alpha_fields": 1.0,
+  "toy_cost_beta_cp": 0.55,
+  "toy_cost_gamma_yukawa": 0.2,
+  "toy_cost_delta_stability": 0.1,
+  "toy_identity_reward": 3.1,
+  "toy_benefit_saturation": "benefit switches on at N=3 and saturates thereafter",
+  "notes": "Deterministic algebraic/normal-form demonstrations; not empirical fits or precision flavor constraints."
+}

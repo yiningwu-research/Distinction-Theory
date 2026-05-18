@@ -6,6 +6,26 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-05-18 — FDS-X2 Release
+
+**Description:** Release of FDS-X2 v1.0, the fermion-generation paper in the high-risk physical bridge sequence.
+
+### Added
+- FDS-X2 v1.0 — three fermion generations as CP/T-asymmetric identity transformation.
+- X2 claim section in CLAIM_LEDGER.md (7 claims).
+- X2 entry in TIMESTAMPS.md.
+- `models/fds_x2/` with simulation code and figures.
+- `papers/FDS-X2/` with release PDF.
+- Git tag: `fds-x2-v1.0`.
+
+### Revised
+- PAPER_MAP.md — X2 status changed from planned to Released.
+- CLAIM_STATUS.md — added X2 row.
+- README.md — updated Key Documents.
+- CITATION.cff — added X2 DOI to preferred-citation list.
+
+---
+
 ## 2026-05-18 — FDS-P3 Release
 
 **Description:** Release of FDS-P3 v1.0, the environmental forgetting paper in the physical bridge sequence.

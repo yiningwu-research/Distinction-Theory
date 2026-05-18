@@ -1878,4 +1878,90 @@
 
 ---
 
+## X2 — Three Fermion Generations as CP/T-Asymmetric Identity Transformation Claims
+
+### FDS-X2-001 — CKM CP-Phase Lower Bound
+
+**Statement.** For a CKM-type N×N unitary charged-current mixing matrix, an irreducible physical complex phase exists if and only if N≥3.
+
+**Status.** Standard Model algebra / hard hook.
+
+**Dependencies.** FDS core finite capacity; Kobayashi-Maskawa 1973
+
+**First timestamp.** FDS-X2 v1.0, 2026-05-18.
+
+**Failure condition.** 10.5281/zenodo.20273302
+
+---
+
+### FDS-X2-002 — Weak-Sector CP/T Orientation Bridge
+
+**Statement.** Weak-sector identity transformation requires a rephasing-invariant CP/T orientation.
+
+**Status.** FDS/DT physical bridge.
+
+**Dependencies.** FDS-X2-001; CPT theorem
+
+**First timestamp.** FDS-X2 v1.0, 2026-05-18.
+
+**Failure condition.** 10.5281/zenodo.20273302
+
+---
+
+### FDS-X2-003 — Weak Charged Current as Identity-Transformation Carrier
+
+**Statement.** The weak charged current is the Standard Model identity-transformation carrier.
+
+**Status.** Interpretive bridge.
+
+**Dependencies.** FDS-X2-002; Standard Model flavor physics
+
+**First timestamp.** FDS-X2 v1.0, 2026-05-18.
+
+**Failure condition.** 10.5281/zenodo.20273302
+
+---
+
+### FDS-X2-004 — NCKM≥3 Conditional Theorem
+
+**Statement.** NCKM≥3 follows from the X2 chain: weak identity update → T/CP orientation → irreducible CKM phase → NCKM≥3.
+
+**Status.** Conditional theorem.
+
+**Dependencies.** FDS-X2-001; FDS-X2-002; FDS-X2-003
+
+**First timestamp.** FDS-X2 v1.0, 2026-05-18.
+
+**Failure condition.** 10.5281/zenodo.20273302
+
+---
+
+### FDS-X2-005 — Exactly Three Generations as Minimality Bridge
+
+**Statement.** Exactly three sequential chiral generations follow from minimality.
+
+**Status.** Higher-risk upper-bound bridge.
+
+**Dependencies.** FDS-X2-004; flavor-cost functional
+
+**First timestamp.** FDS-X2 v1.0, 2026-05-18.
+
+**Failure condition.** 10.5281/zenodo.20273302
+
+---
+
+### FDS-X2-006 — Nonzero Leptonic Dirac CP Phase
+
+**Statement.** If the lepton sector participates in the same CP/T-oriented identity-transformation requirement, and if the relevant observable channel is the Dirac PMNS phase, then X2 motivates a nonzero leptonic Dirac CP phase.
+
+**Status.** Optional PMNS extension.
+
+**Dependencies.** FDS-X2-002; PMNS phenomenology
+
+**First timestamp.** FDS-X2 v1.0, 2026-05-18.
+
+**Failure condition.** 10.5281/zenodo.20273302
+
+---
+
 *End of ledger. New claims added as documents are released or revised.*
