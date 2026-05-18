@@ -1964,4 +1964,118 @@
 
 ---
 
+## X3 — Functional Decomposition of the Four Fundamental Interactions Claims
+
+### FDS-X3-001 — Token Stabilization Requirement
+
+**Statement.** Finite distinction systems require token stabilization.
+
+**Status.** Operational / structural.
+
+**Dependencies.** FDS core; distinction persistence requirement
+
+**First timestamp.** FDS-X3 v1.0, 2026-05-18.
+
+**Failure condition.** 10.5281/zenodo.20274519
+
+---
+
+### FDS-X3-002 — Strong Interaction as Encapsulation
+
+**Statement.** The strong interaction realizes hadronic/baryonic encapsulation.
+
+**Status.** Physical mapping.
+
+**Dependencies.** FDS-X3-001; QCD
+
+**First timestamp.** FDS-X3 v1.0, 2026-05-18.
+
+**Failure condition.** 10.5281/zenodo.20274519
+
+---
+
+### FDS-X3-003 — Remote Detectability Requirement
+
+**Statement.** Finite distinction systems require remote detectability and compositional connection.
+
+**Status.** Operational / structural.
+
+**Dependencies.** FDS core; FDS-X3-001
+
+**First timestamp.** FDS-X3 v1.0, 2026-05-18.
+
+**Failure condition.** 10.5281/zenodo.20274519
+
+---
+
+### FDS-X3-004 — Electromagnetism as Connection
+
+**Statement.** Electromagnetism realizes connection and communication among charged sectors.
+
+**Status.** Physical mapping.
+
+**Dependencies.** FDS-X3-003; QED
+
+**First timestamp.** FDS-X3 v1.0, 2026-05-18.
+
+**Failure condition.** 10.5281/zenodo.20274519
+
+---
+
+### FDS-X3-005 — Identity Transformation Requirement
+
+**Statement.** Finite distinction systems require identity transformation and selective update.
+
+**Status.** Operational / structural.
+
+**Dependencies.** FDS core; FDS-X3-001; FDS-X3-003
+
+**First timestamp.** FDS-X3 v1.0, 2026-05-18.
+
+**Failure condition.** 10.5281/zenodo.20274519
+
+---
+
+### FDS-X3-006 — Weak Interaction as Identity Transformation
+
+**Statement.** The weak interaction realizes identity transformation, flavor change, and unstable-state pruning.
+
+**Status.** Physical mapping.
+
+**Dependencies.** FDS-X3-005; electroweak theory; FDS-X2
+
+**First timestamp.** FDS-X3 v1.0, 2026-05-18.
+
+**Failure condition.** 10.5281/zenodo.20274519
+
+---
+
+### FDS-X3-007 — Gravity as Global Boundary Accounting
+
+**Statement.** Gravity realizes global boundary / causal geometry / stress-energy accounting.
+
+**Status.** Physical bridge.
+
+**Dependencies.** FDS-X3-001; general relativity
+
+**First timestamp.** FDS-X3 v1.0, 2026-05-18.
+
+**Failure condition.** 10.5281/zenodo.20274519
+
+---
+
+### FDS-X3-008 — Minimal Distinction-Operation Closure
+
+**Statement.** The four interactions form a minimal distinction-operation closure.
+
+**Status.** Main X3 thesis.
+
+**Dependencies.** FDS-X3-001–007
+
+**First timestamp.** FDS-X3 v1.0, 2026-05-18.
+
+**Failure condition.** 10.5281/zenodo.20274519
+
+---
+
 *End of ledger. New claims added as documents are released or revised.*

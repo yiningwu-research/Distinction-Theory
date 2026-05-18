@@ -1,0 +1,13 @@
+case,closure_loss
+"all four
+present",0.0
+"remove
+enc",0.4791599999999999
+"remove
+conn",0.48999999999999994
+"remove
+id",0.7224999999999999
+"remove
+geom",0.8308749999999998
+"add redundant
+fifth mediator",0.0

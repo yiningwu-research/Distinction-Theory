@@ -1,0 +1,34 @@
+{
+  "description": "Deterministic normal-form operation-closure model for X3 v1.1.",
+  "operations": [
+    "Encapsulation\n(strong)",
+    "Connection\n(EM)",
+    "Identity transformation\n(weak)",
+    "Causal-geometric\naccounting (gravity)"
+  ],
+  "requirements": [
+    "hadronic/baryonic\ntokens",
+    "remote\ndetectability",
+    "sector conversion\n/ pruning",
+    "causal-geometric\nconstraint"
+  ],
+  "coverage_note": "Qualitative primary-role scores, not coupling constants or empirical weights.",
+  "weights": [
+    1.1,
+    1.0,
+    1.0,
+    1.15
+  ],
+  "target": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "redundant_fifth": [
+    0.0,
+    0.18,
+    0.0,
+    0.1
+  ]
+}

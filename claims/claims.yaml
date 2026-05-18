@@ -2174,3 +2174,121 @@
   doi: 10.5281/zenodo.20273302
   failure_condition: High-precision oscillation data establish δ_CP=0 or π under assumptions
     requiring leptonic CP/T-oriented identity transformation.
+- id: FDS-X3-001
+  title: Token Stabilization Requirement
+  statement: Finite distinction systems require token stabilization.
+  status: Operational / structural
+  layer: High-risk physical bridge
+  dependencies:
+  - FDS core
+  - distinction persistence requirement
+  first_document: FDS-X3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20274519
+  failure_condition: Stable material tokens exist with no encapsulation, binding,
+    exclusion, protection, or stabilization mechanism.
+- id: FDS-X3-002
+  title: Strong Interaction as Encapsulation
+  statement: The strong interaction realizes hadronic/baryonic encapsulation.
+  status: Physical mapping
+  layer: High-risk physical bridge
+  dependencies:
+  - FDS-X3-001
+  - QCD
+  first_document: FDS-X3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20274519
+  failure_condition: Hadronic stability is explained while confinement and color-neutral
+    binding play no token-stabilizing role.
+- id: FDS-X3-003
+  title: Remote Detectability Requirement
+  statement: Finite distinction systems require remote detectability and compositional
+    connection.
+  status: Operational / structural
+  layer: High-risk physical bridge
+  dependencies:
+  - FDS core
+  - FDS-X3-001
+  first_document: FDS-X3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20274519
+  failure_condition: Complex persistent structures form without any long-range or
+    mediating interaction enabling detectable coupling.
+- id: FDS-X3-004
+  title: Electromagnetism as Connection
+  statement: Electromagnetism realizes connection and communication among charged
+    sectors.
+  status: Physical mapping
+  layer: High-risk physical bridge
+  dependencies:
+  - FDS-X3-003
+  - QED
+  first_document: FDS-X3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20274519
+  failure_condition: Electromagnetism is shown not to underwrite chemistry, radiation,
+    sensing, or long-range charged communication.
+- id: FDS-X3-005
+  title: Identity Transformation Requirement
+  statement: Finite distinction systems require identity transformation and selective
+    update.
+  status: Operational / structural
+  layer: High-risk physical bridge
+  dependencies:
+  - FDS core
+  - FDS-X3-001
+  - FDS-X3-003
+  first_document: FDS-X3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20274519
+  failure_condition: Physical identity sectors never require conversion, decay, pruning,
+    or irreversible update.
+- id: FDS-X3-006
+  title: Weak Interaction as Identity Transformation
+  statement: The weak interaction realizes identity transformation, flavor change,
+    and unstable-state pruning.
+  status: Physical mapping
+  layer: High-risk physical bridge
+  dependencies:
+  - FDS-X3-005
+  - electroweak theory
+  - FDS-X2
+  first_document: FDS-X3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20274519
+  failure_condition: Flavor change, beta decay, and weak identity transformation are
+    realized by another carrier.
+- id: FDS-X3-007
+  title: Gravity as Global Boundary Accounting
+  statement: Gravity realizes global boundary / causal geometry / stress-energy accounting.
+  status: Physical bridge
+  layer: High-risk physical bridge
+  dependencies:
+  - FDS-X3-001
+  - general relativity
+  first_document: FDS-X3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20274519
+  failure_condition: Gravity is shown to be unrelated to geometry, causal structure,
+    horizons, stress-energy accounting, or global boundary constraints.
+- id: FDS-X3-008
+  title: Minimal Distinction-Operation Closure
+  statement: The four interactions form a minimal distinction-operation closure.
+  status: Main X3 thesis
+  layer: High-risk physical bridge
+  dependencies:
+  - FDS-X3-001–007
+  first_document: FDS-X3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20274519
+  failure_condition: A fundamental interaction implements a genuinely independent
+    operation class not reducible to encapsulation, connection, identity transformation,
+    or global boundary accounting.

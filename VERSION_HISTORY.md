@@ -6,6 +6,26 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-05-18 — FDS-X3 Release
+
+**Description:** Release of FDS-X3 v1.0, the four-interaction functional decomposition paper.
+
+### Added
+- FDS-X3 v1.0 — functional decomposition of the four fundamental interactions.
+- X3 claim section in CLAIM_LEDGER.md (8 claims).
+- X3 entry in TIMESTAMPS.md.
+- `models/fds_x3/` with simulation code and figures.
+- `papers/FDS-X3/` with release PDF.
+- Git tag: `fds-x3-v1.0`.
+
+### Revised
+- PAPER_MAP.md — X3 status changed from planned to Released.
+- CLAIM_STATUS.md — added X3 row.
+- README.md — updated Key Documents.
+- CITATION.cff — added X3 DOI to preferred-citation list.
+
+---
+
 ## 2026-05-18 — FDS-X2 Release
 
 **Description:** Release of FDS-X2 v1.0, the fermion-generation paper in the high-risk physical bridge sequence.

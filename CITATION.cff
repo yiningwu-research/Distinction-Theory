@@ -150,6 +150,12 @@ preferred-citation:
       - family-names: Wu
         given-names: Yining
     date-released: 2026-05-18
+  - title: "Functional Decomposition of the Four Fundamental Interactions: A Minimal Physical Distinction-Operation Closure for Finite Distinction Systems"
+    doi: 10.5281/zenodo.20274519
+    authors:
+      - family-names: Wu
+        given-names: Yining
+    date-released: 2026-05-18
   - title: "Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems"
     doi: 10.5281/zenodo.20183373
     authors:
