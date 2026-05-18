@@ -558,4 +558,104 @@
 
 ---
 
+## P6 — Speed, Precision, and Dissipation Bounds Claims
+
+### FDS-P6-001 — Boundary Maintenance Requires Finite Update Throughput
+
+**Statement.** Boundary maintenance requires finite update throughput.
+
+**Status.** Formal FDS claim.
+
+**Dependencies.** FDS-CORE-003 (finite capacity); FDS-CORE-005 (finite projection).
+
+**First timestamp.** FDS-P6 v1.0, 2026-05-18.
+
+**Failure condition.** A time-varying boundary is maintained without updating, verifying, storing, externalizing, protecting, or acting on any task-relevant distinction.
+
+---
+
+### FDS-P6-002 — Speed and Precision Jointly Increase Maintenance Burden
+
+**Statement.** Speed and precision jointly increase maintenance burden.
+
+**Status.** Operational bridge.
+
+**Dependencies.** FDS-P6-001; rate-distortion demand.
+
+**First timestamp.** FDS-P6 v1.0, 2026-05-18.
+
+**Failure condition.** Faster and more precise maintenance is sustained indefinitely at fixed representation and fixed resource input, with no extra dissipation, error, latency, externalization, invariant compression, or failure.
+
+---
+
+### FDS-P6-003 — Sustainable Internal Rate Is Bottlenecked
+
+**Statement.** The sustainable internal rate is bottlenecked by sensing, updating, verification, correction, action, and resources.
+
+**Status.** Bottleneck definition.
+
+**Dependencies.** FDS-P6-001; FDS-P6-002.
+
+**First timestamp.** FDS-P6 v1.0, 2026-05-18.
+
+**Failure condition.** A system exceeds its slowest internal channel indefinitely without queueing, latency, loss, externalization, or resource expansion.
+
+---
+
+### FDS-P6-004 — Correction and Verification Belong in the Resource Ledger
+
+**Statement.** Correction and verification belong in the resource ledger.
+
+**Status.** O3-compatible physical bridge.
+
+**Dependencies.** FDS-P6-001; FDS-P6-003; O3 ledger principle.
+
+**First timestamp.** FDS-P6 v1.0, 2026-05-18.
+
+**Failure condition.** Physical correction, refresh, verification, synchronization, overwrite, and recovery are cost-free under the stated implementation assumptions.
+
+---
+
+### FDS-P6-005 — Effective Causal Update Bandwidth Limits Real-Time Maintenance
+
+**Statement.** Effective causal update bandwidth limits real-time maintenance.
+
+**Status.** Physical/engineering bridge.
+
+**Dependencies.** FDS-P6-001; finite causal reach.
+
+**First timestamp.** FDS-P6 v1.0, 2026-05-18.
+
+**Failure condition.** A finite observer integrates arbitrarily distant boundary-relevant information within a finite update window with no latency, no prediction burden, and no effective signal-speed limit.
+
+---
+
+### FDS-P6-006 — Externalization and Invariant Compression Are Relief Channels, Not Free Exits
+
+**Statement.** Externalization and invariant compression are relief channels, not free exits.
+
+**Status.** P4/P7-compatible bridge.
+
+**Dependencies.** FDS-P6-001; P4 side-record criterion; P7 invariant quotient.
+
+**First timestamp.** FDS-P6 v1.0, 2026-05-18.
+
+**Failure condition.** External ledgers or invariant quotients reduce internal demand with no write, synchronization, verification, protection, latency, or boundary-accounting cost.
+
+---
+
+### FDS-P6-007 — Throughput Deficit Exit Theorem
+
+**Statement.** If rate-distortion demand exceeds sustainable internal throughput, the system must enter at least one exit channel: higher resource/dissipation cost, increased error, latency growth, task relaxation, externalization, invariant compression, resource expansion, or boundary-maintenance failure.
+
+**Status.** Formal exit theorem.
+
+**Dependencies.** FDS-P6-001–006.
+
+**First timestamp.** FDS-P6 v1.0, 2026-05-18.
+
+**Failure condition.** Demand exceeds sustainable throughput with no exit channel and no boundary failure, given a valid implementation mapping.
+
+---
+
 *End of ledger. New claims added as documents are released or revised.*

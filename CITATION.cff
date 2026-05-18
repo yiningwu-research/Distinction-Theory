@@ -132,6 +132,12 @@ preferred-citation:
       - family-names: Wu
         given-names: Yining
     date-released: 2026-05-18
+  - title: "Speed, Precision, and Dissipation Bounds for Boundary Maintenance in Finite Distinction Systems: Finite Update Windows, Bottleneck Throughput, and Resource-Ledger Exit Theorems"
+    doi: 10.5281/zenodo.20269733
+    authors:
+      - family-names: Wu
+        given-names: Yining
+    date-released: 2026-05-18
   - title: "Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems"
     doi: 10.5281/zenodo.20183373
     authors:

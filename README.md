@@ -208,6 +208,7 @@ Recommended reading path:
 | **FDS-M3** | *Meaning as Actionable Semantic Quotient: Policy-Preserving Compression, Semantic Deficit, and False Meaning under Finite Capacity* | Released | [10.5281/zenodo.20263294](https://doi.org/10.5281/zenodo.20263294) |
 | **FDS-P4** | *Coarse-Grained Anti-Recurrence and Informational Hysteresis in Finite Memory Systems: Lost Preimages, Side Records, and Capacity-Recovery Asymmetry* | Released | [10.5281/zenodo.20265065](https://doi.org/10.5281/zenodo.20265065) |
 | **FDS-P7** | *Topological Obstruction to Forgetting in Finite Distinction Systems: Quotient Invariants, Non-Hermitian Skin Effects, and Topological Side-Ledgers* | Released | [10.5281/zenodo.20265386](https://doi.org/10.5281/zenodo.20265386) |
+| **FDS-P6** | *Speed, Precision, and Dissipation Bounds for Boundary Maintenance in Finite Distinction Systems: Finite Update Windows, Bottleneck Throughput, and Resource-Ledger Exit Theorems* | Released | [10.5281/zenodo.20269733](https://doi.org/10.5281/zenodo.20269733) |
 
 ---
 

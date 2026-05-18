@@ -6,6 +6,26 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-05-18 — FDS-P6 Release
+
+**Description:** Release of FDS-P6 v1.0, the speed-precision-dissipation paper in the physical bridge sequence.
+
+### Added
+- FDS-P6 v1.0 — speed, precision, and dissipation bounds for boundary maintenance.
+- P6 claim section in CLAIM_LEDGER.md (7 claims).
+- P6 entry in TIMESTAMPS.md.
+- `models/fds_p6/` with simulation code and figures.
+- `papers/physics/` updated with P6 release PDF.
+- Git tag: `fds-p6-v1.0`.
+
+### Revised
+- PAPER_MAP.md — added P6 entry.
+- CLAIM_STATUS.md — added P6 row.
+- README.md — updated Key Documents.
+- CITATION.cff — added P6 DOI to preferred-citation list.
+
+---
+
 ## 2026-05-18 — FDS-P4 + FDS-P7 Release
 
 **Description:** Release of FDS-P4 v1.0 (coarse-grained anti-recurrence) and FDS-P7 v1.0 (topological obstruction to forgetting), completing the Physical Bridge Ladder through P7.

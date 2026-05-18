@@ -1,0 +1,8 @@
+parameter,value,description
+D_EFF,8.0,effective task dimension proxy
+DELTA,0.001,target failure probability in confidence term
+RESOURCE_LIMIT,240.0,illustrative sustainable internal throughput/resource threshold
+v_max_rel,1.0,normalized relativistic causal upper bound
+v_max_robot,0.25,normalized engineered sensor/actuator communication speed
+v_max_bio,0.06,normalized biological/neural/diffusive speed
+LANDAUER_J_PER_BIT_300K,2.870978885078724e-21,toy calibration only; not used as universal dissipation law
