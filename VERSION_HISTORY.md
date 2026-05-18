@@ -6,6 +6,26 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-05-18 — FDS-P3 Release
+
+**Description:** Release of FDS-P3 v1.0, the environmental forgetting paper in the physical bridge sequence.
+
+### Added
+- FDS-P3 v1.0 — finite-bath memory, Markovianization, and environmental forgetting.
+- P3 claim section in CLAIM_LEDGER.md (6 claims).
+- P3 entry in TIMESTAMPS.md.
+- `models/fds_p3/` with simulation code and figures.
+- `papers/physics/` updated with P3 release PDF.
+- Git tag: `fds-p3-v1.0`.
+
+### Revised
+- PAPER_MAP.md — added P3 entry.
+- CLAIM_STATUS.md — added P3 row.
+- README.md — updated Key Documents.
+- CITATION.cff — added P3 DOI to preferred-citation list.
+
+---
+
 ## 2026-05-18 — FDS-P6 Release
 
 **Description:** Release of FDS-P6 v1.0, the speed-precision-dissipation paper in the physical bridge sequence.

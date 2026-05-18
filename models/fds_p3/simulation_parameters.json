@@ -1,0 +1,21 @@
+{
+  "t_max": 120,
+  "n_time_points": 600,
+  "bath_sizes": [
+    16,
+    64,
+    256
+  ],
+  "mixing_rates": [
+    0.018,
+    0.035,
+    0.06
+  ],
+  "record_export_rate": 5.0,
+  "finite_bath_capacity": 260.0,
+  "task_alphabet_size": 8,
+  "residual_entropy_tolerance_h_tol_bits": 0.65,
+  "markov_threshold_eta": 0.05,
+  "resource_units": "normalized audit units",
+  "figures_are": "deterministic normal-form demonstrations, not empirical fits"
+}

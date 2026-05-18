@@ -22,6 +22,7 @@ These papers define the project and its most operational entry point.
 | FDS-P1 | Physical Distinction Carriers and Erasure Maps | Physical Bridge Ladder I | Released |
 | FDS-P2 | Bounded-Memory Reversible Computation and Housekeeping Dissipation | Physical Bridge Ladder II | Released |
 | FDS-P4 | Coarse-Grained Anti-Recurrence and Informational Hysteresis | Physical Bridge Ladder IV / deep physical bridge | Released |
+| FDS-P3 | Finite-Bath Memory, Markovianization, and Environmental Forgetting | environmental forgetting bridge | Released |
 | FDS-P6 | Speed, Precision, and Dissipation Bounds for Boundary Maintenance | throughput bridge / speed-precision-dissipation | Released |
 | FDS-C1 | Active Cognitive Pruning Controls Reportable Access under Finite Capacity | cognitive bridge | Released |
 | FDS-E1 | Finite-Capacity Prospect Theory | behavioral economics bridge | Released |

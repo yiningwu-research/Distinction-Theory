@@ -928,4 +928,90 @@
 
 ---
 
+## P3 — Finite-Bath Memory, Markovianization, and Environmental Forgetting Claims
+
+### FDS-P3-001 — Environmental Side Records Have Finite Accessible Recovery Capacity
+
+**Statement.** Environmental side records have finite accessible recovery capacity.
+
+**Status.** Operational FDS bridge.
+
+**Dependencies.** FDS-CORE-003; FDS-CORE-005
+
+**First timestamp.** FDS-P3 v1.0, 2026-05-18.
+
+**Failure condition.** 10.5281/zenodo.20272541
+
+---
+
+### FDS-P3-002 — Markovianization Is an Effective Forgetting Condition
+
+**Statement.** Markovianization is an effective forgetting condition.
+
+**Status.** Model-class bridge.
+
+**Dependencies.** FDS-P3-001; lumpability condition
+
+**First timestamp.** FDS-P3 v1.0, 2026-05-18.
+
+**Failure condition.** 10.5281/zenodo.20272541
+
+---
+
+### FDS-P3-003 — Memory Kernels Measure Unresolved Environmental Memory
+
+**Statement.** Memory kernels measure unresolved environmental memory.
+
+**Status.** Projection-form bridge.
+
+**Dependencies.** FDS-P3-001; projection operator methods
+
+**First timestamp.** FDS-P3 v1.0, 2026-05-18.
+
+**Failure condition.** 10.5281/zenodo.20272541
+
+---
+
+### FDS-P3-004 — Finite Baths Can Remember, Forget, and Recur
+
+**Statement.** Finite baths can remember temporarily, forget operationally, and recur.
+
+**Status.** Physical/model-class caveat.
+
+**Dependencies.** FDS-P3-001; finite bath capacity
+
+**First timestamp.** FDS-P3 v1.0, 2026-05-18.
+
+**Failure condition.** 10.5281/zenodo.20272541
+
+---
+
+### FDS-P3-005 — Environmental Forgetting Complements P4 Internal Truncation
+
+**Statement.** Environmental forgetting complements P4 internal truncation.
+
+**Status.** FDS bridge.
+
+**Dependencies.** FDS-P3-001; FDS-P4-001
+
+**First timestamp.** FDS-P3 v1.0, 2026-05-18.
+
+**Failure condition.** 10.5281/zenodo.20272541
+
+---
+
+### FDS-P3-006 — Bath Saturation Forces Collisions or Loss of Recoverability
+
+**Statement.** Bath saturation forces collisions, compression, externalization, verification cost, or loss of recoverability.
+
+**Status.** Finite-record theorem.
+
+**Dependencies.** FDS-P3-001; bath record capacity
+
+**First timestamp.** FDS-P3 v1.0, 2026-05-18.
+
+**Failure condition.** 10.5281/zenodo.20272541
+
+---
+
 *End of ledger. New claims added as documents are released or revised.*

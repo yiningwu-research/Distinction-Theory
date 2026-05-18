@@ -1,0 +1,10 @@
+condition,interpretation
+"H(X0|Mt,RtE,Y0:t) <= h_tol",environment recovers under residual entropy tolerance
+"H(X0|Mt,RtE,Y0:t) > h_tol and I(X0;Ehid_t)>0","hidden record exists, not operationally accessible"
+P_rec^E(t) >= 1-delta,Bayes classification recovery succeeds
+"inf E[d(X0,Xhat0)] <= epsilon",distortion/Bayes-risk recovery succeeds
+I(Zt+1;Ht|Zt) <= eta,operational Markovianization by history-advantage test
+M_env <= eta,operational Markovianization by registered JS closure test
+K_burden(T) > eta,unresolved bath memory still matters
+r_ext*T > C_B,finite-bath saturation or collision pressure
+invariant quotient exists,P7 protected bypass rather than bath recovery

@@ -1080,3 +1080,91 @@
   doi: 10.5281/zenodo.20269733
   failure_condition: Demand exceeds sustainable throughput with no exit channel and
     no boundary failure, given a valid implementation mapping.
+- id: FDS-P3-001
+  title: Environmental Side Records Have Finite Accessible Recovery Capacity
+  statement: Environmental side records have finite accessible recovery capacity.
+  status: Operational FDS bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS-CORE-003
+  - FDS-CORE-005
+  first_document: FDS-P3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20272541
+  failure_condition: A finite system recovers unbounded inverse information from the
+    environment through a finite observation channel with no latency, cost, degradation,
+    or boundary expansion.
+- id: FDS-P3-002
+  title: Markovianization Is an Effective Forgetting Condition
+  statement: Markovianization is an effective forgetting condition.
+  status: Model-class bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS-P3-001
+  - lumpability condition
+  first_document: FDS-P3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20272541
+  failure_condition: A projected process is treated as Markovian while accessible
+    history measurably improves prediction or boundary maintenance under the same
+    variables and accounting boundary.
+- id: FDS-P3-003
+  title: Memory Kernels Measure Unresolved Environmental Memory
+  statement: Memory kernels measure unresolved environmental memory.
+  status: Projection-form bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS-P3-001
+  - projection operator methods
+  first_document: FDS-P3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20272541
+  failure_condition: Eliminated variables never reappear as memory, noise, or closure
+    error in projected dynamics despite coupling and non-lumpable projection.
+- id: FDS-P3-004
+  title: Finite Baths Can Remember, Forget, and Recur
+  statement: Finite baths can remember temporarily, forget operationally, and recur.
+  status: Physical/model-class caveat
+  layer: Physical bridge
+  dependencies:
+  - FDS-P3-001
+  - finite bath capacity
+  first_document: FDS-P3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20272541
+  failure_condition: A finite bath is always exactly Markovian and never returns correlations
+    under any admissible finite-bath model.
+- id: FDS-P3-005
+  title: Environmental Forgetting Complements P4 Internal Truncation
+  statement: Environmental forgetting complements P4 internal truncation.
+  status: FDS bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS-P3-001
+  - FDS-P4-001
+  first_document: FDS-P3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20272541
+  failure_condition: Internal preimages are lost, yet environmental side records remain
+    fully accessible indefinitely with bounded cost and no accounting-boundary change.
+- id: FDS-P3-006
+  title: Bath Saturation Forces Collisions or Loss of Recoverability
+  statement: Bath saturation forces collisions, compression, externalization, verification
+    cost, or loss of recoverability.
+  status: Finite-record theorem
+  layer: Physical bridge
+  dependencies:
+  - FDS-P3-001
+  - bath record capacity
+  first_document: FDS-P3
+  first_version: v1.0
+  first_date: '2026-05-18'
+  doi: 10.5281/zenodo.20272541
+  failure_condition: A finite accessible bath stores more distinguishable side records
+    than its operational capacity without collision, compression, indexing, erasure,
+    or hidden expansion.

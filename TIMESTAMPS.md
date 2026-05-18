@@ -35,6 +35,7 @@ The timestamp index is not a claim of correctness. It is a record of public prio
 | FDS-P4 | Coarse-grained anti-recurrence / informational hysteresis | 2026-05-18 | v1.0 | [10.5281/zenodo.20265065](https://doi.org/10.5281/zenodo.20265065) | fds-p4-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-p4) | Released |
 | FDS-P7 | Topological obstruction to forgetting / invariant side-ledgers | 2026-05-18 | v1.0 | [10.5281/zenodo.20265386](https://doi.org/10.5281/zenodo.20265386) | fds-p7-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-p7) | Released |
 | FDS-P6 | Speed-precision-dissipation bounds / throughput bridge | 2026-05-18 | v1.0 | [10.5281/zenodo.20269733](https://doi.org/10.5281/zenodo.20269733) | fds-p6-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-p6) | Released |
+| FDS-P3 | Finite-bath memory / environmental forgetting / side records | 2026-05-18 | v1.0 | [10.5281/zenodo.20272541](https://doi.org/10.5281/zenodo.20272541) | fds-p3-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-p3) | Released |
 
 ---
 
