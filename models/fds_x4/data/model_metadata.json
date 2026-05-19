@@ -1,5 +1,5 @@
 {
-  "description": "Deterministic normal-form demonstrations for FDS-X4 v1.1. Values are conceptual/algebraic, not empirical fits.",
+  "description": "Deterministic normal-form demonstrations for FDS-X4 v1.0. Values are conceptual/algebraic, not empirical fits.",
   "figures": [
     "fig1_occupancy_algebra",
     "fig2_address_diversity",

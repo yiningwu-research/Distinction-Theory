@@ -8,10 +8,10 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ## 2026-05-19 — FDS-X5 Release
 
-**Description:** Release of FDS-X5 v1.2, mathematical form of physical law as invariant-form compression.
+**Description:** Release of FDS-X5 v1.0, mathematical form of physical law as invariant-form compression.
 
 ### Added
-- FDS-X5 v1.2 — invariant/equivariant/covariant law-form compression interpretation of mathematical physical law.
+- FDS-X5 v1.0 — invariant/equivariant/covariant law-form compression interpretation of mathematical physical law.
 - X5 claim section in CLAIM_LEDGER.md (8 claims).
 - models/fds_x5/ with code, figures, data for all 6 figures.
 
@@ -26,10 +26,10 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ## 2026-05-19 — FDS-X4 Release
 
-**Description:** Release of FDS-X4 v1.1, Pauli exclusion as finite address protection.
+**Description:** Release of FDS-X4 v1.0, Pauli exclusion as finite address protection.
 
 ### Added
-- FDS-X4 v1.1 — collision-free fermionic mode-address occupancy interpretation of Pauli exclusion.
+- FDS-X4 v1.0 — collision-free fermionic mode-address occupancy interpretation of Pauli exclusion.
 - X4 claim section in CLAIM_LEDGER.md (8 claims).
 - models/fds_x4/ with code, figures, data for all 6 figures.
 

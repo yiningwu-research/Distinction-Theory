@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate deterministic normal-form figures for FDS-X4 v1.1.
+"""Generate deterministic normal-form figures for FDS-X4 v1.0.
 
 The figures are conceptual/algebraic demonstrations, not empirical fits.
 """
@@ -193,7 +193,7 @@ fig.savefig(FIG / "fig6_address_protection_flow.png")
 plt.close(fig)
 
 meta = {
-    "description": "Deterministic normal-form demonstrations for FDS-X4 v1.1. Values are conceptual/algebraic, not empirical fits.",
+    "description": "Deterministic normal-form demonstrations for FDS-X4 v1.0. Values are conceptual/algebraic, not empirical fits.",
     "figures": [
         "fig1_occupancy_algebra",
         "fig2_address_diversity",

@@ -2303,7 +2303,7 @@
   - FDS core
   - canonical anticommutation relations
   first_document: FDS-X4
-  first_version: v1.1
+  first_version: v1.0
   first_date: '2026-05-19'
   doi: 10.5281/zenodo.20278029
   failure_condition: Identical Standard Model fermions are observed occupying the
@@ -2318,7 +2318,7 @@
   dependencies:
   - FDS-X4-001
   first_document: FDS-X4
-  first_version: v1.1
+  first_version: v1.0
   first_date: '2026-05-19'
   doi: 10.5281/zenodo.20278029
   failure_condition: Fermionic matter remains address-stable and structurally diverse
@@ -2332,7 +2332,7 @@
   dependencies:
   - FDS-X4-002
   first_document: FDS-X4
-  first_version: v1.1
+  first_version: v1.0
   first_date: '2026-05-19'
   doi: 10.5281/zenodo.20278029
   failure_condition: Electrons can all occupy the same atomic state while shell structure,
@@ -2348,7 +2348,7 @@
   - Dyson-Lenard
   - Lieb-Thirring
   first_document: FDS-X4
-  first_version: v1.1
+  first_version: v1.0
   first_date: '2026-05-19'
   doi: 10.5281/zenodo.20278029
   failure_condition: Stability of bulk ordinary matter is proven and observed without
@@ -2364,7 +2364,7 @@
   - FDS-X4-001
   - Bose-Einstein condensation
   first_document: FDS-X4
-  first_version: v1.1
+  first_version: v1.0
   first_date: '2026-05-19'
   doi: 10.5281/zenodo.20278029
   failure_condition: Bosonic mode occupation is shown to create multiple independently
@@ -2380,7 +2380,7 @@
   - FDS-X4-002
   - generalized statistics
   first_document: FDS-X4
-  first_version: v1.1
+  first_version: v1.0
   first_date: '2026-05-19'
   doi: 10.5281/zenodo.20278029
   failure_condition: Ordinary $3+1$-dimensional Standard Model fermions obey generalized
@@ -2397,7 +2397,7 @@
   - Chandrasekhar
   - TOV
   first_document: FDS-X4
-  first_version: v1.1
+  first_version: v1.0
   first_date: '2026-05-19'
   doi: 10.5281/zenodo.20278029
   failure_condition: White-dwarf or neutron-star support occurs without fermionic
@@ -2414,7 +2414,7 @@
   - FDS-X4-002
   - FDS-P6
   first_document: FDS-X4
-  first_version: v1.1
+  first_version: v1.0
   first_date: '2026-05-19'
   doi: 10.5281/zenodo.20278029
   failure_condition: Address scarcity exists and structural diversity is maintained
@@ -2429,7 +2429,7 @@
   - FDS core
   - finite capacity theorem
   first_document: FDS-X5
-  first_version: v1.2
+  first_version: v1.0
   first_date: '2026-05-19'
   doi: 10.5281/zenodo.20278236
   failure_condition: A finite system internally represents unbounded environmental
@@ -2444,7 +2444,7 @@
   dependencies:
   - FDS-X5-001
   first_document: FDS-X5
-  first_version: v1.2
+  first_version: v1.0
   first_date: '2026-05-19'
   doi: 10.5281/zenodo.20278236
   failure_condition: Portable physical regularities persist with no invariant, equivariant/covariant
@@ -2459,7 +2459,7 @@
   dependencies:
   - FDS-X5-002
   first_document: FDS-X5
-  first_version: v1.2
+  first_version: v1.0
   first_date: '2026-05-19'
   doi: 10.5281/zenodo.20278236
   failure_condition: Exact physical laws require no compression, no form stability,
@@ -2475,7 +2475,7 @@
   - FDS-X5-002
   - group theory
   first_document: FDS-X5
-  first_version: v1.2
+  first_version: v1.0
   first_date: '2026-05-19'
   doi: 10.5281/zenodo.20278236
   failure_condition: Asymmetric local rule tables are physically cheaper and more
@@ -2491,7 +2491,7 @@
   - FDS-X5-002
   - FDS-X5-003
   first_document: FDS-X5
-  first_version: v1.2
+  first_version: v1.0
   first_date: '2026-05-19'
   doi: 10.5281/zenodo.20278236
   failure_condition: Mathematics remains effective for law-like physics where no invariant/equivariant/covariant
@@ -2508,7 +2508,7 @@
   - semigroup theory
   - quantum theory
   first_document: FDS-X5
-  first_version: v1.2
+  first_version: v1.0
   first_date: '2026-05-19'
   doi: 10.5281/zenodo.20278236
   failure_condition: Their appearance is asserted as universal without model-class
@@ -2523,7 +2523,7 @@
   dependencies:
   - FDS-X5-002
   first_document: FDS-X5
-  first_version: v1.2
+  first_version: v1.0
   first_date: '2026-05-19'
   doi: 10.5281/zenodo.20278236
   failure_condition: Analogues are mistaken for derivations, predictions, or proofs.
@@ -2538,7 +2538,7 @@
   - FDS-X5-002
   - Wilson RG
   first_document: FDS-X5
-  first_version: v1.2
+  first_version: v1.0
   first_date: '2026-05-19'
   doi: 10.5281/zenodo.20278236
   failure_condition: All physical law is shown to reduce strictly to RG fixed points;

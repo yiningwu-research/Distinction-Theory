@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate deterministic normal-form figures for FDS-X5 v1.1.
+Generate deterministic normal-form figures for FDS-X5 v1.0.
 These demonstrations are conceptual and not empirical fits.
 """
 import json
@@ -17,7 +17,7 @@ DATA.mkdir(parents=True, exist_ok=True)
 
 np.random.seed(11)
 params = {
-    "version": "v1.1",
+    "version": "v1.0",
     "seed": 11,
     "num_raw_trajectories": 20,
     "trajectory_steps": 140,

@@ -1,5 +1,5 @@
 {
-  "version": "v1.1",
+  "version": "v1.0",
   "seed": 11,
   "num_raw_trajectories": 20,
   "trajectory_steps": 140,

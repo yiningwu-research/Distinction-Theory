@@ -2088,7 +2088,7 @@
 
 **Dependencies.** FDS core; canonical anticommutation relations
 
-**First timestamp.** FDS-X4 v1.1, 2026-05-19.
+**First timestamp.** FDS-X4 v1.0, 2026-05-19.
 
 **Failure condition.** 10.5281/zenodo.20278029
 
@@ -2102,7 +2102,7 @@
 
 **Dependencies.** FDS-X4-001
 
-**First timestamp.** FDS-X4 v1.1, 2026-05-19.
+**First timestamp.** FDS-X4 v1.0, 2026-05-19.
 
 **Failure condition.** 10.5281/zenodo.20278029
 
@@ -2116,7 +2116,7 @@
 
 **Dependencies.** FDS-X4-002
 
-**First timestamp.** FDS-X4 v1.1, 2026-05-19.
+**First timestamp.** FDS-X4 v1.0, 2026-05-19.
 
 **Failure condition.** 10.5281/zenodo.20278029
 
@@ -2130,7 +2130,7 @@
 
 **Dependencies.** FDS-X4-003; Dyson-Lenard; Lieb-Thirring
 
-**First timestamp.** FDS-X4 v1.1, 2026-05-19.
+**First timestamp.** FDS-X4 v1.0, 2026-05-19.
 
 **Failure condition.** 10.5281/zenodo.20278029
 
@@ -2144,7 +2144,7 @@
 
 **Dependencies.** FDS-X4-001; Bose-Einstein condensation
 
-**First timestamp.** FDS-X4 v1.1, 2026-05-19.
+**First timestamp.** FDS-X4 v1.0, 2026-05-19.
 
 **Failure condition.** 10.5281/zenodo.20278029
 
@@ -2158,7 +2158,7 @@
 
 **Dependencies.** FDS-X4-002; generalized statistics
 
-**First timestamp.** FDS-X4 v1.1, 2026-05-19.
+**First timestamp.** FDS-X4 v1.0, 2026-05-19.
 
 **Failure condition.** 10.5281/zenodo.20278029
 
@@ -2172,7 +2172,7 @@
 
 **Dependencies.** FDS-X4-002; Chandrasekhar; TOV
 
-**First timestamp.** FDS-X4 v1.1, 2026-05-19.
+**First timestamp.** FDS-X4 v1.0, 2026-05-19.
 
 **Failure condition.** 10.5281/zenodo.20278029
 
@@ -2186,7 +2186,7 @@
 
 **Dependencies.** FDS-X4-002; FDS-P6
 
-**First timestamp.** FDS-X4 v1.1, 2026-05-19.
+**First timestamp.** FDS-X4 v1.0, 2026-05-19.
 
 **Failure condition.** 10.5281/zenodo.20278029
 
@@ -2202,7 +2202,7 @@
 
 **Dependencies.** FDS core; finite capacity theorem
 
-**First timestamp.** FDS-X5 v1.2, 2026-05-19.
+**First timestamp.** FDS-X5 v1.0, 2026-05-19.
 
 **Failure condition.** 10.5281/zenodo.20278236
 
@@ -2216,7 +2216,7 @@
 
 **Dependencies.** FDS-X5-001
 
-**First timestamp.** FDS-X5 v1.2, 2026-05-19.
+**First timestamp.** FDS-X5 v1.0, 2026-05-19.
 
 **Failure condition.** 10.5281/zenodo.20278236
 
@@ -2230,7 +2230,7 @@
 
 **Dependencies.** FDS-X5-002
 
-**First timestamp.** FDS-X5 v1.2, 2026-05-19.
+**First timestamp.** FDS-X5 v1.0, 2026-05-19.
 
 **Failure condition.** 10.5281/zenodo.20278236
 
@@ -2244,7 +2244,7 @@
 
 **Dependencies.** FDS-X5-002; group theory
 
-**First timestamp.** FDS-X5 v1.2, 2026-05-19.
+**First timestamp.** FDS-X5 v1.0, 2026-05-19.
 
 **Failure condition.** 10.5281/zenodo.20278236
 
@@ -2258,7 +2258,7 @@
 
 **Dependencies.** FDS-X5-002; FDS-X5-003
 
-**First timestamp.** FDS-X5 v1.2, 2026-05-19.
+**First timestamp.** FDS-X5 v1.0, 2026-05-19.
 
 **Failure condition.** 10.5281/zenodo.20278236
 
@@ -2272,7 +2272,7 @@
 
 **Dependencies.** FDS-X5-002; semigroup theory; quantum theory
 
-**First timestamp.** FDS-X5 v1.2, 2026-05-19.
+**First timestamp.** FDS-X5 v1.0, 2026-05-19.
 
 **Failure condition.** 10.5281/zenodo.20278236
 
@@ -2286,7 +2286,7 @@
 
 **Dependencies.** FDS-X5-002
 
-**First timestamp.** FDS-X5 v1.2, 2026-05-19.
+**First timestamp.** FDS-X5 v1.0, 2026-05-19.
 
 **Failure condition.** 10.5281/zenodo.20278236
 
@@ -2300,7 +2300,7 @@
 
 **Dependencies.** FDS-X5-002; Wilson RG
 
-**First timestamp.** FDS-X5 v1.2, 2026-05-19.
+**First timestamp.** FDS-X5 v1.0, 2026-05-19.
 
 **Failure condition.** 10.5281/zenodo.20278236
 
