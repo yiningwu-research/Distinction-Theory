@@ -1586,13 +1586,13 @@
 
 ---
 
-## High-Risk Physical Bridge (X-Series) Claims
+## Frontier Physical Consequences (X-Series) Claims
 
 ### FDS-X1-001 — Horizon as Boundary
 
 **Statement.** Cosmological horizons act as finite distinguishability boundaries for observers.
 
-**Status.** High-risk bridge.
+**Status.** Frontier Physical Consequences (P3).
 
 **Dependencies.** FDS-T1-001; FDS-T1-002
 
@@ -1606,13 +1606,13 @@
 
 **Statement.** Horizon-maintenance cost has scale rho ~ H^2 M_Pl^2, consistent with dark energy.
 
-**Status.** High-risk bridge.
+**Status.** Frontier Physical Consequences (P3) — strong candidate (DE-1 B+/A−).
 
 **Dependencies.** FDS-X1-001
 
 **First timestamp.** FDS v1.0, 2026-05-18.
 
-**Failure condition.** Not directly falsifiable; usefulness can fail.
+**Failure condition.** Dark-energy scale is shown to be unrelated to any horizon-area or causal-boundary scale.
 
 ---
 
@@ -1620,13 +1620,13 @@
 
 **Statement.** Equation of state tends toward w=-1 from above (non-phantom) with possible mild evolution.
 
-**Status.** High-risk bridge.
+**Status.** Frontier Physical Consequences (P3) — candidate (DE-3 B−/C+, pending data closure).
 
 **Dependencies.** FDS-X1-002
 
 **First timestamp.** FDS v1.0, 2026-05-18.
 
-**Failure condition.** Not directly falsifiable; usefulness can fail.
+**Failure condition.** Robust unavoidable physical w<-1 not attributable to effective reconstruction, or model-independent reconstruction excludes physical non-phantom DE.
 
 ---
 

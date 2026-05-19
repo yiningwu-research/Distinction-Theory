@@ -49,12 +49,12 @@ FDS-P5 is the third Physical Bridge Ladder paper after P1 (Physical Bridge Ladde
 | FDS-L1 | Life and Death as Boundary Maintenance | biological bridge | Released |
 | FDS-N1 | Boundary-Maintaining Self-Organizing Systems under Finite Capacity | complex systems entry | Released |
 
-## Stage IV — High-Risk Physical Bridge Notes
+## Stage IV — Frontier Physical Consequences (P3)
 
-Priority notes, not completed physical theories.
+Physical consequences of finite distinguishability at the frontiers of cosmology, particle physics, and fundamental structure. P3 layer: high empirical closure requirements but grounded in P0–P2 physical rails.
 
 | Code | Title | Status |
-|---|---|---|
+|------|-------|--------|
 | FDS-X1 | Horizon-Maintenance Dark Energy: A Pre-Euclid Bridge Note | Released |
 | FDS-X2 | CP/T-Asymmetric Identity Transformation and Three Fermion Generations | Released |
 | FDS-X3 | Functional Decomposition of the Four Fundamental Interactions | Released |

@@ -95,7 +95,7 @@ The current DT/FDS public architecture, organized by layer:
 - **FDS-LC0** — life and cognitive science bridge claim registry. DOI: 10.5281/zenodo.20183373.
 - **FDS-C1** — reportable access under finite capacity. DOI: 10.5281/zenodo.20229509.
 - **FDS-A1** — artificial agency criterion (frozen public AI line). DOI: 10.5281/zenodo.20184709.
-- **FDS-X1** — horizon-maintenance dark energy (pre-Euclid bridge note). DOI: 10.5281/zenodo.20234391.
+- **FDS-X1** — frontier physical consequence: horizon-maintenance dark energy (pre-Euclid bridge note). DOI: 10.5281/zenodo.20234391.
 
 ### Operational Trident
 

@@ -327,7 +327,7 @@
   title: Horizon as Boundary
   statement: Cosmological horizons act as finite distinguishability boundaries for
     observers.
-  status: High-risk bridge
+  status: Frontier Physical Consequences (P3)
   layer: High-Risk
   dependencies:
   - FDS-T1-001
@@ -339,7 +339,7 @@
   title: Horizon-Maintenance Scale
   statement: Horizon-maintenance cost has scale rho ~ H^2 M_Pl^2, consistent with
     dark energy.
-  status: High-risk bridge
+  status: Frontier Physical Consequences (P3) — strong candidate (DE-1 B+/A−)
   layer: High-Risk
   dependencies:
   - FDS-X1-001
@@ -349,7 +349,8 @@
   title: Non-Phantom Dark Energy
   statement: Equation of state tends toward w=-1 from above (non-phantom) with possible
     mild evolution.
-  status: High-risk bridge
+  status: Frontier Physical Consequences (P3) — candidate (DE-3 B−/C+, pending data
+    closure)
   layer: High-Risk
   dependencies:
   - FDS-X1-002
@@ -2085,7 +2086,7 @@
   title: CKM CP-Phase Lower Bound
   statement: For a CKM-type N×N unitary charged-current mixing matrix, an irreducible
     physical complex phase exists if and only if N≥3.
-  status: Standard Model algebra / hard hook
+  status: Frontier Physical Consequences (P3)
   layer: High-risk physical bridge
   dependencies:
   - FDS core finite capacity
@@ -2100,7 +2101,7 @@
   title: Weak-Sector CP/T Orientation Bridge
   statement: Weak-sector identity transformation requires a rephasing-invariant CP/T
     orientation.
-  status: FDS/DT physical bridge
+  status: Frontier Physical Consequences (P3)
   layer: High-risk physical bridge
   dependencies:
   - FDS-X2-001
@@ -2116,7 +2117,7 @@
   title: Weak Charged Current as Identity-Transformation Carrier
   statement: The weak charged current is the Standard Model identity-transformation
     carrier.
-  status: Interpretive bridge
+  status: Frontier Physical Consequences (P3)
   layer: High-risk physical bridge
   dependencies:
   - FDS-X2-002
@@ -2131,7 +2132,7 @@
   title: NCKM≥3 Conditional Theorem
   statement: 'NCKM≥3 follows from the X2 chain: weak identity update → T/CP orientation
     → irreducible CKM phase → NCKM≥3.'
-  status: Conditional theorem
+  status: Frontier Physical Consequences (P3)
   layer: High-risk physical bridge
   dependencies:
   - FDS-X2-001
@@ -2146,7 +2147,7 @@
 - id: FDS-X2-005
   title: Exactly Three Generations as Minimality Bridge
   statement: Exactly three sequential chiral generations follow from minimality.
-  status: Higher-risk upper-bound bridge
+  status: Frontier Physical Consequences (P3)
   layer: High-risk physical bridge
   dependencies:
   - FDS-X2-004
@@ -2163,7 +2164,7 @@
   statement: If the lepton sector participates in the same CP/T-oriented identity-transformation
     requirement, and if the relevant observable channel is the Dirac PMNS phase, then
     X2 motivates a nonzero leptonic Dirac CP phase.
-  status: Optional PMNS extension
+  status: Frontier Physical Consequences (P3)
   layer: High-risk physical bridge
   dependencies:
   - FDS-X2-002
@@ -2177,7 +2178,7 @@
 - id: FDS-X3-001
   title: Token Stabilization Requirement
   statement: Finite distinction systems require token stabilization.
-  status: Operational / structural
+  status: Frontier Physical Consequences (P3)
   layer: High-risk physical bridge
   dependencies:
   - FDS core
@@ -2191,7 +2192,7 @@
 - id: FDS-X3-002
   title: Strong Interaction as Encapsulation
   statement: The strong interaction realizes hadronic/baryonic encapsulation.
-  status: Physical mapping
+  status: Frontier Physical Consequences (P3)
   layer: High-risk physical bridge
   dependencies:
   - FDS-X3-001
@@ -2206,7 +2207,7 @@
   title: Remote Detectability Requirement
   statement: Finite distinction systems require remote detectability and compositional
     connection.
-  status: Operational / structural
+  status: Frontier Physical Consequences (P3)
   layer: High-risk physical bridge
   dependencies:
   - FDS core
@@ -2221,7 +2222,7 @@
   title: Electromagnetism as Connection
   statement: Electromagnetism realizes connection and communication among charged
     sectors.
-  status: Physical mapping
+  status: Frontier Physical Consequences (P3)
   layer: High-risk physical bridge
   dependencies:
   - FDS-X3-003
@@ -2236,7 +2237,7 @@
   title: Identity Transformation Requirement
   statement: Finite distinction systems require identity transformation and selective
     update.
-  status: Operational / structural
+  status: Frontier Physical Consequences (P3)
   layer: High-risk physical bridge
   dependencies:
   - FDS core
@@ -2252,7 +2253,7 @@
   title: Weak Interaction as Identity Transformation
   statement: The weak interaction realizes identity transformation, flavor change,
     and unstable-state pruning.
-  status: Physical mapping
+  status: Frontier Physical Consequences (P3)
   layer: High-risk physical bridge
   dependencies:
   - FDS-X3-005
@@ -2267,7 +2268,7 @@
 - id: FDS-X3-007
   title: Gravity as Global Boundary Accounting
   statement: Gravity realizes global boundary / causal geometry / stress-energy accounting.
-  status: Physical bridge
+  status: Frontier Physical Consequences (P3)
   layer: High-risk physical bridge
   dependencies:
   - FDS-X3-001
@@ -2281,7 +2282,7 @@
 - id: FDS-X3-008
   title: Minimal Distinction-Operation Closure
   statement: The four interactions form a minimal distinction-operation closure.
-  status: Main X3 thesis
+  status: Frontier Physical Consequences (P3)
   layer: High-risk physical bridge
   dependencies:
   - FDS-X3-001–007
