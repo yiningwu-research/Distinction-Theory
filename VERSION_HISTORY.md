@@ -6,6 +6,24 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-05-19 — FDS-Q1 Release
+
+**Description:** Release of FDS-Q1 v1.0, finite record boundaries in Wigner's friend scenarios.
+
+### Added
+- FDS-Q1 v1.0 — finite record-boundary account of Wigner-friend tension; observer-relative record algebras, Fano-bound reconstruction limits, false promotion risk, objective availability, record-availability horizon.
+- Q1 claim section in CLAIM_LEDGER.md (placeholder, claims registered separately).
+- models/fds_q1/ with code, figures, data for all 6 figures.
+
+### Changed
+- PAPER_MAP.md: Q1 status changed from planned to Released (DOI: 10.5281/zenodo.20289215).
+- CLAIM_STATUS.md: added Q1 row.
+- TIMESTAMPS.md: added Q1 row with DOI and tag.
+- CITATION.cff: added Q1 preferred-citation entry.
+- README.md: Key Documents updated.
+
+---
+
 ## 2026-05-19 — FDS-T2 Release
 
 **Description:** Release of FDS-T2 v1.0, effective geometry as horizon boundary accounting.

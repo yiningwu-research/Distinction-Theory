@@ -76,6 +76,7 @@ The current DT/FDS public architecture, organized by layer:
 - **FDS-O2** — time as irreversible distinction update. DOI: 10.5281/zenodo.20249369.
 - **FDS-O3** — boundary maintenance and the Second Law under finite memory. DOI: 10.5281/zenodo.20255129.
 - **FDS-T3** — capacity overflow and effective stochasticity. DOI: 10.5281/zenodo.20250367.
+- **FDS-Q1** — finite record boundaries in Wigner's friend scenarios. DOI: 10.5281/zenodo.20289215.
 - **FDS-M0** — agency-semantics spine. DOI: 10.5281/zenodo.20257939.
 - **FDS-M1** — attention as distinction admission. DOI: 10.5281/zenodo.20258570.
 - **FDS-M2** — value and goal as boundary-relevance ranking. DOI: 10.5281/zenodo.20262998.
@@ -138,6 +139,7 @@ The public academic spine currently prioritizes:
 17. **FDS-C1** — reportable access under finite capacity.
 18. **FDS-E1** — finite-capacity prospect theory and boundary-risk preferences. SocArXiv preprint: 10.31235/osf.io/pj43k_v1.
 19. **FDS-X1** — pre-Euclid horizon-maintenance dark-energy bridge note (released).
+20. **FDS-Q1** — finite record boundaries in Wigner's friend scenarios (released).
 
 FDS-A1 is retained as a conceptual timestamp for artificial agency. Because the author may pursue commercial work in AI and robotics, this public repository does not develop proprietary AI architectures, AGI robotics systems, private benchmarks, or product-level implementation details. See [CONFLICTS_OF_INTEREST.md](CONFLICTS_OF_INTEREST.md).
 
@@ -178,6 +180,7 @@ Recommended reading path:
 18. **FDS-LC0 Life/Cognitive Bridge Registry** — life and cognitive science bridge claims.
 19. **FDS-E1 Finite-Capacity Prospect Theory** — state-dependent loss aversion, reference dependence, probability weighting. SocArXiv: 10.31235/osf.io/pj43k_v1.
 20. **FDS-X1 Horizon-Maintenance Dark Energy** — pre-Euclid bridge note.
+21. **FDS-Q1 Finite Record Boundaries in Wigner's Friend** — observer-relative record algebras, false promotion risk, record-availability horizon for quantum-device diagnostics.
 21. **DT-Archive** — broad claim-space archive and historical map.
 22. **FDS-A1** — retained as conceptual timestamp for artificial agency.
 
@@ -206,6 +209,7 @@ Recommended reading path:
 | **FDS-X4** | *Pauli Exclusion as Finite Address Protection: Collision-Free Fermionic Occupancy, Structural Diversity, and Stable Matter in Finite Distinction Systems* | Released | [10.5281/zenodo.20278029](https://doi.org/10.5281/zenodo.20278029) |
 | **FDS-X5** | *Mathematical Form of Physical Law as Invariant-Form Compression: Invariant, Equivariant, and Covariant Law Forms in Finite Distinction Systems* | Released | [10.5281/zenodo.20278236](https://doi.org/10.5281/zenodo.20278236) |
 | **FDS-E1** | *Finite-Capacity Prospect Theory: State-Dependent Risk Preferences under Resource, Attention, and Boundary-Risk Constraints* | Released | [10.5281/zenodo.20237306](https://doi.org/10.5281/zenodo.20237306) / [SocArXiv: 10.31235/osf.io/pj43k_v1](https://doi.org/10.31235/osf.io/pj43k_v1) |
+| **FDS-Q1** | *Finite Record Boundaries in Wigner's Friend Scenarios: Observer-Relative Distinguishability and Quantum Record Availability in Finite Distinction Systems* | Released | [10.5281/zenodo.20289215](https://doi.org/10.5281/zenodo.20289215) |
 | **FDS-N1** | *Boundary-Maintaining Self-Organizing Systems under Finite Capacity: Maintenance Load, Phase-C Collapse, and Invariant Selection* | Released | [10.5281/zenodo.20253151](https://doi.org/10.5281/zenodo.20253151) |
 | **FDS-P5** | *Capacity Deficit and Entropy Production in Active Finite Systems: A Generalized Dissipation Ledger for Boundary Maintenance* | Released | [10.5281/zenodo.20254259](https://doi.org/10.5281/zenodo.20254259) |
 | **FDS-O3** | *Boundary Maintenance and the Second Law under Finite Memory: Irreversible Record Reuse, Entropy Ledgers, and Operational Time Arrows* | Released | [10.5281/zenodo.20255129](https://doi.org/10.5281/zenodo.20255129) |

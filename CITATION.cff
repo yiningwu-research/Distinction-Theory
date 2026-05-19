@@ -174,8 +174,12 @@ preferred-citation:
       - family-names: Wu
         given-names: Yining
     date-released: 2026-05-19
-  - title: "Effective Geometry as Horizon Boundary Accounting: A Horizon-Ledger Bridge from Finite Distinguishability"
-    doi: 10.5281/zenodo.20284911
+  - title: "Finite Record Boundaries in Wigner's Friend Scenarios: Observer-Relative Distinguishability and Quantum Record Availability in Finite Distinction Systems"
+    doi: 10.5281/zenodo.20289215
+    authors:
+      - family-names: Wu
+        given-names: Yining
+    date-released: 2026-05-19
     authors:
       - family-names: Wu
         given-names: Yining
