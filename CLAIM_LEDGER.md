@@ -2306,4 +2306,190 @@
 
 ---
 
+## T2 — Effective Geometry as Horizon Boundary Accounting Claims
+
+### FDS-T2-001 — Bounded Distinguishability Budgets
+
+**Statement.** Finite observers have bounded distinguishability budgets.
+
+**Status.** FDS / T1 bridge.
+
+**Dependencies.** FDS-T1
+
+**First timestamp.** FDS-T2 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20284911
+
+---
+
+### FDS-T2-002 — Horizons as Causal-Access Boundaries
+
+**Statement.** Horizons act as causal-access boundaries.
+
+**Status.** GR / QFTCS bridge.
+
+**Dependencies.** General relativity
+
+**First timestamp.** FDS-T2 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20284911
+
+---
+
+### FDS-T2-003 — Horizon Entropy as Area Accounting
+
+**Statement.** Horizon entropy gives boundary area accounting.
+
+**Status.** Physical bridge.
+
+**Dependencies.** Bekenstein-Hawking entropy
+
+**First timestamp.** FDS-T2 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20284911
+
+---
+
+### FDS-T2-004 — Clausius-Type Horizon Closure
+
+**Statement.** Clausius-type local horizon closure links heat flow and entropy variation.
+
+**Status.** Model-class bridge.
+
+**Dependencies.** Jacobson 1995
+
+**First timestamp.** FDS-T2 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20284911
+
+---
+
+### FDS-T2-005 — Effective Geometry as Boundary Accounting
+
+**Statement.** Effective geometry can be read as boundary thermodynamic accounting for finite observers.
+
+**Status.** Main T2 thesis.
+
+**Dependencies.** T2-001–004
+
+**First timestamp.** FDS-T2 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20284911
+
+---
+
+### FDS-T2-006 — Non-Equilibrium Residual Terms
+
+**Statement.** Non-equilibrium horizon accounting may require residual terms.
+
+**Status.** Optional extension.
+
+**Dependencies.** T2-005
+
+**First timestamp.** FDS-T2 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20284911
+
+---
+
+## Q1 — Finite Record Boundaries in Wigner's Friend Claims
+
+### FDS-Q1-001 — Finite Distinction-Registers
+
+**Statement.** Observers are finite distinction-registers.
+
+**Status.** O1 operational bridge.
+
+**Dependencies.** FDS-O1
+
+**First timestamp.** FDS-Q1 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20289215
+
+---
+
+### FDS-Q1-002 — Facts Indexed by Record Boundaries
+
+**Statement.** Operationally assertable quantum facts are indexed by accessible record boundaries.
+
+**Status.** Q1 bridge.
+
+**Dependencies.** Q1-001
+
+**First timestamp.** FDS-Q1 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20289215
+
+---
+
+### FDS-Q1-003 — Wigner-Friend as Boundary-Promotion Problem
+
+**Statement.** Wigner-friend tension is a boundary-promotion problem.
+
+**Status.** Main Q1 thesis.
+
+**Dependencies.** Q1-001; Q1-002
+
+**First timestamp.** FDS-Q1 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20289215
+
+---
+
+### FDS-Q1-004 — Mutual Information Required for Promotion
+
+**Statement.** Friend-relative records require mutual information before promotion into Wigner's algebra.
+
+**Status.** Information-theoretic bridge.
+
+**Dependencies.** Q1-003
+
+**First timestamp.** FDS-Q1 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20289215
+
+---
+
+### FDS-Q1-005 — Ignorance Is Not Coherence
+
+**Statement.** Wigner's ignorance is not physical coherence.
+
+**Status.** Scope firewall.
+
+**Dependencies.** Q1-001
+
+**First timestamp.** FDS-Q1 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20289215
+
+---
+
+### FDS-Q1-006 — Objective Availability Requires Redundancy
+
+**Statement.** Objective availability requires redundancy, access, and record stability.
+
+**Status.** Testable bridge hypothesis.
+
+**Dependencies.** Q1-003; quantum Darwinism
+
+**First timestamp.** FDS-Q1 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20289215
+
+---
+
+### FDS-Q1-007 — Not a Born-Rule Derivation
+
+**Statement.** Q1 does not derive Born probabilities.
+
+**Status.** Scope firewall.
+
+**Dependencies.** Q1-001
+
+**First timestamp.** FDS-Q1 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20289215
+
+---
+
 *End of ledger. New claims added as documents are released or revised.*

@@ -2543,3 +2543,180 @@
   doi: 10.5281/zenodo.20278236
   failure_condition: All physical law is shown to reduce strictly to RG fixed points;
     or no law-like relation survives coarse-graining through any RG-type transformation.
+- id: FDS-T2-001
+  title: Bounded Distinguishability Budgets
+  statement: Finite observers have bounded distinguishability budgets.
+  status: FDS / T1 bridge
+  layer: Bridge
+  dependencies:
+  - FDS-T1
+  first_document: FDS-T2
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20284911
+  failure_condition: A finite physical observer reliably registers, preserves, and
+    updates unlimited distinctions with finite resources.
+- id: FDS-T2-002
+  title: Horizons as Causal-Access Boundaries
+  statement: Horizons act as causal-access boundaries.
+  status: GR / QFTCS bridge
+  layer: Bridge
+  dependencies:
+  - General relativity
+  first_document: FDS-T2
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20284911
+  failure_condition: Local causal horizons are irrelevant to observable access, entropy,
+    or thermodynamic accounting.
+- id: FDS-T2-003
+  title: Horizon Entropy as Area Accounting
+  statement: Horizon entropy gives boundary area accounting.
+  status: Physical bridge
+  layer: Physical bridge
+  dependencies:
+  - Bekenstein-Hawking entropy
+  first_document: FDS-T2
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20284911
+  failure_condition: Horizon entropy is shown not to scale with boundary area in the
+    stated horizon class.
+- id: FDS-T2-004
+  title: Clausius-Type Horizon Closure
+  statement: Clausius-type local horizon closure links heat flow and entropy variation.
+  status: Model-class bridge
+  layer: Bridge
+  dependencies:
+  - Jacobson 1995
+  first_document: FDS-T2
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20284911
+  failure_condition: Local horizon thermodynamics fails as an effective equation-of-state
+    model.
+- id: FDS-T2-005
+  title: Effective Geometry as Boundary Accounting
+  statement: Effective geometry can be read as boundary thermodynamic accounting for
+    finite observers.
+  status: Main T2 thesis
+  layer: Physical bridge
+  dependencies:
+  - FDS-T2-001
+  - FDS-T2-002
+  - FDS-T2-003
+  - FDS-T2-004
+  first_document: FDS-T2
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20284911
+  failure_condition: Geometry is shown to have no relation to causal access, horizon
+    entropy, stress-energy flow, or boundary constraints.
+- id: FDS-T2-006
+  title: Non-Equilibrium Residual Terms
+  statement: Non-equilibrium horizon accounting may require residual terms.
+  status: Optional extension
+  layer: Bridge
+  dependencies:
+  - FDS-T2-005
+  first_document: FDS-T2
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20284911
+  failure_condition: All non-equilibrium horizon settings obey pure equilibrium closure
+    with no entropy production, memory, noise, or correction terms.
+- id: FDS-Q1-001
+  title: Finite Distinction-Registers
+  statement: Observers are finite distinction-registers.
+  status: O1 operational bridge
+  layer: Bridge
+  dependencies:
+  - FDS-O1
+  first_document: FDS-Q1
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20289215
+  failure_condition: Registered observations require no finite carrier, boundary, readout,
+    record stability, or update capacity.
+- id: FDS-Q1-002
+  title: Facts Indexed by Record Boundaries
+  statement: Operationally assertable quantum facts are indexed by accessible record
+    boundaries.
+  status: Q1 bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS-Q1-001
+  first_document: FDS-Q1
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20289215
+  failure_condition: Operational facts can be asserted by a finite observer without
+    any stable accessible record or reproducible trace.
+- id: FDS-Q1-003
+  title: Wigner-Friend as Boundary-Promotion Problem
+  statement: Wigner-friend tension is a boundary-promotion problem.
+  status: Main Q1 thesis
+  layer: Physical bridge
+  dependencies:
+  - FDS-Q1-001
+  - FDS-Q1-002
+  first_document: FDS-Q1
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20289215
+  failure_condition: Contradictions persist after all accessible record boundaries,
+    channels, and state-assignment domains are separated.
+- id: FDS-Q1-004
+  title: Mutual Information Required for Promotion
+  statement: Friend-relative records require mutual information before promotion into
+    Wigner's algebra.
+  status: Information-theoretic bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS-Q1-003
+  first_document: FDS-Q1
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20289215
+  failure_condition: A Wigner-accessible fact is obtained with vanishing cross-boundary
+    mutual information and no physical record channel.
+- id: FDS-Q1-005
+  title: Ignorance Is Not Coherence
+  statement: Wigner's ignorance is not physical coherence.
+  status: Scope firewall
+  layer: Bridge
+  dependencies:
+  - FDS-Q1-001
+  first_document: FDS-Q1
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20289215
+  failure_condition: The paper is interpreted as inferring coherent lab states from
+    missing classical information alone.
+- id: FDS-Q1-006
+  title: Objective Availability Requires Redundancy
+  statement: Objective availability requires redundancy, access, and record stability.
+  status: Testable bridge hypothesis
+  layer: Physical bridge
+  dependencies:
+  - FDS-Q1-003
+  - quantum Darwinism
+  first_document: FDS-Q1
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20289215
+  failure_condition: Observers converge on macroscopic records without redundancy,
+    access, or stable records.
+- id: FDS-Q1-007
+  title: Not a Born-Rule Derivation
+  statement: Q1 does not derive Born probabilities.
+  status: Scope firewall
+  layer: Bridge
+  dependencies:
+  - FDS-Q1-001
+  first_document: FDS-Q1
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20289215
+  failure_condition: The paper is interpreted as a probability or Born-rule derivation
+    rather than a conditional record-availability theory.
