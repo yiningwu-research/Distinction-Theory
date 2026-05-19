@@ -91,7 +91,7 @@ The current DT/FDS public architecture, organized by layer:
 ### Domain Bridges
 
 - **FDS-N1** — boundary-maintaining self-organizing systems. DOI: 10.5281/zenodo.20253151.
-- **FDS-E1** — finite-capacity prospect theory. DOI: 10.5281/zenodo.20237306.
+- **FDS-E1** — finite-capacity prospect theory. DOI: 10.5281/zenodo.20237306. Also available at SocArXiv: 10.31235/osf.io/pj43k_v1.
 - **FDS-L1** — active pruning and protocell-like systems. DOI pending.
 - **FDS-LC0** — life and cognitive science bridge claim registry. DOI: 10.5281/zenodo.20183373.
 - **FDS-C1** — reportable access under finite capacity. DOI: 10.5281/zenodo.20229509.
@@ -136,7 +136,7 @@ The public academic spine currently prioritizes:
 15. **FDS-M3** — meaning as actionable semantic quotient.
 16. **FDS-L1** — active pruning and artificial-life persistence.
 17. **FDS-C1** — reportable access under finite capacity.
-18. **FDS-E1** — finite-capacity prospect theory and boundary-risk preferences.
+18. **FDS-E1** — finite-capacity prospect theory and boundary-risk preferences. SocArXiv preprint: 10.31235/osf.io/pj43k_v1.
 19. **FDS-X1** — pre-Euclid horizon-maintenance dark-energy bridge note (released).
 
 FDS-A1 is retained as a conceptual timestamp for artificial agency. Because the author may pursue commercial work in AI and robotics, this public repository does not develop proprietary AI architectures, AGI robotics systems, private benchmarks, or product-level implementation details. See [CONFLICTS_OF_INTEREST.md](CONFLICTS_OF_INTEREST.md).
@@ -176,7 +176,7 @@ Recommended reading path:
 16. **FDS-L1 Active Pruning** — artificial-life, protocell-like systems, persistence-collapse transitions.
 17. **FDS-C1 Reportable Access under Finite Capacity** — cognitive reportability paper.
 18. **FDS-LC0 Life/Cognitive Bridge Registry** — life and cognitive science bridge claims.
-19. **FDS-E1 Finite-Capacity Prospect Theory** — state-dependent loss aversion, reference dependence, probability weighting.
+19. **FDS-E1 Finite-Capacity Prospect Theory** — state-dependent loss aversion, reference dependence, probability weighting. SocArXiv: 10.31235/osf.io/pj43k_v1.
 20. **FDS-X1 Horizon-Maintenance Dark Energy** — pre-Euclid bridge note.
 21. **DT-Archive** — broad claim-space archive and historical map.
 22. **FDS-A1** — retained as conceptual timestamp for artificial agency.
@@ -205,7 +205,7 @@ Recommended reading path:
 | **FDS-X3** | *Functional Decomposition of the Four Fundamental Interactions: A Minimal Physical Distinction-Operation Closure for Finite Distinction Systems* | Released | [10.5281/zenodo.20274519](https://doi.org/10.5281/zenodo.20274519) |
 | **FDS-X4** | *Pauli Exclusion as Finite Address Protection: Collision-Free Fermionic Occupancy, Structural Diversity, and Stable Matter in Finite Distinction Systems* | Released | [10.5281/zenodo.20278029](https://doi.org/10.5281/zenodo.20278029) |
 | **FDS-X5** | *Mathematical Form of Physical Law as Invariant-Form Compression: Invariant, Equivariant, and Covariant Law Forms in Finite Distinction Systems* | Released | [10.5281/zenodo.20278236](https://doi.org/10.5281/zenodo.20278236) |
-| **FDS-E1** | *Finite-Capacity Prospect Theory: State-Dependent Risk Preferences under Resource, Attention, and Boundary-Risk Constraints* | Released | [10.5281/zenodo.20237306](https://doi.org/10.5281/zenodo.20237306) |
+| **FDS-E1** | *Finite-Capacity Prospect Theory: State-Dependent Risk Preferences under Resource, Attention, and Boundary-Risk Constraints* | Released | [10.5281/zenodo.20237306](https://doi.org/10.5281/zenodo.20237306) / [SocArXiv: 10.31235/osf.io/pj43k_v1](https://doi.org/10.31235/osf.io/pj43k_v1) |
 | **FDS-N1** | *Boundary-Maintaining Self-Organizing Systems under Finite Capacity: Maintenance Load, Phase-C Collapse, and Invariant Selection* | Released | [10.5281/zenodo.20253151](https://doi.org/10.5281/zenodo.20253151) |
 | **FDS-P5** | *Capacity Deficit and Entropy Production in Active Finite Systems: A Generalized Dissipation Ledger for Boundary Maintenance* | Released | [10.5281/zenodo.20254259](https://doi.org/10.5281/zenodo.20254259) |
 | **FDS-O3** | *Boundary Maintenance and the Second Law under Finite Memory: Irreversible Record Reuse, Entropy Ledgers, and Operational Time Arrows* | Released | [10.5281/zenodo.20255129](https://doi.org/10.5281/zenodo.20255129) |
