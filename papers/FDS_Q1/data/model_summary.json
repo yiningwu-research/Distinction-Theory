@@ -1,0 +1,15 @@
+{
+  "normal_form_status": "schematic, not quantum dynamical simulation",
+  "boundary_promotion_formula": "I/H = 1 - exp(-lambda*x), M/H = exp(-lambda*x)",
+  "lambda_x": 4.2,
+  "logistic_agreement_formula": "P_agree(x) = 1/(1+exp(-a*(x-x_c)))",
+  "toy_model": {
+    "p0": 0.7,
+    "H_ZF_bits": 0.8812908992306927,
+    "lambda_R": 0.22,
+    "C_W_bits": 0.55,
+    "record_availability_horizon_definition": "tau_RAH = inf{t: I_2(Z_internal;Z_external(t)) >= H_2(Z_internal)-epsilon}",
+    "mismatch_at_R0_bits": 0.8812908992306927,
+    "mismatch_at_R20_bits": 0.33129089923069266
+  }
+}
