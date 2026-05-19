@@ -6,6 +6,24 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-05-19 — FDS-X4 Release
+
+**Description:** Release of FDS-X4 v1.1, Pauli exclusion as finite address protection.
+
+### Added
+- FDS-X4 v1.1 — collision-free fermionic mode-address occupancy interpretation of Pauli exclusion.
+- X4 claim section in CLAIM_LEDGER.md (8 claims).
+- models/fds_x4/ with code, figures, data for all 6 figures.
+
+### Changed
+- PAPER_MAP.md: X4 status changed from planned to Released (DOI: 10.5281/zenodo.20278029).
+- CLAIM_STATUS.md: added X4 row.
+- TIMESTAMPS.md: added X4 row with DOI and tag.
+- CITATION.cff: added X4 preferred-citation entry.
+- README.md: Key Documents updated.
+
+---
+
 ## 2026-05-18 — FDS-X3 Release
 
 **Description:** Release of FDS-X3 v1.0, the four-interaction functional decomposition paper.

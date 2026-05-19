@@ -1,0 +1,15 @@
+{
+  "description": "Deterministic normal-form demonstrations for FDS-X4 v1.1. Values are conceptual/algebraic, not empirical fits.",
+  "figures": [
+    "fig1_occupancy_algebra",
+    "fig2_address_diversity",
+    "fig3_shell_filling",
+    "fig4_degeneracy_pressure",
+    "fig5_stability_scaling",
+    "fig6_address_protection_flow"
+  ],
+  "available_addresses_M": 18,
+  "shell_demo_electrons": 18,
+  "address_diversity_bound": "D_p(N) >= ceil(N/p); Pauli case p=1 gives D_1(N)=N when sufficient addresses exist.",
+  "ambiguity_cost": "Normal-form C_amb(N,p) proportional to N log2 p, not empirical thermodynamic data."
+}

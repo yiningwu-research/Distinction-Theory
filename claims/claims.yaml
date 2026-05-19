@@ -2292,3 +2292,129 @@
   failure_condition: A fundamental interaction implements a genuinely independent
     operation class not reducible to encapsulation, connection, identity transformation,
     or global boundary accounting.
+- id: FDS-X4-001
+  title: Nilpotent Fermionic Algebra
+  statement: Fermionic creation operators obey nilpotency $(a_i^\dagger)^2=0$, enforcing
+    single-occupancy fermionic mode addresses.
+  status: Standard quantum algebra
+  layer: Core / standard physics
+  dependencies:
+  - FDS core
+  - canonical anticommutation relations
+  first_document: FDS-X4
+  first_version: v1.1
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20278029
+  failure_condition: Identical Standard Model fermions are observed occupying the
+    same complete quantum state.
+- id: FDS-X4-002
+  title: Pauli Exclusion as Address Protection
+  statement: 'Pauli exclusion protects single-fermion mode-address occupancy: a second
+    identical fermionic occupancy event cannot be written into an already occupied
+    address.'
+  status: FDS interpretation
+  layer: Physical bridge
+  dependencies:
+  - FDS-X4-001
+  first_document: FDS-X4
+  first_version: v1.1
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20278029
+  failure_condition: Fermionic matter remains address-stable and structurally diverse
+    without any single-address occupancy protection.
+- id: FDS-X4-003
+  title: Exclusion Forces Structural Diversity
+  statement: Pauli exclusion forces structural diversity in fermionic matter by distributing
+    occupancy events across distinct addresses.
+  status: Physical / operational
+  layer: Physical bridge
+  dependencies:
+  - FDS-X4-002
+  first_document: FDS-X4
+  first_version: v1.1
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20278029
+  failure_condition: Electrons can all occupy the same atomic state while shell structure,
+    valence, chemistry, and matter stability remain unchanged.
+- id: FDS-X4-004
+  title: Matter Stability from Antisymmetry
+  statement: Stability of bulk ordinary matter depends on fermionic antisymmetry,
+    as established by Dyson-Lenard and Lieb-Thirring bounds.
+  status: Standard mathematical physics
+  layer: Core / standard physics
+  dependencies:
+  - FDS-X4-003
+  - Dyson-Lenard
+  - Lieb-Thirring
+  first_document: FDS-X4
+  first_version: v1.1
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20278029
+  failure_condition: Stability of bulk ordinary matter is proven and observed without
+    exclusion-like fermionic antisymmetry or an equivalent mechanism.
+- id: FDS-X4-005
+  title: Bosons Are Not a Violation
+  statement: Bosonic multiple occupation is not an X4 violation because bosonic mode
+    occupation increases field amplitude, not independently address-protected fermionic
+    occupancy events.
+  status: Conceptual caveat
+  layer: Physical bridge
+  dependencies:
+  - FDS-X4-001
+  - Bose-Einstein condensation
+  first_document: FDS-X4
+  first_version: v1.1
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20278029
+  failure_condition: Bosonic mode occupation is shown to create multiple independently
+    address-protected fermionic occupancy events at the same address.
+- id: FDS-X4-006
+  title: Minimal Address-Protection Rule
+  statement: The Pauli rule $n_i\in\{0,1\}$ is the minimal address-protection rule
+    among finite occupancy cutoffs for identical fermionic matter in ordinary $3+1$-dimensional
+    relativistic QFT.
+  status: Minimality bridge
+  layer: High-risk
+  dependencies:
+  - FDS-X4-002
+  - generalized statistics
+  first_document: FDS-X4
+  first_version: v1.1
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20278029
+  failure_condition: Ordinary $3+1$-dimensional Standard Model fermions obey generalized
+    finite occupancy $p>1$, or a lower-overhead alternative to nilpotent fermionic
+    algebra is physically realized.
+- id: FDS-X4-007
+  title: Degeneracy Pressure as Address Protection
+  statement: Fermionic degeneracy pressure is the macroscopic expression of finite
+    address protection.
+  status: Physical bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS-X4-002
+  - Chandrasekhar
+  - TOV
+  first_document: FDS-X4
+  first_version: v1.1
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20278029
+  failure_condition: White-dwarf or neutron-star support occurs without fermionic
+    degeneracy pressure or an equivalent exclusion-like pressure contribution.
+- id: FDS-X4-008
+  title: Address Scarcity from Causal Reachability
+  statement: 'Address scarcity follows from the finite causal reachability boundary:
+    within a finite causal horizon the number of distinguishable modes any system
+    can resolve is bounded, making exclusive single-address occupancy the optimal
+    strategy for maximizing structural diversity.'
+  status: Physical bridge (P6 connection)
+  layer: Physical bridge
+  dependencies:
+  - FDS-X4-002
+  - FDS-P6
+  first_document: FDS-X4
+  first_version: v1.1
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20278029
+  failure_condition: Address scarcity exists and structural diversity is maintained
+    without any finite causal horizon bound on distinguishable modes.

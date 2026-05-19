@@ -2078,4 +2078,118 @@
 
 ---
 
+## X4 — Pauli Exclusion as Finite Address Protection Claims
+
+### FDS-X4-001 — Nilpotent Fermionic Algebra
+
+**Statement.** Fermionic creation operators obey nilpotency $(a_i^\dagger)^2=0$, enforcing single-occupancy fermionic mode addresses.
+
+**Status.** Standard quantum algebra.
+
+**Dependencies.** FDS core; canonical anticommutation relations
+
+**First timestamp.** FDS-X4 v1.1, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20278029
+
+---
+
+### FDS-X4-002 — Pauli Exclusion as Address Protection
+
+**Statement.** Pauli exclusion protects single-fermion mode-address occupancy: a second identical fermionic occupancy event cannot be written into an already occupied address.
+
+**Status.** FDS interpretation.
+
+**Dependencies.** FDS-X4-001
+
+**First timestamp.** FDS-X4 v1.1, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20278029
+
+---
+
+### FDS-X4-003 — Exclusion Forces Structural Diversity
+
+**Statement.** Pauli exclusion forces structural diversity in fermionic matter by distributing occupancy events across distinct addresses.
+
+**Status.** Physical / operational.
+
+**Dependencies.** FDS-X4-002
+
+**First timestamp.** FDS-X4 v1.1, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20278029
+
+---
+
+### FDS-X4-004 — Matter Stability from Antisymmetry
+
+**Statement.** Stability of bulk ordinary matter depends on fermionic antisymmetry, as established by Dyson-Lenard and Lieb-Thirring bounds.
+
+**Status.** Standard mathematical physics.
+
+**Dependencies.** FDS-X4-003; Dyson-Lenard; Lieb-Thirring
+
+**First timestamp.** FDS-X4 v1.1, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20278029
+
+---
+
+### FDS-X4-005 — Bosons Are Not a Violation
+
+**Statement.** Bosonic multiple occupation is not an X4 violation because bosonic mode occupation increases field amplitude, not independently address-protected fermionic occupancy events.
+
+**Status.** Conceptual caveat.
+
+**Dependencies.** FDS-X4-001; Bose-Einstein condensation
+
+**First timestamp.** FDS-X4 v1.1, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20278029
+
+---
+
+### FDS-X4-006 — Minimal Address-Protection Rule
+
+**Statement.** The Pauli rule $n_i\in\{0,1\}$ is the minimal address-protection rule among finite occupancy cutoffs for identical fermionic matter in ordinary $3+1$-dimensional relativistic QFT.
+
+**Status.** Minimality bridge.
+
+**Dependencies.** FDS-X4-002; generalized statistics
+
+**First timestamp.** FDS-X4 v1.1, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20278029
+
+---
+
+### FDS-X4-007 — Degeneracy Pressure as Address Protection
+
+**Statement.** Fermionic degeneracy pressure is the macroscopic expression of finite address protection.
+
+**Status.** Physical bridge.
+
+**Dependencies.** FDS-X4-002; Chandrasekhar; TOV
+
+**First timestamp.** FDS-X4 v1.1, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20278029
+
+---
+
+### FDS-X4-008 — Address Scarcity from Causal Reachability
+
+**Statement.** Address scarcity follows from the finite causal reachability boundary: within a finite causal horizon the number of distinguishable modes any system can resolve is bounded, making exclusive single-address occupancy the optimal strategy for maximizing structural diversity.
+
+**Status.** Physical bridge (P6 connection).
+
+**Dependencies.** FDS-X4-002; FDS-P6
+
+**First timestamp.** FDS-X4 v1.1, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20278029
+
+---
+
 *End of ledger. New claims added as documents are released or revised.*

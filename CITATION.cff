@@ -162,3 +162,9 @@ preferred-citation:
       - family-names: Wu
         given-names: Yining
     date-released: 2026-05-14
+  - title: "Pauli Exclusion as Finite Address Protection: Collision-Free Fermionic Occupancy, Structural Diversity, and Stable Matter in Finite Distinction Systems"
+    doi: 10.5281/zenodo.20278029
+    authors:
+      - family-names: Wu
+        given-names: Yining
+    date-released: 2026-05-19
