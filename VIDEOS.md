@@ -150,6 +150,18 @@ Scope: FDS-X3, high-risk physical bridge, interaction operation closure, token s
 
 YouTube: https://www.youtube.com/watch?v=5Tbqq0aCkgE
 
+## 24. Pauli Exclusion as Finite Address Protection
+
+Scope: FDS-X4, high-risk physical bridge, fermionic mode-address occupancy, spectrum-generating algebra, structural diversity, degeneracy pressure.
+
+YouTube: https://www.youtube.com/watch?v=6VwGUHizLxM
+
+## 25. Mathematical Form of Physical Law as Invariant-Form Compression
+
+Scope: FDS-X5, high-risk physical bridge, invariant-form compression, Wigner puzzle, symmetry as rule compression, RG fixed points, operational scales.
+
+YouTube: https://www.youtube.com/watch?v=PotAK_6CwgI
+
 ## YouTube description links
 
 Each video description includes links to:
