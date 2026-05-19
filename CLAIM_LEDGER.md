@@ -2192,4 +2192,118 @@
 
 ---
 
+## X5 — Mathematical Form of Physical Law as Invariant-Form Compression Claims
+
+### FDS-X5-001 — Finite Systems Cannot Represent All Detail
+
+**Statement.** Finite systems cannot internally represent all microstate detail. Exceeding finite capacity forces compression, approximation, externalization, or task relaxation.
+
+**Status.** Formal FDS core.
+
+**Dependencies.** FDS core; finite capacity theorem
+
+**First timestamp.** FDS-X5 v1.2, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20278236
+
+---
+
+### FDS-X5-002 — Stable Law-Like Regularities Require Invariant Compression
+
+**Statement.** Stable law-like regularities require invariant-form compression: a portable relation must factor through a strict-invariant, equivariant, or covariant sector.
+
+**Status.** FDS structural claim.
+
+**Dependencies.** FDS-X5-001
+
+**First timestamp.** FDS-X5 v1.2, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20278236
+
+---
+
+### FDS-X5-003 — Equations Are Compressed Invariant Relations
+
+**Statement.** Mathematical equations are compressed representations of invariant-form relations that remain valid across an equivalence class of states, frames, scales, gauges, or perturbations.
+
+**Status.** Interpretive bridge.
+
+**Dependencies.** FDS-X5-002
+
+**First timestamp.** FDS-X5 v1.2, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20278236
+
+---
+
+### FDS-X5-004 — Symmetries Reduce Rule-Maintenance Cost
+
+**Statement.** Symmetries and covariance structures reduce rule-maintenance cost by replacing many case-specific rules with one orbit-level or representation-level rule.
+
+**Status.** Physical / information bridge.
+
+**Dependencies.** FDS-X5-002; group theory
+
+**First timestamp.** FDS-X5 v1.2, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20278236
+
+---
+
+### FDS-X5-005 — Wigner Puzzle Reframed
+
+**Statement.** Wigner's puzzle is reframed by invariant-form compression: mathematics is effective because the portable part of physics is the part compressible into invariant-form structures.
+
+**Status.** Philosophical bridge.
+
+**Dependencies.** FDS-X5-002; FDS-X5-003
+
+**First timestamp.** FDS-X5 v1.2, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20278236
+
+---
+
+### FDS-X5-006 — Constants as Model-Class Signatures
+
+**Statement.** Constants such as e, i, and related constants are model-class signatures that appear because of semigroup structure, coherent phase bookkeeping, geometry, or unit conventions, not numerological cosmic design.
+
+**Status.** Optional bridge.
+
+**Dependencies.** FDS-X5-002; semigroup theory; quantum theory
+
+**First timestamp.** FDS-X5 v1.2, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20278236
+
+---
+
+### FDS-X5-007 — Open Math Problems May Have Physical Analogues
+
+**Statement.** Some open mathematical problems (Riemann hypothesis, P vs NP, finite simple groups) may acquire physical analogues as spectra, partition functions, complexity gaps, or symmetry classifications.
+
+**Status.** Speculative appendix.
+
+**Dependencies.** FDS-X5-002
+
+**First timestamp.** FDS-X5 v1.2, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20278236
+
+---
+
+### FDS-X5-008 — RG Fixed Points as Invariant Compression
+
+**Statement.** Renormalization-group fixed points are a model-class example of invariant-form compression: a relation whose form survives coarse-graining becomes law-like for finite observers.
+
+**Status.** Physical bridge.
+
+**Dependencies.** FDS-X5-002; Wilson RG
+
+**First timestamp.** FDS-X5 v1.2, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20278236
+
+---
+
 *End of ledger. New claims added as documents are released or revised.*

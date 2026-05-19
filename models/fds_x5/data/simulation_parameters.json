@@ -1,0 +1,14 @@
+{
+  "version": "v1.1",
+  "seed": 11,
+  "num_raw_trajectories": 20,
+  "trajectory_steps": 140,
+  "law_compression_history_bits": 14000,
+  "initial_data_bits": 320,
+  "law_bits_base": 110,
+  "symmetry_state_count": 112,
+  "semigroup_steps": 28,
+  "stable_theta": 2.0,
+  "drift_amplitude": 0.65,
+  "ood_stability_metric": "included in fig2 compression_to_error proxy"
+}

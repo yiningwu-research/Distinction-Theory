@@ -2418,3 +2418,127 @@
   doi: 10.5281/zenodo.20278029
   failure_condition: Address scarcity exists and structural diversity is maintained
     without any finite causal horizon bound on distinguishable modes.
+- id: FDS-X5-001
+  title: Finite Systems Cannot Represent All Detail
+  statement: Finite systems cannot internally represent all microstate detail. Exceeding
+    finite capacity forces compression, approximation, externalization, or task relaxation.
+  status: Formal FDS core
+  layer: Core / formal
+  dependencies:
+  - FDS core
+  - finite capacity theorem
+  first_document: FDS-X5
+  first_version: v1.2
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20278236
+  failure_condition: A finite system internally represents unbounded environmental
+    distinctions with no compression, externalization, task relaxation, or hidden
+    capacity.
+- id: FDS-X5-002
+  title: Stable Law-Like Regularities Require Invariant Compression
+  statement: 'Stable law-like regularities require invariant-form compression: a portable
+    relation must factor through a strict-invariant, equivariant, or covariant sector.'
+  status: FDS structural claim
+  layer: Physical bridge
+  dependencies:
+  - FDS-X5-001
+  first_document: FDS-X5
+  first_version: v1.2
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20278236
+  failure_condition: Portable physical regularities persist with no invariant, equivariant/covariant
+    form, symmetry, quotient, stable statistic, or compressed relation.
+- id: FDS-X5-003
+  title: Equations Are Compressed Invariant Relations
+  statement: Mathematical equations are compressed representations of invariant-form
+    relations that remain valid across an equivalence class of states, frames, scales,
+    gauges, or perturbations.
+  status: Interpretive bridge
+  layer: Philosophical bridge
+  dependencies:
+  - FDS-X5-002
+  first_document: FDS-X5
+  first_version: v1.2
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20278236
+  failure_condition: Exact physical laws require no compression, no form stability,
+    no stable relational structure, and no finite representational economy.
+- id: FDS-X5-004
+  title: Symmetries Reduce Rule-Maintenance Cost
+  statement: Symmetries and covariance structures reduce rule-maintenance cost by
+    replacing many case-specific rules with one orbit-level or representation-level
+    rule.
+  status: Physical / information bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS-X5-002
+  - group theory
+  first_document: FDS-X5
+  first_version: v1.2
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20278236
+  failure_condition: Asymmetric local rule tables are physically cheaper and more
+    stable than invariant or equivariant compressed rules under the same task requirements.
+- id: FDS-X5-005
+  title: Wigner Puzzle Reframed
+  statement: 'Wigner''s puzzle is reframed by invariant-form compression: mathematics
+    is effective because the portable part of physics is the part compressible into
+    invariant-form structures.'
+  status: Philosophical bridge
+  layer: Philosophical bridge
+  dependencies:
+  - FDS-X5-002
+  - FDS-X5-003
+  first_document: FDS-X5
+  first_version: v1.2
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20278236
+  failure_condition: Mathematics remains effective for law-like physics where no invariant/equivariant/covariant
+    compression, symmetry, operator structure, quotient, or stable relation exists.
+- id: FDS-X5-006
+  title: Constants as Model-Class Signatures
+  statement: Constants such as e, i, and related constants are model-class signatures
+    that appear because of semigroup structure, coherent phase bookkeeping, geometry,
+    or unit conventions, not numerological cosmic design.
+  status: Optional bridge
+  layer: Philosophical bridge
+  dependencies:
+  - FDS-X5-002
+  - semigroup theory
+  - quantum theory
+  first_document: FDS-X5
+  first_version: v1.2
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20278236
+  failure_condition: Their appearance is asserted as universal without model-class
+    assumptions or is shown to be purely conventional in the relevant context.
+- id: FDS-X5-007
+  title: Open Math Problems May Have Physical Analogues
+  statement: Some open mathematical problems (Riemann hypothesis, P vs NP, finite
+    simple groups) may acquire physical analogues as spectra, partition functions,
+    complexity gaps, or symmetry classifications.
+  status: Speculative appendix
+  layer: Philosophical bridge
+  dependencies:
+  - FDS-X5-002
+  first_document: FDS-X5
+  first_version: v1.2
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20278236
+  failure_condition: Analogues are mistaken for derivations, predictions, or proofs.
+- id: FDS-X5-008
+  title: RG Fixed Points as Invariant Compression
+  statement: 'Renormalization-group fixed points are a model-class example of invariant-form
+    compression: a relation whose form survives coarse-graining becomes law-like for
+    finite observers.'
+  status: Physical bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS-X5-002
+  - Wilson RG
+  first_document: FDS-X5
+  first_version: v1.2
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20278236
+  failure_condition: All physical law is shown to reduce strictly to RG fixed points;
+    or no law-like relation survives coarse-graining through any RG-type transformation.

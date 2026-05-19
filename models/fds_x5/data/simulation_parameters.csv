@@ -1,0 +1,2 @@
+version,seed,num_raw_trajectories,trajectory_steps,law_compression_history_bits,initial_data_bits,law_bits_base,symmetry_state_count,semigroup_steps,stable_theta,drift_amplitude,ood_stability_metric
+v1.1,11,20,140,14000,320,110,112,28,2.0,0.65,included in fig2 compression_to_error proxy

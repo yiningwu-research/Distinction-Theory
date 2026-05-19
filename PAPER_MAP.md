@@ -59,7 +59,7 @@ Priority notes, not completed physical theories.
 | FDS-X2 | CP/T-Asymmetric Identity Transformation and Three Fermion Generations | Released |
 | FDS-X3 | Functional Decomposition of the Four Fundamental Interactions | Released |
 | FDS-X4 | Pauli Exclusion as Finite Address Protection | Released | 10.5281/zenodo.20278029 |
-| FDS-X5 | Mathematical Form of Physical Law as Invariant Compression | planned |
+| FDS-X5 | Mathematical Form of Physical Law as Invariant Compression | Released | 10.5281/zenodo.20278236 |
 
 ## Stage V — Cognition and Agency-Semantics
 

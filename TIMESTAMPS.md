@@ -39,6 +39,7 @@ The timestamp index is not a claim of correctness. It is a record of public prio
 | FDS-X2 | Three fermion generations / CKM lower bound / CP/T identity transformation | 2026-05-18 | v1.0 | [10.5281/zenodo.20273302](https://doi.org/10.5281/zenodo.20273302) | fds-x2-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-x2) | Released |
 | FDS-X3 | Functional decomposition of four interactions / operation closure | 2026-05-18 | v1.0 | [10.5281/zenodo.20274519](https://doi.org/10.5281/zenodo.20274519) | fds-x3-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-x3) | Released |
 | FDS-X4 | Pauli exclusion as finite address protection | 2026-05-19 | v1.1 | [10.5281/zenodo.20278029](https://doi.org/10.5281/zenodo.20278029) | fds-x4-v1.1 | pending | [link](https://www.distinctiontheory.org/papers/fds-x4) | Released |
+| FDS-X5 | Mathematical form of physical law as invariant-form compression | 2026-05-19 | v1.2 | [10.5281/zenodo.20278236](https://doi.org/10.5281/zenodo.20278236) | fds-x5-v1.2 | pending | [link](https://www.distinctiontheory.org/papers/fds-x5) | Released |
 
 ---
 
