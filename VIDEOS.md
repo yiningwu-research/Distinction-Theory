@@ -150,33 +150,6 @@ Scope: FDS-X3, high-risk physical bridge, interaction operation closure, token s
 
 YouTube: https://www.youtube.com/watch?v=5Tbqq0aCkgE
 
-## Suggested viewing order
-
-1. Distinction Theory overview.
-2. Finite Distinction Systems introduction.
-3. Observer as register (O1).
-4. Register time (O2).
-5. Capacity overflow (T3).
-6. Operational Second-Law channel (O3).
-7. Self-organization bridge (N1).
-8. Finite-capacity prospect theory (E1).
-9. Active pruning / protocell (L1).
-10. Cognitive pruning / reportability (C1).
-11. Physical Bridge Claim Registry.
-12. Life and Cognitive Science Bridge Claim Registry.
-13. Agency-Semantics spine (M0).
-14. Attention as distinction admission (M1).
-15. Value and goal as boundary-relevance ranking (M2).
-16. Meaning as actionable semantic quotient (M3).
-17. Coarse-grained anti-recurrence / informational hysteresis (P4).
-18. Topological obstruction to forgetting (P7).
-19. Speed-precision-dissipation bounds (P6).
-20. Finite-bath memory / environmental forgetting (P3).
-21. Horizon-maintenance dark energy (X1).
-22. Three fermion generations / CKM lower bound (X2).
-23. Functional decomposition of four interactions (X3).
-24. Then read the papers and claim-status pages.
-
 ## YouTube description links
 
 Each video description includes links to:
