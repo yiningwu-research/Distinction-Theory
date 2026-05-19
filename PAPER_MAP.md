@@ -15,6 +15,7 @@ These papers define the project and its most operational entry point.
 | FDS-0 | Active Finite Distinction Systems: A Formal Core | formal root | Released |
 | FDS-P0 | Physical Bridge Claim Registry | physical dependency map | Released |
 | FDS-T1 | Finite Distinguishability Budgets and Maintenance Bounds | physical-observer bridge | Released |
+| FDS-T2 | Effective Geometry as Horizon Boundary Accounting | horizon-ledger bridge | Released | 10.5281/zenodo.20284911 |
 | FDS-O1 | Observer as a Finite Distinction Register | measurement as finite record formation | Released |
 | FDS-O2 | Time as Irreversible Distinction Update | register time | Released |
 | FDS-O3 | Boundary Maintenance and the Second Law under Finite Memory | Operational Trident III / finite-memory operational Second-Law channel | Released | 10.5281/zenodo.20255129 |

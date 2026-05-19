@@ -174,3 +174,9 @@ preferred-citation:
       - family-names: Wu
         given-names: Yining
     date-released: 2026-05-19
+  - title: "Effective Geometry as Horizon Boundary Accounting: A Horizon-Ledger Bridge from Finite Distinguishability"
+    doi: 10.5281/zenodo.20284911
+    authors:
+      - family-names: Wu
+        given-names: Yining
+    date-released: 2026-05-19

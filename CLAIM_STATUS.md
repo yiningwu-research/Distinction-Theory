@@ -17,6 +17,7 @@ Status labels:
 |---|---|---|---|---|---|
 | FDS-0 | Active finite systems maintain boundaries under finite capacity | Core | formal definitions | mathematical counterexample to stated theorem/hypotheses | revise formal core |
 | T1 | Finite observer distinguishability budgets | Physical bridge | finite projection, capacity deficit, rate-distortion demand | observer with unbounded distinctions under finite resources; sustained deficit with no exit class | demote T1 physical bridge |
+| T2 | Effective geometry as horizon boundary accounting | Physical bridge | horizon ledger, non-equilibrium residuals, Phase-B geometry, covariant consistency | geometry exists and evolves independently of causal boundary, entropy, or energy-momentum accounting | demote T2 physical bridge |
 | CC-1 | Capacity deficit under finite representation | Core / conditional | finite capacity + task demand | finite system maintains lossless model of incompressible environment under bounded capacity | revise/demote capacity-deficit theorem |
 | PB-L | Landauer bridge for irreversible updates | Physical bridge | standard Landauer conditions | reliable logically irreversible erasure below thermodynamic floor under stated assumptions | demote physical bridge, formal core remains |
 | A1 | Passive mappers are not FDS-agents | Operational AI | boundary/update/resource criteria | update ablation does not affect future boundary-maintenance loss | revise AI agency criterion |

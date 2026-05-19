@@ -71,6 +71,7 @@ The current DT/FDS public architecture, organized by layer:
 - **DT-Archive** — broad claim-space archive. DOI: 10.5281/zenodo.20130174.
 - **FDS-0** — formal finite-system core: capacity deficit, boundary maintenance, pruning, externalization, collapse, invariant-supported persistence. DOI: 10.5281/zenodo.20158923.
 - **FDS-T1** — finite distinguishability budgets and maintenance bounds. DOI: 10.5281/zenodo.20234249.
+- **FDS-T2** — effective geometry as horizon boundary accounting / horizon-ledger bridge. DOI: 10.5281/zenodo.20284911.
 - **FDS-O1** — observer as a finite distinction register. DOI: 10.5281/zenodo.20248792.
 - **FDS-O2** — time as irreversible distinction update. DOI: 10.5281/zenodo.20249369.
 - **FDS-O3** — boundary maintenance and the Second Law under finite memory. DOI: 10.5281/zenodo.20255129.
@@ -120,22 +121,23 @@ The public academic spine currently prioritizes:
 
 1. **FDS-0** — formal finite-system core.
 2. **FDS-T1** — finite observers and distinguishability budgets.
-3. **FDS-O1** — observer as a finite distinction register.
-4. **FDS-O2** — time as irreversible distinction update.
-5. **FDS-T3** — capacity overflow and effective stochasticity.
-6. **FDS-O3** — boundary maintenance and the Second Law under finite memory.
-7. **FDS-N1** — boundary-maintaining self-organizing systems under finite capacity.
-8. **FDS-P1** — physical distinction carriers and erasure maps.
-9. **FDS-P2** — bounded-memory reversible computation and housekeeping dissipation.
-10. **FDS-P5** — capacity deficit and entropy-production ledger.
-11. **FDS-M0** — agency-semantics spine.
-12. **FDS-M1** — attention as distinction admission.
-13. **FDS-M2** — value and goal as boundary-relevance ranking.
-14. **FDS-M3** — meaning as actionable semantic quotient.
-15. **FDS-L1** — active pruning and artificial-life persistence.
-16. **FDS-C1** — reportable access under finite capacity.
-17. **FDS-E1** — finite-capacity prospect theory and boundary-risk preferences.
-18. **FDS-X1** — pre-Euclid horizon-maintenance dark-energy bridge note (released).
+3. **FDS-T2** — effective geometry as horizon boundary accounting / horizon-ledger bridge.
+4. **FDS-O1** — observer as a finite distinction register.
+5. **FDS-O2** — time as irreversible distinction update.
+6. **FDS-T3** — capacity overflow and effective stochasticity.
+7. **FDS-O3** — boundary maintenance and the Second Law under finite memory.
+8. **FDS-N1** — boundary-maintaining self-organizing systems under finite capacity.
+9. **FDS-P1** — physical distinction carriers and erasure maps.
+10. **FDS-P2** — bounded-memory reversible computation and housekeeping dissipation.
+11. **FDS-P5** — capacity deficit and entropy-production ledger.
+12. **FDS-M0** — agency-semantics spine.
+13. **FDS-M1** — attention as distinction admission.
+14. **FDS-M2** — value and goal as boundary-relevance ranking.
+15. **FDS-M3** — meaning as actionable semantic quotient.
+16. **FDS-L1** — active pruning and artificial-life persistence.
+17. **FDS-C1** — reportable access under finite capacity.
+18. **FDS-E1** — finite-capacity prospect theory and boundary-risk preferences.
+19. **FDS-X1** — pre-Euclid horizon-maintenance dark-energy bridge note (released).
 
 FDS-A1 is retained as a conceptual timestamp for artificial agency. Because the author may pursue commercial work in AI and robotics, this public repository does not develop proprietary AI architectures, AGI robotics systems, private benchmarks, or product-level implementation details. See [CONFLICTS_OF_INTEREST.md](CONFLICTS_OF_INTEREST.md).
 
@@ -157,10 +159,11 @@ Recommended reading path:
 
 1. **FDS-0 Formal Core** — start here for the formal finite-system architecture.
 2. **FDS-T1 Finite Observers and Distinguishability Budgets** — finite observers, accessible capacity, information bounds, maintenance-cost accounting.
-3. **FDS-O1 Observer as a Finite Distinction Register** — measurement as finite record formation under dynamic bottlenecks, buffering, and budget-crossing signatures.
-4. **FDS-O2 Time as Irreversible Distinction Update** — register time as causally ordered irreversible finite-record update.
-5. **FDS-O3 Boundary Maintenance and the Second Law** — finite-memory operational Second-Law channel.
-6. **FDS-T3 Capacity Overflow and Effective Stochasticity** — common mechanism: capacity overflow induces effective stochasticity.
+3. **FDS-T2 Effective Geometry as Horizon Boundary Accounting** — horizon-ledger bridge: effective geometry from finite distinguishability, non-equilibrium residuals, Phase-B geometry selection.
+4. **FDS-O1 Observer as a Finite Distinction Register** — measurement as finite record formation under dynamic bottlenecks, buffering, and budget-crossing signatures.
+5. **FDS-O2 Time as Irreversible Distinction Update** — register time as causally ordered irreversible finite-record update.
+6. **FDS-O3 Boundary Maintenance and the Second Law** — finite-memory operational Second-Law channel.
+7. **FDS-T3 Capacity Overflow and Effective Stochasticity** — common mechanism: capacity overflow induces effective stochasticity.
 7. **FDS-N1 Self-Organization Bridge** — complex-systems normal form: boundary-maintaining self-organization, Phase-C collapse, invariant selection.
 8. **FDS-M0 Agency-Semantics Spine** — attention, value, goal, meaning, agency under finite capacity.
 9. **FDS-M1 Attention as Distinction Admission** — capacity-limited admission gating.

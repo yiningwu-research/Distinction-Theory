@@ -4,7 +4,7 @@ This file records public timestamps for major DT/FDS documents, claim families, 
 
 The timestamp index is not a claim of correctness. It is a record of public priority and version history.
 
-**Last updated:** 2026-05-18
+**Last updated:** 2026-05-19
 
 ---
 
@@ -14,6 +14,7 @@ The timestamp index is not a claim of correctness. It is a record of public prio
 | FDS-0 | Formal core | 2026-05-12 | v1.0 | [10.5281/zenodo.20158923](https://doi.org/10.5281/zenodo.20158923) | pending | pending | [link](https://www.distinctiontheory.org/papers/fds-core) | Released |
 | FDS-P0 | Physical bridge registry | 2026-05-12 | v1.0 | [10.5281/zenodo.20159995](https://doi.org/10.5281/zenodo.20159995) | pending | pending | [link](https://www.distinctiontheory.org/papers/physical-registry) | Released |
 | FDS-T1 | Finite observer budget | 2026-05-14 | v1.1 | [10.5281/zenodo.20234249](https://doi.org/10.5281/zenodo.20234249) | pending | pending | [link](https://www.distinctiontheory.org/papers/fds-t1) | Released |
+| FDS-T2 | Effective geometry as horizon boundary accounting | 2026-05-19 | v1.0 | [10.5281/zenodo.20284911](https://doi.org/10.5281/zenodo.20284911) | pending | pending | [link](https://www.distinctiontheory.org/papers/fds-t2) | Released |
 | FDS-O1 | Observer as a Finite Distinction Register | 2026-05-16 | v1.0 | [10.5281/zenodo.20248792](https://doi.org/10.5281/zenodo.20248792) | pending | pending | [link](https://www.distinctiontheory.org/papers/fds-o1) | Released |
 | FDS-O2 | Time as Irreversible Distinction Update | 2026-05-16 | v1.0 | [10.5281/zenodo.20249369](https://doi.org/10.5281/zenodo.20249369) | pending | pending | [link](https://www.distinctiontheory.org/papers/fds-o2) | Released |
 | FDS-T3 | Capacity overflow / effective stochasticity | 2026-05-16 | v1.0 | [10.5281/zenodo.20250367](https://doi.org/10.5281/zenodo.20250367) | pending | pending | [link](https://www.distinctiontheory.org/papers/fds-t3) | Released |
