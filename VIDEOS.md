@@ -108,6 +108,48 @@ Scope: FDS-M3, meaning bridge, policy-preserving compression, semantic deficit, 
 
 YouTube: https://www.youtube.com/watch?v=MjTqiPf_pJI
 
+## 17. Coarse-Grained Anti-Recurrence and Informational Hysteresis
+
+Scope: FDS-P4, physical bridge, non-injective truncation, preimage entropy, capacity-recovery asymmetry, informational hysteresis.
+
+YouTube: https://www.youtube.com/watch?v=GIyrumZ27eM
+
+## 18. Topological Obstruction to Forgetting
+
+Scope: FDS-P7, physical bridge, invariant side-ledgers, quotient maps, Non-Hermitian Skin Effect, protection signatures.
+
+YouTube: https://www.youtube.com/watch?v=nyDJ-CVsDnc
+
+## 19. Speed, Precision, and Dissipation Bounds for Boundary Maintenance
+
+Scope: FDS-P6, physical bridge, finite update windows, bottleneck throughput, resource-ledger, dissipation speed limits.
+
+YouTube: https://www.youtube.com/watch?v=QHHXPsfTN1s
+
+## 20. Finite-Bath Memory, Markovianization, and Environmental Forgetting
+
+Scope: FDS-P3, physical bridge, environmental side records, memory kernels, finite-bath saturation, operational Markovianization.
+
+YouTube: https://www.youtube.com/watch?v=_E7lfkjpi5M
+
+## 21. Horizon-Maintenance Dark Energy
+
+Scope: FDS-X1, high-risk physical bridge, pre-Euclid bridge note, finite distinguishability, dark energy falsification.
+
+YouTube: https://www.youtube.com/watch?v=f_bslVY7K5w
+
+## 22. Three Fermion Generations as CP/T-Asymmetric Identity Transformation
+
+Scope: FDS-X2, high-risk physical bridge, CKM lower bound, CP/T orientation, weak-sector identity transformation.
+
+YouTube: https://www.youtube.com/watch?v=raexicGL4KQ
+
+## 23. Functional Decomposition of the Four Fundamental Interactions
+
+Scope: FDS-X3, high-risk physical bridge, interaction operation closure, token stabilization, connection, identity transformation, global boundary.
+
+YouTube: https://www.youtube.com/watch?v=5Tbqq0aCkgE
+
 ## Suggested viewing order
 
 1. Distinction Theory overview.
@@ -126,7 +168,14 @@ YouTube: https://www.youtube.com/watch?v=MjTqiPf_pJI
 14. Attention as distinction admission (M1).
 15. Value and goal as boundary-relevance ranking (M2).
 16. Meaning as actionable semantic quotient (M3).
-17. Then read the papers and claim-status pages.
+17. Coarse-grained anti-recurrence / informational hysteresis (P4).
+18. Topological obstruction to forgetting (P7).
+19. Speed-precision-dissipation bounds (P6).
+20. Finite-bath memory / environmental forgetting (P3).
+21. Horizon-maintenance dark energy (X1).
+22. Three fermion generations / CKM lower bound (X2).
+23. Functional decomposition of four interactions (X3).
+24. Then read the papers and claim-status pages.
 
 ## YouTube description links
 
