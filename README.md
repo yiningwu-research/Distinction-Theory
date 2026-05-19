@@ -97,7 +97,7 @@ The current DT/FDS public architecture, organized by layer:
 - **FDS-LC0** — life and cognitive science bridge claim registry. DOI: 10.5281/zenodo.20183373.
 - **FDS-C1** — reportable access under finite capacity. DOI: 10.5281/zenodo.20229509.
 - **FDS-A1** — artificial agency criterion (frozen public AI line). DOI: 10.5281/zenodo.20184709.
-- **FDS-X1** — frontier physical consequence: horizon-maintenance dark energy (pre-Euclid bridge note). DOI: 10.5281/zenodo.20234391.
+- **FDS-X1** — frontier physical consequence: horizon-maintenance dark energy (pre-Euclid bridge note). DOI: 10.5281/zenodo.20290215.
 
 ### Operational Trident
 
@@ -203,7 +203,7 @@ Recommended reading path:
 | **FDS-LC0** | *Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo registry | [10.5281/zenodo.20183373](https://doi.org/10.5281/zenodo.20183373) |
 | **FDS-C1** | *Consciousness and Forgetting as Compression and Active Pruning* | Released | [10.5281/zenodo.20229509](https://zenodo.org/records/20229509) |
 | **FDS-A1** | *Active Finite Distinction Systems as a Criterion for Artificial Agency* | Zenodo / frozen public AI line | [10.5281/zenodo.20184709](https://doi.org/10.5281/zenodo.20184709) |
-| **FDS-X1** | *Horizon-Maintenance Dark Energy: A Pre-Euclid Bridge Note from Finite Distinguishability* | Released | [10.5281/zenodo.20234391](https://doi.org/10.5281/zenodo.20234391) |
+| **FDS-X1** | *Horizon-Maintenance Dark Energy: A Pre-Euclid Bridge Note from Finite Distinguishability* | Released | [10.5281/zenodo.20290215](https://doi.org/10.5281/zenodo.20290215) |
 | **FDS-X2** | *Three Fermion Generations as CP/T-Asymmetric Identity Transformation: The CKM Lower Bound, Irreversible Pruning, and the Minimal Flavor Architecture of Finite Distinction Systems* | Released | [10.5281/zenodo.20273302](https://doi.org/10.5281/zenodo.20273302) |
 | **FDS-X3** | *Functional Decomposition of the Four Fundamental Interactions: A Minimal Physical Distinction-Operation Closure for Finite Distinction Systems* | Released | [10.5281/zenodo.20274519](https://doi.org/10.5281/zenodo.20274519) |
 | **FDS-X4** | *Pauli Exclusion as Finite Address Protection: Collision-Free Fermionic Occupancy, Structural Diversity, and Stable Matter in Finite Distinction Systems* | Released | [10.5281/zenodo.20278029](https://doi.org/10.5281/zenodo.20278029) |

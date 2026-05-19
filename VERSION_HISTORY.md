@@ -6,6 +6,26 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-05-19 — FDS-X2 v2.0 Release
+
+**Description:** Release of FDS-X2 v2.0, integrated canonical version of the minimal nonzero CP/T orientation theorem with full weak-sector PMNS extension.
+
+### Added
+- FDS-X2 v2.0 — integrated canonical version: v1.1 orientation theorem + v1.2 PMNS full-sector extension.
+- Hard algebraic core: $N_{\min}(r)=\lceil(3+\sqrt{1+8r})/2\rceil$.
+- PMNS conditional consistency proof: $\Dl=1\Rightarrow N_\ell=3$.
+- Orientation capacity / mixing texture separation.
+- Figures and tables for orientation capacity, minimal dimension, texture independence, full-sector grid, and normal-form cost.
+
+### Changed
+- PAPER_MAP.md: X2 status unchanged (already Released). New DOI: 10.5281/zenodo.20289955.
+- TIMESTAMPS.md: X2 version updated to v2.0 with new DOI.
+- CLAIM_LEDGER.md: X2 version updated from v1.0 to v2.0 with new DOI.
+- CITATION.cff: X2 DOI updated to 10.5281/zenodo.20289955.
+- README.md: Key Documents updated (version references only; summary unchanged).
+
+---
+
 ## 2026-05-19 — FDS-Q1 Release
 
 **Description:** Release of FDS-Q1 v1.0, finite record boundaries in Wigner's friend scenarios.

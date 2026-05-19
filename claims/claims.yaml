@@ -2094,7 +2094,7 @@
   first_document: FDS-X2
   first_version: v1.0
   first_date: '2026-05-18'
-  doi: 10.5281/zenodo.20273302
+  doi: 10.5281/zenodo.20289955
   failure_condition: A CKM-like two-generation weak sector is shown to possess a physical
     irreducible CP phase.
 - id: FDS-X2-002
@@ -2109,7 +2109,7 @@
   first_document: FDS-X2
   first_version: v1.0
   first_date: '2026-05-18'
-  doi: 10.5281/zenodo.20273302
+  doi: 10.5281/zenodo.20289955
   failure_condition: A complete physical account of the audited microscopic weak identity-changing
     channel with no CP/T orientation, no compensating asymmetry, and no hidden orientation
     variable.
@@ -2125,7 +2125,7 @@
   first_document: FDS-X2
   first_version: v1.0
   first_date: '2026-05-18'
-  doi: 10.5281/zenodo.20273302
+  doi: 10.5281/zenodo.20289955
   failure_condition: Identity-changing weak-sector operations are realized by a different
     physical carrier outside the CKM charged current.
 - id: FDS-X2-004
@@ -2141,7 +2141,7 @@
   first_document: FDS-X2
   first_version: v1.0
   first_date: '2026-05-18'
-  doi: 10.5281/zenodo.20273302
+  doi: 10.5281/zenodo.20289955
   failure_condition: 'Failure of any premise: the CP/T-orientation bridge, CPT assumptions,
     the weak-carrier mapping, or CKM phase counting.'
 - id: FDS-X2-005
@@ -2155,7 +2155,7 @@
   first_document: FDS-X2
   first_version: v1.0
   first_date: '2026-05-18'
-  doi: 10.5281/zenodo.20273302
+  doi: 10.5281/zenodo.20289955
   failure_condition: Discovery of a fourth sequential chiral generation with Standard
     Model gauge charges and weak charged-current participation, or a successful N>3
     flavor architecture that reduces the relevant cost functional.
@@ -2172,7 +2172,7 @@
   first_document: FDS-X2
   first_version: v1.0
   first_date: '2026-05-18'
-  doi: 10.5281/zenodo.20273302
+  doi: 10.5281/zenodo.20289955
   failure_condition: High-precision oscillation data establish δ_CP=0 or π under assumptions
     requiring leptonic CP/T-oriented identity transformation.
 - id: FDS-X3-001

@@ -1596,7 +1596,7 @@
 
 **Dependencies.** FDS-T1-001; FDS-T1-002
 
-**First timestamp.** FDS-X1 v1.0, 2026-05-18.
+**First timestamp.** FDS-X1 v1.2, 2026-05-18.
 
 **Failure condition.** Not directly falsifiable; usefulness can fail.
 
@@ -1888,9 +1888,9 @@
 
 **Dependencies.** FDS core finite capacity; Kobayashi-Maskawa 1973
 
-**First timestamp.** FDS-X2 v1.0, 2026-05-18.
+**First timestamp.** FDS-X2 v2.0, 2026-05-18.
 
-**Failure condition.** 10.5281/zenodo.20273302
+**Failure condition.** 10.5281/zenodo.20289955
 
 ---
 
@@ -1902,9 +1902,9 @@
 
 **Dependencies.** FDS-X2-001; CPT theorem
 
-**First timestamp.** FDS-X2 v1.0, 2026-05-18.
+**First timestamp.** FDS-X2 v2.0, 2026-05-18.
 
-**Failure condition.** 10.5281/zenodo.20273302
+**Failure condition.** 10.5281/zenodo.20289955
 
 ---
 
@@ -1916,9 +1916,9 @@
 
 **Dependencies.** FDS-X2-002; Standard Model flavor physics
 
-**First timestamp.** FDS-X2 v1.0, 2026-05-18.
+**First timestamp.** FDS-X2 v2.0, 2026-05-18.
 
-**Failure condition.** 10.5281/zenodo.20273302
+**Failure condition.** 10.5281/zenodo.20289955
 
 ---
 
@@ -1930,9 +1930,9 @@
 
 **Dependencies.** FDS-X2-001; FDS-X2-002; FDS-X2-003
 
-**First timestamp.** FDS-X2 v1.0, 2026-05-18.
+**First timestamp.** FDS-X2 v2.0, 2026-05-18.
 
-**Failure condition.** 10.5281/zenodo.20273302
+**Failure condition.** 10.5281/zenodo.20289955
 
 ---
 
@@ -1944,9 +1944,9 @@
 
 **Dependencies.** FDS-X2-004; flavor-cost functional
 
-**First timestamp.** FDS-X2 v1.0, 2026-05-18.
+**First timestamp.** FDS-X2 v2.0, 2026-05-18.
 
-**Failure condition.** 10.5281/zenodo.20273302
+**Failure condition.** 10.5281/zenodo.20289955
 
 ---
 
@@ -1958,9 +1958,9 @@
 
 **Dependencies.** FDS-X2-002; PMNS phenomenology
 
-**First timestamp.** FDS-X2 v1.0, 2026-05-18.
+**First timestamp.** FDS-X2 v2.0, 2026-05-18.
 
-**Failure condition.** 10.5281/zenodo.20273302
+**Failure condition.** 10.5281/zenodo.20289955
 
 ---
 
