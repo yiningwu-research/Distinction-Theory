@@ -44,7 +44,7 @@ For formal evaluation:
 Read:
 
 1. FDS-A1
-2. FDS-B1 plan, if available
+2. FDS-B0 biomedical registry, if available
 3. AI-related claims in CLAIM_STATUS.md
 
 Main question:
