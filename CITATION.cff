@@ -186,3 +186,9 @@ preferred-citation:
       - family-names: Wu
         given-names: Yining
     date-released: 2026-05-15
+  - title: "FDS-Q2: Finite Distinction Maintenance in Fault-Tolerant Quantum Computation"
+    doi: 10.5281/zenodo.20302569
+    authors:
+      - family-names: Wu
+        given-names: Yining
+    date-released: 2026-05-19

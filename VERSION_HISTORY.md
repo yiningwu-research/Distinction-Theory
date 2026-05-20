@@ -6,6 +6,25 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-05-19 — FDS-Q2 Release
+
+**Description:** Release of FDS-Q2 v1.0, finite distinction maintenance in fault-tolerant quantum computation.
+
+### Added
+- FDS-Q2 v1.0 — logical distinction maintenance audit for fault-tolerant QC; vector ledger, scaling-wall diagnostics, ledger-relocation latency tax, autonomous QEC hidden ledger analysis.
+- Q2 claim section in CLAIM_LEDGER.md (8 claims).
+- models/fds_q2/ with code, figures, data for all 6 figures.
+- Video introduction: pending.
+
+### Changed
+- PAPER_MAP.md: Q2 status changed from planned to Released (DOI: 10.5281/zenodo.20302569).
+- CLAIM_STATUS.md: added Q2 row.
+- TIMESTAMPS.md: added Q2 row with DOI and tag.
+- CITATION.cff: added Q2 preferred-citation entry.
+- README.md: Key Documents updated.
+
+---
+
 ## 2026-05-19 — FDS-L1 Release
 
 **Description:** Release of FDS-L1 v1.0, active pruning in protocell-like systems as a finite-distinction bridge to artificial life.

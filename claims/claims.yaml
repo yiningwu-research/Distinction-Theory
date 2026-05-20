@@ -2720,3 +2720,110 @@
   doi: 10.5281/zenodo.20289215
   failure_condition: The paper is interpreted as a probability or Born-rule derivation
     rather than a conditional record-availability theory.
+- id: FDS-Q2-001
+  title: Logical Qubits as Protected Quantum Distinctions
+  statement: Logical qubits are protected quantum distinctions.
+  status: FDS/QI bridge
+  layer: Bridge
+  dependencies:
+  - FDS core
+  - QEC theory
+  first_document: FDS-Q2
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20302569
+  failure_condition: Logical information cannot be represented as a protected code
+    quotient or logical algebra.
+- id: FDS-Q2-002
+  title: QEC as Active Finite-Distinction Maintenance
+  statement: QEC is active finite-distinction maintenance.
+  status: Main Q2 interpretation
+  layer: Physical bridge
+  dependencies:
+  - FDS-Q2-001
+  first_document: FDS-Q2
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20302569
+  failure_condition: Logical distinctions are preserved under noise with no redundancy,
+    syndrome information, feedback, passive protection, or maintenance channel.
+- id: FDS-Q2-003
+  title: Threshold Theorem as Conditional Baseline
+  statement: Threshold theorem is accepted as conditional baseline.
+  status: Scope firewall
+  layer: Bridge
+  dependencies:
+  - Threshold theorem
+  first_document: FDS-Q2
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20302569
+  failure_condition: The paper is read as refuting the threshold theorem rather than
+    auditing its physical assumptions.
+- id: FDS-Q2-004
+  title: Correction Demand as Vector Ledger
+  statement: Correction demand is a vector ledger.
+  status: Engineering bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS-Q2-002
+  first_document: FDS-Q2
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20302569
+  failure_condition: Syndrome, decoding, reset, latency, cooling, and control demands
+    can be collapsed into one scalar without losing bottleneck information.
+- id: FDS-Q2-005
+  title: Landauer Lower Bound on Irreversible Reset
+  statement: Irreversible reset has a Landauer lower bound.
+  status: Physical bridge
+  layer: Physical bridge
+  dependencies:
+  - Landauer 1961
+  first_document: FDS-Q2
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20302569
+  failure_condition: Reliable logically irreversible reset below kT ln2 per erased
+    bit under standard Landauer conditions.
+- id: FDS-Q2-006
+  title: Cold-Stage Ledger Constraints
+  statement: Cryogenic solid-state systems face cold-stage ledger constraints.
+  status: Architecture-specific claim
+  layer: Physical bridge
+  dependencies:
+  - FDS-Q2-004
+  - FDS-Q2-005
+  first_document: FDS-Q2
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20302569
+  failure_condition: Large-scale cryogenic processors maintain falling logical error
+    while all cold-stage power, routing, latency, and reset ledgers remain within budget.
+- id: FDS-Q2-007
+  title: Passive Protection Reduces Active Load
+  statement: Topological/passive protection can reduce active load.
+  status: Escape-channel bridge
+  layer: Physical bridge
+  dependencies:
+  - FDS-Q2-002
+  first_document: FDS-Q2
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20302569
+  failure_condition: Passive protection removes preparation, finite-temperature, readout,
+    braiding, leakage, and residual correction costs entirely.
+- id: FDS-Q2-008
+  title: Failure Propagation Rule
+  statement: Q2 failure does not falsify FDS Core or Q1.
+  status: Failure propagation rule
+  layer: Bridge
+  dependencies:
+  - FDS-Q2-001
+  - FDS-Q2-002
+  first_document: FDS-Q2
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20302569
+  failure_condition: Architecture-specific failure is treated as failure of the formal
+    finite-system core or quantum mechanics.

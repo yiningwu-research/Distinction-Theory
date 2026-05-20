@@ -2492,4 +2492,118 @@
 
 ---
 
+## Q2 — Finite Distinction Maintenance in Fault-Tolerant Quantum Computation Claims
+
+### FDS-Q2-001 — Logical Qubits as Protected Quantum Distinctions
+
+**Statement.** Logical qubits are protected quantum distinctions.
+
+**Status.** FDS/QI bridge.
+
+**Dependencies.** FDS core; QEC theory
+
+**First timestamp.** FDS-Q2 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20302569
+
+---
+
+### FDS-Q2-002 — QEC as Active Finite-Distinction Maintenance
+
+**Statement.** QEC is active finite-distinction maintenance.
+
+**Status.** Main Q2 interpretation.
+
+**Dependencies.** Q2-001
+
+**First timestamp.** FDS-Q2 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20302569
+
+---
+
+### FDS-Q2-003 — Threshold Theorem as Conditional Baseline
+
+**Statement.** Threshold theorem is accepted as conditional baseline.
+
+**Status.** Scope firewall.
+
+**Dependencies.** Threshold theorem
+
+**First timestamp.** FDS-Q2 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20302569
+
+---
+
+### FDS-Q2-004 — Correction Demand as Vector Ledger
+
+**Statement.** Correction demand is a vector ledger.
+
+**Status.** Engineering bridge.
+
+**Dependencies.** Q2-002
+
+**First timestamp.** FDS-Q2 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20302569
+
+---
+
+### FDS-Q2-005 — Landauer Lower Bound on Irreversible Reset
+
+**Statement.** Irreversible reset has a Landauer lower bound.
+
+**Status.** Physical bridge.
+
+**Dependencies.** Landauer 1961
+
+**First timestamp.** FDS-Q2 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20302569
+
+---
+
+### FDS-Q2-006 — Cold-Stage Ledger Constraints
+
+**Statement.** Cryogenic solid-state systems face cold-stage ledger constraints.
+
+**Status.** Architecture-specific claim.
+
+**Dependencies.** Q2-004; Q2-005
+
+**First timestamp.** FDS-Q2 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20302569
+
+---
+
+### FDS-Q2-007 — Passive Protection Reduces Active Load
+
+**Statement.** Topological/passive protection can reduce active load.
+
+**Status.** Escape-channel bridge.
+
+**Dependencies.** Q2-002
+
+**First timestamp.** FDS-Q2 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20302569
+
+---
+
+### FDS-Q2-008 — Failure Propagation Rule
+
+**Statement.** Q2 failure does not falsify FDS Core or Q1.
+
+**Status.** Failure propagation rule.
+
+**Dependencies.** Q2-001; Q2-002
+
+**First timestamp.** FDS-Q2 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20302569
+
+---
+
 *End of ledger. New claims added as documents are released or revised.*

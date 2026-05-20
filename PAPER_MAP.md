@@ -21,6 +21,7 @@ These papers define the project and its most operational entry point.
 | FDS-O3 | Boundary Maintenance and the Second Law under Finite Memory | Operational Trident III / finite-memory operational Second-Law channel | Released | 10.5281/zenodo.20255129 |
 | FDS-T3 | Capacity Overflow and Effective Stochasticity | common mechanism bridge | Released |
 | FDS-Q1 | Finite Record Boundaries in Wigner's Friend Scenarios | quantum-foundations record-boundary bridge | Released | 10.5281/zenodo.20289215 |
+| FDS-Q2 | Finite Distinction Maintenance in Fault-Tolerant Quantum Computation | finite-maintenance audit for fault-tolerant QC | Released | 10.5281/zenodo.20302569 |
 | FDS-P1 | Physical Distinction Carriers and Erasure Maps | Physical Bridge Ladder I | Released |
 | FDS-P2 | Bounded-Memory Reversible Computation and Housekeeping Dissipation | Physical Bridge Ladder II | Released |
 | FDS-P4 | Coarse-Grained Anti-Recurrence and Informational Hysteresis | Physical Bridge Ladder IV / deep physical bridge | Released |
