@@ -2606,4 +2606,118 @@
 
 ---
 
+## B0 — Biomedical Bridge Registry Claims
+
+### FDS-B0-001 — Finite Observer Bound
+
+**Statement.** Finite observer bound applies to biomedical knowledge.
+
+**Status.** Formal bridge.
+
+**Dependencies.** FDS Core
+
+**First timestamp.** FDS-B0 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20312983
+
+---
+
+### FDS-B0-002 — Modeling Not Diagnosis
+
+**Statement.** Biomedical FDS mapping is modeling, not diagnosis.
+
+**Status.** Governance firewall.
+
+**Dependencies.** B0-001
+
+**First timestamp.** FDS-B0 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20312983
+
+---
+
+### FDS-B0-003 — Domain Bridge Status
+
+**Statement.** B-series claims are domain bridges.
+
+**Status.** Governance firewall.
+
+**Dependencies.** B0-002
+
+**First timestamp.** FDS-B0 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20312983
+
+---
+
+### FDS-B0-004 — Claim-Level Hierarchy
+
+**Statement.** Claim-level hierarchy (B-L0 to B-L5) governs interpretation.
+
+**Status.** Registry governance.
+
+**Dependencies.** B0-003
+
+**First timestamp.** FDS-B0 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20312983
+
+---
+
+### FDS-B0-005 — Translation Barrier
+
+**Statement.** Translation barrier prevents clinical overreach.
+
+**Status.** Safety firewall.
+
+**Dependencies.** B0-004
+
+**First timestamp.** FDS-B0 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20312983
+
+---
+
+### FDS-B0-006 — Mechanism Non-Replacement Rule
+
+**Statement.** Mechanism non-replacement rule.
+
+**Status.** Governance rule.
+
+**Dependencies.** B0-001
+
+**First timestamp.** FDS-B0 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20312983
+
+---
+
+### FDS-B0-007 — Maintenance Debt Concept
+
+**Statement.** Maintenance debt as accumulated repair-verification mismatch.
+
+**Status.** Non-clinical concept.
+
+**Dependencies.** B0-001
+
+**First timestamp.** FDS-B0 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20312983
+
+---
+
+### FDS-B0-008 — Failure Propagation Rule
+
+**Statement.** B0 failure does not falsify FDS Core.
+
+**Status.** Propagation rule.
+
+**Dependencies.** B0-001
+
+**First timestamp.** FDS-B0 v1.0, 2026-05-19.
+
+**Failure condition.** 10.5281/zenodo.20312983
+
+---
+
 *End of ledger. New claims added as documents are released or revised.*

@@ -192,3 +192,9 @@ preferred-citation:
       - family-names: Wu
         given-names: Yining
     date-released: 2026-05-19
+  - title: "FDS-B0: Biomedical Bridge Registry"
+    doi: 10.5281/zenodo.20312983
+    authors:
+      - family-names: Wu
+        given-names: Yining
+    date-released: 2026-05-19

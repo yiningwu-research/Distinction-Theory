@@ -6,6 +6,22 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-05-19 — FDS-B0 Release
+
+**Description:** Release of FDS-B0 v1.0, biomedical bridge registry and safety firewall for non-clinical B-series applications.
+
+### Added
+- FDS-B0 v1.0 — biomedical bridge registry; non-clinical reader contract; claim-level hierarchy (B-L0–B-L5); biomedical FDS object; multiscale boundary convention; mechanism non-replacement rule; safety firewall cards; operational-test registry; minimum reporting templates; maintenance debt concept.
+
+### Changed
+- PAPER_MAP.md: B0 added to Biomedical Domain Bridges.
+- CLAIM_STATUS.md: added B0 row.
+- TIMESTAMPS.md: added B0 row with DOI and tag.
+- CITATION.cff: added B0 preferred-citation entry.
+- README.md: Key Documents updated.
+
+---
+
 ## 2026-05-19 — FDS-Q2 Release
 
 **Description:** Release of FDS-Q2 v1.0, finite distinction maintenance in fault-tolerant quantum computation.

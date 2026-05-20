@@ -29,6 +29,7 @@ These papers define the project and its most operational entry point.
 | FDS-P6 | Speed, Precision, and Dissipation Bounds for Boundary Maintenance | throughput bridge / speed-precision-dissipation | Released |
 | FDS-C1 | Active Cognitive Pruning Controls Reportable Access under Finite Capacity | cognitive bridge | Released |
 | FDS-E1 | Finite-Capacity Prospect Theory | behavioral economics bridge | Released |
+| FDS-B0 | Biomedical Bridge Registry | biomedical bridge registry and safety firewall | Released | 10.5281/zenodo.20312983 |
 | FDS-A1 | Active Finite Distinction Systems as a Criterion for Artificial Agency | operational AI timestamp | Released / frozen |
 
 O1/O2/O3 form the Operational Trident: finite record formation, register-time update, and finite-memory operational Second-Law channel.

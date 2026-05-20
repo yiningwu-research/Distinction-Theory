@@ -2827,3 +2827,104 @@
   doi: 10.5281/zenodo.20302569
   failure_condition: Architecture-specific failure is treated as failure of the formal
     finite-system core or quantum mechanics.
+- id: FDS-B0-001
+  title: Finite Observer Bound
+  statement: Finite observer bound applies to biomedical knowledge.
+  status: Formal bridge
+  layer: Bridge
+  dependencies:
+  - FDS Core
+  first_document: FDS-B0
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20312983
+  failure_condition: Biomedical knowledge is acquired and maintained without any
+    finite carrier, memory, or update constraint.
+- id: FDS-B0-002
+  title: Modeling Not Diagnosis
+  statement: Biomedical FDS mapping is modeling, not diagnosis.
+  status: Governance firewall
+  layer: Bridge
+  dependencies:
+  - FDS-B0-001
+  first_document: FDS-B0
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20312983
+  failure_condition: The mapping is interpreted as clinical diagnosis without independent
+    validation.
+- id: FDS-B0-003
+  title: Domain Bridge Status
+  statement: B-series claims are domain bridges.
+  status: Governance firewall
+  layer: Bridge
+  dependencies:
+  - FDS-B0-002
+  first_document: FDS-B0
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20312983
+  failure_condition: A B-series claim is treated as proven clinical fact without
+    biomedical validation.
+- id: FDS-B0-004
+  title: Claim-Level Hierarchy
+  statement: Claim-level hierarchy (B-L0 to B-L5) governs interpretation.
+  status: Registry governance
+  layer: Bridge
+  dependencies:
+  - FDS-B0-003
+  first_document: FDS-B0
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20312983
+  failure_condition: A lower-level claim is cited as if it were clinically actionable.
+- id: FDS-B0-005
+  title: Translation Barrier
+  statement: Translation barrier prevents clinical overreach.
+  status: Safety firewall
+  layer: Bridge
+  dependencies:
+  - FDS-B0-004
+  first_document: FDS-B0
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20312983
+  failure_condition: FDS biomedical language is used in clinical decision-making without
+    independent validation.
+- id: FDS-B0-006
+  title: Mechanism Non-Replacement Rule
+  statement: Mechanism non-replacement rule.
+  status: Governance rule
+  layer: Bridge
+  dependencies:
+  - FDS-B0-001
+  first_document: FDS-B0
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20312983
+  failure_condition: FDS classification is used to replace validated biomedical mechanisms.
+- id: FDS-B0-007
+  title: Maintenance Debt Concept
+  statement: Maintenance debt as accumulated repair-verification mismatch.
+  status: Non-clinical concept
+  layer: Bridge
+  dependencies:
+  - FDS-B0-001
+  first_document: FDS-B0
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20312983
+  failure_condition: Maintenance debt is treated as a clinical biomarker before validation.
+- id: FDS-B0-008
+  title: Failure Propagation Rule
+  statement: B0 failure does not falsify FDS Core.
+  status: Propagation rule
+  layer: Bridge
+  dependencies:
+  - FDS-B0-001
+  first_document: FDS-B0
+  first_version: v1.0
+  first_date: '2026-05-19'
+  doi: 10.5281/zenodo.20312983
+  failure_condition: B-series failure is interpreted as failure of the formal FDS
+    core.
