@@ -162,6 +162,18 @@ Scope: FDS-X5, high-risk physical bridge, invariant-form compression, Wigner puz
 
 YouTube: https://www.youtube.com/watch?v=PotAK_6CwgI
 
+## 26. Effective Geometry as Horizon Boundary Accounting
+
+Scope: FDS-T2, horizon-ledger bridge, effective geometry from finite distinguishability, non-equilibrium residuals, Phase-B geometry selection, covariant consistency conditions.
+
+YouTube: https://www.youtube.com/watch?v=A32OwVQmuaQ
+
+## 27. Finite Record Boundaries in Wigner's Friend Scenarios
+
+Scope: FDS-Q1, finite record-boundary account of Wigner-friend tension, observer-relative record algebras, false promotion risk, record-availability horizon for quantum-device diagnostics.
+
+YouTube: https://www.youtube.com/watch?v=U3OPzEdPkj4
+
 ## YouTube description links
 
 Each video description includes links to:
