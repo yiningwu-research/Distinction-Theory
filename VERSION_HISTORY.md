@@ -6,6 +6,24 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-05-19 — FDS-L1 Release
+
+**Description:** Release of FDS-L1 v1.0, active pruning in protocell-like systems as a finite-distinction bridge to artificial life.
+
+### Added
+- FDS-L1 v1.0 — active pruning as boundary maintenance; residue accumulation, pruning rate, saddle-node collapse, maintenance-attractor loss.
+- L1 claim section in CLAIM_LEDGER.md.
+- models/fds_l1/ with code and figures.
+- Video introduction: https://www.youtube.com/watch?v=HtXIiV9JTlQ
+
+### Changed
+- PAPER_MAP.md: L1 status unchanged (already Released). New DOI: 10.5281/zenodo.20302171.
+- TIMESTAMPS.md: L1 DOI updated to 10.5281/zenodo.20302171.
+- CITATION.cff: added L1 preferred-citation entry.
+- README.md: Key Documents updated.
+
+---
+
 ## 2026-05-19 — FDS-X2 v2.0 Release
 
 **Description:** Release of FDS-X2 v2.0, integrated canonical version of the minimal nonzero CP/T orientation theorem with full weak-sector PMNS extension.

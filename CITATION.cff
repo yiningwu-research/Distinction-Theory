@@ -180,7 +180,9 @@ preferred-citation:
       - family-names: Wu
         given-names: Yining
     date-released: 2026-05-19
+  - title: "Active Pruning Controls Boundary Persistence in Protocell-like Systems: A Finite-Distinction Bridge to Artificial Life"
+    doi: 10.5281/zenodo.20302171
     authors:
       - family-names: Wu
         given-names: Yining
-    date-released: 2026-05-19
+    date-released: 2026-05-15

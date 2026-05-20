@@ -93,7 +93,7 @@ The current DT/FDS public architecture, organized by layer:
 
 - **FDS-N1** — boundary-maintaining self-organizing systems. DOI: 10.5281/zenodo.20253151.
 - **FDS-E1** — finite-capacity prospect theory. DOI: 10.5281/zenodo.20237306. Also available at SocArXiv: 10.31235/osf.io/pj43k_v1.
-- **FDS-L1** — active pruning and protocell-like systems. DOI pending.
+- **FDS-L1** — active pruning and protocell-like systems. DOI: 10.5281/zenodo.20302171.
 - **FDS-LC0** — life and cognitive science bridge claim registry. DOI: 10.5281/zenodo.20183373.
 - **FDS-C1** — reportable access under finite capacity. DOI: 10.5281/zenodo.20229509.
 - **FDS-A1** — artificial agency criterion (frozen public AI line). DOI: 10.5281/zenodo.20184709.
@@ -199,7 +199,7 @@ Recommended reading path:
 | **FDS-T3** | *Capacity Overflow and Effective Stochasticity: Non-Injective Projection, Critical Deficit, Phase-B Invariants, and the Information-Theoretic Origin of Coarse Dynamics* | Released | [10.5281/zenodo.20250367](https://doi.org/10.5281/zenodo.20250367) |
 | **FDS-P1** | *Physical Distinction Carriers and Erasure Maps: Accounting Boundaries, Distinction-to-Noise Ratio, and Thermodynamic Implementation* | Released | [10.5281/zenodo.20251854](https://doi.org/10.5281/zenodo.20251854) |
 | **FDS-P2** | *Bounded-Memory Reversible Computation and Housekeeping Dissipation: Garbage Entropy, Cleanup Scheduling, and the Cost of Delayed Erasure* | Released | [10.5281/zenodo.20252480](https://zenodo.org/records/20252480) |
-| **FDS-L1** | *Life and Death as Boundary Maintenance* | Released | DOI pending |
+| **FDS-L1** | *Active Pruning Controls Boundary Persistence in Protocell-like Systems: A Finite-Distinction Bridge to Artificial Life* | Released | [10.5281/zenodo.20302171](https://doi.org/10.5281/zenodo.20302171) |
 | **FDS-LC0** | *Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo registry | [10.5281/zenodo.20183373](https://doi.org/10.5281/zenodo.20183373) |
 | **FDS-C1** | *Consciousness and Forgetting as Compression and Active Pruning* | Released | [10.5281/zenodo.20229509](https://zenodo.org/records/20229509) |
 | **FDS-A1** | *Active Finite Distinction Systems as a Criterion for Artificial Agency* | Zenodo / frozen public AI line | [10.5281/zenodo.20184709](https://doi.org/10.5281/zenodo.20184709) |
