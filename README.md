@@ -96,6 +96,7 @@ The current DT/FDS public architecture, organized by layer:
 - **FDS-E1** — finite-capacity prospect theory. DOI: 10.5281/zenodo.20237306. Also available at SocArXiv: 10.31235/osf.io/pj43k_v1.
 - **FDS-L1** — active pruning and protocell-like systems. DOI: 10.5281/zenodo.20302171.
 - **FDS-B0** — biomedical bridge registry / non-clinical framework / safety firewall. DOI: 10.5281/zenodo.20312983.
+- **FDS-B1** — immunity as boundary verification / normal-form dynamics / adversarial classification / distributed topology / non-clinical proxy maps. DOI: 10.5281/zenodo.20327539.
 - **FDS-LC0** — life and cognitive science bridge claim registry. DOI: 10.5281/zenodo.20183373.
 - **FDS-C1** — reportable access under finite capacity. DOI: 10.5281/zenodo.20229509.
 - **FDS-A1** — artificial agency criterion (frozen public AI line). DOI: 10.5281/zenodo.20184709.
@@ -139,6 +140,7 @@ The public academic spine currently prioritizes:
 15. **FDS-M3** — meaning as actionable semantic quotient.
 16. **FDS-L1** — active pruning and artificial-life persistence.
 17. **FDS-B0** — biomedical bridge registry / non-clinical framework / safety firewall.
+18. **FDS-B1** — immunity as boundary verification / normal-form dynamics / adversarial classification / distributed topology / non-clinical proxy maps.
 17. **FDS-C1** — reportable access under finite capacity.
 18. **FDS-E1** — finite-capacity prospect theory and boundary-risk preferences. SocArXiv preprint: 10.31235/osf.io/pj43k_v1.
 19. **FDS-X1** — pre-Euclid horizon-maintenance dark-energy bridge note (released).
@@ -181,6 +183,7 @@ Recommended reading path:
 15. **FDS-P5 Deficit-Driven Entropy Ledger** — Physical Bridge Ladder III.
 16. **FDS-L1 Active Pruning** — artificial-life, protocell-like systems, persistence-collapse transitions.
 17. **FDS-B0 Biomedical Bridge Registry** — non-clinical framework, safety firewall, maintenance debt.
+18. **FDS-B1: Immunity as Boundary Verification** — normal-form dynamics, adversarial classification, distributed topology, non-clinical proxy maps, dimensionless control numbers, crucial divergent predictions.
 17. **FDS-C1 Reportable Access under Finite Capacity** — cognitive reportability paper.
 18. **FDS-LC0 Life/Cognitive Bridge Registry** — life and cognitive science bridge claims.
 19. **FDS-E1 Finite-Capacity Prospect Theory** — state-dependent loss aversion, reference dependence, probability weighting. SocArXiv: 10.31235/osf.io/pj43k_v1.
@@ -207,6 +210,7 @@ Recommended reading path:
 | **FDS-P2** | *Bounded-Memory Reversible Computation and Housekeeping Dissipation: Garbage Entropy, Cleanup Scheduling, and the Cost of Delayed Erasure* | Released | [10.5281/zenodo.20252480](https://zenodo.org/records/20252480) |
 | **FDS-L1** | *Active Pruning Controls Boundary Persistence in Protocell-like Systems: A Finite-Distinction Bridge to Artificial Life* | Released | [10.5281/zenodo.20302171](https://doi.org/10.5281/zenodo.20302171) |
 | **FDS-B0** | *FDS-B0: Biomedical Bridge Registry — A Non-Clinical Framework for Boundary Maintenance, Disease-Model Translation, and Safety Firewalls in Finite Distinction Systems* | Released | [10.5281/zenodo.20312983](https://doi.org/10.5281/zenodo.20312983) |
+| **FDS-B1** | *Immunity as Boundary Verification: Normal-Form Dynamics, Adversarial Classification, Distributed Verification, and Non-Clinical Proxy Maps in Active Biological Systems* | Released | [10.5281/zenodo.20327539](https://doi.org/10.5281/zenodo.20327539) |
 | **FDS-LC0** | *Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo registry | [10.5281/zenodo.20183373](https://doi.org/10.5281/zenodo.20183373) |
 | **FDS-C1** | *Consciousness and Forgetting as Compression and Active Pruning* | Released | [10.5281/zenodo.20229509](https://zenodo.org/records/20229509) |
 | **FDS-A1** | *Active Finite Distinction Systems as a Criterion for Artificial Agency* | Zenodo / frozen public AI line | [10.5281/zenodo.20184709](https://doi.org/10.5281/zenodo.20184709) |

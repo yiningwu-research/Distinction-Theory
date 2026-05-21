@@ -2928,3 +2928,110 @@
   doi: 10.5281/zenodo.20312983
   failure_condition: B-series failure is interpreted as failure of the formal FDS
     core.
+
+- id: B1-001
+  title: Boundary Verification
+  statement: Immune systems can be modeled as finite-capacity boundary-verification
+    architectures.
+  status: Domain bridge (B-L2)
+  layer: Domain Bridge
+  dependencies:
+  - B0 biomedical governance
+  - FDS core capacity definitions
+  first_document: FDS-B1
+  first_version: v1.0
+  first_date: '2026-05-21'
+  doi: 10.5281/zenodo.20327539
+  failure_condition: Immune response can be fully organized without finite classification,
+    memory, resource, boundary, or verification roles.
+- id: B1-002
+  title: Admission Before Action
+  statement: Immune action requires admission and classification of candidate distinctions
+    before downstream response.
+  status: Domain bridge (B-L2/B-L3)
+  layer: Domain Bridge
+  dependencies:
+  - B1-001
+  - recognition-admission-verification-action pipeline
+  first_document: FDS-B1
+  first_version: v1.0
+  first_date: '2026-05-21'
+  doi: 10.5281/zenodo.20327539
+  failure_condition: Action is empirically independent of admission, classification,
+    memory, or context in the specified model.
+- id: B1-003
+  title: Multiaxis Classifier
+  statement: Immune classification is better modeled as a boundary-state vector than
+    as a single self/non-self label.
+  status: Domain bridge (B-L2)
+  layer: Domain Bridge
+  dependencies:
+  - B1-001
+  - multiaxis classification
+  first_document: FDS-B1
+  first_version: v1.0
+  first_date: '2026-05-21'
+  doi: 10.5281/zenodo.20327539
+  failure_condition: A one-dimensional label captures all relevant verification behavior
+    in the declared system.
+- id: B1-004
+  title: Verification Saturation
+  statement: High candidate-distinction load should produce delay, broad default action,
+    reduced specificity, false positives/negatives, or FDS-resolution failure.
+  status: Domain bridge (B-L3)
+  layer: Domain Bridge
+  dependencies:
+  - B1-001
+  - verification saturation
+  - VLR control number
+  first_document: FDS-B1
+  first_version: v1.0
+  first_date: '2026-05-21'
+  doi: 10.5281/zenodo.20327539
+  failure_condition: Increasing verification burden produces no change in accuracy,
+    delay, alarm load, resource use, or resolution.
+- id: B1-005
+  title: Memory-Tolerance Tradeoff
+  statement: Immune memory reduces future verification cost but can produce drift,
+    overgeneralization, or tolerance risk.
+  status: Domain bridge (B-L3)
+  layer: Domain Bridge
+  dependencies:
+  - B1-001
+  - memory-tolerance tradeoff
+  first_document: FDS-B1
+  first_version: v1.0
+  first_date: '2026-05-21'
+  doi: 10.5281/zenodo.20327539
+  failure_condition: Memory has no measurable cost, drift, or threshold effect in
+    the declared system.
+- id: B1-006
+  title: Adversarial Sabotage
+  statement: Some perturbations actively consume verification capacity or modify classification.
+  status: Domain bridge (B-L3)
+  layer: Domain Bridge
+  dependencies:
+  - B1-001
+  - adversarial distinction injection model
+  first_document: FDS-B1
+  first_version: v1.0
+  first_date: '2026-05-21'
+  doi: 10.5281/zenodo.20327539
+  failure_condition: Evasion-like processes never alter Y, pi, M, Phi, or C_verify
+    in declared models.
+- id: B1-007
+  title: Distributed Spatial Latency
+  statement: Immune verification is constrained by routing, migration, amplification,
+    and return times.
+  status: Domain bridge (B-L3)
+  layer: Domain Bridge
+  dependencies:
+  - B1-001
+  - spatial latency graph model
+  - SLR control number
+  first_document: FDS-B1
+  first_version: v1.0
+  first_date: '2026-05-21'
+  doi: 10.5281/zenodo.20327539
+  failure_condition: Spatial latency has no measurable effect in systems where local
+    damage timescale is shorter than verification time.

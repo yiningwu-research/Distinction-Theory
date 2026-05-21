@@ -198,3 +198,9 @@ preferred-citation:
       - family-names: Wu
         given-names: Yining
     date-released: 2026-05-19
+  - title: "Immunity as Boundary Verification: Normal-Form Dynamics, Adversarial Classification, Distributed Verification, and Non-Clinical Proxy Maps in Active Biological Systems"
+    doi: 10.5281/zenodo.20327539
+    authors:
+      - family-names: Wu
+        given-names: Yining
+    date-released: 2026-05-21

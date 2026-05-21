@@ -2720,4 +2720,102 @@
 
 ---
 
+### FDS-B1-001 — Immunity as Boundary Verification
+
+**Statement.** Immune systems can be modeled as finite-capacity boundary-verification architectures.
+
+**Status.** Domain bridge (B-L2).
+
+**Dependencies.** B0 biomedical bridge governance; FDS core capacity definitions.
+
+**First timestamp.** FDS-B1 v1.0, 2026-05-21.
+
+**Failure condition.** Immune response can be fully organized without finite classification, memory, resource, boundary, or verification roles.
+
+---
+
+### FDS-B1-002 — Admission Before Action
+
+**Statement.** Immune action requires admission and classification of candidate distinctions before downstream response.
+
+**Status.** Domain bridge (B-L2/B-L3).
+
+**Dependencies.** B1-001; recognition-admission-verification-action pipeline.
+
+**First timestamp.** FDS-B1 v1.0, 2026-05-21.
+
+**Failure condition.** Action is empirically independent of admission, classification, memory, or context in the specified model.
+
+---
+
+### FDS-B1-003 — Multiaxis Classifier
+
+**Statement.** Immune classification is better modeled as a boundary-state vector than as a single self/non-self label.
+
+**Status.** Domain bridge (B-L2).
+
+**Dependencies.** B1-001; multiaxis classification.
+
+**First timestamp.** FDS-B1 v1.0, 2026-05-21.
+
+**Failure condition.** A one-dimensional label captures all relevant verification behavior in the declared system.
+
+---
+
+### FDS-B1-004 — Verification Saturation
+
+**Statement.** High candidate-distinction load should produce delay, broad default action, reduced specificity, false positives/negatives, or FDS-resolution failure.
+
+**Status.** Domain bridge (B-L3).
+
+**Dependencies.** B1-001; verification saturation; VLR control number.
+
+**First timestamp.** FDS-B1 v1.0, 2026-05-21.
+
+**Failure condition.** Increasing verification burden produces no change in accuracy, delay, alarm load, resource use, or resolution.
+
+---
+
+### FDS-B1-005 — Memory-Tolerance Tradeoff
+
+**Statement.** Immune memory reduces future verification cost but can produce drift, overgeneralization, or tolerance risk.
+
+**Status.** Domain bridge (B-L3).
+
+**Dependencies.** B1-001; memory-tolerance tradeoff.
+
+**First timestamp.** FDS-B1 v1.0, 2026-05-21.
+
+**Failure condition.** Memory has no measurable cost, drift, or threshold effect in the declared system.
+
+---
+
+### FDS-B1-006 — Adversarial Sabotage
+
+**Statement.** Some perturbations actively consume verification capacity or modify classification.
+
+**Status.** Domain bridge (B-L3).
+
+**Dependencies.** B1-001; adversarial distinction injection model.
+
+**First timestamp.** FDS-B1 v1.0, 2026-05-21.
+
+**Failure condition.** Evasion-like processes never alter Y, pi, M, Phi, or C_verify in declared models.
+
+---
+
+### FDS-B1-007 — Distributed Spatial Latency
+
+**Statement.** Immune verification is constrained by routing, migration, amplification, and return times.
+
+**Status.** Domain bridge (B-L3).
+
+**Dependencies.** B1-001; spatial latency graph model; SLR control number.
+
+**First timestamp.** FDS-B1 v1.0, 2026-05-21.
+
+**Failure condition.** Spatial latency has no measurable effect in systems where local damage timescale is shorter than verification time.
+
+---
+
 *End of ledger. New claims added as documents are released or revised.*

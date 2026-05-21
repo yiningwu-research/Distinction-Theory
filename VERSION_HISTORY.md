@@ -6,6 +6,24 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-05-21 — FDS-B1 Release
+
+**Description:** Release of FDS-B1 v1.0, immunity as boundary verification — a finite-capacity boundary-verification reconstruction of the immune system with normal-form dynamics, dimensionless control numbers, adversarial classification, distributed topology, non-clinical proxy maps, and seven B1 claim cards.
+
+### Added
+- FDS-B1 v1.0 — immunity as boundary verification paper.
+- B1 claim section in CLAIM_LEDGER.md (B1-1 through B1-7).
+- `papers/FDS_B1/` with source, PDF, figures, and simulation code.
+
+### Changed
+- PAPER_MAP.md: B1 added to Stage I after B0.
+- CLAIM_STATUS.md: added B1 row.
+- TIMESTAMPS.md: added B1 row with DOI.
+- CITATION.cff: added B1 preferred-citation entry.
+- README.md: Key Documents updated.
+
+---
+
 ## 2026-05-19 — FDS-B0 Release
 
 **Description:** Release of FDS-B0 v1.0, biomedical bridge registry and safety firewall for non-clinical B-series applications.
