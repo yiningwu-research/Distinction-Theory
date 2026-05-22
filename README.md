@@ -96,7 +96,7 @@ The current DT/FDS public architecture, organized by layer:
 - **FDS-E1** — finite-capacity prospect theory. DOI: 10.5281/zenodo.20237306. Also available at SocArXiv: 10.31235/osf.io/pj43k_v1.
 - **FDS-L1** — active pruning and protocell-like systems. DOI: 10.5281/zenodo.20302171.
 - **FDS-B0** — biomedical bridge registry / non-clinical framework / safety firewall. DOI: 10.5281/zenodo.20312983.
-- **FDS-B1** — immunity as boundary verification / normal-form dynamics / adversarial classification / distributed topology / non-clinical proxy maps. DOI: 10.5281/zenodo.20327539.
+- **FDS-B1** — immunity as boundary verification / normal-form dynamics / adversarial classification / distributed topology / non-clinical proxy maps. DOI: 10.5281/zenodo.20327539. [Video](https://www.youtube.com/watch?v=crvO77ytI6A).
 - **FDS-LC0** — life and cognitive science bridge claim registry. DOI: 10.5281/zenodo.20183373.
 - **FDS-C1** — reportable access under finite capacity. DOI: 10.5281/zenodo.20229509.
 - **FDS-A1** — artificial agency criterion (frozen public AI line). DOI: 10.5281/zenodo.20184709.
@@ -210,7 +210,7 @@ Recommended reading path:
 | **FDS-P2** | *Bounded-Memory Reversible Computation and Housekeeping Dissipation: Garbage Entropy, Cleanup Scheduling, and the Cost of Delayed Erasure* | Released | [10.5281/zenodo.20252480](https://zenodo.org/records/20252480) |
 | **FDS-L1** | *Active Pruning Controls Boundary Persistence in Protocell-like Systems: A Finite-Distinction Bridge to Artificial Life* | Released | [10.5281/zenodo.20302171](https://doi.org/10.5281/zenodo.20302171) |
 | **FDS-B0** | *FDS-B0: Biomedical Bridge Registry — A Non-Clinical Framework for Boundary Maintenance, Disease-Model Translation, and Safety Firewalls in Finite Distinction Systems* | Released | [10.5281/zenodo.20312983](https://doi.org/10.5281/zenodo.20312983) |
-| **FDS-B1** | *Immunity as Boundary Verification: Normal-Form Dynamics, Adversarial Classification, Distributed Verification, and Non-Clinical Proxy Maps in Active Biological Systems* | Released | [10.5281/zenodo.20327539](https://doi.org/10.5281/zenodo.20327539) |
+| **FDS-B1** | *Immunity as Boundary Verification: Normal-Form Dynamics, Adversarial Classification, Distributed Verification, and Non-Clinical Proxy Maps in Active Biological Systems* | Released | [10.5281/zenodo.20327539](https://doi.org/10.5281/zenodo.20327539) | [Video](https://www.youtube.com/watch?v=crvO77ytI6A) |
 | **FDS-LC0** | *Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo registry | [10.5281/zenodo.20183373](https://doi.org/10.5281/zenodo.20183373) |
 | **FDS-C1** | *Consciousness and Forgetting as Compression and Active Pruning* | Released | [10.5281/zenodo.20229509](https://zenodo.org/records/20229509) |
 | **FDS-A1** | *Active Finite Distinction Systems as a Criterion for Artificial Agency* | Zenodo / frozen public AI line | [10.5281/zenodo.20184709](https://doi.org/10.5281/zenodo.20184709) |
@@ -221,7 +221,7 @@ Recommended reading path:
 | **FDS-X5** | *Mathematical Form of Physical Law as Invariant-Form Compression: Invariant, Equivariant, and Covariant Law Forms in Finite Distinction Systems* | Released | [10.5281/zenodo.20278236](https://doi.org/10.5281/zenodo.20278236) |
 | **FDS-E1** | *Finite-Capacity Prospect Theory: State-Dependent Risk Preferences under Resource, Attention, and Boundary-Risk Constraints* | Released | [10.5281/zenodo.20237306](https://doi.org/10.5281/zenodo.20237306) / [SocArXiv: 10.31235/osf.io/pj43k_v1](https://doi.org/10.31235/osf.io/pj43k_v1) |
 | **FDS-Q1** | *Finite Record Boundaries in Wigner's Friend Scenarios: Observer-Relative Distinguishability and Quantum Record Availability in Finite Distinction Systems* | Released | [10.5281/zenodo.20289215](https://doi.org/10.5281/zenodo.20289215) |
-| **FDS-Q2** | *FDS-Q2: Finite Distinction Maintenance in Fault-Tolerant Quantum Computation — Logical Distinction Ledgers, Error-Correction Infrastructure, and Architecture-Specific Resource Bounds* | Released | [10.5281/zenodo.20302569](https://doi.org/10.5281/zenodo.20302569) |
+| **FDS-Q2** | *FDS-Q2: Finite Distinction Maintenance in Fault-Tolerant Quantum Computation — Logical Distinction Ledgers, Error-Correction Infrastructure, and Architecture-Specific Resource Bounds* | Released | [10.5281/zenodo.20302569](https://doi.org/10.5281/zenodo.20302569) | [Video](https://www.youtube.com/watch?v=kIS-Ij6x1Ls) |
 | **FDS-N1** | *Boundary-Maintaining Self-Organizing Systems under Finite Capacity: Maintenance Load, Phase-C Collapse, and Invariant Selection* | Released | [10.5281/zenodo.20253151](https://doi.org/10.5281/zenodo.20253151) |
 | **FDS-P5** | *Capacity Deficit and Entropy Production in Active Finite Systems: A Generalized Dissipation Ledger for Boundary Maintenance* | Released | [10.5281/zenodo.20254259](https://doi.org/10.5281/zenodo.20254259) |
 | **FDS-O3** | *Boundary Maintenance and the Second Law under Finite Memory: Irreversible Record Reuse, Entropy Ledgers, and Operational Time Arrows* | Released | [10.5281/zenodo.20255129](https://doi.org/10.5281/zenodo.20255129) |

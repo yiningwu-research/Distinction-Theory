@@ -14,6 +14,7 @@ Version changes do not imply that every claim in the programme changes. Each ver
 - FDS-B1 v1.0 — immunity as boundary verification paper.
 - B1 claim section in CLAIM_LEDGER.md (B1-1 through B1-7).
 - `papers/FDS_B1/` with source, PDF, figures, and simulation code.
+- Video introduction: https://www.youtube.com/watch?v=crvO77ytI6A
 
 ### Changed
 - PAPER_MAP.md: B1 added to Stage I after B0.
