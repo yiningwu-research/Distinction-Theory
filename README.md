@@ -77,7 +77,7 @@ The current DT/FDS public architecture, organized by layer:
 - **FDS-O3** — boundary maintenance and the Second Law under finite memory. DOI: 10.5281/zenodo.20255129.
 - **FDS-T3** — capacity overflow and effective stochasticity. DOI: 10.5281/zenodo.20250367.
 - **FDS-Q1** — finite record boundaries in Wigner's friend scenarios. DOI: 10.5281/zenodo.20289215.
-- **FDS-Q2** — finite distinction maintenance in fault-tolerant quantum computation / logical distinction ledgers. DOI: 10.5281/zenodo.20302569.
+- **FDS-Q2** — finite distinction maintenance in fault-tolerant quantum computation / logical distinction ledgers. DOI: 10.5281/zenodo.20302569. [Video](https://www.youtube.com/watch?v=kIS-Ij6x1Ls).
 - **FDS-M0** — agency-semantics spine. DOI: 10.5281/zenodo.20257939.
 - **FDS-M1** — attention as distinction admission. DOI: 10.5281/zenodo.20258570.
 - **FDS-M2** — value and goal as boundary-relevance ranking. DOI: 10.5281/zenodo.20262998.
@@ -88,7 +88,11 @@ The current DT/FDS public architecture, organized by layer:
 - **FDS-P0** — physical bridge claim registry. DOI: 10.5281/zenodo.20159995.
 - **FDS-P1** — physical distinction carriers and erasure maps. DOI: 10.5281/zenodo.20251854.
 - **FDS-P2** — bounded-memory reversible computation and housekeeping dissipation. DOI: 10.5281/zenodo.20252480.
+- **FDS-P3** — finite-bath memory, Markovianization, and environmental forgetting. DOI: 10.5281/zenodo.20272541.
+- **FDS-P4** — coarse-grained anti-recurrence and informational hysteresis. DOI: 10.5281/zenodo.20265065.
 - **FDS-P5** — capacity deficit and entropy production ledger. DOI: 10.5281/zenodo.20254259.
+- **FDS-P6** — speed, precision, and dissipation bounds for boundary maintenance. DOI: 10.5281/zenodo.20269733.
+- **FDS-P7** — topological obstruction to forgetting / invariant side-ledgers / NHSE bridge. DOI: 10.5281/zenodo.20265386.
 
 ### Domain Bridges
 
@@ -100,7 +104,14 @@ The current DT/FDS public architecture, organized by layer:
 - **FDS-LC0** — life and cognitive science bridge claim registry. DOI: 10.5281/zenodo.20183373.
 - **FDS-C1** — reportable access under finite capacity. DOI: 10.5281/zenodo.20229509.
 - **FDS-A1** — artificial agency criterion (frozen public AI line). DOI: 10.5281/zenodo.20184709.
-- **FDS-X1** — frontier physical consequence: horizon-maintenance dark energy (pre-Euclid bridge note). DOI: 10.5281/zenodo.20290215.
+
+### Frontier Physical Consequences
+
+- **FDS-X1** — horizon-maintenance dark energy (pre-Euclid bridge note). DOI: 10.5281/zenodo.20290215.
+- **FDS-X2** — three fermion generations as CP/T-asymmetric identity transformation. DOI: 10.5281/zenodo.20289955.
+- **FDS-X3** — functional decomposition of the four fundamental interactions. DOI: 10.5281/zenodo.20274519.
+- **FDS-X4** — Pauli exclusion as finite address protection. DOI: 10.5281/zenodo.20278029.
+- **FDS-X5** — mathematical form of physical law as invariant-form compression. DOI: 10.5281/zenodo.20278236.
 
 ### Operational Trident
 
@@ -139,13 +150,18 @@ The public academic spine currently prioritizes:
 14. **FDS-M2** — value and goal as boundary-relevance ranking.
 15. **FDS-M3** — meaning as actionable semantic quotient.
 16. **FDS-L1** — active pruning and artificial-life persistence.
-17. **FDS-B0** — biomedical bridge registry / non-clinical framework / safety firewall.
-18. **FDS-B1** — immunity as boundary verification / normal-form dynamics / adversarial classification / distributed topology / non-clinical proxy maps.
 17. **FDS-C1** — reportable access under finite capacity.
-18. **FDS-E1** — finite-capacity prospect theory and boundary-risk preferences. SocArXiv preprint: 10.31235/osf.io/pj43k_v1.
-19. **FDS-X1** — pre-Euclid horizon-maintenance dark-energy bridge note (released).
-20. **FDS-Q1** — finite record boundaries in Wigner's friend scenarios (released).
-21. **FDS-Q2** — finite distinction maintenance in fault-tolerant quantum computation (released).
+18. **FDS-LC0** — life and cognitive science bridge claim registry.
+19. **FDS-B0** — biomedical bridge registry / non-clinical framework / safety firewall.
+20. **FDS-B1** — immunity as boundary verification / normal-form dynamics / adversarial classification / distributed topology / non-clinical proxy maps.
+21. **FDS-E1** — finite-capacity prospect theory and boundary-risk preferences. SocArXiv preprint: 10.31235/osf.io/pj43k_v1.
+22. **FDS-X1** — pre-Euclid horizon-maintenance dark-energy bridge note (released).
+23. **FDS-X2** — three fermion generations as CP/T-asymmetric identity transformation (released).
+24. **FDS-X3** — functional decomposition of the four fundamental interactions (released).
+25. **FDS-X4** — Pauli exclusion as finite address protection (released).
+26. **FDS-X5** — mathematical form of physical law as invariant-form compression (released).
+27. **FDS-Q1** — finite record boundaries in Wigner's friend scenarios (released).
+28. **FDS-Q2** — finite distinction maintenance in fault-tolerant quantum computation (released).
 
 FDS-A1 is retained as a conceptual timestamp for artificial agency. Because the author may pursue commercial work in AI and robotics, this public repository does not develop proprietary AI architectures, AGI robotics systems, private benchmarks, or product-level implementation details. See [CONFLICTS_OF_INTEREST.md](CONFLICTS_OF_INTEREST.md).
 
@@ -184,14 +200,18 @@ Recommended reading path:
 16. **FDS-L1 Active Pruning** — artificial-life, protocell-like systems, persistence-collapse transitions.
 17. **FDS-B0 Biomedical Bridge Registry** — non-clinical framework, safety firewall, maintenance debt.
 18. **FDS-B1: Immunity as Boundary Verification** — normal-form dynamics, adversarial classification, distributed topology, non-clinical proxy maps, dimensionless control numbers, crucial divergent predictions.
-17. **FDS-C1 Reportable Access under Finite Capacity** — cognitive reportability paper.
-18. **FDS-LC0 Life/Cognitive Bridge Registry** — life and cognitive science bridge claims.
-19. **FDS-E1 Finite-Capacity Prospect Theory** — state-dependent loss aversion, reference dependence, probability weighting. SocArXiv: 10.31235/osf.io/pj43k_v1.
-20. **FDS-X1 Horizon-Maintenance Dark Energy** — pre-Euclid bridge note.
-21. **FDS-Q1 Finite Record Boundaries in Wigner's Friend** — observer-relative record algebras, false promotion risk, record-availability horizon for quantum-device diagnostics.
-22. **FDS-Q2 Finite Distinction Maintenance in Fault-Tolerant QC** — logical distinction ledgers, vector ledger audit, scaling-wall diagnostics, latency tax.
-21. **DT-Archive** — broad claim-space archive and historical map.
-22. **FDS-A1** — retained as conceptual timestamp for artificial agency.
+19. **FDS-C1 Reportable Access under Finite Capacity** — cognitive reportability paper.
+20. **FDS-LC0 Life/Cognitive Bridge Registry** — life and cognitive science bridge claims.
+21. **FDS-E1 Finite-Capacity Prospect Theory** — state-dependent loss aversion, reference dependence, probability weighting. SocArXiv: 10.31235/osf.io/pj43k_v1.
+22. **FDS-X1 Horizon-Maintenance Dark Energy** — pre-Euclid bridge note.
+23. **FDS-X2 Three Fermion Generations** — CP/T-asymmetric identity transformation.
+24. **FDS-X3 Functional Decomposition of Four Interactions** — operation closure.
+25. **FDS-X4 Pauli Exclusion as Finite Address Protection** — collision-free occupancy.
+26. **FDS-X5 Mathematical Form as Invariant Compression** — Wigner puzzle.
+27. **FDS-Q1 Finite Record Boundaries in Wigner's Friend** — observer-relative record algebras, false promotion risk, record-availability horizon for quantum-device diagnostics.
+28. **FDS-Q2 Finite Distinction Maintenance in Fault-Tolerant QC** — logical distinction ledgers, vector ledger audit, scaling-wall diagnostics, latency tax.
+29. **DT-Archive** — broad claim-space archive and historical map.
+30. **FDS-A1** — retained as conceptual timestamp for artificial agency.
 
 ---
 
@@ -215,7 +235,7 @@ Recommended reading path:
 | **FDS-C1** | *Consciousness and Forgetting as Compression and Active Pruning* | Released | [10.5281/zenodo.20229509](https://zenodo.org/records/20229509) |
 | **FDS-A1** | *Active Finite Distinction Systems as a Criterion for Artificial Agency* | Zenodo / frozen public AI line | [10.5281/zenodo.20184709](https://doi.org/10.5281/zenodo.20184709) |
 | **FDS-X1** | *Horizon-Maintenance Dark Energy: A Pre-Euclid Bridge Note from Finite Distinguishability* | Released | [10.5281/zenodo.20290215](https://doi.org/10.5281/zenodo.20290215) |
-| **FDS-X2** | *Three Fermion Generations as CP/T-Asymmetric Identity Transformation: The CKM Lower Bound, Irreversible Pruning, and the Minimal Flavor Architecture of Finite Distinction Systems* | Released | [10.5281/zenodo.20273302](https://doi.org/10.5281/zenodo.20273302) |
+| **FDS-X2** | *Three Fermion Generations as CP/T-Asymmetric Identity Transformation: The CKM Lower Bound, Irreversible Pruning, and the Minimal Flavor Architecture of Finite Distinction Systems* | Released | [10.5281/zenodo.20289955](https://doi.org/10.5281/zenodo.20289955) |
 | **FDS-X3** | *Functional Decomposition of the Four Fundamental Interactions: A Minimal Physical Distinction-Operation Closure for Finite Distinction Systems* | Released | [10.5281/zenodo.20274519](https://doi.org/10.5281/zenodo.20274519) |
 | **FDS-X4** | *Pauli Exclusion as Finite Address Protection: Collision-Free Fermionic Occupancy, Structural Diversity, and Stable Matter in Finite Distinction Systems* | Released | [10.5281/zenodo.20278029](https://doi.org/10.5281/zenodo.20278029) |
 | **FDS-X5** | *Mathematical Form of Physical Law as Invariant-Form Compression: Invariant, Equivariant, and Covariant Law Forms in Finite Distinction Systems* | Released | [10.5281/zenodo.20278236](https://doi.org/10.5281/zenodo.20278236) |
