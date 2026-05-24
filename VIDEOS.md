@@ -174,6 +174,12 @@ Scope: FDS-Q1, finite record-boundary account of Wigner-friend tension, observer
 
 YouTube: https://www.youtube.com/watch?v=U3OPzEdPkj4
 
+## 28. When the World Becomes Too Large: Consciousness as a Finite-Capacity Boundary Phase
+
+Scope: FDS-C2, consciousness bridge, sentience-candidate condition (Λφ>1, Πφ window, Iself), qualia as boundary-valenced compression geometry, explanatory gap as report-map null space, AI parameter-scaling insufficiency, reduced numerical simulations.
+
+YouTube: https://www.youtube.com/watch?v=911TwsqFcUc
+
 ## YouTube description links
 
 Each video description includes links to:

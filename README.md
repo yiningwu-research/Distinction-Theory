@@ -103,6 +103,7 @@ The current DT/FDS public architecture, organized by layer:
 - **FDS-B1** — immunity as boundary verification / normal-form dynamics / adversarial classification / distributed topology / non-clinical proxy maps. DOI: 10.5281/zenodo.20327539. [Video](https://www.youtube.com/watch?v=crvO77ytI6A).
 - **FDS-LC0** — life and cognitive science bridge claim registry. DOI: 10.5281/zenodo.20183373.
 - **FDS-C1** — reportable access under finite capacity. DOI: 10.5281/zenodo.20229509.
+- **FDS-C2** — consciousness as a finite-capacity boundary phase. DOI: 10.5281/zenodo.20367197. [Video](https://www.youtube.com/watch?v=911TwsqFcUc).
 - **FDS-A1** — artificial agency criterion (frozen public AI line). DOI: 10.5281/zenodo.20184709.
 
 ### Frontier Physical Consequences
@@ -233,6 +234,7 @@ Recommended reading path:
 | **FDS-B1** | *Immunity as Boundary Verification: Normal-Form Dynamics, Adversarial Classification, Distributed Verification, and Non-Clinical Proxy Maps in Active Biological Systems* | Released | [10.5281/zenodo.20327539](https://doi.org/10.5281/zenodo.20327539) | [Video](https://www.youtube.com/watch?v=crvO77ytI6A) |
 | **FDS-LC0** | *Life and Cognitive Science Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo registry | [10.5281/zenodo.20183373](https://doi.org/10.5281/zenodo.20183373) |
 | **FDS-C1** | *Consciousness and Forgetting as Compression and Active Pruning* | Released | [10.5281/zenodo.20229509](https://zenodo.org/records/20229509) |
+| **FDS-C2** | *When the World Becomes Too Large: Consciousness as a Finite-Capacity Boundary Phase* | Released | [10.5281/zenodo.20367197](https://doi.org/10.5281/zenodo.20367197) | [Video](https://www.youtube.com/watch?v=911TwsqFcUc) |
 | **FDS-A1** | *Active Finite Distinction Systems as a Criterion for Artificial Agency* | Zenodo / frozen public AI line | [10.5281/zenodo.20184709](https://doi.org/10.5281/zenodo.20184709) |
 | **FDS-X1** | *Horizon-Maintenance Dark Energy: A Pre-Euclid Bridge Note from Finite Distinguishability* | Released | [10.5281/zenodo.20290215](https://doi.org/10.5281/zenodo.20290215) |
 | **FDS-X2** | *Three Fermion Generations as CP/T-Asymmetric Identity Transformation: The CKM Lower Bound, Irreversible Pruning, and the Minimal Flavor Architecture of Finite Distinction Systems* | Released | [10.5281/zenodo.20289955](https://doi.org/10.5281/zenodo.20289955) |

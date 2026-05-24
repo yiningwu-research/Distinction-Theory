@@ -14,7 +14,8 @@ Version changes do not imply that every claim in the programme changes. Each ver
 - FDS-C2 v1 — consciousness bridge paper: boundary-capacity ratio Λφ, residue-pruning ratio Πφ, self-boundary coupling Iself, qualia as boundary-valenced compression geometry, explanatory gap as report-map null space.
 - C2 claim section in CLAIM_LEDGER.md (8 claims: FDS-C2-001 through FDS-C2-008).
 - C2 entries in claims.yaml and claims.csv.
-- Website: paper entry, roadmap, timestamps, homepage highlights, `/papers/fds-c2` page.
+- Website: paper entry, roadmap, timestamps, homepage highlights, `/papers/fds-c2` page, `/videos` entry.
+- Video introduction: https://www.youtube.com/watch?v=911TwsqFcUc
 - Zenodo DOI: 10.5281/zenodo.20367197.
 
 ### Changed
