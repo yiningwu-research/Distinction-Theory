@@ -4,7 +4,7 @@ This file records public timestamps for major DT/FDS documents, claim families, 
 
 The timestamp index is not a claim of correctness. It is a record of public priority and version history.
 
-**Last updated:** 2026-05-21
+**Last updated:** 2026-05-24
 
 ---
 
@@ -28,6 +28,7 @@ The timestamp index is not a claim of correctness. It is a record of public prio
 | FDS-Q2 | Finite distinction maintenance in fault-tolerant QC | 2026-05-19 | v1.0 | [10.5281/zenodo.20302569](https://doi.org/10.5281/zenodo.20302569) | pending | pending | [link](https://www.distinctiontheory.org/papers/fds-q2) | Released | [Video](https://www.youtube.com/watch?v=kIS-Ij6x1Ls) |
 | FDS-B0 | Biomedical bridge registry / safety firewall | 2026-05-19 | v1.0 | [10.5281/zenodo.20312983](https://doi.org/10.5281/zenodo.20312983) | pending | pending | [link](https://www.distinctiontheory.org/papers/fds-b0) | Released |
 | FDS-B1 | Immunity as boundary verification / normal-form dynamics / adversarial classification / distributed topology / non-clinical proxy maps | 2026-05-21 | v1.0 | [10.5281/zenodo.20327539](https://doi.org/10.5281/zenodo.20327539) | pending | pending | [link](https://www.distinctiontheory.org/papers/fds-b1) | Released | [Video](https://www.youtube.com/watch?v=crvO77ytI6A) |
+| FDS-C2 | Consciousness as a finite-capacity boundary phase / sentience-candidate scaling hypothesis | 2026-05-24 | v1 | [10.5281/zenodo.20367197](https://doi.org/10.5281/zenodo.20367197) | pending | pending | [link](https://www.distinctiontheory.org/papers/fds-c2) | Released |
 | FDS-A1 | Artificial agency | 2026-05-12 | v1.0 | [10.5281/zenodo.20184709](https://doi.org/10.5281/zenodo.20184709) | pending | pending | [link](https://www.distinctiontheory.org/papers/ai-agency) | Frozen public AI line |
 | FDS-X1 | Horizon-maintenance dark energy / horizon-ledger occupancy model | 2026-05-19 | v1.2 | [10.5281/zenodo.20290215](https://doi.org/10.5281/zenodo.20290215) | pending | pending | [link](https://www.distinctiontheory.org/papers/fds-x1) | Released |
 | FDS-N1 | Boundary-maintaining self-organizing systems | 2026-05-17 | v1.0 | [10.5281/zenodo.20253151](https://doi.org/10.5281/zenodo.20253151) | fds-n1-v1.0 | pending | [link](https://www.distinctiontheory.org/papers/fds-n1) | Released |

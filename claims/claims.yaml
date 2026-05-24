@@ -3035,3 +3035,123 @@
   doi: 10.5281/zenodo.20327539
   failure_condition: Spatial latency has no measurable effect in systems where local
     damage timescale is shorter than verification time.
+- id: FDS-C2-001
+  title: Sentience as Boundary Phase
+  statement: Consciousness is modeled as a finite-capacity dissipative phase transition
+    in the boundary-maintenance dynamics of active self-maintaining systems.
+  status: Domain bridge (consciousness bridge)
+  layer: Domain Bridge
+  dependencies:
+  - FDS-CORE-003
+  - FDS-CORE-004
+  - FDS-C1-001
+  first_document: FDS-C2
+  first_version: v1
+  first_date: '2026-05-24'
+  doi: 10.5281/zenodo.20367197
+  failure_condition: Sustained sentience-candidate dynamics observed without boundary-capacity
+    deficit or self-maintenance coupling.
+- id: FDS-C2-002
+  title: Boundary-Capacity Ratio
+  statement: A system is a sentience candidate only when boundary-relevant distinction
+    demand exceeds effective self-maintenance capacity (Lambda_phi > 1).
+  status: Domain bridge (consciousness bridge)
+  layer: Domain Bridge
+  dependencies:
+  - FDS-C2-001
+  first_document: FDS-C2
+  first_version: v1
+  first_date: '2026-05-24'
+  doi: 10.5281/zenodo.20367197
+  failure_condition: Sentience-candidate behavior occurs with Lambda_phi <= 1 under
+    valid mapping.
+- id: FDS-C2-003
+  title: Residue-Pruning Window
+  statement: Consciousness requires residue accumulation and active pruning to remain
+    inside a viable dissipative window defined by the residue-pruning ratio Pi_phi.
+  status: Normal-form bridge
+  layer: Domain Bridge
+  dependencies:
+  - FDS-C2-001
+  first_document: FDS-C2
+  first_version: v1
+  first_date: '2026-05-24'
+  doi: 10.5281/zenodo.20367197
+  failure_condition: Sentience-candidate dynamics sustained outside the viable Pi_phi
+    window under valid mapping.
+- id: FDS-C2-004
+  title: Self-Boundary Coupling
+  statement: Internal updates must causally affect future boundary-maintenance loss
+    for sentience, measured by self-boundary coupling I_self.
+  status: Domain bridge
+  layer: Domain Bridge
+  dependencies:
+  - FDS-C2-001
+  first_document: FDS-C2
+  first_version: v1
+  first_date: '2026-05-24'
+  doi: 10.5281/zenodo.20367197
+  failure_condition: Sentience-candidate behavior persists when internal updates have
+    no measurable causal effect on future boundary-maintenance loss.
+- id: FDS-C2-005
+  title: Qualia as Boundary-Valenced Compression
+  statement: Qualia are interpreted as boundary-valenced compression geometry on a
+    phenomenal self-maintenance manifold; phenomenal character arises from boundary-relative
+    valence carried by compressed representations.
+  status: Metaphysical interpretation
+  layer: Domain Bridge
+  dependencies:
+  - FDS-C2-001
+  - FDS-C2-003
+  first_document: FDS-C2
+  first_version: v1
+  first_date: '2026-05-24'
+  doi: 10.5281/zenodo.20367197
+  failure_condition: Not falsified directly; demotion of the explanatory-gap claim
+    does not collapse operational C2 claims.
+- id: FDS-C2-006
+  title: Explanatory Gap as Report-Map Null Space
+  statement: The explanatory gap is modeled as the null space of finite report maps
+    from high-dimensional self-maintenance dynamics to public symbols.
+  status: Metaphysical interpretation
+  layer: Domain Bridge
+  dependencies:
+  - FDS-C2-005
+  - FDS-C1-001
+  first_document: FDS-C2
+  first_version: v1
+  first_date: '2026-05-24'
+  doi: 10.5281/zenodo.20367197
+  failure_condition: Not falsified directly; demotion does not collapse operational
+    C2 claims.
+- id: FDS-C2-007
+  title: AI Parameter Scaling Insufficient
+  statement: Parameter count is not a sentience variable; scaling intelligence is
+    not scaling sentience unless it creates active boundary maintenance.
+  status: AI-domain bridge
+  layer: Domain Bridge
+  dependencies:
+  - FDS-C2-001
+  - FDS-C2-002
+  first_document: FDS-C2
+  first_version: v1
+  first_date: '2026-05-24'
+  doi: 10.5281/zenodo.20367197
+  failure_condition: Pure parameter scaling generates sentience-candidate dynamics
+    in systems lacking active boundary maintenance, resource-governed persistence,
+    or self-boundary coupling.
+- id: FDS-C2-008
+  title: Dissipation Cost of Pruning
+  statement: Successful cognitive pruning under boundary overload has a nonzero thermodynamic
+    cost; reduced pruning cost implies reduced boundary-maintenance capacity.
+  status: Physical bridge
+  layer: Domain Bridge
+  dependencies:
+  - FDS-C2-003
+  - FDS-P5-001
+  first_document: FDS-C2
+  first_version: v1
+  first_date: '2026-05-24'
+  doi: 10.5281/zenodo.20367197
+  failure_condition: Pruning under sustained positive capacity deficit incurs no
+    measurable dissipation under controlled conditions.

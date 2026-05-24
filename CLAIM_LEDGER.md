@@ -1556,6 +1556,120 @@
 
 ---
 
+## Consciousness Boundary-Phase Claims
+
+### FDS-C2-001 — Sentience as Boundary Phase
+
+**Statement.** Consciousness is modeled as a finite-capacity dissipative phase transition in the boundary-maintenance dynamics of active self-maintaining systems.
+
+**Status.** Domain bridge (consciousness bridge).
+
+**Dependencies.** FDS-CORE-003; FDS-CORE-004; FDS-C1-001
+
+**First timestamp.** FDS-C2 v1, 2026-05-24.
+
+**Failure condition.** Sustained sentience-candidate dynamics observed without boundary-capacity deficit or self-maintenance coupling.
+
+---
+
+### FDS-C2-002 — Boundary-Capacity Ratio Λφ
+
+**Statement.** A system is a sentience candidate only when boundary-relevant distinction demand exceeds effective self-maintenance capacity (Λφ = R^B_min(ε,τ)/C_φ(τ) > 1).
+
+**Status.** Domain bridge (consciousness bridge).
+
+**Dependencies.** FDS-C2-001
+
+**First timestamp.** FDS-C2 v1, 2026-05-24.
+
+**Failure condition.** Sentience-candidate behavior occurs with Λφ ≤ 1 under valid mapping.
+
+---
+
+### FDS-C2-003 — Residue-Pruning Window
+
+**Statement.** Consciousness requires residue accumulation and active pruning to remain inside a viable dissipative window, defined by the residue-pruning ratio Πφ = S_φ^eff/(ρ̇_φ + ε).
+
+**Status.** Normal-form bridge.
+
+**Dependencies.** FDS-C2-001
+
+**First timestamp.** FDS-C2 v1, 2026-05-24.
+
+**Failure condition.** Sentience-candidate dynamics sustained outside the viable Πφ window under valid mapping.
+
+---
+
+### FDS-C2-004 — Self-Boundary Coupling I_self
+
+**Statement.** For a system to be a sentience candidate, internal updates must causally affect future boundary-maintenance loss, measured by self-boundary coupling I_self = I(M_t; B_t, ℓ_{B,t+k}, M_{t+1}).
+
+**Status.** Domain bridge.
+
+**Dependencies.** FDS-C2-001
+
+**First timestamp.** FDS-C2 v1, 2026-05-24.
+
+**Failure condition.** Sentience-candidate behavior persists when internal updates have no measurable causal effect on future boundary-maintenance loss.
+
+---
+
+### FDS-C2-005 — Qualia as Boundary-Valenced Compression Geometry
+
+**Statement.** Qualia are interpreted as boundary-valenced compression geometry on a phenomenal self-maintenance manifold; phenomenal character arises from boundary-relative valence carried by compressed representations.
+
+**Status.** Metaphysical interpretation.
+
+**Dependencies.** FDS-C2-001; FDS-C2-003
+
+**First timestamp.** FDS-C2 v1, 2026-05-24.
+
+**Failure condition.** Not falsified directly; demotion of the explanatory-gap claim does not collapse operational C2 claims.
+
+---
+
+### FDS-C2-006 — Explanatory Gap as Report-Map Null Space
+
+**Statement.** The explanatory gap is modeled as the null space of finite report maps from high-dimensional self-maintenance dynamics to public symbols; not all boundary-valenced structure can be reported.
+
+**Status.** Metaphysical interpretation.
+
+**Dependencies.** FDS-C2-005; FDS-C1-001
+
+**First timestamp.** FDS-C2 v1, 2026-05-24.
+
+**Failure condition.** Not falsified directly; demotion does not collapse operational C2 claims.
+
+---
+
+### FDS-C2-007 — AI Parameter Scaling Insufficient
+
+**Statement.** Parameter count is not a sentience variable. A system may be highly intelligent without satisfying C2 sentience conditions. Scaling intelligence is not scaling sentience unless it creates active boundary maintenance.
+
+**Status.** AI-domain bridge.
+
+**Dependencies.** FDS-C2-001; FDS-C2-002
+
+**First timestamp.** FDS-C2 v1, 2026-05-24.
+
+**Failure condition.** Pure parameter scaling generates sentience-candidate dynamics in systems lacking active boundary maintenance, resource-governed persistence, or self-boundary coupling.
+
+---
+
+### FDS-C2-008 — Dissipation Cost of Pruning
+
+**Statement.** Successful cognitive pruning under boundary overload has a nonzero thermodynamic cost; reduced pruning cost implies reduced boundary-maintenance capacity.
+
+**Status.** Physical bridge.
+
+**Dependencies.** FDS-C2-003; FDS-P5-001
+
+**First timestamp.** FDS-C2 v1, 2026-05-24.
+
+**Failure condition.** Pruning under sustained positive capacity deficit incurs no measurable dissipation under controlled conditions.
+
+---
+
 ## Life and Cognitive Science Bridge Registry Claims
 
 ### FDS-LC0-001 — Registry Structure

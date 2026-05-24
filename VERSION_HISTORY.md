@@ -6,6 +6,26 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-05-24 — FDS-C2 Release
+
+**Description:** Release of FDS-C2 v1, consciousness as a finite-capacity boundary phase — a scaling hypothesis of sentience in active finite distinction systems, building on the FDS core and C1 reportability bridge.
+
+### Added
+- FDS-C2 v1 — consciousness bridge paper: boundary-capacity ratio Λφ, residue-pruning ratio Πφ, self-boundary coupling Iself, qualia as boundary-valenced compression geometry, explanatory gap as report-map null space.
+- C2 claim section in CLAIM_LEDGER.md (8 claims: FDS-C2-001 through FDS-C2-008).
+- C2 entries in claims.yaml and claims.csv.
+- Website: paper entry, roadmap, timestamps, homepage highlights, `/papers/fds-c2` page.
+- Zenodo DOI: 10.5281/zenodo.20367197.
+
+### Changed
+- PAPER_MAP.md: C2 added to Stage I after C1.
+- CLAIM_STATUS.md: added C2 row.
+- TIMESTAMPS.md: added C2 row with DOI.
+- CITATION.cff: added C2 preferred-citation entry.
+- README.md: Key Documents updated.
+
+---
+
 ## 2026-05-21 — FDS-B1 Release
 
 **Description:** Release of FDS-B1 v1.0, immunity as boundary verification — a finite-capacity boundary-verification reconstruction of the immune system with normal-form dynamics, dimensionless control numbers, adversarial classification, distributed topology, non-clinical proxy maps, and seven B1 claim cards.
