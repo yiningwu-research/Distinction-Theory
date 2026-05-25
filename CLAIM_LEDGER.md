@@ -2932,4 +2932,70 @@
 
 ---
 
+## FDS-G1 Finite Screen Spacetime Claims
+
+### FDS-G1-001 — Finite Causal-Screen Entropy Response
+**Statement.** Finite causal-screen capacity defines an entropy-response substrate for local gravitational coupling. The area response component controls the local coupling (stiffness) through an entropy Hessian formalism, with Onsager-type stochastic screen dynamics producing Raychaudhuri-like capacity-flow normal forms.
+**Status.** Exact-pilot evidence-selected (G1DE-M\(_{3/4}\) branch).
+**Layer.** Physics — Gravity 1.
+**Dependencies.** FDS-T1-001, FDS-T2-001.
+**First timestamp.** FDS-G1 Complete Series v1.0-rc, 2026-05-25.
+**DOI.** 10.5281/zenodo.20382013.
+**Failure condition.** Finite-screen entropy response produces no distinguishable gravitational coupling signature beyond standard GR+\(\Lambda\)CDM under production evidence.
+
+### FDS-G1-002 — 3/4 Projection Lock
+**Statement.** Under optical port isotropy, the Weyl-active unimodular sector \(S_1\oplus S_2\oplus T\) occupies three of four optical port dimensions, giving a projection coefficient \(\kappa=3/4\). This is the isotropic MaxEnt/Fisher-compliance fixed point of the finite-access optical ledger.
+**Status.** Exact-pilot evidence-selected; survives top-control wide-prior sensitivity.
+**Layer.** Physics — Gravity 1.
+**Dependencies.** FDS-G1-001, FDS-T2-001.
+**First timestamp.** FDS-G1 Complete Series v1.0-rc, 2026-05-25.
+**DOI.** 10.5281/zenodo.20382013.
+**Failure condition.** Free-\(\kappa\) decisively beats \(M_{3/4}\) under production evidence.
+
+### FDS-G1-003 — Background–Weyl Residual Fingerprint
+**Statement.** The G1DE-M\(_{3/4}\) branch predicts a locked background–Weyl residual:
+\[
+s<3,\qquad \mu(a,k)=1,\qquad \Sigma(a,k)-1=-\frac34(3-s)\widehat R_H(a),\quad \widehat R_H(1)=1.
+\]
+The background deviation and Weyl response are tied to the same output-response shape \(\widehat R_H(a)\), with near-GR growth (\(\mu\simeq1\)). This is a sparse residual, not a flexible dark-energy or modified-growth fit.
+**Status.** Exact-pilot evidence-selected; ranked first in six-model nested evidence hierarchy.
+**Layer.** Physics — Gravity 1.
+**Dependencies.** FDS-G1-002, FDS-X1-001, FDS-X1-002.
+**First timestamp.** FDS-G1 Complete Series v1.0-rc, 2026-05-25.
+**DOI.** 10.5281/zenodo.20382013.
+**Failure condition.** Any of: (1) Free-\(\kappa\) beats M\(_{3/4}\); (2) Constant-\(\Sigma\) beats output-shape model; (3) \(|\mu-1|\sim|\Sigma-1|\); (4) Free \(A(a,k)\) required; (5) CPL or \(\Lambda\)CDM wins; (6) Expanded lensing does not support Weyl signal.
+
+### FDS-G1-004 — Six-Model Nested Evidence Hierarchy
+**Statement.** Matched medium-prior nested evidence over matched exact likelihoods yields:
+\[
+M_{3/4} > M_\kappa > \text{const-}\Sigma > \text{G1DE-2} > \text{CPL} > \Lambda\text{CDM},
+\]
+with margins \(\Delta\log Z\simeq0.97, 1.92, 6.70, 9.43, 11.96\) against the five controls. Top-control wide-prior sensitivity confirms ranking stability. This is an exact-pilot evidence claim, not a production-confirmed result.
+**Status.** Claim — exact-pilot evidence-selected; production evidence pending.
+**Layer.** Physics — Gravity 1.
+**Dependencies.** FDS-G1-003, FDS-X1-004.
+**First timestamp.** FDS-G1 Complete Series v1.0-rc, 2026-05-25.
+**DOI.** 10.5281/zenodo.20382013.
+**Failure condition.** Ranking fails under production evidence refinement, expanded lensing likelihoods, full baseline wide-prior sensitivity, or independent replication. Production evidence returns to CPL or \(\Lambda\)CDM dominance.
+
+### FDS-G1-005 — Finite Markov-Screen Realization
+**Statement.** The G1DE-M\(_{3/4}\) normal form is realizable by a finite detailed-balance Markov screen with optical symmetry (\(\kappa=3/4\)), slow horizon mode (\(\Gamma_H=2\epsilon r_H\)), and Ward-stiff Ricci leakage. This is a constructive existence prototype, not a unique microscopic derivation of physical finite-screen states.
+**Status.** Realizability claim — existence prototype constructed; physical microphysics not uniquely identified.
+**Layer.** Physics — Gravity 1.
+**Dependencies.** FDS-G1-002, FDS-G1-003.
+**First timestamp.** FDS-G1 Complete Series v1.0-rc, 2026-05-25.
+**DOI.** 10.5281/zenodo.20382013.
+**Failure condition.** The finite Markov-screen class cannot realize the optical projection, rank-one horizon output, or Ward-stiff Ricci leakage simultaneously under any admissible parameter choice.
+
+### FDS-G1-006 — Falsification Contract
+**Statement.** The G1 dark-sector branch carries six pre-specified demotion paths. No free macroscopic drift of gravitational coupling without conservation closure is claimed. Every residual must either close a conservation law, correlate observables through a common ledger variable, or be demoted by information criteria. The G1DE class contains no free \(A(a,k)\) amplitude parameter.
+**Status.** Governance — claim.
+**Layer.** Physics — Gravity 1.
+**Dependencies.** FDS-G1-004.
+**First timestamp.** FDS-G1 Complete Series v1.0-rc, 2026-05-25.
+**DOI.** 10.5281/zenodo.20382013.
+**Failure condition.** G1DE class collapses to generic dark-stress model (free amplitude required).
+
+---
+
 *End of ledger. New claims added as documents are released or revised.*
