@@ -180,6 +180,18 @@ Scope: FDS-C2, consciousness bridge, sentience-candidate condition (Λφ>1, Πφ
 
 YouTube: https://www.youtube.com/watch?v=911TwsqFcUc
 
+## 29. Finite Screen Spacetime: A New Entropy-Response Route to Gravity
+
+Scope: FDS-G1, finite causal-screen entropy-response geometry, G1DE-M<sub>3/4</sub> projection-locked residual, six-model nested evidence, D0–D7 dark-sector closure, finite Markov-screen realization prototype.
+
+YouTube: https://www.youtube.com/watch?v=lJQYHDL5KY0
+
+## 30. Why Finite Screen Entropy? The Primitive Argument Behind FDS–G1
+
+Scope: FDS-G1, conceptual motivation for finite-screen entropy as the primitive substrate for gravitational coupling.
+
+YouTube: https://www.youtube.com/watch?v=sm2XBJKIUbU
+
 ## YouTube description links
 
 Each video description includes links to:
