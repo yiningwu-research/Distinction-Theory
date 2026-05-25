@@ -1,0 +1,21 @@
+# Pantheon+ SN Ia likelihood convention
+# Data: Pantheon+SH0ES.dat + Pantheon+SH0ES_STAT+SYS.cov
+# Processed: pantheon_plus.csv, pantheon_plus_cov.txt
+
+dataset: pantheon_plus
+observable: apparent_magnitude
+n_data: 1701
+
+chi2_definition: |
+  The apparent magnitude chi2 is computed with an analytic marginalization
+  over the absolute-magnitude offset M:
+    chi2_SN = min_M [ (mu_obs - mu_pred(z) - M)^T Cinv (mu_obs - mu_pred(z) - M) ]
+            = A - B^2 / C
+  where A = delta^T Cinv delta, B = 1^T Cinv delta, C = 1^T Cinv 1,
+  and delta = mu_obs - mu_pred(z).
+
+distance_formula: mu_pred(z) = 5 * log10(D_L(z)) with D_L = (1+z) * D_c
+comoving_distance: integral of 1/E(z) from 0 to z
+
+covariance: Full systematic+statistical covariance from Pantheon+
+noise_model: analytic marginalization (M is not a sampled parameter)

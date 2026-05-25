@@ -1,0 +1,48 @@
+# G1DE-2 — Free-response adversarial envelope
+# Reference: FDS-G1 Complete Series, G1fit-real section
+# The most flexible G1DE model: both mu0 and Sigma0 are free.
+
+model: g1de2
+description: >
+  Free-response adversarial envelope for the G1DE class.
+  Both mu0 (Ricci leakage) and Sigma0 (Weyl amplitude) are free parameters.
+  If this is required over M_{3/4}, the projection-locked normal form is demoted.
+ndim: 6
+nparams: 6
+
+parameters:
+  - name: Omega_m
+    description: Present-day matter density parameter
+    bounds: [0.05, 0.60]
+    start: 0.2969
+  - name: s
+    description: Screen-index parameter
+    bounds: [1.0, 5.0]
+    start: 2.56
+  - name: q_BAO
+    description: BAO sound-horizon calibration parameter
+    bounds: [10.0, 80.0]
+    start: 30.42
+  - name: sigma8_0
+    description: Present-day sigma8
+    bounds: [0.40, 1.20]
+    start: 0.795
+  - name: mu0
+    description: Ricci leakage amplitude (0 = Ward-stiff, no leakage)
+    bounds: [-0.95, 1.0]
+    start: -0.07
+  - name: Sigma0
+    description: Weyl amplitude at present
+    bounds: [-0.95, 1.0]
+    start: -0.36
+
+background: same as g1dem34
+
+response:
+  mu_a: "1 + mu0 * Xhat(a)"
+  Sigma_a: "1 + Sigma0 * Xhat(a)"
+
+fixed_values: {}
+
+# G1DE-2 has no fixed projection lock — it is the free envelope
+no_free_A: true  # A(a,k) still not in parameter set

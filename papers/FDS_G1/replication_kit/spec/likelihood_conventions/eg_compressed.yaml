@@ -1,0 +1,26 @@
+# E_G compressed-test likelihood convention
+# Data: eg_amons2018_kids_2dflens_gama.csv
+# Source: Amon et al. 2018 — KiDS+2dFLenS+GAMA compressed points
+
+dataset: eg_compressed
+observable: E_G = Om * Sigma(z) / f(z)
+n_data: 3
+
+chi2_definition: |
+  chi2_EG = (E_G_obs - E_G_pred)^T Cov^{-1} (E_G_obs - E_G_pred)
+  Covariance is diagonal (sigma_i^2 from measurement errors).
+
+predictions:
+  E_G_pred(z) = Omega_m * Sigma(z) / f(z)
+  f(z) = d ln D / d ln a (growth rate)
+  Sigma(z) = 1 + Sigma0 * Xhat(z)  (for G1DE models)
+  Sigma(z) = 1  (for LCDM, CPL)
+
+points:
+  - z: 0.267, E_G: 0.43, sigma: 0.13, sample: GAMA
+  - z: 0.305, E_G: 0.27, sigma: 0.08, sample: LOWZ+2dFLOZ
+  - z: 0.554, E_G: 0.26, sigma: 0.07, sample: CMASS+2dFHIZ
+
+note: |
+  These are compressed E_G estimates. The formula E_G = Omega_m * Sigma / f
+  comes from the ratio of lensing to velocity divergences.

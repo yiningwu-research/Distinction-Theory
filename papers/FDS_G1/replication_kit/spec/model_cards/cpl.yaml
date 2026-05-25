@@ -1,0 +1,43 @@
+# CPL — Chevallier-Polarski-Linder evolving dark energy
+# Reference: FDS-G1 Complete Series, G1fit-real section
+
+model: cpl
+description: Flat CPL (w0, wa) dark energy with standard GR growth
+ndim: 5
+nparams: 5
+
+parameters:
+  - name: Omega_m
+    description: Present-day matter density parameter
+    bounds: [0.05, 0.60]
+    start: 0.321
+    fiducial: null
+  - name: w0
+    description: Dark-energy equation-of-state parameter at present
+    bounds: [-3.0, 0.0]
+    start: -0.77
+    fiducial: null
+  - name: wa
+    description: Evolving dark-energy EoS parameter
+    bounds: [-3.0, 3.0]
+    start: -0.76
+    fiducial: null
+  - name: q_BAO
+    description: BAO sound-horizon calibration parameter r_d * H0 / c
+    bounds: [10.0, 80.0]
+    start: 30.46
+    fiducial: null
+  - name: sigma8_0
+    description: Present-day sigma8
+    bounds: [0.40, 1.20]
+    start: 0.78
+    fiducial: null
+
+background:
+  E_z: "Om*(1+z)^3 + (1-Om)*(1+z)^{3(1+w0+wa)} * e^{-3*wa*z/(1+z)}"
+
+response:
+  mu_a: 1.0
+  Sigma_a: 1.0
+
+fixed_values: {}

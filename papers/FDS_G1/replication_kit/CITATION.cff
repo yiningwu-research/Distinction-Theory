@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this replication kit, please cite the FDS-G1 Complete Series."
+title: "FDS-G1 Complete Series: Replication Kit"
+authors:
+  - family-names: "Wu"
+    given-names: "Y."
+repository-code: "https://github.com/yiningwu-research/fds-g1-replication-kit"
+abstract: "Machine-readable specification, benchmark outputs, and reference implementation for the FDS-G1 finite-screen gravity program. Includes model cards, prior definitions, likelihood conventions, validation tests, and a D7 finite Markov-screen toy model."
+keywords:
+  - "cosmology"
+  - "dark energy"
+  - "modified gravity"
+  - "nested sampling"
+  - "model comparison"
+  - "finite screen gravity"
+license: MIT
+version: 1.0-rc
+date-released: "2026-05-25"
+doi: 10.5281/zenodo.20382013

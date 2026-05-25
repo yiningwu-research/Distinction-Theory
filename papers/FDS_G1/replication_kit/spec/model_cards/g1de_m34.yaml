@@ -1,0 +1,54 @@
+# G1DE-M_{3/4} — Projection-locked normal form
+# Reference: FDS-G1 Complete Series, G1fit-real section
+# This is the evidence-selected model in the six-model hierarchy.
+
+model: g1dem34
+description: >
+  Projection-locked G1 dark energy. Horizon response with fixed kappa=3/4,
+  Ward-suppressed Ricci leakage (mu0=0). This is the optical-unbiased,
+  rank-one-horizon normal form — the strongest evidence-selected branch.
+ndim: 4
+nparams: 4
+
+parameters:
+  - name: Omega_m
+    description: Present-day matter density parameter
+    bounds: [0.05, 0.60]
+    start: 0.2966
+    fiducial: null
+  - name: s
+    description: Screen-index parameter; s<3 gives background deviation from LCDM
+    bounds: [1.0, 5.0]
+    start: 2.555
+    fiducial: null
+  - name: q_BAO
+    description: BAO sound-horizon calibration parameter
+    bounds: [10.0, 80.0]
+    start: 30.431
+    fiducial: null
+  - name: sigma8_0
+    description: Present-day sigma8
+    bounds: [0.40, 1.20]
+    start: 0.7765
+    fiducial: null
+
+background:
+  chiH_a: "1 / (1 + B*a^{-s})  where B = 1/(1-Om) - 1"
+  Xhat_a: "4 * chiH * (1 - chiH)"
+  E_z: "sqrt(Om * (1+z)^3 / (1 - chiH))"
+
+response:
+  mu_a: "1.0"
+  mu0: 0.0
+  Sigma_a: "1 + Sigma0 * Xhat(a)"
+  Sigma0: "-0.75 * (3 - s)"
+  kappa: 0.75
+
+normal_form: "Sigma(a,k)-1 = -3/4 * (3-s) * Rhat_H(a),  mu(a,k) = 1"
+
+fixed_values:
+  mu0: 0.0
+  kappa: 0.75
+
+# No free A(a,k) amplitude — enforce code-level guard
+no_free_A: true

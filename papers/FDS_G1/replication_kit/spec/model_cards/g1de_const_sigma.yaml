@@ -1,0 +1,43 @@
+# G1DE-constSigma — Constant Weyl offset control
+# Reference: FDS-G1 Complete Series, G1fit-real section
+# Negative control: if this beats M_{3/4}, the output-shape Xhat(a) is not resolved.
+
+model: g1deconstsig
+description: >
+  Constant Weyl offset control. Sigma(a) = 1 + Sigma_c (no redshift evolution).
+  Tests whether the data resolve the horizon-response output shape Xhat(a)
+  beyond a constant spectral offset.
+ndim: 5
+nparams: 5
+
+parameters:
+  - name: Omega_m
+    description: Present-day matter density parameter
+    bounds: [0.05, 0.60]
+    start: 0.2966
+  - name: s
+    description: Screen-index parameter
+    bounds: [1.0, 5.0]
+    start: 2.561
+  - name: q_BAO
+    description: BAO sound-horizon calibration parameter
+    bounds: [10.0, 80.0]
+    start: 30.418
+  - name: sigma8_0
+    description: Present-day sigma8
+    bounds: [0.40, 1.20]
+    start: 0.7770
+  - name: Sigma_c
+    description: Constant Weyl offset (no redshift evolution)
+    bounds: [-0.95, 1.5]
+    start: -0.336
+
+background: same as g1dem34
+
+response:
+  mu_a: "1.0"
+  mu0: 0.0
+  Sigma_a: "1 + Sigma_c"
+
+fixed_values:
+  mu0: 0.0

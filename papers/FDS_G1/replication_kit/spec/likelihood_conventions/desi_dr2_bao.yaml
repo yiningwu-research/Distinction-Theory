@@ -1,0 +1,24 @@
+# DESI DR2 BAO likelihood convention
+# Data: desi_dr2_bao.csv, desi_dr2_bao_cov.txt
+# Observables: DV/rd, DM/rd, DH/rd
+
+dataset: desi_dr2_bao
+observable: [DV_over_rd, DM_over_rd, DH_over_rd]
+n_data: 13
+
+chi2_definition: |
+  chi2_BAO = (obs - pred)^T Cov^{-1} (obs - pred)
+  Full 13x13 covariance matrix from DESI DR2.
+
+predictions:
+  DM_over_rd: q_BAO * D_c(z) / rd
+  DH_over_rd: q_BAO * c / (H(z) * rd) = q_BAO / E(z)
+  DV_over_rd: q_BAO * (z * D_c(z)^2 / E(z))^(1/3) / rd
+
+   where q_BAO = rd * H0 / c is the BAO calibration parameter,
+   D_c(z) is comoving distance, E(z) = H(z)/H0.
+
+note: q_BAO absorbs rd and H0. It is sampled as a free nuisance parameter.
+w0_wa_conversion: |
+  For CPL, the BAO distance uses E_cpl(z) via the w0, wa parameters.
+  For G1DE, E(z) uses the chiH(a) parameterization with screen-index s.

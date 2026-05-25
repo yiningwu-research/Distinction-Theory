@@ -1,0 +1,52 @@
+# Medium-prior ranges for nested evidence sampling
+# Used for the six-model evidence hierarchy in G1fit-real v1.3
+# These bounds define the medium-width prior volume for model comparison.
+
+description: Medium-prior ranges for six-model nested evidence comparison
+version: G1fit-real v1.3
+
+priors:
+  Omega_m:
+    bounds: [0.15, 0.45]
+    distribution: uniform
+  s:
+    bounds: [1.5, 4.0]
+    distribution: uniform
+    applies_to: [g1dem34, g1demk, g1deconstsig, g1de2, g1de1]
+  q_BAO:
+    bounds: [28.0, 33.0]
+    distribution: uniform
+  sigma8_0:
+    bounds: [0.4, 1.2]
+    distribution: uniform
+  w0:
+    bounds: [-1.5, -0.3]
+    distribution: uniform
+    applies_to: [cpl]
+  wa:
+    bounds: [-2.5, 2.5]
+    distribution: uniform
+    applies_to: [cpl]
+  mu0:
+    bounds: [-1.0, 1.0]
+    distribution: uniform
+    applies_to: [g1de2, g1de1]
+  Sigma0:
+    bounds: [-1.0, 1.0]
+    distribution: uniform
+    applies_to: [g1de2, g1dew]
+  Sigma_c:
+    bounds: [-1.0, 1.0]
+    distribution: uniform
+    applies_to: [g1deconstsig]
+  kappa:
+    bounds: [0.0, 2.0]
+    distribution: uniform
+    applies_to: [g1demk]
+
+sampler_settings:
+  nlive: 800
+  dlogz: 0.5
+  bound: multi
+  sample: rwalk
+  n_seeds: 3

@@ -1,0 +1,35 @@
+# RSD growth-rate likelihood convention
+# Data: growth_curated_nonoverlap_v0.csv, growth_curated_nonoverlap_v0_cov.txt
+# Source: Growth Table II (63 points) + WiggleZ 3x3 covariance block
+# Curation: deduplicated, binned, non-overlapping subset
+
+dataset: rsd_curated
+observable: fsigma8 = f(z) * sigma8(z)
+n_data: 16 (variable depending on curation seed)
+
+chi2_definition: |
+  chi2_growth = (fsigma8_obs - fsigma8_pred)^T Cov^{-1} (fsigma8_obs - fsigma8_pred)
+  Full non-diagonal covariance from curation.
+
+growth_solver: |
+  The growth equation d^2 delta / dN^2 + (2 + dlnE/dln a) * ddelta/dN
+    - 1.5 * Om(a) * mu(a) * delta = 0
+  is solved numerically (RK4) from a_ini = 1e-3 to present,
+  with initial condition delta ~ a.
+
+  Om(a) = Om * a^{-3} / E^2(a)
+
+  For GR models (LCDM, CPL): mu(a) = 1
+  For G1DE models: mu(a) = 1 + mu0 * Xhat(a)
+    where Xhat(a) = 4 * chiH(a) * (1 - chiH(a))
+
+sigma8_evolution: |
+  sigma8(z) = sigma8_0 * D(z) / D(0)
+  where D(z) is the linear growth factor.
+
+curation_algorithm: |
+  Growth Table II parsed into (z, fsigma8, sigma, Omega_m_fid) quadruples.
+  WiggleZ 3x3 covariance block inserted at z=0.44, 0.60, 0.73.
+  Deduplication: epsilon-redshift repeats -> keep lowest-error.
+  Binning: max 1 point per dz=0.10 bin.
+  WiggleZ triplet always preserved.

@@ -1,0 +1,38 @@
+# Wide-prior ranges for top-control sensitivity check
+# Performed on top 3 models (g1dem34, g1demk, g1deconstsig) only.
+# Purpose: verify evidence ranking is not a medium-prior-volume artifact.
+# Note: kappa bounds corrected from [0,3] to [0,2]; Sigma_c from [-2,2] to [-0.95,1.5].
+
+description: Wide-prior ranges for top-control nested evidence sensitivity
+version: G1fit-real v1.3
+note: Top-3 models only (M_{3/4}, M_kappa, constSigma)
+
+priors:
+  Omega_m:
+    bounds: [0.05, 0.60]
+    distribution: uniform
+  s:
+    bounds: [1.0, 5.0]
+    distribution: uniform
+    applies_to: [g1dem34, g1demk, g1deconstsig]
+  q_BAO:
+    bounds: [24.0, 36.0]
+    distribution: uniform
+  sigma8_0:
+    bounds: [0.2, 1.5]
+    distribution: uniform
+  kappa:
+    bounds: [0.0, 2.0]
+    distribution: uniform
+    applies_to: [g1demk]
+  Sigma_c:
+    bounds: [-0.95, 1.5]
+    distribution: uniform
+    applies_to: [g1deconstsig]
+
+sampler_settings:
+  nlive: 800
+  dlogz: 0.5
+  bound: multi
+  sample: rwalk
+  n_seeds: 3

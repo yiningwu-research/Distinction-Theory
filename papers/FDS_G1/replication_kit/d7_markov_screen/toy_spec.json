@@ -1,0 +1,21 @@
+{
+  "name": "D7 finite Markov-screen toy model",
+  "version": "1.0",
+  "claim_status": "existence / sanity-check prototype, not unique microphysics",
+  "ports": [
+    "A",
+    "S1",
+    "S2",
+    "T",
+    "H",
+    "R"
+  ],
+  "identities": {
+    "kappa_BW": "3/4 for exact isotropic optical block A,S1,S2,T",
+    "gamma_opt": "2*r_opt",
+    "Gamma_H": "2*epsilon*r_H",
+    "gamma_R": "2*r_ricci (+ optional Ward stiffness penalty)",
+    "rank_one_hankel": "m0*m2 - m1^2 = 0 for single-pole Stieltjes response"
+  },
+  "cosmology_bridge_note": "The toy model supplies a stiff Ricci port; explicit H^2/k^2 scaling is a Ward-to-Boltzmann scalar-sector bridge, not derived directly from the finite Markov chain."
+}

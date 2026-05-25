@@ -1,0 +1,34 @@
+# LCDM — flat Lambda-CDM baseline
+# Reference: FDS-G1 Complete Series, G1fit-real section
+
+model: lcdm
+description: Flat Lambda-CDM with standard growth (no modified gravity)
+ndim: 3
+nparams: 3
+
+parameters:
+  - name: Omega_m
+    description: Present-day matter density parameter
+    bounds: [0.05, 0.60]
+    start: 0.309
+    fiducial: null
+  - name: q_BAO
+    description: BAO sound-horizon calibration parameter r_d * H0 / c
+    bounds: [10.0, 80.0]
+    start: 29.80
+    fiducial: null
+  - name: sigma8_0
+    description: Present-day amplitude of matter fluctuations on 8 Mpc/h
+    bounds: [0.40, 1.20]
+    start: 0.78
+    fiducial: null
+
+background:
+  E_z: "Om * (1+z)^3 + (1-Om)"
+  growth: "GR standard (mu=1, Sigma=1)"
+
+response:
+  mu_a: 1.0
+  Sigma_a: 1.0
+
+fixed_values: {}
