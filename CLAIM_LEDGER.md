@@ -2088,9 +2088,9 @@
 
 **Dependencies.** FDS core; distinction persistence requirement
 
-**First timestamp.** FDS-X3 v1.0, 2026-05-18.
+**First timestamp.** FDS-X3 v2.0, 2026-05-26.
 
-**Failure condition.** 10.5281/zenodo.20274519
+**Failure condition.** 10.5281/zenodo.20388356
 
 ---
 
@@ -2102,9 +2102,9 @@
 
 **Dependencies.** FDS-X3-001; QCD
 
-**First timestamp.** FDS-X3 v1.0, 2026-05-18.
+**First timestamp.** FDS-X3 v2.0, 2026-05-26.
 
-**Failure condition.** 10.5281/zenodo.20274519
+**Failure condition.** 10.5281/zenodo.20388356
 
 ---
 
@@ -2116,9 +2116,9 @@
 
 **Dependencies.** FDS core; FDS-X3-001
 
-**First timestamp.** FDS-X3 v1.0, 2026-05-18.
+**First timestamp.** FDS-X3 v2.0, 2026-05-26.
 
-**Failure condition.** 10.5281/zenodo.20274519
+**Failure condition.** 10.5281/zenodo.20388356
 
 ---
 
@@ -2130,9 +2130,9 @@
 
 **Dependencies.** FDS-X3-003; QED
 
-**First timestamp.** FDS-X3 v1.0, 2026-05-18.
+**First timestamp.** FDS-X3 v2.0, 2026-05-26.
 
-**Failure condition.** 10.5281/zenodo.20274519
+**Failure condition.** 10.5281/zenodo.20388356
 
 ---
 
@@ -2144,9 +2144,9 @@
 
 **Dependencies.** FDS core; FDS-X3-001; FDS-X3-003
 
-**First timestamp.** FDS-X3 v1.0, 2026-05-18.
+**First timestamp.** FDS-X3 v2.0, 2026-05-26.
 
-**Failure condition.** 10.5281/zenodo.20274519
+**Failure condition.** 10.5281/zenodo.20388356
 
 ---
 
@@ -2158,9 +2158,9 @@
 
 **Dependencies.** FDS-X3-005; electroweak theory; FDS-X2
 
-**First timestamp.** FDS-X3 v1.0, 2026-05-18.
+**First timestamp.** FDS-X3 v2.0, 2026-05-26.
 
-**Failure condition.** 10.5281/zenodo.20274519
+**Failure condition.** 10.5281/zenodo.20388356
 
 ---
 
@@ -2172,9 +2172,9 @@
 
 **Dependencies.** FDS-X3-001; general relativity
 
-**First timestamp.** FDS-X3 v1.0, 2026-05-18.
+**First timestamp.** FDS-X3 v2.0, 2026-05-26.
 
-**Failure condition.** 10.5281/zenodo.20274519
+**Failure condition.** 10.5281/zenodo.20388356
 
 ---
 
@@ -2186,9 +2186,9 @@
 
 **Dependencies.** FDS-X3-001–007
 
-**First timestamp.** FDS-X3 v1.0, 2026-05-18.
+**First timestamp.** FDS-X3 v2.0, 2026-05-26.
 
-**Failure condition.** 10.5281/zenodo.20274519
+**Failure condition.** 10.5281/zenodo.20388356
 
 ---
 

@@ -6,7 +6,39 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
-## 2026-05-24 — FDS-C2 Release
+## 2026-05-26 — FDS-X3 v2.0 Release
+
+**Description:** Release of FDS-X3 v2.0, operation-closure version of the four-interaction functional decomposition paper. Upgrades from functional taxonomy to finite-distinction operation closure: four non-equivalent operation primitives (encapsulation, connection, identity update, causal-screen ledger geometry), G1-strengthened gravity row, Proposition 1 replacing Theorem 1, TikZ visual normal-form layer (operation map, coverage matrix, remove-one bar chart, fifth-force audit tree, relation map), AI design appendix-style note, citation precision improvements.
+
+### Added
+- TikZ operation-map figure (Figure 1), coverage matrix (Figure 2), remove-one bar chart (Figure 3), fifth-force audit tree (Figure 4), relation map (Figure 5).
+- Appendix-style note: Design implication for physical AI.
+- G1 firewall box clarifying X3's relation to G1DE empirical branches.
+- Weyl equation fixes (align environments) and table resize fixes for overfull hbox removal.
+
+### Changed
+- Title: "Finite-Distinction Operation Closure and the Four Fundamental Interactions: Encapsulation, Connection, Identity Update, and Causal-Screen Ledger Geometry".
+- Section "Minimal operation-closure theorem" → "Minimal operation-closure proposition"; Theorem → Proposition 1.
+- Gravity row strengthened with G1 causal-screen ledger architecture.
+- "Reader contract" → "Scope and Claim Status".
+- Abstract: "This version integrates the operation-closure thesis..." → "A visual normal-form layer is included...".
+- Introduction: citation granularity improved (QCD, EW, GR separated).
+- CLAIM_LEDGER.md: all 8 X3 claims updated to v2.0 timestamps and new DOI.
+- PAPER_MAP.md: X3 DOI added.
+- CITATION.cff: X3 DOI updated.
+- TIMESTAMPS.md: X3 version/DOI updated.
+- README.md: X3 DOI updated.
+
+### Removed
+- All "v2" concept references from paper body.
+
+### Not changed
+- Core X3 claim statements (X3-001 through X3-008).
+- CLAIM_STATUS.md (X3 entry remains valid).
+
+---
+
+
 
 **Description:** Release of FDS-C2 v1, consciousness as a finite-capacity boundary phase — a scaling hypothesis of sentience in active finite distinction systems, building on the FDS core and C1 reportability bridge.
 

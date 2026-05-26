@@ -51,7 +51,7 @@ Physical consequences of finite distinguishability at the frontiers of cosmology
 |------|-------|--------|
 | FDS-X1 | Horizon-Maintenance Dark Energy: A Pre-Euclid Bridge Note | Released |
 | FDS-X2 | CP/T-Asymmetric Identity Transformation and Three Fermion Generations | Released |
-| FDS-X3 | Functional Decomposition of the Four Fundamental Interactions | Released |
+| FDS-X3 | Functional Decomposition of the Four Fundamental Interactions | Released | 10.5281/zenodo.20388356 |
 | FDS-X4 | Pauli Exclusion as Finite Address Protection | Released | 10.5281/zenodo.20278029 |
 | FDS-X5 | Mathematical Form of Physical Law as Invariant Compression | Released | 10.5281/zenodo.20278236 |
 
