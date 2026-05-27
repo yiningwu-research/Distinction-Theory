@@ -2,6 +2,41 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20382013.svg)](https://doi.org/10.5281/zenodo.20382013)
 
+## Which code produced the paper evidence tables?
+
+The paper's exact-pilot and medium-prior nested-evidence tables were produced with the scripts archived in:
+
+    paper_original_code/
+
+The most important entry points are:
+
+- `stage2d_exact_likelihood.py` — exact Stage-2d likelihood:
+  Pantheon+ full-covariance SN, DESI DR2 BAO covariance, curated RSD f\sigma_8, and compressed E_G.
+- `run_nested_extended.py` — dynesty nested evidence for \Lambda CDM, CPL, G1DE-1/2, and extended G1DE controls including M_{3/4}, M_\kappa, and constant-\Sigma.
+- `collect_nested_evidence.py` — aggregation of per-seed nested evidence JSON files.
+- `run_extended_mcmc.py` — extended-model MCMC diagnostics and model definitions.
+
+The `reference_impl/` directory is a cleaned specification-facing implementation. It is not claimed to be byte-for-byte identical to the scripts used for the paper tables.
+
+For transparency, the original scripts are archived verbatim. Known post-archive reproducibility notes and recommended fixes are listed in `reproducibility_patch/README_PATCH_NOTES.md`.
+
+**The code in `paper_original_code/` is the archived analysis code used for the evidence tables reported in the paper. The code in `reference_impl/` is a cleaned specification-facing implementation. The code in `reproducibility_patch/` contains recommended fixes for third-party reruns and prior-stress production checks.**
+
+## Claim Boundary
+
+The archived original code supports the paper's exact-pilot evidence claim. It is not advertised as final survey-grade production evidence.
+
+The current benchmark hierarchy is a pilot-level result under the stated processed datasets, priors, samplers, and stopping tolerances.
+
+The following remain future or independent-validation tasks:
+
+- stricter production nested evidence with smaller dlogz and more seeds;
+- full prior stress across all six baseline/control models;
+- expanded weak-lensing / E_G / 3\times2pt likelihoods;
+- independent reimplementation from `spec/` only.
+
+## Specification
+
 The specification (spec/), benchmark outputs (benchmark/), and validation tests
 (validation_tests/) are the authoritative validation targets. The Python code
 in reference_impl/ is provided only as a reference implementation.
