@@ -1,0 +1,47 @@
+{
+  "stage1_data_dir": "data/processed",
+  "growth_table": "data/raw/Growth_tableII.txt",
+  "wigglez_cov": "data/raw/Cij_WiggleZ.txt",
+  "eg_data": "data/processed/eg_amons2018_kids_2dflens_gama.csv",
+  "curated_growth_out": "data/processed/growth_curated_nonoverlap_v0.csv",
+  "curated_growth_cov_out": "data/processed/growth_curated_nonoverlap_v0_cov.txt",
+  "physical_prior": {
+    "zmin": 0.0,
+    "zmax": 2.0,
+    "nz": 300,
+    "require_mu_positive": true,
+    "require_Sigma_positive": true
+  },
+  "mcmc": {
+    "seeds": [
+      101,
+      202,
+      303,
+      404,
+      505
+    ],
+    "steps": 20000,
+    "burn_fraction": 0.5,
+    "walkers": {
+      "lcdm": 48,
+      "cpl": 80,
+      "g1de1": 80,
+      "g1de2": 96
+    }
+  },
+  "nested": {
+    "nlive": {
+      "lcdm": 600,
+      "cpl": 1000,
+      "g1de1": 1000,
+      "g1de2": 1200,
+      "g1dem34": 800,
+      "g1demk": 1000,
+      "g1deconstsig": 1000,
+      "g1dew": 1000,
+      "g1dem1": 800,
+      "g1desplit": 1200
+    },
+    "dlogz": 0.1
+  }
+}

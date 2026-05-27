@@ -1,0 +1,8 @@
+paper_item,script,inputs,outputs,status
+Table 1 medium-prior nested evidence,run_nested_extended.py,configs/nested_priors_medium.json,outputs_frozen/tables/*_medium_nested_evidence.json,archived original
+Table 1 aggregation,collect_nested_evidence.py,outputs_frozen/tables/*_nested_evidence.json,outputs_frozen/tables/nested_evidence_comparison.csv,archived original
+Table 2 wide top-control,run_nested_extended.py,configs/nested_priors_wide.json,outputs_frozen/tables/*_wide_topcontrol_nested_evidence.json,archived original
+MCMC diagnostics,run_extended_mcmc.py,configs/stage2d_exact_config.json,outputs_frozen/tables/*_summary.json,archived original
+Exact-likelihood data loading,stage2d_exact_likelihood.py,processed_data/,runtime likelihood object,archived original
+Extended model comparison,compare_extended_models.py,outputs_frozen/tables/*_summary.json,outputs_frozen/tables/extended_model_comparison.csv,archived original
+Exact MCMC chains,run_exact_mcmc.py,configs/stage2d_exact_config.json,outputs/chains/*_chain.npy,archived original
