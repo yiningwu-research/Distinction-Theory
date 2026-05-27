@@ -1,5 +1,5 @@
 # CLAIM_STATUS.md
-# FDS-G1 Complete Series v1.0-rc
+# FDS-G1 Complete Series v1.0-rc2
 
 ## Current status
 

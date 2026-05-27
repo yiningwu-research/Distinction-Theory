@@ -1,5 +1,5 @@
 # Model Specification
-# FDS-G1 Complete Series v1.0-rc
+# FDS-G1 Complete Series v1.0-rc2
 
 This document defines the six models in the G1fit-real evidence hierarchy.
 The YAML model cards in spec/model_cards/ are the machine-readable authority;

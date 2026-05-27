@@ -1,4 +1,4 @@
-# FDS-G1 Replication Kit v1.0-rc
+# FDS-G1 Replication Kit v1.0-rc22
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20382013.svg)](https://doi.org/10.5281/zenodo.20382013)
 

@@ -1,5 +1,5 @@
 # Independent Validation Protocol
-# FDS-G1 Complete Series v1.0-rc
+# FDS-G1 Complete Series v1.0-rc2
 
 The specification (spec/) is the validation target, not the author's code.
 Independent reimplementations are encouraged and are the strongest form of

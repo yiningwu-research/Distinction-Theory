@@ -1,5 +1,5 @@
 # Benchmark Outputs
-# FDS-G1 Complete Series v1.0-rc
+# FDS-G1 Complete Series v1.0-rc2
 # Expected values for independent validation
 
 ## chi2_min (optimizer best-fit, exact pilot)
