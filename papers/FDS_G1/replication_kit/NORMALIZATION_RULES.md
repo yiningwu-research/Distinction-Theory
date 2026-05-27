@@ -1,5 +1,5 @@
 # NORMALIZATION_RULES.md
-# FDS-G1 Complete Series v1.0-rc2
+# FDS-G1 Complete Series v1.0-rc3
 
 Detailed rules in: spec/normalization/RbH_definition.md, spec/normalization/no_free_A_rule.md
 

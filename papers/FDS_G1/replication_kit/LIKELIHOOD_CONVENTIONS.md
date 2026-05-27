@@ -1,5 +1,5 @@
 # LIKELIHOOD_CONVENTIONS.md
-# FDS-G1 Complete Series v1.0-rc2
+# FDS-G1 Complete Series v1.0-rc3
 
 Machine-readable: spec/likelihood_conventions/*.yaml
 

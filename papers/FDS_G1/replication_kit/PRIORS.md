@@ -1,5 +1,5 @@
 # Prior Specification
-# FDS-G1 Complete Series v1.0-rc2
+# FDS-G1 Complete Series v1.0-rc3
 
 Machine-readable: spec/priors/medium.yaml, spec/priors/wide_topcontrol.yaml
 

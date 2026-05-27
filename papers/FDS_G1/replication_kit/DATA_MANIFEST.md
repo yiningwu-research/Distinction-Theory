@@ -1,5 +1,5 @@
 # Data Manifest
-# FDS-G1 Complete Series v1.0-rc2
+# FDS-G1 Complete Series v1.0-rc3
 
 ## Processed data files
 
