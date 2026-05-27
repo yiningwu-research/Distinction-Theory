@@ -1,0 +1,9 @@
+{
+  "model": "g1demk",
+  "samples": 360000,
+  "P_s_less_than_3": 0.9999916666666666,
+  "P_Sigma0_less_than_0": 0.9999916666666666,
+  "P_mu0_less_than_0": 0.0,
+  "kappa_BW_mean": 0.9117195269763528,
+  "kappa_BW_q50": 0.8404519040540115
+}

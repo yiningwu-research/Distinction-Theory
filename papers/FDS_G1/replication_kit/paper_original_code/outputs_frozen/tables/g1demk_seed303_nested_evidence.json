@@ -1,0 +1,14 @@
+{
+  "model": "g1demk",
+  "seed": 303,
+  "ndim": 5,
+  "nlive": 800,
+  "dlogz": 0.5,
+  "logZ": -897.81,
+  "logZ_err": 0.2,
+  "logl_max": -883.68,
+  "chi2_min_nested": 1767.36,
+  "ncall": 251679,
+  "eff": null,
+  "prior_config": "configs/nested_priors_wide.json"
+}

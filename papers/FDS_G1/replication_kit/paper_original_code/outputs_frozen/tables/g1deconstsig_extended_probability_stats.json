@@ -1,0 +1,9 @@
+{
+  "model": "g1deconstsig",
+  "samples": 360000,
+  "P_s_less_than_3": 0.9998611111111111,
+  "P_Sigma0_less_than_0": 0.9983944444444445,
+  "P_mu0_less_than_0": 0.0,
+  "kappa_BW_mean": 0.7948977420078057,
+  "kappa_BW_q50": 0.7649878448227221
+}

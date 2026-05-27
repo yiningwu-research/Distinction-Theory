@@ -1,0 +1,10 @@
+{
+  "model": "g1desplit",
+  "samples": 1800,
+  "P_sH_less_than_3": 1.0,
+  "P_sSigma_less_than_3": 0.51,
+  "P_Sigma0_less_than_0": 0.9983333333333333,
+  "P_mu0_less_than_0": 0.0,
+  "kappa_BW_mean": 0.9416371685564326,
+  "kappa_BW_q50": 0.8122554754663956
+}

@@ -1,0 +1,48 @@
+{
+  "model": "g1dem1",
+  "seed": 101,
+  "parameter_names": [
+    "Omega_m",
+    "s",
+    "q_BAO",
+    "sigma8_0"
+  ],
+  "steps": 200,
+  "burn_fraction": 0.5,
+  "nwalkers": 16,
+  "postburn_shape": [
+    100,
+    16,
+    4
+  ],
+  "acceptance_fraction_mean": 0.583125,
+  "optimizer_or_start_best": [
+    0.2964,
+    2.5598,
+    30.419,
+    0.7727
+  ],
+  "optimizer_or_start_chi2": 1767.9111989664702,
+  "chain_best_chi2": 1767.5048630358544,
+  "used_chain_best": true,
+  "best": [
+    0.2996299607171836,
+    2.6168641779426776,
+    30.35504892465731,
+    0.7705497445327852
+  ],
+  "derived_best": {
+    "Omega_m": 0.2996299607171836,
+    "s": 2.6168641779426776,
+    "q_BAO": 30.35504892465731,
+    "sigma8_0": 0.7705497445327852,
+    "mu0": 0.0,
+    "Sigma0": -0.38313582205732244,
+    "kappa_BW": 1.0
+  },
+  "chi2_total": 1767.5048630358544,
+  "chi2_sn": 1750.07373970747,
+  "chi2_bao": 9.396009956261905,
+  "chi2_growth": 6.884058660379159,
+  "chi2_EG": 1.1510547117434926
+}

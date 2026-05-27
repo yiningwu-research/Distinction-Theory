@@ -1,0 +1,8 @@
+{
+  "model": "g1de2",
+  "samples": 360000,
+  "P_s_less_than_3": 0.9999222222222223,
+  "P_mu0_less_than_0": 0.4645638888888889,
+  "P_Sigma0_less_than_0": 0.984525,
+  "P_mu0_and_Sigma0_less_than_0": 0.46439444444444444
+}

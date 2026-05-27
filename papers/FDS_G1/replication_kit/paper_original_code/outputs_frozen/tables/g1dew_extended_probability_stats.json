@@ -1,0 +1,9 @@
+{
+  "model": "g1dew",
+  "samples": 1600,
+  "P_s_less_than_3": 1.0,
+  "P_Sigma0_less_than_0": 1.0,
+  "P_mu0_less_than_0": 0.0,
+  "kappa_BW_mean": 0.9784220415531136,
+  "kappa_BW_q50": 0.8695094346104311
+}

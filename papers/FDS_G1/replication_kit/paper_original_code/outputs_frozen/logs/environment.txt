@@ -1,0 +1,7 @@
+numpy
+pandas
+scipy
+matplotlib
+emcee
+corner
+dynesty

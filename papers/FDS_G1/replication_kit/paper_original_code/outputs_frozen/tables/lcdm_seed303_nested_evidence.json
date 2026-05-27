@@ -1,0 +1,14 @@
+{
+  "model": "lcdm",
+  "seed": 303,
+  "ndim": 3,
+  "nlive": 800,
+  "dlogz": 0.5,
+  "logZ": -906.1935324899918,
+  "logZ_err": 0.21456824008581646,
+  "logl_max": -894.5796015530267,
+  "chi2_min_nested": 1789.1592031060534,
+  "ncall": 193160,
+  "eff": 17.996832199757755,
+  "prior_config": "configs/nested_priors_medium.json"
+}

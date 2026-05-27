@@ -1,0 +1,16 @@
+{
+  "model": "cpl",
+  "seed": 303,
+  "ndim": 5,
+  "nlive": 0,
+  "dlogz": 0.0,
+  "logZ": -903.7057686743454,
+  "logZ_err": 0.0,
+  "logl_max": -887.3358684170653,
+  "chi2_min_nested": 1774.6717368341306,
+  "ncall": 14446,
+  "eff": null,
+  "prior_config": "recovered_from_chains",
+  "recovered_from_chains": true,
+  "logZ_err_note": "from logsumexp(logwt); dynesty logzerr unavailable"
+}

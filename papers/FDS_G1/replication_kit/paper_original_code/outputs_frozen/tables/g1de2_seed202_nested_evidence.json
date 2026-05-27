@@ -1,0 +1,14 @@
+{
+  "model": "g1de2",
+  "seed": 202,
+  "ndim": 6,
+  "nlive": 800,
+  "dlogz": 0.5,
+  "logZ": -901.1302266970329,
+  "logZ_err": 0.2515361506463754,
+  "logl_max": -883.6969903207099,
+  "chi2_min_nested": 1767.3939806414198,
+  "ncall": 330379,
+  "eff": 21.62873977086743,
+  "prior_config": "configs/nested_priors_medium.json"
+}

@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+CONFIG=${1:-configs/stage2d_exact_config.json}
+
+python src/run_exact_nested.py --config "$CONFIG" --model cpl --nlive 1000
+python src/run_exact_nested.py --config "$CONFIG" --model g1de1 --nlive 1000
+python src/run_exact_nested.py --config "$CONFIG" --model g1de2 --nlive 1200
+
+python src/collect_evidence.py
+#!/usr/bin/env bash
+set -euo pipefail
+
+# 3-seed 5000-step pilots for the most important new models.
+# Adjust STEPS/WALKERS in the environment if needed:
+#   STEPS=5000 WALKERS=48 bash scripts/run_extended_pilots.sh
+
+STEPS=${STEPS:-5000}
+WALKERS=${WALKERS:-48}
+
+for MODEL in g1dew g1demk g1dem34; do
+  for SEED in 101 202 303; do
+    python src/run_extended_mcmc.py --model $MODEL --seed $SEED --steps $STEPS --walkers $WALKERS --no-optimize --progress
+  done
+  python src/diagnose_extended_chains.py --model $MODEL
+done
+
+python src/compare_extended_models.py
+#!/usr/bin/env bash
+set -euo pipefail
+
+CONFIG=${1:-configs/stage2d_exact_config.json}
+STEPS=${STEPS:-20000}
+
+# Recommended: run these lines in tmux/screen or submit each line to a cluster queue.
+for MODEL in cpl g1de1 g1de2; do
+  for SEED in 101 202 303 404 505; do
+    echo "Running ${MODEL} seed ${SEED}"
+    python src/run_exact_mcmc.py --config "$CONFIG" --model "$MODEL" --seed "$SEED" --steps "$STEPS"
+  done
+done
+#!/usr/bin/env bash
+set -euo pipefail
+
+CONFIG=${1:-configs/stage2d_exact_config.json}
+
+python src/diagnose_exact_chains.py --config "$CONFIG" --model cpl
+python src/diagnose_exact_chains.py --config "$CONFIG" --model g1de1
+python src/diagnose_exact_chains.py --config "$CONFIG" --model g1de2
+
+python src/make_exact_plots.py --config "$CONFIG" --model cpl
+python src/make_exact_plots.py --config "$CONFIG" --model g1de1
+python src/make_exact_plots.py --config "$CONFIG" --model g1de2

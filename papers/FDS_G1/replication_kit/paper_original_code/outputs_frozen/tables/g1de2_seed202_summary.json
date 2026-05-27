@@ -1,0 +1,46 @@
+{
+  "model": "g1de2",
+  "seed": 202,
+  "parameter_names": [
+    "Omega_m",
+    "s",
+    "q_BAO",
+    "sigma8_0",
+    "mu0",
+    "Sigma0"
+  ],
+  "steps": 5000,
+  "burn_fraction": 0.5,
+  "nwalkers": 48,
+  "postburn_shape": [
+    2500,
+    48,
+    6
+  ],
+  "acceptance_fraction_mean": 0.5104416666666666,
+  "optimizer_chi2": 1767.136683449411,
+  "chain_best_chi2": 1767.191543493814,
+  "used_chain_best": false,
+  "optimizer_start_best": [
+    0.2969,
+    2.56,
+    30.42,
+    0.795,
+    -0.07,
+    -0.36
+  ],
+  "best": [
+    0.2969,
+    2.56,
+    30.42,
+    0.795,
+    -0.07,
+    -0.36
+  ],
+  "chi2_min": 1767.136683449411,
+  "chi2_total": 1767.136683449411,
+  "chi2_sn": 1749.609043955803,
+  "chi2_bao": 9.633695616483639,
+  "chi2_growth": 6.883905765175516,
+  "chi2_EG": 1.0100381119489592
+}

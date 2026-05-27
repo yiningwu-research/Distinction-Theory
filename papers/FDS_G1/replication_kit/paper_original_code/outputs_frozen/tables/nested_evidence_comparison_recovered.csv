@@ -1,0 +1,2 @@
+model,ndim,n_runs,logZ_mean,logZ_run_std,logZ_dynesty_err_mean,chi2_best,logl_best,ncall_total,logZ_total_err,Delta_logZ,Bayes_factor
+cpl,5,3,-903.6925298356995,0.06219150034909021,0.0,1774.5617288613253,-887.2808644306626,43363,0.06219150034909021,0.0,1.0

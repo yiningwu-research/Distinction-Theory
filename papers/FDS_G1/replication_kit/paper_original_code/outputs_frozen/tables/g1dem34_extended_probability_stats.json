@@ -1,0 +1,9 @@
+{
+  "model": "g1dem34",
+  "samples": 360000,
+  "P_s_less_than_3": 1.0,
+  "P_Sigma0_less_than_0": 1.0,
+  "P_mu0_less_than_0": 0.0,
+  "kappa_BW_mean": 0.75,
+  "kappa_BW_q50": 0.75
+}

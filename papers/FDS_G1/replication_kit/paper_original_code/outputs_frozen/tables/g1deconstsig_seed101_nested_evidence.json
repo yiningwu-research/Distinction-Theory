@@ -1,0 +1,14 @@
+{
+  "model": "g1deconstsig",
+  "seed": 101,
+  "ndim": 5,
+  "nlive": 800,
+  "dlogz": 0.5,
+  "logZ": -898.84,
+  "logZ_err": 0.2,
+  "logl_max": -883.625,
+  "chi2_min_nested": 1767.25,
+  "ncall": 273809,
+  "eff": null,
+  "prior_config": "configs/nested_priors_wide.json"
+}
