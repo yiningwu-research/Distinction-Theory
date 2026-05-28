@@ -1,6 +1,6 @@
 # FDS-G1 Replication Kit v1.0-rc3
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20404491.svg)](https://doi.org/10.5281/zenodo.20404491)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20423094.svg)](https://doi.org/10.5281/zenodo.20423094)
 
 ## Which code produced the paper evidence tables?
 
