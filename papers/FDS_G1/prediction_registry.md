@@ -71,12 +71,12 @@ E(z)<sup>2</sup> = Ω<sub>m</sub>(1+z)<sup>3</sup> + (1−Ω<sub>m</sub>)(1+z)<s
 
 ## Prediction G1-E — Evidence Hierarchy Stability
 
-**Statement.** The six-model matched exact-pilot evidence ranking is:
-M<sub>3/4</sub> > M<sub>κ</sub> > const-Σ > G1DE-2 > CPL > ΛCDM.
+**Statement.** The completed homogeneous seven-model medium-prior evidence ranking is:
+M<sub>3/4</sub> > M<sub>κ</sub> > const-Σ > G1DE-2 > G1DE-1 > CPL > ΛCDM.
 
 **Dependencies.** G1-A, G1-B, G1-C, G1-D.
 
-**Not claimed.** Exact-pilot evidence is not production-confirmed evidence. The ranking is preliminary; production refinement, expanded likelihoods, and independent replication are pending.
+**Not claimed.** Homogeneous audit evidence is not final production evidence; production caveat applies.
 
 **Forward test.** Production evidence refinement and expanded lensing/3×2pt likelihoods should preserve the ranking or at minimum the M<sub>3/4</sub> > ΛCDM direction.
 

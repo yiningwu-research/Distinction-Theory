@@ -2940,7 +2940,7 @@
 **Layer.** Physics — Gravity 1.
 **Dependencies.** FDS-T1-001, FDS-T2-001.
 **First timestamp.** FDS-G1 Complete Series v1.0-rc, 2026-05-25.
-**DOI.** 10.5281/zenodo.20404491.
+**DOI.** 10.5281/zenodo.20423094.
 **Failure condition.** Finite-screen entropy response produces no distinguishable gravitational coupling signature beyond standard GR+\(\Lambda\)CDM under production evidence.
 
 ### FDS-G1-002 — 3/4 Projection Lock
@@ -2949,7 +2949,7 @@
 **Layer.** Physics — Gravity 1.
 **Dependencies.** FDS-G1-001, FDS-T2-001.
 **First timestamp.** FDS-G1 Complete Series v1.0-rc, 2026-05-25.
-**DOI.** 10.5281/zenodo.20404491.
+**DOI.** 10.5281/zenodo.20423094.
 **Failure condition.** Free-\(\kappa\) decisively beats \(M_{3/4}\) under production evidence.
 
 ### FDS-G1-003 — Background–Weyl Residual Fingerprint
@@ -2958,24 +2958,24 @@
 s<3,\qquad \mu(a,k)=1,\qquad \Sigma(a,k)-1=-\frac34(3-s)\widehat R_H(a),\quad \widehat R_H(1)=1.
 \]
 The background deviation and Weyl response are tied to the same output-response shape \(\widehat R_H(a)\), with near-GR growth (\(\mu\simeq1\)). This is a sparse residual, not a flexible dark-energy or modified-growth fit.
-**Status.** Exact-pilot evidence-selected; ranked first in six-model nested evidence hierarchy.
+**Status.** Exact-pilot evidence-selected; ranked first in completed homogeneous seven-model medium-prior nested-evidence hierarchy.
 **Layer.** Physics — Gravity 1.
 **Dependencies.** FDS-G1-002, FDS-X1-001, FDS-X1-002.
 **First timestamp.** FDS-G1 Complete Series v1.0-rc, 2026-05-25.
-**DOI.** 10.5281/zenodo.20404491.
+**DOI.** 10.5281/zenodo.20423094.
 **Failure condition.** Any of: (1) Free-\(\kappa\) beats M\(_{3/4}\); (2) Constant-\(\Sigma\) beats output-shape model; (3) \(|\mu-1|\sim|\Sigma-1|\); (4) Free \(A(a,k)\) required; (5) CPL or \(\Lambda\)CDM wins; (6) Expanded lensing does not support Weyl signal.
 
-### FDS-G1-004 — Six-Model Nested Evidence Hierarchy
-**Statement.** Matched medium-prior nested evidence over matched exact likelihoods yields:
+### FDS-G1-004 — Completed Homogeneous Seven-Model Medium-Prior Nested-Evidence Hierarchy
+**Statement.** Completed homogeneous seven-model medium-prior nested-evidence audit over matched exact likelihoods selects:
 \[
-M_{3/4} > M_\kappa > \text{const-}\Sigma > \text{G1DE-2} > \text{CPL} > \Lambda\text{CDM},
+M_{3/4} > M_\kappa > \text{const-}\Sigma > \text{G1DE-2} > \text{G1DE-1} > \text{CPL} > \Lambda\text{CDM},
 \]
-with margins \(\Delta\log Z\simeq0.97, 1.92, 6.70, 9.43, 11.96\) against the five controls. Top-control wide-prior sensitivity confirms ranking stability. This is an exact-pilot evidence claim, not a production-confirmed result.
-**Status.** Claim — exact-pilot evidence-selected; production evidence pending.
+with margins \(\Delta\log Z\simeq0.72, 1.79, 6.61, 7.41, 9.51, 11.88\) against the six controls. G1DE-1 serves as growth-only negative control. Top-control wide-prior sensitivity confirms ranking stability.
+**Status.** Completed homogeneous seven-model medium-prior audit.
 **Layer.** Physics — Gravity 1.
 **Dependencies.** FDS-G1-003, FDS-X1-004.
 **First timestamp.** FDS-G1 Complete Series v1.0-rc, 2026-05-25.
-**DOI.** 10.5281/zenodo.20404491.
+**DOI.** 10.5281/zenodo.20423094.
 **Failure condition.** Ranking fails under production evidence refinement, expanded lensing likelihoods, full baseline wide-prior sensitivity, or independent replication. Production evidence returns to CPL or \(\Lambda\)CDM dominance.
 
 ### FDS-G1-005 — Finite Markov-Screen Realization
@@ -2984,7 +2984,7 @@ with margins \(\Delta\log Z\simeq0.97, 1.92, 6.70, 9.43, 11.96\) against the fiv
 **Layer.** Physics — Gravity 1.
 **Dependencies.** FDS-G1-002, FDS-G1-003.
 **First timestamp.** FDS-G1 Complete Series v1.0-rc, 2026-05-25.
-**DOI.** 10.5281/zenodo.20404491.
+**DOI.** 10.5281/zenodo.20423094.
 **Failure condition.** The finite Markov-screen class cannot realize the optical projection, rank-one horizon output, or Ward-stiff Ricci leakage simultaneously under any admissible parameter choice.
 
 ### FDS-G1-006 — Falsification Contract
@@ -2993,7 +2993,7 @@ with margins \(\Delta\log Z\simeq0.97, 1.92, 6.70, 9.43, 11.96\) against the fiv
 **Layer.** Physics — Gravity 1.
 **Dependencies.** FDS-G1-004.
 **First timestamp.** FDS-G1 Complete Series v1.0-rc, 2026-05-25.
-**DOI.** 10.5281/zenodo.20404491.
+**DOI.** 10.5281/zenodo.20423094.
 **Failure condition.** G1DE class collapses to generic dark-stress model (free amplitude required).
 
 ---
