@@ -1,0 +1,19 @@
+{
+  "model": "cpl",
+  "seed": 202,
+  "ndim": 5,
+  "nlive": 800,
+  "dlogz": 0.5,
+  "logZ": -903.863417979516,
+  "logZ_err": 0.24689405592029962,
+  "logl_max": -887.2871567190234,
+  "chi2_min_nested": 1774.5743134380468,
+  "ncall": 303029,
+  "eff": 20.746884841845816,
+  "prior_config": "configs/nested_priors_medium.json",
+  "prior_label": "medium",
+  "run_family": "legacy_exact_pilot",
+  "metadata_standardized": true,
+  "metadata_standardized_at": "2026-05-28T04:30:36Z",
+  "metadata_inference_rule": "pre-existing"
+}

@@ -1,0 +1,19 @@
+{
+  "model": "g1deconstsig",
+  "seed": 202,
+  "ndim": 5,
+  "nlive": 800,
+  "dlogz": 0.5,
+  "logZ": -896.2348177967342,
+  "logZ_err": 0.2158204145243586,
+  "logl_max": -883.6036888558222,
+  "chi2_min_nested": 1767.2073777116443,
+  "ncall": 222611,
+  "eff": 19.419959870888945,
+  "prior_config": "configs/nested_priors_medium.json",
+  "prior_label": "medium",
+  "run_family": "legacy_exact_pilot",
+  "metadata_standardized": true,
+  "metadata_standardized_at": "2026-05-28T04:30:36Z",
+  "metadata_inference_rule": "pre-existing"
+}

@@ -1,0 +1,8 @@
+model,n_seeds,logZ_mean,logZ_std,logZ_min,logZ_max,logZ_err_mean,chi2_best,prior_label_set,run_family_set,ndim,display_name,status,dlogz_from_best_max
+cpl,3,-903.85,0.09,-903.93,-903.75,0.25,1774.57,medium,legacy_exact_pilot,5,CPL,complete,9.45
+g1de1,3,-901.75,0.04,-901.78,-901.71,0.24,1772.39,medium,legacy_exact_pilot,5,G1DE-1,complete,7.41
+g1de2,3,-900.95,0.19,-901.13,-900.76,0.25,1767.3,medium,legacy_exact_pilot,6,G1DE-2,complete,6.46
+g1deconstsig,3,-896.13,0.12,-896.23,-896.0,0.22,1767.21,medium,legacy_exact_pilot,5,G1DE-constSigma,complete,1.7
+g1dem34,3,-894.34,0.03,-894.37,-894.3,0.2,1767.18,medium,legacy_exact_pilot,4,G1DE-M_{3/4},complete,0.0
+g1demk,3,-895.06,0.11,-895.19,-894.98,0.21,1767.27,medium,legacy_exact_pilot,5,G1DE-M_kappa,complete,0.68
+lcdm,3,-906.22,0.07,-906.3,-906.18,0.22,1789.16,medium,legacy_exact_pilot,3,LambdaCDM,complete,11.88

@@ -1,4 +1,4 @@
-# FDS-G1 Replication Kit v1.0-rc32
+# FDS-G1 Replication Kit v1.0-rc3
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20404491.svg)](https://doi.org/10.5281/zenodo.20404491)
 
@@ -27,6 +27,27 @@ For transparency, the original scripts are archived verbatim. Known post-archive
 The archived original code supports the paper's exact-pilot evidence claim. It is not advertised as final survey-grade production evidence.
 
 The current benchmark hierarchy is a pilot-level result under the stated processed datasets, priors, samplers, and stopping tolerances.
+
+## Homogeneous Medium-Prior Audit (v1.0-rc3 data update)
+
+**This rc3 supersedes earlier mixed-provenance seven-model audits with a completed homogeneous seven-model medium-prior nested-evidence audit.** All seven models (G1DE-M_{3/4}, G1DE-M_kappa, G1DE-constSigma, G1DE-2, G1DE-1, CPL, LambdaCDM) were run with 3 independent seeds under the same medium-prior configuration (`nested_priors_medium.json`), `n_live=800`, `dlogz=0.5`.
+
+The canonical evidence hierarchy is:
+
+| Model | logZ_mean | ΔlogZ | B(M_{3/4},i) |
+|-------|-----------|-------|---------------|
+| G1DE-M_{3/4} | -894.34 ± 0.03 | 0.00 | 1 |
+| G1DE-M_kappa | -895.06 ± 0.11 | 0.72 | 2.1 |
+| G1DE-constSigma | -896.13 ± 0.12 | 1.79 | 6.0 |
+| G1DE-2 | -900.95 ± 0.19 | 6.61 | 7.4×10^2 |
+| G1DE-1 | -901.75 ± 0.04 | 7.41 | 1.65×10^3 |
+| CPL | -903.85 ± 0.09 | 9.51 | 1.35×10^4 |
+| LambdaCDM | -906.22 ± 0.07 | 11.88 | 1.44×10^5 |
+
+All per-seed JSONs and the canonical summary CSV are in `outputs_medium_audit/`.
+The earlier mixed-provenance raw audit (`raw_audit_table.csv`) is retained for provenance only and has been superseded for model ranking.
+
+This is a medium-prior audit, not the final production evidence pass. Production refinement with `dlogz≤0.1` and ≥8 seeds remains pending.
 
 The following remain future or independent-validation tasks:
 
@@ -57,6 +78,15 @@ spec/                   Machine-readable model and likelihood specification
 benchmark/              Expected outputs for validation
   medium_evidence_table.csv   Six-model nested evidence comparison
   wide_topcontrol_table.csv   Top-3 wide-prior sensitivity
+
+outputs_medium_audit/    Homogeneous 7-model medium-prior evidence outputs (rc3 data)
+  *_medium_nested_evidence.json   Per-seed nested-evidence JSONs (15 files, 7 models × 3 seeds, minus lcdm/g1de2 unchanged)
+  homogeneous_medium_summary.csv  Canonical homogeneous evidence table (supersedes raw audit)
+  raw_audit_table.csv             Mixed-provenance raw audit (retained for provenance only)
+
+paper_original_code/     Frozen analysis code used for paper evidence tables
+  outputs_frozen/        Frozen per-seed outputs and SHA256 hashes
+  reproducibility_patch/ Patch notes and fixed runners for third-party reproduction
 
 processed_data/         Stage-1 processed data with SHA256 hashes
 
