@@ -49,5 +49,6 @@
   "n_evals": 45,
   "n_iters": 1,
   "success": true,
-  "runtime_seconds": 53.8
+  "runtime_seconds": 53.8,
+  "n_params": 14
 }

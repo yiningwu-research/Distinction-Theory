@@ -21,8 +21,8 @@ used to stress-test the G1DE-M_{3/4} branch through:
 | (m_i + dz_i) | Shear cal + photo-z shift nuisance | M3/4 favored Δχ²≈−44 |
 | (m_i + dz_i + A_IA) | + minimal NLA intrinsic alignments | M3/4 favored Δχ²≈−39 |
 | M_kappa | Free projection coefficient | κ≈0.746 (consistent with 3/4 lock) |
-| const-Sigma | Constant Weyl-amplitude control | Ranks below M3/4 |
-| binned-Sigma(z) | Adversarial Weyl-shape control | M3/4 R_bH shape survives |
+| const-Sigma | Constant Weyl-amplitude control | exposes amplitude-control basin; boundary/nuisance-sensitive |
+| binned-Sigma(z) | Adversarial Weyl-shape control | finds nuisance-entangled low-χ² basin; shape-lock remains under stress |
 | Deterministic mock injection | False-positive audit | No misclassification of LCDM/const-/binned- as M3/4 |
 
 ## Dependencies
