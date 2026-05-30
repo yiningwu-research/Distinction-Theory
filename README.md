@@ -85,7 +85,7 @@ The current DT/FDS public architecture, organized by layer:
 
 ### Physics → G1
 
-- **FDS-G1** — *Finite Screen Spacetime: Entropy-Response Geometry from Causal-Screen Ledgers.* Complete Series (19 papers, 290 pages). G1DE-M<sub>3/4</sub> projection-locked branch selected by completed homogeneous seven-model medium-prior nested-evidence audit. DOI: 10.5281/zenodo.20423094. [Video](https://www.youtube.com/watch?v=lJQYHDL5KY0). [Replication Kit](papers/FDS_G1/replication_kit).
+- **FDS-G1** — *Finite Screen Spacetime: Entropy-Response Geometry from Causal-Screen Ledgers.* Complete Series (19 papers, 290 pages). G1DE-M<sub>3/4</sub> projection-locked branch selected by completed homogeneous seven-model medium-prior nested-evidence audit. DOI: 10.5281/zenodo.20453246. [Video](https://www.youtube.com/watch?v=lJQYHDL5KY0). [Replication Kit](papers/FDS_G1/replication_kit).
 
 ### Physical Bridge Ladder
 
@@ -228,7 +228,7 @@ Recommended reading path:
 |---|---|---|---|
 | **DT-Archive** | *Distinction Theory: A General Theory of Finite Systems* | Zenodo archive | [10.5281/zenodo.20130174](https://doi.org/10.5281/zenodo.20130174) |
 | **FDS-0** | *Active Finite Distinction Systems: A Formal Core for Boundary Maintenance under Finite Capacity* | Zenodo preprint | [10.5281/zenodo.20158923](https://doi.org/10.5281/zenodo.20158923) |
-| **FDS-G1** | *Finite Screen Spacetime: Entropy-Response Geometry from Causal-Screen Ledgers* | Released | [10.5281/zenodo.20423094](https://doi.org/10.5281/zenodo.20423094) | [Video](https://www.youtube.com/watch?v=lJQYHDL5KY0) | [Code](papers/FDS_G1/replication_kit) |
+| **FDS-G1** | *Finite Screen Spacetime: Entropy-Response Geometry from Causal-Screen Ledgers* | Released | [10.5281/zenodo.20453246](https://doi.org/10.5281/zenodo.20453246) | [Video](https://www.youtube.com/watch?v=lJQYHDL5KY0) | [Code](papers/FDS_G1/replication_kit) |
 | **FDS-P0** | *Physical Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo preprint | [10.5281/zenodo.20159995](https://doi.org/10.5281/zenodo.20159995) |
 | **FDS-T1** | *Finite Distinguishability Budgets and Maintenance Bounds for Physical Observers* | Released | [10.5281/zenodo.20234249](https://doi.org/10.5281/zenodo.20234249) |
 | **FDS-O1** | *Observer as a Finite Distinction Register: Measurement Capacity, Dynamic Bottlenecks, and Budget-Crossing Signatures* | Released | [10.5281/zenodo.20248792](https://doi.org/10.5281/zenodo.20248792) |
