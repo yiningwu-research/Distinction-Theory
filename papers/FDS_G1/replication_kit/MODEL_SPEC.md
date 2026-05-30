@@ -1,5 +1,5 @@
 # Model Specification
-# FDS-G1 Complete Series v1.0-rc3
+# FDS-G1 Complete Series v1.1-rc1
 
 This document defines the six models in the G1fit-real evidence hierarchy.
 The YAML model cards in spec/model_cards/ are the machine-readable authority;
@@ -135,3 +135,50 @@ is required, the model leaves the G1DE class.
 
 See spec/model_cards/*.yaml for numeric bounds, starting values, and
 best-fit parameters.
+
+## 7. KiDS shear-only models (new in v1.1-rc1)
+
+The following models are defined in `kids_shear_only/src/stage3_lensing_3x2pt.py`
+for the KiDS-1000 shear-only diagnostic tests:
+
+### 7.1 KiDS nuisance parameters
+
+All models share these nuisance parameters for the 5 tomographic source bins:
+  - m_src{0..4}: shear calibration bias (5 params)
+  - dz_src{0..4}: photo-z shift (5 params)
+  - A_IA: intrinsic alignment amplitude (single NLA param, eta=0, z0=0)
+
+### 7.2 M_kappa (free projection coefficient)
+
+  params: Omega_m, sigma8, m_src*, dz_src*, A_IA, kappa (free)
+  Sigma(a) - 1 = -kappa * (3-s) * Xhat(a)
+
+  s fixed from background fit; kappa profiled.
+
+### 7.3 constant-Sigma (adversarial Weyl control)
+
+  params: Omega_m, sigma8, m_src*, dz_src*, A_IA, Sigma_c
+  Sigma(a) = 1 + Sigma_c  (no redshift evolution)
+
+  Not a G1DE branch; used as adversarial shape control.
+
+### 7.4 binned-Sigma(z) (adversarial Weyl-shape control)
+
+  params: Omega_m, sigma8, m_src*, dz_src*, A_IA, Sigma_bin0, Sigma_bin1
+  Sigma(z) = 1 + Sigma_bin0 for z < 0.5
+  Sigma(z) = 1 + Sigma_bin1 for z >= 0.5
+
+  **Not a G1DE branch.** Used as adversarial shape diagnostic control.
+  Delta-Sigma between bins ~ -0.29 compatible with R_bH(a). See
+  phase2b3_summary.md for details.
+
+### 7.5 KiDS backend: CLASS
+
+The KiDS shear-only tests use CLASS (via `classy`) for the matter power
+spectrum instead of BBKS. Configs in `kids_shear_only/configs/` specify
+nk=128, nz=64. Fixed cosmology: h=0.68, Omega_b=0.049, n_s=0.965.
+
+**Unit convention**: CLASS P(k) output is in (Mpc/h)^3. The pipeline
+converts to (Mpc)^3 to match the Limber integral convention. See
+`kids_shear_only/configs/` for the scale-cuts configuration (xip >= 4',
+xim >= 30') producing the 135-point data vector.

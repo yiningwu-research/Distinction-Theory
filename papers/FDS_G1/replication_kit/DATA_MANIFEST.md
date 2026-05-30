@@ -1,5 +1,5 @@
 # Data Manifest
-# FDS-G1 Complete Series v1.0-rc3
+# FDS-G1 Complete Series v1.1-rc1
 
 ## Processed data files
 
@@ -40,3 +40,18 @@ processed_data/sha256.txt.
 
 If data redistribution is restricted, use the SHA256 hashes to verify
 that independently obtained data matches the version used here.
+
+## KiDS-1000 shear-only diagnostic data (new in v1.1-rc1)
+
+Files:
+- kids_shear_only/data/row_order_270.csv
+- kids_shear_only/data/scale_cut_mask_135.csv
+
+**Status**: shear-only diagnostic, not full 3x2pt.
+Galaxy-galaxy lensing and angular clustering are not included.
+
+The full KiDS-1000 data vector, covariance, and n(z) are **not redistributed**
+in this repository.  See kids_shear_only/data/DOWNLOAD_INSTRUCTIONS.md for
+download and verification instructions.
+
+Expected SHA256 hashes: kids_shear_only/data/expected_sha256.txt

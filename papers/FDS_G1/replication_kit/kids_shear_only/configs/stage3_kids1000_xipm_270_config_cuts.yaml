@@ -1,0 +1,46 @@
+data_vector_csv: kids1000_xipm_270_data_vector.csv
+covariance_txt: kids1000_xipm_covariance_270.txt
+rbh_table: rbh_fallback_not_production.csv
+z_min: 0.0001
+z_max: 3.0
+nz_grid: 500
+ell_min: 2.0
+ell_max: 5000.0
+nell: 500
+vary_lens_bias: false
+lens_bias_bounds:
+- 0.3
+- 4.0
+vary_shear_m: true
+shear_m_bounds:
+- -0.05
+- 0.05
+sources:
+- name: src0
+  nz_file: nz/source_0.csv
+  m: 0.0
+- name: src1
+  nz_file: nz/source_1.csv
+  m: 0.0
+- name: src2
+  nz_file: nz/source_2.csv
+  m: 0.0
+- name: src3
+  nz_file: nz/source_3.csv
+  m: 0.0
+- name: src4
+  nz_file: nz/source_4.csv
+  m: 0.0
+lenses: []
+notes:
+  builder: build_270_vector.py
+  status: "KiDS-1000 official-order 270-row xi\xB1 vector with aligned 270x270 covariance"
+  ordering: xip pair-major theta-minor, then xim pair-major theta-minor
+  theta_formula: exp(log(0.5) + log(600)/9 * (i+0.5)), i=0..8
+scale_cuts:
+  enabled: true
+  xip_theta_min: 4.0
+  xim_theta_min: 30.0
+  kind_filter:
+  - xip
+  - xim

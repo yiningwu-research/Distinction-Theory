@@ -1,5 +1,5 @@
 # Benchmark Outputs
-# FDS-G1 Complete Series v1.0-rc3
+# FDS-G1 Complete Series v1.1-rc1
 # Expected values for independent validation
 
 ## chi2_min (optimizer best-fit, exact pilot)
@@ -60,3 +60,57 @@ const-Sigma    5         1777.26    2.11       1805.01    7.66
 Independent reimplementation should reproduce the evidence ranking
 and approximate logZ differences within these tolerances.
 Exact logZ values depend on sampler, seed, nlive, dlogz.
+
+## KiDS shear-only v1.1 benchmarks (new)
+
+### Table A: delta-chi2 relative to M3/4 (CLASS backend, scale-cuts 135pt, m_i + dz_i + A_IA profiled)
+
+Model          Delta-chi2    BIC        Delta-BIC
+-----          ----------    ---        ---------
+M3/4           0.0           1549.0     0.0
+LCDM           +38.9         1579.8     +30.8
+Mkappa         -4.5          1554.8     +5.8
+const-Sigma    +12.0         1565.3     +16.3
+binned-Sigma   +16.2         1577.8     +28.8
+
+### Table B: Deterministic mock injection confusion matrix (chi2_min)
+
+| Truth \ Test | LCDM   | M3/4   | Mkappa | const-S | binned-S |
+|--------------|--------|--------|--------|---------|----------|
+| LCDM         | 0.0    | 14.5   | 14.5   | 14.6    | 14.5     |
+| M3/4         | 11.4   | 0.0    | 1.0    | 9.9     | 9.6      |
+| const-Sigma  | 10.4   | 14.0   | 14.1   | 0.0     | 0.19     |
+| binned-Sigma | 11.7   | 14.7   | 14.7   | 10.1    | 0.0      |
+
+Diagonal must be lowest in each row (not misclassified).
+
+### Table C: free-kappa test (m+dz profiled, CLASS)
+
+Model    chi2_min    kappa
+-----    --------    -----
+M3/4     748.96      0.75 (locked)
+Mkappa   748.95      0.746 ± 0.003
+
+kappa consistent with 3/4 lock within optimizer tolerance.
+
+### Table D: Adversarial constant-Sigma (CLASS, cuts, m+dz+IA)
+
+Anchor               chi2_min
+------               --------
+good-basin (const-S locked)  726.16
+LCDM-anchor                   793.12
+
+### Table E: Adversarial binned-Sigma(z) (2 bins, edges [0, 0.5, 10.0])
+
+Anchor               chi2_min    Sigma_bin0    Sigma_bin1
+------               --------    ----------    ----------
+good-basin (const-S)  696.97     -0.65         -0.36
+LCDM-anchor           793.12     +0.65         +0.65
+
+Delta-Sigma ~ -0.29 between bins, trend compatible with R_bH(a) shape.
+
+## Tolerance for KiDS benchmarks
+
+  Delta-chi2 sign       : must hold (M3/4 < LCDM)
+  Mock diagonal          : must be correct in all 4 truth models
+  Free-kappa consistency : kappa ~ 0.75

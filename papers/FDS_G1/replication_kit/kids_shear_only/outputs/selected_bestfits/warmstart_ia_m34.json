@@ -1,0 +1,53 @@
+{
+  "model": "m34",
+  "method": "L-BFGS-B warm-start",
+  "starting_chi2": 748.9639955911499,
+  "chi2_min": 748.9639955911499,
+  "delta_chi2_from_start": 0.0,
+  "params": {
+    "Omega_m": 0.4487752843642431,
+    "h": 0.68,
+    "Omega_b": 0.049,
+    "sigma8": 0.8458784149328501,
+    "n_s": 0.965,
+    "s": 2.3850577459925995,
+    "m_src0": 0.01816589161459121,
+    "m_src1": -0.027598035445045875,
+    "m_src2": -0.0322113817800161,
+    "m_src3": 0.004221930043332004,
+    "m_src4": 0.015103584550463048,
+    "dz_src0": 0.0004304567511174142,
+    "dz_src1": 0.0004298027463947669,
+    "dz_src2": -0.0004321891801132877,
+    "dz_src3": 0.0004303111495412997,
+    "dz_src4": 0.0004303365205601842,
+    "A_IA": 0.0
+  },
+  "at_bounds": {
+    "Omega_m": false,
+    "h": false,
+    "Omega_b": false,
+    "sigma8": false,
+    "n_s": false,
+    "s": false,
+    "m_src0": false,
+    "m_src1": false,
+    "m_src2": false,
+    "m_src3": false,
+    "m_src4": false,
+    "dz_src0": false,
+    "dz_src1": false,
+    "dz_src2": false,
+    "dz_src3": false,
+    "dz_src4": false,
+    "A_IA": false
+  },
+  "derived": {
+    "S8": 1.0345745262973123,
+    "A_eff": 0.4612066905055504
+  },
+  "n_evals": 45,
+  "n_iters": 1,
+  "success": true,
+  "runtime_seconds": 53.8
+}

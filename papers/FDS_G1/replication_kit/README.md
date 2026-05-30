@@ -1,4 +1,4 @@
-# FDS-G1 Replication Kit v1.0-rc3
+# FDS-G1 Replication Kit v1.1-rc1
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20423094.svg)](https://doi.org/10.5281/zenodo.20423094)
 
@@ -53,8 +53,24 @@ The following remain future or independent-validation tasks:
 
 - stricter production nested evidence with smaller dlogz and more seeds;
 - full prior stress across all six baseline/control models;
-- expanded weak-lensing / E_G / 3\times2pt likelihoods;
+- full 3\times2pt lensing likelihoods including galaxy-galaxy lensing and clustering;
+- noisy mock ensembles;
 - independent reimplementation from `spec/` only.
+
+## v1.1 KiDS shear-only diagnostic layer
+
+This release adds a **KiDS-1000 shear-only diagnostic stress-test layer** in
+`kids_shear_only/`. It is a diagnostic layer, not production 3x2pt evidence.
+It reproduces the CLASS-based KiDS-1000 xi_pm analysis supporting the
+G1DE-M_{3/4} branch under (m_i + dz_i + A_IA) nuisance, free-kappa, constant-Sigma,
+binned-Sigma(z), and deterministic mock injection.
+
+See `kids_shear_only/README.md` for the full description and reproduction
+instructions.  KiDS dependencies (`classy`, etc.) are in `requirements_kids.txt`.
+
+**Note on naming**: The core likelihood module is `kids_shear_only/src/stage3_lensing_3x2pt.py`
+for historical reasons.  In v1.1 it is used for shear-only xi_pm.
+Full 3x2pt is not included.
 
 ## Specification
 
@@ -78,6 +94,14 @@ spec/                   Machine-readable model and likelihood specification
 benchmark/              Expected outputs for validation
   medium_evidence_table.csv   Six-model nested evidence comparison
   wide_topcontrol_table.csv   Top-3 wide-prior sensitivity
+
+kids_shear_only/        v1.1 KiDS-1000 shear-only diagnostic stress tests (new)
+  src/                  Core likelihood, warm-start profiler, mock injection
+  configs/              YAML configs for all nuisance/adversarial layers
+  outputs/              Summary tables, confusion matrix, selected best-fits
+  figures/              Paper Figure 6 and mock confusion matrix
+  scripts/              Step-by-step reproduction shell scripts
+  validation/           Unit/integration tests for covariance, units, reproducibility
 
 outputs_medium_audit/    Homogeneous 7-model medium-prior evidence outputs (rc3 data)
   *_medium_nested_evidence.json   Per-seed nested-evidence JSONs (15 files, 7 models × 3 seeds, minus lcdm/g1de2 unchanged)
@@ -107,11 +131,17 @@ companion_d_demo/       Companion D falsification demo notebook + script
 # Install dependencies
 pip install -r requirements.txt
 
+# For KiDS shear-only tests, also install CLASS dependencies:
+pip install -r requirements_kids.txt
+
 # Run model identity checks
 python reference_impl/models.py
 
 # Run D7 Markov-screen toy verification
 python reference_impl/d7_markov_toy.py
+
+# Run KiDS shear-only smoke test (requires classy + downloaded data)
+cd kids_shear_only && python src/run_stage3_smoke_tests.py && cd ..
 
 # Run all tests
 pytest validation_tests/ -v
@@ -119,19 +149,25 @@ pytest validation_tests/ -v
 
 ## Validation protocol
 
-Four levels of independent validation are defined in `INDEPENDENT_VALIDATION.md`:
+Five levels of independent validation are defined in `INDEPENDENT_VALIDATION.md`:
 
 0. **Model identity** — verify mu=1, Sigma=-3/4*(3-s)*R̂_H, no free A
 1. **Best-fit** — reproduce chi2_min within ±0.2
 2. **Evidence** — reproduce ranking and ΔlogZ within ±0.5
 3. **Stress test** — ranking survives sampler/seed/prior changes
 4. **Adversarial** — full reimplementation from specification only
+5. **KiDS diagnostic** (new in v1.1) — reproduce CLASS backend sanity, scale-cut covariance shape,
+   Δχ² signs for M3/4 vs LCDM under nuisance, and deterministic mock-injection confusion matrix
 
 ## Data
 
 Post-stage-1 processed data files with reference SHA256 hashes are in
 `processed_data/`. Covariance matrices are included. See `DATA_MANIFEST.md`
 for provenance and URLs.
+
+KiDS-1000 data for the shear-only diagnostic layer is **not redistributed**.
+See `kids_shear_only/data/README_DATA.md` for download instructions and
+expected SHA256 hashes.
 
 ## License
 

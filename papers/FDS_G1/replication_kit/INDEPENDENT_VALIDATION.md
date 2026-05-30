@@ -1,5 +1,5 @@
 # Independent Validation Protocol
-# FDS-G1 Complete Series v1.0-rc3
+# FDS-G1 Complete Series v1.1-rc1
 
 The specification (spec/) is the validation target, not the author's code.
 Independent reimplementations are encouraged and are the strongest form of
@@ -47,6 +47,19 @@ likelihood definitions, reproduce the evidence ranking and approximate
 
 Passing Level 4 is the strongest form of independent confirmation.
 
+## Level 5: KiDS diagnostic reproduction (new in v1.1-rc1)
+
+  - Reproduce the CLASS backend P(k) sanity check
+  - Reproduce the scale-cut covariance shape (135 x 135)
+  - Reproduce the sign and approximate magnitude of delta-chi2(M3/4 - LCDM) = -39 to -44 under (m_i + dz_i + A_IA) nuisance
+  - Reproduce the deterministic mock-injection confusion matrix:
+    - LCDM mock -> LCDM lowest BIC (M3/4 must NOT win)
+    - M3/4 mock -> M3/4 or Mkappa recovers (kappa ~ 0.75)
+    - const-Sigma mock -> const-Sigma or binned-Sigma beats M3/4
+    - binned-Sigma mock -> binned-Sigma beats M3/4
+
+  Passing Level 5 confirms the v1.1 KiDS shear-only diagnostic stress-test results.
+
 ## Acceptance criteria
 
 | Check | Tolerance | Must hold |
@@ -57,3 +70,8 @@ Passing Level 4 is the strongest form of independent confirmation.
 | ΔlogZ(constΣ - M34) | 1.92 ± 0.5 | Approximate |
 | Wide-prior ranking | same | Yes |
 | M34 > LCDM | ΔlogZ >> 5 | Yes |
+| KiDS Δχ² sign | negative for M34 vs LCDM | Yes |
+| KiDS mock LCDM→LCDM | BIC lowest for LCDM | Yes |
+| KiDS mock M34→M34 | BIC lowest for M34 or Mκ | Yes |
+| KiDS mock constΣ→constΣ or binΣ | M34 not lowest | Yes |
+| KiDS mock binΣ→binΣ | M34 not lowest | Yes |

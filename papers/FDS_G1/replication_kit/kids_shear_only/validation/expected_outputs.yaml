@@ -1,0 +1,40 @@
+# Expected outputs for KiDS shear-only validation tests
+# v1.1-rc1
+
+scale_cut:
+  n_total: 270
+  n_kept: 135
+  xip_threshold: 4.0
+  xim_threshold: 30.0
+
+covariance_shape:
+  n_rows: 135
+  n_cols: 135
+
+delta_chi2:  # M3/4 - LCDM under m+dz+IA
+  expected_sign: negative  # M3/4 favored over LCDM
+  expected_magnitude: -39  # approximate
+
+mock_injection:
+  pass_criteria:
+    - truth: lcdm
+      test: m34
+      expected_result: lcdm_wins  # M3/4 must NOT be lowest BIC
+    - truth: m34
+      test: m34
+      expected_result: m34_recovers
+    - truth: m34
+      test: mkappa
+      expected_result: mkappa_near_m34  # kappa ~ 0.75
+    - truth: const_sigma
+      test: const_sigma
+      expected_result: const_sigma_wins
+    - truth: const_sigma
+      test: m34
+      expected_result: m34_loses  # M3/4 not lowest
+    - truth: binned_sigma
+      test: binned_sigma
+      expected_result: binned_sigma_wins
+    - truth: binned_sigma
+      test: m34
+      expected_result: m34_loses  # M3/4 not lowest

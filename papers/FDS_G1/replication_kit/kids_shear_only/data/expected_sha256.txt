@@ -1,0 +1,14 @@
+# Expected SHA256 hashes for KiDS data files
+# Download from https://github.com/KiDS-WL/Cat_to_Obs_K1000_P1
+# and verify after extraction/adapter conversion.
+#
+# TBD: Fill in after data extraction.
+# See src/kids1000_download_prepare.py for the conversion pipeline.
+
+# kids1000_xipm_270_vector.csv   TBD
+# kids1000_xipm_covariance_270.txt  TBD
+# nz_source_bin0.csv   TBD
+# nz_source_bin1.csv   TBD
+# nz_source_bin2.csv   TBD
+# nz_source_bin3.csv   TBD
+# nz_source_bin4.csv   TBD
