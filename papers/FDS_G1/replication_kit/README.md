@@ -91,11 +91,11 @@ The archived original code supports the paper's exact-pilot evidence claim. It i
 
 The current benchmark hierarchy is a pilot-level result under the stated processed datasets, priors, samplers, and stopping tolerances.
 
-### Homogeneous Medium-Prior Audit (v1.0-rc3 data update)
+### Homogeneous Medium-Prior Audit (v1.0-rc3 data update — superseded)
 
-**This rc3 supersedes earlier mixed-provenance seven-model audits with a completed homogeneous seven-model medium-prior nested-evidence audit.** All seven models (G1DE-M_{3/4}, G1DE-M_kappa, G1DE-constSigma, G1DE-2, G1DE-1, CPL, LambdaCDM) were run with 3 independent seeds under the same medium-prior configuration (`nested_priors_medium.json`), `n_live=800`, `dlogz=0.5`.
+**Retained for provenance only. Superseded for model ranking by the v1.2 production-refined 8-seed audit.**
 
-The canonical evidence hierarchy is:
+This rc3 was the earlier homogeneous seven-model medium-prior nested-evidence audit. All seven models were run with 3 independent seeds under the same medium-prior configuration, `n_live=800`, `dlogz=0.5`:
 
 | Model | logZ_mean | ΔlogZ | B(M_{3/4},i) |
 |-------|-----------|-------|---------------|
@@ -107,16 +107,15 @@ The canonical evidence hierarchy is:
 | CPL | -903.85 ± 0.09 | 9.51 | 1.35×10^4 |
 | LambdaCDM | -906.22 ± 0.07 | 11.88 | 1.44×10^5 |
 
-All per-seed JSONs and the canonical summary CSV are in `outputs_medium_audit/`.
-The earlier mixed-provenance raw audit (`raw_audit_table.csv`) is retained for provenance only and has been superseded for model ranking.
+All per-seed JSONs are in `outputs_medium_audit/`.
 
-This is a medium-prior audit, not the final production evidence pass. Production refinement with `dlogz≤0.1` and ≥8 seeds remains pending.
+**Current canonical table:** See the v1.2 production-refined audit in `production_evidence_v1_2/` (8 seeds, dlogZ=0.1), summarized in the v1.2 section at the top of this file.
 
-The following remain future or independent-validation tasks:
+The following remain future or independent-validation tasks as of v1.2:
 
-- stricter production nested evidence with smaller dlogz and more seeds;
+- **production refinement with dlogz≤0.1 and ≥8 seeds — COMPLETE in v1.2**
 - full prior stress across all six baseline/control models;
-- full 3\times2pt lensing likelihoods including galaxy-galaxy lensing and clustering;
+- full 3×2pt lensing likelihoods including galaxy-galaxy lensing and clustering;
 - noisy mock ensembles;
 - independent reimplementation from `spec/` only.
 

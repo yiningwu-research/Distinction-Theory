@@ -47,15 +47,13 @@ ranking is stable.
   Exact-pilot evidence-selected + KiDS shear-only stress-tested.
   (Superseded by v1.2 production-refined audit for model ranking.)
 
-### Pending (as of v1.1)
+### Pending (as of v1.2)
 
-  - Full production nested evidence with dlogz <= 0.1 and >= 8-10 seeds
+  - ~~Full production nested evidence with dlogz <= 0.1 and >= 8-10 seeds~~ **COMPLETE in v1.2**
   - Full 3x2pt lensing likelihoods including galaxy-galaxy lensing and clustering
   - Noisy mock ensembles
   - Full baseline wide-prior sensitivity (all 6 models)
   - Independent replication
-
-Note: The first item (production nested evidence) is now COMPLETE as of v1.2.
 
 ### Demotion conditions
 

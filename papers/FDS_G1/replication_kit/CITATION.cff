@@ -5,7 +5,7 @@ authors:
   - family-names: "Wu"
     given-names: "Y."
 repository-code: "https://github.com/yiningwu-research/fds-g1-replication-kit"
-abstract: "Machine-readable specification, benchmark outputs, reference implementation, and KiDS-1000 shear-only diagnostic layer for the FDS-G1 finite-screen gravity program. Includes model cards, prior definitions, likelihood conventions, validation tests, a D7 finite Markov-screen toy model, and the v1.1 KiDS-1000 CLASS-based shear-only stress tests with nuisance profiling, adversarial controls, and deterministic mock-injection false-positive audit."
+abstract: "Machine-readable specification, benchmark outputs, reference implementation, and diagnostic layers for the FDS-G1 finite-screen gravity program. v1.2 adds production-refined 8-seed nested-evidence runners, outputs, and validation scripts (production_evidence_v1_2/), the KiDS BandPower EE+nE diagnostic bridge (kids_bandpower_eene_v1_2/), and full-3x2pt sourcing status (phase5_nn_sourcing/). Includes v1.1 KiDS-1000 CLASS-based shear-only stress tests, model cards, prior definitions, likelihood conventions, validation tests, and a D7 finite Markov-screen toy model."
 keywords:
   - "cosmology"
   - "dark energy"
