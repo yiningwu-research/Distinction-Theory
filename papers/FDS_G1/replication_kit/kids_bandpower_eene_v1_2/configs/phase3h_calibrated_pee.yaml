@@ -1,0 +1,14 @@
+dataset: Phase 3H Calibrated BandPower PeeE Smoke Test
+scope: Apply only projection convention correction to G1 PeeE predictions (no model evidence claims)
+interpretation_boundary: No model evidence or preference claims are made. This phase is purely a projection convention correction and finite smoke test only.
+
+input:
+  pee_data_path: data/peeE_subset/kids1000_bandpower_PeeE_data_120.csv
+  pee_cov_path: data/peeE_subset/kids1000_bandpower_PeeE_covariance_120.npy
+  pee_row_order_path: data/peeE_subset/bandpower_PeeE_row_order_verified.csv
+  original_pred_dir: outputs/bandpower_peeE_model_smoke/
+  models: ['lcdm', 'm34', 'mkappa']
+
+output:
+  outdir: outputs/phase3h_calibrated_pee/
+  phase3h_doc_dir: .

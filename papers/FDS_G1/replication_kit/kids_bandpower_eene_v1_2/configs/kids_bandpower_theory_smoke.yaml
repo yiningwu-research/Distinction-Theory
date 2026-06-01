@@ -1,0 +1,85 @@
+---
+product: KiDS-1000 BandPower theory-smoke
+basis: ℓ² Cℓ / (2π) bandpower E-mode
+full_3x2pt: false
+includes_PneE: true
+includes_PeeE: true
+
+# ℓ bin definitions (official log spaced bins from l_min_vec.txt/l_max_vec.txt)
+ell_bins:
+  nbins: 8
+  ell_min: [100, 140.28505520066747, 196.79896712654315, 276.0795396678144, 387.298334620742, 543.3216825139734, 762.1991222319227, 1069.2514593620554]
+  ell_max: [140.28505520066747, 196.79896712654315, 276.0795396678144, 387.298334620742, 543.3216825139734, 762.1991222319227, 1069.2514593620554, 1500]
+  window_implementation: diagnostic_logbin_average
+  official_window_functions: not_yet_applied
+
+# Row ordering (verified from FITS tables)
+row_order:
+  total_elements: 200
+  PneE_rows:
+    start_idx: 0
+    end_idx: 79
+    pairs:
+      - [1, 1]
+      - [1, 2]
+      - [1, 3]
+      - [1, 4]
+      - [1, 5]
+      - [2, 1]
+      - [2, 2]
+      - [2, 3]
+      - [2, 4]
+      - [2, 5]
+    order:
+      for each pair [lens_bin, source_bin]:
+        for each ell_bin 0-7:
+          element = pair_idx * 8 + ell_bin
+  PeeE_rows:
+    start_idx: 80
+    end_idx: 199
+    pairs:
+      - [1, 1]
+      - [1, 2]
+      - [1, 3]
+      - [1, 4]
+      - [1, 5]
+      - [2, 2]
+      - [2, 3]
+      - [2, 4]
+      - [2, 5]
+      - [3, 3]
+      - [3, 4]
+      - [3, 5]
+      - [4, 4]
+      - [4, 5]
+      - [5, 5]
+    order:
+      for each pair [source_bin1, source_bin2]:
+        for each ell_bin 0-7:
+          element = pair_idx * 8 + ell_bin
+
+# Normalization: ℓ² * Cℓ / (2π)
+normalization:
+  units: dimensionless
+  formula: "ℓ² * Cℓ / (2π)"
+
+# Inputs: official KiDS MAP predictions for validation
+inputs:
+  map_predictions:
+    PeeE_path: "external/Predictions/iterated_cov_MAP_BlindC/bandpower_shear_e/"
+    PneE_path: "external/Predictions/iterated_cov_MAP_BlindC/bandpower_galaxy_shear/"
+
+# Outputs
+outputs:
+  outdir: "outputs/bandpower_theory_smoke/"
+  standard_vector_csv: "kids1000_bandpower_{model}_standard.csv"
+  reproduction_csv: "map_prediction_reproduction.csv"
+  reproduction_summary: "map_reproduction_summary.md"
+  chi2_summary: "chi2_smoke_summary.md"
+  manifest: "bandpower_theory_manifest.json"
+
+# Checks
+checks:
+  reproduction_max_fractional_error_tolerance: 0.01 # 1%
+  check_row_order_match: true
+  check_normalization: true

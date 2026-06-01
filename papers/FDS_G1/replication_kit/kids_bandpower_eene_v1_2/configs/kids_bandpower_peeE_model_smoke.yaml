@@ -1,0 +1,40 @@
+dataset_name: kids1000_bandpower_peeE_g1_model_smoke
+scope: PeeE-only BandPower diagnostic smoke
+interpretation: finite diagnostic only, not evidence
+
+data:
+  peeE_vector: ${FDS_G1_DATA_ROOT}/../data/peeE_subset/kids1000_bandpower_PeeE_data_120.csv
+  peeE_covariance: ${FDS_G1_DATA_ROOT}/../data/peeE_subset/kids1000_bandpower_PeeE_covariance_120.npy
+  peeE_row_order: ${FDS_G1_DATA_ROOT}/../data/peeE_subset/bandpower_PeeE_row_order_verified.csv
+
+bandpower:
+  ell_min: 100.0
+  ell_max: 1500.0
+  n_bins: 8
+  binning: log
+  normalization: ell2_Cell_over_2pi
+  product: PeeE
+  statistic_label: PeeE
+
+g1_pipeline:
+  stage3_config: ${FDS_G1_DATA_ROOT}/stage3_kids1000_xipm_270_config_cuts_mdz_ia.yaml
+  theory_backend: class
+  use_native_compute_cl_pair: true
+  fixed_params:
+    h: 0.68
+    Omega_b: 0.049
+    n_s: 0.965
+
+models:
+  lcdm:
+    bestfit_json: ${FDS_G1_DATA_ROOT}/warmstart_ia_lcdm.json
+    internal_name: lcdm
+  m34:
+    bestfit_json: ${FDS_G1_DATA_ROOT}/warmstart_ia_m34.json
+    internal_name: m34
+  mkappa:
+    bestfit_json: ${FDS_G1_DATA_ROOT}/warmstart_ia_mkappa.json
+    internal_name: mkappa
+
+outputs:
+  outdir: ${FDS_G1_DATA_ROOT}/../outputs/bandpower_peeE_model_smoke

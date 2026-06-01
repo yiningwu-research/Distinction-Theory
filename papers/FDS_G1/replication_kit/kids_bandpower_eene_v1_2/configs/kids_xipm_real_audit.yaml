@@ -1,0 +1,24 @@
+dataset_name: kids1000_xipm_realspace_only_not_3x2pt
+data_vector: ../data/kids1000_xipm_270_standard.csv
+covariance: ../data/kids1000_xipm_covariance_270.npy
+columns:
+  probe: probe
+  bin1: bin1
+  bin2: bin2
+  theta_arcmin: theta_arcmin
+  value: value
+allowed_probes:
+  - xip
+  - xim
+scale_cuts:
+  enabled: true
+  cuts:
+    xip:
+      theta_min_arcmin: 4.0
+    xim:
+      theta_min_arcmin: 30.0
+audit:
+  check_positive_definite: true
+  eigenvalue_tolerance: -1.0e-12
+  write_cut_covariance: true
+status: shear_only_realspace_component

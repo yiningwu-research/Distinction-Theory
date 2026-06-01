@@ -1,0 +1,40 @@
+# Stage 4B-1: EE+nE BandPower bias-only calibration config
+# Fit only b_lens0/b_lens1 to PneE 80-row vector; all other parameters fixed to Phase 3 smoke values
+
+data_paths:
+  # Validated Phase 3 products
+  pnee_data: "${FDS_G1_DATA_ROOT}/../outputs/phase3i_pneE/pneE_subset_data.csv"
+  peeE_data: "${FDS_G1_DATA_ROOT}/../data/peeE_subset/kids1000_bandpower_PeeE_data_120.csv"
+  cov_nE_only: "${FDS_G1_DATA_ROOT}/../outputs/phase3i_pneE/pneE_covariance_80.npy"
+  cov_eene: "${FDS_G1_DATA_ROOT}/../data/kids1000_bandpower_200_standard_cov.npy"
+  # Baseline model predictions (b_lens=1 for both bins, from Phase 3 smoke runs)
+  pred_lcdm_pnee: "${FDS_G1_DATA_ROOT}/../outputs/phase3i_pneE/pred_lcdm_PneE_b1.csv"
+  pred_m34_pnee: "${FDS_G1_DATA_ROOT}/../outputs/phase3i_pneE/pred_m34_PneE_b1.csv"
+  pred_mkappa_pnee: "${FDS_G1_DATA_ROOT}/../outputs/phase3i_pneE/pred_mkappa_PneE_b1.csv"
+  pred_lcdm_peeE: "${FDS_G1_DATA_ROOT}/../outputs/bandpower_peeE_model_smoke/lcdm_PeeE_full.csv"
+  pred_m34_peeE: "${FDS_G1_DATA_ROOT}/../outputs/bandpower_peeE_model_smoke/m34_PeeE_full.csv"
+  pred_mkappa_peeE: "${FDS_G1_DATA_ROOT}/../outputs/bandpower_peeE_model_smoke/mkappa_PeeE_full.csv"
+
+fixed_parameters:
+  # All parameters fixed to Phase 3 smoke bestfit values
+  source: "Phase 3H/3I smoke run bestfits, all parameters fixed except b_lens0/b_lens1"
+  cosmology:
+    Omega_m: 0.315
+    sigma8: 0.811
+  nuisance:
+    A_IA: 1.0
+    m_src: [0.012, 0.012, 0.012, 0.012, 0.012]
+  m34:
+    s: 2.0
+  mkappa:
+    s: 2.0
+    kappa: 0.75
+
+fit_settings:
+  fit_rows: "PneE_only" # 80 rows, no EE included in objective
+  fit_parameters: ["b_lens0", "b_lens1"]
+  bounds:
+    b_lens0: [0.2, 5.0]
+    b_lens1: [0.2, 5.0]
+  solver: "L-BFGS-B"
+  output_dir: "${FDS_G1_REPO_ROOT}/phase4_kids_3x2pt_full/outputs/phase4b_eenE_refit/"

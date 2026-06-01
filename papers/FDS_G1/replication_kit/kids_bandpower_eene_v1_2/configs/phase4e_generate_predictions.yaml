@@ -1,0 +1,36 @@
+
+dataset_name: phase4e_adversarial_predictions
+scope: Phase4E adversarial model PeeE/PneE baseline predictions
+interpretation: diagnostic only, not evidence, not full 3×2pt
+
+data:
+  peeE_row_order: ${FDS_G1_DATA_ROOT}/../outputs/bandpower_peeE_model_smoke/lcdm_peeE_prediction.csv
+  pneE_row_order: ${FDS_G1_DATA_ROOT}/../outputs/phase3i_pneE/g1_pneE_smoke_predictions.csv
+
+g1_pipeline:
+  stage3_config: ${FDS_G1_DATA_ROOT}/stage3_kids1000_xipm_270_config_cuts_mdz_ia.yaml
+  fixed_params:
+    h: 0.68
+    Omega_b: 0.049
+    n_s: 0.9665
+
+models:
+  lcdm:
+    internal_name: lcdm
+    fixed_params_json: ${FDS_G1_DATA_ROOT}/warmstart_ia_lcdm.json
+  m34:
+    internal_name: m34
+    fixed_params_json: ${FDS_G1_DATA_ROOT}/warmstart_ia_m34.json
+  mkappa:
+    internal_name: mkappa
+    fixed_params_json: ${FDS_G1_DATA_ROOT}/warmstart_ia_mkappa.json
+  constsigma:
+    internal_name: const_sigma
+    fixed_params_json: ${FDS_G1_DATA_ROOT}/warmstart_ia_constsigma_goodbasin.json
+  binsigma2:
+    internal_name: binned_sigma
+    fixed_params_json: ${FDS_G1_DATA_ROOT}/warmstart_binsigma2_from_constsigma_good_ia.json
+    sigma_bin_edges: [0.0, 0.5, 3.0]
+
+output:
+  outdir: ${FDS_G1_REPO_ROOT}/phase4_kids_3x2pt_full/outputs/phase4e_predictions

@@ -1,0 +1,19 @@
+dataset: Phase 3J EE+nE BandPower bridge
+scope: Combine validated PeeE and PneE paths into full 200-row BandPower product
+interpretation_boundary: No model evidence or preference claims are made. This phase is purely a structural assembly and finite smoke test only.
+
+input:
+  full_bandpower_data: data/kids1000_bandpower_200_standard.csv
+  full_bandpower_cov: data/kids1000_bandpower_covariance_200.npy
+  full_bandpower_row_order: data/bandpower_row_order_verified.csv
+  phase3h_pred_dir: outputs/phase3h_calibrated_pee/
+  phase3i_pred_dir: outputs/phase3i_pneE/
+  models: ['lcdm', 'm34', 'mkappa']
+
+output:
+  outdir: outputs/phase3j_ee_ne_bandpower_bridge/
+  phase3j_doc_dir: .
+
+constants:
+  galaxy_bias_b_a: 1.0  # Smoke-only placeholder only, not calibrated
+  use_kcap_compatible_projection: true  # No 1/(2π) factor, ℓ²Cℓ units
