@@ -1,0 +1,19 @@
+{
+  "model": "g1demk",
+  "seed": 707,
+  "ndim": 5,
+  "nlive": 800,
+  "dlogz_target": 0.1,
+  "logZ": -895.0802969264578,
+  "logZ_err": 0.13403597667189718,
+  "logl_max": -883.5659385116452,
+  "chi2_min_nested": 1767.1318770232904,
+  "ncall": 233990,
+  "eff": 19.760999915547675,
+  "prior_config": "/Users/next/G_production_code/configs/nested_priors_medium.json",
+  "prior_label": "medium",
+  "run_type": "production",
+  "dynesty_version": "3.0.0",
+  "python_version": "3.9.6 (default, Apr  7 2026, 02:38:40) \n[Clang 21.0.0 (clang-2100.0.123.102)]",
+  "git_commit": "0c548b59c6a7571f06795223db02c886df3fc9c2"
+}

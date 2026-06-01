@@ -1,0 +1,151 @@
+{
+  "kit_version": "v1.2",
+  "production_run": "medium_8seed_dlogz0.1",
+  "dynesty_version": "3.0.0",
+  "date_completed": "2026-06-01",
+  "total_seeds": 56,
+  "total_jobs": 56,
+  "models": {
+    "g1dem34": {
+      "n_seeds": 8,
+      "seeds": [
+        101,
+        202,
+        303,
+        404,
+        505,
+        606,
+        707,
+        808
+      ],
+      "nlive": "800",
+      "mean_logZ": -894.349005,
+      "scatter": 0.129952,
+      "mean_logZ_err": 0.133261,
+      "total_ncall": 1694685,
+      "delta_logZ_vs_ref": 0.0,
+      "all_within_2sigma": true
+    },
+    "g1demk": {
+      "n_seeds": 8,
+      "seeds": [
+        101,
+        202,
+        303,
+        404,
+        505,
+        606,
+        707,
+        808
+      ],
+      "nlive": "800",
+      "mean_logZ": -895.204615,
+      "scatter": 0.128477,
+      "mean_logZ_err": 0.135591,
+      "total_ncall": 1883783,
+      "delta_logZ_vs_ref": -0.85561,
+      "all_within_2sigma": true
+    },
+    "g1deconstsig": {
+      "n_seeds": 8,
+      "seeds": [
+        101,
+        202,
+        303,
+        404,
+        505,
+        606,
+        707,
+        808
+      ],
+      "nlive": "800",
+      "mean_logZ": -896.124354,
+      "scatter": 0.068574,
+      "mean_logZ_err": 0.14193,
+      "total_ncall": 2031048,
+      "delta_logZ_vs_ref": -1.775349,
+      "all_within_2sigma": true
+    },
+    "g1de2": {
+      "n_seeds": 8,
+      "seeds": [
+        101,
+        202,
+        303,
+        404,
+        505,
+        606,
+        707,
+        808
+      ],
+      "nlive": "1000",
+      "mean_logZ": -900.871851,
+      "scatter": 0.190792,
+      "mean_logZ_err": 0.149733,
+      "total_ncall": 3612227,
+      "delta_logZ_vs_ref": -6.522846,
+      "all_within_2sigma": false
+    },
+    "g1de1": {
+      "n_seeds": 8,
+      "seeds": [
+        101,
+        202,
+        303,
+        404,
+        505,
+        606,
+        707,
+        808
+      ],
+      "nlive": "1000",
+      "mean_logZ": -901.750856,
+      "scatter": 0.180269,
+      "mean_logZ_err": 0.144933,
+      "total_ncall": 3141037,
+      "delta_logZ_vs_ref": -7.401851,
+      "all_within_2sigma": false
+    },
+    "cpl": {
+      "n_seeds": 8,
+      "seeds": [
+        101,
+        202,
+        303,
+        404,
+        505,
+        606,
+        707,
+        808
+      ],
+      "nlive": "1000",
+      "mean_logZ": -903.952136,
+      "scatter": 0.104861,
+      "mean_logZ_err": 0.149627,
+      "total_ncall": 3374676,
+      "delta_logZ_vs_ref": -9.603131,
+      "all_within_2sigma": true
+    },
+    "lcdm": {
+      "n_seeds": 8,
+      "seeds": [
+        101,
+        202,
+        303,
+        404,
+        505,
+        606,
+        707,
+        808
+      ],
+      "nlive": "1000",
+      "mean_logZ": -906.232997,
+      "scatter": 0.100418,
+      "mean_logZ_err": 0.128626,
+      "total_ncall": 2206077,
+      "delta_logZ_vs_ref": -11.883992,
+      "all_within_2sigma": true
+    }
+  },
+  "claim_boundary": "stage-2d exact likelihood production-refined audit; not full 3x2pt; not final cosmological confirmation"
+}
