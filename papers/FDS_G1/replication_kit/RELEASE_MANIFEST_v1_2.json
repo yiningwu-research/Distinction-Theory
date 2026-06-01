@@ -1,0 +1,22 @@
+{
+  "kit_version": "v1.2",
+  "paper_version": "v1.2",
+  "evidence_run": "medium_8seed_dlogz0.1",
+  "dynesty_version": "3.0.0",
+  "models": ["lcdm", "cpl", "g1de1", "g1de2", "g1dem34", "g1demk", "g1deconstsig"],
+  "seeds": [101, 202, 303, 404, 505, 606, 707, 808],
+  "total_jobs": 56,
+  "git_commit": "0c548b59c6a7571f06795223db02c886df3fc9c2",
+  "date_completed": "2026-06-01",
+  "claim_boundary": "stage-2d exact likelihood production-refined audit; not full 3x2pt; not final cosmological confirmation",
+  "supersedes": "v1.1-rc1 three-seed homogeneous medium-prior audit (retained for provenance only)",
+  "additions": [
+    "production_evidence_v1_2/",
+    "kids_bandpower_eene_v1_2/",
+    "phase5_nn_sourcing/",
+    "provenance/",
+    "paper/"
+  ],
+  "root_docs": "README.md, CLAIM_STATUS.md, DATA_MANIFEST.md updated for v1.2",
+  "scatter_notes": "G1DE-1 scatter=0.180, G1DE-2 scatter=0.191 above 0.15 target; ranking unaffected"
+}
