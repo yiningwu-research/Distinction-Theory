@@ -233,7 +233,9 @@ expected SHA256 hashes.
 
 ### License
 
-MIT — see LICENSE file.
+- **Code in this kit:** MIT — see `LICENSE`.
+- **Papers and documentation:** CC BY 4.0 — see root [`LICENSE`](../../../LICENSE).
+- **External datasets:** governed by upstream licenses.
 
 ### Citation
 

@@ -349,7 +349,10 @@ See [CITATION.cff](CITATION.cff) for full citation metadata.
 
 ## License
 
-Unless otherwise stated, written materials in this repository are released for scholarly reading, citation, and discussion.
+- **Papers and documentation:** CC BY 4.0 — see [`LICENSE`](LICENSE).
+- **Code:** MIT — see `papers/FDS_G1/replication_kit/LICENSE`.
+- **External datasets:** governed by upstream licenses.
+- **Figures/tables:** CC BY 4.0 unless generated from restricted data.
 
 ---
 
