@@ -9,7 +9,7 @@ The physics flagship of Active Finite Distinction Systems (FDS).
 
 | File | Description |
 |------|-------------|
-| `FDS_G1_Complete.pdf` | Complete Series (19 papers, 290 pages) — including Core, Companions A–F, G1fit-real, D0–D10 |
+| `FDS_G1_Complete.pdf` | Complete Series — including Core, Companions A–F, G1fit-real, D0–D10 |
 | `FDS_G1_Core_Entropy_Response_Geometry.pdf` | Core paper only (19 pages) |
 | `prediction_registry.md` | Prediction lock and falsification registry (6 predictions G1-A through G1-F) |
 | `replication_kit/` | Machine-readable specification, benchmark outputs, processed data, reference Python implementation, validation tests, and D7 Markov-screen toy model |

@@ -85,7 +85,7 @@ The current DT/FDS public architecture, organized by layer:
 
 ### Physics → G1
 
-- **FDS-G1** — *Finite Screen Spacetime: Entropy-Response Geometry from Causal-Screen Ledgers.* Complete Series (19 papers, 290 pages). G1DE-M<sub>3/4</sub> projection-locked branch selected by completed homogeneous seven-model medium-prior nested-evidence audit. DOI: 10.5281/zenodo.20492094. [Video](https://www.youtube.com/watch?v=lJQYHDL5KY0). [Replication Kit](papers/FDS_G1/replication_kit).
+- **FDS-G1** — *Finite Screen Spacetime: Entropy-Response Geometry from Causal-Screen Ledgers.* Complete Series. G1DE-M<sub>3/4</sub> projection-locked branch selected by completed homogeneous seven-model medium-prior nested-evidence audit. DOI: 10.5281/zenodo.20492094. [Video](https://www.youtube.com/watch?v=lJQYHDL5KY0). [Replication Kit](papers/FDS_G1/replication_kit).
 
 ### Physical Bridge Ladder
 

@@ -2970,7 +2970,7 @@ The background deviation and Weyl response are tied to the same output-response 
 \[
 M_{3/4} > M_\kappa > \text{const-}\Sigma > \text{G1DE-2} > \text{G1DE-1} > \text{CPL} > \Lambda\text{CDM},
 \]
-with margins \(\Delta\log Z\simeq0.72, 1.79, 6.61, 7.41, 9.51, 11.88\) against the six controls. G1DE-1 serves as growth-only negative control. Top-control wide-prior sensitivity confirms ranking stability.
+with margins \(\Delta\log Z\simeq0.856, 1.775, 6.523, 7.402, 9.603, 11.884\) against the six controls. G1DE-1 serves as growth-only negative control. Top-control wide-prior sensitivity confirms ranking stability.
 **Status.** Completed homogeneous seven-model medium-prior audit.
 **Layer.** Physics — Gravity 1.
 **Dependencies.** FDS-G1-003, FDS-X1-004.
