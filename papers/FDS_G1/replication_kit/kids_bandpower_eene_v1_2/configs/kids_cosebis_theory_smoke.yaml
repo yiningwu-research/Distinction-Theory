@@ -1,0 +1,36 @@
+dataset_name: kids1000_cosebis_theory_smoke
+basis: COSEBIs_mode_space
+product: KiDS-1000 cosmic-shear COSEBIs theory-smoke test
+
+data:
+  vector: ../data/kids1000_cosebis_300_standard.csv
+  covariance: ../data/kids1000_cosebis_covariance_300.npy
+  row_order: ../data/cosebis_row_order_verified.csv
+
+filters:
+  roots_path: ../external/src/cosebis/TLogsRootsAndNorms/Root_0.50-300.00.table
+  norms_path: ../external/src/cosebis/TLogsRootsAndNorms/Normalization_0.50-300.00.table
+  n_modes: 20
+  theta_min_arcmin: 0.5
+  theta_max_arcmin: 300.0
+
+theta_grid:
+  theta_min_arcmin: 0.5
+  theta_max_arcmin: 300.0
+  n_theta: 1024
+  spacing: log
+
+g1_pipeline:
+  stage3_config: ${FDS_G1_DATA_ROOT}/stage3_kids1000_xipm_270_config_cuts_mdz_ia.yaml
+  theory_backend: class
+
+models:
+  lcdm:
+    bestfit: ${FDS_G1_REPLICATION_ROOT}/kids_shear_only/outputs/selected_bestfits/warmstart_ia_lcdm.json
+    label: fiducial_lcdm
+  m34:
+    bestfit: ${FDS_G1_REPLICATION_ROOT}/kids_shear_only/outputs/selected_bestfits/warmstart_ia_m34.json
+    label: fiducial_m34
+
+outputs:
+  outdir: ../outputs/cosebis_theory_smoke

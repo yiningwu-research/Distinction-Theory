@@ -1,0 +1,18 @@
+dataset: 'KiDS-1000 BandPower PeeE Calibrated Smoke Test'
+scope: 'Diagnostic pipeline validation only, no model evidence claims'
+interpretation_boundary: 'No model preference or evidence is inferred from any results in this phase'
+
+input:
+  peeE_data_path: '${FDS_G1_DATA_ROOT}/../data/peeE_subset/kids1000_bandpower_PeeE_data_120.csv'
+  peeE_cov_path: '${FDS_G1_DATA_ROOT}/../data/peeE_subset/kids1000_bandpower_PeeE_covariance_120.npy'
+  peeE_row_order_path: '${FDS_G1_DATA_ROOT}/../data/peeE_subset/bandpower_PeeE_row_order_verified.csv'
+  original_pred_dir: '${FDS_G1_DATA_ROOT}/../outputs/bandpower_peeE_model_smoke/'
+  models: ['lcdm', 'm34', 'mkappa']
+
+correction_factors:
+  projection_correction: 6.283185307  # 2π, removes 1/(2π) factor from original prediction
+  empirical_amplitude_correction: 4.17  # Diagnostic only, matches observed raw Cℓ ratio KCAP/G1
+
+output:
+  outdir: '${FDS_G1_DATA_ROOT}/../outputs/phase3h_calibrated_peeE/'
+  phase3h_doc_dir: '${FDS_G1_DATA_ROOT}/../'

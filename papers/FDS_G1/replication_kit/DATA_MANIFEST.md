@@ -1,5 +1,40 @@
 # Data Manifest
-# FDS-G1 Complete Series v1.1-rc1
+# FDS-G1 Complete Series
+
+## v1.2 Additions
+
+### Production evidence outputs
+
+Files in `production_evidence_v1_2/outputs_medium_8seed/`:
+
+| File | Description |
+|---|---|
+| `per_seed_json/*.json` | 56 per-seed nested-evidence JSONs (7 models × 8 seeds) |
+| `production_8seed_summary.csv` | Per-model aggregated statistics |
+| `production_8seed_table3.csv` | Table 3 formatted output |
+| `production_8seed_manifest.json` | Full provenance manifest |
+| `logs_summary/n2_completed_jobs.csv` | Per-job metadata (logZ, ncall, eff, final dlogZ) |
+
+### KiDS BandPower EE+nE diagnostic data
+
+**Status**: diagnostic validation layer, not optimized likelihood or
+production model evidence. Raw KiDS-1000 data is **not redistributed**.
+
+See `kids_bandpower_eene_v1_2/data_manifest/` for:
+- Row-order conventions
+- Covariance shapes
+- Expected SHA256 hashes (for independently obtained data)
+- Download instructions
+
+### Full 3×2pt status
+
+No real nn clustering vector or Pnn bandpower product is available locally
+or publicly. Full 3×2pt remains **blocked**. See `phase5_nn_sourcing/` for
+the complete sourcing audit.
+
+---
+
+## v1.1-rc1 (Original Kit Content)
 
 ## Processed data files
 

@@ -1,8 +1,71 @@
-# FDS-G1 Replication Kit v1.1-rc1
+# FDS-G1 Replication Kit
+
+**Current canonical evidence table (v1.2):**
+medium-prior 8-seed production-refined nested-evidence audit,
+`dlogZ=0.1`, seven models, run_type=production.
+
+The v1.1 homogeneous 3-seed audit is retained for provenance only
+and has been superseded for model ranking by the v1.2 production-refined
+audit.
+
+---
+
+## v1.2 New Additions
+
+```
+production_evidence_v1_2/     v1.2 production-refined evidence (8-seed, dlogZ=0.1)
+  src/                        N0-fixed analysis scripts
+  configs/                    Medium/wide prior configs + runner config
+  outputs_medium_8seed/       56 per-seed JSONs + summary CSV + Table 3 + manifest
+  logs_summary/               Per-job metadata (logZ, ncall, eff, final dlogz)
+  README_RUN_PRODUCTION.md    How to reproduce the full 56-job run
+  N0_SEED_CONTROL_REPORT.md   N0 fixes, seed control, convergence verification
+
+kids_bandpower_eene_v1_2/     KiDS BandPower EE+nE diagnostic bridge (v1.2)
+  src/                        76 Phase 3 + Phase 4 diagnostic scripts
+  configs/                    YAML/JSON configs for all diagnostic layers
+  outputs_summary/            20 summary Markdown reports (PHASE3*, PHASE4*)
+  data_manifest/              Row-order conventions, covariance shapes, data policy
+  README_KIDS_BANDPOWER_DIAGNOSTIC.md
+
+phase5_nn_sourcing/           Full 3×2pt blocked status and sourcing audit
+  PHASE5A_NN_SOURCING_AUDIT.md
+  PHASE5B_EXTERNAL_PNN_SOURCING.md
+  README_FULL_3X2PT_BLOCKED.md
+  data_manifest/              Product inventory, covariance audit, search results
+
+provenance/                   Pointers to superseded v1.1 outputs (no files moved)
+paper/                        v1.2 paper PDF (TeX source not included)
+scripts/                      Validation and reproduction scripts
+```
+
+### v1.2 Production Evidence Summary
+
+| Model | n | Mean logZ | Scatter | ΔlogZ vs M3/4 |
+|---|---|---|---|---|
+| G1DE-M3/4 | 8 | -894.349 | 0.130 | 0.000 |
+| G1DE-Mκ | 8 | -895.205 | 0.129 | -0.856 |
+| G1DE-constΣ | 8 | -896.124 | 0.069 | -1.775 |
+| G1DE-2 | 8 | -900.872 | 0.191 | -6.523 |
+| G1DE-1 | 8 | -901.751 | 0.180 | -7.402 |
+| CPL | 8 | -903.952 | 0.105 | -9.603 |
+| ΛCDM | 8 | -906.233 | 0.100 | -11.884 |
+
+G1DE-1 and G1DE-2 have seed scatter slightly above the 0.15 target
+(0.180 and 0.191 respectively), but their large evidence gaps from
+M3/4 (ΔlogZ ≈ 7.4 and 6.5) leave the ranking unaffected.
+
+**Claim boundary (v1.2):** Stage-2d exact likelihood production-refined
+audit. Not full 3×2pt. Not final cosmological confirmation. Full 3×2pt
+remains blocked pending real nn clustering vector (see `phase5_nn_sourcing/`).
+
+---
+
+## v1.1-rc1 (Original Kit Content)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20453246.svg)](https://doi.org/10.5281/zenodo.20453246)
 
-## Which code produced the paper evidence tables?
+### Which code produced the paper evidence tables?
 
 The paper's exact-pilot and medium-prior nested-evidence tables were produced with the scripts archived in:
 
@@ -22,13 +85,13 @@ For transparency, the original scripts are archived verbatim. Known post-archive
 
 **The code in `paper_original_code/` is the archived analysis code used for the evidence tables reported in the paper. The code in `reference_impl/` is a cleaned specification-facing implementation. The code in `reproducibility_patch/` contains recommended fixes for third-party reruns and prior-stress production checks.**
 
-## Claim Boundary
+### Claim Boundary (v1.1)
 
 The archived original code supports the paper's exact-pilot evidence claim. It is not advertised as final survey-grade production evidence.
 
 The current benchmark hierarchy is a pilot-level result under the stated processed datasets, priors, samplers, and stopping tolerances.
 
-## Homogeneous Medium-Prior Audit (v1.0-rc3 data update)
+### Homogeneous Medium-Prior Audit (v1.0-rc3 data update)
 
 **This rc3 supersedes earlier mixed-provenance seven-model audits with a completed homogeneous seven-model medium-prior nested-evidence audit.** All seven models (G1DE-M_{3/4}, G1DE-M_kappa, G1DE-constSigma, G1DE-2, G1DE-1, CPL, LambdaCDM) were run with 3 independent seeds under the same medium-prior configuration (`nested_priors_medium.json`), `n_live=800`, `dlogz=0.5`.
 
@@ -57,7 +120,7 @@ The following remain future or independent-validation tasks:
 - noisy mock ensembles;
 - independent reimplementation from `spec/` only.
 
-## v1.1 KiDS shear-only diagnostic layer
+### v1.1 KiDS shear-only diagnostic layer
 
 This release adds a **KiDS-1000 shear-only diagnostic stress-test layer** in
 `kids_shear_only/`. It is a diagnostic layer, not production 3x2pt evidence.
@@ -72,7 +135,7 @@ instructions.  KiDS dependencies (`classy`, etc.) are in `requirements_kids.txt`
 for historical reasons.  In v1.1 it is used for shear-only xi_pm.
 Full 3x2pt is not included.
 
-## Specification
+### Specification
 
 The specification (spec/), benchmark outputs (benchmark/), and validation tests
 (validation_tests/) are the authoritative validation targets. The Python code
@@ -82,7 +145,7 @@ in reference_impl/ is provided only as a reference implementation.
 machine-readable model cards, prior definitions, likelihood conventions, and
 benchmark tables as the specification against which validation is performed.
 
-## Contents
+### v1.1 Contents
 
 ```
 spec/                   Machine-readable model and likelihood specification
@@ -125,7 +188,7 @@ validation_tests/       Unit tests for model identities and D7 toy
 companion_d_demo/       Companion D falsification demo notebook + script
 ```
 
-## Quick start
+### Quick start
 
 ```bash
 # Install dependencies
@@ -147,7 +210,7 @@ cd kids_shear_only && python src/run_stage3_smoke_tests.py && cd ..
 pytest validation_tests/ -v
 ```
 
-## Validation protocol
+### Validation protocol
 
 Five levels of independent validation are defined in `INDEPENDENT_VALIDATION.md`:
 
@@ -159,7 +222,7 @@ Five levels of independent validation are defined in `INDEPENDENT_VALIDATION.md`
 5. **KiDS diagnostic** (new in v1.1) — reproduce CLASS backend sanity, scale-cut covariance shape,
    Δχ² signs for M3/4 vs LCDM under nuisance, and deterministic mock-injection confusion matrix
 
-## Data
+### Data
 
 Post-stage-1 processed data files with reference SHA256 hashes are in
 `processed_data/`. Covariance matrices are included. See `DATA_MANIFEST.md`
@@ -169,11 +232,11 @@ KiDS-1000 data for the shear-only diagnostic layer is **not redistributed**.
 See `kids_shear_only/data/README_DATA.md` for download instructions and
 expected SHA256 hashes.
 
-## License
+### License
 
 MIT — see LICENSE file.
 
-## Citation
+### Citation
 
 See CITATION.cff. If you use this replication kit, please cite the
 FDS-G1 Complete Series.

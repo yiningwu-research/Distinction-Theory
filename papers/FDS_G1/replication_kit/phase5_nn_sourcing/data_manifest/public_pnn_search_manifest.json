@@ -1,0 +1,16 @@
+{
+  "searched_locations": [
+    "KiDS-1000 processed data directory",
+    "KiDS-Legacy public repositories",
+    "DES Y3 bandpower products",
+    "public covariance repositories"
+  ],
+  "search_patterns": [
+    "*Pnn*",
+    "*bandpower*clustering*",
+    "*nn_bandpower*",
+    "*wtheta*"
+  ],
+  "found_matches": [],
+  "conclusion": "No suitable public Pnn product found matching KiDS-1000 survey footprint, redshift binning, and bandpower format."
+}

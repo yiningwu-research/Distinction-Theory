@@ -1,0 +1,30 @@
+dataset_name: Phase 3F KCAP upstream reproduction
+scope: Prediction vector comparison between G1 pipeline and official KCAP KiDS predictions
+interpretation: Diagnostic engineering only, no model evidence claims
+
+input_paths:
+  kcap_predictions_root: ${FDS_G1_DATA_ROOT}/../external/Predictions/
+  g1_predictions_root: ${FDS_G1_DATA_ROOT}/../outputs/
+  
+products:
+  bandpower_peeE:
+    kcap_path: iterated_cov_MAP_BlindC/bandpower_shear_e/
+    g1_path: bandpower_peeE_model_smoke/
+    description: BandPower PeeE 120-vector (15 source-source pairs × 8 ℓ bins)
+    
+  cosebis:
+    kcap_path: # TBD after inventory
+    g1_path: cosebis_calibration/
+    description: COSEBIs 300-vector (15 source-source pairs × 20 modes)
+    
+  xipm:
+    kcap_path: kcap_xi/outputs/
+    g1_path: # TBD
+    description: ξ± 270-vector (15 source-source pairs × 9 θ bins × 2 probes)
+
+output_paths:
+  out_dir: ${FDS_G1_DATA_ROOT}/../outputs/kcap_upstream_reproduction/
+  inventory_file: kcap_prediction_inventory.csv
+  bandpower_comparison_file: bandpower_peeE_kcap_vs_g1.csv
+  bandpower_summary_file: bandpower_peeE_comparison_summary.md
+  phase_report_file: ${FDS_G1_DATA_ROOT}/../PHASE3F_KCAP_UPSTREAM_REPRODUCTION.md

@@ -1,0 +1,26 @@
+dataset: 'KiDS-1000 BandPower PneE Validation'
+scope: 'Diagnostic product layer and density-kernel smoke test only, no model evidence claims'
+interpretation_boundary: 'No model preference, likelihood result, or physical evidence is inferred from this phase.'
+
+input:
+  # Full BandPower data
+  full_bandpower_data_path: '${FDS_G1_DATA_ROOT}/../data/kids1000_bandpower_200_standard.csv'
+  full_bandpower_cov_path: '${FDS_G1_DATA_ROOT}/../data/kids1000_bandpower_covariance_200.npy'
+  full_bandpower_row_order_path: '${FDS_G1_DATA_ROOT}/../data/bandpower_row_order_verified.csv'
+  
+  # KCAP PneE predictions
+  kcap_pneE_dir: '${FDS_G1_DATA_ROOT}/../external/Predictions/iterated_cov_MAP_BlindC/bandpower_galaxy_shear/'
+  
+  # Lens n(z) (placeholder for 3I-2)
+  lens_nz_dir: '${FDS_G1_DATA_ROOT}/../data/lens_nz/' # Path to be confirmed if needed
+
+output:
+  outdir: '${FDS_G1_DATA_ROOT}/../outputs/phase3i_pneE/'
+  phase3i_doc_dir: '${FDS_G1_DATA_ROOT}/../'
+
+constants:
+  pneE_statistic_label: 'bandpower_E_pnee'
+  num_ell_bins: 8
+  num_lens_bins: 2
+  num_source_bins: 5
+  default_galaxy_bias: 1.0 # Smoke-test placeholder only, not calibrated

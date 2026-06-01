@@ -1,0 +1,19 @@
+{
+  "kit_version": "v1.2",
+  "production_run": "medium_8seed_dlogz0.1",
+  "comment": "Actual nlive values used in the v1.2 production run (read from per-seed JSON files).",
+  "models": ["lcdm", "cpl", "g1de1", "g1de2", "g1dem34", "g1demk", "g1deconstsig"],
+  "seeds": [101, 202, 303, 404, 505, 606, 707, 808],
+  "nested": {
+    "nlive_actual": {
+      "lcdm": 1000,
+      "cpl": 1000,
+      "g1de1": 1000,
+      "g1de2": 1000,
+      "g1dem34": 800,
+      "g1demk": 800,
+      "g1deconstsig": 800
+    },
+    "dlogz_target": 0.1
+  }
+}

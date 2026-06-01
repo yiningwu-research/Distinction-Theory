@@ -1,0 +1,35 @@
+dataset_name: kids1000_cosebis_blindC_nmax20
+product: KiDS-1000 cosmic-shear COSEBIs
+basis: COSEBIs_mode_space
+full_3x2pt: false
+
+inputs:
+  vector: ../data/raw_or_external/cosebis_K1000_ALL_BLIND_C_no_m_bias.asc
+  covariance: ../data/raw_or_external/Covariance_bestfit_3x2pt_blindC_nMaximum_20.ascii
+  covariance_crosscheck: ../data/raw_or_external/Covariance_blindC_nMaximum_20.ascii
+
+row_order:
+  n_source_bins: 5
+  n_pairs: 15
+  n_modes: 20
+  pair_order: triangular_i_le_j
+  mode_order: 1_to_nmax_inner
+  verification:
+    status: verified_from_source_code
+    evidence:
+      - MakeDataVectors.py:99-107
+      - run_measure_cosebis_cats2stats.py:155
+
+outputs:
+  outdir: ../outputs/cosebis_300_audit
+  standard_vector: ../data/kids1000_cosebis_300_standard.csv
+  covariance_npy: ../data/kids1000_cosebis_covariance_300.npy
+  row_order: ../data/cosebis_row_order_verified.csv
+
+checks:
+  expected_vector_length: 300
+  expected_cov_shape: [300, 300]
+  check_symmetric: true
+  check_cholesky: true
+  check_bestfit_equals_blindC: true
+  equality_atol: 1.0e-12

@@ -1,0 +1,29 @@
+dataset_name: example_synthetic_3x2pt
+data_vector: ../data/example_3x2pt_vector.csv
+covariance: ../data/example_3x2pt_cov.csv
+columns:
+  probe: probe
+  bin1: bin1
+  bin2: bin2
+  theta_arcmin: theta_arcmin
+  value: value
+allowed_probes:
+  - xip
+  - xim
+  - gammat
+  - wtheta
+scale_cuts:
+  enabled: true
+  cuts:
+    xip:
+      theta_min_arcmin: 4.0
+    xim:
+      theta_min_arcmin: 30.0
+    gammat:
+      theta_min_arcmin: 5.0
+    wtheta:
+      theta_min_arcmin: 20.0
+audit:
+  check_positive_definite: true
+  eigenvalue_tolerance: -1.0e-12
+  write_cut_covariance: true

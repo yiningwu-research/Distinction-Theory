@@ -1,0 +1,44 @@
+dataset_name: kids1000_cosebis_calibration
+basis: COSEBIs_mode_space
+product: KiDS-1000 COSEBIs convention scan + amplitude calibration
+
+data:
+  vector: ../data/kids1000_cosebis_300_standard.csv
+  covariance: ../data/kids1000_cosebis_covariance_300.npy
+  row_order: ../data/cosebis_row_order_verified.csv
+
+filters:
+  roots_path: ../external/src/cosebis/TLogsRootsAndNorms/Root_0.50-300.00.table
+  norms_path: ../external/src/cosebis/TLogsRootsAndNorms/Normalization_0.50-300.00.table
+  n_modes: 20
+  theta_min_arcmin: 0.5
+  theta_max_arcmin: 300.0
+
+theta_grid:
+  theta_min_arcmin: 0.5
+  theta_max_arcmin: 300.0
+  n_theta: 1024
+  spacing: log
+
+g1_pipeline:
+  stage3_config: ${FDS_G1_DATA_ROOT}/stage3_kids1000_xipm_270_config_cuts_mdz_ia.yaml
+  theory_backend: class
+
+models:
+  lcdm:
+    bestfit: ${FDS_G1_REPLICATION_ROOT}/kids_shear_only/outputs/selected_bestfits/warmstart_ia_lcdm.json
+  m34:
+    bestfit: ${FDS_G1_REPLICATION_ROOT}/kids_shear_only/outputs/selected_bestfits/warmstart_ia_m34.json
+
+kcap:
+  cosebis_dir: ${FDS_G1_REPO_ROOT}/fds_g1_stage3_kids_pipeline/stage3_kids1000/raw/extracted/Cat_to_Obs_K1000_P1-master/Predictions/kcap_xi/outputs/test_output_S8_fid_test/cosebis
+
+convention_scan:
+  scales: [0.1, 1, 10]
+  tminus_signs: [1, -1]
+  tplus_factors: [1, 0.1591549430918953, 6.283185307179586]
+  mode_orders: ["forward", "reverse"]
+  tminus_branches: ["original", "flipped"]
+
+outputs:
+  outdir: ../outputs/cosebis_calibration
