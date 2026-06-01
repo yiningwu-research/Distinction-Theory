@@ -1,0 +1,7 @@
+product,status,location,notes
+bandpower_covariance_300x300,exists,G_production_code/processed_data/,"EE+nE block (200x200) validated; nn block (100x100) unpaired"
+bandpower_EE_vector,available,G_production_code/processed_data/,Used in EE+nE bridge
+bandpower_nE_vector,available,G_production_code/processed_data/,Used in EE+nE bridge
+bandpower_nn_vector,not_found,N/A,No precomputed HDU in local or public release
+Pnn_bandpower_HDU,not_found,N/A,Searched KiDS release products
+wtheta_product,not_found,N/A,Alternative clustering observable not available

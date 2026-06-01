@@ -1,0 +1,10 @@
+{
+  "full_covariance_shape": [300, 300],
+  "ee_block": [0, 99],
+  "ne_block": [100, 199],
+  "nn_block": [200, 299],
+  "ee_ne_validated": true,
+  "nn_block_paired": false,
+  "nn_block_status": "covariance exists but no real data vector available",
+  "note": "Full 3x2pt blocked pending nn clustering vector or catalog-level recomputation"
+}
