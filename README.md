@@ -85,7 +85,7 @@ The current DT/FDS public architecture, organized by layer:
 
 ### Physics → G1
 
-- **FDS-G1** — *Finite Screen Spacetime: Entropy-Response Geometry from Causal-Screen Ledgers.* Complete Series. G1DE-M<sub>3/4</sub> projection-locked branch selected by completed homogeneous seven-model medium-prior nested-evidence audit. DOI: 10.5281/zenodo.20492094. [Video](https://www.youtube.com/watch?v=lJQYHDL5KY0). [Replication Kit](papers/FDS_G1/replication_kit).
+- **FDS-G1** — *Finite Screen Spacetime: Entropy-Response Geometry from Causal-Screen Ledgers.* Complete Series v1.2. G1DE-M<sub>3/4</sub> projection-locked branch selected by production-refined 8-seed 7-model homogeneous nested-evidence audit (\(d\log Z=0.1\)). KiDS-1000 shear-only diagnostics support the Weyl channel; full \(3\times2\)pt, CMB/BBN, nonlinear validation pending. **Production-refined evidence-selected (pilot grade), not production-confirmed.** Open limitations: D0 calibration lemmas, source–kernel factorization not unique, nn/clustering channel missing. [Paper DOI: 10.5281/zenodo.20492094](https://doi.org/10.5281/zenodo.20492094). [Video](https://www.youtube.com/watch?v=lJQYHDL5KY0). [Replication Kit](papers/FDS_G1/replication_kit).
 
 ### Physical Bridge Ladder
 
