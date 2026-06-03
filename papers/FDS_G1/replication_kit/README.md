@@ -94,7 +94,7 @@ remains blocked pending real nn clustering vector (see `phase5_nn_sourcing/`).
 
 ## v1.1-rc1 (Original Kit Content)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20492094.svg)](https://doi.org/10.5281/zenodo.20492094)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20521142.svg)](https://doi.org/10.5281/zenodo.20521142)
 
 ### Which code produced the paper evidence tables?
 

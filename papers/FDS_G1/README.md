@@ -1,6 +1,6 @@
 # FDS-G1 Complete Series
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20492094.svg)](https://doi.org/10.5281/zenodo.20492094)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20521142.svg)](https://doi.org/10.5281/zenodo.20521142)
 
 **Finite Screen Spacetime: Entropy-Response Geometry from Causal-Screen Ledgers**
 The physics flagship of Active Finite Distinction Systems (FDS).
@@ -16,7 +16,7 @@ The physics flagship of Active Finite Distinction Systems (FDS).
 
 ## DOI
 
-`10.5281/zenodo.20492094` — [View on Zenodo](https://doi.org/10.5281/zenodo.20492094)
+`10.5281/zenodo.20521142` — [View on Zenodo](https://doi.org/10.5281/zenodo.20521142)
 
 ## Citation
 
@@ -26,8 +26,8 @@ The physics flagship of Active Finite Distinction Systems (FDS).
   title        = {Finite Screen Spacetime: Entropy-Response Geometry from Causal-Screen Ledgers},
   year         = {2026},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.20492094},
-  note         = {FDS-G1 Complete Series v1.2},
+  doi          = {10.5281/zenodo.20521142},
+  note         = {FDS-G1 Complete Series v1.3},
 }
 ```
 

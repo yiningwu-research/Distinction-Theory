@@ -2940,7 +2940,7 @@
 **Layer.** Physics — Gravity 1.
 **Dependencies.** FDS-T1-001, FDS-T2-001.
 **First timestamp.** FDS-G1 Complete Series v1.0-rc, 2026-05-25.
-**DOI.** 10.5281/zenodo.20492094.
+**DOI.** 10.5281/zenodo.20521142.
 **Failure condition.** Finite-screen entropy response produces no distinguishable gravitational coupling signature beyond standard GR+\(\Lambda\)CDM under production evidence.
 
 ### FDS-G1-002 — 3/4 Projection Lock
@@ -2949,7 +2949,7 @@
 **Layer.** Physics — Gravity 1.
 **Dependencies.** FDS-G1-001, FDS-T2-001.
 **First timestamp.** FDS-G1 Complete Series v1.0-rc, 2026-05-25.
-**DOI.** 10.5281/zenodo.20492094.
+**DOI.** 10.5281/zenodo.20521142.
 **Failure condition.** Free-\(\kappa\) decisively beats \(M_{3/4}\) under production evidence.
 
 ### FDS-G1-003 — Background–Weyl Residual Fingerprint
@@ -2962,7 +2962,7 @@ The background deviation and Weyl response are tied to the same output-response 
 **Layer.** Physics — Gravity 1.
 **Dependencies.** FDS-G1-002, FDS-X1-001, FDS-X1-002.
 **First timestamp.** FDS-G1 Complete Series v1.0-rc, 2026-05-25.
-**DOI.** 10.5281/zenodo.20492094.
+**DOI.** 10.5281/zenodo.20521142.
 **Failure condition.** Any of: (1) Free-\(\kappa\) beats M\(_{3/4}\); (2) Constant-\(\Sigma\) beats output-shape model; (3) \(|\mu-1|\sim|\Sigma-1|\); (4) Free \(A(a,k)\) required; (5) CPL or \(\Lambda\)CDM wins; (6) Expanded lensing does not support Weyl signal.
 
 ### FDS-G1-004 — Completed Homogeneous Seven-Model Medium-Prior Nested-Evidence Hierarchy
@@ -2975,7 +2975,7 @@ with margins \(\Delta\log Z\simeq0.856, 1.775, 6.523, 7.402, 9.603, 11.884\) aga
 **Layer.** Physics — Gravity 1.
 **Dependencies.** FDS-G1-003, FDS-X1-004.
 **First timestamp.** FDS-G1 Complete Series v1.0-rc, 2026-05-25.
-**DOI.** 10.5281/zenodo.20492094.
+**DOI.** 10.5281/zenodo.20521142.
 **Failure condition.** Ranking fails under production evidence refinement, expanded lensing likelihoods, full baseline wide-prior sensitivity, or independent replication. Production evidence returns to CPL or \(\Lambda\)CDM dominance.
 
 ### FDS-G1-005 — Finite Markov-Screen Realization
@@ -2984,7 +2984,7 @@ with margins \(\Delta\log Z\simeq0.856, 1.775, 6.523, 7.402, 9.603, 11.884\) aga
 **Layer.** Physics — Gravity 1.
 **Dependencies.** FDS-G1-002, FDS-G1-003.
 **First timestamp.** FDS-G1 Complete Series v1.0-rc, 2026-05-25.
-**DOI.** 10.5281/zenodo.20492094.
+**DOI.** 10.5281/zenodo.20521142.
 **Failure condition.** The finite Markov-screen class cannot realize the optical projection, rank-one horizon output, or Ward-stiff Ricci leakage simultaneously under any admissible parameter choice.
 
 ### FDS-G1-006 — Falsification Contract
@@ -2993,7 +2993,7 @@ with margins \(\Delta\log Z\simeq0.856, 1.775, 6.523, 7.402, 9.603, 11.884\) aga
 **Layer.** Physics — Gravity 1.
 **Dependencies.** FDS-G1-004.
 **First timestamp.** FDS-G1 Complete Series v1.0-rc, 2026-05-25.
-**DOI.** 10.5281/zenodo.20492094.
+**DOI.** 10.5281/zenodo.20521142.
 **Failure condition.** G1DE class collapses to generic dark-stress model (free amplitude required).
 
 ### FDS-G1-007 — Amplitude Lock vs Shape Lock Distinction
@@ -3002,7 +3002,7 @@ with margins \(\Delta\log Z\simeq0.856, 1.775, 6.523, 7.402, 9.603, 11.884\) aga
 **Layer.** Physics — Gravity 1.
 **Dependencies.** FDS-G1-002, FDS-G1-003.
 **First timestamp.** FDS-G1 Complete Series v1.2, 2026-06-02.
-**DOI.** 10.5281/zenodo.20492094.
+**DOI.** 10.5281/zenodo.20521142.
 **Failure condition.** Distinction fails to organize future data outcomes: amplitude and shape locks always co-succeed or co-fail in production.
 
 ---
