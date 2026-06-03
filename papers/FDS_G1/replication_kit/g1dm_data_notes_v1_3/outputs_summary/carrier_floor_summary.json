@@ -1,0 +1,10 @@
+{
+  "parameter":"omegach2",
+  "mean":0.1200033374,
+  "std":0.0011999047,
+  "q16":0.1188068572,
+  "q50":0.1200002386,
+  "q84":0.1212005187,
+  "z_exclusion_of_zero":100.0107224887,
+  "interpretation":"A large z supports a nonzero carrier-like CDM floor; it does not refute LambdaCDM."
+}

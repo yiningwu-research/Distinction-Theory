@@ -1,0 +1,19 @@
+# SHA256 Checksums — FDS-G1 v1.3 Release
+# Generated 2026-06-03
+# Main paper PDFs not included here (reside in Distinction-Theory root or papers/FDS_G1)
+
+# === Replication Kit — G1DM Diagnostic Layer ===
+2e5e9d9c68e9ed6232a6552cdca340486746f986f060920ba6fe7eeaa1d4bc33  replication_kit/g1dm_data_notes_v1_3/docs/G1DM_Note_1_3_Carrier_Floor_Growth_Leakage.pdf
+e142e616a547491635e86373485618a535d23d0d19c894a0ac98c52ce1e74396  replication_kit/g1dm_data_notes_v1_3/docs/G1DM_Note_v0.3_S8_Proxy_Addendum.pdf
+
+# === Replication Kit — Metadata ===
+735ea39280b659ba8ecfdd40d21afb844fbb535deba3b7af1c71c55148deffef  replication_kit/RELEASE_MANIFEST_v1_3.json
+38dc4bc54379c78f0b6d7f8e56f1775a183872f66883bf5dce28799e2a5ae251  replication_kit/g1dm_data_notes_v1_3/README_G1DM_v1_3.md
+
+# === Replication Kit — Toolkit ===
+26334bf79c31c0e2d3d56fb3ce56b19f4972f26e6c4a97458baf1b507dedaf25  replication_kit/g1dm_data_notes_v1_3/requirements.txt
+ebb395a6f7e789b2c9fa4876903b5bfff874a2e7a9c726ef5c14c267590f56f4  replication_kit/g1dm_data_notes_v1_3/Makefile
+
+# === Replication Kit — Production-path docs ===
+37a0b5a6b47365ea79b703801d57fed0f201396ec7ad6c058f58a390b28a7ee5  replication_kit/g1dm_data_notes_v1_3/docs/V0_4_EXTERNAL_RUNBOOK.md
+2fc221b1fe9ccc78b6a3ceecaf2acd488e1ecb99531b985a6373273ae04c1b9a  replication_kit/g1dm_data_notes_v1_3/docs/PHASE4B_BLOCKER_MODEL_VECTORS.md

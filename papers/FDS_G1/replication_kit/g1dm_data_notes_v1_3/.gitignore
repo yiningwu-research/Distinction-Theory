@@ -1,0 +1,12 @@
+data/raw/
+data/generated/
+outputs/
+outputs/model_vectors/
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+*.aux
+*.log
+*.out

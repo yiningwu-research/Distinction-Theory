@@ -1,0 +1,31 @@
+# Note 4 Phase 1a — Scenario B: FS/BAO + Planck + DESY3joint
+# Populated compressed sanity check, NOT production evidence.
+# Uses standardized z-score vector with diagonal covariance.
+phase: "1a"
+label: "Phase 1a — populated compressed sanity check, NOT production evidence"
+scenario: "FS/BAO+Planck+DESY3joint"
+notes: |
+  The Planck carrier-floor row is a hard source-floor diagnostic.
+  DESI rows are scenario-specific response/optics diagnostics from
+  DESI DR1 base_mu_sigma cobaya chains including DESY3joint.
+  No combined cosmological evidence claim is made.
+  This audit is not a joint likelihood.
+covariance: "diagonal" # z-scores have unit diagonal covariance
+components: ["source", "response", "optics"]
+observables:
+  - name: "omega_c_h2_carrier_floor"
+    channel: "source"
+    z: 100.0
+    role: "hard_floor"
+    design: {source: 1.0, response: 0.0, optics: 0.0}
+  - name: "mu0_DESI"
+    channel: "response"
+    z: 0.17
+    role: "residual_diagnostic"
+    design: {source: 0.0, response: 1.0, optics: 0.0}
+  - name: "sigma0_DESI"
+    channel: "optics"
+    z: 0.96
+    role: "residual_diagnostic"
+    design: {source: 0.0, response: 0.0, optics: 1.0}
+source_floor_cap: 10  # optional diagnostic: cap source z-score at this value for robustness display

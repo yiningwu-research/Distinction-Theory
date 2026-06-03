@@ -1,0 +1,2 @@
+test,null_value_mu0,mean_mu0,sigma_mu0,z_null,p_two_sided,interpretation
+GR growth response,0.0,0.05,0.22,-0.2272727272727273,0.8202116787284528,"If |z| is small, mu_grav=1 is compatible with public compressed growth constraints."

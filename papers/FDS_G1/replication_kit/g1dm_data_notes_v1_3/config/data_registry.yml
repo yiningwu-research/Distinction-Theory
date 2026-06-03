@@ -1,0 +1,61 @@
+# Official public-data registry for first-generation G1DM diagnostics.
+# Some official products are large or portal-based; in those cases this file records
+# the official landing page and expected local path rather than attempting a blind download.
+
+datasets:
+  desi_dr1_full_shape:
+    purpose: "DESI DR1 full-shape/RSD and growth-leakage consistency tests"
+    official_doc: "https://data.desi.lbl.gov/doc/releases/dr1/vac/full-shape-cosmo-params/"
+    data_url: "https://data.desi.lbl.gov/public/dr1/vac/dr1/full-shape-cosmo-params"
+    expected_local: "data/raw/desi_dr1/full-shape-cosmo-params"
+    notes: |
+      Directory contains cobaya chains, iminuit maximization results, and CombineHarvesterFlow results.
+      Use the _mu_sigma model folders for modified-gravity growth/Weyl tests.
+
+  planck_2018:
+    purpose: "Carrier floor / pure-Weyl exclusion; early source constraints"
+    official_home: "https://www.cosmos.esa.int/web/planck"
+    archive: "https://pla.esac.esa.int/"
+    expected_local: "data/raw/planck_2018"
+    notes: |
+      Obtain Planck 2018 likelihood code or public CosmoMC chains manually from PLA.
+      The lightweight note1 script can read CosmoMC chains if placed under data/raw/planck_chains.
+
+  act_dr6_lensing:
+    purpose: "CMB lensing / optics channel cross-check"
+    github: "https://github.com/ACTCollaboration/act_dr6_lenslike"
+    expected_local: "data/raw/act_dr6_lenslike"
+    install_hint: "pip install act_dr6_lenslike; then run get-act-data.sh from the package/repo"
+    notes: |
+      The official repository contains likelihood software and a get-act-data.sh script.
+
+  kids_1000:
+    purpose: "Weak-lensing/Weyl residual diagnostics"
+    official_home: "https://kids.strw.leidenuniv.nl/"
+    expected_local: "data/raw/kids_1000"
+    notes: |
+      KiDS-1000 weak-lensing products include shape/photometry catalogues, 2-point shear data vectors,
+      covariance matrices, and posterior samples. Download from the official KiDS-1000 lensing page.
+
+  des_y3_3x2pt:
+    purpose: "3x2pt source-response-optics cross-check"
+    official_home: "https://www.darkenergysurvey.org/des-year-3-cosmology-results-papers/"
+    expected_local: "data/raw/des_y3"
+    notes: |
+      DES Y3 3x2pt combines cosmic shear, galaxy clustering, and galaxy-galaxy lensing.
+      Use public data vectors/covariances or chain products from the DES release pages.
+
+  sparc:
+    purpose: "Optional acceleration-scale baseline at z~0"
+    official_home: "https://astroweb.case.edu/SPARC/"
+    expected_local: "data/raw/sparc"
+    notes: |
+      SPARC provides 175 galaxy rotation curves and mass models. Download Table1.mrt and mass-model files.
+
+  kurvs_highz:
+    purpose: "Optional high-redshift rotation-curve comparison"
+    paper: "https://academic.oup.com/mnras/article/524/2/2814/7221661"
+    expected_local: "data/raw/highz_rotation_curves/kurvs"
+    notes: |
+      High-z rotation-curve data often require tables from paper supplements or manual digitization.
+      Treat acceleration-drift tests as exploratory until a homogeneous sample is assembled.

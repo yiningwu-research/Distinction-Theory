@@ -1,7 +1,33 @@
 # Data Manifest
 # FDS-G1 Complete Series
 
-## v1.2 Additions
+## v1.3 G1DM Compressed Diagnostics
+
+G1DM compressed diagnostic numbers used in the v1.3 carrier-floor,
+growth-leakage, and S8 proxy analyses:
+
+| Observable | Value | Source |
+|-----------|-------|--------|
+| Omega_c h^2 | 0.1200 +/- 0.0012 | Planck 2018 published posterior (TT,TE,EE+lowE) |
+| mu0 (DESI FS/BAO+Planck) | +0.223 +/- 0.236 | DESI DR1 base_mu_sigma public chain |
+| mu0 (DESI +DESY3joint) | +0.038 +/- 0.226 | DESI DR1 base_mu_sigma public chain |
+| sigma0 (DESI FS/BAO+Planck) | +0.389 +/- 0.101 | DESI DR1 base_mu_sigma public chain |
+| sigma0 (DESI +DESY3joint) | +0.045 +/- 0.047 | DESI DR1 base_mu_sigma public chain |
+| S8 Planck 2018 | 0.831 +/- 0.013 | Planck 2018 (TT,TE,EE+lowE) |
+| S8 KiDS-1000 | 0.759 +/- 0.0225 | Asgari et al. 2021 (COSEBIs fiducial) |
+| S8 DES Y3 | 0.776 +/- 0.017 | DES Y3 3x2pt |
+
+**Raw Planck, DESI, KiDS, and DES Y3 chains are not redistributed.**
+See `g1dm_data_notes_v1_3/docs/DATA_DOWNLOAD_PLAN.md` and
+`g1dm_data_notes_v1_3/docs/KIDS1000_DOWNLOAD_PLAN.md` for download
+instructions.
+
+Compressed diagnostic summaries are available in
+`g1dm_data_notes_v1_3/outputs_summary/`.
+
+---
+
+## v1.2 Additions (inherited)
 
 ### Production evidence outputs
 

@@ -1,0 +1,25 @@
+# Toy SRO residual observables for source-response-optics sparse audit.
+# Replace with real compressed observables from Planck/DESI/KiDS/DES/ACT/SPARC.
+# y is residual relative to a baseline source-dominant model. Units are arbitrary normalized sigma units.
+observables:
+  - name: early_source_omega_cdm
+    channel: source
+    y: 0.00
+    sigma: 0.03
+    design: {source: 1.0, response: 0.0, optics: 0.0}
+  - name: growth_mu0
+    channel: growth
+    y: 0.05
+    sigma: 0.22
+    design: {source: 0.0, response: 1.0, optics: 0.0}
+  - name: lensing_sigma0
+    channel: optics
+    y: 0.008
+    sigma: 0.045
+    design: {source: 0.0, response: 0.0, optics: 1.0}
+  - name: dynamics_mass_offset
+    channel: dynamics
+    y: 0.00
+    sigma: 0.10
+    design: {source: 1.0, response: 1.0, optics: 0.0}
+components: [source, response, optics]

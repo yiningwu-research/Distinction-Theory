@@ -1,6 +1,19 @@
 # FDS-G1 Replication Kit
 
-**Current canonical evidence table (v1.2):**
+**Current release: v1.3**
+
+v1.3 preserves the v1.2 production-refined M(_{3/4}) evidence kit and adds the
+Companion G / G1DM compressed diagnostic layer.  The new G1DM layer supports
+the compressed diagnostic:
+
+```
+T_D != 0,  mu_grav ~= 1,  D_optics_S8 != 0  at compressed-proxy level.
+```
+
+This is not production multi-probe confirmation and not a completed
+replacement of CDM.
+
+**Canonical evidence table (v1.2, inherited):**
 medium-prior 8-seed production-refined nested-evidence audit,
 `dlogZ=0.1`, seven models, run_type=production.
 
@@ -10,7 +23,25 @@ audit.
 
 ---
 
-## v1.2 New Additions
+## v1.3 New Additions
+
+```
+g1dm_data_notes_v1_3/            G1DM compressed diagnostic toolkit
+  README_G1DM_v1_3.md            Toolkit overview and quick start
+  notes/                         Note 1-5 executable scripts
+  src/g1dm/                      Core I/O, stats, plotting utilities
+  tests/                         Smoke test suite (17/17 pass)
+  docs/                          Technical notes, SRO protocol, production-path docs
+  outputs_summary/               Compressed diagnostic JSONs and CSVs
+  REQUIREMENTS_v0_3.md           v0.3 release notes
+
+RELEASE_MANIFEST_v1_3.json       v1.3 release manifest
+SHA256SUMS_v1_3_release.txt      v1.3 checksums
+```
+
+---
+
+## v1.2 New Additions (inherited)
 
 ```
 production_evidence_v1_2/     v1.2 production-refined evidence (8-seed, dlogZ=0.1)

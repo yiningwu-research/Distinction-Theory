@@ -1,0 +1,32 @@
+# Note 4 Phase 2 — independent S8 compressed-proxy audit
+# Primary: Planck vs KiDS-1000 cosmic shear
+phase: "2"
+label: "Phase 2 — independent S8 compressed-proxy audit, NOT production evidence"
+scenario: "Planck_vs_KiDS1000"
+notes: |
+  S8 = sigma_8*(Omega_m/0.3)^0.5.
+  Planck 2018: S8 = 0.831 +/- 0.013 (TT,TE,EE+lowE).
+  KiDS-1000: S8 = 0.759^{+0.024}_{-0.021} (fiducial cosmic shear).
+  Delta_S8 = 0.072, sigma_combined = 0.0260, z = 2.77.
+  This is a compressed optics/response pressure proxy, not a Weyl residual measurement.
+  See NOTE4_SRO_PROTOCOL.md Phase 2 for the r-grid sensitivity analysis.
+covariance: "diagonal"
+components: ["source", "response", "optics"]
+observables:
+  - name: "omega_c_h2_carrier_floor"
+    channel: "source"
+    z: 100.0
+    role: "hard_floor"
+    design: {source: 1.0, response: 0.0, optics: 0.0}
+  - name: "mu0_DESI_DESY3joint"
+    channel: "response"
+    z: 0.17
+    role: "residual_diagnostic"
+    design: {source: 0.0, response: 1.0, optics: 0.0}
+  - name: "Delta_S8_Planck_KiDS"
+    channel: "optics/response"
+    z: 2.77
+    role: "tension_proxy"
+    design: {source: 0.0, response: "r", optics: "1-r"}
+    r_grid: [0, 0.25, 0.5, 0.75, 1.0]
+source_floor_cap: 10

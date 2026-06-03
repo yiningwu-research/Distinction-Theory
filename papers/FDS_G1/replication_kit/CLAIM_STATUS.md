@@ -1,6 +1,61 @@
 # FDS-G1 Complete Series — CLAIM STATUS
 
-## v1.2 Update
+## v1.3 G1DM / Companion G
+
+**Compressed G1DM-C0 diagnostic layer (v1.3): COMPLETE at compressed-proxy level.**
+
+The v1.3 release adds Companion G as the matter-sector / dark-matter ontology
+companion and includes the G1DM-C0 carrier-floor strengthening section in the
+main text.  The central compressed diagnostic is:
+
+```
+T_D != 0,  mu_grav ~= 1,  D_optics_S8 != 0  at compressed-proxy level.
+```
+
+### Note 1 — carrier floor
+
+| Claim | Status |
+|-------|--------|
+| Planck 2018 Omega_c h^2 = 0.1200 +/- 0.0012 | published posterior reproduced |
+| Omega_c h^2 = 0 excluded | >100 sigma |
+| Pure Weyl-DM cannot replace full CDM | supported |
+
+### Note 3 — growth leakage
+
+| Claim | Status |
+|-------|--------|
+| DESI DR1 mu0 consistent with 0 (FS/BAO+Planck) | z_growth = 0.94 |
+| DESI DR1 mu0 consistent with 0 (+DESY3joint) | z_growth = 0.17 |
+| Growth-only disfavored in all combinations | supported |
+| M3/4 Weyl sign-lock confirmed | NOT CONFIRMED (DESI Sigma0 > 0 opposite M3/4 sign; Planck-linked Weyl disappears with DESY3joint) |
+
+### Note 4 Phase 2 — independent S8 compressed proxy
+
+| Claim | Status |
+|-------|--------|
+| KiDS-1000 S8 tension vs Planck: 2.77 sigma | compressed proxy |
+| DES Y3 S8 tension vs Planck: 2.57 sigma | compressed proxy |
+| source+optics selected over source-only (r-stable) | supported at compressed-proxy level |
+
+### v0.4 production path
+
+| Claim | Status |
+|-------|--------|
+| KiDS-1000 ingestion and S8 validation | passed |
+| BandPower covariance readiness | passed |
+| Full SRO inference | BLOCKED pending KCAP/CosmoSIS model-vector generation |
+
+### Not claimed (v1.3)
+
+- Completed dark-matter solution
+- Particle identity of dark matter
+- Full 3x2pt SRO confirmation
+- Production multi-probe G1DM evidence
+- M3/4 Weyl sign/amplitude lock confirmed
+
+---
+
+## v1.2 Update (inherited)
 
 **Production-refined seven-model medium-prior nested-evidence audit
 (v1.2, all models 8 seeds, dlogZ=0.1): COMPLETE.**

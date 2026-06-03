@@ -1,0 +1,15 @@
+numpy>=1.24
+scipy>=1.10
+pandas>=2.0
+matplotlib>=3.7
+pyyaml>=6.0
+requests>=2.31
+tqdm>=4.66
+astropy>=5.3
+getdist>=1.5
+camb>=1.5
+pytest>=7.0
+# Optional for full likelihoods / Boltzmann runs:
+# cobaya>=3.5
+# classy>=3.2
+# act_dr6_lenslike

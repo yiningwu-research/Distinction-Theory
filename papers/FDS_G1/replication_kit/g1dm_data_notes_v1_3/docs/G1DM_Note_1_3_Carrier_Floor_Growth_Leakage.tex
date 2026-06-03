@@ -1,0 +1,243 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,graphicx,hyperref,caption}
+\usepackage{array}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+
+\graphicspath{{../outputs/note1_planck_carrier_floor/}}
+
+\title{Carrier Floor and Growth-Leakage Suppression\\in Public Cosmological Chains:\\
+A G1DM Source--Response Diagnostic}
+\author{G1DM Data Notes Toolkit v0.2.1}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\noindent\textit{Release relation: G1DM data-note supplement included with FDS--G1 v1.3.}
+
+\section{Motivation}
+
+Companion~G of the FDS--G1 series proposes a source--response--optics decomposition
+of dark-matter phenomenology in finite-screen gravity~\cite{FDSG1}.  The central
+analytic claim is that dark-sector observables must be separated into three
+independent channels:
+\begin{equation}
+\mathcal D_{\rm obs}
+=
+T_{\mu\nu}^{D}\;\oplus\; R_{\mu\nu}^{D}\;\oplus\; \delta W_{\rm opt}^{D},
+\end{equation}
+where $T_{\mu\nu}^{D}$ is a dark carrier-source, $R_{\mu\nu}^{D}$ is a
+density-like screen-response residual, and $\delta W_{\rm opt}^{D}$ is a
+Weyl/optical residual.
+
+If this decomposition is not enforced, a single phenomenological preference (e.g., a
+nonzero $\Sigma_0$ in a compressed $\mu\Sigma$ fit) can be misinterpreted as a
+confirmed dark-matter sector.  Companion~G therefore demands that source, response,
+and optics be separately identifiable before any G1 dark-matter claim is admitted.
+
+This technical note reports the first two public-chain diagnostics from the
+\texttt{g1dm\_data\_notes} toolkit (v0.2.1).  Together they test whether
+current public cosmological data require (i)~a source-like dark carrier floor
+and (ii)~a modified-growth (Ricci-leakage) response.
+
+\section{Note~1: Planck Carrier Floor}
+
+The carrier-floor test uses Planck~2018 TT,TE,EE+lowE chains~\cite{Planck2018} to
+ask whether $\Omega_c h^2=0$ is excluded by CMB data.  If
+$\Omega_c h^2=0$ were allowed, a pure Weyl/optical residual could in principle
+replace the full CDM sector.  If it is excluded, a source-like carrier floor is
+required.
+
+\begin{table}[h]
+\centering
+\caption{Planck~2018 posterior summary for $\Omega_c h^2$
+(base\_plikHM\_TTTEEE\_lowl\_lowE).}\label{tab:note1}
+\begin{tabular}{ccccccc}
+\toprule
+Parameter & Mean & $\sigma$ & $Q_{16}$ & $Q_{50}$ & $Q_{84}$ & $z(\Omega_c h^2{=}0)$ \\
+\midrule
+$\Omega_c h^2$ & $0.1200$ & $0.0012$ & $0.1188$ & $0.1200$ & $0.1212$ & $100.0\sigma$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+$\Omega_c h^2=0$ lies far outside the Planck posterior support.  The posterior
+is concentrated near $\Omega_c h^2\simeq0.12$ with an effective exclusion
+significance exceeding $100\sigma$ (driven by the Planck~2018 published posterior
+$\Omega_c h^2=0.1200\pm0.0012$; the exact numerical value of the $z$-score is
+insensitive to the precise chain realization).
+
+\vspace{0.3em}
+\noindent\textbf{Diagnosis.}\;
+Planck~2018 CMB data require a nonzero CDM-like carrier floor.
+Pure Weyl/optical residuals cannot replace the full CDM sector.
+In Companion~G notation, $T_{\mu\nu}^{D}\neq0$.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\linewidth]{carrier_floor_posterior.png}
+\caption{Planck~2018 posterior density for $\Omega_c h^2$.
+The vertical dashed line marks $\Omega_c h^2=0$ (no carrier floor).}
+\label{fig:carrier_floor}
+\end{figure}
+
+\section{Note~3: DESI DR1 Lensing-Growth Split}
+
+The lensing-growth split test uses DESI DR1 \texttt{base\_mu\_sigma} public
+chains from the DESI DR1 full-shape cosmology repository~\cite{DESIDR1FS}.
+In the DESI/ISiTGR $\mu\Sigma$ convention used by these chains,
+$\Sigma(a)=1+\sigma_0^{\rm DESI}\,f(a)$ where $\sigma_0^{\rm DESI}>0$ corresponds to
+enhanced lensing relative to GR.  This sign convention is opposite to the current
+M$_{3/4}$ sign prediction for $s<3$.
+
+Two dataset combinations are available in the public \texttt{cobaya} chains:
+(i)~FS/BAO+Planck only and (ii)~FS/BAO+Planck+DESY3joint.
+A third combination (FS/BAO+Planck+DESY3joint+DESY5SN) is not yet available as a
+\texttt{base\_mu\_sigma} \texttt{cobaya} chain in the DESI DR1 VAC.
+
+\subsection{Compressed Gaussian comparison}
+
+For each chain, the weighted mean and covariance of $( \mu_0, \sigma_0^{\rm DESI} )$
+are extracted from the posterior samples.  Four models are compared in the
+compressed 2D Gaussian space:
+\begin{itemize}
+\item \textbf{GR}  ---  $(\mu_0,\sigma_0^{\rm DESI}) = (0,0)$;
+\item \textbf{Growth-only}  ---  $(\mu_0,\sigma_0^{\rm DESI}) = (\mbox{free},0)$;
+\item \textbf{Weyl-only}  ---  $(\mu_0,\sigma_0^{\rm DESI}) = (0,\mbox{free})$;
+\item \textbf{Growth+Weyl}  ---  $(\mu_0,\sigma_0^{\rm DESI}) = (\mbox{free},\mbox{free})$.
+\end{itemize}
+
+Model comparison uses compressed Gaussian BIC (with an adopted
+effective-penalty convention) and $z$-scores for the growth and Weyl residuals.
+
+\begin{table}[h]
+\centering
+\caption{Note~3 compressed Gaussian model comparison.}\label{tab:note3}
+\small
+\begin{tabular}{lccccccc}
+\toprule
+Combination & $\mu_0$ & $\sigma_{\mu_0}$ & $\sigma_0^{\rm DESI}$ & $\sigma_{\Sigma}$ & $z_{\rm Weyl}$ & $z_{\rm growth}$ & Best (BIC) \\
+\midrule
+FS/BAO+Planck (197\,K) & $+0.223$ & $0.236$ & $+0.389$ & $0.101$ & $3.86\sigma$ & $0.94\sigma$ & Weyl-only \\
++DESY3joint (111\,K) & $+0.038$ & $0.226$ & $+0.045$ & $0.047$ & $0.96\sigma$ & $0.17\sigma$ & GR \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Note~3 formal diagnostic status.}\label{tab:note3diag}
+\begin{tabular}{lll}
+\toprule
+Diagnostic & Status & Interpretation \\
+\midrule
+Ricci/growth leakage & \textbf{Passed} & $\mu_0$ consistent with 0 in both combinations \\
+Growth-only explanation & \textbf{Disfavored} & Growth-only is not the preferred channel \\
+Weyl-channel residual & \textbf{Planck-linked / not robust} & Strong in FS/BAO+Planck; disappears with DESY3joint \\
+M$_{3/4}$ sign-lock & \textbf{Pending / under pressure} & $\sigma_0^{\rm DESI}>0$ opposite current M$_{3/4}$ sign \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\vspace{0.3em}
+\noindent\textbf{Diagnosis.}\;
+The strong Weyl residual in FS/BAO+Planck ($3.86\sigma$) is consistent with the
+known Planck PR3 lensing anomaly~\cite{Planck2018} and with the official DESI MG
+paper's finding of GR-consistent results when DESY3+DESY5SN are added.  After DES~Y3
+$3\times2$pt data are included, $\sigma_0^{\rm DESI}$ returns to consistency with zero
+($0.96\sigma$).  Growth leakage ($\mu_0\neq0$) is not required in either combination.
+
+\section{Combined Diagnosis}
+
+\begin{table}[h]
+\centering
+\caption{Combined G1DM source--response diagnostic from
+Notes~1 and~3.}\label{tab:combined}
+\begin{tabular}{ccc}
+\toprule
+Channel & Evidence & Status \\
+\midrule
+Source / carrier floor & Planck requires $\Omega_c h^2\neq0$ ($>\!100\sigma$) & \textbf{Passed} \\
+Growth / Ricci leakage & DESI DR1 does not require $\mu_0\neq0$ & \textbf{Passed} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\vspace{0.3em}
+\noindent\textbf{Core result.}\;
+\begin{equation}
+\boxed{T_{\mu\nu}^{D}\neq0,\qquad \mu_{\rm grav}\simeq1.}
+\end{equation}
+Planck~2018 chains require a nonzero CDM-like carrier floor; DESI DR1
+full-shape/RSD \texttt{\_mu\_sigma} chains do not require leading modified-growth
+leakage.  Within current public data, dark matter is empirically source-like at the
+carrier level rather than primarily a modified-growth residual.
+
+\section{Implications for M\textsubscript{3/4} and Companion~G}
+
+These results support the G1DE/M$_{3/4}$ channel hierarchy but do not confirm the full
+M$_{3/4}$ Weyl sign/amplitude lock:
+
+\begin{itemize}
+\item \textbf{Suppressed growth leakage confirmed.}\;
+  $\mu_0$ is consistent with zero in both chain combinations, supporting
+  the M$_{3/4}$ claim that the leading residual is not Ricci/growth-dominated.
+
+\item \textbf{Weyl residual not robust across dataset combinations.}\;
+  The Planck-linked Weyl preference in FS/BAO+Planck disappears when DES~Y3
+  $3\times2$pt data are added.  This demonstrates that a single Weyl preference
+  cannot be interpreted as a confirmed M$_{3/4}$ Weyl-branch signal without
+  dataset-combination robustness checks.
+
+\item \textbf{Source--response--optics identifiability justified.}\;
+  The fact that a strong Weyl signal in one combination collapses under the addition
+  of independent lensing data vindicates Companion~G's requirement that
+  source, response, and optics be separately identifiable before any G1
+  dark-matter claim is admitted.
+\end{itemize}
+
+\section*{Code and Data Provenance}
+
+\noindent\textbf{Toolkit:} \texttt{g1dm\_data\_notes} v0.2.1\\
+\textbf{Repository:} \texttt{https://github.com/yiningwu-research/Distinction-Theory}\\
+\textbf{Notes run:} \texttt{note1\_carrier\_floor.py} (with Planck published posterior);
+\texttt{note3\_lensing\_growth\_split.py} (with DESI DR1 public chains).\\
+\textbf{Planck data:} Planck~2018 published posterior,
+$\Omega_c h^2 = 0.1200 \pm 0.0012$ (base\_plikHM\_TTTEEE\_lowl\_lowE)
+from~\cite{Planck2018}.\\
+\textbf{DESI data:} DESI DR1 full-shape cosmology VAC,
+\url{https://data.desi.lbl.gov/doc/releases/dr1/vac/full-shape-cosmo-params/}.\\
+\textbf{DESI chains used:}
+\texttt{cobaya/base\_mu\_sigma/desi-reptvelocileptors-fs-bao-all\_planck2018-.../chain.1.txt};\\
+\texttt{cobaya/base\_mu\_sigma/desi-reptvelocileptors-fs-bao-all\_desy3joint-.../chain.1.txt}.
+
+\section*{Reproducibility}
+
+\begin{enumerate}
+\item Clone the toolkit and follow \texttt{README.md} setup instructions.
+\item Download DESI DR1 \texttt{base\_mu\_sigma} chains per \texttt{docs/DATA\_DOWNLOAD\_PLAN.md}.
+\item Run Note~1: \texttt{PYTHONPATH=src python notes/note1\_carrier\_floor.py --allow-demo}.
+\item Run Note~3: \texttt{PYTHONPATH=src python notes/note3\_lensing\_growth\_split.py}\\
+  \texttt{--chain-dir <chain\_dir> --mu-col mu0 --sigma-col Sigma0}.
+\item Tables and figures are output to \texttt{outputs/note1\_planck\_carrier\_floor/} and
+  \texttt{outputs/note3\_desi\_mu\_sigma\_*/}.
+\end{enumerate}
+
+\begin{thebibliography}{9}
+\bibitem{FDSG1}
+Y.~Wu, \emph{FDS--G1: Finite-Screen Gravity and Late-Time Dark-Sector Residuals},
+FDS series, 2026.
+
+\bibitem{Planck2018}
+Planck Collaboration, \emph{Planck 2018 results. VI. Cosmological parameters},
+Astron.\ Astrophys.\ 641, A6 (2020), arXiv:1807.06209.
+
+\bibitem{DESIDR1FS}
+DESI Collaboration, \emph{DESI DR1 Full Shape cosmology results},
+public chains and posterior products,
+\url{https://data.desi.lbl.gov/doc/releases/dr1/vac/full-shape-cosmo-params/}.
+\end{thebibliography}
+
+\end{document}

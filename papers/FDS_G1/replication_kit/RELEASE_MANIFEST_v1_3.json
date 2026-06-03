@@ -1,0 +1,23 @@
+{
+  "kit_version": "v1.3",
+  "paper_version": "v1.3",
+  "inherits": "v1.2 production_evidence_v1_2 and kids_bandpower_eene_v1_2 layers (all v1.2 claim boundaries preserved)",
+  "new_release_layer": "Companion G / G1DM compressed diagnostic layer",
+  "g1dm_core_diagnostic": "T_D != 0, mu_grav ~= 1, D_optics_S8 != 0 at compressed-proxy level",
+  "claim_boundary": "not completed CDM replacement; not production multi-probe confirmation; not Weyl sign-lock confirmed; full 3x2pt SRO inference blocked pending KCAP/CosmoSIS model-vector generation",
+  "new_artifacts": [
+    "g1dm_data_notes_v1_3/",
+    "g1dm_data_notes_v1_3/docs/G1DM_Note_1_3_Carrier_Floor_Growth_Leakage.pdf",
+    "g1dm_data_notes_v1_3/docs/G1DM_Note_v0.3_S8_Proxy_Addendum.pdf",
+    "g1dm_data_notes_v1_3/docs/V0_4_EXTERNAL_RUNBOOK.md",
+    "g1dm_data_notes_v1_3/docs/PHASE4B_BLOCKER_MODEL_VECTORS.md",
+    "RELEASE_MANIFEST_v1_3.json",
+    "SHA256SUMS_v1_3_release.txt"
+  ],
+  "note_1_status": "carrier floor passed: Planck 2018 Omega_c h^2 = 0.1200 +/- 0.0012, Omega_c h^2 = 0 excluded at >100 sigma",
+  "note_3_status": "growth leakage suppressed: DESI DR1 mu0 consistent with 0 in FS/BAO+Planck and FS/BAO+Planck+DESY3joint",
+  "note_4_phase2_status": "independent S8 compressed proxy selects optics component (r-stable, KiDS 2.77sigma, DES Y3 2.57sigma)",
+  "v0_4_status": "production path defined: KiDS ingestion and BandPower covariance readiness passed; full SRO inference blocked on KCAP/CosmoSIS model-vector generation",
+  "date": "2026-06-03",
+  "supersedes": "v1.2 release manifest (v1.2 evidence and KiDS diagnostic layers retained unchanged)"
+}
