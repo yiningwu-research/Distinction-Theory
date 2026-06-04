@@ -3007,4 +3007,42 @@ with margins \(\Delta\log Z\simeq0.856, 1.775, 6.523, 7.402, 9.603, 11.884\) aga
 
 ---
 
+### FDS-H1-001 — Finite Causal-Screen Holography
+**Statement.** Holography is finite boundary distinction recovery under screen-capacity constraints.
+**Status.** Released (v0.21, H-series bridge paper).
+**Layer.** Physics — Gravity 1, H-series.
+**Dependencies.** Standard AdS/CFT, RT/FLM, holographic QEC, causal-diamond thermodynamics, Bousso covariant entropy bound.
+**First timestamp.** FDS-H1, 2026-06-04.
+**DOI.** 10.5281/zenodo.20541234.
+**Failure condition.** Finite boundary recovery cannot be captured by screen capacity, recovery nets, or gluing obstruction diagnostics.
+
+### FDS-H1-002 — Finite Recovery-Net Theorem (Exact Nerve-Graph)
+**Statement.** On each connected component of the nerve graph of a finite cover, path-independent recovery holds if and only if all cycle holonomies vanish.
+**Status.** Restricted theorem — exact nerve-graph case.
+**Layer.** Physics — Gravity 1, H-series.
+**Dependencies.** FDS-H1-001.
+**First timestamp.** FDS-H1, 2026-06-04.
+**DOI.** 10.5281/zenodo.20541234.
+**Failure condition.** Recovery consistency cannot be captured by loop holonomy or gluing obstruction in finite models.
+
+### FDS-H1-003 — Finite Recovery-Net Theorem (Lipschitz Tolerant)
+**Statement.** Under Lipschitz transition maps, recovery error accumulates as product-weighted sum; 1-Lipschitz corollary gives simple triangular error bound.
+**Status.** Restricted theorem — tolerant case with Lipschitz condition.
+**Layer.** Physics — Gravity 1, H-series.
+**Dependencies.** FDS-H1-002.
+**First timestamp.** FDS-H1, 2026-06-04.
+**DOI.** 10.5281/zenodo.20541234.
+**Failure condition.** Finite recovery error bounds cannot be established under Lipschitz or non-expansive transition maps.
+
+### FDS-H1-004 — Matched Local Entropy, Split Recovery
+**Statement.** There exist finite boundary ledgers with identical local marginal boundary entropy \(H(B_i)\) but different recovery errors \(\epsilon_{B_i}(Q)\) for the same bulk distinction.
+**Status.** Proposition — constructive proof via redundancy code and parity code.
+**Layer.** Physics — Gravity 1, H-series.
+**Dependencies.** FDS-H1-001.
+**First timestamp.** FDS-H1, 2026-06-04.
+**DOI.** 10.5281/zenodo.20541234.
+**Failure condition.** Recovery error is entirely determined by local marginal boundary entropy in all controlled finite models.
+
+---
+
 *End of ledger. New claims added as documents are released or revised.*

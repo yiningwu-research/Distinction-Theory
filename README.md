@@ -87,6 +87,8 @@ The current DT/FDS public architecture, organized by layer:
 
 - **FDS-G1** — *Finite Screen Spacetime: Entropy-Response Geometry from Causal-Screen Ledgers.* Complete Series v1.3. Preserves the v1.2 production-refined M<sub>3/4</sub> evidence and adds Companion G as the matter-sector / dark-matter ontology companion with G1DM compressed diagnostic layer (\(T^D\neq0\), \(\mu_{\rm grav}\simeq1\), \(\mathcal D_{\rm optics}^{S_8}\neq0\) at compressed-proxy level). G1DE-M<sub>3/4</sub> projection-locked branch selected by production-refined 8-seed 7-model homogeneous nested-evidence audit (\(d\log Z=0.1\)). KiDS-1000 shear-only diagnostics support the Weyl channel; full \(3\times2\)pt, CMB/BBN, nonlinear validation pending. **Production-refined evidence-selected, not production-confirmed.** Open limitations: D0 calibration lemmas, source–kernel factorization not unique, nn/clustering channel missing. [Paper DOI: 10.5281/zenodo.20521142](https://doi.org/10.5281/zenodo.20521142). [Video](https://www.youtube.com/watch?v=lJQYHDL5KY0). [Replication Kit](papers/FDS_G1/replication_kit).
 
+- **FDS-H1** — *Finite Causal-Screen Holography: Boundary Capacity, Bulk Recovery, and Gluing Obstruction.* First H-series bridge paper. Formulates holography as finite boundary recovery; defines finite screen ledgers, recovery nets, exact (nerve-graph) and tolerant (Lipschitz) gluing theorems, and a matched-entropy/split-recovery proposition. Supplies candidate screen variables and recovery-obstruction structures for H2/H3. Does not derive G1 or M3/4. [Paper DOI: 10.5281/zenodo.20541234](https://doi.org/10.5281/zenodo.20541234).
+
 ### Physical Bridge Ladder
 
 - **FDS-P0** — physical bridge claim registry. DOI: 10.5281/zenodo.20159995.
@@ -229,6 +231,7 @@ Recommended reading path:
 | **DT-Archive** | *Distinction Theory: A General Theory of Finite Systems* | Zenodo archive | [10.5281/zenodo.20130174](https://doi.org/10.5281/zenodo.20130174) |
 | **FDS-0** | *Active Finite Distinction Systems: A Formal Core for Boundary Maintenance under Finite Capacity* | Zenodo preprint | [10.5281/zenodo.20158923](https://doi.org/10.5281/zenodo.20158923) |
 | **FDS-G1** | *Finite Screen Spacetime: Entropy-Response Geometry from Causal-Screen Ledgers* | Released | [10.5281/zenodo.20521142](https://doi.org/10.5281/zenodo.20521142) | [Video](https://www.youtube.com/watch?v=lJQYHDL5KY0) | [Code](papers/FDS_G1/replication_kit) |
+| **FDS-H1** | *Finite Causal-Screen Holography: Boundary Capacity, Bulk Recovery, and Gluing Obstruction* | Released | [10.5281/zenodo.20541234](https://doi.org/10.5281/zenodo.20541234) | — | [Code](papers/FDS_H1) |
 | **FDS-P0** | *Physical Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo preprint | [10.5281/zenodo.20159995](https://doi.org/10.5281/zenodo.20159995) |
 | **FDS-T1** | *Finite Distinguishability Budgets and Maintenance Bounds for Physical Observers* | Released | [10.5281/zenodo.20234249](https://doi.org/10.5281/zenodo.20234249) |
 | **FDS-O1** | *Observer as a Finite Distinction Register: Measurement Capacity, Dynamic Bottlenecks, and Budget-Crossing Signatures* | Released | [10.5281/zenodo.20248792](https://doi.org/10.5281/zenodo.20248792) |

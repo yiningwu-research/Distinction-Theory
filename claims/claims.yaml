@@ -3248,3 +3248,66 @@
   first_date: '2026-05-25'
   doi: 10.5281/zenodo.20382013
   failure_condition: G1DE collapses to generic dark-stress model.
+- id: FDS-H1-001
+  title: Finite Causal-Screen Holography
+  statement: Holography is finite boundary distinction recovery under screen-capacity
+    constraints.
+  status: Released (v0.21)
+  layer: Physics - Gravity 1 / H-series
+  dependencies:
+  - Standard AdS/CFT
+  - RT/FLM
+  - holographic QEC
+  - Bousso
+  limitation: Defines finite-screen architecture; does not derive G1/M3/4.
+  first_document: FDS-H1
+  first_version: v0.21
+  first_date: '2026-06-04'
+  doi: 10.5281/zenodo.20541234
+  failure_condition: Finite boundary recovery cannot be captured by screen capacity/recovery
+    nets/gluing obstruction.
+- id: FDS-H1-002
+  title: Finite Recovery-Net Theorem (Exact Nerve-Graph)
+  statement: On each connected component of the nerve graph, path-independent recovery
+    iff all cycle holonomies vanish.
+  status: Restricted theorem
+  layer: Physics - Gravity 1 / H-series
+  dependencies:
+  - FDS-H1-001
+  limitation: Proof restricted to finite covers with invertible transition maps.
+  first_document: FDS-H1
+  first_version: v0.21
+  first_date: '2026-06-04'
+  doi: 10.5281/zenodo.20541234
+  failure_condition: Recovery consistency cannot be captured by loop holonomy in finite
+    models.
+- id: FDS-H1-003
+  title: Finite Recovery-Net Theorem (Lipschitz Tolerant)
+  statement: Under Lipschitz transition maps recovery error accumulates as product-weighted
+    sum; 1-Lipschitz corollary gives simple sum.
+  status: Restricted theorem
+  layer: Physics - Gravity 1 / H-series
+  dependencies:
+  - FDS-H1-002
+  limitation: Requires Lipschitz condition; non-expansive case is a corollary.
+  first_document: FDS-H1
+  first_version: v0.21
+  first_date: '2026-06-04'
+  doi: 10.5281/zenodo.20541234
+  failure_condition: Finite recovery error bounds cannot be established under Lipschitz
+    transition maps.
+- id: FDS-H1-004
+  title: Matched Local Entropy / Split Recovery
+  statement: There exist finite boundary ledgers with identical local marginal entropy
+    H(B_i) but different recovery errors.
+  status: Proposition (constructive)
+  layer: Physics - Gravity 1 / H-series
+  dependencies:
+  - FDS-H1-001
+  limitation: Constructed via redundancy code and parity code; not all boundary configurations.
+  first_document: FDS-H1
+  first_version: v0.21
+  first_date: '2026-06-04'
+  doi: 10.5281/zenodo.20541234
+  failure_condition: Recovery error is entirely determined by local marginal entropy
+    in all controlled models.
