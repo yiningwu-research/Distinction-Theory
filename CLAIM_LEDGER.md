@@ -3045,4 +3045,59 @@ with margins \(\Delta\log Z\simeq0.856, 1.775, 6.523, 7.402, 9.603, 11.884\) aga
 
 ---
 
+### FDS-Q0-001 — Physical Distinguishability as Directed Boundary Access
+**Statement.** Physical distinguishability is first directed boundary access.
+**Status.** FDS primitive / definition.
+**Layer.** Physics — Quantum upstream.
+**Dependencies.** FDS core; standard quantum distinguishability theory.
+**First timestamp.** FDS-Q0, 2026-06-04.
+**DOI.** 10.5281/zenodo.20542105.
+**Failure condition.** All operational record production, erasure, and recovery are symmetric without boundary cost or accessibility structure.
+
+### FDS-Q0-002 — Zero-Holonomy Quotient-Consistency Theorem
+**Statement.** Zero record holonomy makes the reversible quotient well-defined; in the restricted quantum-access category the induced kernel is symmetric.
+**Status.** Restricted quotient-consistency theorem.
+**Layer.** Physics — Quantum upstream.
+**Dependencies.** FDS-Q0-001.
+**First timestamp.** FDS-Q0, 2026-06-04.
+**DOI.** 10.5281/zenodo.20542105.
+**Failure condition.** A closed, record-neutral, zero-holonomy sector fails to admit any well-defined symmetric quotient kernel.
+
+### FDS-Q0-003 — Hilbert QM as Zero-Holonomy Sector
+**Statement.** Hilbert quantum mechanics is the finite-capacity zero-holonomy sector.
+**Status.** Conditional theorem target (not yet proved in Q0).
+**Layer.** Physics — Quantum upstream.
+**Dependencies.** FDS-Q0-002.
+**First timestamp.** FDS-Q0, 2026-06-04.
+**DOI.** 10.5281/zenodo.20542105.
+**Failure condition.** A non-Hilbert reciprocal finite-capacity quotient satisfies reversible dynamics, composition stability, and no hidden record asymmetry.
+
+### FDS-Q0-004 — Born Rule as No-Arbitrage Rule
+**Statement.** Born weights are the no-record-capacity-arbitrage rule.
+**Status.** Open theorem target (companion target — Q0B).
+**Layer.** Physics — Quantum upstream.
+**Dependencies.** FDS-Q0-003.
+**First timestamp.** FDS-Q0, 2026-06-04.
+**DOI.** 10.5281/zenodo.20542105.
+**Failure condition.** A non-Born rule satisfies basis neutrality, coarse-graining, composition, and finite record-capacity no-arbitrage.
+
+### FDS-Q0-005 — Decoherence Irreversibility Tracks Stable Records
+**Statement.** Decoherence irreversibility tracks stable records, not mere entanglement alone.
+**Status.** Operational prediction.
+**Layer.** Physics — Quantum upstream.
+**Dependencies.** FDS-Q0-001.
+**First timestamp.** FDS-Q0, 2026-06-04.
+**DOI.** 10.5281/zenodo.20542105.
+**Failure condition.** Stable record accessibility has no independent predictive role for recovery once ordinary overlap and noise metrics are controlled.
+
+### FDS-Q0-006 — QEC Overhead Tracks Directed Leakage Holonomy
+**Statement.** QEC overhead tracks directed leakage holonomy.
+**Status.** Q0/Q2 bridge prediction.
+**Layer.** Physics — Quantum upstream.
+**Dependencies.** FDS-Q0-001; FDS-Q2.
+**First timestamp.** FDS-Q0, 2026-06-04.
+**DOI.** 10.5281/zenodo.20542105.
+**Failure condition.** Directed leakage has no independent predictive value for logical failure after matched-fidelity and matched-syndrome controls.
+
+
 *End of ledger. New claims added as documents are released or revised.*

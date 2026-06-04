@@ -89,6 +89,8 @@ The current DT/FDS public architecture, organized by layer:
 
 - **FDS-H1** — *Finite Causal-Screen Holography: Boundary Capacity, Bulk Recovery, and Gluing Obstruction.* First H-series bridge paper. Formulates holography as finite boundary recovery; defines finite screen ledgers, recovery nets, exact (nerve-graph) and tolerant (Lipschitz) gluing theorems, and a matched-entropy/split-recovery proposition. Supplies candidate screen variables and recovery-obstruction structures for H2/H3. Does not derive G1 or M3/4. [Paper DOI: 10.5281/zenodo.20541234](https://doi.org/10.5281/zenodo.20541234).
 
+- **FDS-Q0** — *Boundary-Access Holonomy and the Quantum Reversible Quotient.* Upstream quantum-access layer. Formulates standard QM as the zero-record-holonomy quotient of asymmetric finite boundary access. Restricted quotient-consistency theorem, three-holonomy separation (coherent/record/leakage), Mach-Zehnder stable-record and QEC directed-leakage operational models. Born-rule program is a companion target. Does not derive CP^{N-1}, the Born rule, or full Hilbert reconstruction. [Paper DOI: 10.5281/zenodo.20542105](https://doi.org/10.5281/zenodo.20542105).
+
 ### Physical Bridge Ladder
 
 - **FDS-P0** — physical bridge claim registry. DOI: 10.5281/zenodo.20159995.
@@ -170,6 +172,7 @@ The public academic spine currently prioritizes:
 27. **FDS-X5** — mathematical form of physical law as invariant-form compression (released).
 28. **FDS-Q1** — finite record boundaries in Wigner's friend scenarios (released).
 29. **FDS-Q2** — finite distinction maintenance in fault-tolerant quantum computation (released).
+30. **FDS-Q0 Boundary-Access Holonomy** — zero-record-holonomy quotient, three-holonomy separation, stable-record and QEC leakage operational models.
 
 FDS-A1 is retained as a conceptual timestamp for artificial agency. Because the author may pursue commercial work in AI and robotics, this public repository does not develop proprietary AI architectures, AGI robotics systems, private benchmarks, or product-level implementation details. See [CONFLICTS_OF_INTEREST.md](CONFLICTS_OF_INTEREST.md).
 
@@ -219,6 +222,7 @@ Recommended reading path:
 28. **FDS-X5 Mathematical Form as Invariant Compression** — Wigner puzzle.
 29. **FDS-Q1 Finite Record Boundaries in Wigner's Friend** — observer-relative record algebras, false promotion risk, record-availability horizon for quantum-device diagnostics.
 30. **FDS-Q2 Finite Distinction Maintenance in Fault-Tolerant QC** — logical distinction ledgers, vector ledger audit, scaling-wall diagnostics, latency tax.
+31. **FDS-Q0 Boundary-Access Holonomy** — zero-holonomy quotient, restricted quotient-consistency theorem, coherent/record/leakage holonomy separation, stable-record and QEC leakage models.
 31. **DT-Archive** — broad claim-space archive and historical map.
 32. **FDS-A1** — retained as conceptual timestamp for artificial agency.
 
@@ -232,6 +236,7 @@ Recommended reading path:
 | **FDS-0** | *Active Finite Distinction Systems: A Formal Core for Boundary Maintenance under Finite Capacity* | Zenodo preprint | [10.5281/zenodo.20158923](https://doi.org/10.5281/zenodo.20158923) |
 | **FDS-G1** | *Finite Screen Spacetime: Entropy-Response Geometry from Causal-Screen Ledgers* | Released | [10.5281/zenodo.20521142](https://doi.org/10.5281/zenodo.20521142) | [Video](https://www.youtube.com/watch?v=lJQYHDL5KY0) | [Code](papers/FDS_G1/replication_kit) |
 | **FDS-H1** | *Finite Causal-Screen Holography: Boundary Capacity, Bulk Recovery, and Gluing Obstruction* | Released | [10.5281/zenodo.20541234](https://doi.org/10.5281/zenodo.20541234) | — | [Code](papers/FDS_H1) |
+| **FDS-Q0** | *Boundary-Access Holonomy and the Quantum Reversible Quotient* | Released | [10.5281/zenodo.20542105](https://doi.org/10.5281/zenodo.20542105) | — | — |
 | **FDS-P0** | *Physical Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo preprint | [10.5281/zenodo.20159995](https://doi.org/10.5281/zenodo.20159995) |
 | **FDS-T1** | *Finite Distinguishability Budgets and Maintenance Bounds for Physical Observers* | Released | [10.5281/zenodo.20234249](https://doi.org/10.5281/zenodo.20234249) |
 | **FDS-O1** | *Observer as a Finite Distinction Register: Measurement Capacity, Dynamic Bottlenecks, and Budget-Crossing Signatures* | Released | [10.5281/zenodo.20248792](https://doi.org/10.5281/zenodo.20248792) |
