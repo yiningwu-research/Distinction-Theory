@@ -91,7 +91,7 @@ The current DT/FDS public architecture, organized by layer:
 
 - **FDS-H2** — *Recoverable-Support Geometry and Response Visibility.* Second H-series bridge paper. Constructs a formal recoverable-support bridge architecture from H1 finite recovery to G1 premetric response. Defines non-Abelian \v{C}ech--de Rham recovery descent, registered chamberwise connection rules, relative Kato recoverable-support geometry with support-equivalent channel blindness, regular physical quotient bundle, and two independent bridge branches: an operational-covector bridge with flat coefficients ($\dd\omega_{\rm th}=\ell(F_{\rm phys})$) tested by Stokes residuals and closed-cycle periods, and a response-bundle bridge with holonomy-intertwiner existence criterion. Separates holonomy-relative parallel readouts from character-based full-group Abelianization. Does not derive G1, GR, or $M_{3/4}$. [Paper DOI: 10.5281/zenodo.20567788](https://doi.org/10.5281/zenodo.20567788).
 
-- **FDS-Q0** — *Boundary-Access Holonomy and the Quantum Reversible Quotient.* Upstream quantum-access layer. Formulates standard QM as the zero-record-holonomy quotient of asymmetric finite boundary access. Restricted quotient-consistency theorem, three-holonomy separation (coherent/record/leakage), Mach-Zehnder stable-record and QEC directed-leakage operational models. Born-rule program is a companion target. Does not derive CP^{N-1}, the Born rule, or full Hilbert reconstruction. [Paper DOI: 10.5281/zenodo.20542105](https://doi.org/10.5281/zenodo.20542105).
+- **FDS-Q0** — *Boundary-Access Holonomy and the Quantum Reversible Quotient.* Upstream quantum-access layer. Formulates standard QM as the zero-record-holonomy quotient of asymmetric finite boundary access. Restricted quotient-consistency theorem, three-holonomy separation (coherent/record/leakage), Mach-Zehnder stable-record and QEC directed-leakage operational models. Born-rule program is a companion target. Does not derive CP^{N-1}, the Born rule, or full Hilbert reconstruction. [Paper DOI: 10.5281/zenodo.20542105](https://doi.org/10.5281/zenodo.20542105). [Video](https://www.youtube.com/watch?v=aZf9aw-5enw).
 
 ### Physical Bridge Ladder
 
@@ -120,7 +120,7 @@ The current DT/FDS public architecture, organized by layer:
 
 - **FDS-X1** — horizon-maintenance dark energy (pre-Euclid bridge note). DOI: 10.5281/zenodo.20290215.
 - **FDS-X2** — three fermion generations as CP/T-asymmetric identity transformation. DOI: 10.5281/zenodo.20289955.
-- **FDS-X3** — functional decomposition of the four fundamental interactions. DOI: 10.5281/zenodo.20388356.
+- **FDS-X3** — functional decomposition of the four fundamental interactions. DOI: 10.5281/zenodo.20388356. [Video](https://www.youtube.com/watch?v=5kdst0aEcC4).
 - **FDS-X4** — Pauli exclusion as finite address protection. DOI: 10.5281/zenodo.20278029.
 - **FDS-X5** — mathematical form of physical law as invariant-form compression. DOI: 10.5281/zenodo.20278236.
 
@@ -241,7 +241,7 @@ Recommended reading path:
 | **FDS-G1** | *Finite Screen Spacetime: Entropy-Response Geometry from Causal-Screen Ledgers* | Released | [10.5281/zenodo.20521142](https://doi.org/10.5281/zenodo.20521142) | [Video](https://www.youtube.com/watch?v=lJQYHDL5KY0) | [Code](papers/FDS_G1/replication_kit) |
 | **FDS-H1** | *Finite Causal-Screen Holography: Boundary Capacity, Bulk Recovery, and Gluing Obstruction* | Released | [10.5281/zenodo.20541234](https://doi.org/10.5281/zenodo.20541234) | — | [Code](papers/FDS_H1) |
 | **FDS-H2** | *Recoverable-Support Geometry and Response Visibility* | Released | [10.5281/zenodo.20567788](https://doi.org/10.5281/zenodo.20567788) | — | — |
-| **FDS-Q0** | *Boundary-Access Holonomy and the Quantum Reversible Quotient* | Released | [10.5281/zenodo.20542105](https://doi.org/10.5281/zenodo.20542105) | — | — |
+| **FDS-Q0** | *Boundary-Access Holonomy and the Quantum Reversible Quotient* | Released | [10.5281/zenodo.20542105](https://doi.org/10.5281/zenodo.20542105) | [Video](https://www.youtube.com/watch?v=aZf9aw-5enw) | — |
 | **FDS-P0** | *Physical Bridge Claim Registry for Active Finite Distinction Systems* | Zenodo preprint | [10.5281/zenodo.20159995](https://doi.org/10.5281/zenodo.20159995) |
 | **FDS-T1** | *Finite Distinguishability Budgets and Maintenance Bounds for Physical Observers* | Released | [10.5281/zenodo.20234249](https://doi.org/10.5281/zenodo.20234249) |
 | **FDS-O1** | *Observer as a Finite Distinction Register: Measurement Capacity, Dynamic Bottlenecks, and Budget-Crossing Signatures* | Released | [10.5281/zenodo.20248792](https://doi.org/10.5281/zenodo.20248792) |
@@ -258,7 +258,7 @@ Recommended reading path:
 | **FDS-A1** | *Active Finite Distinction Systems as a Criterion for Artificial Agency* | Zenodo / frozen public AI line | [10.5281/zenodo.20184709](https://doi.org/10.5281/zenodo.20184709) |
 | **FDS-X1** | *Horizon-Maintenance Dark Energy: A Pre-Euclid Bridge Note from Finite Distinguishability* | Released | [10.5281/zenodo.20290215](https://doi.org/10.5281/zenodo.20290215) |
 | **FDS-X2** | *Three Fermion Generations as CP/T-Asymmetric Identity Transformation: The CKM Lower Bound, Irreversible Pruning, and the Minimal Flavor Architecture of Finite Distinction Systems* | Released | [10.5281/zenodo.20289955](https://doi.org/10.5281/zenodo.20289955) |
-| **FDS-X3** | *Functional Decomposition of the Four Fundamental Interactions: A Minimal Physical Distinction-Operation Closure for Finite Distinction Systems* | Released | [10.5281/zenodo.20388356](https://doi.org/10.5281/zenodo.20388356) |
+| **FDS-X3** | *Functional Decomposition of the Four Fundamental Interactions: A Minimal Physical Distinction-Operation Closure for Finite Distinction Systems* | Released | [10.5281/zenodo.20388356](https://doi.org/10.5281/zenodo.20388356) | [Video](https://www.youtube.com/watch?v=5kdst0aEcC4) |
 | **FDS-X4** | *Pauli Exclusion as Finite Address Protection: Collision-Free Fermionic Occupancy, Structural Diversity, and Stable Matter in Finite Distinction Systems* | Released | [10.5281/zenodo.20278029](https://doi.org/10.5281/zenodo.20278029) |
 | **FDS-X5** | *Mathematical Form of Physical Law as Invariant-Form Compression: Invariant, Equivariant, and Covariant Law Forms in Finite Distinction Systems* | Released | [10.5281/zenodo.20278236](https://doi.org/10.5281/zenodo.20278236) |
 | **FDS-E1** | *Finite-Capacity Prospect Theory: State-Dependent Risk Preferences under Resource, Attention, and Boundary-Risk Constraints* | Released | [10.5281/zenodo.20237306](https://doi.org/10.5281/zenodo.20237306) / [SocArXiv: 10.31235/osf.io/pj43k_v1](https://doi.org/10.31235/osf.io/pj43k_v1) |
