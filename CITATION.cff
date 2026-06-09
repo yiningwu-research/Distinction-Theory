@@ -132,6 +132,12 @@ preferred-citation:
       - family-names: Wu
         given-names: Yining
     date-released: 2026-05-18
+  - title: "Residue Spectral Dynamics and Markov Closure in Finite Distinction Systems: Coupled Residue Channels, Memory Kernels, and Operational Closure Bounds"
+    doi: 10.5281/zenodo.20611696
+    authors:
+      - family-names: Wu
+        given-names: Yining
+    date-released: 2026-06-09
   - title: "Speed, Precision, and Dissipation Bounds for Boundary Maintenance in Finite Distinction Systems: Finite Update Windows, Bottleneck Throughput, and Resource-Ledger Exit Theorems"
     doi: 10.5281/zenodo.20269733
     authors:

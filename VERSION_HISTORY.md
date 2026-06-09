@@ -6,6 +6,22 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
+## 2026-06-09 — FDS-P8 Release
+
+**Description:** Release of FDS-P8 v1.0, residue spectral dynamics and Markov closure in finite distinction systems. Completes the P3-P4-P5-P6-P7-P8 residue bridge sequence.
+
+### Added
+- FDS-P8 v1.0 — Residue spectral dynamics paper.
+- `papers/FDS_P8/` folder with source PDF.
+
+### Changed
+- PAPER_MAP.md: P8 added to Stage I.
+- TIMESTAMPS.md: added P8 row with DOI.
+- CITATION.cff: added P8 preferred-citation entry.
+- README.md: P8 paper entry added.
+
+---
+
 ## 2026-05-26 — FDS-X3 v2.0 Release
 
 **Description:** Release of FDS-X3 v2.0, operation-closure version of the four-interaction functional decomposition paper. Upgrades from functional taxonomy to finite-distinction operation closure: four non-equivalent operation primitives (encapsulation, connection, identity update, causal-screen ledger geometry), G1-strengthened gravity row, Proposition 1 replacing Theorem 1, TikZ visual normal-form layer (operation map, coverage matrix, remove-one bar chart, fifth-force audit tree, relation map), AI design appendix-style note, citation precision improvements.
