@@ -58,8 +58,11 @@ fds-g1-cmb-precheck configs/g1_m34_fiducial.yaml
 fds-g1-cmb-grid configs/g1_mkappa_grid.yaml
 
 # Tests.
-pytest -q
+pytest -v tests/
 ```
+
+8 tests are included, verifying background, growth, model shapes, and
+lensing sanity. All pass with the analytic backend.
 
 Expected output directory:
 
