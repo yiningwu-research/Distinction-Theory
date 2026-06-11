@@ -127,3 +127,49 @@ All six demotion paths are pre-specified. M_{3/4} is a paradigm-level
 candidate, not an incremental parameterization. Its distinguishing claim
 is prediction lock: 3 parameters reproduce the expansion history plus
 the Weyl response simultaneously from a single finite-screen coefficient.
+
+---
+
+## CMB Lensing — Pre-Production Implementation
+
+**Status: Pre-production stress-test module available.**
+
+### Completed
+
+- Analytic linear Limber pipeline with shared early-time growth normalization
+- Dual normalization audit (code-raw vs present-day-relative)
+- Fixed-primordial and fixed-sigma8 diagnostic amplitude modes
+- Fiducial M3/4 C_L^{phi phi} ratio benchmark (analytic)
+- Generic bandpower NPZ likelihood interface
+- Official ACT DR6 / Planck PR4 adapter code
+
+### Current benchmark
+
+- Broad C_L^{phi phi} suppression is present in the fiducial analytic run
+- The result is a structural warning, not a production likelihood result
+- Must not be interpreted as formal exclusion significance until full audit
+
+### Pending (kill-test level, not completed for v1.x)
+
+- CLASS backend validation with full modified Boltzmann integration
+- Official ACT DR6 / Planck PR4 data run with proper covariance handling
+- Primary TT/TE/EE likelihood and parameter refit
+- Nonlinear and numerical-systematics audit
+- BBN compatibility check
+
+---
+
+## Production Kill Tests
+
+The following are pre-registered kill tests. Failure at any of these does
+not automatically falsify the G1DE class, but removes it from consideration
+as a complete dark-sector replacement. All of these are currently pending:
+
+1. **CMB lensing**: Significant positive detection beyond systematic error budgets
+   would falsify the locked M_{3/4} Weyl response amplitude.
+
+2. **BBN compatibility**: Properly defined light-element-abundance constraints
+   that cannot be accommodated within the G1 effective DE framework.
+
+These tests must be evaluated at full production-Boltzmann level before any
+official exclusion or confirmation claim can be made.

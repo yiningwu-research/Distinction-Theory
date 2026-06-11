@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fds-g1-cmb-lensing-precheck"
+version = "0.1.0"
+description = "Pre-production CMB-lensing stress test for the FDS-G1 M3/4 response branch"
+readme = "README_CMB_LENSING_PRECHECK.md"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "matplotlib>=3.7",
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+class = ["classy>=3.5"]
+act = ["act_dr6_lenslike>=1.2.1"]
+test = ["pytest>=7.0"]
+
+[project.scripts]
+fds-g1-cmb-precheck = "cmb_lensing_precheck.cli:main"
+fds-g1-cmb-grid = "cmb_lensing_precheck.grid_cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

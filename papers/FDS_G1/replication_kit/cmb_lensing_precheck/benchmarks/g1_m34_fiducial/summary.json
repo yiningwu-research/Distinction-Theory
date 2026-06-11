@@ -1,0 +1,61 @@
+{
+  "status": "pre-production",
+  "config_path": "/mnt/data/cmb_lensing_precheck/configs/g1_m34_fiducial.yaml",
+  "run_name": "g1_m34_fiducial",
+  "model": {
+    "name": "g1de_m34",
+    "s": 2.555,
+    "kappa": 0.75,
+    "normalization": "code",
+    "horizon_completion": "none",
+    "gamma_Gamma": 1.0,
+    "c_Gamma": 1.0
+  },
+  "amplitude": {
+    "mode": "fixed_primordial",
+    "sigma8_target": 0.7765
+  },
+  "power_backend": "analytic",
+  "power_sigma8_baseline": 0.811,
+  "growth_delta_today_ratio_model_over_lcdm": 0.9550899791780257,
+  "clpp_ratio_ranges": [
+    {
+      "ell_min": 8,
+      "ell_max": 40,
+      "n": 33,
+      "mean_ratio": 0.5694557630205546,
+      "median_ratio": 0.5728707596320759,
+      "min_ratio": 0.5188415307526545,
+      "max_ratio": 0.6073509477350385
+    },
+    {
+      "ell_min": 40,
+      "ell_max": 400,
+      "n": 361,
+      "mean_ratio": 0.7135805232718463,
+      "median_ratio": 0.7254586451126849,
+      "min_ratio": 0.6073509477350385,
+      "max_ratio": 0.7563996352565359
+    },
+    {
+      "ell_min": 400,
+      "ell_max": 1000,
+      "n": 601,
+      "mean_ratio": 0.7746853150029843,
+      "median_ratio": 0.7764035655488601,
+      "min_ratio": 0.7563996352565359,
+      "max_ratio": 0.7854206101411175
+    },
+    {
+      "ell_min": 1000,
+      "ell_max": 2998,
+      "n": 1999,
+      "mean_ratio": 0.7964581714432154,
+      "median_ratio": 0.7975396329962623,
+      "min_ratio": 0.7854206101411175,
+      "max_ratio": 0.8024775412020384
+    }
+  ],
+  "likelihood": null,
+  "claim_boundary": "Linear-Limber precheck with unchanged early transfer function; not a full D11 Boltzmann or primary-CMB likelihood result."
+}

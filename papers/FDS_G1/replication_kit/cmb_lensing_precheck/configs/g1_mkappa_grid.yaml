@@ -1,0 +1,58 @@
+run:
+  name: g1_mkappa_grid
+  output_dir: outputs/g1_mkappa_grid
+  overwrite: true
+
+cosmology:
+  H0: 67.4
+  Omega_m: 0.2966
+  Omega_b: 0.049
+  Omega_r: 9.2e-5
+  n_s: 0.965
+  A_s: 2.10e-9
+  tau_reio: 0.054
+  sigma8_baseline: 0.811
+  z_star: 1089.92
+
+model:
+  name: g1de_mkappa
+  s: 2.55
+  kappa: 0.75
+  normalization: code
+  horizon_completion: none
+  gamma_Gamma: 1.0
+  c_Gamma: 1.0
+
+amplitude:
+  mode: fixed_primordial
+  sigma8_target: 0.78
+
+power:
+  backend: analytic
+  k_min: 1.0e-5
+  k_max: 30.0
+  n_k: 1600
+
+integration:
+  a_ini: 9.0e-4
+  z_max: 1089.92
+  n_z: 400
+  ell_min: 2
+  ell_max: 2998
+  ell_step: 10
+
+likelihood:
+  backend: none
+  path: null
+  variant: act_baseline
+  data_dir: null
+
+grid:
+  s_min: 2.35
+  s_max: 3.0
+  n_s: 10
+  kappa_min: 0.0
+  kappa_max: 1.0
+  n_kappa: 11
+  summary_ell_min: 40
+  summary_ell_max: 1000
