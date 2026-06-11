@@ -1,0 +1,48 @@
+run:
+  name: g1_m34_present_normalized
+  output_dir: outputs/g1_m34_present_normalized
+  overwrite: true
+
+cosmology:
+  H0: 67.4
+  Omega_m: 0.2966
+  Omega_b: 0.049
+  Omega_r: 9.2e-5
+  n_s: 0.965
+  A_s: 2.10e-9
+  tau_reio: 0.054
+  sigma8_baseline: 0.811
+  z_star: 1089.92
+
+model:
+  name: g1de_m34
+  s: 2.555
+  kappa: 0.75
+  normalization: present
+  horizon_completion: none
+  gamma_Gamma: 1.0
+  c_Gamma: 1.0
+
+amplitude:
+  mode: fixed_primordial
+  sigma8_target: 0.7765
+
+power:
+  backend: analytic
+  k_min: 1.0e-5
+  k_max: 30.0
+  n_k: 1800
+
+integration:
+  a_ini: 9.0e-4
+  z_max: 1089.92
+  n_z: 900
+  ell_min: 2
+  ell_max: 2998
+  ell_step: 1
+
+likelihood:
+  backend: none
+  path: null
+  variant: act_baseline
+  data_dir: null

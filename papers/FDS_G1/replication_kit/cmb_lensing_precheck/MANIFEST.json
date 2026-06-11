@@ -1,0 +1,191 @@
+{
+  "package": "cmb_lensing_precheck",
+  "version": "0.1.0",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "1ee707c2be8d0bdfff135523a449e241c311f22ffb36c7d937377ff15877df5e",
+      "bytes": 1083
+    },
+    {
+      "path": "PATCH_INSTRUCTIONS.md",
+      "sha256": "5c4bedfd10b750614fae8cce76a381be8e50116d15c3b9ff70546d6aeec5581c",
+      "bytes": 711
+    },
+    {
+      "path": "README_CMB_LENSING_PRECHECK.md",
+      "sha256": "13cc9fadb9ae74f7639380e015b381b41d7bd87aeb0b6910863ea31e72dc4485",
+      "bytes": 4816
+    },
+    {
+      "path": "configs/g1_m34_fiducial.yaml",
+      "sha256": "21c920ff32d2fc2e85f13a775c2d1ba32537c4c01f1137493717bdc4b9238779",
+      "bytes": 850
+    },
+    {
+      "path": "configs/g1_m34_present_normalized.yaml",
+      "sha256": "26bb7dc294d15635be5c5ab30c608ca853d268d6096c32af81f707898d7c9156",
+      "bytes": 721
+    },
+    {
+      "path": "configs/g1_mkappa_grid.yaml",
+      "sha256": "656cf05a5fcb359d0dd4ebea2f76bda9f6449839bf9a50feac332da4fcdfbf58",
+      "bytes": 835
+    },
+    {
+      "path": "data/synthetic_lcdm_clkk.npz",
+      "sha256": "1dd468f19f1c343980528adad2974eb1d35f0fe784f1d9dfa898b26e7f9848a9",
+      "bytes": 3882
+    },
+    {
+      "path": "outputs/g1_m34_fiducial/background_growth.csv",
+      "sha256": "74282c38306f85ce9af7056c0f43be5ba982d6bdeff7db75f7878c44f5c2971f",
+      "bytes": 90077
+    },
+    {
+      "path": "outputs/g1_m34_fiducial/clpp.csv",
+      "sha256": "9ac47b7dd2a81b9ca2543b053a3cf6f62249eca45ae1813d9bf523850f820e42",
+      "bytes": 449618
+    },
+    {
+      "path": "outputs/g1_m34_fiducial/clpp_ratio.png",
+      "sha256": "44d19fca2a865a30e3dc3aa60a9cdea9b93d5fe3edb6dfa1238361cf0b840e84",
+      "bytes": 45230
+    },
+    {
+      "path": "outputs/g1_m34_fiducial/kernel_diagnostics.png",
+      "sha256": "d4b291f78c50ab016c00fcec103f37fd3927967fb97786ac3ca7500951ff324d",
+      "bytes": 39634
+    },
+    {
+      "path": "outputs/g1_m34_fiducial/sigma_of_z.png",
+      "sha256": "1fb605f307d4f67c8ff6a59c4d38e2821cce4538c252653bdc19cf617670f8bd",
+      "bytes": 51951
+    },
+    {
+      "path": "outputs/g1_m34_fiducial/summary.json",
+      "sha256": "6168e51741c5a8da2df29f31ce9c688cd6532d95f6aa64d1a185a48aafe9a9c9",
+      "bytes": 1664
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "09798dea2b1a3110d4308d262fe0148ede53c838c9a3047177187cb82a771104",
+      "bytes": 748
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "5ccb24e753d26c5c1665be327acf8d2ccfacfc254860545edca795cb88fe8002",
+      "bytes": 131
+    },
+    {
+      "path": "scripts/get_act_data.py",
+      "sha256": "b10cf1f4db1ed420ec2dba9aaa4f80d1d153461ed099eb29f0013d6c15f781e0",
+      "bytes": 341
+    },
+    {
+      "path": "scripts/make_synthetic_bandpowers.py",
+      "sha256": "c3034e939c3dd448bdc6378d82c320fe2bb10289c899d9864040ab0534065385",
+      "bytes": 779
+    },
+    {
+      "path": "src/cmb_lensing_precheck/__init__.py",
+      "sha256": "cea01aec1dadc28021db99ecb85e9bd061cb06269858ebdcbd75a7ae9350a0e9",
+      "bytes": 187
+    },
+    {
+      "path": "src/cmb_lensing_precheck/background.py",
+      "sha256": "87d29f174ebc2817c48dbff4ecdbd74faa8735e886ff38fc28e0970e4636d4b9",
+      "bytes": 2388
+    },
+    {
+      "path": "src/cmb_lensing_precheck/cli.py",
+      "sha256": "f1a0cc4d570ea0c3a6d1212658e6927cb0f4eadde3ff5b99cfee665e21f702cc",
+      "bytes": 566
+    },
+    {
+      "path": "src/cmb_lensing_precheck/config.py",
+      "sha256": "7030e5d3041fbf588b63fb555c2386dc3e36c04678433ae6efa1aa5afc716254",
+      "bytes": 3252
+    },
+    {
+      "path": "src/cmb_lensing_precheck/grid_cli.py",
+      "sha256": "1207dc1d3b0d25e1cf07cd5a0e5c17b6a3b2f6d446222dcb42346a3ad07dba1a",
+      "bytes": 3062
+    },
+    {
+      "path": "src/cmb_lensing_precheck/growth.py",
+      "sha256": "f41e1f6c46863f69657905aa74317c7d851eb05a73114499313bf8de3e0a3c1f",
+      "bytes": 1811
+    },
+    {
+      "path": "src/cmb_lensing_precheck/lensing.py",
+      "sha256": "ae7fb97682c0791bff670f003013d8642ccb379f3e187e7bdad903c3707b92c9",
+      "bytes": 5145
+    },
+    {
+      "path": "src/cmb_lensing_precheck/likelihood.py",
+      "sha256": "dbd42105286de83dda8395c1725300f1892f00725b158d937e40956b4c436c76",
+      "bytes": 4261
+    },
+    {
+      "path": "src/cmb_lensing_precheck/models.py",
+      "sha256": "b7202c2ce5818c0272f116ef3c1ea7280ee83eaa8b81a689a850479d00941d7e",
+      "bytes": 2701
+    },
+    {
+      "path": "src/cmb_lensing_precheck/pipeline.py",
+      "sha256": "b785343315c897e367be7af872a00df033a5e71fb77a0cebbfceeb8f7e5b21e8",
+      "bytes": 6520
+    },
+    {
+      "path": "src/cmb_lensing_precheck/power.py",
+      "sha256": "91cb9298205f71bd2769236c9c6fc3050222658a5c22aa25f8ede4deb362d944",
+      "bytes": 3881
+    },
+    {
+      "path": "src/fds_g1_cmb_lensing_precheck.egg-info/PKG-INFO",
+      "sha256": "9ba03d5fec07f99f170c3bafd3b7367e07670c0c51ab59d4b08a821f635c6e06",
+      "bytes": 5355
+    },
+    {
+      "path": "src/fds_g1_cmb_lensing_precheck.egg-info/SOURCES.txt",
+      "sha256": "415b22f927ef983fea11eae96cf03c21d058aff9ed0a8f4d9a7d87a3063d25c2",
+      "bytes": 854
+    },
+    {
+      "path": "src/fds_g1_cmb_lensing_precheck.egg-info/dependency_links.txt",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "bytes": 1
+    },
+    {
+      "path": "src/fds_g1_cmb_lensing_precheck.egg-info/entry_points.txt",
+      "sha256": "3daedbc359225b9fc849c91084932aa71f9e7f841c18eb185a808b185cef13ef",
+      "bytes": 123
+    },
+    {
+      "path": "src/fds_g1_cmb_lensing_precheck.egg-info/requires.txt",
+      "sha256": "bc9dc499a74367fc85bb3425b4e6c80a2fd2f4c981e1402f2ec29c07cfe09bca",
+      "bytes": 124
+    },
+    {
+      "path": "src/fds_g1_cmb_lensing_precheck.egg-info/top_level.txt",
+      "sha256": "cf94527b4441faf8199ab13d77422533ab20b263d1e4c7ec6efa29def025e496",
+      "bytes": 21
+    },
+    {
+      "path": "tests/test_background_growth.py",
+      "sha256": "0c8fc70e352316b66b4302adf60fef1d72dc427423cae022409fc9b1cb1d3a60",
+      "bytes": 823
+    },
+    {
+      "path": "tests/test_lensing_smoke.py",
+      "sha256": "83086f5b83294277ea21935e7e97545f81457ca23fe5ebad37fd80e848137450",
+      "bytes": 1534
+    },
+    {
+      "path": "tests/test_models.py",
+      "sha256": "0f5413e35c9f70dde7c8d30d9566126ff9cb78afa2668d40dbd60d71f3ab4532",
+      "bytes": 754
+    }
+  ]
+}

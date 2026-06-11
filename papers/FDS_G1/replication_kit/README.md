@@ -23,6 +23,21 @@ audit.
 
 ---
 
+## v1.4 New Additions (in progress)
+
+```
+cmb_lensing_precheck/           Pre-production CMB-lensing stress-test module
+  README_CMB_LENSING_PRECHECK.md  Module overview
+  configs/                        Fiducial, present-normalized, and grid configs
+  src/cmb_lensing_precheck/       Background, growth, lensing, likelihood, pipeline
+  tests/                          8 unit tests
+  benchmarks/                     Verified canonical g1_m34_fiducial benchmark
+```
+
+**CMB-lensing precheck.** The `cmb_lensing_precheck/` module provides a pre-production Limber-level stress test of the locked M_{3/4} branch. It computes background, growth, Weyl-response and C_L^{phi phi} ratios under explicitly registered normalization and amplitude conventions. Optional CLASS and ACT DR6/Planck PR4 interfaces are supplied. The included benchmark is not a full Boltzmann or primary-CMB likelihood result and must not be interpreted as a formal exclusion significance.
+
+---
+
 ## v1.3 New Additions
 
 ```

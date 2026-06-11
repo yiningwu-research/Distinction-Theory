@@ -1,0 +1,48 @@
+run:
+  name: g1_m34_fiducial
+  output_dir: outputs/g1_m34_fiducial
+  overwrite: true
+
+cosmology:
+  H0: 67.4
+  Omega_m: 0.2966
+  Omega_b: 0.049
+  Omega_r: 9.2e-5
+  n_s: 0.965
+  A_s: 2.10e-9
+  tau_reio: 0.054
+  sigma8_baseline: 0.811
+  z_star: 1089.92
+
+model:
+  name: g1de_m34
+  s: 2.555
+  kappa: 0.75
+  normalization: code       # code | present
+  horizon_completion: none  # none | single_pole
+  gamma_Gamma: 1.0
+  c_Gamma: 1.0
+
+amplitude:
+  mode: fixed_primordial    # fixed_primordial | fixed_sigma8
+  sigma8_target: 0.7765
+
+power:
+  backend: analytic         # analytic | class
+  k_min: 1.0e-5
+  k_max: 30.0
+  n_k: 1800
+
+integration:
+  a_ini: 9.0e-4
+  z_max: 1089.92
+  n_z: 900
+  ell_min: 2
+  ell_max: 2998
+  ell_step: 1
+
+likelihood:
+  backend: none             # none | generic_npz | act_dr6
+  path: null
+  variant: act_baseline
+  data_dir: null
