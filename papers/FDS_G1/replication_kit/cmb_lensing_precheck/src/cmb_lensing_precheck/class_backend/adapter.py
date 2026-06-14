@@ -163,9 +163,10 @@ class ClassLinearPower:
         self.omega_cdm = self.omega_m - self.omega_b
 
         self.class_params = {
-            'output': 'mPk',
-            'P_k_max_1/Mpc': float(cfg.get('power', {}).get('k_max', 30.0)),
+            'output': 'mPk, lCl',  # matter power + lensed C_l
+            'P_k_max_1/Mpc': float(cfg['power']['k_max']),
             'z_max_pk': 0.0,
+            'l_max_scalars': 5000,  # High enough for lensing up to L~3000
             'omega_b': self.omega_b * self.h**2,
             'omega_cdm': self.omega_cdm * self.h**2,
             'h': self.h,

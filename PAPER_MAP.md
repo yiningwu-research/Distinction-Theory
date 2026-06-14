@@ -28,8 +28,6 @@ These papers define the project and its most operational entry point.
 | FDS-P3 | Finite-Bath Memory, Markovianization, and Environmental Forgetting | environmental forgetting bridge | Released |
 | FDS-P6 | Speed, Precision, and Dissipation Bounds for Boundary Maintenance | throughput bridge / speed-precision-dissipation | Released |
 | FDS-P8 | Residue Spectral Dynamics and Markov Closure | Physical Bridge Ladder VI / spectral-dynamical Markov closure | Released | 10.5281/zenodo.20611696 |
-| FDS-C1 | Active Cognitive Pruning Controls Reportable Access under Finite Capacity | cognitive bridge | Released | 10.5281/zenodo.20229509 |
-| FDS-C2 | When the World Becomes Too Large: Consciousness as a Finite-Capacity Boundary Phase | consciousness bridge (boundary-phase model) | Released | 10.5281/zenodo.20367197 |
 | FDS-E1 | Finite-Capacity Prospect Theory | behavioral economics bridge | Released |
 | FDS-B0 | Biomedical Bridge Registry | biomedical bridge registry and safety firewall | Released | 10.5281/zenodo.20312983 |
 | FDS-B1 | Immunity as Boundary Verification | immunity as finite-capacity boundary verification | Released | 10.5281/zenodo.20327539 |
@@ -41,7 +39,6 @@ O1/O2/O3 form the Operational Trident: finite record formation, register-time up
 
 | Code | Title | Role | Status |
 |---|---|---|---|
-| FDS-L1 | Life and Death as Boundary Maintenance | biological bridge | Released |
 | FDS-N1 | Boundary-Maintaining Self-Organizing Systems under Finite Capacity | complex systems entry | Released |
 
 ## Stage IV — Frontier Physical Consequences (P3)

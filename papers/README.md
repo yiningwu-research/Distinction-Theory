@@ -15,7 +15,6 @@ This directory contains public PDF versions of DT/FDS documents, organized by su
 | FDS-P2 | `physics/` | FDS_P2_Bounded_Memory_Reversible_Computation.pdf | Physical Bridge Ladder II |
 | FDS-P5 | `physics/` | FDS_P5_Capacity_Deficit_Entropy_Production.pdf | Physical Bridge Ladder III |
 | FDS-N1 | `complex_systems/` | FDS_N1_Self_Organization_Bridge.pdf | complex-systems bridge |
-| FDS-C1 | `life_cognition/` | PDF pending | cognitive bridge |
 | FDS-E1 | `economics/` | PDF pending | behavioral economics bridge |
 | FDS-X1 | `physics/` | FDS_X1_Pre_Euclid_Dark_Energy.pdf | high-risk physical bridge |
 | FDS-LC0 | `life_cognition/` | PDF pending | life/cognitive registry |

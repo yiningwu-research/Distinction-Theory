@@ -36,6 +36,4 @@ For pre-registered predictions, the repository should include:
 | FDS-0 | — | — | — | N/A (formal) |
 | FDS-P0 | — | — | — | N/A (registry) |
 | FDS-T1 | Available | Available | Available | Yes |
-| FDS-L1 | Available | Available | Available | Yes |
 | FDS-LC0 | — | — | — | N/A (registry) |
-| FDS-C1 | Available | Available | Available | Yes |

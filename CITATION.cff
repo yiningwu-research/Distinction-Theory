@@ -54,12 +54,6 @@ preferred-citation:
       - family-names: Wu
         given-names: Yining
     date-released: 2026-05-16
-  - title: "Consciousness and Forgetting as Compression and Active Pruning"
-    doi: 10.5281/zenodo.20229509
-    authors:
-      - family-names: Wu
-        given-names: Yining
-    date-released: 2026-05-15
   - title: "Finite-Capacity Prospect Theory: State-Dependent Risk Preferences under Resource, Attention, and Boundary-Risk Constraints"
     doi: 10.5281/zenodo.20237306
     authors:
@@ -186,12 +180,6 @@ preferred-citation:
       - family-names: Wu
         given-names: Yining
     date-released: 2026-05-19
-  - title: "Active Pruning Controls Boundary Persistence in Protocell-like Systems: A Finite-Distinction Bridge to Artificial Life"
-    doi: 10.5281/zenodo.20302171
-    authors:
-      - family-names: Wu
-        given-names: Yining
-    date-released: 2026-05-15
   - title: "FDS-Q2: Finite Distinction Maintenance in Fault-Tolerant Quantum Computation"
     doi: 10.5281/zenodo.20302569
     authors:
@@ -210,9 +198,4 @@ preferred-citation:
       - family-names: Wu
         given-names: Yining
     date-released: 2026-05-21
-  - title: "When the World Becomes Too Large: Consciousness as a Finite-Capacity Boundary Phase"
-    doi: 10.5281/zenodo.20367197
-    authors:
-      - family-names: Wu
-        given-names: Yining
-    date-released: 2026-05-24
+

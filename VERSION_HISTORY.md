@@ -54,27 +54,6 @@ Version changes do not imply that every claim in the programme changes. Each ver
 
 ---
 
-
-
-**Description:** Release of FDS-C2 v1, consciousness as a finite-capacity boundary phase — a scaling hypothesis of sentience in active finite distinction systems, building on the FDS core and C1 reportability bridge.
-
-### Added
-- FDS-C2 v1 — consciousness bridge paper: boundary-capacity ratio Λφ, residue-pruning ratio Πφ, self-boundary coupling Iself, qualia as boundary-valenced compression geometry, explanatory gap as report-map null space.
-- C2 claim section in CLAIM_LEDGER.md (8 claims: FDS-C2-001 through FDS-C2-008).
-- C2 entries in claims.yaml and claims.csv.
-- Website: paper entry, roadmap, timestamps, homepage highlights, `/papers/fds-c2` page, `/videos` entry.
-- Video introduction: https://www.youtube.com/watch?v=911TwsqFcUc
-- Zenodo DOI: 10.5281/zenodo.20367197.
-
-### Changed
-- PAPER_MAP.md: C2 added to Stage I after C1.
-- CLAIM_STATUS.md: added C2 row.
-- TIMESTAMPS.md: added C2 row with DOI.
-- CITATION.cff: added C2 preferred-citation entry.
-- README.md: Key Documents updated.
-
----
-
 ## 2026-05-21 — FDS-B1 Release
 
 **Description:** Release of FDS-B1 v1.0, immunity as boundary verification — a finite-capacity boundary-verification reconstruction of the immune system with normal-form dynamics, dimensionless control numbers, adversarial classification, distributed topology, non-clinical proxy maps, and seven B1 claim cards.
@@ -125,24 +104,6 @@ Version changes do not imply that every claim in the programme changes. Each ver
 - CLAIM_STATUS.md: added Q2 row.
 - TIMESTAMPS.md: added Q2 row with DOI and tag.
 - CITATION.cff: added Q2 preferred-citation entry.
-- README.md: Key Documents updated.
-
----
-
-## 2026-05-19 — FDS-L1 Release
-
-**Description:** Release of FDS-L1 v1.0, active pruning in protocell-like systems as a finite-distinction bridge to artificial life.
-
-### Added
-- FDS-L1 v1.0 — active pruning as boundary maintenance; residue accumulation, pruning rate, saddle-node collapse, maintenance-attractor loss.
-- L1 claim section in CLAIM_LEDGER.md.
-- models/fds_l1/ with code and figures.
-- Video introduction: https://www.youtube.com/watch?v=HtXIiV9JTlQ
-
-### Changed
-- PAPER_MAP.md: L1 status unchanged (already Released). New DOI: 10.5281/zenodo.20302171.
-- TIMESTAMPS.md: L1 DOI updated to 10.5281/zenodo.20302171.
-- CITATION.cff: added L1 preferred-citation entry.
 - README.md: Key Documents updated.
 
 ---
@@ -509,8 +470,6 @@ Version changes do not imply that every claim in the programme changes. Each ver
 - FDS-0 formal core (v1.0).
 - FDS-P0 Physical Bridge Registry (v1.0).
 - FDS-LC0 Life/Cognitive Registry (v1.0).
-- FDS-C1 content (v1.0).
-- FDS-L1 content (submitted).
 - FDS-A1 content remains unchanged as frozen timestamp.
 - DT-Archive content (v1.0).
 
@@ -521,7 +480,7 @@ Version changes do not imply that every claim in the programme changes. Each ver
 **Description:** First public release of the DT/FDS priority infrastructure: claim ledger, timestamp index, release protocol, and AI scope governance.
 
 ### Added
-- `CLAIM_LEDGER.md` — canonical claim IDs (Core, T1, L1, C1, LC0, X1, A1).
+- `CLAIM_LEDGER.md` — canonical claim IDs (Core, T1, LC0, X1, A1).
 - `TIMESTAMPS.md` — public timestamp index.
 - `VERSION_HISTORY.md` — this file.
 - `CONFLICTS_OF_INTEREST.md` — AI/robotics commercial scope note.
@@ -533,7 +492,7 @@ Version changes do not imply that every claim in the programme changes. Each ver
 - Website pages: `/timestamps`, `/ledger`, `/predictions`, `/ai-scope`.
 
 ### Revised
-- `README.md` — updated from 6-layer to full architecture including T1, L1, C1, X1.
+- `README.md` — updated from 6-layer to full architecture including T1, X1.
 - Website homepage — reduced AI prominence; added ledger/timestamps navigation.
 - Website "Where Should I Start?" — revised reading paths.
 - `Hero.tsx` — replaced "AI Agency Paper" CTA with ledger/timestamps links.
@@ -544,17 +503,6 @@ Version changes do not imply that every claim in the programme changes. Each ver
 - FDS-LC0 Life/Cognitive Registry (v1.0).
 - FDS-T1 content (revised separately as v1.1).
 - FDS-A1 content remains unchanged; only its public positioning is revised.
-
----
-
-## 2026-05-15 — FDS-C1 Release
-
-**Description:** First public release of the FDS-C1 consciousness reportability paper.
-
-### Added
-- FDS-C1 paper and source.
-- Paper entry in website `content/papers.ts`.
-- `/papers/fds-c1` website page.
 
 ---
 

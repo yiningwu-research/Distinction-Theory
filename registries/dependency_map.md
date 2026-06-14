@@ -8,8 +8,7 @@ DT/FDS claims form a directed dependency graph. Downstream claims depend on upst
 formal core (FDS-0)
   ├── capacity deficit (CC-1)
   │     ├── physical bridge claims (PB-L, O1, O2)
-  │     ├── AI agency criteria (A1, A1-D)
-  │     └── domain bridges (L1, L1-D)
+  │     └── AI agency criteria (A1, A1-D)
   ├── high-risk physical bridges (P3, X1)
   └── downstream applications
 ```

@@ -68,9 +68,8 @@ They can fail locally without invalidating FDS-0.
 
 Read:
 
-1. Life and Death as Boundary Maintenance
-2. Consciousness and Forgetting as Compression and Active Pruning
-3. Agency-Semantics Spine when available
+1. FDS-LC0 Life and Cognitive Science Bridge Claim Registry
+2. Agency-Semantics Spine when available
 
 ## 7. What Not to Read First
 

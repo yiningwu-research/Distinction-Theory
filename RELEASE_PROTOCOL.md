@@ -20,7 +20,6 @@ Recommended tag format:
 - `fds-core-v1.0`
 - `fds-p0-v1.0`
 - `fds-t1-v1.1`
-- `fds-l1-submitted-v1.0`
 - `fds-x1-pre-euclid-v1.0`
 - `claim-ledger-v1.0`
 - `priority-infrastructure-v1.0`

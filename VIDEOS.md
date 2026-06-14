@@ -56,18 +56,6 @@ Scope: FDS-E1, behavioral economics bridge, loss aversion, reference dependence,
 
 YouTube: https://www.youtube.com/watch?v=0CsRXBfLv2U
 
-## 9. Active Pruning and Protocell-like Systems
-
-Scope: FDS-L1, life sciences bridge, residue-pruning-boundary dynamics, maintenance-attractor loss, wet-lab benchmark predictions.
-
-YouTube: https://www.youtube.com/watch?v=HtXIiV9JTlQ
-
-## 10. Active Cognitive Pruning and Reportable Access
-
-Scope: FDS-C1, cognitive bridge, conscious reportability as finite-capacity maintenance, representational residue, access-network collapse.
-
-YouTube: https://www.youtube.com/watch?v=bETMWyefNcA
-
 ## 11. Physical Bridge Claim Registry
 
 Scope: FDS-P0, physical bridge claim registry, finite distinguishability, irreversible updates, observer/time claims, horizon thermodynamics, topological persistence, high-risk physical extensions.
@@ -174,13 +162,7 @@ Scope: FDS-Q1, finite record-boundary account of Wigner-friend tension, observer
 
 YouTube: https://www.youtube.com/watch?v=U3OPzEdPkj4
 
-## 28. When the World Becomes Too Large: Consciousness as a Finite-Capacity Boundary Phase
-
-Scope: FDS-C2, consciousness bridge, sentience-candidate condition (Λφ>1, Πφ window, Iself), qualia as boundary-valenced compression geometry, explanatory gap as report-map null space, AI parameter-scaling insufficiency, reduced numerical simulations.
-
-YouTube: https://www.youtube.com/watch?v=911TwsqFcUc
-
-## 29. Finite Screen Spacetime: A New Entropy-Response Route to Gravity
+## 28. Finite Screen Spacetime: A New Entropy-Response Route to Gravity
 
 Scope: FDS-G1, finite causal-screen entropy-response geometry, G1DE-M<sub>3/4</sub> projection-locked residual, completed homogeneous seven-model medium-prior nested-evidence audit, D0–D10 dark-sector closure and bootstrap extension, finite Markov-screen realization prototype.
 
