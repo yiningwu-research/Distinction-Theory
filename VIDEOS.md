@@ -72,30 +72,6 @@ Scope: FDS-LC0, life/cognitive bridge claims, active pruning, residue-induced co
 
 YouTube: https://www.youtube.com/watch?v=3BuvnUCsDD0
 
-## 13. The Agency-Semantics Spine of Distinction Theory
-
-Scope: FDS-M0, agency-semantics spine, attention, value, goal, meaning, and agency as finite-system roles in boundary maintenance.
-
-YouTube: https://www.youtube.com/watch?v=eN0r9UjRKaQ
-
-## 14. Attention as Distinction Admission
-
-Scope: FDS-M1, attention bridge, capacity-limited admission, salience-value dissociation, tunnel vision, attention hysteresis.
-
-YouTube: https://www.youtube.com/watch?v=3-29amM1HdU
-
-## 15. Value and Goal as Boundary-Relevance Ranking
-
-Scope: FDS-M2, value-goal bridge, causal boundary gradients, goal stability, value drift, proxy divergence, collective synchronization.
-
-YouTube: https://www.youtube.com/watch?v=cQ2H5eJ-unE
-
-## 16. Meaning as Actionable Semantic Quotient
-
-Scope: FDS-M3, meaning bridge, policy-preserving compression, semantic deficit, false compression, unsupported completion, meaning recovery.
-
-YouTube: https://www.youtube.com/watch?v=MjTqiPf_pJI
-
 ## 17. Coarse-Grained Anti-Recurrence and Informational Hysteresis
 
 Scope: FDS-P4, physical bridge, non-injective truncation, preimage entropy, capacity-recovery asymmetry, informational hysteresis.

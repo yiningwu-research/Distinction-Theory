@@ -53,15 +53,6 @@ Physical consequences of finite distinguishability at the frontiers of cosmology
 | FDS-X4 | Pauli Exclusion as Finite Address Protection | Released | 10.5281/zenodo.20278029 |
 | FDS-X5 | Mathematical Form of Physical Law as Invariant Compression | Released | 10.5281/zenodo.20278236 |
 
-## Stage V — Cognition and Agency-Semantics
-
-| Code | Title | Role | Status |
-|---|---|---|---|
-| FDS-M0 | The Agency-Semantics Spine of Distinction Theory | Agency-semantics spine | Released |
-| FDS-M1 | Attention as Distinction Admission in Finite Systems | Attention / admission bridge | Released |
-| FDS-M2 | Value and Goal as Boundary-Relevance Ranking | Value-goal bridge | Released |
-| FDS-M3 | Meaning as Actionable Semantic Quotient | Meaning bridge | Released |
-
 ## Stage VI — Organizations, Civilization, and Institutions
 
 | Code | Title | Role |

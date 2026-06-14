@@ -90,30 +90,6 @@ preferred-citation:
       - family-names: Wu
         given-names: Yining
     date-released: 2026-05-17
-  - title: "The Agency-Semantics Spine of Distinction Theory: Attention, Value, Goal, Meaning, and Action under Finite Capacity"
-    doi: 10.5281/zenodo.20257939
-    authors:
-      - family-names: Wu
-        given-names: Yining
-    date-released: 2026-05-17
-  - title: "Attention as Distinction Admission in Finite Systems: Capacity-Limited Gating, Boundary Relevance, and Tunnel Vision"
-    doi: 10.5281/zenodo.20258570
-    authors:
-      - family-names: Wu
-        given-names: Yining
-    date-released: 2026-05-17
-  - title: "Value and Goal as Boundary-Relevance Ranking: Causal Boundary Gradients, Goal Stability, and Value Drift under Finite Capacity"
-    doi: 10.5281/zenodo.20262998
-    authors:
-      - family-names: Wu
-        given-names: Yining
-    date-released: 2026-05-18
-  - title: "Meaning as Actionable Semantic Quotient: Policy-Preserving Compression, Semantic Deficit, and False Meaning under Finite Capacity"
-    doi: 10.5281/zenodo.20263294
-    authors:
-      - family-names: Wu
-        given-names: Yining
-    date-released: 2026-05-18
   - title: "Coarse-Grained Anti-Recurrence and Informational Hysteresis in Finite Memory Systems: Lost Preimages, Side Records, and Capacity-Recovery Asymmetry"
     doi: 10.5281/zenodo.20265065
     authors:
