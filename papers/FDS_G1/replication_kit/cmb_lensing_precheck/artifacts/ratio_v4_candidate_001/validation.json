@@ -1,0 +1,12 @@
+{
+  "validation": {
+    "rms_mean": 0.033039015313551384,
+    "p95": 0.11532036692494771,
+    "max": 0.41690649490171194,
+    "n": 80
+  },
+  "null_ok": true,
+  "n_extra": 200,
+  "neighbors_bg": 80,
+  "neighbors_weyl": 100
+}

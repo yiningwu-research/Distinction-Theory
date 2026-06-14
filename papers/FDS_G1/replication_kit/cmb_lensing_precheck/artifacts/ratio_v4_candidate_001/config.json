@@ -1,0 +1,7 @@
+{
+  "n_pca_bg": 5,
+  "n_pca_weyl": 6,
+  "neighbors_bg": 80,
+  "neighbors_weyl": 100,
+  "kernel": "thin_plate_spline"
+}
