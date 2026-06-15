@@ -98,6 +98,7 @@ The current DT/FDS public architecture, organized by layer:
 - **FDS-P6** — speed, precision, and dissipation bounds for boundary maintenance. DOI: 10.5281/zenodo.20269733.
 - **FDS-P7** — topological obstruction to forgetting / invariant side-ledgers / NHSE bridge. DOI: 10.5281/zenodo.20265386.
 - **FDS-P8** — residue spectral dynamics, coupled residue channels, memory kernels, Markov closure. DOI: 10.5281/zenodo.20611696.
+- **FDS-T4** — macroscopic state and law selection, additional closure degree, startup-qualified localization, Phase-B frontier. DOI: 10.5281/zenodo.20703274.
 
 ### Domain Bridges
 
@@ -240,6 +241,7 @@ Recommended reading path:
 | **FDS-P4** | *Coarse-Grained Anti-Recurrence and Informational Hysteresis in Finite Memory Systems: Lost Preimages, Side Records, and Capacity-Recovery Asymmetry* | Released | [10.5281/zenodo.20265065](https://doi.org/10.5281/zenodo.20265065) |
 | **FDS-P7** | *Topological Obstruction to Forgetting in Finite Distinction Systems: Quotient Invariants, Non-Hermitian Skin Effects, and Topological Side-Ledgers* | Released | [10.5281/zenodo.20265386](https://doi.org/10.5281/zenodo.20265386) |
 | **FDS-P8** | *Residue Spectral Dynamics and Markov Closure in Finite Distinction Systems: Coupled Residue Channels, Memory Kernels, and Operational Closure Bounds* | Released | [10.5281/zenodo.20611696](https://doi.org/10.5281/zenodo.20611696) |
+| **FDS-T4** | *Macroscopic State and Law Selection from Coupled Residue Channels: Additional Closure Degree, Startup-Qualified Localization, and the Phase-B Frontier* | Released | [10.5281/zenodo.20703274](https://doi.org/10.5281/zenodo.20703274) |
 | **FDS-P6** | *Speed, Precision, and Dissipation Bounds for Boundary Maintenance in Finite Distinction Systems: Finite Update Windows, Bottleneck Throughput, and Resource-Ledger Exit Theorems* | Released | [10.5281/zenodo.20269733](https://doi.org/10.5281/zenodo.20269733) |
 | **FDS-P3** | *Finite-Bath Memory, Markovianization, and Environmental Forgetting in Finite Distinction Systems: Side Records, Memory Kernels, and the Loss of Recoverable Distinctions* | Released | [10.5281/zenodo.20272541](https://doi.org/10.5281/zenodo.20272541) |
 

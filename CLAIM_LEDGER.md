@@ -686,6 +686,126 @@
 
 ---
 
+## P8 — Residue Spectral Dynamics and Markov Closure Claims
+
+### FDS-P8-001 — Projection Yields Instantaneous-Memory-Forcing Decomposition
+
+**Statement.** Projection yields an exact instantaneous-memory-forcing decomposition for linear dynamics.
+
+**Status.** Imported exact identity, specialized in the exact-dynamics section.
+
+**Dependencies.** Exact linear semigroup; registered projection; compatible domain.
+
+**Not claimed.** Nonlinear state equations without a valid lifted observable representation.
+
+**First timestamp.** FDS-P8 v1.0, 2026-06-09.
+
+**Failure condition.** The declared generator, projection, domain, or semigroup assumptions fail, or a nonlinear state equation is used without a valid lifted observable representation.
+
+---
+
+### FDS-P8-002 — Only Controllable-and-Observable Residue Contributes to Visible Memory
+
+**Statement.** Only controllable-and-observable residue contributes to visible round-trip memory.
+
+**Status.** Restricted theorem in the active-residue section.
+
+**Dependencies.** FDS-P4-001 non-injective truncation; exact linear realization; input-output factorization; silent-sector definition.
+
+**First timestamp.** FDS-P8 v1.0, 2026-06-09.
+
+**Failure condition.** Removing a declared silent sector changes the memory kernel, transfer function, or retained input-output behavior.
+
+---
+
+### FDS-P8-003 — Exponential Semigroup Stability Gives Finite Memory-Burden Bound
+
+**Statement.** Exponential residue-semigroup stability gives a finite memory-burden bound.
+
+**Status.** Conditional theorem in the closure section.
+
+**Dependencies.** Exponential stability bound; bounded couplings; finite horizon; registered norm.
+
+**First timestamp.** FDS-P8 v1.0, 2026-06-09.
+
+**Failure condition.** Exponential stability does not hold, couplings are unbounded on the relevant domain, or the retained solution class violates the finite-horizon assumptions.
+
+---
+
+### FDS-P8-004 — Coupled Marginal Modes Obstruct Integrable Memory Closure
+
+**Statement.** Coupled marginal modes obstruct integrable memory closure.
+
+**Status.** Conditional theorem in the marginal-mode section.
+
+**Dependencies.** Transfer function poles near imaginary axis; both input and output coupling; no exact cancellation.
+
+**Not claimed.** The marginal mode is silent, canceled by the transfer channel, removed by symmetry, or absent from the registered active quotient.
+
+**First timestamp.** FDS-P8 v1.0, 2026-06-09.
+
+**Failure condition.** The marginal mode is silent, canceled by the transfer channel, removed by symmetry, or absent from the registered active quotient.
+
+---
+
+### FDS-P8-005 — Low-Frequency Transfer Weight Can Generate Algebraic Memory Tails
+
+**Statement.** Low-frequency transfer spectral weight can generate algebraic memory tails under registered Tauberian conditions.
+
+**Status.** Tauberian result for a restricted positive-measure class.
+
+**Dependencies.** Scalar positive-kernel regularity assumptions; monotonicity or bounded variation.
+
+**Not claimed.** Non-normal, sign-changing, matrix-canceling, time-dependent, or outside-regular-variation kernels.
+
+**First timestamp.** FDS-P8 v1.0, 2026-06-09.
+
+**Failure condition.** The kernel is non-normal, sign-changing, matrix-canceling, time dependent, or outside the registered regular-variation assumptions.
+
+---
+
+### FDS-P8-006 — Transfer Significance Bounds Reachable Round-Trip Recoverability
+
+**Statement.** Transfer significance bounds reachable round-trip recoverability when the two observation channels are boundedly equivalent on reachable residue.
+
+**Status.** P8 channel-registration bridge theorem.
+
+**Dependencies.** Registered bounded interconnection between retained return channel and physical recovery channel; reachable residue sector; linear finite-dimensional; Gaussian.
+
+**First timestamp.** FDS-P8 v1.0, 2026-06-09.
+
+**Failure condition.** No bounded interconnection exists, the lower bound vanishes, or recovery uses side records outside the registered retained return channel.
+
+---
+
+### FDS-P8-007 — Recoverability Depends on Observation Channel, Not Just Lifetime
+
+**Statement.** Operational recoverability depends on the observation channel, not on residue lifetime alone.
+
+**Status.** Exact finite-dimensional linear-Gaussian model theorem.
+
+**Dependencies.** P4 pre-image observability; P8 channel registration; decoder specification.
+
+**First timestamp.** FDS-P8 v1.0, 2026-06-09.
+
+**Failure condition.** The claimed recovery is obtained only by changing the accounting boundary, decoder resources, task labels, or observation channel.
+
+---
+
+### FDS-P8-008 — Strictly Proper Rational Memory Admits Finite Exact Markov Augmentation
+
+**Statement.** Strictly proper rational memory admits finite exact Markov augmentation.
+
+**Status.** Imported realization theorem, FDS interpretation.
+
+**Dependencies.** Strictly proper rational transfer function; feedthrough term absorbed into instantaneous generator; minimal realization dimension.
+
+**First timestamp.** FDS-P8 v1.0, 2026-06-09.
+
+**Failure condition.** A non-rational kernel is asserted to have a finite exact realization, the feedthrough term is not absorbed into the instantaneous generator, or the proposed augmentation fails to reproduce the transfer function.
+
+---
+
 ## Self-Organization Bridge Claims
 
 ### FDS-N1-001 — Active Self-Organization Requires Boundary-Relevant Update
@@ -1747,6 +1867,248 @@
 **First timestamp.** FDS-T2 v1.0, 2026-05-19.
 
 **Failure condition.** 10.5281/zenodo.20284911
+
+---
+
+## T3 — Capacity Overflow and Effective Stochasticity Claims
+
+### FDS-T3-001 — Capacity Overflow
+
+**Statement.** Capacity overflow occurs when task-relevant distinction demand exceeds accessible capacity.
+
+**Status.** Operational criterion.
+
+**Dependencies.** FDS-CORE-004 capacity deficit; task-relevant demand measure; accessible capacity measure.
+
+**First timestamp.** FDS-T3 v1.0, 2026-05-16.
+
+**Failure condition.** Full-fidelity tracking persists under bounded resources after independently estimated demand exceeds all accessible capacity.
+
+---
+
+### FDS-T3-002 — Non-Injective Projection Induces Effective Stochasticity
+
+**Statement.** Non-injective projection induces effective stochasticity.
+
+**Status.** Conditional theorem.
+
+**Dependencies.** FDS-P4-001 non-injective truncation; deterministic or stochastic underlying dynamics; hidden successor variation within pre-image classes.
+
+**First timestamp.** FDS-T3 v1.0, 2026-05-16.
+
+**Failure condition.** A many-to-one accessible projection always induces deterministic accessible transitions despite hidden successors varying within the same visible record class.
+
+---
+
+### FDS-T3-003 — Critical-Deficit Signature
+
+**Statement.** Overflow has a critical-deficit signature: predictive error and transition entropy show rapid increase near the capacity crossing.
+
+**Status.** Testable prediction.
+
+**Dependencies.** FDS-T3-001 overflow definition; predictive error measure; transition entropy measure; controlled capacity crossing.
+
+**First timestamp.** FDS-T3 v1.0, 2026-05-16.
+
+**Failure condition.** Predictive error, transition entropy, and exit signatures vary smoothly through controlled capacity crossing with no susceptibility peak, kink, or rapid regime change.
+
+---
+
+### FDS-T3-004 — Phase-B Variable Selection
+
+**Statement.** Phase-B variables are selected by low update cost, slow information decay, and approximate Markov closure.
+
+**Status.** Selection principle.
+
+**Dependencies.** FDS-T3-002 effective stochasticity; mutual information decay measure; Markov closure error measure; maintenance cost function.
+
+**First timestamp.** FDS-T3 v1.0, 2026-05-16.
+
+**Failure condition.** All coarse variables lose predictive information at the same rate under projection, regardless of update cost, closure error, or persistence utility.
+
+---
+
+### FDS-T3-005 — Informational Hysteresis
+
+**Statement.** Capacity recovery need not reverse overflow: discarded distinctions are not automatically recovered.
+
+**Status.** Conditional prediction.
+
+**Dependencies.** FDS-P4-003 informational hysteresis; finite record capacity; no external recovery side-record.
+
+**First timestamp.** FDS-T3 v1.0, 2026-05-16.
+
+**Failure condition.** Discarded distinctions are perfectly reconstructed after capacity recovery without external logs, hidden reservoirs, or additional records.
+
+---
+
+### FDS-T3-006 — Capacity-Relative Stochasticity
+
+**Statement.** Stochastic descriptions are capacity-relative unless supported by capacity-independent noise sources.
+
+**Status.** Scope claim.
+
+**Dependencies.** FDS-T3-002 effective stochasticity; accounting boundary registration; capacity-independent noise source definition.
+
+**First timestamp.** FDS-T3 v1.0, 2026-05-16.
+
+**Failure condition.** The same process yields the same stochastic description independent of observer capacity, projection, measurement boundary, and retained memory.
+
+---
+
+### FDS-T3-007 — Long-Context Drift as Wrong Invariant Completion
+
+**Statement.** Long-context drift is a domain projection of wrong invariant completion under overflow.
+
+**Status.** Engineering projection.
+
+**Dependencies.** FDS-T3-004 Phase-B invariants; context window capacity; false invariant completion mechanism.
+
+**First timestamp.** FDS-T3 v1.0, 2026-05-16.
+
+**Failure condition.** Context overflow in finite-window systems never increases false dependency, semantic drift, wrong task-state completion, or external-memory demand under matched tasks.
+
+---
+
+## T4 — Macroscopic State and Law Selection from Coupled Residue Channels Claims
+
+### FDS-T4-001 — Joint Forced-and-Preparation Closure Response
+
+**Statement.** Joint closure response includes both forced-history and preparation-coordinate input families.
+
+**Status.** Definition / typed response structure.
+
+**Dependencies.** FDS-P8 coupled residue channel; P3/P4 preparation/initial-data structure; registered preparation injection map.
+
+**First timestamp.** FDS-T4 v1.0, 2026-06-15.
+
+**Failure condition.** Preparation-forced residue has no measurable effect on closure quality or error budget.
+
+---
+
+### FDS-T4-002 — Four-Way Residue Treatment Taxonomy
+
+**Statement.** Active residue admits four admissible treatments: promote, localize, truncate, or reject.
+
+**Status.** Classification principle.
+
+**Dependencies.** FDS-P8 residue qualification hierarchy; finite task tolerance; closure error budget.
+
+**First timestamp.** FDS-T4 v1.0, 2026-06-15.
+
+**Failure condition.** Four-way taxonomy systematically misclassifies residue treatment decisions in controlled test cases.
+
+---
+
+### FDS-T4-003 — Noncommuting Closure Pipeline Order
+
+**Statement.** Closure operations do not commute: active quotient → persistent isolation → promotion → stable reduction → localization.
+
+**Status.** Operational principle.
+
+**Dependencies.** Ordered pipeline hypothesis; persistent-mode isolation before localization.
+
+**First timestamp.** FDS-T4 v1.0, 2026-06-15.
+
+**Failure condition.** Localization before persistent isolation yields identical or superior closure quality without divergence.
+
+---
+
+### FDS-T4-004 — Four-Level State Firewall Distinction
+
+**Statement.** Four-level state firewall distinguishes realization coordinates, physical closure states, macroscopic variables, and conserved quantities.
+
+**Status.** Classification principle.
+
+**Dependencies.** FDS-P7 side-ledger distinction; P3/P4 accessible/observer boundary; carrier registration.
+
+**First timestamp.** FDS-T4 v1.0, 2026-06-15.
+
+**Failure condition.** No measurable information-theoretic or physical difference between state categories under valid closure mapping.
+
+---
+
+### FDS-T4-005 — Persistent-Channel Degree Obligation
+
+**Statement.** Persistent joint-response poles impose a minimum additional closure degree: additional closure degree ≥ McMillan degree of persistent block.
+
+**Status.** Restricted realization theorem.
+
+**Dependencies.** Minimal realization theory; rational transfer function McMillan degree; isolated persistent spectrum; joint forced-and-preparation response.
+
+**First timestamp.** FDS-T4 v1.0, 2026-06-15.
+
+**Failure condition.** An exact causal closure with fewer degrees than the persistent-block McMillan degree reproduces all registered joint responses.
+
+---
+
+### FDS-T4-006 — Representation Invariance of Additional Closure Degree
+
+**Statement.** Additional closure degree is representation-invariant across internal state, higher-order derivatives, and registered side-ledgers.
+
+**Status.** Corollary / invariant property.
+
+**Dependencies.** FDS-T4-005 persistent-channel theorem; minimal linearization; full initial-data manifold.
+
+**First timestamp.** FDS-T4 v1.0, 2026-06-15.
+
+**Failure condition.** Equivalent joint responses with different representations have measurably different minimal linearized degrees.
+
+---
+
+### FDS-T4-007 — Operational Promotion Rank Monotonicity
+
+**Statement.** Operational promotion rank is monotonic in task window length, error tolerance strictness, and law-class restrictiveness.
+
+**Status.** Conditional proposition.
+
+**Dependencies.** Nested closure classes; contractive time-norm restriction; compatible input-window registration; finite-window Hankel operator.
+
+**First timestamp.** FDS-T4 v1.0, 2026-06-15.
+
+**Failure condition.** Promotion rank systematically decreases with longer task window, stricter tolerance, or smaller law class under valid registration.
+
+---
+
+### FDS-T4-008 — Startup-Qualified Temporal Localization
+
+**Statement.** Fast-residue memory admits a startup-qualified Taylor expansion in derivatives of the retained state with controlled remainder.
+
+**Status.** Conditional theorem.
+
+**Dependencies.** Exponential semigroup bound; incomplete moment tail estimate; initial fast-residue forcing bound; retained-state regularity.
+
+**First timestamp.** FDS-T4 v1.0, 2026-06-15.
+
+**Failure condition.** Temporal localization with declared order violates error bound or diverges for valid stable memory kernels within stated assumptions.
+
+---
+
+### FDS-T4-009 — Stability Firewall for Local-Truncation Laws
+
+**Statement.** Local-truncation laws require separate stability audit: constitutive series convergence does not guarantee autonomous-law well-posedness.
+
+**Status.** Admissibility criterion.
+
+**Dependencies.** Stable auxiliary-state reference; operator-pencil well-posedness criterion.
+
+**First timestamp.** FDS-T4 v1.0, 2026-06-15.
+
+**Failure condition.** All convergent Taylor expansions of stable memory kernels yield well-posed autonomous evolution laws.
+
+---
+
+### FDS-T4-010 — Phase-B Pareto Closure Frontier
+
+**Statement.** Phase-B closure frontier selects Pareto-minimal closures trading error, additional degree, law order, maintenance cost, and side-ledger access.
+
+**Status.** Definition / selection framework.
+
+**Dependencies.** Multi-objective Pareto order; registered resource costs; certified error budgets.
+
+**First timestamp.** FDS-T4 v1.0, 2026-06-15.
+
+**Failure condition.** Pareto-optimal frontier does not correlate with actual closure quality or maintainability in controlled synthetic or experimental benchmarks.
 
 ---
 

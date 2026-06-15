@@ -20,6 +20,23 @@ Version changes do not imply that every claim in the programme changes. Each ver
 - CITATION.cff: added P8 preferred-citation entry.
 - README.md: P8 paper entry added.
 
+## 2026-06-15 — FDS-T4 Release
+
+**Description:** Release of FDS-T4 v1.0, macroscopic state and law selection from coupled residue channels. Completes the Structural Trident (T1/T2/T4). Introduces additional closure degree, joint forced-and-preparation response, four-level state firewall, persistent-channel degree obligation theorem, operational promotion rank, startup-qualified temporal localization, stability firewall for local-truncation laws, and the Phase-B Pareto closure frontier.
+
+### Added
+- FDS-T4 v1.0 paper PDF to `papers/FDS_T4/` folder.
+- 10 FDS-T4 claims to CLAIM_LEDGER.md, claims.csv, claims.yaml.
+- 7 new prior-art entries to website prior-art page.
+
+### Changed
+- PAPER_MAP.md: T4 added to Stage I Structural Trident.
+- TIMESTAMPS.md: added T4 row with DOI.
+- README.md: T4 paper entry added.
+- Website papers.ts: added FDS-T4 paper metadata.
+- Website claims.ts: added all 25 claims (7 T3 + 8 P8 + 10 T4).
+- Website failures.ts: added T3 and T4 module entries.
+
 ---
 
 ## 2026-05-26 — FDS-X3 v2.0 Release

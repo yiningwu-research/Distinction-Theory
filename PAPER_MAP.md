@@ -28,6 +28,7 @@ These papers define the project and its most operational entry point.
 | FDS-P3 | Finite-Bath Memory, Markovianization, and Environmental Forgetting | environmental forgetting bridge | Released |
 | FDS-P6 | Speed, Precision, and Dissipation Bounds for Boundary Maintenance | throughput bridge / speed-precision-dissipation | Released |
 | FDS-P8 | Residue Spectral Dynamics and Markov Closure | Physical Bridge Ladder VI / spectral-dynamical Markov closure | Released | 10.5281/zenodo.20611696 |
+| FDS-T4 | Macroscopic State and Law Selection from Coupled Residue Channels | Structural Trident III / additional closure degree / Phase-B frontier | Released | 10.5281/zenodo.20703274 |
 | FDS-E1 | Finite-Capacity Prospect Theory | behavioral economics bridge | Released |
 | FDS-B0 | Biomedical Bridge Registry | biomedical bridge registry and safety firewall | Released | 10.5281/zenodo.20312983 |
 | FDS-B1 | Immunity as Boundary Verification | immunity as finite-capacity boundary verification | Released | 10.5281/zenodo.20327539 |
