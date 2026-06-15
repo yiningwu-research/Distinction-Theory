@@ -55,10 +55,11 @@
 - Artifact: `outputs/frozen/v4_act_only/`
 
 #### 3b. ACT-only Posterior (Frozen)
-- All 4 models converged: R̂ < 1.01, ESS > 17,000
+- Original production diagnostics passed: R̂ < 1.01, ESS > 17,000
+- Rank-normalized split-R̂ audit: initial mild folded-R̂ flags in g1_bg (Ω_m, h) and g1_mκ (q) cleared by targeted non-frozen +500-step extension audit
 - Direct-engine closure: max|Δχ²| = 0.068 < 0.1
 - Compensation hierarchy: q_bg > q_free > q_3/4
-- κ = 0.75 central-compatible (68% HPD)
+- κ = 0.75 tail-compatible, not central in the 68% interval
 - Artifact: `outputs/frozen/v4_act_only/chains/`
 
 #### 3c. ACT+PR4 Posterior
@@ -67,7 +68,8 @@
 
 #### 3d. Bayesian Evidence (UltraNest, K=1000, 3 independent runs)
 - ΛCDM ≈ g1_bg (BF = 1.2) — indistinguishable
-- g1_mκ < ΛCDM (BF = 2.4) — mildly disfavored
+- ACT-only audit: all four models have 3/3 complete runs
+- g1_mκ < ΛCDM (BF = 2.3) — mildly disfavored
 - g1_m34 < ΛCDM (BF = 4.0) — moderately disfavored
 - ACT+PR4 preserves same ranking exactly
 - Artifact: `outputs/nested_evidence/`
@@ -91,6 +93,10 @@
 | ACT-only production chains | `outputs/phase3_production_v4/` |
 | ACT+PR4 production chains | `outputs/phase3_production_v4_pr4/` |
 | Nested evidence results | `outputs/nested_evidence/act_only_production/` |
+| Phase 3 consistency audit | `outputs/phase3_consistency_audit.json` |
+| Phase 3 posterior diagnostics | `outputs/phase3_posterior_diagnostics.json` |
+| Phase 3 extension R-hat audit | `outputs/phase3_extension_v4_rhat_audit/` |
+| Phase 3 reproducibility manifest | `PHASE3_MANIFEST.json` |
 | Bugged artifacts archive | `outputs/INVALID_ROUTING_2026-06-13/` |
 | Final results | `PHASE3_FINAL_RESULTS.md` |
 | Evidence summary | `PHASE3_EVIDENCE_SUMMARY.md` |

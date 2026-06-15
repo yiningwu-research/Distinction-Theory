@@ -18,6 +18,13 @@ dependencies = [
 [project.optional-dependencies]
 class = ["classy>=3.5"]
 act = ["act_dr6_lenslike>=1.2.1"]
+mcmc = ["emcee>=3.1", "ultranest>=4.4"]
+production = [
+  "classy>=3.5",
+  "act_dr6_lenslike>=1.2.1",
+  "emcee>=3.1",
+  "ultranest>=4.4",
+]
 test = ["pytest>=7.0"]
 
 [project.scripts]

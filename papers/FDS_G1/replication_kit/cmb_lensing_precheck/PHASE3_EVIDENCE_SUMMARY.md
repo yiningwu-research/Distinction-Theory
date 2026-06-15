@@ -2,7 +2,7 @@
 
 **Date**: 2026-06-13
 **Data**: ACT DR6 lensing only (`act_baseline`)
-**Sampler**: UltraNest ReactiveNestedSampler, K=1000 live points, 3 independent runs (2 for g1_mκ; see †)
+**Sampler**: UltraNest ReactiveNestedSampler, K=1000 live points, 3 independent runs per model
 **Correction gate**: All models |ΔlogZ_corr| < 0.005 (threshold: 0.05)
 
 ---
@@ -13,10 +13,8 @@
 |-------|-----------|------|---------|-----------------|---------------|---------|
 | ΛCDM | Ω_m, h, lnAs | -12.23 | 0.05 | 0 | 1 | Best |
 | g1_bg | +q | -12.37 | 0.06 | -0.14 | 1.2 | Indistinguishable |
-| g1_mκ | +q, κ | -13.09 | 0.04† | -0.86 | 2.4 | Mildly disfavored |
+| g1_mκ | +q, κ | -13.09 | 0.02 | -0.85 | 2.3 | Mildly disfavored |
 | g1_m34 | +q (κ=3/4) | -13.61 | 0.05 | -1.38 | 4.0 | Moderately disfavored |
-
-> † **g1_mκ**: only 2 of 3 runs completed — the 5D model with K=1000 requires ~450K evaluations and the third run timed out. logZ and scatter are from 2 runs; the 2-run scatter (0.035) is consistent with the 3-run scatters of the other models (0.04–0.06).
 
 ---
 
@@ -35,7 +33,7 @@
 
 **ΛCDM vs g1_bg (BF = 1.2)**: Inconclusive. ACT evidence cannot distinguish between ΛCDM and a G1 model with background deformation only. The extra q parameter carries essentially zero Occam penalty because the ACT likelihood is broad enough in the q-direction that the prior volume loss is negligible.
 
-**ΛCDM vs g1_mκ (BF = 2.4)**: Mild preference for ΛCDM. Adding both q and κ as free parameters is penalized. The ACT data does not require Weyl freedom.
+**ΛCDM vs g1_mκ (BF = 2.3)**: Mild preference for ΛCDM. Adding both q and κ as free parameters is penalized. The ACT data does not require Weyl freedom.
 
 **ΛCDM vs g1_m34 (BF = 4.0)**: Moderate preference for ΛCDM. Fixing κ = 3/4 restricts the model to a region that, while posterior-compatible, does not achieve sufficient average predictive performance to offset the prior volume cost of the extra q parameter.
 

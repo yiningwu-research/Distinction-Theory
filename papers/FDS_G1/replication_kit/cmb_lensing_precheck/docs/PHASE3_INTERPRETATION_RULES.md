@@ -14,6 +14,9 @@
 
 **Never claim**: "data measures κ = 3/4" or "data prefers κ = 3/4" from HPD membership alone.
 
+**Current frozen v4 application**: κ = 0.75 is not in the central 68% interval of the
+free-κ posterior. It should be reported as tail-compatible, not central-compatible.
+
 ---
 
 ## 2. Effective Lensing Response α = κq

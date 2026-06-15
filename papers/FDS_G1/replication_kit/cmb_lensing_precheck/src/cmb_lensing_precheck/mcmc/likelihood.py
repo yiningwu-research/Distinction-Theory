@@ -60,22 +60,27 @@ class LensingLikelihood:
         self.act_data = alike.load_data(variant)
         self.ell_full = np.arange(self.act_data["binmat_act"].shape[1], dtype=int)
 
-    def _load_emulator(self):
-        """Load production G1 ratio emulator (v2 structured or v1 fallback)."""
+    def _project_root(self):
         from pathlib import Path
-        base = Path(__file__).parent.parent.parent.parent / "outputs" / "emulator"
+        return Path(__file__).parent.parent.parent.parent
 
-        # Try v2 structured
-        v2_path = base / "emulator_primordial_v2"
-        if (v2_path / "production_unlock.json").exists():
-            try:
-                from .structured_emu import StructuredRatioEmulator
-                return StructuredRatioEmulator.load(v2_path)
-            except Exception:
-                pass
+    def _load_emulator(self):
+        """Load the registered production G1 ratio emulator."""
+        base = self._project_root()
+        from .structured_emu import StructuredRatioEmulator
 
-        # Fallback to v1
-        v1_path = base / "emulator_primordial"
+        candidate_paths = [
+            base / "outputs" / "frozen" / "v4_act_only" / "ratio_emulator",
+            base / "artifacts" / "ratio_v4_candidate_001",
+            base / "outputs" / "emulator" / "emulator_primordial_v2",
+        ]
+
+        for candidate in candidate_paths:
+            if (candidate / "config.json").exists():
+                return StructuredRatioEmulator.load(candidate)
+
+        # Fallback to deprecated v1, retained only for old analytic smoke outputs.
+        v1_path = base / "outputs" / "emulator" / "emulator_primordial"
         if (v1_path / "production_unlock.json").exists():
             return RatioEmulator.load(v1_path)
 
@@ -83,12 +88,16 @@ class LensingLikelihood:
 
     def _load_baseline_emulator(self):
         """Load production 2D ΛCDM baseline emulator."""
-        from pathlib import Path
-        emu_path = Path(__file__).parent.parent.parent.parent / \
-                   "outputs" / "emulator" / "baseline_emulator"
-        if (emu_path / "production_unlock.json").exists():
-            from .baseline_emu import BaselineEmulator
-            return BaselineEmulator.load(emu_path)
+        from .baseline_emu import BaselineEmulator
+
+        base = self._project_root()
+        candidate_paths = [
+            base / "outputs" / "frozen" / "v4_act_only" / "baseline_emulator",
+            base / "outputs" / "emulator" / "baseline_emulator",
+        ]
+        for emu_path in candidate_paths:
+            if (emu_path / "production_unlock.json").exists():
+                return BaselineEmulator.load(emu_path)
         return None
 
     def _get_class_params(self, Omega_m: float, h: float,
@@ -179,10 +188,13 @@ class LensingLikelihood:
         if q != 0.0 or kappa != 0.0:
             if self._emulator is not None:
                 # Production path: use validated emulator (microseconds)
-                R_emu = self._emulator.predict_R(Omega_m, h, q, kappa)
-                R_interp = np.interp(self.ell_full.astype(float),
-                                     self._emulator.ell.astype(float),
-                                     R_emu, left=1.0, right=1.0)
+                try:
+                    R_emu = self._emulator.predict_R(Omega_m, h, q, kappa)
+                    R_interp = np.interp(self.ell_full.astype(float),
+                                         self._emulator.ell.astype(float),
+                                         R_emu, left=1.0, right=1.0)
+                except ValueError:
+                    return None
             else:
                 # Test/validation fallback: direct engine (seconds)
                 ratio = self._direct_engine.compute(Omega_m, h, 3.0 - q, kappa)

@@ -83,35 +83,9 @@ class EvidenceLikelihood:
         self.fixed = MODEL_FIXED[model]
         self.n_dim = len(self.param_names)
 
-        # Load likelihood with emulators
+        # Load likelihood with the same registered production emulators used by MCMC.
         from cmb_lensing_precheck.mcmc.likelihood import LensingLikelihood
         self._like = LensingLikelihood(variant, amplitude_param=amplitude_param)
-
-        # Inject v4 emulator (train from frozen cache)
-        self._inject_v4_emulator()
-
-    def _inject_v4_emulator(self):
-        """Train v4 structured emulator from frozen cache and inject."""
-        from scripts.train_v4 import V4Emulator
-        import numpy as np
-        from pathlib import Path
-
-        # Find project root relative to this file
-        project_root = Path(__file__).parent.parent.parent.parent
-
-        frozen = project_root / "outputs" / "frozen" / "v4_act_only"
-
-        cache = {
-            "params_train": np.load(frozen / "truth_cache/params_train.npy"),
-            "ell": np.load(frozen / "truth_cache/ell.npy"),
-            "R_bg_train": np.load(frozen / "truth_cache/R_bg_train.npy"),
-            "R_Weyl_train": np.load(frozen / "truth_cache/R_Weyl_train.npy"),
-        }
-        emu = V4Emulator()
-        emu.train(cache, n_pca_bg=5, n_pca_weyl=6,
-                 neighbors_bg=80, neighbors_weyl=100,
-                 kernel="thin_plate_spline")
-        self._like._emulator = emu
 
     def log_likelihood(self, params: np.ndarray) -> float:
         """
